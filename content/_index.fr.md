@@ -4,9 +4,9 @@ description: "This is a demo of the Congo theme for Hugo."
 ---
 
 {{< lead >}}
-A powerful, lightweight theme for Hugo built with Tailwind CSS.
+Un très beau thème pour Hugo.
 {{< /lead >}}
 
-This is a demo site built entirely using Congo.
+Ce site personnel a été développé avec Hugo et le thème Congo.
 
 {{< figure src="festivities.svg" class="m-auto mt-6 max-w-prose" >}}
