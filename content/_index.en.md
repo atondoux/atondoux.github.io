@@ -4,5 +4,5 @@ description: "This is a demo of the Congo theme for Hugo."
 ---
 
 {{< lead >}}
-Bonjour :waving_hand:
+Hello :waving_hand:
 {{< /lead >}}

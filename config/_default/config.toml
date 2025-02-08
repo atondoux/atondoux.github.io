@@ -4,7 +4,7 @@
 
 baseURL = "https://atondoux.github.io/"
 theme = "congo"
-defaultContentLanguage = "en"
+defaultContentLanguage = "fr"
 googleAnalytics = "G-JCKXZ1J4W3"
 
 enableRobotsTXT = true
