@@ -1,8 +1,15 @@
 ---
-title: "Welcome to Congo! :tada:"
-description: "This is a demo of the Congo theme for Hugo."
+# title: "Home"
+date: 2025-02-10
+draft: false
 ---
 
+{{< profile align="center" >}}
+
 {{< lead >}}
-Hello :waving_hand:
+Hi there :waving_hand:
 {{< /lead >}}
+
+{{< alert "coffee" >}}
+This section is a work in progress :construction:
+{{< /alert >}}
