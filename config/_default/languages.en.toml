@@ -3,20 +3,20 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 2
 
-title = "Title"
+title = "Aurelien Tondoux"
 copyright = "&copy; 2025 Aurelien Tondoux"
 
 [params]
   dateFormat = "2 January 2006"
 
   # mainSections = ["samples"]
-  description = "A powerful, lightweight theme for Hugo built with Tailwind CSS."
+  description = "## description ##"
 
 [params.author]
   name = "Aurelien Tondoux"
   image = "img/author.jpg"
-  headline = "Full Stack Developer | Tech Lead"
-  bio = "This is an example author bio..."
+  headline = "Full Stack Developer • Tech Lead"
+  bio = "## bio ##"
   links = [
     { linkedin = "https://www.linkedin.com/in/atondoux" },
     { github = "https://github.com/atondoux" }
