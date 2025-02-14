@@ -36,19 +36,19 @@ fingerprintAlgorithm = "sha256"
   recentLimit = 5
 
 [article]
-  showDate = true
+  showDate = false
   showDateUpdated = false
-  showAuthor = true
+  showAuthor = false
   showBreadcrumbs = true
   showDraftLabel = true
-  showEdit = true
+  showEdit = false
   editURL = "https://github.com/jpanther/congo/tree/dev/exampleSite/content/"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
   invertPagination = false
-  showReadingTime = true
-  showTableOfContents = true
+  showReadingTime = false
+  showTableOfContents = false
   showTaxonomies = false
   showWordCount = false
   showComments = false
