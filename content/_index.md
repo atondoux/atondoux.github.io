@@ -7,7 +7,7 @@ draft: false
 {{< profile align="center" >}}
 
 {{< lead >}}
-Bonjour et bienvenue :waving_hand:
+Bonjour et bienvenue :wave_tone1:
 {{< /lead >}}
 
 {{< alert "comment" >}} 

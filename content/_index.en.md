@@ -7,7 +7,7 @@ draft: false
 {{< profile align="center" >}}
 
 {{< lead >}}
-Hi there :waving_hand:
+Hi there :wave_tone1:
 {{< /lead >}}
 
 {{< alert "coffee" >}}

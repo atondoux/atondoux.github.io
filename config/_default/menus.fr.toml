@@ -11,14 +11,21 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
+  name = "A propos"
+  pageRef = "about"
+  title = "En savoir plus sur Aurélien"
+  identifier = "about"
+  weight = 10
+
+[[main]]
   identifier = "search"
-  weight = 99
+  weight = 20
   [main.params]
     action = "search"
 
 [[main]]
   identifier = "locale"
-  weight = 100
+  weight = 30
   [main.params]
     action = "locale"
 
