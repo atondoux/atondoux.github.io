@@ -1,7 +1,5 @@
 ---
 title: "Bonjour ! Je suis Aurélien :wave_tone1:"
-date: 2025-02-13
-draft: false
 ---
 
 ## :earth_africa: Parcours
@@ -12,7 +10,7 @@ Depuis mes débuts, j'ai toujours évolué dans le monde des applications web, m
 une contribution en concevant et développant des solutions qui soient utiles au quotidien et pour le plus grand nombre :
 c'est véritablement ce qui me motive et qui rend mon métier si passionnant !
 
-J'ai eu l'opportunité de travailler pour de grandes entreprises sur des projets d'envergure comme 
+J'ai eu l'opportunité de travailler sur des projets d'envergure pour de grandes entreprises comme 
 [Veolia Eau](https://www.eau.veolia.fr/),
 [le Ministère de la Santé](https://sante.gouv.fr/), 
 [SNCF Connect & Tech](https://www.sncf-connect-tech.fr/),
