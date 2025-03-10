@@ -1,5 +1,5 @@
 ---
-title: "Hi there! I am Aurelien :wave_tone1:"
+title: "Projects :laptop:"
 ---
 
 {{< alert "coffee" >}}

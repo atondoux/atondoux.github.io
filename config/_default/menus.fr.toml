@@ -13,19 +13,26 @@
 [[main]]
   name = "A propos"
   pageRef = "about"
-  title = "En savoir plus sur Aurélien"
+  title = "En savoir plus sur moi"
   identifier = "about"
   weight = 10
 
 [[main]]
-  identifier = "search"
+  name = "Projets"
+  pageRef = "projects"
+  title = "En savoir plus mes réalisations"
+  identifier = "projects"
   weight = 20
+
+[[main]]
+  identifier = "search"
+  weight = 30
   [main.params]
     action = "search"
 
 [[main]]
   identifier = "locale"
-  weight = 30
+  weight = 40
   [main.params]
     action = "locale"
 
