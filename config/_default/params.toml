@@ -39,7 +39,7 @@ fingerprintAlgorithm = "sha256"
   showDate = false
   showDateUpdated = false
   showAuthor = false
-  showBreadcrumbs = true
+  showBreadcrumbs = false
   showDraftLabel = true
   showEdit = false
   editURL = "https://github.com/jpanther/congo/tree/dev/exampleSite/content/"
@@ -49,16 +49,16 @@ fingerprintAlgorithm = "sha256"
   invertPagination = false
   showReadingTime = false
   showTableOfContents = false
-  showTaxonomies = false
+  showTaxonomies = true
   showWordCount = false
   showComments = false
   # sharingLinks = ["facebook", "x-twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "threads", "telegram", "line", "weibo", "xing"]
 
 [list]
-  showBreadcrumbs = true
-  showSummary = false
-  showTableOfContents = true
-  showTaxonomies = false
+  showBreadcrumbs = false
+  showSummary = true
+  showTableOfContents = false
+  showTaxonomies = true
   groupByYear = false
   paginationWidth = 1
 

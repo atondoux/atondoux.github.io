@@ -1,5 +1,6 @@
 ---
 title: "Bonjour ! Je suis Aurélien :wave_tone1:"
+showDate: false
 ---
 
 ## :earth_africa: Parcours
