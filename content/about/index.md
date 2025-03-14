@@ -16,8 +16,9 @@ J'ai eu l'opportunité de travailler sur des projets d'envergure pour de grandes
 [SNCF Connect & Tech](https://www.sncf-connect-tech.fr/),
 [Natixis](https://www.groupebpce.com/nos-entreprises/natixis-corporate-investment-banking/), 
 [Société Générale](https://wholesale.banking.societegenerale.com/fr/),
-[Softway Medical](https://www.groupesoftwaymedical.com/)
-ou encore [Orange Business Services](https://www.orange-business.com/fr).
+[Softway Medical](https://www.groupesoftwaymedical.com/),
+[Orange Business Services](https://www.orange-business.com/fr),
+ou encore [Namirial](https://www.namirial.com/fr/).
 
 ## :gear: Ecosystème
 
