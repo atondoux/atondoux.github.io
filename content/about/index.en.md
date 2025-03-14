@@ -1,5 +1,6 @@
 ---
 title: "Hi there! I am Aurelien :wave_tone1:"
+showDate: false
 ---
 
 {{< alert "coffee" >}}
