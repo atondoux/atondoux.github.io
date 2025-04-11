@@ -8,12 +8,22 @@ summary: "Faciliter la vie quotidienne en rendant plus fluide les parcours de so
 tags: ["Parcours client & signature électronique", "Java", "Kotlin", "Spring", "API REST", "SQL", "TDD", "Gitlab CI/CD"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Namirial"
-cover: ""
-coverAlt: ""
+cover: "logo.svg"
+coverAlt: "Namirial"
 ---
 
-{{< alert "coffee" >}}
-En cours de construction... :construction:
+{{< lead >}}
+Faciliter la vie quotidienne en rendant plus fluide les parcours de souscription gérés par une plateforme de services de confiance qualifiés.
+{{< /lead >}}
+
+## :light_bulb: Contexte & Mission
+
+* Maintenance et ajout de nouvelles fonctionnalités à la plateforme permettant de créer des parcours d'acquisition
+clients personnalisés avec de la vérification d'identité, de la signature et de la soumission de documents 
+* Refonte de l'intégration avec le fournisseur de signature [Yousign](https://yousign.com/)
+
+{{< alert "codepen" >}}
+Java, Kotlin, Spring, API REST, SQL, TDD, Gitlab CI/CD
 {{< /alert >}}
 
 
