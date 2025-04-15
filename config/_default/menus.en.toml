@@ -18,27 +18,34 @@
   weight = 10
 
 [[main]]
+  name = "My services"
+  pageRef = "services"
+  title = "Learn more about my services"
+  identifier = "services"
+  weight = 20
+
+[[main]]
   name = "Projects"
   pageRef = "projects"
   title = "Learn more about my projects"
   identifier = "projects"
-  weight = 20
+  weight = 30
 
 [[main]]
   identifier = "search"
-  weight = 30
+  weight = 40
   [main.params]
     action = "search"
 
 [[main]]
   identifier = "locale"
-  weight = 40
+  weight = 50
   [main.params]
     action = "locale"
 
 [[main]]
   identifier = "appearance"
-  weight = 50
+  weight = 60
   [main.params]
     action = "appearance"
 
