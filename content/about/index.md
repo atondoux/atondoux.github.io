@@ -48,6 +48,18 @@ intégralement testés et documentés.
 
 Grâce à cette approche, je suis en mesure de développer **des applications sur mesure, pérennes et évolutives**.
 
+Grâce à cette approche, je suis en mesure de développer **des applications sur mesure, pérennes et évolutives**.
+
+## :robot: Intelligence Artificielle
+
+Depuis quelques années, l'IA s'est invitée dans l'industrie du logiciel.
+
+Pour ma part, **j'utilise l'IA en tant que super assistant**, uniquement sur des sujets sur lesquels je suis capable
+d'avoir un regard critique sur les propositions générées.
+
+Bien que cette aide apporte des gains intéressants, notamment en terme de productivité, La qualité et la maintenabilité
+des solutions que je propose passent avant tout.
+
 ## :seedling: Mon apprentissage continu
 
 Dans le monde du développement logiciel, les choses évoluent vite, très vite. De nouvelles technologies font leur apparition,
