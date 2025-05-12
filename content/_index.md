@@ -10,19 +10,24 @@ Bonjour et bienvenue :wave_tone1:
 
 {{< alert "comment" >}} 
 Avec plus de 15 ans d'expérience en tant qu'ingénieur en développement, **j'aide les entreprises et les individus
-à transformer leurs idées en applications** adaptées à leurs besoins. En m'imprégnant de leur métier
-et en appliquant les meilleures pratiques de développement, **j'interviens sur toutes les phases de vos projets** :
-conception, développement de fonctionnalités et déploiement.
+à transformer leurs idées en applications adaptées à leurs besoins**. En m'imprégnant de votre métier
+et en appliquant les meilleures pratiques de développement, **je prends en charge toutes les étapes de vos projets** :
+depuis la phase de conception, en passant par le développement de fonctionnalités sur mesure, jusqu'au déploiement en production :rocket:
 {{< /alert >}}
 
-Vous êtes à la recherche d'un expert :
-- pour **renforcer vos équipes tech** :check_mark_button:
-- capable de **mentorer vos équipes** et les **sensibiliser aux bonnes pratiques** :check_mark_button:
-- qui pourra **améliorer la qualité** de vos logiciels :check_mark_button:
-- pour transformer **votre idée et votre business** en **solution** :check_mark_button:
-- pour **auditer et vous conseiller** sur le code de vos applications :check_mark_button:
+Vous êtes à la recherche d'un expert pour :
+<br>
+:check_mark_button: **renforcer vos équipes tech** avec un développeur full stack expérimenté
+<br>
+:check_mark_button: **mentorer vos équipes** et les **sensibiliser aux bonnes pratiques** pour les guider vers l'excellence
+<br>
+:check_mark_button: **booster la qualité** de vos logiciels
+<br>
+:check_mark_button: **transformer vos idées** en solutions digitales sur mesure
+<br>
+:check_mark_button: **auditer et optimiser** vos applications pour améliorer l'expérience de vos utilisateurs
 
-Si vous souhaitez en savoir plus, n'hésitez pas à me contacter afin que l'on trouve le meilleur moyen de travailler ensemble !
+Si vous souhaitez en savoir plus, n'hésitez pas à me contacter afin que l'on trouve le meilleur moyen de travailler ensemble :handshake:
 
 <div class="d-flex justify-content-between">
 {{< button href="https://calendly.com/atondoux/15min" target="_blank">}}
