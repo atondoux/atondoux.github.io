@@ -16,12 +16,12 @@ coverAlt: "Veolia Eau"
 Assurer la distribution de l'eau en Île-de-France en construisant des applications internet riches.
 {{< /lead >}}
 
-## :light_bulb: Contexte & Mission
+## :dart: Mes contributions
 
-* Responsable du développement d’applications métier permettant la gestion de la distribution de l’eau
+* Prendre en charge le développement d’applications métier permettant la gestion de la distribution de l’eau
 en Île-de-France (plus de 500 000 contrats) à l’aide d’un framework spécifique de développement rapide
-* Gestion des livraisons sur la plateforme d’intégration Haute Disponibilité
-* Rédaction de spécifications techniques, de manuels de génération de livrables et de procédures de déploiement
+* Gérer les livraisons sur la plateforme d’intégration Haute Disponibilité
+* Rédiger des spécifications techniques, des manuels de génération de livrables et des procédures de déploiement
 
 {{< alert "codepen" >}}
 Java , Services Web (SOAP), JavaScript, SQL, Méthodologie Cycle en V
