@@ -18,8 +18,8 @@ Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateform
 
 ## :dart: Mes contributions
 
-* Ajouter de nouvelles fonctionnalités et corriger les anomalies pour www.voyages-sncf.com (aujourd'hui SNCF Connect) :
-service européen de réservation de billets de train
+* Ajouter de nouvelles fonctionnalités et corriger les anomalies du service européen de réservation de billets de train
+de la SNCF
 * Analyser en détail le moteur de réservation (Yield management)
 * Concevoir et implémenter de nouveaux services web B2C dans un environnement orienté services (SOA)
 * Mettre en place des suites de tests automatisés en étroite collaboration avec l'équipe QA
