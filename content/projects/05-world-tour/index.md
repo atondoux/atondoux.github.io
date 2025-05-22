@@ -22,8 +22,7 @@ Vivre une aventure exceptionnelle de 730 jours marquée par un enrichissement pe
 * 17 pays visités : Allemagne :flag_de:, République tchèque :flag_cz:, Pologne :flag_pl:, Ukraine :flag_ua:, Russie :flag_ru:, Mongolie :flag_mn:, Chine :flag_cn:, Vietnam :flag_vn:, Cambodge :flag_kh:, Laos :flag_la:,
 Thaïlande :flag_th:, Myanmar :flag_mm:, Philippines :flag_ph:, Australie :flag_au:, Fidji :flag_fj:, Samoa :flag_ws:, Nouvelle-Zélande :flag_nz:
 
-:star: Une expérience professionnelle réussie en tant que développeur pour [Hitachi](https://www.hitachi.com/en/)
-en Australie
+:star: Une expérience professionnelle réussie en tant que développeur pour Hitachi en Australie
 
 {{< alert "globe" >}}
 Développement Personnel, Anglais, Adaptation, Négociation, Résilience, Ouverture d'esprit
