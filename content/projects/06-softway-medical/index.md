@@ -5,7 +5,7 @@ slug: "Softway-Medical"
 description: "Description de ma mission pour Softway Medical."
 summary: "Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en concevant et développant des applications métier et des microservices sur mesure pour les professionnels de santé."
 # categories: [""]
-tags: ["Santé", "Java", "Spring Boot", "jHipster", "Quarkus", "TypeScript", "Vue.js", "API REST", "SQL", "NoSQL", "TDD", "GitLab CI/CD", "Méthodologie SCRUM", "DevOps"]
+tags: ["Santé", "Java", "Spring Boot", "jHipster", "Quarkus", "TypeScript", "Vue.js", "API REST", "SQL", "NoSQL", "TDD", "GitLab CI/CD", "Méthodologie Scrum", "DevOps"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Softway Medical"
 cover: "logo.svg"
@@ -16,18 +16,18 @@ coverAlt: "Softway Medical"
 Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en concevant et développant des applications métier et des microservices sur mesure pour les professionnels de santé.
 {{< /lead >}}
 
-## :light_bulb: Contexte & Mission
+## :dart: Mes contributions
 
-* Conception et développement d’applications web et de microservices spécialisés dans le but d’améliorer
+* Concevoir et développer des applications web et de microservices spécialisés dans le but d’améliorer
 le suivi des patients, la gestion des soins et le travail des professionnels de santé dans les hôpitaux
-* Impliqué dans toutes les étapes des projets : des premiers entretiens utilisateurs au déploiement en production
-en passant par la phase de conception et des décisions d’architecture
-* Garant du respect des bonnes pratiques de conception et de développement
-* Participation active au processus de recrutement de nouveaux développeurs
+* S'impliquer et prendre part aux décisions dans toutes les étapes des projets : des premiers ateliers de conception 
+avec les utilisateurs finaux en passant par les choix d'architecture jusqu'au déploiement en production
+* Garantir le respect des bonnes pratiques de conception et de développement
+* Participer activement au processus de recrutement de nouveaux développeurs
 
-:star: Contribution active à la conception et au développement d'un
-[module suivi de plaies](https://www.softwaymedical.fr/temoignage/module-suivi-de-plaies-centre-richelieu)
+:star: Exemple de réalisation avec un [module suivi de plaies](https://www.softwaymedical.fr/temoignage/module-suivi-de-plaies-centre-richelieu)
 
 {{< alert "codepen" >}}
-Java, Spring Boot, jHipster, Quarkus, TypeScript, Vue.js, API REST, SQL, NoSQL, TDD, GitLab CI/CD, Méthodologie SCRUM, DevOps
+Java, Spring Boot, jHipster, Quarkus, TypeScript, Vue.js, API REST, SQL, NoSQL, TDD, GitLab CI/CD, Méthodologie Scrum,
+DevOps
 {{< /alert >}}
