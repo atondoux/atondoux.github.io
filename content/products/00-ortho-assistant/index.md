@@ -16,12 +16,27 @@ coverAlt: "Ortho Assistant"
 Aider les orthophonistes à optimiser les séances avec leurs patients.
 {{< /lead >}}
 
+## :light_bulb: Le projet
+
+Ayant plusieurs orthophonistes dans mon entourage, l'idée de ce projet est née d'un constat simple : 
+les orthophonistes passent beaucoup de temps à chercher leur matériel, quand les séances s'enchaînent tout au long
+de la journée, ils ont besoin de se concentrer sur leurs patients et non sur des problèmes de logistique.
+
+L'idée était donc de mettre à contribution mes compétences en développement pour créer un outil qui leur permettrait,
+au moment où ils s'apprêtent à recevoir un patient, de retrouver facilement le matériel le plus pertinent et
+le plus efficace pour le patient en question.
+
+L'objectif d'Ortho Assistant : un gain de temps et de charge mentale pour les orthophonistes et donc plus de temps
+à consacrer à leurs patients avec une meilleure prise en charge.
+
 ## :warning: Disclaimer
 
-Lorsque ce projet a été déployé en production, il a compté environ 35 orthophonistes beta testeurs.
-Faute de temps pour faire évoluer le produit et de feedback de la part des utilisateurs finaux, le service n'est plus disponible aujourd'hui.
-La création de ce SaaS fut riche en enseignements, tant sur le plan technique que sur le plan marketing, une refonte est à l'étude pour apporter
-un service encore meilleur. Le code source est disponible sur [GitLab](https://gitlab.com/atondoux/orthoassistant)
+Lorsque Ortho Assistant a été déployé en production, il a compté quelques dizaines d'orthophonistes bêta-testeurs.
+Faute de temps pour faire évoluer le produit et de feedback de la part des utilisateurs, le service n'est
+malheureusement plus disponible aujourd'hui.
+
+La création de ce SaaS fut riche d'enseignements, tant sur le plan technique que sur le plan marketing,
+une refonte est à l'étude pour apporter un service encore meilleur.
 
 ## :mag: Aperçu
 
@@ -34,19 +49,19 @@ caption="La recherche intelligente"
 {{< figure
 src="02-liste-materiel-v1.png"
 alt="La liste du matériel dans Ortho Assistant"
-caption="L'inventaire de l'orthophoniste"
+caption="L'inventaire augmenté"
 >}}
 <br>
 {{< figure
 src="03-liste-pathologies-v1.png"
 alt="La liste des pathologies dans Ortho Assistant"
-caption="Le référentiel de pathologies"
+caption="Le référentiel des pathologies"
 >}}
 <br>
 {{< figure
 src="04-liste-competences-v1.png"
 alt="La liste des compétences dans Ortho Assistant"
-caption="Le référentiel de compétences"
+caption="Le référentiel des compétences"
 >}}
 
 ## :health_worker: Les fonctionnalités
@@ -56,8 +71,8 @@ caption="Le référentiel de compétences"
 * Un référentiel de pathologies et de compétences entièrement personnalisable
 * Une gestion des emplacements du matériel pour le retrouver plus facilement
 
+:star: Code source disponible sur [GitLab](https://gitlab.com/atondoux/orthoassistant)
+
 {{< alert "codepen" >}}
 Santé, SaaS, JHipster, Vue.js
 {{< /alert >}}
-
-
