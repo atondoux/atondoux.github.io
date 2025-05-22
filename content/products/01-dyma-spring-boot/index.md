@@ -19,9 +19,24 @@ niveau entreprise.
 Cette formation complète est accessible sur [Dyma](https://dyma.fr/formations/spring-boot).
 {{< /lead >}}
 
+## :light_bulb: Le projet
+
+Cette formation s'adresse à des développeurs débutants ou expérimentés et offre l'opportunité de découvrir
+une stack de référence pour développer des applications web et des microservices de niveau entreprise.
+
+Après avoir échangé avec les co-fondateurs de Dyma, j'ai été convaincu par leur vision et
+leur approche pédagogique. La plateforme mise avant tout sur la qualité du contenu en ne proposant qu'une seule
+formation par sujet. Chaque formation est suivie et maintenue par son créateur.
+
+Après des mois de travail, je suis fier d'avoir relevé le challenge ! Publier cette formation
+m'a appris que former, ça forme aussi le formateur :slightly_smiling_face: Je ne suis pas près d'oublier
+la première fois où j'ai appuyé sur le bouton *rec* pour enregistrer les premières leçons.
+
+Merci à l'équipe [Dyma](https://dyma.fr/) pour sa confiance. 
+
 ## :bar_chart: Chiffres clés
 
-Les étudiants ont passé un temps total de plus de **4000 heures** sur la formation, avec une note moyenne de **4.6/5**.
+Les étudiants ont passé au total plus de **4000 heures** sur la formation, avec une note moyenne de **4.6/5**.
 
 {{< chart >}}
 type: 'bar',
@@ -48,18 +63,20 @@ borderColor: [
 
 ## :teacher: Au programme
 
-* Apprenez les bases d'une architecture applicative en couches : structurez vos projets Java efficacement avec Spring
+* **Apprenez les bases d'une architecture applicative en couches** : structurez vos projets Java efficacement avec Spring
   Boot.
-* Utilisez toute la puissance de Spring Data pour gérer facilement vos entités et vos bases de données.
-* Mettez en place une gestion des erreurs et une validation des données robuste pour garantir la fiabilité de votre
+* **Utilisez toute la puissance de Spring Data** pour gérer facilement vos entités et vos bases de données.
+* **Mettez en place une gestion des erreurs** et une validation des données robuste pour garantir la fiabilité de votre
   application.
-* Packagez et déployez votre application sur le Cloud en utilisant Docker et des outils de déploiement modernes.
-* Apprenez à développer une API REST avec des contrôleurs Spring MVC et une gestion optimale des routes.
-* Sécurisez votre application avec Spring Security pour une gestion fine de l'authentification et des autorisations.
-* Validez votre application grâce à une suite complète de tests automatisés, incluant tests unitaires et tests
+* **Packagez et déployez votre application sur le Cloud** en utilisant Docker et des outils de déploiement modernes.
+* **Apprenez à développer une API REST** avec des contrôleurs Spring MVC et une gestion optimale des routes.
+* **Sécurisez votre application avec Spring Security** pour une gestion fine de l'authentification et des autorisations.
+* **Validez votre application** grâce à une suite complète de tests automatisés, incluant tests unitaires et tests
   d'intégration.
-* Profitez de cette formation pour découvrir des bonnes pratiques de développement telles que le Clean Code et les
+* **Profitez de cette formation** pour découvrir des bonnes pratiques de développement telles que le Clean Code et les
   principes SOLID.
+
+:star: Formation disponible sur le site de [Dyma](https://dyma.fr/formations/spring-boot).
 
 {{< alert "codepen" >}}
 Formation, Java, Spring Boot, API REST, Tests Automatisés
