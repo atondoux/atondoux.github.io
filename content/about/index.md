@@ -30,21 +30,24 @@ Les outils avec lesquels je travaille au quotidien. La liste ne cesse de s'agran
 | **:laptop: Langages**           | `Java`, `Kotlin`, `TypeScript`, `SQL`                                                                                            |
 | **:tools: Frameworks**          | `Spring Boot`, `Quarkus`, `JHipster`, `Vue.js`                                                                                   |
 | **:cloud: Cloud & DevOps**      | `Microservices`, `Gitlab CI/CD`, `Docker`, `OpenShift`                                                                           |
-| **:test_tube: Testing**         | `JUnit`, `AssertJ`, `Mockito`, `Jest`, `Cypress`, `Gatling`                                                                      |
+| **:test_tube: Testing**         | `JUnit`, `AssertJ`, `Mockito`, `Kotest`, `Jest`, `Cypress`, `Gatling`                                                            |
 | **:school: Veille & Formation** | `Architecture Hexagonale`, `React`, `React Native`, `Flutter`, `Node.js`, `NestJS`, `Behavior Driven Development`, `NoEstimates` |
 | **:speaking_head: Langues**     | `Français : langue maternelle`, `Anglais : courant`                                                                              |
 
 ## :mag: Ma façon de travailler
 
 Je considère que pour développer une application de qualité, il faut s'assurer de bien comprendre le métier sous-jacent.
-C'est la raison pour laquelle je concentre toujours mes efforts sur **la compréhension de votre métier, de vos enjeux et de vos objectifs**.
+C'est la raison pour laquelle je concentre toujours mes efforts sur **la compréhension de votre métier, 
+de vos enjeux et de vos objectifs** avant de concevoir des solutions techniques.
+
 Je m'assure de bien avoir saisi le **pourquoi** avant d'utiliser mes compétences techniques à résoudre le **comment**.
 
-Je développe des produits en mettant l'accent sur **la qualité, la maintenabilité et l'évolutivité**. Je mets en avant les bonnes pratiques
-et les standards de notre industrie comme la **Clean Architecture** et le **Test Driven Development**.
+Je développe des produits en mettant l'accent sur **la qualité, la maintenabilité et l'évolutivité**.
+Je mets en avant les bonnes pratiques et les standards de notre industrie comme la **Clean Architecture**
+et le **Test Driven Development**.
 
-Cela signifie que mon travail peut être repris par tout développeur expérimenté. L'ensemble des livrables que je fournis sont
-intégralement testés et documentés.
+Cela signifie que mon travail peut être repris par tout développeur expérimenté. **L'ensemble des livrables
+que je fournis est intégralement testé et documenté**.
 
 Grâce à cette approche, je suis en mesure de développer **des applications sur mesure, pérennes et évolutives**.
 
@@ -60,13 +63,14 @@ apprentissage de nouveaux langages et frameworks, découverte de nouvelles méth
 
 ## :robot: Mon usage de l'IA
 
-Depuis quelques années, l'IA s'est invitée dans l'industrie du logiciel.
+Depuis quelques années, l'IA s'est invitée dans l'industrie du logiciel, est devenue quasi incontournable
+et a changé la façon de créer des logiciels.
 
 Pour ma part, **j'utilise l'IA en tant que super assistant**, uniquement sur des sujets sur lesquels je suis capable
 d'avoir un regard critique sur les propositions générées.
 
-Bien que cette aide apporte des gains intéressants, notamment en termes de productivité, la qualité et la maintenabilité
-des solutions que je propose passent avant tout.
+Bien que cette aide apporte des gains intéressants, notamment en termes de productivité, la qualité
+et la maintenabilité des solutions que je vous propose passent avant tout.
 
 ## :handshake: Intéressé ? Discutons collaboration !
 
