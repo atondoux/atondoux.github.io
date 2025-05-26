@@ -22,7 +22,7 @@ de services de confiance qualifiés.
 * Enrichir de nouvelles fonctionnalités et corriger les anomalies de la plateforme permettant la gestion
 de parcours d'acquisition clients personnalisés avec de la vérification d'identité, de la signature électronique et
 de la soumission de documents
-* Intégrer l'API de signature électronique de [Yousign](https://yousign.com/)
+* Intégrer l'API de signature électronique de [Yousign](https://yousign.com/fr-fr/)
 * Orchestrer des services de vérification de documents et de détection de fraude
 
 {{< alert "codepen" >}}

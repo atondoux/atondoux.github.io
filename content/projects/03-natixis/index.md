@@ -25,5 +25,6 @@ Améliorer l'ergonomie et l'efficacité du CRM utilisé par le département des 
 * Contribuer à la documentation collaborative en rédigeant de la documentation technique
 
 {{< alert "codepen" >}}
-Java, Spring, Hibernate, JSF, jQuery, SQL, Tests Automatisés, Intégration Continue, Méthodologie Scrum
+Banque de financement et d'investissement, Java, Spring, Hibernate, JSF, jQuery, SQL,
+Tests Automatisés, Intégration Continue, Méthodologie Scrum
 {{< /alert >}}
