@@ -10,7 +10,7 @@ copyright = "&copy; 2025 Aurelien Tondoux"
   dateFormat = "2 January 2006"
 
   # mainSections = ["samples"]
-  description = "## description ##"
+  description = "Showcasing my software engineering journey, projects, products and achievements"
 
 [params.author]
   name = "Aurelien Tondoux"
