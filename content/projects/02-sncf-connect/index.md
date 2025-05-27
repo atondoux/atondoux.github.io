@@ -25,5 +25,5 @@ de la SNCF
 * Mettre en place des suites de tests automatisés en étroite collaboration avec l'équipe QA
 
 {{< alert "codepen" >}}
-Java, Spring, Services Web (CXF), SQL, Tests Automatisés, Intégration Continue, Méthodologie Scrum
+Mobilités Durables, Java, Spring, Services Web (CXF), SQL, Tests Automatisés, Intégration Continue, Méthodologie Scrum
 {{< /alert >}}

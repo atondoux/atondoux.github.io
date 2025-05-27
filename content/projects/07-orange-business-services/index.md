@@ -24,5 +24,5 @@ poids lourds et autres engins afin d'aider les gestionnaires de flotte à pilote
 * Accompagner et mentorer l'équipe vers des pratiques de Software Craftsmanship
 
 {{< alert "codepen" >}}
-Java, Spring, API REST, SQL, TDD, Intégration Continue, Méthodologie Scrum
+Gestion de flotte, Java, Spring, API REST, SQL, TDD, Intégration Continue, Méthodologie Scrum
 {{< /alert >}}

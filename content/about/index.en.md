@@ -12,8 +12,8 @@ and accessible to as many people as possible. This is truly what motivates me an
 
 I have contributed to large-scale projects for major companies such as
 [Veolia Water](https://www.veoliawatertechnologies.com/en/),
-[French Ministry of Health](https://sante.gouv.fr/),
-[SNCF Connect & Tech](https://www.sncf-connect-tech.fr/),
+[Ministry of Health](https://sante.gouv.fr/),
+[SNCF Connect & Tech](https://www.sncf-connect.com/en-en/),
 [Natixis](https://www.groupebpce.com/en/our-firms/natixis-corporate-investment-banking/),
 [Societe Generale](https://wholesale.banking.societegenerale.com/en/),
 [Softway Medical](https://www.groupesoftwaymedical.com/en/),

@@ -5,7 +5,7 @@ slug: "Veolia-Eau"
 description: "Description de ma mission pour Veolia Eau."
 summary: "Assurer la distribution de l'eau en Île-de-France en construisant des applications internet riches."
 # categories: [""]
-tags: ["Services publics", "Java" , "Services Web (SOAP)", "JavaScript", "SQL", "Méthodologie Cycle en V"]
+tags: ["Services publics", "Java", "Services Web (SOAP)", "JavaScript", "SQL", "Méthodologie Cycle en V"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Veolia Eau"
 cover: "logo.svg"
@@ -24,5 +24,5 @@ en Île-de-France (plus de 500 000 contrats) à l’aide d’un framework spéci
 * Rédiger des spécifications techniques, des manuels de génération de livrables et des procédures de déploiement
 
 {{< alert "codepen" >}}
-Java , Services Web (SOAP), JavaScript, SQL, Méthodologie Cycle en V
+Services publics, Java, Services Web (SOAP), JavaScript, SQL, Méthodologie Cycle en V
 {{< /alert >}}

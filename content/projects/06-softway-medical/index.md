@@ -26,6 +26,7 @@ avec les utilisateurs finaux en passant par les choix d'architecture jusqu'au d�
 * Participer activement au processus de recrutement de nouveaux développeurs
 
 :star: Exemple de réalisation avec un [module suivi de plaies](https://www.softwaymedical.fr/temoignage/module-suivi-de-plaies-centre-richelieu)
+conçu et développé en collaboration avec des professionnels de santé.
 
 {{< alert "codepen" >}}
 Java, Spring Boot, jHipster, Quarkus, TypeScript, Vue.js, API REST, SQL, NoSQL, TDD, GitLab CI/CD, Méthodologie Scrum,
