@@ -3,5 +3,5 @@ title: "Products"
 ---
 
 {{< lead >}}
-My products
+My creations
 {{< /lead >}}
