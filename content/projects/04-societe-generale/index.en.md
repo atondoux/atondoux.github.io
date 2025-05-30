@@ -16,7 +16,7 @@ coverAlt: "Societe Generale"
 Enhancing the reliability of the strategic margin calculation application dedicated to financial product sales teams.
 {{< /lead >}}
 
-## :dart: My Contributions
+## :dart: Things I've done
 
 * Add new features and fix issues in the application used for processing and reporting margins
 achieved by financial product sales teams across the bank

@@ -17,7 +17,7 @@ Enabling faster, more efficient compensation for medical accident victims throug
 of all procedures for [ONIAM](https://www.oniam.fr/).
 {{< /lead >}}
 
-## :dart: My contributions
+## :dart: Things I've done
 
 * Design and develop a web application from scratch for ONIAM 
 (National Office for the Compensation of Medical Accidents) to efficiently manage compensation procedures

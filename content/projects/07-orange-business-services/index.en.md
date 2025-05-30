@@ -17,7 +17,7 @@ Contributing to cost reduction for company vehicles by revamping the maintenance
 of the connected vehicle tracking platform [Ocean](https://ocean.orange-business.com/).
 {{< /lead >}}
 
-## :dart: My Contributions
+## :dart: Things I've done
 
 * Redesign the feature for precise tracking of vehicle usage rates, including heavy vehicles and machinery,
 to assist fleet managers in monitoring and analyzing team activities

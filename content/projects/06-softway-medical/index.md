@@ -16,7 +16,7 @@ coverAlt: "Softway Medical"
 Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en concevant et développant des applications métier et des microservices sur mesure pour les professionnels de santé.
 {{< /lead >}}
 
-## :dart: Mes contributions
+## :dart: Mes réalisations
 
 * Concevoir et développer des applications web et de microservices spécialisés dans le but d’améliorer
 le suivi des patients, la gestion des soins et le travail des professionnels de santé dans les hôpitaux

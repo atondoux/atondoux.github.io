@@ -16,7 +16,7 @@ coverAlt: "Veolia Water"
 Supporting water distribution in Paris area by developing rich internet applications.
 {{< /lead >}}
 
-## :dart: My contributions
+## :dart: Things I've done
 
 * Design and implement business applications to support water distribution management in Paris area
 (serving over 500.000 contracts) using an in-house rapid development framework

@@ -16,7 +16,7 @@ coverAlt: "Veolia Eau"
 Assurer la distribution de l'eau en Île-de-France en construisant des applications internet riches.
 {{< /lead >}}
 
-## :dart: Mes contributions
+## :dart: Mes réalisations
 
 * Prendre en charge le développement d’applications métier permettant la gestion de la distribution de l’eau
 en Île-de-France (plus de 500 000 contrats) à l’aide d’un framework spécifique de développement rapide

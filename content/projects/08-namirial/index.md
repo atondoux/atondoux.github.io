@@ -17,7 +17,7 @@ Faciliter la vie quotidienne en rendant plus fluide les parcours de souscription
 de services de confiance qualifiés.
 {{< /lead >}}
 
-## :dart: Mes contributions
+## :dart: Mes réalisations
 
 * Enrichir de nouvelles fonctionnalités et corriger les anomalies de la plateforme permettant la gestion
 de parcours d'acquisition clients personnalisés avec de la vérification d'identité, de la signature électronique et

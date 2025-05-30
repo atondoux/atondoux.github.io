@@ -16,10 +16,10 @@ coverAlt: "Namirial"
 Making daily life easier by streamlining subscription workflows managed by a qualified trust services platform.
 {{< /lead >}}
 
-## :dart: My Contributions
+## :dart: Things I've done
 
-* Develop and enhance platform features to streamline customer acquisition workflows, covering identity verification, 
-electronic signatures, and document submission 
+* Expand platform features to streamline customer acquisition workflows, covering identity verification, 
+electronic signature, and document submission 
 * Integrate [Yousign](https://yousign.com/) secure electronic signature API
 * Orchestrate document verification and fraud detection services
 

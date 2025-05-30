@@ -16,7 +16,7 @@ coverAlt: "SNCF Connect & Tech"
 Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train [SNCF Connect](https://www.sncf-connect.com/).
 {{< /lead >}}
 
-## :dart: Mes contributions
+## :dart: Mes réalisations
 
 * Ajouter de nouvelles fonctionnalités et corriger les anomalies du service européen de réservation de billets de train
 de la SNCF

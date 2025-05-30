@@ -16,7 +16,7 @@ coverAlt: "Natixis"
 Améliorer l'ergonomie et l'efficacité du CRM utilisé par le département des marchés boursiers.
 {{< /lead >}}
 
-## :dart: Mes contributions
+## :dart: Mes réalisations
 
 * Refondre le CRM utilisé par les vendeurs et les analystes du département Equity Markets
 * Planifier, concevoir et implémenter de nouveaux composants côté backend et côté frontend
