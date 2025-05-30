@@ -16,7 +16,7 @@ coverAlt: "Ortho Assistant"
 Aider les orthophonistes à optimiser les séances avec leurs patients.
 {{< /lead >}}
 
-## :light_bulb: Le projet
+## :light_bulb: Le produit
 
 Ayant plusieurs orthophonistes dans mon entourage, l'idée de ce projet est née d'un constat simple : 
 les orthophonistes passent beaucoup de temps à chercher leur matériel, quand les séances s'enchaînent tout au long
