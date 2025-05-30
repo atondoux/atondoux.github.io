@@ -30,19 +30,19 @@ par le **développement de fonctionnalités côté backend et côté frontend** 
 en production.
 {{< /alert >}}
 
-## :man_technologist_tone1: Pair programming, code review, conseils & audit
+## :man_technologist_tone1: Revue de code, pair programming, conseils et audit
 {{< badge >}}
 Devis sur demande
 {{< /badge >}}
 
-Vous cherchez à améliorer vos pratiques de développement ? Vous souhaitez faire l'état des lieux de votre application
-et explorer les améliorations possibles ?
+Vous souhaitez faire l'état des lieux de votre application et explorer les améliorations possibles ?
+Vous cherchez à améliorer vos pratiques de développement ?
 
 {{< alert "circle-info">}}
-Je peux mettre à contribution mes compétences en **Test Driven Development** pour vous assister et vous aider
-sur vos projets. L'idée est de programmer des séances de travail en binôme, au rythme qui vous convient,
-directement sur vos projets. En complément, je vous proposerai une **revue de code** poussée avec un focus particulier
-sur la qualité de code.
+Je mets à profit mes compétences en **Software Craftsmanship** et **Test Driven Development**
+pour vous accompagner sur vos projets. J'interviens lors de prestations ponctuelles ou de séances de travail
+personnalisées, en fonction de vos besoins. Une attention particulière est portée aux **bonnes pratiques**
+et à la **qualité**.
 {{< /alert >}}
 
 ## :euro: Mes tarifs
