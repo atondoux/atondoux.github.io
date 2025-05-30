@@ -32,7 +32,7 @@ Les outils avec lesquels je travaille au quotidien. La liste ne cesse de s'agran
 | **:cloud: Cloud & DevOps**      | Microservices, Gitlab CI/CD, Docker, OpenShift                                                                   |
 | **:test_tube: Testing**         | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                                          |
 | **:school: Veille & Formation** | Architecture Hexagonale, React, React Native, Flutter, Node.js, NestJS, Behavior Driven Development, NoEstimates |
-| **:speaking_head: Langues**     | Français : langue maternelle <br> Anglais : courant                                                             |
+| **:speaking_head: Langues**     | Français : langue maternelle <br> Anglais : courant                                                              |
 
 ## :mag: Ma façon de travailler
 
@@ -69,8 +69,8 @@ et a changé la façon de créer des logiciels.
 Pour ma part, **j'utilise l'IA en tant que super assistant**, uniquement sur des sujets sur lesquels je suis capable
 d'avoir un regard critique sur les propositions générées.
 
-Bien que cette aide apporte des gains intéressants, notamment en termes de productivité, la qualité
-et la maintenabilité des solutions que je vous propose passent avant tout.
+Bien que cette aide apporte des gains de productivité intéressants, je ne sacrifierai jamais la qualité 
+des solutions que je vous propose.
 
 ## :handshake: Intéressé ? Discutons collaboration !
 
