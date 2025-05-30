@@ -24,15 +24,15 @@ ou encore [Namirial](https://www.namirial.com/fr/).
 
 Les outils avec lesquels je travaille au quotidien. La liste ne cesse de s'agrandir.
 
-|                                 |                                                                                                                                  |
-|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| **:clipboard:️ Méthodes**       | `Software Craftsmanship`, `Clean Architecture`, `Clean Code`, `Test Driven Development`, `Domain Driven Development`             |
-| **:laptop: Langages**           | `Java`, `Kotlin`, `TypeScript`, `SQL`                                                                                            |
-| **:tools: Frameworks**          | `Spring Boot`, `Quarkus`, `JHipster`, `Vue.js`                                                                                   |
-| **:cloud: Cloud & DevOps**      | `Microservices`, `Gitlab CI/CD`, `Docker`, `OpenShift`                                                                           |
-| **:test_tube: Testing**         | `JUnit`, `AssertJ`, `Mockito`, `Kotest`, `Jest`, `Cypress`, `Gatling`                                                            |
-| **:school: Veille & Formation** | `Architecture Hexagonale`, `React`, `React Native`, `Flutter`, `Node.js`, `NestJS`, `Behavior Driven Development`, `NoEstimates` |
-| **:speaking_head: Langues**     | `Français : langue maternelle`, `Anglais : courant`                                                                              |
+|                                 |                                                                                                                  |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------|
+| **:clipboard:️ Méthodes**       | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Development       |
+| **:laptop: Langages**           | Java, Kotlin, TypeScript, SQL                                                                                    |
+| **:tools: Frameworks**          | Spring Boot, Quarkus, JHipster, Vue.js                                                                           |
+| **:cloud: Cloud & DevOps**      | Microservices, Gitlab CI/CD, Docker, OpenShift                                                                   |
+| **:test_tube: Testing**         | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                                          |
+| **:school: Veille & Formation** | Architecture Hexagonale, React, React Native, Flutter, Node.js, NestJS, Behavior Driven Development, NoEstimates |
+| **:speaking_head: Langues**     | Français : langue maternelle <br> Anglais : courant                                                             |
 
 ## :mag: Ma façon de travailler
 
