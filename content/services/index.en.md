@@ -29,18 +29,18 @@ from **design workshops** with end-users and business experts,
 to **feature development on both backend and frontend side**, and finally to **deployment** and production monitoring.
 {{< /alert >}}
 
-## :man_technologist_tone1: Pair Programming, Code Review, Consulting & Audits
+## :man_technologist_tone1: Code review, pair programming, consulting and audit
 {{< badge >}}
 Quote available on request
 {{< /badge >}}
 
-Are you looking to improve your development practices? Do you want to evaluate your application
-and explore possible improvements?
+Do you want to evaluate your application and explore possible improvements? Are you looking to improve
+your development practices? 
 
 {{< alert "circle-info">}}
-I can leverage my expertise in **Test-Driven Development** to assist and support you on your projects.
-The idea is to schedule hands-on pair programming sessions at a pace that suits you, directly on your projects.
-Additionally, I can provide an in-depth **code review** with a particular focus on code quality.
+As a **Software Craftsmanship** and **Test-Driven Development** advocate, I can support you on your projects.
+I can provide one-off services or personalized working sessions tailored to your needs, with a strong focus
+on **best practices** and **quality**.
 {{< /alert >}}
 
 ## :euro: My Rates
