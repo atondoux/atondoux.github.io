@@ -67,8 +67,7 @@ and reshaping development practices.
 As for me, **AI serves as a powerful assistant**, but only for topics where I am capable of critically evaluating
 the generated suggestions.
 
-While this offers a significant productivity boost, I will never compromise on the quality and maintainability
-of the solutions I deliver.
+While this offers a significant productivity boost, I will never compromise on the quality of the solutions I deliver.
 
 ## :handshake: Interested? Let’s discuss collaboration!
 
