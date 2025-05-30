@@ -29,7 +29,7 @@ Vous êtes à la recherche d'un expert pour :
 
 Si vous souhaitez en savoir plus, n'hésitez pas à me contacter afin que l'on trouve le meilleur moyen de travailler ensemble :handshake:
 
-<div class="d-flex justify-content-between">
+<div style="text-align:center">
 {{< button href="https://calendly.com/atondoux/15min" target="_blank">}}
 Contactez-moi {{< icon "mobile" >}}
 {{< /button >}}
