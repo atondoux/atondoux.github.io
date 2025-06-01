@@ -17,7 +17,11 @@ Improving patient care and hospital operations through the design and developmen
 and microservices for healthcare professionals.
 {{< /lead >}}
 
-## :dart: My Contributions
+## :necktie: My role
+
+Full-stack Tech Lead
+
+## :dart: My actions
 
 * Create and deliver tailored web applications and microservices that optimize patient care
 and support healthcare professionals

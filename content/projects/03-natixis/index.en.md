@@ -16,7 +16,11 @@ coverAlt: "Natixis"
 Improving the user experience of the CRM used by the stock market division.
 {{< /lead >}}
 
-## :dart: My Contributions
+## :necktie: My role
+
+Software Engineer
+
+## :dart: My actions
 
 * Revamp the CRM to significantly improve the user experience for salespeople and analysts in the
 Equity Markets department

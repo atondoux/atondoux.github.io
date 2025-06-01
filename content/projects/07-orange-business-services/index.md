@@ -16,7 +16,11 @@ coverAlt: "Orange Business Services"
 Aider à réduire les coûts liés aux véhicules d'entreprise en contribuant à la refonte de la gestion des entretiens de la plateforme de suivi de véhicules connectés [Océan](https://ocean.orange-business.com/).
 {{< /lead >}}
 
-## :dart: Mes contributions
+## :necktie: Mon rôle
+
+Tech Lead Backend
+
+## :dart: Mes actions
 
 * Réécrire la fonctionnalité permettant de suivre avec précision le taux d'utilisation des véhicules,
 poids lourds et autres engins afin d'aider les gestionnaires de flotte à piloter et analyser l'activité de leurs équipes
