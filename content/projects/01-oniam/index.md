@@ -16,7 +16,11 @@ coverAlt: "Ministère de la Santé"
 Simplifier et accélérer l'indemnisation des victimes d'accidents médicaux en dématérialisant l'ensemble des procédures de [l'ONIAM](https://www.oniam.fr/).
 {{< /lead >}}
 
-## :dart: Mes contributions
+## :necktie: Mon rôle
+
+Ingénieur Etudes et Développement
+
+## :dart: Mes actions
 
 * Concevoir et développer une toute nouvelle application web pour le compte de l’ONIAM
 (Organisme National d’Indemnisation des Accidents Médicaux) permettant le traitement des procédures d’indemnisation

@@ -16,7 +16,11 @@ coverAlt: "Namirial"
 Making daily life easier by streamlining subscription workflows managed by a qualified trust services platform.
 {{< /lead >}}
 
-## :dart: My Contributions
+## :necktie: My role
+
+Backend Tech Lead
+
+## :dart: My actions
 
 * Develop and enhance platform features to streamline customer acquisition workflows, covering identity verification, 
 electronic signatures, and document submission 

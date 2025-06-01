@@ -17,7 +17,11 @@ Making travel easier by adding new features to the [SNCF Connect](https://www.sn
 booking platform.
 {{< /lead >}}
 
-## :dart: My contributions
+## :necktie: My role
+
+Software Engineer
+
+## :dart: My actions
 
 * Add new features and fix issues in the European train ticket booking service of SNCF
 * Perform detailed analysis of the reservation engine (Yield management)
