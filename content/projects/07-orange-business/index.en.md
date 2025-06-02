@@ -1,15 +1,15 @@
 ---
-title: "Orange Business Services"
+title: "Orange Business"
 date: 2023-01-01
-slug: "Orange-Business-Services"
-description: "Description of my mission for Orange Business Services."
+slug: "Orange-Business"
+description: "Description of my mission for Orange Business."
 summary: "Contributing to cost reduction for company vehicles by revamping the maintenance management system of the connected vehicle tracking platform [Ocean](https://ocean.orange-business.com/)."
 # categories: [""]
 tags: ["Fleet Management", "Java", "Spring", "REST API", "SQL", "TDD", "Continuous Integration", "Scrum Methodology"]
 thumbnail: "logo.svg"
-thumbnailAlt: "Orange Business Services"
+thumbnailAlt: "Orange Business"
 cover: "logo.svg"
-coverAlt: "Orange Business Services"
+coverAlt: "Orange Business"
 ---
 
 {{< lead >}}

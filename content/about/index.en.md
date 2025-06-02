@@ -17,7 +17,7 @@ I have contributed to large-scale projects for major companies such as
 [Natixis](https://www.groupebpce.com/en/our-firms/natixis-corporate-investment-banking/),
 [Societe Generale](https://wholesale.banking.societegenerale.com/en/),
 [Softway Medical](https://www.groupesoftwaymedical.com/en/),
-[Orange Business Services](https://www.orange-business.com/en/),
+[Orange Business](https://www.orange-business.com/en/),
 and [Namirial](https://www.namirial.com/en/).
 
 ## :gear: My ecosystem
