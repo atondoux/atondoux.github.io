@@ -3,7 +3,7 @@ title: "Softway Medical"
 date: 2015-01-01
 slug: "Softway-Medical"
 description: "Description of my mission for Softway Medical."
-summary: "Improving patient care and hospital operations through the design and development of bespoke business applications and microservices for healthcare professionals."
+summary: "Driving improvements in patient care and hospital efficiency through purpose-built digital solutions for healthcare professionals."
 # categories: [""]
 tags: ["Healthcare", "Java", "Spring Boot", "jHipster", "Quarkus", "TypeScript", "Vue.js", "REST API", "SQL", "NoSQL", "TDD", "GitLab CI/CD", "Scrum Methodology", "DevOps"]
 thumbnail: "logo.svg"
@@ -13,8 +13,8 @@ coverAlt: "Softway Medical"
 ---
 
 {{< lead >}}
-Improving patient care and hospital operations through the design and development of bespoke business applications
-and microservices for healthcare professionals.
+Driving improvements in patient care and hospital efficiency through purpose-built digital solutions
+for healthcare professionals.
 {{< /lead >}}
 
 ## :necktie: My role
@@ -34,5 +34,6 @@ to architectural decisions and production deployment
 in collaboration with healthcare professionals.
 
 {{< alert "codepen" >}}
-Healthcare, Java, Spring Boot, jHipster, Quarkus, TypeScript, Vue.js, REST API, SQL, NoSQL, TDD, GitLab CI/CD, Scrum Methodology, DevOps
+Healthcare, Java, Spring Boot, jHipster, Quarkus, TypeScript, Vue.js, REST API, SQL, NoSQL, TDD, GitLab CI/CD,
+Scrum Methodology, DevOps
 {{< /alert >}}

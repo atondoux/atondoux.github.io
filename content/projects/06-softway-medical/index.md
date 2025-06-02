@@ -3,7 +3,7 @@ title: "Softway Medical"
 date: 2015-01-01
 slug: "Softway-Medical"
 description: "Description de ma mission pour Softway Medical."
-summary: "Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en concevant et développant des applications métier et des microservices sur mesure pour les professionnels de santé."
+summary: "Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé de produits numériques sur mesure."
 # categories: [""]
 tags: ["Santé", "Java", "Spring Boot", "jHipster", "Quarkus", "TypeScript", "Vue.js", "API REST", "SQL", "NoSQL", "TDD", "GitLab CI/CD", "Méthodologie Scrum", "DevOps"]
 thumbnail: "logo.svg"
@@ -13,7 +13,8 @@ coverAlt: "Softway Medical"
 ---
 
 {{< lead >}}
-Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en concevant et développant des applications métier et des microservices sur mesure pour les professionnels de santé.
+Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant
+les professionnels de santé de produits numériques sur mesure.
 {{< /lead >}}
 
 ## :necktie: Mon rôle
