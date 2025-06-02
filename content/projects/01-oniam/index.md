@@ -5,7 +5,7 @@ slug: "Ministere-De-La-Sante"
 description: "Description de ma mission pour le Ministère de la Santé."
 summary: "Simplifier et accélérer l'indemnisation des victimes d'accidents médicaux en dématérialisant l'ensemble des procédures de [l'ONIAM](https://www.oniam.fr/)."
 # categories: [""]
-tags: ["Services publics", "Java", "Spring", "Hibernate", "Services Web (REST)", "jBPM", "JSF", "SQL", "Tests Automatisés", "Intégration Continue", "Méthodologie Scrum"]
+tags: ["Services publics", "Java", "Spring", "Hibernate", "API REST", "jBPM", "JSF", "SQL", "Test Driven Development", "Intégration Continue", "Méthodologie Agile"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Ministère de la Santé"
 cover: "logo.svg"
@@ -31,5 +31,6 @@ Ingénieur Etudes et Développement
 * Rédiger la documentation technique et des guides de bonnes pratiques
 
 {{< alert "codepen" >}}
-Services Publics, Java, Spring, Hibernate, Services Web (REST), jBPM, JSF, SQL, Tests Automatisés, Intégration Continue, Méthodologie Scrum
+Services Publics, Java, Spring, Hibernate, API REST, jBPM, JSF, SQL, Test Driven Development,
+Intégration Continue, Méthodologie Agile
 {{< /alert >}}

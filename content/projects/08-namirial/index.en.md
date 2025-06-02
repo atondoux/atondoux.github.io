@@ -5,7 +5,7 @@ slug: "Namirial"
 description: "Description of my mission for Namirial."
 summary: "Making daily life easier by streamlining subscription workflows managed by a qualified trust services platform."
 # categories: [""]
-tags: ["KYC", "Kotlin", "Java", "Spring", "REST API", "SQL", "TDD", "Gitlab CI/CD"]
+tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring", "REST API", "SQL", "Test Driven Development", "Gitlab CI/CD"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Namirial"
 cover: "logo.svg"
@@ -16,17 +16,17 @@ coverAlt: "Namirial"
 Making daily life easier by streamlining subscription workflows managed by a qualified trust services platform.
 {{< /lead >}}
 
-## :necktie: My role
+## :necktie: My Role
 
 Backend Tech Lead
 
-## :dart: My actions
+## :dart: My Actions
 
 * Develop and enhance platform features to streamline customer acquisition workflows, covering identity verification, 
-electronic signatures, and document submission 
+electronic signature, and document submission 
 * Integrate [Yousign](https://yousign.com/) secure electronic signature API
 * Orchestrate document verification and fraud detection services
 
 {{< alert "codepen" >}}
-KYC, Kotlin, Java, Spring, REST API, SQL, TDD, Gitlab CI/CD
+KYC, Software Craftsmanship, Kotlin, Java, Spring, REST API, SQL, Test Driven Development, Gitlab CI/CD
 {{< /alert >}}

@@ -16,11 +16,11 @@ coverAlt: "Veolia Water"
 Supporting water distribution in Paris area by developing rich internet applications.
 {{< /lead >}}
 
-## :necktie: My role
+## :necktie: My Role
 
 Software Engineer
 
-## :dart: My actions
+## :dart: My Actions
 
 * Design and implement business applications to support water distribution management in Paris area
 (serving over 500.000 contracts) using an in-house rapid development framework

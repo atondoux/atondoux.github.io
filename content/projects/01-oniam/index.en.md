@@ -5,7 +5,7 @@ slug: "Ministry-of-Health"
 description: "Description of my mission for the Ministry of Health."
 summary: "Enabling faster, more efficient compensation for medical accident victims through the digitalization of all procedures for [ONIAM](https://www.oniam.fr/)."
 # categories: [""]
-tags: ["Public Services", "Java", "Spring", "Hibernate", "Web Services (REST)", "jBPM", "JSF", "SQL", "Automated Testing", "Continuous Integration", "Scrum Methodology"]
+tags: ["Public Services", "Java", "Spring", "Hibernate", "REST API", "jBPM", "JSF", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodology"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Ministry of Health"
 cover: "logo.svg"
@@ -17,11 +17,11 @@ Enabling faster, more efficient compensation for medical accident victims throug
 of all procedures for [ONIAM](https://www.oniam.fr/).
 {{< /lead >}}
 
-## :necktie: My role
+## :necktie: My Role
 
 Software Engineer
 
-## :dart: My actions
+## :dart: My Actions
 
 * Design and develop a web application from scratch for ONIAM 
 (National Office for the Compensation of Medical Accidents) to efficiently manage compensation procedures
@@ -32,5 +32,6 @@ electronic document management)
 * Write technical documentation and best practice guidelines for the team
 
 {{< alert "codepen" >}}
-Public Services, Java, Spring, Hibernate, Web Services (REST), jBPM, JSF, SQL, Automated Testing, Continuous Integration, Scrum Methodology
+Public Services, Java, Spring, Hibernate, REST API, jBPM, JSF, SQL, Test Driven Development,
+Continuous Integration, Agile Methodology
 {{< /alert >}}

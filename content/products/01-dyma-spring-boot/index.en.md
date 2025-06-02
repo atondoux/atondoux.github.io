@@ -5,7 +5,7 @@ slug: "Spring-Boot-Online-Course"
 description: "Description of the Spring Boot online course."
 summary: "Unlock the power of Spring Boot to build robust, enterprise-grade web applications and microservices. The full course is available now on [Dyma](https://dyma.fr/formations/spring-boot)."
 # categories: [""]
-tags: ["E-Learning", "Java", "Spring Boot", "REST API", "Automated Testing"]
+tags: ["E-Learning", "Java", "Spring Boot", "REST API", "Clean Code", "Automated Testing"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Spring Boot Online Course"
 cover: "logo.svg"
@@ -17,7 +17,7 @@ Unlock the power of Spring Boot to build robust, enterprise-grade web applicatio
 The full course is available now on [Dyma](https://dyma.fr/formations/spring-boot)\*.
 {{< /lead >}}
 
-## :light_bulb: About the product
+## :light_bulb: About the Product
 
 This course is intended for both beginners and experienced developers, offering the opportunity to discover
 a proven stack for building enterprise-grade web applications and microservices.
@@ -71,7 +71,7 @@ borderColor: [
 :star: Course available on [Dyma](https://dyma.fr/formations/spring-boot)\*.
 
 {{< alert "codepen" >}}
-E-Learning, Java, Spring Boot, REST API, Automated Testing
+E-Learning, Java, Spring Boot, REST API, Clean Code, Automated Testing
 {{< /alert >}}
 
 \**Course available in French only.*

@@ -5,7 +5,7 @@ slug: "Natixis"
 description: "Description of my mission for Natixis."
 summary: "Improving the user experience of the CRM used by the stock market division."
 # categories: [""]
-tags: ["Corporate and Investment Banking", "Java", "Spring", "Hibernate", "JSF", "jQuery", "SQL", "Automated Testing", "Continuous Integration", "Scrum Methodology"]
+tags: ["Corporate and Investment Banking", "Java", "Spring", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodology"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Natixis"
 cover: "logo.svg"
@@ -16,11 +16,11 @@ coverAlt: "Natixis"
 Improving the user experience of the CRM used by the stock market division.
 {{< /lead >}}
 
-## :necktie: My role
+## :necktie: My Role
 
 Software Engineer
 
-## :dart: My actions
+## :dart: My Actions
 
 * Revamp the CRM to significantly improve the user experience for salespeople and analysts in the
 Equity Markets department
@@ -30,5 +30,6 @@ Equity Markets department
 * Contribute to collaborative documentation by writing technical documentation
 
 {{< alert "codepen" >}}
-Corporate and Investment Banking, Java, Spring, Hibernate, JSF, jQuery, SQL, Automated Testing, Continuous Integration, Scrum Methodology
+Corporate and Investment Banking, Java, Spring, Hibernate, JSF, jQuery, SQL, Test Driven Development,
+Continuous Integration, Agile Methodology
 {{< /alert >}}

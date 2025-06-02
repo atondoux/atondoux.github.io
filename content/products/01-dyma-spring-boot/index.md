@@ -3,10 +3,9 @@ title: "Formation Spring Boot"
 date: 2024-04-01
 slug: "Formation-Spring-Boot"
 description: "Description de la formation Spring Boot."
-summary: "Découvrez Spring Boot, le framework open source incontournable pour créer des applications web et microservices de niveau entreprise.
-Cette formation complète est accessible sur [Dyma](https://dyma.fr/formations/spring-boot)."
+summary: "Découvrez Spring Boot, le framework open source incontournable pour créer des applications web et des microservices de niveau entreprise. Cette formation complète est accessible sur [Dyma](https://dyma.fr/formations/spring-boot)."
 # categories: [""]
-tags: [ "Formation", "Java", "Spring Boot", "API REST", "Tests Automatisés" ]
+tags: [ "Formation en ligne", "Java", "Spring Boot", "API REST", "Clean Code", "Tests Automatisés" ]
 thumbnail: "logo.svg"
 thumbnailAlt: "Formation Spring Boot"
 cover: "logo.svg"
@@ -14,9 +13,8 @@ coverAlt: "Formation Spring Boot"
 ---
 
 {{< lead >}}
-Découvrez Spring Boot, le framework open source incontournable pour créer des applications web et microservices de
-niveau entreprise.
-Cette formation complète est accessible sur [Dyma](https://dyma.fr/formations/spring-boot).
+Découvrez Spring Boot, le framework open source incontournable pour créer des applications web et des microservices de
+niveau entreprise. Cette formation complète est accessible sur [Dyma](https://dyma.fr/formations/spring-boot).
 {{< /lead >}}
 
 ## :light_bulb: Le produit
@@ -79,5 +77,5 @@ borderColor: [
 :star: Formation disponible sur le site de [Dyma](https://dyma.fr/formations/spring-boot).
 
 {{< alert "codepen" >}}
-Formation, Java, Spring Boot, API REST, Tests Automatisés
+Formation en ligne, Java, Spring Boot, API REST, Clean Code, Tests Automatisés 
 {{< /alert >}}

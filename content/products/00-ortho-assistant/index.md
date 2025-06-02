@@ -5,7 +5,7 @@ slug: "Ortho-Assistant"
 description: "Description du projet Ortho Assistant."
 summary: "Aider les orthophonistes à optimiser les séances avec leurs patients."
 # categories: [""]
-tags: ["Santé", "SaaS", "JHipster", "Vue.js"]
+tags: ["Santé", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "API REST", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "GitLab CI/CD", "Docker", "DevOps"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Ortho Assistant"
 cover: "logo.svg"
@@ -74,5 +74,6 @@ caption="Le référentiel des compétences"
 :star: Code source disponible sur [GitLab](https://gitlab.com/atondoux/orthoassistant)
 
 {{< alert "codepen" >}}
-Santé, SaaS, JHipster, Vue.js
+Santé, SaaS, Software Craftsmanship, Java, Spring Boot, JHipster, API REST, TypeScript, Vue.js, 
+SQL, Test Driven Development, GitLab CI/CD, Docker, DevOps
 {{< /alert >}}

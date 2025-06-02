@@ -5,7 +5,7 @@ slug: "Softway-Medical"
 description: "Description of my mission for Softway Medical."
 summary: "Driving improvements in patient care and hospital efficiency through purpose-built digital solutions for healthcare professionals."
 # categories: [""]
-tags: ["Healthcare", "Java", "Spring Boot", "jHipster", "Quarkus", "TypeScript", "Vue.js", "REST API", "SQL", "NoSQL", "TDD", "GitLab CI/CD", "Scrum Methodology", "DevOps"]
+tags: ["Healthcare", "Software Craftsmanship", "Java", "Spring Boot", "jHipster", "Quarkus", "REST API", "TypeScript", "Vue.js", "SQL", "NoSQL", "Test Driven Development", "Domain-Driven Design", "GitLab CI/CD", "Docker", "Microservices", "OpenShift", "DevOps", "Agile Methodology"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Softway Medical"
 cover: "logo.svg"
@@ -17,11 +17,11 @@ Driving improvements in patient care and hospital efficiency through purpose-bui
 for healthcare professionals.
 {{< /lead >}}
 
-## :necktie: My role
+## :necktie: My Role
 
 Full-stack Tech Lead
 
-## :dart: My actions
+## :dart: My Actions
 
 * Create and deliver tailored web applications and microservices that optimize patient care
 and support healthcare professionals
@@ -34,6 +34,7 @@ to architectural decisions and production deployment
 in collaboration with healthcare professionals.
 
 {{< alert "codepen" >}}
-Healthcare, Java, Spring Boot, jHipster, Quarkus, TypeScript, Vue.js, REST API, SQL, NoSQL, TDD, GitLab CI/CD,
-Scrum Methodology, DevOps
+Healthcare, Software Craftsmanship, Java, Spring Boot, jHipster, Quarkus, REST API, TypeScript, Vue.js,
+SQL, NoSQL, Test Driven Development, Domain-Driven Design, GitLab CI/CD, Docker, Microservices, OpenShift, DevOps,
+Agile Methodology
 {{< /alert >}}

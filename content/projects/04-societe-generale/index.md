@@ -5,7 +5,7 @@ slug: "Societe-Generale"
 description: "Description de ma mission pour Société Générale."
 summary: "Fiabiliser l'application stratégique de calcul de marges pour les vendeurs de produits financiers."
 # categories: [""]
-tags: ["Banque de financement et d'investissement", "Java", "Spring", "Hibernate", "SQL", "Tests Automatisés", "Intégration Continue", "Méthodologie Scrum"]
+tags: ["Banque de financement et d'investissement", "Java", "Spring", "Hibernate", "SQL", "Test Driven Development", "Intégration Continue", "Méthodologie Agile"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Société Générale"
 cover: "logo.svg"
@@ -32,5 +32,6 @@ et une cartographie détaillée de l’application et de ses environnements
 * Travailler en étroite collaboration avec l’équipe support aux utilisateurs basée en Inde
 
 {{< alert "codepen" >}}
-Java, Spring, Hibernate, SQL, Tests Automatisés, Intégration Continue, Méthodologie Scrum
+Banque de financement et d'investissement, Java, Spring, Hibernate, SQL, Test Driven Development,
+Intégration Continue, Méthodologie Agile
 {{< /alert >}}

@@ -5,7 +5,7 @@ slug: "Sncf-Connect-And-Tech"
 description: "Description of my mission for SNCF Connect & Tech."
 summary: "Making travel easier by adding new features to the [SNCF Connect](https://www.sncf-connect.com/en-en/) train ticket booking platform."
 # categories: [""]
-tags: ["Sustainable Mobility", "Java", "Spring", "Web Services (CXF)", "SQL", "Automated Testing", "Continuous Integration", "Scrum Methodology"]
+tags: ["Sustainable Mobility", "Java", "Spring", "Web Services (CXF)", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodology"]
 thumbnail: "logo.svg"
 thumbnailAlt: "SNCF Connect & Tech"
 cover: "logo.svg"
@@ -17,11 +17,11 @@ Making travel easier by adding new features to the [SNCF Connect](https://www.sn
 booking platform.
 {{< /lead >}}
 
-## :necktie: My role
+## :necktie: My Role
 
 Software Engineer
 
-## :dart: My actions
+## :dart: My Actions
 
 * Add new features and fix issues in the European train ticket booking service of SNCF
 * Perform detailed analysis of the reservation engine (Yield management)
@@ -29,5 +29,6 @@ Software Engineer
 * Set up automated test suites in close collaboration with the QA team
 
 {{< alert "codepen" >}}
-Sustainable Mobility, Java, Spring, Web Services (CXF), SQL, Automated Testing, Continuous Integration, Scrum Methodology
+Sustainable Mobility, Java, Spring, Web Services (CXF), SQL, Test Driven Development,
+Continuous Integration, Agile Methodology
 {{< /alert >}}
