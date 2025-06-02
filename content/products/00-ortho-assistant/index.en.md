@@ -5,7 +5,7 @@ slug: "Ortho-Assistant"
 description: "Description of the Ortho Assistant project."
 summary: "Helping speech therapists to make every session more effective for their patients."
 # categories: [""]
-tags: ["Healthcare", "SaaS", "JHipster", "Vue.js"]
+tags: ["Healthcare", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "REST API", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "GitLab CI/CD", "Docker", "DevOps"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Ortho Assistant"
 cover: "logo.svg"
@@ -16,7 +16,7 @@ coverAlt: "Ortho Assistant"
 Helping speech therapists to make every session more effective for their patients.
 {{< /lead >}}
 
-## :light_bulb: About the product
+## :light_bulb: About the Product
 
 Inspired by the experiences of speech therapists around me, I noticed they spend significant time searching
 for materials. As sessions follow one another throughout the day, they need to focus on their patients rather
@@ -74,5 +74,6 @@ caption="The skills reference list"
 :star: Source code is available on [GitLab](https://gitlab.com/atondoux/orthoassistant)
 
 {{< alert "codepen" >}}
-Healthcare, SaaS, JHipster, Vue.js
+Healthcare, SaaS, Software Craftsmanship, Java, Spring Boot, JHipster, REST API, TypeScript, Vue.js,
+SQL, Test Driven Development, GitLab CI/CD, Docker, DevOps
 {{< /alert >}}

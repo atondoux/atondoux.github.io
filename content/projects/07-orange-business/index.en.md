@@ -5,7 +5,7 @@ slug: "Orange-Business"
 description: "Description of my mission for Orange Business."
 summary: "Contributing to cost reduction for company vehicles by revamping the maintenance management system of the connected vehicle tracking platform [Ocean](https://ocean.orange-business.com/)."
 # categories: [""]
-tags: ["Fleet Management", "Java", "Spring", "REST API", "SQL", "TDD", "Continuous Integration", "Scrum Methodology"]
+tags: ["Fleet Management", "Software Craftsmanship", "Java", "Spring", "REST API", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodology"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Orange Business"
 cover: "logo.svg"
@@ -14,14 +14,14 @@ coverAlt: "Orange Business"
 
 {{< lead >}}
 Contributing to cost reduction for company vehicles by revamping the maintenance management system
-of the connected vehicle tracking platform [Ocean](https://ocean.orange-business.com/).
+of the connected vehicle tracking platform made by [Ocean](https://ocean.orange-business.com/).
 {{< /lead >}}
 
-## :necktie: My role
+## :necktie: My Role
 
 Backend Tech Lead
 
-## :dart: My actions
+## :dart: My Actions
 
 * Redesign the feature for precise tracking of vehicle usage rates, including heavy vehicles and machinery,
 to assist fleet managers in monitoring and analyzing team activities
@@ -29,5 +29,6 @@ to assist fleet managers in monitoring and analyzing team activities
 * Guide and mentor the team towards adopting Software Craftsmanship practices
 
 {{< alert "codepen" >}}
-Fleet Management, Java, Spring, REST API, SQL, TDD, Continuous Integration, Scrum Methodology
+Fleet Management, Software Craftsmanship, Java, Spring, REST API, SQL, Test Driven Development,
+Continuous Integration, Agile Methodology
 {{< /alert >}}
