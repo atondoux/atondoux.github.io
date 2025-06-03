@@ -5,7 +5,7 @@ slug: "Namirial"
 description: "Description de ma mission pour Namirial."
 summary: "Faciliter la vie quotidienne en rendant plus fluide les parcours de souscription gérés par une plateforme de services de confiance qualifiés."
 # categories: [""]
-tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring", "API REST", "SQL", "Test Driven Development", "Gitlab CI/CD"]
+tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring", "API REST", "SQL", "Test Driven Development", "Gitlab CI/CD", "Méthodes agiles"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Namirial"
 cover: "logo.svg"
@@ -30,5 +30,6 @@ de la soumission de documents
 * Orchestrer des services de vérification de documents et de détection de fraude
 
 {{< alert "codepen" >}}
-KYC, Software Craftsmanship, Kotlin, Java, Spring, API REST, SQL, Test Driven Development, Gitlab CI/CD
+KYC, Software Craftsmanship, Kotlin, Java, Spring, API REST, SQL, Test Driven Development, Gitlab CI/CD,
+Méthodes agiles
 {{< /alert >}}

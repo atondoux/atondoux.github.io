@@ -5,7 +5,7 @@ slug: "Orange-Business"
 description: "Description de ma mission pour Orange Business."
 summary: "Aider à réduire les coûts liés aux véhicules d'entreprise en contribuant à la refonte de la gestion des entretiens de la plateforme de suivi de véhicules connectés [Océan](https://ocean.orange-business.com/)."
 # categories: [""]
-tags: ["Gestion de flotte", "Software Craftsmanship", "Java", "Spring", "API REST", "SQL", "Test Driven Development", "Intégration Continue", "Méthodologie Agile"]
+tags: ["Gestion de flotte", "Software Craftsmanship", "Java", "Spring Framework", "API REST", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Orange Business"
 cover: "logo.svg"
@@ -29,6 +29,6 @@ poids lourds et autres engins afin d'aider les gestionnaires de flotte à pilote
 * Accompagner et mentorer l'équipe vers des pratiques de Software Craftsmanship
 
 {{< alert "codepen" >}}
-Gestion de flotte, Software Craftsmanship, Java, Spring, API REST, SQL, Test Driven Development,
-Intégration Continue, Méthodologie Agile
+Gestion de flotte, Software Craftsmanship, Java, Spring Framework, API REST, SQL, Test Driven Development,
+Intégration Continue, Méthodes agiles
 {{< /alert >}}

@@ -5,7 +5,7 @@ slug: "Societe-Generale"
 description: "Description of my mission for Societe Generale."
 summary: "Enhancing the reliability of the strategic margin calculation application dedicated to financial product sales teams."
 # categories: [""]
-tags: ["Corporate and Investment Banking", "Java", "Spring", "Hibernate", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodology"]
+tags: ["Banking", "Java", "Spring Framework", "Hibernate", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Societe Generale"
 cover: "logo.svg"
@@ -32,6 +32,6 @@ and a detailed mapping of the application and its environments
 * Work closely with the user support team based in India
 
 {{< alert "codepen" >}}
-Corporate and Investment Banking, Java, Spring, Hibernate, SQL, Test Driven Development,
-Continuous Integration, Agile Methodology
+Banking, Java, Spring Framework, Hibernate, SQL, Test Driven Development,
+Continuous Integration, Agile Methodologies
 {{< /alert >}}

@@ -5,7 +5,7 @@ slug: "Namirial"
 description: "Description of my mission for Namirial."
 summary: "Making daily life easier by streamlining subscription workflows managed by a qualified trust services platform."
 # categories: [""]
-tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring", "REST API", "SQL", "Test Driven Development", "Gitlab CI/CD"]
+tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring Boot", "REST API", "SQL", "Test Driven Development", "Gitlab CI/CD", "Agile Methodologies"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Namirial"
 cover: "logo.svg"
@@ -28,5 +28,6 @@ electronic signature, and document submission
 * Orchestrate document verification and fraud detection services
 
 {{< alert "codepen" >}}
-KYC, Software Craftsmanship, Kotlin, Java, Spring, REST API, SQL, Test Driven Development, Gitlab CI/CD
+KYC, Software Craftsmanship, Kotlin, Java, Spring Boot, REST API, SQL, Test Driven Development, Gitlab CI/CD,
+"Agile Methodologies"
 {{< /alert >}}

@@ -5,7 +5,7 @@ slug: "Sncf-Connect-And-Tech"
 description: "Description de ma mission pour SNCF Connect & Tech."
 summary: "Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train [SNCF Connect](https://www.sncf-connect.com/)."
 # categories: [""]
-tags: ["Mobilités Durables", "Java", "Spring", "Services Web (CXF)", "SQL", "Test Driven Development", "Intégration Continue", "Méthodologie Agile"]
+tags: ["Mobilités Durables", "Java", "Spring Framework", "API REST", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
 thumbnail: "logo.svg"
 thumbnailAlt: "SNCF Connect & Tech"
 cover: "logo.svg"
@@ -29,6 +29,6 @@ de la SNCF
 * Mettre en place des suites de tests automatisés en étroite collaboration avec l'équipe QA
 
 {{< alert "codepen" >}}
-Mobilités Durables, Java, Spring, Services Web (CXF), SQL, Test Driven Development,
-Intégration Continue, Méthodologie Agile
+Mobilités Durables, Java, Spring Framework, API REST, SQL, Test Driven Development,
+Intégration Continue, Méthodes agiles
 {{< /alert >}}

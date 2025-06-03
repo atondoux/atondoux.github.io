@@ -5,7 +5,7 @@ slug: "Ortho-Assistant"
 description: "Description du projet Ortho Assistant."
 summary: "Aider les orthophonistes à optimiser les séances avec leurs patients."
 # categories: [""]
-tags: ["Santé", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "API REST", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "GitLab CI/CD", "Docker", "DevOps"]
+tags: ["Santé", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "API REST", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "Domain Driven Design","GitLab CI/CD", "Docker", "DevOps"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Ortho Assistant"
 cover: "logo.svg"
@@ -75,5 +75,5 @@ caption="Le référentiel des compétences"
 
 {{< alert "codepen" >}}
 Santé, SaaS, Software Craftsmanship, Java, Spring Boot, JHipster, API REST, TypeScript, Vue.js, 
-SQL, Test Driven Development, GitLab CI/CD, Docker, DevOps
+SQL, Test Driven Development, Domain Driven Design, GitLab CI/CD, Docker, DevOps
 {{< /alert >}}
