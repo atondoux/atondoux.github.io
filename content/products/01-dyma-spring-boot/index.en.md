@@ -17,7 +17,7 @@ Unlock the power of Spring Boot to build robust, enterprise-grade web applicatio
 The full course is available now on [Dyma](https://dyma.fr/formations/spring-boot)\*.
 {{< /lead >}}
 
-## :light_bulb: About the Product
+## :package: About the Product
 
 This course is intended for both beginners and experienced developers, offering the opportunity to discover
 a proven stack for building enterprise-grade web applications and microservices.
