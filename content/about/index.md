@@ -29,7 +29,8 @@ Les outils avec lesquels je travaille au quotidien. La liste ne cesse de s'agran
 | **:clipboard:️ Méthodes**       | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Development       |
 | **:laptop: Langages**           | Java, Kotlin, TypeScript, SQL                                                                                    |
 | **:tools: Frameworks**          | Spring Boot, Quarkus, JHipster, Vue.js                                                                           |
-| **:cloud: Cloud & DevOps**      | Microservices, Gitlab CI/CD, Docker, OpenShift                                                                   |
+| **:cloud: Cloud & DevOps**      | SaaS, Microservices, Docker, OpenShift                                                                           |
+| **:construction_site: Build**   | Gitlab CI/CD, Jenkins, Maven, Gradle                                                                             |
 | **:test_tube: Testing**         | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                                          |
 | **:school: Veille & Formation** | Architecture Hexagonale, React, React Native, Flutter, Node.js, NestJS, Behavior Driven Development, NoEstimates |
 | **:speaking_head: Langues**     | Français : langue maternelle <br> Anglais : courant                                                              |
