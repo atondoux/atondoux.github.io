@@ -16,7 +16,7 @@ coverAlt: "Ortho Assistant"
 Helping speech therapists to make every session more effective for their patients.
 {{< /lead >}}
 
-## :light_bulb: About the Product
+## :package: About the Product
 
 Inspired by the experiences of speech therapists around me, I noticed they spend significant time searching
 for materials. As sessions follow one another throughout the day, they need to focus on their patients rather

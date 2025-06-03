@@ -17,7 +17,7 @@ Découvrez Spring Boot, le framework open source incontournable pour créer des 
 niveau entreprise. Cette formation complète est accessible sur [Dyma](https://dyma.fr/formations/spring-boot).
 {{< /lead >}}
 
-## :light_bulb: Le produit
+## :package: Le produit
 
 Cette formation s'adresse à des développeurs débutants ou expérimentés et offre l'opportunité de découvrir
 une stack de référence pour développer des applications web et des microservices de niveau entreprise.
