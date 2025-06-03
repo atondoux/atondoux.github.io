@@ -15,7 +15,7 @@ copyright = "&copy; 2025 Aurélien Tondoux"
 [params.author]
   name = "Aurélien Tondoux"
   image = "img/author.jpg"
-  headline = "Développeur Full Stack • Tech Lead"
+  headline = "Tech Lead • Développeur Full Stack"
   bio = "## bio ##"
   links = [
     { linkedin = "https://www.linkedin.com/in/atondoux" },
