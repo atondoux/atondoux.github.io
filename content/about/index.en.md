@@ -47,7 +47,7 @@ and industry standards such as **Clean Architecture** and **Test Driven Developm
 This means that my work can be taken over by any experienced developer. **Every piece of software I deliver is fully
 tested and documented**.
 
-This mindset allows me to create **bespoke, adaptable, and future-proof software**.
+This mindset enables me to deliver **applications that are tailored, flexible, and built to last**.
 
 ## :seedling: My continuous learning
 
