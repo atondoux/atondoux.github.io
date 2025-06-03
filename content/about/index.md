@@ -26,7 +26,7 @@ Les outils avec lesquels je travaille au quotidien. La liste ne cesse de s'agran
 
 |                                 |                                                                                                                  |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------|
-| **:clipboard:️ Méthodes**       | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Development       |
+| **:clipboard:️ Méthodes**       | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Design            |
 | **:laptop: Langages**           | Java, Kotlin, TypeScript, SQL                                                                                    |
 | **:tools: Frameworks**          | Spring Boot, Quarkus, JHipster, Vue.js                                                                           |
 | **:cloud: Cloud & DevOps**      | SaaS, Microservices, Docker, OpenShift                                                                           |

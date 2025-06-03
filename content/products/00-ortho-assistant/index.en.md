@@ -5,7 +5,7 @@ slug: "Ortho-Assistant"
 description: "Description of the Ortho Assistant project."
 summary: "Helping speech therapists to make every session more effective for their patients."
 # categories: [""]
-tags: ["Healthcare", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "REST API", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "GitLab CI/CD", "Docker", "DevOps"]
+tags: ["Healthcare", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "REST API", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "DevOps"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Ortho Assistant"
 cover: "logo.svg"
@@ -75,5 +75,5 @@ caption="The skills reference list"
 
 {{< alert "codepen" >}}
 Healthcare, SaaS, Software Craftsmanship, Java, Spring Boot, JHipster, REST API, TypeScript, Vue.js,
-SQL, Test Driven Development, GitLab CI/CD, Docker, DevOps
+SQL, Test Driven Development, Domain Driven Design, GitLab CI/CD, Docker, DevOps
 {{< /alert >}}

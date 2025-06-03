@@ -5,7 +5,7 @@ slug: "Natixis"
 description: "Description de ma mission pour Natixis."
 summary: "Améliorer l'ergonomie et l'efficacité du CRM utilisé par le département des marchés boursiers."
 # categories: [""]
-tags: ["Banque de financement et d'investissement", "Java" , "Spring", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Intégration Continue", "Méthodologie Agile"]
+tags: ["Banque", "Java" , "Spring Framework", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Natixis"
 cover: "logo.svg"
@@ -29,6 +29,6 @@ Ingénieur Etudes et Développement
 * Contribuer à la documentation collaborative en rédigeant de la documentation technique
 
 {{< alert "codepen" >}}
-Banque de financement et d'investissement, Java, Spring, Hibernate, JSF, jQuery, SQL, Test Driven Development,
-Intégration Continue, Méthodologie Agile
+Banque, Java, Spring Framework, Hibernate, JSF, jQuery, SQL, Test Driven Development,
+Intégration Continue, Méthodes agiles
 {{< /alert >}}

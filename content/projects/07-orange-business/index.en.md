@@ -5,7 +5,7 @@ slug: "Orange-Business"
 description: "Description of my mission for Orange Business."
 summary: "Contributing to cost reduction for company vehicles by revamping the maintenance management system of the connected vehicle tracking platform [Ocean](https://ocean.orange-business.com/)."
 # categories: [""]
-tags: ["Fleet Management", "Software Craftsmanship", "Java", "Spring", "REST API", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodology"]
+tags: ["Fleet Management", "Software Craftsmanship", "Java", "Spring Framework", "REST API", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Orange Business"
 cover: "logo.svg"
@@ -29,6 +29,6 @@ to assist fleet managers in monitoring and analyzing team activities
 * Guide and mentor the team towards adopting Software Craftsmanship practices
 
 {{< alert "codepen" >}}
-Fleet Management, Software Craftsmanship, Java, Spring, REST API, SQL, Test Driven Development,
-Continuous Integration, Agile Methodology
+Fleet Management, Software Craftsmanship, Java, Spring Framework, REST API, SQL, Test Driven Development,
+Continuous Integration, Agile Methodologies
 {{< /alert >}}

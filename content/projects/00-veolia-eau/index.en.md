@@ -5,7 +5,7 @@ slug: "Veolia-Water"
 description: "Description of my mission for Veolia Water."
 summary: "Supporting water distribution in Paris area by developing rich internet applications."
 # categories: [""]
-tags: ["Public Services", "Java", "Web Services", "JavaScript", "SQL", "Waterfall Methodology"]
+tags: ["Public Services", "Java", "JavaScript", "SQL", "Waterfall Methodology"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Veolia Water"
 cover: "logo.svg"
@@ -28,5 +28,5 @@ Software Engineer
 * Produce technical specifications, release documentation, and deployment procedures
 
 {{< alert "codepen" >}}
-Public Services, Java, Web Services, JavaScript, SQL, Waterfall Methodology
+Public Services, Java, JavaScript, SQL, Waterfall Methodology
 {{< /alert >}}

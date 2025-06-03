@@ -5,7 +5,7 @@ slug: "Formation-Spring-Boot"
 description: "Description de la formation Spring Boot."
 summary: "Découvrez Spring Boot, le framework open source incontournable pour créer des applications web et des microservices de niveau entreprise. Cette formation complète est accessible sur [Dyma](https://dyma.fr/formations/spring-boot)."
 # categories: [""]
-tags: [ "Formation en ligne", "Java", "Spring Boot", "API REST", "Clean Code", "Tests Automatisés" ]
+tags: [ "Formation en ligne", "Java", "Spring Boot", "API REST", "Clean Code", "Test Driven Development" ]
 thumbnail: "logo.svg"
 thumbnailAlt: "Formation Spring Boot"
 cover: "logo.svg"
@@ -77,5 +77,5 @@ borderColor: [
 :star: Formation disponible sur le site de [Dyma](https://dyma.fr/formations/spring-boot).
 
 {{< alert "codepen" >}}
-Formation en ligne, Java, Spring Boot, API REST, Clean Code, Tests Automatisés 
+Formation en ligne, Java, Spring Boot, API REST, Clean Code, Test Driven Development, Docker 
 {{< /alert >}}

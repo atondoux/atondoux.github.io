@@ -5,7 +5,7 @@ slug: "Ministry-of-Health"
 description: "Description of my mission for the Ministry of Health."
 summary: "Enabling faster, more efficient compensation for medical accident victims through the digitalization of all procedures for [ONIAM](https://www.oniam.fr/)."
 # categories: [""]
-tags: ["Public Services", "Java", "Spring", "Hibernate", "REST API", "jBPM", "JSF", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodology"]
+tags: ["Public Services", "Java", "Spring Framework", "Hibernate", "REST API", "jBPM", "JSF", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Ministry of Health"
 cover: "logo.svg"
@@ -32,6 +32,6 @@ electronic document management)
 * Write technical documentation and best practice guidelines for the team
 
 {{< alert "codepen" >}}
-Public Services, Java, Spring, Hibernate, REST API, jBPM, JSF, SQL, Test Driven Development,
-Continuous Integration, Agile Methodology
+Public Services, Java, Spring Framework, Hibernate, REST API, jBPM, JSF, SQL, Test Driven Development,
+Continuous Integration, Agile Methodologies
 {{< /alert >}}
