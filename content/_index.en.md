@@ -9,7 +9,7 @@ Hi there and welcome :wave_tone1:
 {{< /lead >}}
 
 {{< alert "comment" >}}
-With over 15 years of experience as a software engineer, **I'm helping businesses and individuals turn their ideas 
+With over 15 years of experience as a software engineer, **I'm helping small, medium, and large companies turn their ideas 
 into purpose-built applications**. By deeply understanding your business domain
 and leveraging industry best practices, **I can handle every phase of your project**: from initial software design
 to feature development to seamless production deployment :rocket:

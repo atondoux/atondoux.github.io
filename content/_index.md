@@ -9,7 +9,7 @@ Bonjour et bienvenue :wave_tone1:
 {{< /lead >}}
 
 {{< alert "comment" >}} 
-Avec plus de 15 ans d'expérience en tant qu'ingénieur en développement, **j'aide les entreprises et les individus
+Avec plus de 15 ans d'expérience en tant qu'ingénieur en développement, **j'aide les petites, moyennes et grandes entreprises
 à transformer leurs idées en applications adaptées à leurs besoins**. En m'imprégnant de votre métier
 et en appliquant les meilleures pratiques de développement, **je prends en charge toutes les étapes de vos projets** :
 depuis la phase de conception, en passant par le développement de fonctionnalités sur mesure, jusqu'au déploiement en production :rocket:
