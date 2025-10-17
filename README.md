@@ -11,6 +11,12 @@ My personal website showcasing my experience as a software engineer. You can vis
 - 📊 Charts using [Chart.js](https://www.chartjs.org/)
 - 🏷 Tags for content organization
 
+## ⚒️ Prerequisites
+
+1. Your favorite IDE
+2. [Docker](https://www.docker.com/)
+3. **Important**: Always verify version compatibility between Hugo and Congo theme before upgrading either component.
+
 ## 🖥️ Getting Started
 
 1. Clone the repository:
@@ -19,18 +25,12 @@ My personal website showcasing my experience as a software engineer. You can vis
    cd atondoux.github.io
    ```
 
-2. Install Hugo (extended version required) ⚠️ Due to some changes in Hugo's internal template system, you need to stick with Hugo `v0.145.x`
-   to avoid issues with the Congo theme:
+2. Start the local development server:
    ```bash
-   # see: https://gohugo.io/installation/
+   docker compose up
    ```
 
-3. Start the local development server:
-   ```bash
-   hugo server
-   ```
-
-4. Open your browser and go to [`http://localhost:1313`](http://localhost:1313) to view the site.
+3. Open your browser and go to [`http://localhost:1313`](http://localhost:1313) to view the site.
 
 ## 🚀 Deployment
 
