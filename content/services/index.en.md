@@ -55,4 +55,4 @@ I can also offer fixed-price projects and one-off services with a **customized q
 ## :handshake: Interested?
 
 If you would like to know more, feel free to contact me via [LinkedIn](https://www.linkedin.com/in/atondoux)
-or directly schedule a meeting in my calendar via [Calendly](https://calendly.com/atondoux/15min).
+or directly schedule a meeting in my calendar via [Calendly](https://calendly.com/atondoux/30min).

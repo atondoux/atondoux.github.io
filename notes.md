@@ -18,7 +18,7 @@ l'industrie du logiciel : Domain Driven Design, Clean Architecture, Clean Code, 
 Plus d'informations sur mon site web : https://aurelientondoux.com 🌐
 
 N'hésitez pas à me contacter pour que l'on puisse trouver le meilleur moyen de travailler ensemble :
-https://calendly.com/atondoux/15min 🗣️
+https://calendly.com/atondoux/30min 🗣️
 
 ### English version
 
@@ -36,7 +36,7 @@ Domain Driven Design, Clean Architecture, Clean Code, Test Driven Development...
 More information on my website : https://aurelientondoux.com/en 🌐
 
 Feel free to reach out so we can find the best way to work together:
-https://calendly.com/atondoux/15min 🗣️
+https://calendly.com/atondoux/30min 🗣️
 
 ### Ideas
 

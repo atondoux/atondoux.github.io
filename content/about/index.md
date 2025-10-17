@@ -76,4 +76,4 @@ des solutions que je vous propose.
 ## :handshake: Intéressé ? Discutons collaboration !
 
 Si vous avez un projet ou une idée de projet et que vous souhaitez la faire avancer, n'hésitez pas à me contacter via 
-[LinkedIn](https://www.linkedin.com/in/atondoux) ou à prendre un rendez-vous via [Calendly](https://calendly.com/atondoux/15min).
+[LinkedIn](https://www.linkedin.com/in/atondoux) ou à prendre un rendez-vous via [Calendly](https://calendly.com/atondoux/30min).

@@ -30,7 +30,7 @@ You are looking for an expert to:
 If you want to discuss further, feel free to reach out so we can find the best way to work together :handshake:
 
 <div style="text-align:center">
-{{< button href="https://calendly.com/atondoux/15min" target="_blank">}}
+{{< button href="https://calendly.com/atondoux/30min" target="_blank">}}
 Let's connect {{< icon "mobile" >}}
 {{< /button >}}
 </div>

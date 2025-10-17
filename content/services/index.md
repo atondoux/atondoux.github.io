@@ -58,4 +58,4 @@ Je peux également vous proposer des projets au forfait et des prestations ponct
 Si vous souhaitez en savoir plus, n'hésitez pas à me contacter via la messagerie
 [LinkedIn](https://www.linkedin.com/in/atondoux)
 ou à prendre directement rendez-vous dans mon calendrier via
-[Calendly](https://calendly.com/atondoux/15min).
+[Calendly](https://calendly.com/atondoux/30min).
