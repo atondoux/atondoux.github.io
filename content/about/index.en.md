@@ -74,4 +74,4 @@ While this offers a significant productivity boost, I will never compromise on t
 
 If you have a project or an idea and would like to move it forward, feel free to contact me via
 [LinkedIn](https://www.linkedin.com/in/atondoux) or schedule a meeting through
-[Calendly](https://calendly.com/atondoux/15min).
+[Calendly](https://calendly.com/atondoux/30min).
