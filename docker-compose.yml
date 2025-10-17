@@ -1,0 +1,16 @@
+services:
+  hugo:
+    image: hugomods/hugo:debian-exts-0.151.2
+    working_dir: /src
+    command: server -D --poll 700ms --noHTTPCache
+    environment:
+      - HUGO_ENVIRONMENT=development
+      - HUGO_CACHEDIR=/tmp/hugo_cache
+      - TZ=Europe/Paris
+    volumes:
+      - ./:/src
+      - hugo_cache:/tmp/hugo_cache
+    ports:
+      - "1313:1313"
+volumes:
+  hugo_cache:
