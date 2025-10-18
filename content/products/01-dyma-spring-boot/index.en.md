@@ -32,7 +32,7 @@ I pressed the *rec* button to record the first lessons.
 
 ## :bar_chart: Key Metrics
 
-Students have spent a total of over **4000 hours** on the course, with an average rating of **4.6/5**.
+Students have spent a total of over **5000 hours** on the course, with an average rating of **4.6/5**.
 
 {{< chart >}}
 type: 'bar',
