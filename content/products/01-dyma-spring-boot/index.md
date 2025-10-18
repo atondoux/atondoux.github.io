@@ -34,7 +34,7 @@ Merci à l'équipe [Dyma](https://dyma.fr/) pour sa confiance.
 
 ## :bar_chart: Chiffres clés
 
-Les étudiants ont passé au total plus de **4000 heures** sur la formation, avec une note moyenne de **4.6/5**.
+Les étudiants ont passé au total plus de **5000 heures** sur la formation, avec une note moyenne de **4.6/5**.
 
 {{< chart >}}
 type: 'bar',
