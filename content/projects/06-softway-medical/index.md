@@ -5,7 +5,7 @@ slug: "Softway-Medical"
 description: "Description de ma mission pour Softway Medical."
 summary: "Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé de produits numériques sur mesure."
 # categories: [""]
-tags: ["Santé", "Software Craftsmanship", "Java", "Spring Boot", "jHipster", "Quarkus", "API REST", "TypeScript", "Vue.js", "SQL", "NoSQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "Microservices", "OpenShift", "DevOps", "Méthodes agiles"]
+tags: ["Santé", "Software Craftsmanship", "Java", "Spring Boot", "jHipster", "Quarkus", "API REST", "TypeScript", "Vue.js", "SQL", "NoSQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "Microservices", "OpenShift", "Graylog", "DevOps", "Méthodes agiles"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Softway Medical"
 cover: "logo.svg"
@@ -35,6 +35,6 @@ conçu et développé en collaboration avec des professionnels de santé.
 
 {{< alert "codepen" >}}
 Santé, Software Craftsmanship, Java, Spring Boot, jHipster, Quarkus, API REST, TypeScript, Vue.js, SQL, NoSQL,
-Test Driven Development, Domain Driven Design, GitLab CI/CD, Docker, Microservices, OpenShift, DevOps,
+Test Driven Development, Domain Driven Design, GitLab CI/CD, Docker, Microservices, OpenShift, Graylog, DevOps, 
 Méthodes agiles
 {{< /alert >}}
