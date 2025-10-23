@@ -5,7 +5,7 @@ slug: "Malt"
 description: "Description de ma mission pour Malt."
 summary: "Aider les freelancers à recevoir leurs paiements le plus rapidement possible et avoir une meilleure expérience sur la plateforme [Malt](https://www.malt.fr/)."
 # categories: [""]
-tags: ["Marketplace", "Software Craftsmanship", "Kotlin", "Spring Boot", "Nuxt", "API REST", "RabbitMQ", "SQL", "NoSQL", "Test Driven Development", "Gitlab CI/CD", "Datadog"]
+tags: ["Marketplace", "Software Craftsmanship", "Kotlin", "Spring Boot", "Nuxt.js", "API REST", "RabbitMQ", "SQL", "NoSQL", "Test Driven Development", "Gitlab CI/CD", "Datadog"]
 thumbnail: "logo.svg"
 thumbnailAlt: "Malt"
 cover: "logo.svg"
@@ -29,6 +29,6 @@ et optimiser les flux financiers de la plateforme
 * Rendre plus intelligent le moteur de décision servant à sélectionner le meilleur partenaire de financement
 
 {{< alert "codepen" >}}
-Marketplace, Software Craftsmanship, Kotlin, Spring Boot, Nuxt, API REST, RabbitMQ, SQL, NoSQL, 
+Marketplace, Software Craftsmanship, Kotlin, Spring Boot, Nuxt.js, API REST, RabbitMQ, SQL, NoSQL, 
 Test Driven Development, Gitlab CI/CD, Datadog
 {{< /alert >}}
