@@ -18,7 +18,8 @@ I have contributed to large-scale projects for major companies such as
 [Societe Generale](https://wholesale.banking.societegenerale.com/en/),
 [Softway Medical](https://www.groupesoftwaymedical.com/en/),
 [Orange Business](https://www.orange-business.com/en/),
-and [Namirial](https://www.namirial.com/en/).
+[Namirial](https://www.namirial.com/en/),
+and [Malt](https://www.malt.com/).
 
 ## :gear: My ecosystem
 
