@@ -27,6 +27,7 @@ My personal website showcasing my experience as a software engineer. You can vis
 
 2. Start the local development server:
    ```bash
+   cd hugo-app
    docker compose up
    ```
 
