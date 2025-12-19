@@ -18,7 +18,7 @@ Améliorer l'ergonomie et l'efficacité du CRM utilisé par le département des 
 
 ## :necktie: Mon rôle
 
-Ingénieur Etudes et Développement
+Ingénieur Études et Développement
 
 ## :dart: Mes actions
 

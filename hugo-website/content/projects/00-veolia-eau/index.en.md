@@ -23,7 +23,7 @@ Software Engineer
 ## :dart: My Actions
 
 * Design and implement business applications to support water distribution management in Paris area
-(serving over 500.000 contracts) using an in-house rapid development framework
+(serving over 500,000 contracts) using an in-house rapid development framework
 * Manage releases on a High-Availability integration platform
 * Produce technical specifications, release documentation, and deployment procedures
 

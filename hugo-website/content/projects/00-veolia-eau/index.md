@@ -18,7 +18,7 @@ Assurer la distribution de l'eau en Île-de-France en construisant des applicati
 
 ## :necktie: Mon rôle
 
-Ingénieur Etudes et Développement
+Ingénieur Études et Développement
 
 ## :dart: Mes actions
 

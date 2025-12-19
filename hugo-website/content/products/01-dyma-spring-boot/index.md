@@ -39,7 +39,7 @@ Les étudiants ont passé au total plus de **5000 heures** sur la formation, ave
 {{< chart >}}
 type: 'bar',
 data: {
-labels: ['Chapitres', 'Leçons', 'Quizz', 'Etudiants formés'],
+labels: ['Chapitres', 'Leçons', 'Quiz', 'Étudiants formés'],
 datasets: [{
 label: 'Spring Boot',
 data: [19, 87, 174, 225],

@@ -68,7 +68,6 @@ caption="The skills reference list"
 * Smart material search tool to efficiently prepare therapy sessions
 * Advanced inventory indicating the pathologies and skills for which each material is most effective
 * A fully customizable reference list of pathologies and skills
-* Management of material locations to find them more easily
 * Material location management for quick and easy retrieval
 
 :star: Source code is available on [GitLab](https://gitlab.com/atondoux/orthoassistant)

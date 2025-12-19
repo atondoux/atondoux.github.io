@@ -23,7 +23,7 @@ Full Stack Software Engineer
 ## :dart: My Actions
 
 * Enhance the financing module to speed up freelancer payments and optimize the platform's financial flows
-* Automate critical procedures to improve improve FinOps team operational efficiency
+* Automate critical procedures to improve FinOps team operational efficiency
 * Extend the financing module capabilities to support integration with various financing partners
 * Improve the decision engine's intelligence for optimal financing partner selection
 

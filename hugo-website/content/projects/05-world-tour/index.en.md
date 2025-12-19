@@ -18,7 +18,7 @@ Living an exceptional 730-day odyssey, filled with invaluable personal developme
 
 ## :earth_africa: My Achievements
 
-* 60.000 km across Europe, Asia, and Oceania
+* 60,000 km across Europe, Asia, and Oceania
 * 17 countries visited: Germany :flag_de:, Czech Republic :flag_cz:, Poland :flag_pl:, Ukraine :flag_ua:,
 Russia :flag_ru:, Mongolia :flag_mn:, China :flag_cn:, Vietnam :flag_vn:, Cambodia :flag_kh:, Laos :flag_la:,
 Thailand :flag_th:, Myanmar :flag_mm:, Philippines :flag_ph:, Australia :flag_au:, Fiji :flag_fj:,
