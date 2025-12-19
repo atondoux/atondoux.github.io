@@ -1,7 +1,7 @@
 # Hugo
 public/
-hugo-app/resources/_gen/
-hugo-app/.hugo_build.lock
+hugo-website/resources/_gen/
+hugo-website/.hugo_build.lock
 
 # IDE specific
 /.idea/
