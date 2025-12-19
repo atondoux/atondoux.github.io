@@ -1,7 +1,7 @@
 services:
   hugo:
     image: hugomods/hugo:debian-exts-0.151.2
-    working_dir: /src/hugo-app
+    working_dir: /src/hugo-website
     command: server -D --poll 700ms --noHTTPCache
     environment:
       - HUGO_ENVIRONMENT=development
