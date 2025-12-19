@@ -22,10 +22,10 @@ Développeur Full Stack
 
 ## :dart: Mes actions
 
-* Améliorer le module de financement pour permettre aux freelancers d'être payés dans les meilleurs délais 
+* Améliorer le module de financement pour permettre aux freelancers d'être payés dans les meilleurs délais
 et optimiser les flux financiers de la plateforme
-* Automatiser un maximum de procédures afin d'améliorer l'efficacité opérationnelle de l'équipe FinOps 
-* Etendre les capacités du module à intégrer différents partenaires de financement
+* Automatiser un maximum de procédures afin d'améliorer l'efficacité opérationnelle de l'équipe FinOps
+* Étendre les capacités du module à intégrer différents partenaires de financement
 * Rendre plus intelligent le moteur de décision servant à sélectionner le meilleur partenaire de financement
 
 {{< alert "codepen" >}}

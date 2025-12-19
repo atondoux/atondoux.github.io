@@ -18,7 +18,7 @@ Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateform
 
 ## :necktie: Mon rôle
 
-Ingénieur Etudes et Développement
+Ingénieur Études et Développement
 
 ## :dart: Mes actions
 
