@@ -4,128 +4,234 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal portfolio website built with Hugo static site generator, using the Congo theme. Deployed to GitHub Pages at https://aurelientondoux.com.
+Personal portfolio website being rebuilt with Nuxt 4. Deployed to GitHub Pages at https://aurelientondoux.com.
 
-**Tech Stack:**
-- Hugo v0.151.2 (extended version required)
-- Congo theme (git submodule on stable branch)
-- Docker for local development
-- GitHub Actions for automated deployment
-- Bilingual content (French default, English secondary)
+**Current Status:**
+- **Production (live):** Hugo static site in `/hugo-website/` directory
+- **Development (active):** Nuxt 4 app being built to replace Hugo
+
+**Tech Stack (Nuxt):**
+- Nuxt v4.2.2
+- @nuxt/content v3.9.0 (Markdown-based content)
+- @nuxtjs/i18n v10.2.1 (bilingual support)
+- @nuxt/ui v4.3.0 (component library)
+- TypeScript strict mode
+- pnpm package manager
 
 ## Development Commands
 
 **Local Development:**
 ```bash
-docker compose up
-# Starts Hugo dev server at http://localhost:1313
-# Hot reload enabled with 700ms polling
-# Environment: development, timezone Europe/Paris
+pnpm dev
+# Starts Nuxt dev server at http://localhost:3000
+# Hot reload enabled
 ```
 
-**Manual Build (Production):**
+**Build:**
 ```bash
-hugo --gc --minify --baseURL "https://aurelientondoux.com/"
+pnpm build          # Build for production
+pnpm generate       # Generate static site
+pnpm preview        # Preview production build
 ```
 
-**Theme Management:**
+**Type Checking:**
 ```bash
-# The Congo theme is a git submodule
-git submodule update --init --recursive  # Initialize submodule
-git submodule update --remote            # Update to latest version
+pnpm typecheck      # Run TypeScript type checking manually
 ```
 
-**Deployment:**
-- Automatic deployment via GitHub Actions on push to `main` branch
-- Workflow: `.github/workflows/hugo.yaml`
-- Uses Hugo 0.151.2, Dart Sass, and optional Node.js dependencies
+**Note:** TypeScript type checking during development is disabled (`typeCheck: false`) due to vite-plugin-checker compatibility issues. Use `pnpm typecheck` or IDE type checking instead.
 
 ## Architecture
 
-### Content Organization
+### Nuxt 4 App Directory Structure
 
-This is a **content-driven architecture** where all pages are written in Markdown with YAML frontmatter. The site is fully bilingual with paired content files.
-The directory structure follows the Hugo convention for multi-language sites.
+The project follows the recommended Nuxt 4 `app/` directory convention:
+
+```
+/
+├── app/                      # Nuxt 4 app directory (all Vue code)
+│   ├── app.vue              # Application root component
+│   ├── pages/               # File-based routing
+│   │   └── index.vue        # Homepage
+│   ├── layouts/             # Layout templates
+│   │   └── default.vue      # Default layout
+│   ├── components/          # Auto-imported Vue components
+│   ├── assets/              # Stylesheets and processed assets
+│   │   └── css/main.css     # Tailwind CSS imports
+│   └── i18n/                # Internationalization
+│       └── locales/         # Translation files
+│           ├── fr.json      # French translations
+│           └── en.json      # English translations
+├── content/                 # Markdown content (Nuxt Content)
+│   ├── index.md            # French homepage content
+│   └── en/                 # English content
+│       └── index.md        # English homepage content
+├── public/                  # Static files (served at root)
+├── nuxt.config.ts          # Nuxt configuration
+├── app.config.ts           # Nuxt UI theme configuration
+├── content.config.ts       # Content collection schema
+└── tsconfig.json           # TypeScript configuration
+```
 
 ### Multi-Language Pattern
 
-All content uses a **paired file pattern** for bilingual support:
-- French (default, weight: 1): `index.md`, `_index.md`
-- English (weight: 2): `index.en.md`, `_index.en.md`
+Bilingual support using @nuxtjs/i18n:
+- **Strategy:** `prefix_except_default`
+- **Default locale:** French (`fr`)
+- **Secondary locale:** English (`en`)
 
-Language configurations are split across `languages.fr.toml` and `languages.en.toml`, including separate menu definitions in `menus.fr.toml` and `menus.en.toml`.
+**Routing:**
+- French: `/` (root, no prefix)
+- English: `/en` (prefixed)
 
-### Content Metadata Pattern
+**Content files:**
+- French: `content/page-name.md`
+- English: `content/en/page-name.md`
 
-All projects and products follow a consistent frontmatter structure:
+**Translation files:**
+- `app/i18n/locales/fr.json`
+- `app/i18n/locales/en.json`
 
-```yaml
----
-title: "Project Name"
-date: YYYY-MM-DD
-slug: "url-friendly-name"
-summary: "One-line business value description"
-tags: ["Domain", "Technology", "Methodology"]
-thumbnail: "path/to/image.webp"  # or 'cover'
----
+### Content Schema
+
+Content uses Zod schema validation in `content.config.ts`:
+
+```typescript
+schema: z.object({
+  title: z.string(),           // Required: Page title
+  description: z.string(),     // Required: Page description for SEO
+  image: z.string().optional(), // Optional: Social sharing image
+  date: z.string().optional(),  // Optional: Publication date
+  tags: z.array(z.string()).optional(), // Optional: Content tags
+})
 ```
-
-**Naming Convention:**
-- Projects/products folders use numbered prefixes for ordering: `00-name/`, `01-name/`, etc.
-- This ensures consistent display order independent of alphabetical sorting
 
 ### Component System
 
-The site uses **Hugo shortcodes** for reusable UI components.
+**Auto-imports enabled for:**
+- Components in `app/components/` (Nuxt auto-discovery)
+- Nuxt UI components: `UContainer`, `UCard`, `UBadge`, `UButton`, etc.
+- Composables: `useI18n()`, `useLocalePath()`, `useAsyncData()`, etc.
+- Content: `queryCollection()`, `ContentRenderer`
 
-### Theme Customization
+**No manual imports needed** - Nuxt handles auto-imports automatically.
 
-**Key configuration (`params.toml`):**
-- Color scheme: `"ocean"` (blue-based palette)
-- Default appearance: `"dark"` (dark mode by default)
-- Features enabled: code copy, lazy loading, WebP images, Chart.js
-- Analytics: Google Analytics ID `G-JCKXZ1J4W3`
+### Styling
 
-**Customization approach:**
-- Override theme templates by creating matching files in `/layouts/`
-- Custom partials in `/layouts/partials/` take precedence over theme defaults
-- Never edit theme files directly (submodule)
+**Tailwind CSS v4:**
+- Main config: `tailwind.config.ts`
+- Global CSS: `app/assets/css/main.css`
+- Nuxt UI provides pre-styled components
+- Dark mode supported out of the box
+
+**Path in config:**
+```typescript
+css: ['~/app/assets/css/main.css']
+```
+
+## Configuration Files
+
+### nuxt.config.ts
+
+**Key settings:**
+```typescript
+modules: ['@nuxt/content', '@nuxtjs/i18n', '@nuxt/ui']
+css: ['~/app/assets/css/main.css']
+
+i18n: {
+  defaultLocale: 'fr',
+  strategy: 'prefix_except_default',
+  langDir: 'app/i18n/locales'  // Must match actual location
+}
+
+typescript: {
+  strict: true,
+  typeCheck: false  // Disabled due to vite-plugin-checker issues
+}
+```
+
+### app.config.ts
+
+**Nuxt UI theme configuration:**
+```typescript
+ui: {
+  colors: {
+    primary: 'blue'
+  }
+}
+```
+
+### package.json
+
+**Dependencies:**
+- `better-sqlite3` is required by @nuxt/content (don't remove)
+- `pnpm.onlyBuiltDependencies: ["better-sqlite3"]` allows native bindings to build
 
 ## Coding Conventions
 
-**Commit Messages:**
-- Use Gitmoji for visual context (e.g., `:sparkles:` for new features)
-- A short message should clearly describe the change
+**Auto-imports:**
+- Never manually import Nuxt composables, components, or utilities
+- Rely on Nuxt's auto-import system
 
-**Content Style:**
-- Use emoji shorthand in markdown for visual communication (`:wave_tone1:`, `:check_mark_button:`)
-- Structure content with clear headings and sections
-- Tags should mix domains, technologies, and methodologies for comprehensive filtering
+**Path aliases:**
+- `~/` - Project root
+- `~/app/` - App directory
+- Example: `~/app/assets/css/main.css`
 
-**Configuration Files:**
-- All config uses TOML format (not YAML or JSON)
-- Keep language-specific settings in separate `languages.*.toml` files
-- Theme customization goes in `params.toml`, not `config.toml`
+**Component naming:**
+- PascalCase in templates: `<UContainer>`, `<ContentRenderer>`
+- File names: kebab-case for pages, PascalCase for components
+
+**Content queries:**
+```typescript
+// Query content from collection
+const { data: page } = await useAsyncData(
+  'unique-key',
+  () => queryCollection('content').path('/some-path').first()
+)
+```
+
+**i18n usage:**
+```typescript
+const { locale, t } = useI18n()
+const localePath = useLocalePath()
+
+// In template
+{{ t('key') }}
+<NuxtLink :to="localePath('/')">
+```
 
 ## Important Notes
 
-**Hugo Version Compatibility:**
-- Always verify compatibility between Hugo version and Congo theme before upgrading
-- Production uses Hugo 0.151.2 (defined in GitHub Actions workflow)
-- Extended version required for Sass/SCSS processing
+**TypeScript:**
+- Strict mode enabled in tsconfig.json
+- Type checking disabled during dev (`typeCheck: false`)
+- Run `pnpm typecheck` manually for type checking
+- IDE TypeScript support still works
 
-**Theme Updates:**
-- Congo theme is a git submodule tracking the `stable` branch
-- Test theme updates locally before deploying
-- Theme repository: https://github.com/jpanther/congo
+**Dependencies:**
+- Use pnpm for all package management
+- `better-sqlite3` requires native compilation (handled by pnpm config)
+- Don't remove `better-sqlite3` - it's used by @nuxt/content
 
-**Deployment:**
-- `main` branch is protected with auto-deployment
-- Use feature branches for development work
-- GitHub Actions workflow handles build and deployment automatically
-- No manual deployment steps required for production
+**Caching:**
+- Clear `.nuxt/` and `.output/` if encountering build issues
+- Run `pnpm nuxt prepare` to regenerate types
 
-**Static Assets:**
-- Place static files in `/static/` (favicons, manifest, etc.)
-- Place assets that need processing in `/assets/` (images for optimization)
-- Use relative paths without leading slash in theme overrides
+**i18n paths:**
+- Configuration changed: `langDir: 'app/i18n/locales'`
+- Files must be in `app/i18n/locales/`, not root `/locales/`
+
+## Deployment (Future)
+
+Currently, the Hugo version is deployed. Nuxt deployment will be configured later using:
+- Static generation: `pnpm generate`
+- Output directory: `.output/public/`
+- Deploy to GitHub Pages (to be configured)
+
+## Hugo Website (Legacy)
+
+The previous Hugo-based website is preserved in `/hugo-website/` directory.
+- **Not actively developed**
+- Used for reference only
+- See README.md for Hugo documentation

@@ -7,7 +7,7 @@ theme = "congo"
 defaultContentLanguage = "fr"
 googleAnalytics = "G-JCKXZ1J4W3"
 
-publishDir = "../public"
+publishDir = "public"
 
 enableRobotsTXT = true
 summaryLength = 0
