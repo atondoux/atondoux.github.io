@@ -1,10 +1,23 @@
 # Hugo
-public/
+hugo-website/public/
 hugo-website/resources/_gen/
 hugo-website/.hugo_build.lock
 
+# Nuxt
+.nuxt/
+dist/
+/.data/
+
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+
 # IDE specific
 /.idea/
+.vscode/
 
 # System files
 .DS_Store
+
+# Logs
+*.log
