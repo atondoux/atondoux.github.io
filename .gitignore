@@ -5,12 +5,17 @@ hugo-website/.hugo_build.lock
 
 # Nuxt
 .nuxt/
+.output/
+.data/
 dist/
-/.data/
 
 # Dependencies
 node_modules/
-pnpm-lock.yaml
+
+# Environment
+.env
+.env.*
+!.env.example
 
 # IDE specific
 /.idea/

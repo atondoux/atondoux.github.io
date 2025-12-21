@@ -38,29 +38,29 @@ Personal portfolio website showcasing my experience as a software engineer. You 
 The site is automatically built and deployed using GitHub Actions whenever changes are pushed to the `main` branch.
 
 The GitHub Actions workflow configuration can be found in `.github/workflows/hugo.yaml`.
+
 ---
 
-# 🚧 Nuxt App Migration (Work in Progress)
+# 🚧 Nuxt UI Portfolio (Work in Progress)
 
-A modern rebuild of the portfolio using Nuxt 4 is currently under development. This new version will offer improved performance, better developer experience, and enhanced features.
+A modern rebuild of the portfolio using Nuxt 4 and Nuxt UI is currently under development. This new version runs alongside the Hugo production site for local development.
 
 ## ✨ Features
 
-- ⚡ Built with [Nuxt 4](https://nuxt.com/) - The latest version of the Nuxt framework
-- 📝 Content-driven with [@nuxt/content](https://content.nuxt.com/) - Markdown-based content management
-- 🌍 Bilingual support (French/English) via [@nuxtjs/i18n](https://i18n.nuxtjs.org/)
-- 🎨 Beautiful UI components with [@nuxt/ui](https://ui.nuxt.com/)
-- 🔒 TypeScript strict mode for type safety
+- ⚡ Built with [Nuxt 4.2.2](https://nuxt.com/)
+- 🎨 Beautiful UI with [@nuxt/ui 4.2.1](https://ui.nuxt.com/)
+- 📝 Content management with [@nuxt/content 3.8.2](https://content.nuxt.com/)
+- 🖼️ Image optimization with [@nuxt/image 2.0.0](https://image.nuxt.com/)
+- 🔒 TypeScript strict mode
 - 📱 Fully responsive design
-- 🌙 Dark mode support
-- 🚀 File-based routing
+- 🌙 Dark/light theme support
 - ⚙️ Auto-imported components
+- 🎭 Motion animations
 
 ## ⚒️ Prerequisites
 
 1. **Node.js LTS** (v20.x recommended)
-   - Use [nvm](https://github.com/nvm-sh/nvm) to install: `nvm install --lts && nvm use --lts`
-2. **pnpm** package manager
+2. **pnpm** package manager (v10.x)
    - Install globally: `npm install -g pnpm`
 
 ## 🖥️ Getting Started
@@ -72,18 +72,17 @@ A modern rebuild of the portfolio using Nuxt 4 is currently under development. T
 
 2. **Start the development server:**
    ```bash
-   pnpm dev
+   pnpm dev --host 127.0.0.1
    ```
 
 3. **Open your browser:**
-   - French (default): [`http://localhost:3000`](http://localhost:3000)
-   - English: [`http://localhost:3000/en`](http://localhost:3000/en)
+   - Visit [`http://127.0.0.1:3000`](http://127.0.0.1:3000)
 
 ## 🔧 Development Commands
 
 ```bash
-# Start development server with hot reload
-pnpm dev
+# Start development server
+pnpm dev --host 127.0.0.1
 
 # Build for production
 pnpm build
@@ -96,26 +95,10 @@ pnpm preview
 
 # Run TypeScript type checking
 pnpm typecheck
+
+# Lint code
+pnpm lint
 ```
-
-## 📝 Content Management
-
-Content is written in Markdown with YAML frontmatter:
-
-```markdown
----
-title: "Page Title"
-description: "Page description for SEO"
----
-
-# Your Content Here
-
-Write your content in markdown...
-```
-
-**Bilingual Pattern:**
-- French content: `content/page-name.md`
-- English content: `content/en/page-name.md`
 
 ---
 

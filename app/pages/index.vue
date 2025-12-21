@@ -1,54 +1,36 @@
 <script setup lang="ts">
-const { locale, t } = useI18n()
-
-// Locale-aware content path
-const contentPath = computed(() => {
-  return locale.value === 'fr' ? '/index' : `/${locale.value}/index`
+const { data: page } = await useAsyncData('index', () => {
+  return queryCollection('index').first()
 })
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true
+  })
+}
 
-// Query content with reactive path
-const { data: page } = await useAsyncData(
-  `index-${locale.value}`,
-  () => queryCollection('content').path(contentPath.value).first(),
-  {
-    watch: [locale], // Auto-refetch when locale changes
-  }
-)
-
-// TODO SEO metadata for homepage
+useSeoMeta({
+  title: page.value?.seo.title || page.value?.title,
+  ogTitle: page.value?.seo.title || page.value?.title,
+  description: page.value?.seo.description || page.value?.description,
+  ogDescription: page.value?.seo.description || page.value?.description
+})
 </script>
 
 <template>
-  <UContainer class="py-12">
-    <div class="max-w-2xl mx-auto text-center space-y-8">
-      <UCard>
-        <template #header>
-          <h1 class="text-4xl font-bold">{{ page?.title || 'Aurélien Tondoux' }}</h1>
-        </template>
-
-        <div class="space-y-6">
-          <UBadge
-            color="primary"
-            variant="subtle"
-            size="lg"
-            class="px-4 py-2"
-          >
-            {{ t('comingSoon') }}
-          </UBadge>
-
-          <ContentRenderer
-              v-if="page"
-              :value="page!"
-              class="prose dark:prose-invert mx-auto"
-          />
-        </div>
-      </UCard>
-
-      <div class="pt-6">
-        <p class="text-sm text-gray-500 dark:text-gray-500">
-          Tech Lead • Full Stack Developer
-        </p>
-      </div>
-    </div>
-  </UContainer>
+  <UPage v-if="page">
+    <LandingHero :page />
+    <UPageSection
+      :ui="{
+        container: '!pt-0 lg:grid lg:grid-cols-2 lg:gap-8'
+      }"
+    >
+      <LandingAbout :page />
+      <LandingWorkExperience :page />
+    </UPageSection>
+    <LandingBlog :page />
+    <LandingTestimonials :page />
+    <LandingFAQ :page />
+  </UPage>
 </template>
