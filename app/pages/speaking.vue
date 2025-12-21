@@ -7,8 +7,9 @@ type Event = {
   category: 'Conference' | 'Live talk' | 'Podcast'
 }
 
-const { data: page } = await useAsyncData('speaking', () => {
-  return queryCollection('speaking').first()
+const { locale } = useI18n()
+const { data: page } = await useAsyncData(`speaking-${locale.value}`, () => {
+  return queryCollection(`speaking_${locale.value}`).first()
 })
 if (!page.value) {
   throw createError({

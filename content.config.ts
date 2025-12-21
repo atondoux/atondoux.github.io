@@ -1,5 +1,7 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
+const LOCALES = ['fr', 'en'] as const
+
 const createBaseSchema = () => z.object({
   title: z.string(),
   description: z.string()
@@ -34,98 +36,118 @@ const createTestimonialSchema = () => z.object({
   author: createAuthorSchema()
 })
 
-export default defineContentConfig({
-  collections: {
-    index: defineCollection({
-      type: 'page',
-      source: 'index.yml',
-      schema: z.object({
-        hero: z.object({
-          links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema())
-        }),
-        about: createBaseSchema(),
-        experience: createBaseSchema().extend({
-          items: z.array(z.object({
-            date: z.date(),
-            position: z.string(),
-            company: z.object({
-              name: z.string(),
-              url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
-            })
-          }))
-        }),
-        testimonials: z.array(createTestimonialSchema()),
-        blog: createBaseSchema(),
-        faq: createBaseSchema().extend({
-          categories: z.array(
-            z.object({
-              title: z.string().nonempty(),
-              questions: z.array(
-                z.object({
-                  label: z.string().nonempty(),
-                  content: z.string().nonempty()
-                })
-              )
-            }))
-        })
-      })
-    }),
-    projects: defineCollection({
-      type: 'data',
-      source: 'projects/*.yml',
-      schema: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
-        tags: z.array(z.string()),
-        date: z.date()
-      })
-    }),
-    blog: defineCollection({
-      type: 'page',
-      source: 'blog/*.md',
-      schema: z.object({
-        minRead: z.number(),
-        date: z.date(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        author: createAuthorSchema()
-      })
-    }),
-    pages: defineCollection({
-      type: 'page',
-      source: [
-        { include: 'projects.yml' },
-        { include: 'blog.yml' }
-      ],
-      schema: z.object({
-        links: z.array(createButtonSchema())
-      })
-    }),
-    speaking: defineCollection({
-      type: 'page',
-      source: 'speaking.yml',
-      schema: z.object({
+// Define base collection configurations
+const baseCollections = {
+  index: {
+    type: 'page' as const,
+    source: 'index.yml',
+    schema: z.object({
+      hero: z.object({
         links: z.array(createButtonSchema()),
-        events: z.array(z.object({
-          category: z.enum(['Live talk', 'Podcast', 'Conference']),
-          title: z.string(),
-          date: z.date(),
-          location: z.string(),
-          url: z.string().optional()
-        }))
-      })
-    }),
-    about: defineCollection({
-      type: 'page',
-      source: 'about.yml',
-      schema: z.object({
-        content: z.object({}),
         images: z.array(createImageSchema())
+      }),
+      about: createBaseSchema(),
+      experience: createBaseSchema().extend({
+        items: z.array(z.object({
+          date: z.date(),
+          position: z.string(),
+          company: z.object({
+            name: z.string(),
+            url: z.string(),
+            logo: z.string().editor({ input: 'icon' }),
+            color: z.string()
+          })
+        }))
+      }),
+      testimonials: z.array(createTestimonialSchema()),
+      blog: createBaseSchema(),
+      faq: createBaseSchema().extend({
+        categories: z.array(
+          z.object({
+            title: z.string().nonempty(),
+            questions: z.array(
+              z.object({
+                label: z.string().nonempty(),
+                content: z.string().nonempty()
+              })
+            )
+          }))
       })
     })
+  },
+  projects: {
+    type: 'data' as const,
+    source: 'projects/*.yml',
+    schema: z.object({
+      title: z.string().nonempty(),
+      description: z.string().nonempty(),
+      image: z.string().nonempty().editor({ input: 'media' }),
+      url: z.string().nonempty(),
+      tags: z.array(z.string()),
+      date: z.date()
+    })
+  },
+  blog: {
+    type: 'page' as const,
+    source: 'blog/*.md',
+    schema: z.object({
+      minRead: z.number(),
+      date: z.date(),
+      image: z.string().nonempty().editor({ input: 'media' }),
+      author: createAuthorSchema()
+    })
+  },
+  pages: {
+    type: 'page' as const,
+    source: [
+      { include: 'projects.yml' },
+      { include: 'blog.yml' }
+    ],
+    schema: z.object({
+      links: z.array(createButtonSchema())
+    })
+  },
+  speaking: {
+    type: 'page' as const,
+    source: 'speaking.yml',
+    schema: z.object({
+      links: z.array(createButtonSchema()),
+      events: z.array(z.object({
+        category: z.enum(['Live talk', 'Podcast', 'Conference']),
+        title: z.string(),
+        date: z.date(),
+        location: z.string(),
+        url: z.string().optional()
+      }))
+    })
+  },
+  about: {
+    type: 'page' as const,
+    source: 'about.yml',
+    schema: z.object({
+      content: z.object({}),
+      images: z.array(createImageSchema())
+    })
   }
-})
+}
+
+// Generate locale-specific collections
+const collections: Record<string, any> = {}
+for (const locale of LOCALES) {
+  for (const [name, config] of Object.entries(baseCollections)) {
+    const localeSource = Array.isArray(config.source)
+      ? config.source.map(s => ({
+          include: `${locale}/${typeof s === 'string' ? s : s.include}`,
+          prefix: ''
+        }))
+      : `${locale}/${config.source}`
+
+    collections[`${name}_${locale}`] = defineCollection({
+      type: config.type,
+      source: localeSource,
+      schema: config.schema
+    })
+  }
+}
+
+export default defineContentConfig({ collections })

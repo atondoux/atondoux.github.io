@@ -4,13 +4,19 @@ import { mapContentNavigation } from '@nuxt/ui/utils/content'
 import { findPageBreadcrumb } from '@nuxt/content/utils'
 
 const route = useRoute()
+const { locale } = useI18n()
 
-const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('blog').path(route.path).first()
+// Remove locale prefix from path for query (content uses prefix: '')
+const contentPath = route.path.startsWith(`/${locale.value}/`)
+  ? route.path.replace(`/${locale.value}`, '')
+  : route.path
+
+const { data: page } = await useAsyncData(`${route.path}-${locale.value}`, () =>
+  queryCollection(`blog_${locale.value}`).path(contentPath).first()
 )
 if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
-  queryCollectionItemSurroundings('blog', route.path, {
+const { data: surround } = await useAsyncData(`${route.path}-surround-${locale.value}`, () =>
+  queryCollectionItemSurroundings(`blog_${locale.value}`, contentPath, {
     fields: ['description']
   })
 )

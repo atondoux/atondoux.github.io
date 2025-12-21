@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('projects-page', () => {
-  return queryCollection('pages').path('/projects').first()
+const { locale } = useI18n()
+const { data: page } = await useAsyncData(`projects-page-${locale.value}`, () => {
+  return queryCollection(`pages_${locale.value}`).path('/projects').first()
 })
 if (!page.value) {
   throw createError({
@@ -10,8 +11,8 @@ if (!page.value) {
   })
 }
 
-const { data: projects } = await useAsyncData('projects', () => {
-  return queryCollection('projects').all()
+const { data: projects } = await useAsyncData(`projects-${locale.value}`, () => {
+  return queryCollection(`projects_${locale.value}`).all()
 })
 
 const { global } = useAppConfig()
