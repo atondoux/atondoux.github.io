@@ -7,14 +7,11 @@
     "about": "About"
   },
   "footer": {
-    "credits": "Built with Nuxt UI • © {year}",
-    "ariaLabels": {
-      "nuxtDiscord": "Nuxt on Discord",
-      "nuxtTwitter": "Nuxt on Twitter",
-      "nuxtGitHub": "Nuxt on GitHub"
-    }
+    "credits": "Built with Nuxt • © {year} Aurelien Tondoux"
   },
   "global": {
-    "profilePictureAlt": "My profile picture"
+    "profilePictureAlt": "My profile picture",
+    "available": "Available for new projects",
+    "notAvailable": "Not available at the moment"
   }
 }
