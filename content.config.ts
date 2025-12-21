@@ -31,10 +31,6 @@ const createAuthorSchema = () => z.object({
   avatar: createImageSchema().optional()
 })
 
-const createTestimonialSchema = () => z.object({
-  quote: z.string(),
-  author: createAuthorSchema()
-})
 
 // Define base collection configurations
 const baseCollections = {
@@ -58,20 +54,6 @@ const baseCollections = {
             color: z.string()
           })
         }))
-      }),
-      testimonials: z.array(createTestimonialSchema()),
-      blog: createBaseSchema(),
-      faq: createBaseSchema().extend({
-        categories: z.array(
-          z.object({
-            title: z.string().nonempty(),
-            questions: z.array(
-              z.object({
-                label: z.string().nonempty(),
-                content: z.string().nonempty()
-              })
-            )
-          }))
       })
     })
   },
@@ -125,7 +107,7 @@ const baseCollections = {
     type: 'page' as const,
     source: 'about.yml',
     schema: z.object({
-      content: z.object({}),
+      content: z.string(),
       images: z.array(createImageSchema())
     })
   }
@@ -145,7 +127,7 @@ for (const locale of LOCALES) {
     collections[`${name}_${locale}`] = defineCollection({
       type: config.type,
       source: localeSource,
-      schema: config.schema
+      schema: config.schema as any
     })
   }
 }

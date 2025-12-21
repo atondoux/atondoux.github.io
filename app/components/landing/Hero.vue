@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '~/types/content'
 
-const { footer, global } = useAppConfig()
+const { global } = useAppConfig()
+const socialLinks = useSocialLinks()
 
 defineProps<{
   page: IndexCollectionItem
@@ -111,7 +112,7 @@ defineProps<{
             variant="ghost"
             class="gap-2"
             :to="global.available ? global.meetingLink : ''"
-            :label="global.available ? 'Available for new projects' : 'Not available at the moment'"
+            :label="global.available ? $t('global.available') : $t('global.notAvailable')"
           >
             <template #leading>
               <span class="relative flex size-2">
@@ -131,7 +132,7 @@ defineProps<{
 
       <div class="gap-x-4 inline-flex mt-4">
         <Motion
-          v-for="(link, index) of footer?.links"
+          v-for="(link, index) of socialLinks"
           :key="index"
 
           :initial="{
