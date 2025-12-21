@@ -12,6 +12,7 @@
   "global": {
     "profilePictureAlt": "Ma photo de profil",
     "available": "Disponible pour de nouveaux projets",
-    "notAvailable": "Pas disponible pour le moment"
+    "notAvailable": "Pas disponible pour le moment",
+    "viewProject": "Voir le projet"
   }
 }

@@ -5,7 +5,7 @@ export default defineAppConfig({
       light: '',
       alt: ''
     },
-    meetingLink: 'https://cal.com/',
+    meetingLink: 'https://calendly.com/atondoux/30min/',
     email: 'ui-pro@nuxt.com',
     available: true
   },

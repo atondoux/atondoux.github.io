@@ -12,7 +12,7 @@ if (!page.value) {
 }
 
 const { data: projects } = await useAsyncData(`projects-${locale.value}`, () => {
-  return queryCollection(`projects_${locale.value}`).all()
+  return queryCollection(`projects_${locale.value}`).order('date', 'DESC').all()
 })
 
 const { global } = useAppConfig()
@@ -46,10 +46,6 @@ useSeoMeta({
             :label="page.links[0]?.label"
             :to="global.meetingLink"
             v-bind="page.links[0]"
-          />
-          <UButton
-            :to="`mailto:${global.email}`"
-            v-bind="page.links[1]"
           />
         </div>
       </template>
@@ -89,18 +85,20 @@ useSeoMeta({
               :to="project.url"
               class="text-sm text-primary flex items-center"
             >
-              View Project
+              {{ $t('global.viewProject') }}
               <UIcon
                 name="i-lucide-arrow-right"
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
               />
             </ULink>
           </template>
-          <img
-            :src="project.image"
-            :alt="project.title"
-            class="object-cover w-full h-48 rounded-lg"
-          >
+          <div class="w-full h-72 rounded-lg flex items-center justify-center">
+            <img
+              :src="project.image"
+              :alt="project.title"
+              class="max-w-full max-h-full"
+            >
+          </div>
         </UPageCard>
       </Motion>
     </UPageSection>
