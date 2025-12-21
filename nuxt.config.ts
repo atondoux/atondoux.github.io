@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    'motion-v/nuxt'
+    'motion-v/nuxt',
+    '@nuxtjs/i18n'
   ],
 
   devtools: {
@@ -17,6 +18,21 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   compatibilityDate: '2024-11-01',
+
+  i18n: {
+    defaultLocale: 'fr',
+    strategy: 'prefix_except_default',
+    locales: [
+      { code: 'fr', language: 'fr-FR', name: 'Français', files: ['fr.json'] },
+      { code: 'en', language: 'en-US', name: 'English', files: ['en.json'] }
+    ],
+    langDir: 'locales',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    }
+  },
 
   nitro: {
     prerender: {

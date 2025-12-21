@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "speaking": "Speaking",
+    "about": "About"
+  },
+  "footer": {
+    "credits": "Built with Nuxt UI • © {year}",
+    "ariaLabels": {
+      "nuxtDiscord": "Nuxt on Discord",
+      "nuxtTwitter": "Nuxt on Twitter",
+      "nuxtGitHub": "Nuxt on GitHub"
+    }
+  },
+  "global": {
+    "profilePictureAlt": "My profile picture"
+  }
+}

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
+const { locale } = useI18n()
 
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
@@ -13,7 +14,7 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: locale
   }
 })
 
@@ -24,17 +25,19 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 
+const navLinks = useNavLinks()
+
 const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData('navigation', () => {
+  useAsyncData(`navigation-${locale.value}`, () => {
     return Promise.all([
-      queryCollectionNavigation('blog')
+      queryCollectionNavigation(`blog_${locale.value}`)
     ])
   }, {
     transform: data => data.flat()
   }),
-  useLazyAsyncData('search', () => {
+  useLazyAsyncData(`search-${locale.value}`, () => {
     return Promise.all([
-      queryCollectionSearchSections('blog')
+      queryCollectionSearchSections(`blog_${locale.value}`)
     ])
   }, {
     server: false,
