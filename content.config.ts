@@ -86,7 +86,14 @@ const baseCollections = {
       { include: 'blog.yml' }
     ],
     schema: z.object({
-      links: z.array(createButtonSchema())
+      path: z.string(),
+      title: z.string(),
+      description: z.string(),
+      links: z.array(createButtonSchema()).optional(),
+      seo: z.object({
+        title: z.string().optional(),
+        description: z.string().optional()
+      }).optional()
     })
   },
   speaking: {
