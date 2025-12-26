@@ -1,6 +1,11 @@
-title: Namirial
-description: Faciliter la vie quotidienne en rendant plus fluide les parcours de souscription gérés par une plateforme de services de confiance qualifiés.
-image: /projects/08_namirial_logo.svg
-url: "#"
+title: "Namirial"
+description: "Faciliter la vie quotidienne en rendant plus fluide les parcours de souscription gérés par une plateforme de services de confiance qualifiés."
+date: 2024-01-01
+slug: "namirial"
+image: "/projects/08_namirial_logo.svg"
 tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring Boot", "API REST", "SQL", "Test Driven Development", "Gitlab CI/CD", "Kibana", "Méthodes agiles"]
-date: "2024"
+role: "Tech Lead Backend"
+actions:
+  - "Enrichir de nouvelles fonctionnalités et corriger les anomalies de la plateforme permettant la gestion de parcours d'acquisition clients personnalisés avec de la vérification d'identité, de la signature électronique et de la soumission de documents"
+  - "Intégrer l'API de signature électronique de Yousign (https://yousign.com/fr-fr/)"
+  - "Orchestrer des services de vérification de documents et de détection de fraude"

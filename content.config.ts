@@ -63,10 +63,16 @@ const baseCollections = {
     schema: z.object({
       title: z.string().nonempty(),
       description: z.string().nonempty(),
+      date: z.date(),
       image: z.string().nonempty().editor({ input: 'media' }),
-      url: z.string().nonempty(),
       tags: z.array(z.string()),
-      date: z.date()
+      slug: z.string(),
+      role: z.string(),
+      actions: z.array(z.string()),
+      seo: z.object({
+        title: z.string().optional(),
+        description: z.string().optional()
+      }).optional()
     })
   },
   blog: {
@@ -125,11 +131,26 @@ const collections: Record<string, any> = {}
 for (const locale of LOCALES) {
   for (const [name, config] of Object.entries(baseCollections)) {
     const localeSource = Array.isArray(config.source)
-      ? config.source.map(s => ({
-          include: `${locale}/${typeof s === 'string' ? s : s.include}`,
-          prefix: ''
-        }))
-      : `${locale}/${config.source}`
+      ? config.source.map(s => {
+          const sourceStr = typeof s === 'string' ? s : s.include
+          // Extract directory from pattern (e.g., 'projects.yml' -> 'projects', 'blog/*.md' -> 'blog')
+          const pathMatch = sourceStr.match(/^([^/*]+)/)
+          const prefix = pathMatch ? `/${pathMatch[1].replace(/\.(yml|yaml|md)$/, '')}` : '/'
+          return {
+            include: `${locale}/${sourceStr}`,
+            prefix
+          }
+        })
+      : (() => {
+          // Extract directory from pattern for prefix
+          const sourceStr = config.source
+          const pathMatch = sourceStr.match(/^([^/*]+)/)
+          const prefix = pathMatch ? `/${pathMatch[1].replace(/\.(yml|yaml|md)$/, '')}` : '/'
+          return {
+            include: `${locale}/${sourceStr}`,
+            prefix
+          }
+        })()
 
     collections[`${name}_${locale}`] = defineCollection({
       type: config.type,

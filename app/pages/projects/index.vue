@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { locale } = useI18n()
+const localePath = useLocalePath()
 const { data: page } = await useAsyncData(`projects-page-${locale.value}`, () => {
   return queryCollection(`pages_${locale.value}`).path('/projects').first()
 })
@@ -66,7 +67,7 @@ useSeoMeta({
         <UPageCard
           :title="project.title"
           :description="project.description"
-          :to="project.url"
+          :to="localePath(`/projects/${project.slug}`)"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
@@ -82,7 +83,7 @@ useSeoMeta({
           </template>
           <template #footer>
             <ULink
-              :to="project.url"
+              :to="localePath(`/projects/${project.slug}`)"
               class="text-sm text-primary flex items-center"
             >
               {{ $t('global.viewProject') }}

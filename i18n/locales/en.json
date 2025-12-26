@@ -14,5 +14,9 @@
     "available": "Available for new projects",
     "notAvailable": "Not available at the moment",
     "viewProject": "View Project"
+  },
+  "projects": {
+    "myRole": "My Role",
+    "myActions": "My Actions"
   }
 }

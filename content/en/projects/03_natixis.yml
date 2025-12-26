@@ -1,6 +1,13 @@
-title: Natixis
-description: Improving the user experience of the CRM used by the stock market division.
-image: /projects/03_natixis_logo.svg
-url: "#"
+title: "Natixis"
+description: "Improving the user experience of the CRM used by the stock market division."
+date: 2011-01-01
+slug: "natixis"
+image: "/projects/03_natixis_logo.svg"
 tags: ["Banking", "Java", "Spring Framework", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
-date: "2011"
+role: "Software Engineer"
+actions:
+  - "Revamp the CRM to significantly improve the user experience for salespeople and analysts in the Equity Markets department"
+  - "Plan, design, and implement new components on both backend and frontend side"
+  - "Establish a continuous refactoring process to manage legacy code"
+  - "Assist in scoping and estimating the required developments"
+  - "Contribute to collaborative documentation by writing technical documentation"
