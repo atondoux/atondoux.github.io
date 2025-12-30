@@ -1,6 +1,11 @@
-title: Veolia Water
-description: Supporting water distribution in Paris area by developing rich internet applications.
-image: /projects/00_veolia_logo.svg
-url: "#"
+title: "Veolia Water"
+description: "Supporting water distribution in Paris area by developing rich internet applications."
+date: 2007-01-01
+slug: "veolia"
+image: "/projects/00_veolia_logo.svg"
 tags: ["Public Services", "Java", "JavaScript", "SQL", "Waterfall Methodology"]
-date: "2007"
+role: "Software Engineer"
+actions:
+  - "Design and implement business applications to support water distribution management in Paris area (serving over 500,000 contracts) using an in-house rapid development framework"
+  - "Manage releases on a High-Availability integration platform"
+  - "Produce technical specifications, release documentation, and deployment procedures"

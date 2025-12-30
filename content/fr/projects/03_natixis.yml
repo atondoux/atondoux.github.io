@@ -1,6 +1,13 @@
-title: Natixis
-description: Améliorer l'ergonomie et l'efficacité du CRM utilisé par le département des marchés boursiers.
-image: /projects/03_natixis_logo.svg
-url: "#"
+title: "Natixis"
+description: "Améliorer l'ergonomie et l'efficacité du CRM utilisé par le département des marchés boursiers."
+date: 2011-01-01
+slug: "natixis"
+image: "/projects/03_natixis_logo.svg"
 tags: ["Banque", "Java", "Spring Framework", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
-date: "2011"
+role: "Ingénieur Études et Développement"
+actions:
+  - "Refondre le CRM utilisé par les vendeurs et les analystes du département Equity Markets"
+  - "Planifier, concevoir et implémenter de nouveaux composants côté backend et côté frontend"
+  - "Participer activement à la mise en place d'un processus continu de refactoring afin de gérer le code legacy"
+  - "Apporter une aide au cadrage et au chiffrage des évolutions à réaliser"
+  - "Contribuer à la documentation collaborative en rédigeant de la documentation technique"

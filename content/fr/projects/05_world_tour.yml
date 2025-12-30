@@ -1,6 +1,11 @@
-title: Tour du monde
-description: Vivre une aventure exceptionnelle de 730 jours marquée par un enrichissement personnel inestimable avec de nombreuses découvertes naturelles, culturelles et humaines.
-image: /projects/05_world_tour_logo.svg
-url: "#"
+title: "Tour du monde"
+description: "Vivre une aventure exceptionnelle de 730 jours marquée par un enrichissement personnel inestimable avec de nombreuses découvertes naturelles, culturelles et humaines."
+date: 2013-01-01
+slug: "world-tour"
+image: "/projects/05_world_tour_logo.svg"
 tags: ["Voyage", "Développement Personnel", "Anglais", "Adaptation", "Négociation", "Résilience", "Ouverture d'esprit"]
-date: "2013"
+role: "Voyageur"
+actions:
+  - "60 000 km parcourus à travers l'Europe, l'Asie et l'Océanie"
+  - "17 pays visités : Allemagne 🇩🇪, République tchèque 🇨🇿, Pologne 🇵🇱, Ukraine 🇺🇦, Russie 🇷🇺, Mongolie 🇲🇳, Chine 🇨🇳, Vietnam 🇻🇳, Cambodge 🇰🇭, Laos 🇱🇦, Thaïlande 🇹🇭, Myanmar 🇲🇲, Philippines 🇵🇭, Australie 🇦🇺, Fidji 🇫🇯, Samoa 🇼🇸, Nouvelle-Zélande 🇳🇿"
+  - "⭐ Une expérience professionnelle réussie en tant que développeur pour Hitachi en Australie"

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { locale } = useI18n()
+const localePath = useLocalePath()
 const { data: page } = await useAsyncData(`projects-page-${locale.value}`, () => {
   return queryCollection(`pages_${locale.value}`).path('/projects').first()
 })
@@ -66,23 +67,21 @@ useSeoMeta({
         <UPageCard
           :title="project.title"
           :description="project.description"
-          :to="project.url"
+          :to="localePath(`/projects/${project.slug}`)"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
           class="group"
           :ui="{
-            wrapper: 'max-sm:order-last'
+            wrapper: 'max-sm:order-last',
+            container: '!items-center',
+            body: 'flex flex-col justify-center',
+            description: 'text-gray-600 dark:text-gray-400'
           }"
         >
-          <template #leading>
-            <span class="text-sm text-muted">
-              {{ new Date(project.date).getFullYear() }}
-            </span>
-          </template>
           <template #footer>
             <ULink
-              :to="project.url"
+              :to="localePath(`/projects/${project.slug}`)"
               class="text-sm text-primary flex items-center"
             >
               {{ $t('global.viewProject') }}
@@ -92,11 +91,11 @@ useSeoMeta({
               />
             </ULink>
           </template>
-          <div class="w-full h-72 rounded-lg flex items-center justify-center">
+          <div class="w-full h-full rounded-lg flex items-center justify-center bg-gray-100 transition-transform duration-500 ease-out group-hover:scale-105">
             <img
               :src="project.image"
               :alt="project.title"
-              class="max-w-full max-h-full"
+              class="w-full h-full object-contain rounded-lg"
             >
           </div>
         </UPageCard>
