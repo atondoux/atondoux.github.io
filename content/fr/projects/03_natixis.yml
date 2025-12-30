@@ -1,6 +1,6 @@
 title: "Natixis"
 description: "Améliorer l'ergonomie et l'efficacité du CRM utilisé par le département des marchés boursiers."
-date: 2011-01-01
+date: 2011
 slug: "natixis"
 image: "/projects/03_natixis_logo.svg"
 tags: ["Banque", "Java", "Spring Framework", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]

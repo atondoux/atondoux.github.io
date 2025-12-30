@@ -17,6 +17,7 @@
   },
   "projects": {
     "myRole": "My Role",
-    "myActions": "My Actions"
+    "myActions": "My Actions",
+    "links": "Links"
   }
 }

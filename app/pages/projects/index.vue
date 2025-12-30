@@ -80,6 +80,20 @@ useSeoMeta({
           }"
         >
           <template #footer>
+            <div
+              v-if="project.tags && project.tags.length"
+              class="flex flex-wrap gap-2 mb-4"
+            >
+              <UBadge
+                v-for="tag in project.tags"
+                :key="tag"
+                color="primary"
+                variant="outline"
+                size="md"
+              >
+                {{ tag }}
+              </UBadge>
+            </div>
             <ULink
               :to="localePath(`/projects/${project.slug}`)"
               class="text-sm text-primary flex items-center"

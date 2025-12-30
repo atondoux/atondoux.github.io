@@ -1,6 +1,6 @@
 title: "Softway Medical"
 description: "Driving improvements in patient care and hospital efficiency through purpose-built digital solutions for healthcare professionals."
-date: 2015-01-01
+date: 2015
 slug: "softway-medical"
 image: "/projects/06_softway_medical_logo.svg"
 tags: ["Healthcare", "Software Craftsmanship", "Java", "Spring Boot", "jHipster", "Quarkus", "REST API", "TypeScript", "Vue.js", "SQL", "NoSQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "Microservices", "OpenShift", "Graylog", "DevOps", "Agile Methodologies"]
@@ -10,4 +10,14 @@ actions:
   - "Engage in every stage of the project lifecycle, from initial design workshops with end-users to architectural decisions and production deployment"
   - "Promote best practices in software design and development"
   - "Play an active role in the recruitment and onboarding of new team members"
-  - "⭐ Successfully delivered a wound care tracking module (https://www.softwaymedical.fr/temoignage/module-suivi-de-plaies-centre-richelieu) in collaboration with healthcare professionals"
+links:
+  - label: "Softway Medical website"
+    to: "https://www.groupesoftwaymedical.com/en/"
+    target: "_blank"
+    color: "primary"
+    variant: "soft"
+  - label: "Client testimonial: wound tracking module"
+    to: "https://youtu.be/NwEPv_cVKC0?si=ilw-n3C1mIb5uDz2"
+    target: "_blank"
+    color: "neutral"
+    variant: "soft"

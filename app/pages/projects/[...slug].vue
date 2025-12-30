@@ -53,12 +53,6 @@ useSeoMeta({
   ogDescription: description,
   ogTitle: title
 })
-
-const formatDate = (dateString: string) => {
-  return new Date(dateString).toLocaleDateString('fr-FR', {
-    year: 'numeric'
-  })
-}
 </script>
 
 <template>
@@ -72,7 +66,7 @@ const formatDate = (dateString: string) => {
           <UIcon name="lucide:chevron-left" />
           {{ $t('nav.projects') }}
         </ULink>
-        <div class="flex flex-col lg:flex-row gap-8 mt-8 lg:items-start">
+        <div class="flex flex-col lg:flex-row gap-8 mt-8 lg:items-center">
           <div class="flex-1 flex flex-col gap-3">
             <h1 class="text-4xl font-medium">
               {{ page.title }}
@@ -80,20 +74,7 @@ const formatDate = (dateString: string) => {
             <p class="text-gray-600 dark:text-gray-400">
               {{ page.description }}
             </p>
-            <div
-              v-if="page.tags && page.tags.length"
-              class="flex flex-wrap gap-2 mt-2"
-            >
-              <UBadge
-                v-for="tag in page.tags"
-                :key="tag"
-                color="primary"
-                variant="outline"
-                size="md"
-              >
-                {{ tag }}
-              </UBadge>
-            </div>
+
           </div>
           <div class="shrink-0">
             <div class="w-64 h-48 rounded-lg flex items-center justify-center bg-gray-100 p-8">
@@ -105,9 +86,23 @@ const formatDate = (dateString: string) => {
             </div>
           </div>
         </div>
+        <div
+          v-if="page.tags && page.tags.length"
+          class="flex flex-wrap gap-2 my-8 justify-center"
+        >
+          <UBadge
+            v-for="tag in page.tags"
+            :key="tag"
+            color="primary"
+            variant="outline"
+            size="md"
+          >
+            {{ tag }}
+          </UBadge>
+        </div>
         <UPageBody class="max-w-3xl mx-auto">
           <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-            <UIcon name="i-lucide-user" />
+            <UIcon name="i-lucide-user-plus" />
             {{ $t('projects.myRole') }}
           </h2>
           <ul class="list-disc list-outside ml-6 space-y-2 mb-8">
@@ -117,7 +112,7 @@ const formatDate = (dateString: string) => {
           </ul>
 
           <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-            <UIcon name="i-lucide-circle-check" />
+            <UIcon name="i-lucide-circle-check-big" />
             {{ $t('projects.myActions') }}
           </h2>
           <ul class="list-disc list-outside ml-6 space-y-2">
@@ -129,6 +124,20 @@ const formatDate = (dateString: string) => {
               {{ action }}
             </li>
           </ul>
+
+          <div v-if="page.links && page.links.length">
+            <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
+              <UIcon name="i-lucide-external-link" />
+              {{ $t('projects.links') }}
+            </h2>
+            <div class="flex flex-wrap gap-3">
+              <UButton
+                v-for="(link, index) in page.links"
+                :key="index"
+                v-bind="link"
+              />
+            </div>
+          </div>
 
           <UContentSurround v-if="surround" :surround="surround" />
         </UPageBody>

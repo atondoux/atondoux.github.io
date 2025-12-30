@@ -1,6 +1,6 @@
 title: "Ministère de la Santé"
 description: "Simplifier et accélérer l'indemnisation des victimes d'accidents médicaux en dématérialisant l'ensemble des procédures de l'ONIAM."
-date: 2009-01-01
+date: 2009
 slug: "oniam"
 image: "/projects/01_oniam_logo.svg"
 tags: ["Services publics", "Java", "Spring Framework", "Hibernate", "API REST", "jBPM", "JSF", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
@@ -11,3 +11,9 @@ actions:
   - "Prendre en charge la formation technique des nouveaux arrivants"
   - "Administrer la plateforme d'intégration continue (build et release)"
   - "Rédiger la documentation technique et des guides de bonnes pratiques"
+links:
+  - label: "Site web de l'ONIAM"
+    to: "https://www.oniam.fr/"
+    target: "_blank"
+    color: "primary"
+    variant: "soft"
