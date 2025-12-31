@@ -6,7 +6,7 @@
     "about": "About"
   },
   "footer": {
-    "credits": "Built with Nuxt • © {year} Aurelien Tondoux"
+    "credits": "© {year} Aurelien Tondoux • Built with Nuxt"
   },
   "global": {
     "profilePictureAlt": "My profile picture",
