@@ -22,16 +22,6 @@ const createImageSchema = () => z.object({
   alt: z.string()
 })
 
-const createAuthorSchema = () => z.object({
-  name: z.string(),
-  description: z.string().optional(),
-  username: z.string().optional(),
-  twitter: z.string().optional(),
-  to: z.string().optional(),
-  avatar: createImageSchema().optional()
-})
-
-
 // Define base collection configurations
 const baseCollections = {
   index: {
@@ -76,21 +66,10 @@ const baseCollections = {
       }).optional()
     })
   },
-  blog: {
-    type: 'page' as const,
-    source: 'blog/*.md',
-    schema: z.object({
-      minRead: z.number(),
-      date: z.date(),
-      image: z.string().nonempty().editor({ input: 'media' }),
-      author: createAuthorSchema()
-    })
-  },
   pages: {
     type: 'page' as const,
     source: [
-      { include: 'projects.yml' },
-      { include: 'blog.yml' }
+      { include: 'projects.yml' }
     ],
     schema: z.object({
       path: z.string(),
