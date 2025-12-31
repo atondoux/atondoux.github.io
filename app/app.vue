@@ -27,23 +27,9 @@ useSeoMeta({
 
 const navLinks = useNavLinks()
 
-const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData(`navigation-${locale.value}`, () => {
-    return Promise.all([
-      queryCollectionNavigation(`blog_${locale.value}`)
-    ])
-  }, {
-    transform: data => data.flat()
-  }),
-  useLazyAsyncData(`search-${locale.value}`, () => {
-    return Promise.all([
-      queryCollectionSearchSections(`blog_${locale.value}`)
-    ])
-  }, {
-    server: false,
-    transform: data => data.flat()
-  })
-])
+// Since we're only querying blog and removing it, simplify to empty arrays
+const navigation = ref([])
+const files = ref([])
 </script>
 
 <template>

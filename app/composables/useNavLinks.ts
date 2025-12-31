@@ -13,10 +13,6 @@ export function useNavLinks() {
     icon: 'i-lucide-folder',
     to: localePath('/projects')
   }, {
-    label: t('nav.blog'),
-    icon: 'i-lucide-file-text',
-    to: localePath('/blog')
-  }, {
     label: t('nav.speaking'),
     icon: 'i-lucide-mic',
     to: localePath('/speaking')
