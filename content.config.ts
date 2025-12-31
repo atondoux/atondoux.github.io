@@ -82,20 +82,6 @@ const baseCollections = {
       }).optional()
     })
   },
-  speaking: {
-    type: 'page' as const,
-    source: 'speaking.yml',
-    schema: z.object({
-      links: z.array(createButtonSchema()),
-      events: z.array(z.object({
-        category: z.enum(['Live talk', 'Podcast', 'Conference']),
-        title: z.string(),
-        date: z.date(),
-        location: z.string(),
-        url: z.string().optional()
-      }))
-    })
-  },
   about: {
     type: 'page' as const,
     source: 'about.yml',
