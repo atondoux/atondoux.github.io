@@ -27,31 +27,31 @@ about:
 experience:
   title: Expérience
   items:
-    - position: "Ingénieur Logiciel Freelance"
+    - position: "Ingénieur Logiciel @"
       date: "2023 - Aujourd'hui"
       company:
-        name: @ AT Code Lab
+        name: "AT Code Lab"
         logo: "i-lucide-laptop-minimal"
         url: ""
         color: "#00DC82"
-    - position: "Développeur & Tech Lead"
+    - position: "Tech Lead @"
       date: "2015 - 2023"
       company:
-        name: @ Softway Medical
+        name: "Softway Medical"
         logo: "i-lucide-hospital"
         url: ""
         color: "#FF6363"
-    - position: "Explorateur & Photographe"
+    - position: "Explorateur & Photographe @"
       date: "2013 - 2015"
       company:
-        name: @ Monde
+        name: "Monde"
         logo: "i-lucide-earth"
         url: ""
         color: "#F59E0B"
-    - position: "Développeur & Consultant"
+    - position: "Ingénieur Logiciel @"
       date: "2007 - 2013"
       company:
-        name: @ ESN(s)
-        logo: "i-lucide-building-2"
+        name: "ESN"
+        logo: "i-lucide-building"
         url: ""
         color: "#5E6AD2"

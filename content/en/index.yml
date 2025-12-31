@@ -30,31 +30,31 @@ about:
 experience:
   title: Work Experience
   items:
-    - position: "Freelance Software Engineer"
+    - position: "Software Engineer at"
       date: "2023 - Present"
       company:
-        name: @ AT Code Lab
+        name: "AT Code Lab"
         logo: "i-lucide-laptop-minimal"
         url: ""
         color: "#00DC82"
-    - position: "Software Engineer & Tech Lead"
+    - position: "Tech Lead at"
       date: "2015 - 2023"
       company:
-        name: @ Softway Medical
+        name: "Softway Medical"
         logo: "i-lucide-hospital"
         url: ""
         color: "#FF6363"
-    - position: "Explorer & Photographer"
+    - position: "Explorer & Photographer at"
       date: "2013 - 2015"
       company:
-        name: @ World
+        name: "World"
         logo: "i-lucide-earth"
         url: ""
         color: "#F59E0B"
-    - position: "Software Engineer & Consultant"
+    - position: "Software Engineer at"
       date: "2007 - 2013"
       company:
-        name: @ IT Services
-        logo: "i-lucide-building-2"
+        name: "IT Services"
+        logo: "i-lucide-building"
         url: ""
         color: "#5E6AD2"
