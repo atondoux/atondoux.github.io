@@ -13,6 +13,10 @@ export function useNavLinks() {
     icon: 'i-lucide-folder',
     to: localePath('/projects')
   }, {
+    label: t('nav.products'),
+    icon: 'i-lucide-package',
+    to: localePath('/products')
+  }, {
     label: t('nav.about'),
     icon: 'i-lucide-user',
     to: localePath('/about')

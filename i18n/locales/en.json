@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "projects": "Projects",
+    "products": "Products",
     "about": "About"
   },
   "footer": {
@@ -11,7 +12,8 @@
     "profilePictureAlt": "My profile picture",
     "available": "Available for new projects",
     "notAvailable": "Not available at the moment",
-    "viewProject": "View Project"
+    "viewProject": "View Project",
+    "viewProduct": "View Product"
   },
   "projects": {
     "myRole": "My Role",
