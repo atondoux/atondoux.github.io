@@ -67,6 +67,7 @@ useSeoMeta({
         <UPageCard
           :title="product.title"
           :description="product.description"
+          :to="localePath(`/products/${product.slug}`)"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
@@ -81,7 +82,7 @@ useSeoMeta({
           <template #footer>
             <div
               v-if="product.tags && product.tags.length"
-              class="flex flex-wrap gap-2"
+              class="flex flex-wrap gap-2 mb-4"
             >
               <UBadge
                 v-for="tag in product.tags"
@@ -93,6 +94,16 @@ useSeoMeta({
                 {{ tag }}
               </UBadge>
             </div>
+            <ULink
+              :to="localePath(`/products/${product.slug}`)"
+              class="text-sm text-primary flex items-center"
+            >
+              {{ $t('global.viewProduct') }}
+              <UIcon
+                name="i-lucide-arrow-right"
+                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+              />
+            </ULink>
           </template>
           <div class="w-full h-full rounded-lg flex items-center justify-center bg-gray-100 transition-transform duration-500 ease-out group-hover:scale-105">
             <img

@@ -5,3 +5,22 @@ date: 2020-03-01
 slug: "ortho-assistant"
 image: "/products/00_ortho_assistant.svg"
 tags: ["Healthcare", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "REST API", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "DevOps"]
+about: |
+  Inspired by the experiences of speech therapists around me, I noticed they spend significant time searching for materials. As sessions follow one another throughout the day, they need to focus on their patients rather than on logistical issues.
+
+  So I decided to create a tool that helps them, just before receiving a patient, to easily find the most relevant and effective materials for that specific patient.
+
+  Ortho Assistant aims to save time and reduce mental load for speech therapists, allowing them to dedicate more time to their patients and provide better care.
+
+  ⚠️ Disclaimer: Ortho Assistant launched in production with several dozen speech therapists as beta testers. However, due to a lack of time to further develop the product and limited user feedback, the service is no longer available. Building this SaaS was a valuable learning experience, both from a technical and marketing perspective. A redesign is being considered to deliver a better version of the service in the future.
+features:
+  - Smart material search tool to efficiently prepare therapy sessions
+  - Advanced inventory indicating the pathologies and skills for which each material is most effective
+  - A fully customizable reference list of pathologies and skills
+  - Material location management for quick and easy retrieval
+links:
+  - label: "Source code on GitLab"
+    to: "https://gitlab.com/atondoux/orthoassistant"
+    target: "_blank"
+    color: "primary"
+    variant: "soft"

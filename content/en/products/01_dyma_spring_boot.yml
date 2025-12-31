@@ -5,3 +5,28 @@ date: 2024-04-01
 slug: "spring-boot-online-course"
 image: "/products/01_dyma_spring_boot.svg"
 tags: ["E-Learning", "Java", "Spring Boot", "REST API", "Clean Code", "Test Driven Development"]
+about: |
+  This course is intended for both beginners and experienced developers, offering the opportunity to discover a proven stack for building enterprise-grade web applications and microservices.
+
+  Inspired by discussions with Dyma's co-founders, I was convinced by their vision and educational approach. The platform focuses above all on content quality by providing only one course per subject. Each course is maintained and updated by its creator.
+
+  After months of hard work, I am proud to have taken on the challenge! Publishing this course taught me that teaching also trains the teacher :)
+
+  I will never forget the first time I pressed the *rec* button to record the first lessons.
+
+  📊 Key metrics: students have spent a total of over 5000 hours on the course, with an average rating of 4.6/5. The course includes 19 chapters, 87 lessons, 174 quizzes and has trained 225 students.
+features:
+  - "Learn the fundamentals of layered application architecture: efficiently structure your Java projects with Spring Boot"
+  - Harness the full power of Spring Data to easily manage your entities and databases
+  - Implement robust error handling and data validation to ensure your application's reliability
+  - Package and deploy your application to the Cloud using Docker and modern deployment tools
+  - Build REST APIs with Spring MVC and efficient routing
+  - Secure your application with Spring Security for fine-grained authentication and authorization management
+  - Test thoroughly with unit and integration tests
+  - Adopt best practices like Clean Code and SOLID principles
+links:
+  - label: "View course on Dyma"
+    to: "https://dyma.fr/formations/spring-boot"
+    target: "_blank"
+    color: "primary"
+    variant: "soft"
