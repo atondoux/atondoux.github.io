@@ -1,6 +1,6 @@
 title: "Société Générale"
 description: "Fiabiliser l'application stratégique de calcul de marges pour les vendeurs de produits financiers."
-date: 2012-01-01
+date: 2012
 slug: "societe-generale"
 image: "/projects/04_societe_generale_logo.svg"
 tags: ["Banque", "Java", "Spring Framework", "Hibernate", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]

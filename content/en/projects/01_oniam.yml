@@ -1,6 +1,6 @@
 title: "Ministry of Health"
-description: "Enabling faster, more efficient compensation for medical accident victims through the digitalization of all procedures for [ONIAM](https://www.oniam.fr/)."
-date: 2009-01-01
+description: "Enabling faster, more efficient compensation for medical accident victims through the digitalization of all procedures for ONIAM."
+date: 2009
 slug: "oniam"
 image: "/projects/01_oniam_logo.svg"
 tags: ["Public Services", "Java", "Spring Framework", "Hibernate", "REST API", "jBPM", "JSF", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
@@ -11,3 +11,9 @@ actions:
   - "Provide technical onboarding and training for new team members"
   - "Oversee the continuous integration platform (build and release management)"
   - "Write technical documentation and best practice guidelines for the team"
+links:
+  - label: "ONIAM website"
+    to: "https://www.oniam.fr/"
+    target: "_blank"
+    color: "primary"
+    variant: "soft"

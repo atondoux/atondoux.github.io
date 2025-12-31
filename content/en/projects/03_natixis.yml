@@ -1,6 +1,6 @@
 title: "Natixis"
 description: "Improving the user experience of the CRM used by the stock market division."
-date: 2011-01-01
+date: 2011
 slug: "natixis"
 image: "/projects/03_natixis_logo.svg"
 tags: ["Banking", "Java", "Spring Framework", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]

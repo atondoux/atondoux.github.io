@@ -1,6 +1,6 @@
 title: "Softway Medical"
 description: "Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé de produits numériques sur mesure."
-date: 2015-01-01
+date: 2015
 slug: "softway-medical"
 image: "/projects/06_softway_medical_logo.svg"
 tags: ["Santé", "Software Craftsmanship", "Java", "Spring Boot", "jHipster", "Quarkus", "API REST", "TypeScript", "Vue.js", "SQL", "NoSQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "Microservices", "OpenShift", "Graylog", "DevOps", "Méthodes agiles"]
@@ -10,4 +10,14 @@ actions:
   - "S'impliquer et prendre part aux décisions dans toutes les étapes des projets : des premiers ateliers de conception avec les utilisateurs finaux en passant par les choix d'architecture jusqu'au déploiement en production"
   - "Garantir le respect des bonnes pratiques de conception et de développement"
   - "Participer activement au processus de recrutement de nouveaux développeurs"
-  - "⭐ Exemple de réalisation avec un module suivi de plaies (https://www.softwaymedical.fr/temoignage/module-suivi-de-plaies-centre-richelieu) conçu et développé en collaboration avec des professionnels de santé"
+links:
+  - label: "Site web de Softway Medical"
+    to: "https://www.groupesoftwaymedical.com/"
+    target: "_blank"
+    color: "primary"
+    variant: "soft"
+  - label: "Témoignage client : module de suivi de plaies"
+    to: "https://youtu.be/NwEPv_cVKC0?si=ilw-n3C1mIb5uDz2"
+    target: "_blank"
+    color: "neutral"
+    variant: "soft"

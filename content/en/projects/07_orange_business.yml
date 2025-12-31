@@ -1,6 +1,6 @@
 title: "Orange Business"
-description: "Contributing to cost reduction for company vehicles by revamping the maintenance management system of the connected vehicle tracking platform [Ocean](https://ocean.orange-business.com/)."
-date: 2023-01-01
+description: "Contributing to cost reduction for company vehicles by revamping the maintenance management system of the connected vehicle tracking Ocean platform."
+date: 2023
 slug: "orange-business"
 image: "/projects/07_orange_business_logo.svg"
 tags: ["Fleet Management", "Software Craftsmanship", "Java", "Spring Framework", "REST API", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
@@ -9,3 +9,9 @@ actions:
   - "Redesign the feature for precise tracking of vehicle usage rates, including heavy vehicles and machinery, to assist fleet managers in monitoring and analyzing team activities"
   - "Rewrite the maintenance tracking API to help fleet managers optimize their costs"
   - "Guide and mentor the team towards adopting Software Craftsmanship practices"
+links:
+  - label: "Ocean website"
+    to: "https://ocean.fr/"
+    target: "_blank"
+    color: "primary"
+    variant: "soft"

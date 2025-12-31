@@ -1,6 +1,6 @@
 title: "SNCF Connect & Tech"
 description: "Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect."
-date: 2010-01-01
+date: 2010
 slug: "sncf-connect-and-tech"
 image: "/projects/02_sncf_connect_logo.svg"
 tags: ["Mobilités Durables", "Java", "Spring Framework", "API REST", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
@@ -10,3 +10,9 @@ actions:
   - "Analyser en détail le moteur de réservation (Yield management)"
   - "Concevoir et implémenter de nouveaux services web B2C dans un environnement orienté services (SOA)"
   - "Mettre en place des suites de tests automatisés en étroite collaboration avec l'équipe QA"
+links:
+  - label: "Site web de SNCF Connect & Tech"
+    to: "https://www.sncf-connect-tech.fr/fr/"
+    target: "_blank"
+    color: "primary"
+    variant: "soft"

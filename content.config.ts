@@ -69,6 +69,7 @@ const baseCollections = {
       slug: z.string(),
       role: z.string(),
       actions: z.array(z.string()),
+      links: z.array(createButtonSchema()).optional(),
       seo: z.object({
         title: z.string().optional(),
         description: z.string().optional()

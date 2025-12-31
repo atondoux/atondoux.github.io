@@ -1,6 +1,6 @@
 title: "Malt"
-description: "Aider les freelancers à recevoir leurs paiements le plus rapidement possible et avoir une meilleure expérience sur la plateforme [Malt](https://www.malt.fr/)."
-date: 2025-01-01
+description: "Aider les freelancers à recevoir leurs paiements le plus rapidement possible et avoir une meilleure expérience sur la plateforme Malt."
+date: 2025
 slug: "malt"
 image: "/projects/09_malt_logo.svg"
 tags: ["Marketplace", "Software Craftsmanship", "Kotlin", "Spring Boot", "Nuxt.js", "API REST", "RabbitMQ", "SQL", "NoSQL", "Test Driven Development", "Gitlab CI/CD", "Datadog"]
@@ -10,3 +10,9 @@ actions:
   - "Automatiser un maximum de procédures afin d'améliorer l'efficacité opérationnelle de l'équipe FinOps"
   - "Étendre les capacités du module à intégrer différents partenaires de financement"
   - "Rendre plus intelligent le moteur de décision servant à sélectionner le meilleur partenaire de financement"
+links:
+  - label: "Site web de Malt"
+    to: "https://www.malt.fr/"
+    target: "_blank"
+    color: "primary"
+    variant: "soft"
