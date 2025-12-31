@@ -1,0 +1,6 @@
+path: /products
+title: Mes créations.
+description: Les produits numériques que j'ai conçus et développés.
+links:
+  - label: "Prendre rendez-vous"
+    color: "neutral"

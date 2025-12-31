@@ -1,0 +1,7 @@
+title: "Ortho Assistant"
+description: "Helping speech therapists to make every session more effective for their patients."
+summary: "Helping speech therapists to make every session more effective for their patients."
+date: 2020-03-01
+slug: "ortho-assistant"
+image: "/products/00_ortho_assistant.svg"
+tags: ["Healthcare", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "REST API", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "DevOps"]

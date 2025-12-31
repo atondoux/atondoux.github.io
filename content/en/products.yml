@@ -1,0 +1,6 @@
+path: /products
+title: My creations.
+description: Digital products I have designed and developed.
+links:
+  - label: "Book an appointment"
+    color: "neutral"

@@ -66,10 +66,28 @@ const baseCollections = {
       }).optional()
     })
   },
+  products: {
+    type: 'data' as const,
+    source: 'products/*.yml',
+    schema: z.object({
+      title: z.string().nonempty(),
+      description: z.string().nonempty(),
+      date: z.date(),
+      image: z.string().nonempty().editor({ input: 'media' }),
+      tags: z.array(z.string()),
+      slug: z.string(),
+      summary: z.string(),
+      seo: z.object({
+        title: z.string().optional(),
+        description: z.string().optional()
+      }).optional()
+    })
+  },
   pages: {
     type: 'page' as const,
     source: [
-      { include: 'projects.yml' }
+      { include: 'projects.yml' },
+      { include: 'products.yml' }
     ],
     schema: z.object({
       path: z.string(),
