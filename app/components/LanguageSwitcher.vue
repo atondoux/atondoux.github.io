@@ -54,9 +54,9 @@ const startViewTransition = (event: MouseEvent) => {
       :aria-label="`Switch to ${nextLocale?.name}`"
       icon="i-lucide-languages"
       color="neutral"
-      variant="ghost"
+      variant="link"
       size="sm"
-      class="rounded-full"
+      class="px-2 py-1 cursor-pointer"
       @click="startViewTransition"
     >
       <template #trailing>

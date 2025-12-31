@@ -49,9 +49,9 @@ const startViewTransition = (event: MouseEvent) => {
       :aria-label="`Switch to ${nextTheme} mode`"
       :icon="`i-lucide-${nextTheme === 'dark' ? 'sun' : 'moon'}`"
       color="neutral"
-      variant="ghost"
+      variant="link"
       size="sm"
-      class="rounded-full"
+      class="cursor-pointer px-2 py-1"
       @click="startViewTransition"
     />
     <template #fallback>
