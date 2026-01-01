@@ -1,11 +1,16 @@
 title: "Veolia Eau"
 description: "Assurer la distribution de l'eau en Île-de-France en construisant des applications internet riches."
-date: 2007
+date: 2007-01-01
 slug: "veolia"
 image: "/projects/00_veolia_logo.svg"
 tags: ["Services publics", "Java", "JavaScript", "SQL", "Méthode Cycle en V"]
-role: "Ingénieur Études et Développement"
-actions:
-  - "Prendre en charge le développement d'applications métier permettant la gestion de la distribution de l'eau en Île-de-France (plus de 500 000 contrats) à l'aide d'un framework spécifique de développement rapide"
-  - "Gérer les livraisons sur la plateforme d'intégration Haute Disponibilité"
-  - "Rédiger des spécifications techniques, des manuels de génération de livrables et des procédures de déploiement"
+content: |
+  ## 🧑‍💻 Mon rôle
+
+  Ingénieur Études et Développement
+
+  ## 🎯 Mes actions
+
+  - Prendre en charge le développement d'applications métier permettant la gestion de la distribution de l'eau en Île-de-France (plus de 500 000 contrats) à l'aide d'un framework spécifique de développement rapide
+  - Gérer les livraisons sur la plateforme d'intégration Haute Disponibilité
+  - Rédiger des spécifications techniques, des manuels de génération de livrables et des procédures de déploiement

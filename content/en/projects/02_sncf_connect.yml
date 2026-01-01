@@ -1,18 +1,21 @@
 title: "SNCF Connect & Tech"
 description: "Making travel easier by adding new features to the SNCF Connect train ticket booking platform."
-date: 2010
+date: 2010-01-01
 slug: "sncf-connect-and-tech"
 image: "/projects/02_sncf_connect_logo.svg"
 tags: ["Sustainable Mobility", "Java", "Spring Framework", "REST API", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
-role: "Software Engineer"
-actions:
-  - "Add new features and fix issues in the European train ticket booking service of SNCF"
-  - "Perform detailed analysis of the reservation engine (Yield management)"
-  - "Design and implement new B2C web services in a service-oriented architecture environment"
-  - "Set up automated test suites in close collaboration with the QA team"
-links:
-  - label: "SNCF Connect & Tech website"
-    to: "https://www.sncf-connect-tech.fr/en/"
-    target: "_blank"
-    color: "primary"
-    variant: "soft"
+content: |
+  ## 🧑‍💻 My role
+
+  Software Engineer
+
+  ## 🎯 My actions
+
+  - Add new features and fix issues in the European train ticket booking service of SNCF
+  - Perform detailed analysis of the reservation engine (Yield management)
+  - Design and implement new B2C web services in a service-oriented architecture environment
+  - Set up automated test suites in close collaboration with the QA team
+
+  ## 🌐 Links
+
+  Learn more about <a href="https://www.sncf-connect-tech.fr/en/" target="_blank">SNCF Connect & Tech</a>

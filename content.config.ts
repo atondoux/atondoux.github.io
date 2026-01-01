@@ -57,9 +57,7 @@ const baseCollections = {
       image: z.string().nonempty().editor({ input: 'media' }),
       tags: z.array(z.string()),
       slug: z.string(),
-      role: z.string(),
-      actions: z.array(z.string()),
-      links: z.array(createButtonSchema()).optional(),
+      content: z.string(),
       seo: z.object({
         title: z.string().optional(),
         description: z.string().optional()
@@ -77,9 +75,7 @@ const baseCollections = {
       tags: z.array(z.string()),
       slug: z.string(),
       summary: z.string(),
-      about: z.string().optional(),
-      features: z.array(z.string()).optional(),
-      links: z.array(createButtonSchema()).optional(),
+      content: z.string(),
       seo: z.object({
         title: z.string().optional(),
         description: z.string().optional()

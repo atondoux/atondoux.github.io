@@ -1,23 +1,24 @@
 title: "Softway Medical"
 description: "Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé de produits numériques sur mesure."
-date: 2015
+date: 2015-01-01
 slug: "softway-medical"
 image: "/projects/06_softway_medical_logo.svg"
 tags: ["Santé", "Software Craftsmanship", "Java", "Spring Boot", "jHipster", "Quarkus", "API REST", "TypeScript", "Vue.js", "SQL", "NoSQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "Microservices", "OpenShift", "Graylog", "DevOps", "Méthodes agiles"]
-role: "Tech Lead Full Stack"
-actions:
-  - "Concevoir et développer des applications web et de microservices spécialisés dans le but d'améliorer le suivi des patients, la gestion des soins et le travail des professionnels de santé dans les hôpitaux"
-  - "S'impliquer et prendre part aux décisions dans toutes les étapes des projets : des premiers ateliers de conception avec les utilisateurs finaux en passant par les choix d'architecture jusqu'au déploiement en production"
-  - "Garantir le respect des bonnes pratiques de conception et de développement"
-  - "Participer activement au processus de recrutement de nouveaux développeurs"
-links:
-  - label: "Site web de Softway Medical"
-    to: "https://www.groupesoftwaymedical.com/"
-    target: "_blank"
-    color: "primary"
-    variant: "soft"
-  - label: "Témoignage client : module de suivi de plaies"
-    to: "https://youtu.be/NwEPv_cVKC0?si=ilw-n3C1mIb5uDz2"
-    target: "_blank"
-    color: "neutral"
-    variant: "soft"
+content: |
+  ## 🧑‍💻 Mon rôle
+
+  Tech Lead Full Stack
+
+  ## 🎯 Mes actions
+
+  - Concevoir et développer des applications web et de microservices spécialisés dans le but d'améliorer le suivi des patients, la gestion des soins et le travail des professionnels de santé dans les hôpitaux
+  - S'impliquer et prendre part aux décisions dans toutes les étapes des projets : des premiers ateliers de conception avec les utilisateurs finaux en passant par les choix d'architecture jusqu'au déploiement en production
+  - Garantir le respect des bonnes pratiques de conception et de développement
+  - Participer activement au processus de recrutement de nouveaux développeurs
+
+  ## 🌐 Liens
+
+  En savoir plus sur <a href="https://www.groupesoftwaymedical.com/" target="_blank">Softway Medical</a><br>
+  <br>
+  Réalisation d'un module de suivi de plaies : <a href="https://youtu.be/NwEPv_cVKC0?si=arxbjwsUt7cFBHHx" target="_blank">témoignage client</a>
+

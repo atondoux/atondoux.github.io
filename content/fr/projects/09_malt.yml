@@ -1,18 +1,21 @@
 title: "Malt"
-description: "Aider les freelancers à recevoir leurs paiements le plus rapidement possible et avoir une meilleure expérience sur la plateforme Malt."
-date: 2025
+description: "Aider les freelances à recevoir leurs paiements le plus rapidement possible et avoir une meilleure expérience sur la plateforme Malt."
+date: 2025-01-01
 slug: "malt"
 image: "/projects/09_malt_logo.svg"
 tags: ["Marketplace", "Software Craftsmanship", "Kotlin", "Spring Boot", "Nuxt.js", "API REST", "RabbitMQ", "SQL", "NoSQL", "Test Driven Development", "Gitlab CI/CD", "Datadog"]
-role: "Développeur Full Stack"
-actions:
-  - "Améliorer le module de financement pour permettre aux freelancers d'être payés dans les meilleurs délais et optimiser les flux financiers de la plateforme"
-  - "Automatiser un maximum de procédures afin d'améliorer l'efficacité opérationnelle de l'équipe FinOps"
-  - "Étendre les capacités du module à intégrer différents partenaires de financement"
-  - "Rendre plus intelligent le moteur de décision servant à sélectionner le meilleur partenaire de financement"
-links:
-  - label: "Site web de Malt"
-    to: "https://www.malt.fr/"
-    target: "_blank"
-    color: "primary"
-    variant: "soft"
+content: |
+  ## 🧑‍💻 Mon rôle
+
+  Développeur Full Stack
+
+  ## 🎯 Mes actions
+
+  - Améliorer le module de financement pour permettre aux freelances d'être payés dans les meilleurs délais et optimiser les flux financiers de la plateforme
+  - Automatiser un maximum de procédures afin d'améliorer l'efficacité opérationnelle de l'équipe FinOps
+  - Étendre les capacités du module à intégrer différents partenaires de financement
+  - Rendre plus intelligent le moteur de décision servant à sélectionner le meilleur partenaire de financement
+
+  ## 🌐 Liens
+
+  En savoir plus sur <a href="https://www.malt.fr/" target="_blank">Malt</a>
