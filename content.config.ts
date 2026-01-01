@@ -107,8 +107,13 @@ const baseCollections = {
     type: 'page' as const,
     source: 'about.yml',
     schema: z.object({
+      title: z.string(),
+      description: z.string(),
       content: z.string(),
-      images: z.array(createImageSchema())
+      seo: z.object({
+        title: z.string().optional(),
+        description: z.string().optional()
+      }).optional()
     })
   }
 }

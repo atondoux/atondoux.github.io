@@ -1,27 +1,53 @@
-title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+title: "About me"
+description: "Learn more about my journey as a Software Engineer, the way I work, and my passion for crafting high quality digital solutions."
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  ## My journey
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  I am a full-stack developer and tech lead with over 15 years of experience.<br>
+  <br>
+  Since the beginning of my career, I have always worked in the world of web applications, a field where I strive to make a difference by designing and developing solutions that are useful in everyday life and accessible to as many people as possible. This is truly what motivates me and makes my work so exciting!<br>
+  <br>
+  I have contributed to large-scale projects for major companies such as [Veolia Water](https://www.veoliawatertechnologies.com/en/), [Ministry of Health](https://sante.gouv.fr/), [SNCF Connect & Tech](https://www.sncf-connect.com/en-en/), [Natixis](https://www.groupebpce.com/en/our-firms/natixis-corporate-investment-banking/), [Societe Generale](https://wholesale.banking.societegenerale.com/en/), [Softway Medical](https://www.groupesoftwaymedical.com/en/), [Orange Business](https://www.orange-business.com/en/), [Namirial](https://www.namirial.com/en/), and [Malt](https://www.malt.com/).
 
-  ### My Design Philosophy
+  ## My ecosystem
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  The tools I work with on a daily basis. The list keeps growing.
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  |                          |                                                                                                                 |
+  |--------------------------|-----------------------------------------------------------------------------------------------------------------|
+  | **Methods**              | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Design           |
+  | **Programming Languages**| Java, Kotlin, TypeScript, SQL                                                                                   |
+  | **Frameworks**           | Spring Boot, Quarkus, JHipster, Vue.js                                                                          |
+  | **Cloud & DevOps**       | SaaS, Microservices, Docker, OpenShift                                                                          |
+  | **Build**                | Gitlab CI/CD, Jenkins, Maven, Gradle                                                                            |
+  | **Testing**              | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                                         |
+  | **Learning & Training**  | Hexagonal Architecture, React, React Native, Flutter, Node.js, NestJS, Behavior Driven Development, NoEstimates |
+  | **Languages**            | French: native <br> English: fluent                                                                             |
 
-  ### What Drives Me
+  ## The way I work
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  I believe that building quality applications starts with a deep understanding of the business domain. That's why I always start by **learning your business, challenges, and goals** before crafting technical solutions. I make sure to grasp the **why** before using my technical skills to solve the **how**.<br>
+  <br>
+  I develop products with an emphasis on **quality, durability, and maintainability**. I promote best practices and industry standards such as **Clean Architecture** and **Test Driven Development**.<br>
+  <br>
+  This means that my work can be taken over by any experienced developer. **Every piece of software I deliver is fully tested and documented**. This mindset enables me to deliver **applications that are tailored, flexible, and built to last**.
 
-  ### Beyond the Screen
+  ## My continuous learning
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
+  In the world of software development, things evolve quickly, very quickly. New technologies emerge while others become obsolete almost overnight.<br>
+  <br>
+  Staying up to date through continuous learning is essential in this field.<br>
+  <br>
+  This is why **I invest at least 10% of my annual revenue in training every year**: learning new languages and frameworks, discovering new methodologies, exploring AI-based solutions...
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
-images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  ## My use of AI
+
+  In recent years, AI has taken center stage in the software industry, becoming almost impossible to ignore, and reshaping development practices.<br>
+  <br>
+  As for me, **AI serves as a powerful assistant**, but only for topics where I am capable of critically evaluating the generated suggestions.<br>
+  <br>
+  While this offers a significant productivity boost, I will never compromise on the quality of the solutions I deliver.
+
+  ## Interested? Let's talk!
+
+  If you have a project or an idea and would like to move it forward, feel free to contact me via [LinkedIn](https://www.linkedin.com/in/atondoux) or schedule a meeting through [Calendly](https://calendly.com/atondoux/30min).
