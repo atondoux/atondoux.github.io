@@ -1,27 +1,53 @@
-title: A propos
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+title: "A propos"
+description: "Découvrez mon parcours d'Ingénieur Logiciel, ma façon de travailler et ma passion pour la conception et le développement de produits numériques de qualité."
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  ## Mon parcours
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  Je suis développeur et tech lead full stack avec plus de 15 ans d'expérience.<br>
+  <br>
+  Depuis mes débuts, j'ai toujours évolué dans le monde des applications web, monde dans lequel j'ai voulu apporter une contribution en concevant et en développant des solutions qui soient utiles au quotidien et pour le plus grand nombre : c'est véritablement ce qui me motive et qui rend mon métier si passionnant !<br>
+  <br>
+  J'ai eu l'opportunité de travailler sur des projets d'envergure pour de grandes entreprises comme [Veolia Eau](https://www.eau.veolia.fr/), [le Ministère de la Santé](https://sante.gouv.fr/), [SNCF Connect & Tech](https://www.sncf-connect-tech.fr/), [Natixis](https://www.groupebpce.com/nos-entreprises/natixis-corporate-investment-banking/), [Société Générale](https://wholesale.banking.societegenerale.com/fr/), [Softway Medical](https://www.groupesoftwaymedical.com/), [Orange Business](https://www.orange-business.com/fr), [Namirial](https://www.namirial.com/fr/), ou encore [Malt](https://www.malt.fr/).
 
-  ### My Design Philosophy
+  ## Mon écosystème
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  Les outils avec lesquels je travaille au quotidien. La liste ne cesse de s'agrandir.
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  |                         |                                                                                                                  |
+  |-------------------------|------------------------------------------------------------------------------------------------------------------|
+  | **Méthodes**            | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Design            |
+  | **Langages**            | Java, Kotlin, TypeScript, SQL                                                                                    |
+  | **Frameworks**          | Spring Boot, Quarkus, JHipster, Vue.js                                                                           |
+  | **Cloud & DevOps**      | SaaS, Microservices, Docker, OpenShift                                                                           |
+  | **Build**               | Gitlab CI/CD, Jenkins, Maven, Gradle                                                                             |
+  | **Testing**             | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                                          |
+  | **Veille & Formation**  | Architecture Hexagonale, React, React Native, Flutter, Node.js, NestJS, Behavior Driven Development, NoEstimates |
+  | **Langues**             | Français : langue maternelle <br> Anglais : courant                                                              |
 
-  ### What Drives Me
+  ## Ma façon de travailler
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  Je considère que pour développer une application de qualité, il faut s'assurer de bien comprendre le métier sous-jacent. C'est la raison pour laquelle je concentre toujours mes efforts sur **la compréhension de votre métier, de vos enjeux et de vos objectifs** avant de concevoir des solutions techniques. Je m'assure de bien avoir saisi le **pourquoi** avant d'utiliser mes compétences techniques à résoudre le **comment**.<br>
+  <br>
+  Je développe des produits en mettant l'accent sur **la qualité, la maintenabilité et l'évolutivité**. Je mets en avant les bonnes pratiques et les standards de notre industrie comme la **Clean Architecture** et le **Test Driven Development**.<br>
+  <br>
+  Cela signifie que mon travail peut être repris par tout développeur expérimenté. **L'ensemble des livrables que je fournis est intégralement testé et documenté**. Grâce à cette approche, je suis en mesure de développer **des applications sur mesure, pérennes et évolutives**.
 
-  ### Beyond the Screen
+  ## Mon apprentissage continu
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
+  Dans le monde du développement logiciel, les choses évoluent vite, très vite. De nouvelles technologies font leur apparition, pendant que d'autres deviennent obsolètes du jour au lendemain ou presque.<br>
+  <br>
+  Un aspect important de ce métier est donc de se former en continu.<br>
+  <br>
+  C'est la raison pour laquelle **j'investis en formation chaque année au moins 10% de mon chiffre d'affaires** : apprentissage de nouveaux langages et frameworks, découverte de nouvelles méthodologies, exploration de solutions à base d'IA...
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
-images:
-  #- src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  #  alt: My coffee workspace
-  #- src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  #  alt: My trip to Tokyo
+  ## Mon usage de l'IA
+
+  Depuis quelques années, l'IA s'est invitée dans l'industrie du logiciel, est devenue quasi incontournable et a changé la façon de créer des logiciels.<br>
+  <br>
+  Pour ma part, **j'utilise l'IA en tant que super assistant**, uniquement sur des sujets sur lesquels je suis capable d'avoir un regard critique sur les propositions générées.<br>
+  <br>
+  Bien que cette aide apporte des gains de productivité intéressants, je ne sacrifierai jamais la qualité des solutions que je vous propose.
+
+  ## Intéressé ? Discutons collaboration !
+
+  Si vous avez un projet ou une idée de projet et que vous souhaitez la faire avancer, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/atondoux) ou à prendre un rendez-vous via [Calendly](https://calendly.com/atondoux/30min).
