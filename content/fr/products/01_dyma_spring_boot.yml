@@ -6,21 +6,21 @@ slug: "spring-boot-online-course"
 image: "/products/01_dyma_spring_boot.svg"
 tags: ["Formation en ligne", "Java", "Spring Boot", "API REST", "Clean Code", "Test Driven Development"]
 content: |
-  ## 📦 Le produit
+  ## :desktop_computer: Le produit
 
   Cette formation s'adresse à des développeurs débutants ou expérimentés et offre l'opportunité de découvrir une stack de référence pour développer des applications web et des microservices de niveau entreprise.<br>
   <br>
   Après avoir échangé avec les co-fondateurs de Dyma, j'ai été convaincu par leur vision et leur approche pédagogique. La plateforme mise avant tout sur la qualité du contenu en ne proposant qu'une seule formation par sujet. Chaque formation est suivie et maintenue par son créateur.<br>
   <br>
-  Après des mois de travail, je suis fier d'avoir relevé le challenge ! Publier cette formation m'a appris que former, ça forme aussi le formateur :) Je ne suis pas près d'oublier la première fois où j'ai appuyé sur le bouton 🔴 *rec* pour enregistrer les premières leçons.<br>
+  Après des mois de travail, je suis fier d'avoir relevé le challenge ! Publier cette formation m'a appris que former, ça forme aussi le formateur :) Je ne suis pas près d'oublier la première fois où j'ai appuyé sur le bouton :red_circle: *rec* pour enregistrer les premières leçons.<br>
 
-  ## 📊 Chiffres clés
+  ## :bar_chart: Chiffres clés
 
   Les étudiants ont passé au total plus de **5000 heures** sur la formation, avec une note moyenne de **4.6/5**.<br>
   <br>
   La formation compte **19 chapitres**, **87 leçons**, **174 quiz** et a formé **225 étudiants**.
 
-  ## 🧑‍🏫 Au programme
+  ## :sparkles: Au programme
 
   - **Apprenez les bases d'une architecture applicative en couches** : structurez vos projets Java efficacement avec Spring Boot
   - **Utilisez toute la puissance de Spring Data** pour gérer facilement vos entités et vos bases de données
@@ -31,6 +31,6 @@ content: |
   - **Validez votre application** grâce à une suite complète de tests automatisés, incluant tests unitaires et tests d'intégration
   - **Profitez de cette formation pour découvrir des bonnes pratiques de développement** telles que le Clean Code et les principes SOLID
 
-  ## 🌐 Liens
+  ## :globe_with_meridians: Liens
 
   La formation est accessible sur le site de <a href="https://dyma.fr/formations/spring-boot" target="_blank">Dyma</a>

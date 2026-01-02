@@ -5,11 +5,11 @@ slug: "natixis"
 image: "/projects/03_natixis_logo.svg"
 tags: ["Banque", "Java", "Spring Framework", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
 content: |
-  ## 🧑‍💻 Mon rôle
+  ## :man_technologist: Mon rôle
 
   Ingénieur Études et Développement
 
-  ## 🎯 Mes actions
+  ## :dart: Mes actions
 
   - Refondre le CRM utilisé par les vendeurs et les analystes du département Equity Markets
   - Planifier, concevoir et implémenter de nouveaux composants côté backend et côté frontend

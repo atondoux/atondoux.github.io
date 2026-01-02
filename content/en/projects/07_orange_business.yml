@@ -5,16 +5,16 @@ slug: "orange-business"
 image: "/projects/07_orange_business_logo.svg"
 tags: ["Fleet Management", "Software Craftsmanship", "Java", "Spring Framework", "REST API", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
 content: |
-  ## 🧑‍💻 My role
+  ## :man_technologist: My role
 
   Backend Tech Lead
 
-  ## 🎯 My actions
+  ## :dart: My actions
 
   - Redesign the feature for precise tracking of vehicle usage rates, including heavy vehicles and machinery, to assist fleet managers in monitoring and analyzing team activities
   - Rewrite the maintenance tracking API to help fleet managers optimize their costs
   - Guide and mentor the team towards adopting Software Craftsmanship practices
 
-  ## 🌐 Links
+  ## :globe_with_meridians: Links
 
   Learn more about <a href="https://ocean.fr/" target="_blank">Ocean</a>

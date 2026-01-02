@@ -5,17 +5,17 @@ slug: "namirial"
 image: "/projects/08_namirial_logo.svg"
 tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring Boot", "REST API", "SQL", "Test Driven Development", "Gitlab CI/CD", "Kibana", "Agile Methodologies"]
 content: |
-  ## 🧑‍💻 My role
+  ## :man_technologist: My role
 
   Backend Tech Lead
 
-  ## 🎯 My actions
+  ## :dart: My actions
 
   - Develop and enhance platform features to streamline customer acquisition workflows, covering identity verification, electronic signature, and document submission
   - Integrate Yousign secure electronic signature API
   - Orchestrate document verification and fraud detection services
 
-  ## 🌐 Links
+  ## :globe_with_meridians: Links
 
   Learn more about <a href="https://www.namirial.com/en/" target="_blank">Namirial</a><br>
   <br>

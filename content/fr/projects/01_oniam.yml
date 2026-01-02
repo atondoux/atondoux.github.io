@@ -5,11 +5,11 @@ slug: "oniam"
 image: "/projects/01_oniam_logo.svg"
 tags: ["Services publics", "Java", "Spring Framework", "Hibernate", "API REST", "jBPM", "JSF", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
 content: |
-  ## 🧑‍💻 Mon rôle
+  ## :man_technologist: Mon rôle
 
   Ingénieur Études et Développement
 
-  ## 🎯 Mes actions
+  ## :dart: Mes actions
 
   - Concevoir et développer une toute nouvelle application web pour le compte de l'ONIAM (Organisme National d'Indemnisation des Accidents Médicaux) permettant le traitement des procédures d'indemnisation
   - Mettre en œuvre des solutions 100% open source pour dématérialiser l'ensemble des processus métier (suivi des dossiers et gestion électronique des documents)
@@ -17,6 +17,6 @@ content: |
   - Administrer la plateforme d'intégration continue (build et release)
   - Rédiger la documentation technique et des guides de bonnes pratiques
 
-  ## 🌐 Liens
+  ## :globe_with_meridians: Liens
 
   En savoir plus sur l'<a href="https://www.oniam.fr/" target="_blank">ONIAM</a>

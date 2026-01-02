@@ -5,17 +5,17 @@ slug: "malt"
 image: "/projects/09_malt_logo.svg"
 tags: ["Marketplace", "Software Craftsmanship", "Kotlin", "Spring Boot", "Nuxt.js", "API REST", "RabbitMQ", "SQL", "NoSQL", "Test Driven Development", "Gitlab CI/CD", "Datadog"]
 content: |
-  ## 🧑‍💻 My role
+  ## :man_technologist: My role
 
   Full Stack Software Engineer
 
-  ## 🎯 My actions
+  ## :dart: My actions
 
   - Enhance the financing module to speed up freelancer payments and optimize the platform's financial flows
   - Automate critical procedures to improve FinOps team operational efficiency
   - Extend the financing module capabilities to support integration with various financing partners
   - Improve the decision engine's intelligence for optimal financing partner selection
 
-  ## 🌐 Links
+  ## :globe_with_meridians: Links
 
   Learn more about <a href="https://www.malt.com/" target="_blank">Malt</a>

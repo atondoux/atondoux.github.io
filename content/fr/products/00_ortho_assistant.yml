@@ -6,7 +6,7 @@ slug: "ortho-assistant"
 image: "/products/00_ortho_assistant.svg"
 tags: ["Santé", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "API REST", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "DevOps"]
 content: |
-  ## 📦 Le produit
+  ## :desktop_computer: Le produit
 
   Ayant plusieurs orthophonistes dans mon entourage, l'idée de ce projet est née d'un constat simple : les orthophonistes passent beaucoup de temps à chercher leur matériel, quand les séances s'enchaînent tout au long de la journée, ils ont besoin de se concentrer sur leurs patients et non sur des problèmes de logistique.<br>
   <br>
@@ -14,19 +14,19 @@ content: |
   <br>
   L'objectif d'Ortho Assistant : un gain de temps et de charge mentale pour les orthophonistes et donc plus de temps à consacrer à leurs patients avec une meilleure prise en charge.<br>
 
-  ## ⚠️ Disclaimer
+  ## :warning: Disclaimer
 
   Lorsque Ortho Assistant a été déployé en production, il a compté quelques dizaines d'orthophonistes bêta-testeurs. Faute de temps pour faire évoluer le produit et de feedback de la part des utilisateurs, le service n'est malheureusement plus disponible aujourd'hui.<br>
   <br>
   La création de ce SaaS fut riche d'enseignements, tant sur le plan technique que sur le plan marketing, une refonte est à l'étude pour apporter un service encore meilleur.
 
-  ## 🧑‍⚕️ Les fonctionnalités
+  ## :sparkles: Les fonctionnalités
 
   - Une recherche de matériel intelligente pour aider à la préparation des séances
   - Un inventaire augmenté indiquant les pathologies et les compétences pour lesquelles le matériel en question est le plus efficace
   - Un référentiel de pathologies et de compétences entièrement personnalisable
   - Une gestion des emplacements du matériel pour le retrouver plus facilement
 
-  ## 🌐 Liens
+  ## :globe_with_meridians: Liens
 
   Le code source est disponible sur <a href="https://gitlab.com/atondoux/orthoassistant/" target="_blank">Gitlab</a>
