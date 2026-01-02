@@ -88,7 +88,7 @@ useSeoMeta({
                 v-for="tag in project.tags"
                 :key="tag"
                 color="primary"
-                variant="outline"
+                variant="subtle"
                 size="md"
               >
                 {{ tag }}

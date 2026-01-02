@@ -1,13 +1,18 @@
 title: "Societe Generale"
 description: "Enhancing the reliability of the strategic margin calculation application dedicated to financial product sales teams."
-date: 2012
+date: 2012-01-01
 slug: "societe-generale"
 image: "/projects/04_societe_generale_logo.svg"
 tags: ["Banking", "Java", "Spring Framework", "Hibernate", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
-role: "Software Engineer"
-actions:
-  - "Add new features and fix issues in the application used for processing and reporting margins achieved by financial product sales teams across the bank"
-  - "Undertake various actions to improve the overall quality of the application and reduce the number of incidents, ranging from code reliability to delivery processes"
-  - "Contribute to collaborative documentation by including functional concepts, operational procedures, and a detailed mapping of the application and its environments"
-  - "Handle the technical and functional training of new team members"
-  - "Work closely with the user support team based in India"
+content: |
+  ## 🧑‍💻 My role
+
+  Software Engineer
+
+  ## 🎯 My actions
+
+  - Add new features and fix issues in the application used for processing and reporting margins achieved by financial product sales teams across the bank
+  - Undertake various actions to improve the overall quality of the application and reduce the number of incidents, ranging from code reliability to delivery processes
+  - Contribute to collaborative documentation by including functional concepts, operational procedures, and a detailed mapping of the application and its environments
+  - Handle the technical and functional training of new team members
+  - Work closely with the user support team based in India

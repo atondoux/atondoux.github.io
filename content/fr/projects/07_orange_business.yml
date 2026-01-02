@@ -1,17 +1,20 @@
 title: "Orange Business"
 description: "Aider à réduire les coûts liés aux véhicules d'entreprise en contribuant à la refonte de la gestion des entretiens de la plateforme de suivi de véhicules connectés Océan."
-date: 2023
+date: 2023-01-01
 slug: "orange-business"
 image: "/projects/07_orange_business_logo.svg"
 tags: ["Gestion de flotte", "Software Craftsmanship", "Java", "Spring Framework", "API REST", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
-role: "Tech Lead Backend"
-actions:
-  - "Réécrire la fonctionnalité permettant de suivre avec précision le taux d'utilisation des véhicules, poids lourds et autres engins afin d'aider les gestionnaires de flotte à piloter et analyser l'activité de leurs équipes"
-  - "Réécrire l'API de suivi des entretiens permettant aux gestionnaires de flotte d'optimiser leurs coûts"
-  - "Accompagner et mentorer l'équipe vers des pratiques de Software Craftsmanship"
-links:
-  - label: "Site web d'Océan"
-    to: "https://ocean.fr/"
-    target: "_blank"
-    color: "primary"
-    variant: "soft"
+content: |
+  ## 🧑‍💻 Mon rôle
+
+  Tech Lead Backend
+
+  ## 🎯 Mes actions
+
+  - Réécrire la fonctionnalité permettant de suivre avec précision le taux d'utilisation des véhicules, poids lourds et autres engins afin d'aider les gestionnaires de flotte à piloter et analyser l'activité de leurs équipes
+  - Réécrire l'API de suivi des entretiens permettant aux gestionnaires de flotte d'optimiser leurs coûts
+  - Accompagner et mentorer l'équipe vers des pratiques de Software Craftsmanship
+
+  ## 🌐 Liens
+
+  En savoir plus sur <a href="https://ocean.fr/" target="_blank">Océan</a>

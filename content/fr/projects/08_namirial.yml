@@ -1,22 +1,22 @@
 title: "Namirial"
 description: "Faciliter la vie quotidienne en rendant plus fluide les parcours de souscription gérés par une plateforme de services de confiance qualifiés."
-date: 2024
+date: 2024-01-01
 slug: "namirial"
 image: "/projects/08_namirial_logo.svg"
 tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring Boot", "API REST", "SQL", "Test Driven Development", "Gitlab CI/CD", "Kibana", "Méthodes agiles"]
-role: "Tech Lead Backend"
-actions:
-  - "Enrichir de nouvelles fonctionnalités et corriger les anomalies de la plateforme permettant la gestion de parcours d'acquisition clients personnalisés avec de la vérification d'identité, de la signature électronique et de la soumission de documents"
-  - "Intégrer l'API de signature électronique de Yousign"
-  - "Orchestrer des services de vérification de documents et de détection de fraude"
-links:
-  - label: "Site web de Namirial"
-    to: "https://www.namirial.com/fr/"
-    target: "_blank"
-    color: "primary"
-    variant: "soft"
-  - label: "Site web de Yousign"
-    to: "https://yousign.com/fr-fr/"
-    target: "_blank"
-    color: "neutral"
-    variant: "soft"
+content: |
+  ## 🧑‍💻 Mon rôle
+
+  Tech Lead Backend
+
+  ## 🎯 Mes actions
+
+  - Enrichir de nouvelles fonctionnalités et corriger les anomalies de la plateforme permettant la gestion de parcours d'acquisition clients personnalisés avec de la vérification d'identité, de la signature électronique et de la soumission de documents
+  - Intégrer l'API de signature électronique de Yousign
+  - Orchestrer des services de vérification de documents et de détection de fraude
+
+  ## 🌐 Liens
+
+  En savoir plus sur <a href="https://www.namirial.com/fr/" target="_blank">Namirial</a><br>
+  <br>
+  Site web de <a href="https://yousign.com/fr-fr/" target="_blank">Yousign</a>
