@@ -5,11 +5,11 @@ slug: "oniam"
 image: "/projects/01_oniam_logo.svg"
 tags: ["Public Services", "Java", "Spring Framework", "Hibernate", "REST API", "jBPM", "JSF", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
 content: |
-  ## 🧑‍💻 My role
+  ## :man_technologist: My role
 
   Software Engineer
 
-  ## 🎯 My actions
+  ## :dart: My actions
 
   - Design and develop a web application from scratch for ONIAM (National Office for the Compensation of Medical Accidents) to efficiently manage compensation procedures
   - Leverage open source technologies to digitalize every business process (case tracking and electronic document management)
@@ -17,6 +17,6 @@ content: |
   - Oversee the continuous integration platform (build and release management)
   - Write technical documentation and best practice guidelines for the team
 
-  ## 🌐 Links
+  ## :globe_with_meridians: Links
 
   Learn more about <a href="https://www.oniam.fr/" target="_blank">ONIAM</a>

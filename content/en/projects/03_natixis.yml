@@ -5,11 +5,11 @@ slug: "natixis"
 image: "/projects/03_natixis_logo.svg"
 tags: ["Banking", "Java", "Spring Framework", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
 content: |
-  ## 🧑‍💻 My role
+  ## :man_technologist: My role
 
   Software Engineer
 
-  ## 🎯 My actions
+  ## :dart: My actions
 
   - Revamp the CRM to significantly improve the user experience for salespeople and analysts in the Equity Markets department
   - Plan, design, and implement new components on both backend and frontend side

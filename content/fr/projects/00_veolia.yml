@@ -5,11 +5,11 @@ slug: "veolia"
 image: "/projects/00_veolia_logo.svg"
 tags: ["Services publics", "Java", "JavaScript", "SQL", "Méthode Cycle en V"]
 content: |
-  ## 🧑‍💻 Mon rôle
+  ## :man_technologist: Mon rôle
 
   Ingénieur Études et Développement
 
-  ## 🎯 Mes actions
+  ## :dart: Mes actions
 
   - Prendre en charge le développement d'applications métier permettant la gestion de la distribution de l'eau en Île-de-France (plus de 500 000 contrats) à l'aide d'un framework spécifique de développement rapide
   - Gérer les livraisons sur la plateforme d'intégration Haute Disponibilité

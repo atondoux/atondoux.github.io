@@ -5,11 +5,11 @@ slug: "societe-generale"
 image: "/projects/04_societe_generale_logo.svg"
 tags: ["Banking", "Java", "Spring Framework", "Hibernate", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
 content: |
-  ## 🧑‍💻 My role
+  ## :man_technologist: My role
 
   Software Engineer
 
-  ## 🎯 My actions
+  ## :dart: My actions
 
   - Add new features and fix issues in the application used for processing and reporting margins achieved by financial product sales teams across the bank
   - Undertake various actions to improve the overall quality of the application and reduce the number of incidents, ranging from code reliability to delivery processes

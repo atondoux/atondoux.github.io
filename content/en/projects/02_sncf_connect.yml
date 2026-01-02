@@ -5,17 +5,17 @@ slug: "sncf-connect-and-tech"
 image: "/projects/02_sncf_connect_logo.svg"
 tags: ["Sustainable Mobility", "Java", "Spring Framework", "REST API", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
 content: |
-  ## 🧑‍💻 My role
+  ## :man_technologist: My role
 
   Software Engineer
 
-  ## 🎯 My actions
+  ## :dart: My actions
 
   - Add new features and fix issues in the European train ticket booking service of SNCF
   - Perform detailed analysis of the reservation engine (Yield management)
   - Design and implement new B2C web services in a service-oriented architecture environment
   - Set up automated test suites in close collaboration with the QA team
 
-  ## 🌐 Links
+  ## :globe_with_meridians: Links
 
   Learn more about <a href="https://www.sncf-connect-tech.fr/en/" target="_blank">SNCF Connect & Tech</a>

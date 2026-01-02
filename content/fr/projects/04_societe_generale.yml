@@ -5,11 +5,11 @@ slug: "societe-generale"
 image: "/projects/04_societe_generale_logo.svg"
 tags: ["Banque", "Java", "Spring Framework", "Hibernate", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
 content: |
-  ## 🧑‍💻 Mon rôle
+  ## :man_technologist: Mon rôle
 
   Ingénieur Études et Développement
 
-  ## 🎯 Mes actions
+  ## :dart: Mes actions
 
   - Enrichir de nouvelles fonctionnalités et corriger les anomalies de l'application de traitement et de reporting des marges réalisées par les vendeurs de produits financiers de l'ensemble de la banque
   - Mener un ensemble d'actions visant à améliorer la qualité globale de l'application et à réduire le nombre d'incidents, allant de la fiabilité du code au processus de livraison

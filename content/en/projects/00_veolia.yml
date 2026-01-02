@@ -5,11 +5,11 @@ slug: "veolia"
 image: "/projects/00_veolia_logo.svg"
 tags: ["Public Services", "Java", "JavaScript", "SQL", "Waterfall Methodology"]
 content: |
-  ## 🧑‍💻 My role
+  ## :man_technologist: My role
 
   Software Engineer
 
-  ## 🎯 My actions
+  ## :dart: My actions
 
   - Design and implement business applications to support water distribution management in Paris area (serving over 500,000 contracts) using an in-house rapid development framework
   - Manage releases on a High-Availability integration platform

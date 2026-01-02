@@ -5,17 +5,17 @@ slug: "sncf-connect-and-tech"
 image: "/projects/02_sncf_connect_logo.svg"
 tags: ["Mobilités Durables", "Java", "Spring Framework", "API REST", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
 content: |
-  ## 🧑‍💻 Mon rôle
+  ## :man_technologist: Mon rôle
 
   Ingénieur Études et Développement
 
-  ## 🎯 Mes actions
+  ## :dart: Mes actions
 
   - Ajouter de nouvelles fonctionnalités et corriger les anomalies du service européen de réservation de billets de train de la SNCF
   - Analyser en détail le moteur de réservation (Yield management)
   - Concevoir et implémenter de nouveaux services web B2C dans un environnement orienté services (SOA)
   - Mettre en place des suites de tests automatisés en étroite collaboration avec l'équipe QA
 
-  ## 🌐 Liens
+  ## :globe_with_meridians: Liens
 
   En savoir plus sur <a href="https://www.sncf-connect-tech.fr/fr/" target="_blank">SNCF Connect & Tech</a>
