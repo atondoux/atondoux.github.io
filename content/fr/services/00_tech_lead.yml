@@ -1,0 +1,21 @@
+title: "Tech Lead"
+description: "Amenez vos équipes de développement à l'excellence technique à travers les valeurs du Software Craftsmanship et les meilleures pratiques."
+price: "600€"
+billingCycle: "/ jour"
+tagline: "Montée en compétence garantie"
+features:
+  - title: "Formation aux meilleurs standards de l'industrie"
+    icon: "i-lucide-graduation-cap"
+  - title: "Valeurs du Software Craftsmanship"
+    icon: "i-lucide-gem"
+  - title: "Accompagnement Test-Driven Development"
+    icon: "i-lucide-flask-conical"
+  - title: "Revue de code et mentorat"
+    icon: "i-lucide-user-check"
+badge:
+  label: "Plus populaire"
+  color: "primary"
+  variant: "subtle"
+variant: "outline"
+highlight: true
+order: 0

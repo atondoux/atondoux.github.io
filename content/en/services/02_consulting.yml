@@ -1,0 +1,15 @@
+title: "Consulting & Code Review"
+description: "Evaluate your application, explore improvements, and enhance your development practices through personalized sessions."
+price: "Quote on request"
+tagline: "Tailored to your needs"
+features:
+  - title: "Software Craftsmanship expertise"
+    icon: "i-lucide-award"
+  - title: "Test-Driven Development focus"
+    icon: "i-lucide-clipboard-check"
+  - title: "Code review and pair programming"
+    icon: "i-lucide-code-2"
+  - title: "Quality and best practices audit"
+    icon: "i-lucide-search-check"
+variant: "outline"
+order: 2

@@ -1,0 +1,21 @@
+title: "Tech Lead"
+description: "Guide your development teams toward technical excellence through Software Craftsmanship values and best practices."
+price: "€600"
+billingCycle: "/ day"
+tagline: "Level up your team's expertise"
+features:
+  - title: "Training on industry best standards"
+    icon: "i-lucide-graduation-cap"
+  - title: "Software Craftsmanship values"
+    icon: "i-lucide-gem"
+  - title: "Test-Driven Development coaching"
+    icon: "i-lucide-flask-conical"
+  - title: "Code review and mentoring"
+    icon: "i-lucide-user-check"
+badge:
+  label: "Most Popular"
+  color: "primary"
+  variant: "subtle"
+variant: "outline"
+highlight: true
+order: 0

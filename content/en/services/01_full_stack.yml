@@ -1,0 +1,16 @@
+title: "Full-Stack Development"
+description: "Expert support for every stage of your project, from design workshops to deployment and production monitoring."
+price: "€600"
+billingCycle: "/ day"
+tagline: "Complete project lifecycle"
+features:
+  - title: "Design workshops with users and business experts"
+    icon: "i-lucide-users"
+  - title: "Backend development"
+    icon: "i-lucide-server"
+  - title: "Frontend development"
+    icon: "i-lucide-layout-dashboard"
+  - title: "Deployment and monitoring"
+    icon: "i-lucide-rocket"
+variant: "outline"
+order: 1

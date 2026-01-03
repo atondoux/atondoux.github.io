@@ -1,0 +1,9 @@
+path: /services
+title: "Services professionnels"
+description: "Conseil, développement et formation pour aider vos équipes tech à exceller."
+links:
+  - label: "Prendre rendez-vous"
+    color: "neutral"
+seo:
+  title: "Services - Aurélien Tondoux"
+  description: "Services de Tech Lead, Développement Full-Stack et conseil en Software Craftsmanship."

@@ -1,0 +1,15 @@
+title: "Conseil & Revue de Code"
+description: "Faites l'état des lieux de votre application, explorez les améliorations possibles et améliorez vos pratiques grâce à des séances personnalisées."
+price: "Devis sur demande"
+tagline: "Adapté à vos besoins"
+features:
+  - title: "Expertise Software Craftsmanship"
+    icon: "i-lucide-award"
+  - title: "Focus Test-Driven Development"
+    icon: "i-lucide-clipboard-check"
+  - title: "Revue de code et pair programming"
+    icon: "i-lucide-code-2"
+  - title: "Audit qualité et bonnes pratiques"
+    icon: "i-lucide-search-check"
+variant: "outline"
+order: 2

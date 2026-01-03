@@ -1,0 +1,16 @@
+title: "Développement Full Stack"
+description: "Accompagnement expert sur toutes les phases de votre projet, des ateliers de conception au déploiement et monitoring en production."
+price: "600€"
+billingCycle: "/ jour"
+tagline: "Cycle complet de projet"
+features:
+  - title: "Ateliers de conception avec utilisateurs et experts métier"
+    icon: "i-lucide-users"
+  - title: "Développement backend"
+    icon: "i-lucide-server"
+  - title: "Développement frontend"
+    icon: "i-lucide-layout-dashboard"
+  - title: "Déploiement et monitoring"
+    icon: "i-lucide-rocket"
+variant: "outline"
+order: 1

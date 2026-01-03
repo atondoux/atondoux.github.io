@@ -1,0 +1,9 @@
+path: /services
+title: "Professional Services"
+description: "Consulting, development, and training services to help your tech teams excel."
+links:
+  - label: "Book an appointment"
+    color: "neutral"
+seo:
+  title: "Services - Aurélien Tondoux"
+  description: "Tech Lead, Full-Stack Development, and Software Craftsmanship consulting services."
