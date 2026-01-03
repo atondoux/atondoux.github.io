@@ -1,0 +1,14 @@
+title: "Applications & Conseils"
+description: "Un projet ou une mission spécifique adaptés à vos besoins."
+price: "Devis sur demande"
+billingCycle: ""
+features:
+  - title: "Lancement d'un projet"
+    icon: "i-lucide-rocket"
+  - title: "Audit qualité"
+    icon: "i-lucide-search-check"
+  - title: "Revue de code"
+    icon: "i-lucide-code-2"
+variant: "soft"
+highlight: true
+order: 2

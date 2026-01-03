@@ -1,0 +1,9 @@
+path: /services
+title: "My services."
+description: "These rates are provided as a guideline and may be adjusted according to the project."
+links:
+  - label: "Book an appointment"
+    color: "neutral"
+seo:
+  title: "Services - Aurélien Tondoux"
+  description: "Tech Lead, Full-Stack Development, and Software Craftsmanship consulting services."

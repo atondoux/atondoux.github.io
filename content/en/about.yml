@@ -1,5 +1,8 @@
 title: "About me"
 description: "Learn more about my journey as a Software Engineer, the way I work, and my passion for crafting high quality digital solutions."
+links:
+  - label: "Book an appointment"
+    color: "neutral"
 content: |
   ## :earth_africa: My journey
 

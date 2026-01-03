@@ -1,8 +1,11 @@
 <script setup lang="ts">
 const { locale } = useI18n()
-const { data: page } = await useAsyncData(`about-${locale.value}`, () => {
-  return queryCollection(`about_${locale.value}`).first()
+
+// Fetch page metadata
+const { data: page } = await useAsyncData(`services-page-${locale.value}`, () => {
+  return queryCollection(`pages_${locale.value}`).path('/services').first()
 })
+
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -11,8 +14,14 @@ if (!page.value) {
   })
 }
 
+// Fetch services
+const { data: services } = await useAsyncData(`services-${locale.value}`, () => {
+  return queryCollection(`services_${locale.value}`).order('order', 'ASC').all()
+})
+
 const { global } = useAppConfig()
 
+// SEO metadata
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
@@ -27,9 +36,7 @@ useSeoMeta({
       :title="page.title"
       :description="page.description"
       :links="page.links"
-      orientation="horizontal"
       :ui="{
-        container: 'lg:flex sm:flex-row items-center',
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
         links: 'justify-start'
@@ -48,21 +55,16 @@ useSeoMeta({
           />
         </div>
       </template>
-      <UColorModeAvatar
-        class="sm:rotate-4 size-36 rounded-lg ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
-        :light="global.picture?.light!"
-        :dark="global.picture?.dark!"
-        :alt="global.picture?.alt!"
-      />
     </UPageHero>
+
     <UPageSection
       :ui="{
         container: '!pt-0'
       }"
     >
-      <MDC
-        :value="page.content"
-        unwrap="p"
+      <UPricingPlans
+        :plans="services"
+        orientation="horizontal"
       />
     </UPageSection>
   </UPage>

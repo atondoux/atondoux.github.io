@@ -1,5 +1,8 @@
 title: "A propos"
 description: "Découvrez mon parcours d'Ingénieur Logiciel, ma façon de travailler et ma passion pour la conception et le développement de produits numériques de qualité."
+links:
+  - label: "Prendre rendez-vous"
+    color: "neutral"
 content: |
   ## :earth_africa: Mon parcours
 

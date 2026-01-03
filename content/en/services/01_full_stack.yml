@@ -1,0 +1,16 @@
+title: "Full-Stack Developer"
+description: "Augment your technical teams with a senior developer."
+price: "€600"
+billingCycle: "/ day"
+features:
+  - title: "Design"
+    icon: "i-lucide-users"
+  - title: "Backend development"
+    icon: "i-lucide-server"
+  - title: "Frontend development"
+    icon: "i-lucide-layout-dashboard"
+  - title: "Deployment"
+    icon: "i-lucide-rocket"
+variant: "soft"
+highlight: true
+order: 1
