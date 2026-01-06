@@ -1,0 +1,18 @@
+title: "Tech Lead"
+description: "Bring your development teams to technical excellence."
+price: "€600"
+billingCycle: "/ day"
+features:
+  - title: "Software Craftsmanship"
+    icon: "i-lucide-gem"
+  - title: "Test-Driven Development"
+    icon: "i-lucide-flask-conical"
+  - title: "Best practices"
+    icon: "i-lucide-award"
+badge:
+  label: "Most Popular"
+  color: "primary"
+  variant: "subtle"
+variant: "soft"
+highlight: true
+order: 0

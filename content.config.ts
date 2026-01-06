@@ -82,11 +82,40 @@ const baseCollections = {
       }).optional()
     })
   },
+  services: {
+    type: 'data' as const,
+    source: 'services/*.yml',
+    schema: z.object({
+      title: z.string().nonempty(),
+      description: z.string().nonempty(),
+      price: z.string().optional(),
+      billingCycle: z.string().optional(),
+      tagline: z.string().optional(),
+      features: z.array(z.object({
+        title: z.string(),
+        icon: z.string().optional()
+      })),
+      button: z.object({
+        label: z.string(),
+        color: z.enum(['primary', 'neutral', 'success', 'warning', 'error', 'info']).optional(),
+        variant: z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link']).optional()
+      }).optional(),
+      badge: z.object({
+        label: z.string().optional(),
+        color: z.enum(['primary', 'neutral', 'success', 'warning', 'error', 'info']).optional(),
+        variant: z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link']).optional()
+      }).optional(),
+      variant: z.enum(['soft', 'solid', 'outline', 'subtle']).optional(),
+      highlight: z.boolean().optional(),
+      order: z.number()
+    })
+  },
   pages: {
     type: 'page' as const,
     source: [
       { include: 'projects.yml' },
-      { include: 'products.yml' }
+      { include: 'products.yml' },
+      { include: 'services.yml' }
     ],
     schema: z.object({
       path: z.string(),
@@ -105,6 +134,7 @@ const baseCollections = {
     schema: z.object({
       title: z.string(),
       description: z.string(),
+      links: z.array(createButtonSchema()).optional(),
       content: z.string(),
       seo: z.object({
         title: z.string().optional(),

@@ -1,0 +1,14 @@
+title: "Applications & Consulting"
+description: "A specific project or assignment tailored to your needs."
+price: "Quote on request"
+billingCycle: ""
+features:
+  - title: "Project launch"
+    icon: "i-lucide-rocket"
+  - title: "Quality audit"
+    icon: "i-lucide-search-check"
+  - title: "Code review"
+    icon: "i-lucide-code-2"
+variant: "soft"
+highlight: true
+order: 2

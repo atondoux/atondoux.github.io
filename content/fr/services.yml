@@ -1,0 +1,9 @@
+path: /services
+title: "Mon offre de services."
+description: "Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction de la mission."
+links:
+  - label: "Prendre rendez-vous"
+    color: "neutral"
+seo:
+  title: "Services - Aurélien Tondoux"
+  description: "Services de Tech Lead, Développement Full-Stack et conseil en Software Craftsmanship."

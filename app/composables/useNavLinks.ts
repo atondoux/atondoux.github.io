@@ -9,6 +9,10 @@ export function useNavLinks() {
     icon: 'i-lucide-home',
     to: localePath('/')
   }, {
+    label: t('nav.services'),
+    icon: 'i-lucide-briefcase',
+    to: localePath('/services')
+  }, {
     label: t('nav.projects'),
     icon: 'i-lucide-folder',
     to: localePath('/projects')
