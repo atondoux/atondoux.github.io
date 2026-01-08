@@ -3,6 +3,8 @@ title: "My services."
 description: "These rates are provided as a guideline and may be adjusted according to the project."
 links:
   - label: "Book an appointment"
+    to: "https://calendly.com/atondoux/30min/"
+    target: "_blank"
     color: "neutral"
 seo:
   title: "Services - Aurélien Tondoux"

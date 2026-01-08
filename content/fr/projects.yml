@@ -3,6 +3,8 @@ title: "Mon parcours, mes expériences."
 description: "J'ai eu l'opportunité de travailler sur des projets d'envergure pour de grandes entreprises."
 links:
   - label: "Prendre un rendez-vous"
+    to: "https://calendly.com/atondoux/30min/"
+    target: "_blank"
     color: "neutral"
 seo:
   title: "Projets - Aurélien Tondoux"

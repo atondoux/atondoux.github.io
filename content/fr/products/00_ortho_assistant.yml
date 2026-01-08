@@ -10,13 +10,13 @@ seo:
   description: "SaaS pour orthophonistes développé en Java/Spring Boot et Vue.js. Recherche intelligente de matériel, inventaire augmenté et gestion d'emplacements."
 images:
   - src: /products/00-ortho-assistant/01-recherche-intelligente-v1.png
-    alt: Ortho Assistant 01
+    alt: Ortho Assistant screenshot 01
   - src: /products/00-ortho-assistant/02-liste-materiel-v1.png
-    alt: Ortho Assistant 02
+    alt: Ortho Assistant screenshot 02
   - src: /products/00-ortho-assistant/03-liste-pathologies-v1.png
-    alt: Ortho Assistant 03
+    alt: Ortho Assistant screenshot 03
   - src: /products/00-ortho-assistant/04-liste-competences-v1.png
-    alt: Ortho Assistant 04
+    alt: Ortho Assistant screenshot 04
 showFullImages: true
 content: |
   ## :desktop_computer: Le produit

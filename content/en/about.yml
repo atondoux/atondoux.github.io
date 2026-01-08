@@ -2,6 +2,8 @@ title: "About me."
 description: "Learn more about my journey as a Software Engineer, the way I work, and my passion for crafting high quality digital solutions."
 links:
   - label: "Book an appointment"
+    to: "https://calendly.com/atondoux/30min/"
+    target: "_blank"
     color: "neutral"
 seo:
   title: "About - Aurélien Tondoux"
