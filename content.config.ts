@@ -79,7 +79,9 @@ const baseCollections = {
       seo: z.object({
         title: z.string().optional(),
         description: z.string().optional()
-      }).optional()
+      }).optional(),
+      images: z.array(createImageSchema()).optional(),
+      showFullImages: z.boolean().optional()
     })
   },
   services: {
