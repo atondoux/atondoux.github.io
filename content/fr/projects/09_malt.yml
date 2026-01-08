@@ -4,6 +4,9 @@ date: 2025-01-01
 slug: "malt"
 image: "/projects/09_malt_logo.svg"
 tags: ["Marketplace", "Software Craftsmanship", "Kotlin", "Spring Boot", "Nuxt.js", "API REST", "RabbitMQ", "SQL", "NoSQL", "Test Driven Development", "Gitlab CI/CD", "Datadog"]
+seo:
+  title: "Malt - Aurélien Tondoux"
+  description: "Développeur Full Stack Kotlin/Spring Boot/Nuxt.js sur le module de financement Malt. Optimisation des flux financiers et automatisation FinOps."
 content: |
   ## :man_technologist: Mon rôle
 

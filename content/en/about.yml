@@ -1,8 +1,11 @@
-title: "About me"
+title: "About me."
 description: "Learn more about my journey as a Software Engineer, the way I work, and my passion for crafting high quality digital solutions."
 links:
   - label: "Book an appointment"
     color: "neutral"
+seo:
+  title: "About - Aurélien Tondoux"
+  description: "Software engineer with 15+ years of experience in Java, Kotlin, Spring Boot, and Vue.js. Specialized in Software Craftsmanship and Test Driven Development."
 content: |
   ## :earth_africa: My journey
 

@@ -4,6 +4,9 @@ date: 2024-01-01
 slug: "namirial"
 image: "/projects/08_namirial_logo.svg"
 tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring Boot", "API REST", "SQL", "Test Driven Development", "Gitlab CI/CD", "Kibana", "Méthodes agiles"]
+seo:
+  title: "Namirial - Aurélien Tondoux"
+  description: "Tech Lead Backend pour une plateforme KYC. Intégration Kotlin/Spring Boot de signature électronique Yousign et services de vérification d'identité."
 content: |
   ## :man_technologist: Mon rôle
 

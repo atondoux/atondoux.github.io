@@ -1,8 +1,11 @@
 title: "A propos"
-description: "Découvrez mon parcours d'Ingénieur Logiciel, ma façon de travailler et ma passion pour la conception et le développement de produits numériques de qualité."
+description: "Découvrez mon parcours d'Ingénieur Logiciel, ma façon de travailler et ma passion pour la conception et le développement de logiciels de qualité."
 links:
   - label: "Prendre rendez-vous"
     color: "neutral"
+seo:
+  title: "A propos - Aurélien Tondoux"
+  description: "Ingénieur logiciel avec 15+ ans d'expérience en Java, Kotlin, Spring Boot et Vue.js. Spécialisé en Software Craftsmanship et Test Driven Development."
 content: |
   ## :earth_africa: Mon parcours
 

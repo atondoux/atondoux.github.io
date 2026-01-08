@@ -4,3 +4,6 @@ description: "Les produits numériques que j'ai conçus et développés."
 links:
   - label: "Prendre rendez-vous"
     color: "neutral"
+seo:
+  title: "Produits - Aurélien Tondoux"
+  description: "Découvrez les produits numériques que j'ai conçus et développés : Ortho Assistant, formations Spring Boot et plus encore."

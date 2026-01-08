@@ -4,6 +4,9 @@ date: 2015-01-01
 slug: "softway-medical"
 image: "/projects/06_softway_medical_logo.svg"
 tags: ["Santé", "Software Craftsmanship", "Java", "Spring Boot", "jHipster", "Quarkus", "API REST", "TypeScript", "Vue.js", "SQL", "NoSQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "Microservices", "OpenShift", "Graylog", "DevOps", "Méthodes agiles"]
+seo:
+  title: "Softway Medical - Aurélien Tondoux"
+  description: "Tech Lead Full Stack pour des applications de santé. Microservices Spring Boot/Quarkus, Vue.js, DDD et TDD. Déploiement Docker/OpenShift."
 content: |
   ## :man_technologist: Mon rôle
 

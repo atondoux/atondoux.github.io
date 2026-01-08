@@ -4,6 +4,9 @@ date: 2007-01-01
 slug: "veolia"
 image: "/projects/00_veolia_logo.svg"
 tags: ["Services publics", "Java", "JavaScript", "SQL", "Méthode Cycle en V"]
+seo:
+  title: "Veolia Eau - Aurélien Tondoux"
+  description: "Développement d'applications métier Java pour la gestion de la distribution de l'eau en Île-de-France (500 000+ contrats)."
 content: |
   ## :man_technologist: Mon rôle
 

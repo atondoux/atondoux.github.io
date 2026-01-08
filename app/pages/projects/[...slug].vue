@@ -44,14 +44,11 @@ if (page.value.image) {
   })
 }
 
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
-
-useSeoMeta({
-  title,
-  description,
-  ogDescription: description,
-  ogTitle: title
+usePageSeo({
+  title: page.value?.seo?.title || page.value?.title,
+  description: page.value?.seo?.description || page.value?.description,
+  ogImage: page.value.image,
+  ogType: 'article'
 })
 </script>
 

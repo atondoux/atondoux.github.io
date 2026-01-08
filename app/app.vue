@@ -19,10 +19,13 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt Portfolio Template',
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
-  twitterCard: 'summary_large_image'
+  titleTemplate: '%s - Aurélien Tondoux',
+  ogSiteName: 'Aurélien Tondoux',
+  ogImage: 'https://aurelientondoux.com/hero.jpg',
+  ogImageAlt: 'Aurélien Tondoux profile picture',
+  twitterImage: 'https://aurelientondoux.com/hero.jpg',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@atondoux'
 })
 
 const navLinks = useNavLinks()

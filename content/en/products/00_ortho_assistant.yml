@@ -5,6 +5,9 @@ date: 2020-03-01
 slug: "ortho-assistant"
 image: "/products/00-ortho-assistant/00_ortho_assistant.svg"
 tags: ["Healthcare", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "REST API", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "DevOps"]
+seo:
+  title: "Ortho Assistant - SaaS for Speech Therapists - Aurélien Tondoux"
+  description: "SaaS for speech therapists developed with Java/Spring Boot and Vue.js. Intelligent material search, enhanced inventory, and location management."
 images:
   - src: /products/00-ortho-assistant/01-recherche-intelligente-v1.png
     alt: Ortho Assistant 01

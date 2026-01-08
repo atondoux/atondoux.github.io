@@ -4,6 +4,9 @@ date: 2011-01-01
 slug: "natixis"
 image: "/projects/03_natixis_logo.svg"
 tags: ["Banque", "Java", "Spring Framework", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
+seo:
+  title: "Natixis - Aurélien Tondoux"
+  description: "Refonte du CRM Equity Markets avec Java/Spring/Hibernate. Gestion du code legacy et refactoring continu."
 content: |
   ## :man_technologist: Mon rôle
 
