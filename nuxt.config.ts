@@ -19,6 +19,13 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
+  site: {
+    url: 'https://aurelientondoux.com',
+    name: 'Aurélien Tondoux',
+    description: 'Ingénieur logiciel senior freelance avec plus de 15 ans d\'expérience',
+    defaultLocale: 'fr'
+  },
+
   i18n: {
     defaultLocale: 'fr',
     strategy: 'prefix_except_default',
@@ -44,6 +51,12 @@ export default defineNuxtConfig({
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://aurelientondoux.com'
     }
   }
 })

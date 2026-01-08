@@ -4,6 +4,9 @@ date: 2010-01-01
 slug: "sncf-connect-and-tech"
 image: "/projects/02_sncf_connect_logo.svg"
 tags: ["Mobilités Durables", "Java", "Spring Framework", "API REST", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
+seo:
+  title: "SNCF Connect & Tech - Aurélien Tondoux"
+  description: "Développement Java/Spring pour la plateforme européenne de réservation de billets SNCF. Services web B2C et architecture SOA."
 content: |
   ## :man_technologist: Mon rôle
 

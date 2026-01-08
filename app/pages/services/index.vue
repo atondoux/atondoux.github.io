@@ -22,11 +22,10 @@ const { data: services } = await useAsyncData(`services-${locale.value}`, () => 
 const { global } = useAppConfig()
 
 // SEO metadata
-useSeoMeta({
+usePageSeo({
   title: page.value?.seo?.title || page.value?.title,
-  ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
+  ogType: 'website'
 })
 </script>
 

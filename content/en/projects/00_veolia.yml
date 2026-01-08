@@ -4,6 +4,9 @@ date: 2007-01-01
 slug: "veolia"
 image: "/projects/00_veolia_logo.svg"
 tags: ["Public Services", "Java", "JavaScript", "SQL", "Waterfall Methodology"]
+seo:
+  title: "Veolia Water - Aurélien Tondoux"
+  description: "Java business application development for water distribution management in the Paris area (500,000+ contracts)."
 content: |
   ## :man_technologist: My role
 

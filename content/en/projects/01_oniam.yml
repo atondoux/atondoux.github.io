@@ -4,6 +4,9 @@ date: 2009-01-01
 slug: "oniam"
 image: "/projects/01_oniam_logo.svg"
 tags: ["Public Services", "Java", "Spring Framework", "Hibernate", "REST API", "jBPM", "JSF", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
+seo:
+  title: "Ministry of Health - ONIAM - Aurélien Tondoux"
+  description: "Java/Spring web application for medical accident compensation. Complete digitalization of business processes."
 content: |
   ## :man_technologist: My role
 

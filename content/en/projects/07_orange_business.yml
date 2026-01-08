@@ -4,6 +4,9 @@ date: 2023-01-01
 slug: "orange-business"
 image: "/projects/07_orange_business_logo.svg"
 tags: ["Fleet Management", "Software Craftsmanship", "Java", "Spring Framework", "REST API", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
+seo:
+  title: "Orange Business - Océan - Aurélien Tondoux"
+  description: "Backend Tech Lead for Océan fleet management platform. Java/Spring maintenance tracking API redesign. Software Craftsmanship mentoring."
 content: |
   ## :man_technologist: My role
 

@@ -13,11 +13,10 @@ if (!page.value) {
 
 const { global } = useAppConfig()
 
-useSeoMeta({
+usePageSeo({
   title: page.value?.seo?.title || page.value?.title,
-  ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
+  ogType: 'website'
 })
 </script>
 

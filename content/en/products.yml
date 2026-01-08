@@ -4,3 +4,6 @@ description: Digital products I have designed and developed.
 links:
   - label: "Book an appointment"
     color: "neutral"
+seo:
+  title: "Products - Aurélien Tondoux"
+  description: "Discover the digital products I have designed and developed: Ortho Assistant, Spring Boot training, and more."
