@@ -112,7 +112,15 @@ useSeoMeta({
         unwrap="p"
       />
 
+      <ImageGallery
+        v-if="page.images && page.images.length > 0"
+        :images="page.images"
+        :displayFullImage="page.showFullImages"
+        class="pt-8"
+      />
+
       <UContentSurround v-if="surround" :surround="surround" />
     </UPageSection>
+
   </UPage>
 </template>

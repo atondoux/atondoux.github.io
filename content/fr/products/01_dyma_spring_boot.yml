@@ -3,7 +3,7 @@ description: "Découvrez Spring Boot, le framework open source incontournable po
 summary: "Découvrez Spring Boot, le framework open source incontournable pour créer des applications web et des microservices de niveau entreprise. Cette formation complète est accessible sur Dyma."
 date: 2024-04-01
 slug: "spring-boot-online-course"
-image: "/products/01_dyma_spring_boot.svg"
+image: "/products/01-spring-boot-online-course/01_dyma_spring_boot.svg"
 tags: ["Formation en ligne", "Java", "Spring Boot", "API REST", "Clean Code", "Test Driven Development"]
 content: |
   ## :desktop_computer: Le produit
