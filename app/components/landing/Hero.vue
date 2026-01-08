@@ -39,6 +39,10 @@ defineProps<{
           :light="global.picture?.light!"
           :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
+          :width="144"
+          :height="144"
+          densities="x1 x2"
+          loading="eager"
         />
       </Motion>
     </template>
