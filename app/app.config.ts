@@ -1,9 +1,9 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: '',
-      light: '',
-      alt: ''
+      dark: '/hero.jpg',
+      light: '/hero.jpg',
+      alt: 'Aurélien Tondoux profile picture'
     },
     meetingLink: 'https://calendly.com/atondoux/30min/',
     email: 'ui-pro@nuxt.com',
