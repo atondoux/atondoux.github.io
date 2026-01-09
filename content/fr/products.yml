@@ -2,7 +2,9 @@ path: /products
 title: "Mes créations."
 description: "Les produits numériques que j'ai conçus et développés."
 links:
-  - label: "Prendre rendez-vous"
+  - label: "Prendre un rendez-vous"
+    to: "https://calendly.com/atondoux/30min/"
+    target: "_blank"
     color: "neutral"
 seo:
   title: "Produits - Aurélien Tondoux"

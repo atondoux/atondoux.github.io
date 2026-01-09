@@ -16,8 +16,6 @@ const { data: products } = await useAsyncData(`products-${locale.value}`, () => 
   return queryCollection(`products_${locale.value}`).order('date', 'DESC').all()
 })
 
-const { global } = useAppConfig()
-
 usePageSeo({
   title: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
@@ -39,14 +37,17 @@ usePageSeo({
     >
       <template #links>
         <div
-          v-if="page.links"
+          v-if="page.links && page.links.length > 0"
           class="flex items-center gap-2"
         >
           <UButton
-            :label="page.links[0]?.label"
-            :to="global.meetingLink"
-            :target="'_blank'"
-            v-bind="page.links[0]"
+            v-for="(link, index) in page.links"
+            :key="index"
+            :label="link.label"
+            :to="link.to"
+            :target="link.target"
+            :color="link.color"
+            v-bind="link"
           />
         </div>
       </template>

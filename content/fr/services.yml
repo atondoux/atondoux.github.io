@@ -2,7 +2,9 @@ path: /services
 title: "Mon offre de services."
 description: "Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction de la mission."
 links:
-  - label: "Prendre rendez-vous"
+  - label: "Prendre un rendez-vous"
+    to: "https://calendly.com/atondoux/30min/"
+    target: "_blank"
     color: "neutral"
 seo:
   title: "Services - Aurélien Tondoux"

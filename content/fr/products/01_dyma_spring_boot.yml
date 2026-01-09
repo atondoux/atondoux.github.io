@@ -3,11 +3,23 @@ description: "Découvrez Spring Boot, le framework open source incontournable po
 summary: "Découvrez Spring Boot, le framework open source incontournable pour créer des applications web et des microservices de niveau entreprise. Cette formation complète est accessible sur Dyma."
 date: 2024-04-01
 slug: "spring-boot-online-course"
-image: "/products/01-spring-boot-online-course/01_dyma_spring_boot.svg"
+image: "/products/01-spring-boot-online-course/00_dyma_spring_boot.svg"
 tags: ["Formation en ligne", "Java", "Spring Boot", "API REST", "Clean Code", "Test Driven Development"]
 seo:
   title: "Formation Spring Boot - Dyma - Aurélien Tondoux"
   description: "Formation complète Spring Boot sur Dyma : 19 chapitres, 87 leçons, 174 quiz. 5000+ heures de formation, note 4.6/5. Architecture, Spring Data, Security et tests."
+images:
+  - src: /products/01-spring-boot-online-course/01_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 01
+  - src: /products/01-spring-boot-online-course/02_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 02
+  - src: /products/01-spring-boot-online-course/03_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 03
+  - src: /products/01-spring-boot-online-course/04_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 04
+  - src: /products/01-spring-boot-online-course/05_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 05
+showFullImages: true
 content: |
   ## :desktop_computer: Le produit
 
