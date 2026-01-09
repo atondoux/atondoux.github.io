@@ -73,3 +73,10 @@ usePageSeo({
     </UPageSection>
   </UPage>
 </template>
+
+<style scoped>
+:deep(table td:first-child),
+:deep(table th:first-child) {
+  white-space: nowrap;
+}
+</style>

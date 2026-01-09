@@ -21,16 +21,16 @@ content: |
 
   The tools I work with on a daily basis. The list keeps growing.
 
-  |                          |                                                                                                                 |
-  |--------------------------|-----------------------------------------------------------------------------------------------------------------|
-  | **Methods**              | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Design           |
-  | **Programming Languages**| Java, Kotlin, TypeScript, SQL                                                                                   |
-  | **Frameworks**           | Spring Boot, Quarkus, JHipster, Vue.js                                                                          |
-  | **Cloud & DevOps**       | SaaS, Microservices, Docker, OpenShift                                                                          |
-  | **Build**                | Gitlab CI/CD, Jenkins, Maven, Gradle                                                                            |
-  | **Testing**              | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                                         |
-  | **Learning & Training**  | Hexagonal Architecture, React, React Native, Flutter, Node.js, NestJS, Behavior Driven Development, NoEstimates |
-  | **Languages**            | French: native <br> English: fluent                                                                             |
+  |                                             |                                                                                                       |
+  |---------------------------------------------|-------------------------------------------------------------------------------------------------------|
+  | 📋️ **Methods**                              | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Design |
+  | 💻 **Programming Languages**                | Java, Kotlin, TypeScript, SQL                                                                         |
+  | 🛠 **Frameworks**                           | Spring Boot, Quarkus, JHipster, Vue.js, Nuxt                                                          |
+  | ☁️ **Cloud & DevOps**                       | SaaS, Microservices, Docker, OpenShift                                                                |
+  | 🏗 **Build**                                | Gitlab CI/CD, Jenkins, Maven, Gradle                                                                  |
+  | 🧪 **Testing**                              | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                               |
+  | 🏫 **Learning & Training**                  | Agentic Coding, Hexagonal Architecture, Domain Driven Design                                          |
+  | 🗣 **Languages**                            | French (native), English (fluent)                                                                     |
 
   ## :mag: The way I work
 
