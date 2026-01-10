@@ -50,7 +50,7 @@ const startViewTransition = (event: MouseEvent) => {
       :icon="`i-lucide-${nextTheme === 'dark' ? 'sun' : 'moon'}`"
       color="neutral"
       variant="link"
-      size="sm"
+      size="xl"
       class="cursor-pointer px-2 py-1"
       @click="startViewTransition"
     />

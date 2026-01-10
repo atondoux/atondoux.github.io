@@ -55,14 +55,10 @@ const startViewTransition = (event: MouseEvent) => {
       icon="i-lucide-languages"
       color="neutral"
       variant="link"
-      size="sm"
+      size="xl"
       class="px-2 py-1 cursor-pointer"
       @click="startViewTransition"
-    >
-      <template #trailing>
-        <span class="text-xs font-medium">{{ locale.toUpperCase() }}</span>
-      </template>
-    </UButton>
+    />
     <template #fallback>
       <div class="size-4" />
     </template>
