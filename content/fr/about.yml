@@ -1,5 +1,5 @@
 title: "A propos"
-description: "Découvrez mon parcours d'Ingénieur Logiciel, ma façon de travailler et ma passion pour la conception et le développement de logiciels de qualité."
+description: "Découvrez mon parcours d'Ingénieur Logiciel Senior, ma façon de travailler et ma passion pour la conception et le développement de solutions digitales de qualité."
 links:
   - label: "Prendre un rendez-vous"
     to: "https://calendly.com/atondoux/30min/"
@@ -22,16 +22,16 @@ content: |
 
   Les outils avec lesquels je travaille au quotidien. La liste ne cesse de s'agrandir.
 
-  |                         |                                                                                                                  |
-  |-------------------------|------------------------------------------------------------------------------------------------------------------|
-  | **Méthodes**            | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Design            |
-  | **Langages**            | Java, Kotlin, TypeScript, SQL                                                                                    |
-  | **Frameworks**          | Spring Boot, Quarkus, JHipster, Vue.js                                                                           |
-  | **Cloud & DevOps**      | SaaS, Microservices, Docker, OpenShift                                                                           |
-  | **Build**               | Gitlab CI/CD, Jenkins, Maven, Gradle                                                                             |
-  | **Testing**             | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                                          |
-  | **Veille & Formation**  | Architecture Hexagonale, React, React Native, Flutter, Node.js, NestJS, Behavior Driven Development, NoEstimates |
-  | **Langues**             | Français : langue maternelle <br> Anglais : courant                                                              |
+  |                                             |                                                                                                       |
+  |---------------------------------------------|-------------------------------------------------------------------------------------------------------|
+  | 📋️ **Méthodes**                            | Software Craftsmanship, Clean Architecture, Clean Code, Test Driven Development, Domain Driven Design |
+  | 💻 **Langages**                             | Java, Kotlin, TypeScript, SQL                                                                         |
+  | 🛠 **Frameworks**                           | Spring Boot, Quarkus, JHipster, Vue.js, Nuxt                                                          |
+  | ☁️ **Cloud & DevOps**                       | SaaS, Microservices, Docker, OpenShift                                                                |
+  | 🏗 **Build**                                | Gitlab CI/CD, Jenkins, Maven, Gradle                                                                  |
+  | 🧪 **Testing**                              | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                               |
+  | 🏫 **Veille & Formation**                   | Agentic Coding, Architecture Hexagonale, Domain Driven Design                                         |
+  | 🗣 **Langues**                              | Français (langue maternelle), Anglais (courant)                                                       |
 
   ## :mag: Ma façon de travailler
 

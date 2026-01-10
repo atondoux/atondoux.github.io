@@ -3,10 +3,10 @@ description: "Help freelancers receive their payments as quickly as possible and
 date: 2025-01-01
 slug: "malt"
 image: "/projects/09_malt_logo.svg"
-tags: ["Marketplace", "Software Craftsmanship", "Kotlin", "Spring Boot", "Nuxt.js", "API REST", "RabbitMQ", "SQL", "NoSQL", "Test Driven Development", "Gitlab CI/CD", "Datadog"]
+tags: ["Marketplace", "Software Craftsmanship", "Kotlin", "Spring Boot", "Nuxt", "API REST", "RabbitMQ", "SQL", "NoSQL", "Test Driven Development", "Gitlab CI/CD", "Datadog"]
 seo:
   title: "Malt - Aurélien Tondoux"
-  description: "Full Stack Developer with Kotlin/Spring Boot/Nuxt.js on Malt's financing module. Optimization of financial flows and FinOps automation."
+  description: "Full Stack Developer with Kotlin/Spring Boot/Nuxt on Malt's financing module. Optimization of financial flows and FinOps automation."
 content: |
   ## :man_technologist: My role
 
