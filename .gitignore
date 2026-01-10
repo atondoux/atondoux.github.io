@@ -8,6 +8,7 @@ hugo-website/.hugo_build.lock
 .output/
 .data/
 dist/
+/dist/
 
 # Dependencies
 node_modules/
@@ -26,4 +27,3 @@ node_modules/
 
 # Logs
 *.log
-/dist/
