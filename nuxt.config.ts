@@ -66,7 +66,9 @@ export default defineNuxtConfig({
       scan: true,
       icons: [
         'lucide:sun',
-        'lucide:moon'
+        'lucide:moon',
+        'lucide:arrow-left',
+        'lucide:arrow-right'
       ]
     }
   }
