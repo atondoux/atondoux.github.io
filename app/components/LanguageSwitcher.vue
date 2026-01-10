@@ -55,7 +55,7 @@ const startViewTransition = (event: MouseEvent) => {
       icon="i-lucide-languages"
       color="neutral"
       variant="link"
-      size="xl"
+      size="sm"
       class="px-2 py-1 cursor-pointer"
       @click="startViewTransition"
     />
