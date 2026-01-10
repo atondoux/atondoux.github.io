@@ -16,7 +16,7 @@ const socialLinks = useSocialLinks()
       <UButton
         v-for="(link, index) of socialLinks"
         :key="index"
-        v-bind="{ size: 'xs', color: 'neutral', variant: 'ghost', ...link }"
+        v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
       />
     </template>
   </UFooter>
