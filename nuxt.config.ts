@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
+    '@nuxt/icon',
     '@nuxt/ui',
     '@nuxt/content',
     '@vueuse/nuxt',
@@ -57,6 +58,14 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: 'https://aurelientondoux.com'
+    }
+  },
+
+  icon: {
+    provider: 'server',
+    clientBundle: {
+      scan: true,
+      icons: ['lucide:sun','lucide:moon'], // put dynamically rendered icons here
     }
   }
 })
