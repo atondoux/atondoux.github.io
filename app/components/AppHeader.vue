@@ -1,15 +1,27 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { NavigationMenuItem } from '~/types/navigation'
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 
-defineProps<{
+const props = defineProps<{
   links: NavigationMenuItem[]
 }>()
+
+const breakpoints = useBreakpoints(breakpointsTailwind)
+
+const isMobile = breakpoints.smaller('sm') // < 640px
+const displayLinks = computed(() => {
+  return props.links.map(link => ({
+    ...link,
+    label: isMobile.value ? undefined : link.label,
+    icon: isMobile.value ? link.icon : undefined
+  }))
+})
 </script>
 
 <template>
   <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
     <UNavigationMenu
-      :items="links"
+      :items="displayLinks"
       variant="link"
       color="primary"
       class="bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5"

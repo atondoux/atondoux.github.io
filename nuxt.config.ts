@@ -69,7 +69,13 @@ export default defineNuxtConfig({
         'lucide:sun',
         'lucide:moon',
         'lucide:arrow-left',
-        'lucide:arrow-right'
+        'lucide:arrow-right',
+        // Navigation icons
+        'lucide:house',
+        'lucide:hand-coins',
+        'lucide:folder-kanban',
+        'lucide:package',
+        'lucide:user-round'
       ], // put dynamically rendered icons here
     }
   }

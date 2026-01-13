@@ -1,4 +1,4 @@
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { NavigationMenuItem } from '~/types/navigation'
 
 export function useNavLinks() {
   const { t } = useI18n()
@@ -6,18 +6,23 @@ export function useNavLinks() {
 
   return computed<NavigationMenuItem[]>(() => [{
     label: t('nav.home'),
-    to: localePath('/')
+    to: localePath('/'),
+    icon: 'i-lucide-house'
   }, {
     label: t('nav.services'),
-    to: localePath('/services')
+    to: localePath('/services'),
+    icon: 'i-lucide-hand-coins'
   }, {
     label: t('nav.projects'),
-    to: localePath('/projects')
+    to: localePath('/projects'),
+    icon: 'i-lucide-folder-kanban'
   }, {
     label: t('nav.products'),
-    to: localePath('/products')
+    to: localePath('/products'),
+    icon: 'i-lucide-package'
   }, {
     label: t('nav.about'),
-    to: localePath('/about')
+    to: localePath('/about'),
+    icon: 'i-lucide-user-round'
   }])
 }
