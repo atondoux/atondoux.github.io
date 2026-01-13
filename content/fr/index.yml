@@ -28,7 +28,7 @@ experience:
   title: Expérience
   items:
     - position: "Ingénieur Logiciel @"
-      date: "2023 - Aujourd'hui"
+      date: "2023 - Auj."
       company:
         name: "AT Code Lab"
         logo: "i-lucide-laptop-minimal"
@@ -41,7 +41,7 @@ experience:
         logo: "i-lucide-hospital"
         url: ""
         color: "#FF6363"
-    - position: "Explorateur & Photographe @"
+    - position: "Explorateur @"
       date: "2013 - 2015"
       company:
         name: "Monde"
