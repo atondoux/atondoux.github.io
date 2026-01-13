@@ -65,7 +65,12 @@ export default defineNuxtConfig({
     provider: 'server',
     clientBundle: {
       scan: true,
-      icons: ['lucide:sun','lucide:moon'], // put dynamically rendered icons here
+      icons: [
+        'lucide:sun',
+        'lucide:moon',
+        'lucide:arrow-left',
+        'lucide:arrow-right'
+      ], // put dynamically rendered icons here
     }
   }
 })
