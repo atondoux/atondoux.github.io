@@ -14,8 +14,9 @@ export default defineNuxtConfig({
   experimental: {
     defaults: {
       nuxtLink: {
-        // This option ensures internal links and route resolution consistently use NO trailing slashes
-        trailingSlash: 'remove'
+        // This option ensures internal links and route resolution consistently use trailing slashes
+        // Matches GitHub Pages behavior which adds trailing slashes to directory URLs
+        trailingSlash: 'append'
       }
     }
   },
@@ -50,7 +51,9 @@ export default defineNuxtConfig({
       routes: [
         '/'
       ],
-      crawlLinks: true
+      crawlLinks: true,
+      // Ensure trailing slashes are handled correctly during prerendering
+      autoSubfolderIndex: true
     }
   },
 
