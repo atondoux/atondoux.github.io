@@ -24,9 +24,5 @@ export default defineAppConfig({
   },
   footer: {
     colorMode: false
-  },
-  icon: {
-    size: '1.5em',
-    mode: 'css'
   }
 })

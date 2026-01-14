@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxt/icon',
     '@nuxt/ui',
     '@nuxt/content',
     '@vueuse/nuxt',
@@ -66,17 +65,19 @@ export default defineNuxtConfig({
     clientBundle: {
       scan: true,
       icons: [
+        // Dynamically rendered icons
         'lucide:sun',
         'lucide:moon',
         'lucide:arrow-left',
         'lucide:arrow-right',
+        'lucide:hash',
         // Navigation icons
         'lucide:house',
         'lucide:hand-coins',
         'lucide:folder-kanban',
         'lucide:package',
         'lucide:user-round'
-      ], // put dynamically rendered icons here
+      ],
     }
   }
 })

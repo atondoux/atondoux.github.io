@@ -11,7 +11,8 @@ Personal portfolio website built with Nuxt 4 and Nuxt UI, deployed to GitHub Pag
 - @nuxt/ui v4.2.1 (component library)
 - @nuxt/content v3.8.2 (markdown-based content)
 - @nuxt/image v2.0.0 (image optimization)
-- @vueuse/nuxt v13.9.0 (Vue utilities)
+- @vueuse/nuxt v14.1.0 (Vue utilities)
+- @nuxtjs/i18n v10.2.1 (internationalization)
 - motion-v v1.7.3 (animations)
 - TypeScript strict mode
 - ESLint configuration
@@ -28,9 +29,10 @@ pnpm dev --host 127.0.0.1
 
 **Build:**
 ```bash
-pnpm build          # Build for production
-pnpm generate       # Generate static site
-pnpm preview        # Preview production build
+pnpm build                       # Build for production (SSR)
+pnpm generate                    # Generate static site to .output/public/
+pnpm preview                     # Preview production build
+npx serve .output/public         # Preview static build locally
 ```
 
 **Code Quality:**
@@ -71,9 +73,10 @@ pnpm lint:fix       # Auto-fix linting issues
 **Installed Modules:**
 - `@nuxt/eslint` - ESLint integration
 - `@nuxt/image` - Image optimization
-- `@nuxt/ui` - Pre-built UI components
+- `@nuxt/ui` - Pre-built UI components (includes @nuxt/icon automatically)
 - `@nuxt/content` - Markdown-based CMS
 - `@vueuse/nuxt` - Vue composition utilities
+- `@nuxtjs/i18n` - Internationalization (fr/en)
 - `nuxt-og-image` - Open Graph image generation
 - `motion-v/nuxt` - Animation library
 
@@ -101,11 +104,22 @@ Content uses Nuxt Content v3 with markdown files:
 
 Key settings:
 ```typescript
-modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui', '@nuxt/content', '@vueuse/nuxt', 'nuxt-og-image', 'motion-v/nuxt']
+modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui', '@nuxt/content', '@vueuse/nuxt', 'nuxt-og-image', 'motion-v/nuxt', '@nuxtjs/i18n']
 devtools: { enabled: true }
 css: ['~/assets/css/main.css']
 compatibilityDate: '2024-11-01'
+
+// Icon bundling for static deployment (GitHub Pages)
+icon: {
+  provider: 'server',
+  clientBundle: {
+    scan: true,
+    icons: ['lucide:sun', 'lucide:moon', ...] // Dynamically rendered icons
+  }
+}
 ```
+
+**Important:** Do NOT add `@nuxt/icon` to the modules array - Nuxt UI registers it automatically with correct default settings.
 
 ### content.config.ts
 
@@ -165,9 +179,17 @@ const { data: posts } = await useAsyncData(
 )
 ```
 
+## Internationalization (i18n)
+
+The site supports French (default) and English:
+- Locale files in `app/locales/` (fr.json, en.json)
+- Strategy: `prefix_except_default` (French at `/`, English at `/en/`)
+- Use `useI18n()` for translations, `useLocalePath()` for localized routes
+
 ## Deployment
 
 - GitHub Actions workflow: `.github/workflows/deploy.yaml`
 - Static generation: `pnpm generate`
 - Output directory: `.output/public/`
 - Deployed to GitHub Pages on push to `main` branch
+- Preview locally: `npx serve .output/public` after generate

@@ -2,8 +2,8 @@
 .nuxt/
 .output/
 .data/
+dist
 dist/
-/dist/
 
 # Dependencies
 node_modules/
