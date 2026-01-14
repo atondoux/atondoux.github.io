@@ -6,9 +6,9 @@ export function usePageSeo(options: {
 }) {
   const { locale } = useI18n()
   const route = useRoute()
-  const config = useRuntimeConfig()
+  const siteConfig = useSiteConfig()
 
-  const siteUrl = config.public.siteUrl
+  const siteUrl = siteConfig.url
   const canonicalUrl = `${siteUrl}${route.path}`
 
   const ogLocale = locale.value === 'fr' ? 'fr_FR' : 'en_US'
