@@ -4,138 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal portfolio website built with Hugo and deployed to GitHub Pages at https://aurelientondoux.com.
-
-**Tech Stack:**
-- Hugo static site generator
-- Congo theme (jpanther/congo)
-- Docker for local development
-- GitHub Actions for deployment
-
-## Development Commands
-
-**Local Development:**
-```bash
-cd hugo-website
-docker compose up
-# Starts Hugo server at http://localhost:1313
-# Hot reload enabled
-```
-
-**Build:**
-```bash
-cd hugo-website
-hugo
-# Generates static site in public/ directory
-```
-
-## Architecture
-
-### Directory Structure
-
-```
-/
-├── hugo-website/            # Hugo project (production site)
-│   ├── config/             # Hugo configuration
-│   ├── content/            # Markdown content
-│   ├── layouts/            # HTML templates
-│   ├── themes/             # Congo theme (Git submodule)
-│   ├── public/             # Generated static site
-│   ├── assets/             # SCSS/style assets
-│   ├── static/             # Static files to copy
-│   ├── archetypes/         # Content templates
-│   ├── resources/          # Generated resources
-│   └── docker-compose.yml  # Local dev environment
-├── public/                  # Static assets (favicons, manifest)
-├── .github/workflows/       # GitHub Actions workflows
-│   └── hugo.yaml           # Deployment workflow
-└── .gitmodules             # Git submodule for Congo theme
-```
-
-### Content Organization
-
-Hugo content is organized in `hugo-website/content/`:
-- Blog posts, projects, and pages written in Markdown
-- Frontmatter defines metadata (title, date, tags, etc.)
-- Congo theme provides layouts and components
-
-### Styling
-
-The site uses the Congo theme which provides:
-- Responsive design
-- Dark/light mode toggle
-- Chart.js integration for data visualization
-- Tag-based content organization
-
-## Configuration Files
-
-### hugo-website/config/
-
-Hugo configuration files (TOML format):
-- Site settings, languages, menus
-- Theme configuration
-- Build parameters
-
-### docker-compose.yml
-
-Located in `hugo-website/docker-compose.yml`:
-- Runs Hugo server in Docker container
-- Maps port 1313 for local development
-- Enables live reload
-
-## Deployment
-
-**Deployment Architecture:**
-- GitHub Actions workflow: `.github/workflows/hugo.yaml`
-- Builds: `hugo-website/` → `hugo-website/public/`
-- Deploys: `hugo-website/public/*` → GitHub Pages
-- Triggered on push to `main` branch
-
-**Static Assets:**
-- Root `public/` directory contains favicons and site.webmanifest
-- These files are deployed to the domain root
-
-## Important Notes
-
-**Congo Theme:**
-- Installed as Git submodule in `hugo-website/themes/congo`
-- Always verify version compatibility between Hugo and Congo before upgrading
-- Theme documentation: https://github.com/jpanther/congo
-
-**Hugo Public Directory:**
-- `hugo-website/public/` is auto-generated on build
-- Do not manually edit files in this directory
-- Directory is rebuilt on every Hugo build
-
-**Docker Development:**
-- Use Docker Compose for consistent local environment
-- Eliminates need to install Hugo locally
-- Ensures version consistency across environments
-
-## Coding Conventions
-
-**Content Files:**
-- Write content in Markdown
-- Use Hugo frontmatter for metadata
-- Follow Congo theme content structure
-
-**File Organization:**
-- Keep all Hugo-specific files in `hugo-website/`
-- Root-level files are for repository configuration only
-
-**Git Submodules:**
-- Congo theme is managed as a Git submodule
-- Use `git submodule update --init --recursive` after cloning
-
----
-
-# Nuxt UI Portfolio (Development)
-
-Modern portfolio rebuild using Nuxt 4 and Nuxt UI. Currently in development alongside the Hugo production site.
-
-**Project Status:**
-- **Hugo:** Production site (live at aurelientondoux.com)
-- **Nuxt:** Development site (local only)
+Personal portfolio website built with Nuxt 4 and Nuxt UI, deployed to GitHub Pages at https://aurelientondoux.com.
 
 **Tech Stack:**
 - Nuxt v4.2.2
@@ -171,7 +40,7 @@ pnpm lint           # Run ESLint
 pnpm lint:fix       # Auto-fix linting issues
 ```
 
-## Nuxt Architecture
+## Architecture
 
 ### Directory Structure
 
@@ -185,10 +54,10 @@ pnpm lint:fix       # Auto-fix linting issues
 │   ├── blog/               # Blog posts
 │   ├── projects/           # Project showcases
 │   └── ...                 # Other content collections
-├── public/                  # Static assets (shared with Hugo)
+├── public/                  # Static assets
 │   ├── hero/               # Hero images
 │   ├── robots.txt          # Search engine directives
-│   └── favicon.*           # Favicons (preserved from Hugo)
+│   └── favicon.*           # Favicons
 ├── nuxt.config.ts          # Nuxt configuration
 ├── content.config.ts       # Nuxt Content schema
 ├── tsconfig.json           # TypeScript configuration
@@ -254,12 +123,6 @@ TypeScript configuration:
 
 ## Important Notes
 
-**Dual-Project Structure:**
-- Hugo (production) in `hugo-website/`
-- Nuxt (development) at repository root
-- Both projects coexist independently
-- Hugo deployment workflow unchanged
-
 **Dependencies:**
 - `better-sqlite3` required by @nuxt/content (native compilation)
 - `pnpm.onlyBuiltDependencies: ["better-sqlite3"]` in package.json
@@ -278,11 +141,6 @@ TypeScript configuration:
 - Must use `--host 127.0.0.1` flag for correct binding
 - Default port: 3000
 - DevTools available at Shift + Option + D
-
-**Static Assets:**
-- Root `public/` directory shared between Hugo and Nuxt
-- Existing favicons preserved from Hugo
-- Template's hero images added in `public/hero/`
 
 ## Coding Conventions
 
@@ -307,10 +165,9 @@ const { data: posts } = await useAsyncData(
 )
 ```
 
-## Deployment (Future)
+## Deployment
 
-Not yet configured. When ready:
+- GitHub Actions workflow: `.github/workflows/deploy.yaml`
 - Static generation: `pnpm generate`
 - Output directory: `.output/public/`
-- Deploy to GitHub Pages or other static hosting
-- Will eventually replace Hugo deployment
+- Deployed to GitHub Pages on push to `main` branch
