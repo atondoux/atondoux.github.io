@@ -11,6 +11,15 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n'
   ],
 
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        // This option ensures internal links and route resolution consistently use NO trailing slashes
+        trailingSlash: 'remove'
+      }
+    }
+  },
+
   devtools: {
     enabled: true
   },
