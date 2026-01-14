@@ -21,10 +21,6 @@ export default defineNuxtConfig({
     }
   },
 
-  devtools: {
-    enabled: true
-  },
-
   css: ['~/assets/css/main.css'],
 
   compatibilityDate: '2024-11-01',
@@ -57,20 +53,6 @@ export default defineNuxtConfig({
     }
   },
 
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  },
-
-  runtimeConfig: {
-    public: {
-      siteUrl: 'https://aurelientondoux.com'
-    }
-  },
 
   icon: {
     provider: 'server',
@@ -90,6 +72,19 @@ export default defineNuxtConfig({
         'lucide:package',
         'lucide:user-round'
       ],
+    }
+  },
+
+  devtools: {
+    enabled: true
+  },
+
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
     }
   }
 })
