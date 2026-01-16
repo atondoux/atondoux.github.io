@@ -4,6 +4,7 @@
 .data/
 dist
 dist/
+/.output.txt
 
 # Dependencies
 node_modules/
