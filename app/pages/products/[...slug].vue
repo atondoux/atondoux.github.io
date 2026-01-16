@@ -4,11 +4,9 @@ const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
 // Extract slug from route params (e.g., ['ortho-assistant'] -> 'ortho-assistant')
-// Filter out empty strings that may appear due to trailing slashes
-const slugParts = Array.isArray(route.params.slug)
-  ? route.params.slug.filter(Boolean)
-  : [route.params.slug]
-const slug = slugParts[slugParts.length - 1]
+const slug = Array.isArray(route.params.slug)
+  ? route.params.slug[route.params.slug.length - 1]
+  : route.params.slug
 
 const { data: page } = await useAsyncData(`${route.path}-${locale.value}`, () =>
   queryCollection(`products_${locale.value}`).where('slug', '=', slug).first()
