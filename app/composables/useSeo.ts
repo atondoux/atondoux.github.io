@@ -1,3 +1,8 @@
+export function normalizePathForCanonical(path: string): string {
+  if (path === '/') return '/'
+  return path.replace(/\/$/, '')
+}
+
 export function usePageSeo(options: {
   title: string
   description: string
@@ -9,7 +14,8 @@ export function usePageSeo(options: {
   const siteConfig = useSiteConfig()
 
   const siteUrl = siteConfig.url
-  const canonicalUrl = `${siteUrl}${route.path}`
+  const normalizedPath = normalizePathForCanonical(route.path)
+  const canonicalUrl = `${siteUrl}${normalizedPath}`
 
   const ogLocale = locale.value === 'fr' ? 'fr_FR' : 'en_US'
   const ogLocaleAlternate = locale.value === 'fr' ? 'en_US' : 'fr_FR'

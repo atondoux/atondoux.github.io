@@ -59,20 +59,24 @@ export default defineNuxtConfig({
         '/'
       ],
       crawlLinks: true
-    },
-    hooks: {
-      // Problem:
-      // When deploying a Nuxt static site to GitHub Pages:
-      // - Visiting /docs/page works fine initially
-      // - But refreshing the page or directly visiting /docs/page/ returns a 404 error
-      // - This happens because Nuxt generates /docs/page.html but GitHub Pages expects /docs/page/index.html
-      //
-      // Solution:
-      // - Automatically create duplicate HTML files during the build process.
-      // - For every /path/index.html, create a /path.html file, ensuring URLs work with or without trailing slashes
-      //
-      // See: https://github.com/mitre/nuxt-github-pages
-      async compiled(nitro) {
+    }
+  },
+
+  hooks: {
+    'nitro:init'(nitro) {
+      nitro.hooks.hook('prerender:done', async () => {
+        // Problem:
+        // When deploying a Nuxt static site to GitHub Pages:
+        // - Visiting /docs/page works fine initially
+        // - But refreshing the page or directly visiting /docs/page/ returns a 404 error
+        // - This happens because Nuxt generates /path/index.html but GitHub Pages can also expect /path.html
+        //   ensuring URLs work with or without trailing slashes
+        //
+        // Solution:
+        // - Automatically create duplicate HTML files during the build process.
+        // - For every /path/index.html, create a /path.html file.
+        //
+        // See: https://github.com/mitre/nuxt-github-pages
         const fs = await import('fs/promises')
         const path = await import('path')
 
@@ -121,7 +125,7 @@ export default defineNuxtConfig({
           console.error('❌ Error during static file duplication:', error)
           throw error
         }
-      }
+      })
     }
   },
 
