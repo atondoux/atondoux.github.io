@@ -4,7 +4,7 @@
     "projects": "Projets",
     "products": "Produits",
     "services": "Services",
-    "about": "À propos"
+    "about": "A propos"
   },
   "footer": {
     "credits": "© {year} Aurélien Tondoux • Propulsé par Nuxt"

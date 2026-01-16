@@ -1,4 +1,4 @@
-name: Deploy Nuxt to GitHub Pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
   # Builds on all branches, but only deploys from main
@@ -29,13 +29,10 @@ jobs:
           node-version: "20"
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile
-      - run: pnpm test
-      - run: pnpm build --preset github_pages
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./.output/public
-  # Deployment job
+      - run: pnpm exec playwright install --with-deps
+      - run: pnpm test:unit
+      - run: pnpm test:e2e
+
   deploy:
     # Only deploy from main branch to respect environment protection rules
     if: github.ref == 'refs/heads/main'
@@ -43,9 +40,20 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build --preset github_pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./.output/public
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -42,6 +42,24 @@ pnpm lint           # Run ESLint
 pnpm lint:fix       # Auto-fix linting issues
 ```
 
+**Testing:**
+```bash
+pnpm test:unit               # Run unit tests (Vitest)
+pnpm test:e2e                # Run E2E tests (Playwright)
+pnpm test:e2e:ui             # Run E2E tests in UI mode (interactive)
+pnpm test:all                # Run both unit and E2E tests
+pnpm test:e2e:install        # Install Playwright browsers (one-time setup)
+```
+
+**First-time E2E setup:**
+```bash
+pnpm test:e2e:install        # Installs Chromium, Firefox, WebKit + system dependencies
+```
+
+**Test organization:**
+- Unit tests: `**/*.test.ts` (run with Vitest via `pnpm test:unit`)
+- E2E tests: `e2e/**/*.spec.ts` (run with Playwright via `pnpm test:e2e`)
+
 ## Architecture
 
 ### Directory Structure
@@ -182,9 +200,10 @@ const { data: posts } = await useAsyncData(
 ## Internationalization (i18n)
 
 The site supports French (default) and English:
-- Locale files in `app/locales/` (fr.json, en.json)
+- Locale files in `i18n/locales/` (fr.json, en.json)
 - Strategy: `prefix_except_default` (French at `/`, English at `/en/`)
 - Use `useI18n()` for translations, `useLocalePath()` for localized routes
+- Navigation labels are translated and accessible via `data-testid` attributes
 
 ## Deployment
 
