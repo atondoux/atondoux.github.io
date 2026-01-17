@@ -197,6 +197,33 @@ const { data: posts } = await useAsyncData(
 )
 ```
 
+## Testing Conventions
+
+- Use behavior-oriented test names that describe user scenarios
+- Test behavior, not implementation details
+- Follow the pattern: `"should [expected behavior] when [condition]"`
+- Match E2E test style for consistency across unit and integration tests
+- Test complete user scenarios, not fragmented behaviors
+- Verify both UI state and resulting actions in the same test
+- Avoid splitting related assertions into separate tests
+- Use `data-testid` attributes for stable element selection
+
+**Example pattern:**
+```typescript
+it('should switch from English to French when locale is en', async () => {
+  mockLocale.value = 'en'
+  const wrapper = factory()
+  const button = wrapper.find('[data-testid="language-switcher"]')
+
+  // Verify UI state (what user sees)
+  expect(button.attributes('aria-label')).toBe('Switch to Français')
+
+  // Verify action (what happens on interaction)
+  await button.trigger('click')
+  expect(mockSetLocale).toHaveBeenCalledWith('fr')
+})
+```
+
 ## Internationalization (i18n)
 
 The site supports French (default) and English:

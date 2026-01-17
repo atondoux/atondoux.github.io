@@ -51,6 +51,7 @@ const startViewTransition = (event: MouseEvent) => {
 <template>
   <ClientOnly>
     <UButton
+      data-testid="language-switcher"
       :aria-label="`Switch to ${nextLocale?.name}`"
       icon="i-lucide-languages"
       color="neutral"
