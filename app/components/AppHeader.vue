@@ -13,7 +13,8 @@ const displayLinks = computed(() => {
   return props.links.map(link => ({
     ...link,
     label: isMobile.value ? undefined : link.label,
-    icon: isMobile.value ? link.icon : undefined
+    icon: isMobile.value ? link.icon : undefined,
+    ...(link.testId && { 'data-testid': link.testId })
   }))
 })
 </script>

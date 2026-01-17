@@ -40,6 +40,11 @@ Personal portfolio website showcasing my experience as a software engineer. You 
 4. **Open your browser:**
    - Visit [`http://127.0.0.1:3000`](http://127.0.0.1:3000)
 
+5. **(Optional) Set up E2E testing:**
+   ```bash
+   pnpm test:e2e:install
+   ```
+
 ## 🔧 Development Commands
 
 ```bash
@@ -61,6 +66,42 @@ pnpm typecheck
 # Lint code
 pnpm lint
 ```
+
+## 🧪 Testing
+
+### Unit Tests
+
+```bash
+# Run unit tests (Vitest)
+pnpm test:unit
+```
+
+### E2E Tests
+
+The project uses [Playwright](https://playwright.dev/) for end-to-end testing.
+
+**First-time setup:**
+```bash
+# Install Playwright browsers (Chromium, Firefox, WebKit)
+pnpm test:e2e:install
+```
+
+**Running E2E tests:**
+```bash
+# Run E2E tests (headless)
+pnpm test:e2e
+
+# Run E2E tests in UI mode (interactive)
+pnpm test:e2e:ui
+```
+
+**Running all tests:**
+```bash
+# Run both unit and E2E tests
+pnpm test:all
+```
+
+**Note:** You only need to run `pnpm test:e2e:install` once, or after updating Playwright. The browsers (~150MB) are cached locally.
 
 ## 🚀 Deployment
 

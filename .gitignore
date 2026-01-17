@@ -6,6 +6,11 @@ dist
 dist/
 /.output.txt
 
+# Playwright
+/test-results/
+/playwright-report/data/
+/playwright-report/
+
 # Dependencies
 node_modules/
 
