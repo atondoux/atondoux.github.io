@@ -32,7 +32,7 @@ const displayLinks = computed(() => {
     >
       <template #list-trailing>
         <LanguageSwitcher />
-        <ColorModeButton />
+        <ThemeSwitcher />
       </template>
     </UNavigationMenu>
   </div>
