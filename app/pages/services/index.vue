@@ -62,10 +62,14 @@ usePageSeo({
         container: '!pt-0'
       }"
     >
-      <UPricingPlans
-        :plans="services"
-        orientation="horizontal"
-      />
+      <UPricingPlans orientation="horizontal">
+        <UPricingPlan
+          v-for="(service, index) in services"
+          :key="index"
+          v-bind="service"
+          :data-testid="`service-${index}`"
+        />
+      </UPricingPlans>
     </UPageSection>
   </UPage>
 </template>
