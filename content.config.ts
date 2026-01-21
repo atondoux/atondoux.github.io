@@ -117,7 +117,8 @@ const baseCollections = {
     source: [
       { include: 'projects.yml' },
       { include: 'products.yml' },
-      { include: 'services.yml' }
+      { include: 'services.yml' },
+      { include: 'testimonials.yml' }
     ],
     schema: z.object({
       path: z.string(),
