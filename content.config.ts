@@ -112,6 +112,22 @@ const baseCollections = {
       order: z.number()
     })
   },
+  testimonials: {
+    type: 'data' as const,
+    source: 'testimonials/*.yml',
+    schema: z.object({
+      quote: z.string().nonempty(),
+      author: z.object({
+        name: z.string().nonempty(),
+        description: z.string().optional(),
+        avatar: z.object({
+          src: z.string().editor({ input: 'media' }),
+          alt: z.string()
+        }).optional()
+      }),
+      order: z.number()
+    })
+  },
   pages: {
     type: 'page' as const,
     source: [

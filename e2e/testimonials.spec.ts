@@ -12,5 +12,20 @@ test.describe('Testimonials Page', () => {
     await testimonialsLink.click();
 
     await expect(page.getByRole('heading', { name: 'Témoignages.' })).toBeVisible();
+
+    // Testimonial 1 - Marie Dupont
+    const testimonial0 = page.getByTestId('testimonial-0');
+    await expect(testimonial0).toBeVisible();
+    await expect(testimonial0.getByText('Marie Dupont')).toBeVisible();
+
+    // Testimonial 2 - Jean Martin
+    const testimonial1 = page.getByTestId('testimonial-1');
+    await expect(testimonial1).toBeVisible();
+    await expect(testimonial1.getByText('Jean Martin')).toBeVisible();
+
+    // Testimonial 3 - Sophie Bernard
+    const testimonial2 = page.getByTestId('testimonial-2');
+    await expect(testimonial2).toBeVisible();
+    await expect(testimonial2.getByText('Sophie Bernard')).toBeVisible();
   });
 });
