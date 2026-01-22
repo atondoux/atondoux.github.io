@@ -4,7 +4,11 @@
     "projects": "Projects",
     "products": "Products",
     "services": "Services",
+    "testimonials": "Testimonials",
     "about": "About"
+  },
+  "testimonials": {
+    "title": "Testimonials."
   },
   "footer": {
     "credits": "© {year} Aurelien Tondoux • Built with Nuxt"

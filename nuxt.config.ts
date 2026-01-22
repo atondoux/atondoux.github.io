@@ -46,6 +46,7 @@ export default defineNuxtConfig({
         // Navigation icons
         'lucide:house',
         'lucide:hand-coins',
+        'lucide:message-square-quote',
         'lucide:folder-kanban',
         'lucide:package',
         'lucide:user-round'
