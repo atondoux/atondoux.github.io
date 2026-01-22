@@ -25,6 +25,11 @@ export function useNavLinks() {
     icon: 'i-lucide-package',
     testId: 'nav-products'
   }, {
+    label: t('nav.testimonials'),
+    to: localePath('/testimonials'),
+    icon: 'i-lucide-message-circle',
+    testId: 'nav-testimonials'
+  }, {
     label: t('nav.about'),
     to: localePath('/about'),
     icon: 'i-lucide-user-round',

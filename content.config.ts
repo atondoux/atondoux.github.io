@@ -117,7 +117,8 @@ const baseCollections = {
     source: [
       { include: 'projects.yml' },
       { include: 'products.yml' },
-      { include: 'services.yml' }
+      { include: 'services.yml' },
+      { include: 'testimonials.yml' }
     ],
     schema: z.object({
       path: z.string(),
@@ -151,7 +152,7 @@ const collections: Record<string, any> = {}
 for (const locale of LOCALES) {
   for (const [name, config] of Object.entries(baseCollections)) {
     const localeSource = Array.isArray(config.source)
-      ? config.source.map(s => {
+      ? config.source.map((s) => {
           const sourceStr = typeof s === 'string' ? s : s.include
           // Extract directory from pattern (e.g., 'projects.yml' -> 'projects', 'blog/*.md' -> 'blog')
           const pathMatch = sourceStr.match(/^([^/*]+)/)
