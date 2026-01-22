@@ -48,7 +48,8 @@ export default defineNuxtConfig({
         'lucide:hand-coins',
         'lucide:folder-kanban',
         'lucide:package',
-        'lucide:user-round'
+        'lucide:user-round',
+        'lucide:message-square-quote'
       ],
     }
   },
