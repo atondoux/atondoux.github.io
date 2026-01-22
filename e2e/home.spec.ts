@@ -55,6 +55,9 @@ test.describe('Home Page', () => {
     await expect(page.getByTestId('nav-services')).toBeVisible();
     await expect(page.getByTestId('nav-services')).toBeEnabled();
 
+    await expect(page.getByTestId('nav-testimonials')).toBeVisible();
+    await expect(page.getByTestId('nav-testimonials')).toBeEnabled();
+
     await expect(page.getByTestId('nav-projects')).toBeVisible();
     await expect(page.getByTestId('nav-projects')).toBeEnabled();
 
