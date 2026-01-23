@@ -6,6 +6,10 @@ links:
     to: "https://calendly.com/atondoux/30min/"
     target: "_blank"
     color: "neutral"
+  - label: "My Malt profile"
+    to: "https://www.malt.com/profile/aurelientondoux"
+    target: "_blank"
+    color: "primary"
 seo:
   title: "Services - Aurélien Tondoux"
   description: "Tech Lead, Full-Stack Development, and Software Craftsmanship consulting services."

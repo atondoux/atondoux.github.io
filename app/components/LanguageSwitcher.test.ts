@@ -29,7 +29,7 @@ const UButton = defineComponent({
     return () => h('button', {
       ...attrs,
       'aria-label': props.ariaLabel,
-      onClick: (e: MouseEvent) => emit('click', e)
+      'onClick': (e: MouseEvent) => emit('click', e)
     })
   }
 })
@@ -79,5 +79,4 @@ describe('LanguageSwitcher', () => {
     await button.trigger('click')
     expect(mockSetLocale).toHaveBeenCalledWith('en')
   })
-
 })

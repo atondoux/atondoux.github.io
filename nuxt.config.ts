@@ -11,9 +11,11 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n'
   ],
 
-  css: ['~/assets/css/main.css'],
+  devtools: {
+    enabled: true
+  },
 
-  compatibilityDate: '2024-11-01',
+  css: ['~/assets/css/main.css'],
 
   site: {
     url: 'https://aurelientondoux.com',
@@ -22,36 +24,7 @@ export default defineNuxtConfig({
     defaultLocale: 'fr'
   },
 
-  i18n: {
-    defaultLocale: 'fr',
-    strategy: 'prefix_except_default',
-    locales: [
-      { code: 'fr', language: 'fr-FR', name: 'Français', files: ['fr.json'] },
-      { code: 'en', language: 'en-US', name: 'English', files: ['en.json'] }
-    ],
-    langDir: 'locales',
-  },
-
-  icon: {
-    provider: 'server',
-    clientBundle: {
-      scan: true,
-      icons: [
-        // Dynamically rendered icons
-        'lucide:sun',
-        'lucide:moon',
-        'lucide:arrow-left',
-        'lucide:arrow-right',
-        'lucide:hash',
-        // Navigation icons
-        'lucide:house',
-        'lucide:hand-coins',
-        'lucide:folder-kanban',
-        'lucide:package',
-        'lucide:user-round'
-      ],
-    }
-  },
+  compatibilityDate: '2024-11-01',
 
   nitro: {
     prerender: {
@@ -129,16 +102,43 @@ export default defineNuxtConfig({
     }
   },
 
-  devtools: {
-    enabled: true
-  },
-
   eslint: {
     config: {
       stylistic: {
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+
+  i18n: {
+    defaultLocale: 'fr',
+    strategy: 'prefix_except_default',
+    locales: [
+      { code: 'fr', language: 'fr-FR', name: 'Français', files: ['fr.json'] },
+      { code: 'en', language: 'en-US', name: 'English', files: ['en.json'] }
+    ],
+    langDir: 'locales'
+  },
+
+  icon: {
+    provider: 'server',
+    clientBundle: {
+      scan: true,
+      icons: [
+        // Dynamically rendered icons
+        'lucide:sun',
+        'lucide:moon',
+        'lucide:arrow-left',
+        'lucide:arrow-right',
+        'lucide:hash',
+        // Navigation icons
+        'lucide:house',
+        'lucide:hand-coins',
+        'lucide:folder-kanban',
+        'lucide:package',
+        'lucide:user-round'
+      ]
     }
   }
 })

@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test'
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -19,7 +19,7 @@ export default defineConfig({
   reporter: 'html',
   /* Expect timeout for assertions */
   expect: {
-    timeout: 30 * 1000,
+    timeout: 30 * 1000
   },
   /* Shared settings for all the projects below. See https://playwright.dev/docs/test-use-options. */
   use: {
@@ -34,23 +34,23 @@ export default defineConfig({
     navigationTimeout: process.env.CI ? 30 * 1000 : 15 * 1000,
 
     /* Action timeout for interactions (click, fill, etc.) */
-    actionTimeout: 10 * 1000,
+    actionTimeout: 10 * 1000
   },
 
   /* Configure projects for major browser engines */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'] }
     },
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: { ...devices['Desktop Firefox'] }
     },
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+      use: { ...devices['Desktop Safari'] }
+    }
   ],
 
   /* Run your local dev server before starting the tests */
@@ -59,6 +59,6 @@ export default defineConfig({
     url: 'http://127.0.0.1:3000',
     reuseExistingServer: !process.env.CI,
     /* WebServer startup timeout */
-    timeout: 120 * 1000,
-  },
-});
+    timeout: 120 * 1000
+  }
+})
