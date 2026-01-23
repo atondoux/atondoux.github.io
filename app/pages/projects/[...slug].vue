@@ -109,7 +109,10 @@ usePageSeo({
         unwrap="p"
       />
 
-      <UContentSurround v-if="surround" :surround="surround" />
+      <UContentSurround
+        v-if="surround"
+        :surround="surround"
+      />
     </UPageSection>
   </UPage>
 </template>

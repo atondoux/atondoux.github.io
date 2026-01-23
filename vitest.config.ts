@@ -10,7 +10,7 @@ export default defineConfig({
       '**/node_modules/**',
       '**/dist/**',
       '**/.output/**',
-      '**/e2e/**', // Exclude E2E tests (handled by Playwright)
+      '**/e2e/**' // Exclude E2E tests (handled by Playwright)
     ],
     environment: 'happy-dom',
     globals: true,
@@ -21,8 +21,8 @@ export default defineConfig({
         '**/node_modules/**',
         '**/dist/**',
         '**/*.config.{js,ts}',
-        '**/e2e/**', // Don't track E2E test coverage
-      ],
-    },
-  },
+        '**/e2e/**' // Don't track E2E test coverage
+      ]
+    }
+  }
 })

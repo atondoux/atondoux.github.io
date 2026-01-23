@@ -5,6 +5,10 @@ links:
     to: "https://calendly.com/atondoux/30min/"
     target: "_blank"
     color: "neutral"
+  - label: "Mon profil Malt"
+    to: "https://www.malt.fr/profile/aurelientondoux"
+    target: "_blank"
+    color: "primary"
 
 seo:
   title: "A propos - Aurélien Tondoux"

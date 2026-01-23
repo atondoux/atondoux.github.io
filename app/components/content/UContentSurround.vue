@@ -7,7 +7,10 @@ const appConfig = useAppConfig()
 </script>
 
 <template>
-  <div v-if="surround" class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
+  <div
+    v-if="surround"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8"
+  >
     <!-- Previous Link -->
     <ULink
       v-if="surround[0]"
@@ -24,7 +27,10 @@ const appConfig = useAppConfig()
         {{ surround[0].title }}
       </p>
     </ULink>
-    <span v-else class="hidden lg:block">&nbsp;</span>
+    <span
+      v-else
+      class="hidden lg:block"
+    >&nbsp;</span>
 
     <!-- Next Link -->
     <ULink
@@ -44,6 +50,9 @@ const appConfig = useAppConfig()
         {{ surround[1].title }}
       </p>
     </ULink>
-    <span v-else class="hidden lg:block">&nbsp;</span>
+    <span
+      v-else
+      class="hidden lg:block"
+    >&nbsp;</span>
   </div>
 </template>

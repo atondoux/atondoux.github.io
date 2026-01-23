@@ -23,8 +23,8 @@ const UButton = defineComponent({
     return () => h('button', {
       ...attrs,
       'aria-label': props.ariaLabel,
-      icon: props.icon,
-      onClick: (e: MouseEvent) => emit('click', e)
+      'icon': props.icon,
+      'onClick': (e: MouseEvent) => emit('click', e)
     })
   }
 })
