@@ -1,4 +1,8 @@
 import { defineConfig, devices } from '@playwright/test'
+import dotenv from 'dotenv'
+
+// Load test environment variables
+dotenv.config({ path: '.env.test' })
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -59,6 +63,11 @@ export default defineConfig({
     url: 'http://127.0.0.1:3000',
     reuseExistingServer: !process.env.CI,
     /* WebServer startup timeout */
-    timeout: 120 * 1000
+    timeout: 120 * 1000,
+    /* Pass test environment variables to dev server */
+    env: {
+      NUXT_PUBLIC_SITE_URL: process.env.NUXT_PUBLIC_SITE_URL || '',
+      NUXT_PUBLIC_GTAG_ID: process.env.NUXT_PUBLIC_GTAG_ID || ''
+    }
   }
 })

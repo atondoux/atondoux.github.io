@@ -8,17 +8,22 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    'nuxt-gtag'
   ],
 
   devtools: {
     enabled: true
   },
 
+  gtag: {
+    id: process.env.NUXT_PUBLIC_GTAG_ID
+  },
+
   css: ['~/assets/css/main.css'],
 
   site: {
-    url: 'https://aurelientondoux.com',
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://aurelientondoux.com',
     name: 'Aurélien Tondoux',
     description: 'Ingénieur logiciel senior freelance avec plus de 15 ans d\'expérience',
     defaultLocale: 'fr'
