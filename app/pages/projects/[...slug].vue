@@ -109,7 +109,7 @@ usePageSeo({
         unwrap="p"
       />
 
-      <UContentSurround
+      <ContentNavigation
         v-if="surround"
         :surround="surround"
       />

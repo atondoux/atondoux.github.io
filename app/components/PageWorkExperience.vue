@@ -54,7 +54,3 @@ defineProps<{
     </template>
   </UPageSection>
 </template>
-
-<style scoped>
-
-</style>
