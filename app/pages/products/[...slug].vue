@@ -116,7 +116,7 @@ usePageSeo({
         class="pt-8"
       />
 
-      <UContentSurround
+      <ContentNavigation
         v-if="surround"
         :surround="surround"
       />
