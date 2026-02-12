@@ -32,7 +32,7 @@ content: |
   | 🛠 **Frameworks**                           | Spring Boot, Quarkus, JHipster, Vue.js, Nuxt                                                          |
   | ☁️ **Cloud & DevOps**                       | SaaS, Microservices, Docker, OpenShift                                                                |
   | 🏗 **Build**                                | Gitlab CI/CD, Jenkins, Maven, Gradle                                                                  |
-  | 🧪 **Testing**                              | JUnit, AssertJ, Mockito, Kotest, Jest, Cypress, Gatling                                               |
+  | 🧪 **Testing**                              | JUnit, AssertJ, Mockito, Kotest, Jest, Vitest, Playwright, Gatling                                    |
   | 🏫 **Learning & Training**                  | Agentic Coding, Hexagonal Architecture, Domain Driven Design                                          |
   | 🗣 **Languages**                            | French (native), English (fluent)                                                                     |
 
