@@ -8,15 +8,25 @@ Personal portfolio website built with Nuxt 4 and Nuxt UI, deployed to GitHub Pag
 
 **Tech Stack:**
 - Nuxt v4.2.2
-- @nuxt/ui v4.2.1 (component library)
-- @nuxt/content v3.8.2 (markdown-based content)
+- @nuxt/ui v4.2.1 (component library, includes @nuxt/icon automatically)
+- @nuxt/content v3.8.2 (YAML/markdown content)
 - @nuxt/image v2.0.0 (image optimization)
+- @nuxt/icon v2.2.0 (icon system)
+- @iconify-json/lucide v1.2.75 (Lucide icon set)
+- @iconify-json/simple-icons v1.2.60 (Simple Icons set)
 - @vueuse/nuxt v14.1.0 (Vue utilities)
 - @nuxtjs/i18n v10.2.1 (internationalization)
 - motion-v v1.7.3 (animations)
+- nuxt-gtag v4.1.0 (Google Analytics 4)
+- nuxt-site-config v3.2.17 (site metadata)
 - TypeScript strict mode
 - ESLint configuration
 - pnpm package manager
+
+**Test tooling:**
+- @nuxt/test-utils v3.23.0 (Nuxt testing utilities)
+- @playwright/test v1.57.0 (E2E testing)
+- happy-dom v20.3.1 (DOM environment for unit tests)
 
 ## Development Commands
 
@@ -69,11 +79,16 @@ pnpm test:e2e:install        # Installs Chromium, Firefox, WebKit + system depen
 ├── app/                     # Nuxt application directory
 │   ├── pages/              # File-based routing
 │   ├── layouts/            # Layout templates
-│   └── components/         # Auto-imported Vue components
-├── content/                 # Markdown content (Nuxt Content)
-│   ├── blog/               # Blog posts
-│   ├── projects/           # Project showcases
-│   └── ...                 # Other content collections
+│   ├── components/         # Auto-imported Vue components
+│   ├── composables/        # Vue composables
+│   ├── types/              # TypeScript type definitions
+│   └── utils/              # Utility functions
+├── content/                 # YAML content (Nuxt Content)
+│   ├── fr/                 # French content (default locale)
+│   └── en/                 # English content
+├── e2e/                     # Playwright E2E tests
+├── i18n/
+│   └── locales/            # fr.json, en.json translation files
 ├── public/                  # Static assets
 │   ├── hero/               # Hero images
 │   ├── robots.txt          # Search engine directives
@@ -92,19 +107,21 @@ pnpm test:e2e:install        # Installs Chromium, Firefox, WebKit + system depen
 - `@nuxt/eslint` - ESLint integration
 - `@nuxt/image` - Image optimization
 - `@nuxt/ui` - Pre-built UI components (includes @nuxt/icon automatically)
-- `@nuxt/content` - Markdown-based CMS
+- `@nuxt/content` - YAML/markdown CMS with locale-specific collections
 - `@vueuse/nuxt` - Vue composition utilities
 - `@nuxtjs/i18n` - Internationalization (fr/en)
 - `nuxt-og-image` - Open Graph image generation
 - `motion-v/nuxt` - Animation library
+- `nuxt-gtag` - Google Analytics 4 integration
+- `nuxt-site-config` - Site metadata (URL, name, description)
 
 ### Content Management
 
-Content uses Nuxt Content v3 with markdown files:
-- Files in `content/` directory
-- YAML frontmatter for metadata
-- Auto-imported content components
-- Type-safe content queries
+Content uses Nuxt Content v3 with YAML files organized by locale:
+- Files in `content/fr/` (default) and `content/en/`
+- Collections: `index`, `projects`, `products`, `services`, `pages`, `about`
+- Each collection is generated per locale: `<name>_fr`, `<name>_en` (e.g. `projects_fr`, `about_en`)
+- Type-safe content queries using locale-specific collection names
 
 ### Component System
 
@@ -122,10 +139,25 @@ Content uses Nuxt Content v3 with markdown files:
 
 Key settings:
 ```typescript
-modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui', '@nuxt/content', '@vueuse/nuxt', 'nuxt-og-image', 'motion-v/nuxt', '@nuxtjs/i18n']
+modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui', '@nuxt/content', '@vueuse/nuxt', 'nuxt-og-image', 'motion-v/nuxt', '@nuxtjs/i18n', 'nuxt-gtag']
 devtools: { enabled: true }
 css: ['~/assets/css/main.css']
 compatibilityDate: '2024-11-01'
+
+// Site metadata (used by nuxt-og-image and nuxt-site-config)
+site: {
+  url: process.env.NUXT_PUBLIC_SITE_URL || 'https://aurelientondoux.com',
+  name: 'Aurélien Tondoux',
+  defaultLocale: 'fr'
+}
+
+// Google Analytics 4 (ID from NUXT_PUBLIC_GTAG_ID env var)
+gtag: {
+  id: process.env.NUXT_PUBLIC_GTAG_ID
+}
+
+// GitHub Pages: duplicates /path/index.html → /path.html for trailing slash routing
+hooks: { 'nitro:init': ... } // runs post-prerender via nitro hook
 
 // Icon bundling for static deployment (GitHub Pages)
 icon: {
@@ -141,9 +173,10 @@ icon: {
 
 ### content.config.ts
 
-Nuxt Content schema configuration:
-- Defines content collection types
-- Zod schema validation
+Nuxt Content schema configuration with locale-specific collections:
+- Base collections: `index`, `projects`, `products`, `services`, `pages`, `about`
+- All collections generated programmatically per locale: `<name>_fr`, `<name>_en`
+- Reusable Zod schema builders: `createBaseSchema()`, `createButtonSchema()`, `createImageSchema()`
 - Type-safe content queries
 
 ### tsconfig.json
@@ -158,6 +191,7 @@ TypeScript configuration:
 **Dependencies:**
 - `better-sqlite3` required by @nuxt/content (native compilation)
 - `pnpm.onlyBuiltDependencies: ["better-sqlite3"]` in package.json
+- `nuxt-site-config` required by `nuxt-og-image` for site metadata resolution
 - oxc bindings manually installed for Apple Silicon compatibility:
   - `@oxc-parser/binding-darwin-arm64`
   - `@oxc-transform/binding-darwin-arm64`
@@ -190,15 +224,26 @@ TypeScript configuration:
 
 **Content queries:**
 ```typescript
-// Query content from collection
-const { data: posts } = await useAsyncData(
-  'blog-posts',
-  () => queryCollection('blog').all()
+// Query content from locale-specific collection
+const { data: projects } = await useAsyncData(
+  'projects',
+  () => queryCollection('projects_fr').all()
 )
 ```
 
 ## Testing Conventions
 
+**Test infrastructure:**
+- Unit tests: Vitest + `@vue/test-utils` + `happy-dom` DOM environment
+- E2E tests: Playwright (Chromium, Firefox, WebKit)
+- `@nuxt/test-utils` for Nuxt-specific test helpers
+- Playwright reads `.env.test` for environment variables (e.g. `NUXT_PUBLIC_GTAG_ID`)
+
+**Current test files:**
+- Unit: `app/composables/useSocialLinks.test.ts`, `app/composables/useSeo.test.ts`, `app/components/ThemeSwitcher.test.ts`, `app/components/LanguageSwitcher.test.ts`
+- E2E: `e2e/home.spec.ts`, `e2e/about.spec.ts`, `e2e/analytics.spec.ts`, `e2e/products.spec.ts`, `e2e/projects.spec.ts`, `e2e/services.spec.ts`
+
+**Conventions:**
 - Use behavior-oriented test names that describe user scenarios
 - Test behavior, not implementation details
 - Follow the pattern: `"should [expected behavior] when [condition]"`
