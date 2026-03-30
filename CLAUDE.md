@@ -1,66 +1,59 @@
-# Project Instructions
+# CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Tech Stack
+## Project Overview
 
-Nuxt 4 + Nuxt UI 4 + Tailwind CSS 4 + @nuxt/content 3 (YAML collections) + @nuxtjs/i18n 10.
-Static site (SSG) deployed to GitHub Pages via GitHub Actions.
+Personal portfolio site for Aurélien Tondoux (aurelientondoux.com), built with **Nuxt 4**, **@nuxt/ui**, **@nuxt/content**, and **Tailwind CSS v4**. Deployed as a static site to **GitHub Pages** via GitHub Actions.
 
-## Build & Run
+## Commands
 
-- Dev: `pnpm dev`
-- Build: `pnpm build --preset github_pages`
-- Lint: `pnpm lint` / `pnpm lint:fix`
-- Type check: `pnpm typecheck`
+```bash
+pnpm dev --host 127.0.0.1    # Dev server at http://127.0.0.1:3000
+pnpm build                    # Production build
+pnpm build --preset github_pages  # Build for GitHub Pages
+pnpm generate                 # Static site generation
+pnpm preview                  # Preview built site
 
-## Testing
+pnpm test:unit                # Vitest unit tests
+pnpm test:e2e                 # Playwright E2E tests (headless)
+pnpm test:e2e:ui              # Playwright interactive mode
+pnpm test:e2e:install         # First-time browser install (~150MB)
+pnpm test:all                 # Unit + E2E
 
-- Unit: `pnpm test:unit` (Vitest + happy-dom)
-- E2E: `pnpm test:e2e` (Playwright)
-- All: `pnpm test:all`
-- E2E tests verify user-facing behavior, not implementation details
-
-## Content Architecture
-
-Content is YAML (not Markdown) with Zod-validated collections defined in `content.config.ts`.
-Two locales: `fr` (default), `en`. Collections are generated per locale (e.g., `projects_fr`, `projects_en`).
-
-### Adding content
-
-- New project: create `content/{fr,en}/projects/XX_slug.yml` matching the projects schema
-- New service: create `content/{fr,en}/services/XX_name.yml` matching the services schema
-- New product: create `content/{fr,en}/products/XX_slug.yml` matching the products schema
-- UI strings: edit `i18n/locales/{fr,en}.json`
-
-### Content query pattern (used in every page)
-
-```ts
-const { locale } = useI18n()
-const { data } = await useAsyncData(`key-${locale.value}`, () =>
-  queryCollection(`collection_${locale.value}`).first()
-)
+pnpm lint                     # ESLint
+pnpm lint:fix                 # ESLint with auto-fix
+pnpm typecheck                # Vue TSC type checking
 ```
 
-## Project Structure
+## Architecture
 
-- `app/` — Vue components, pages, composables, layouts, types, utils
-- `content/{fr,en}/` — YAML content files per locale
-- `content.config.ts` — Zod schemas for content collections
-- `app/app.config.ts` — theme colors, profile picture, availability flag
-- `e2e/` — Playwright E2E test specs
-- `.github/workflows/deploy.yaml` — CI: unit tests + E2E tests + deploy
+### Content System (non-obvious)
 
-## Conventions
+Content is **YAML-based** (not Markdown), managed by `@nuxt/content` with Zod schemas in `content.config.ts`.
 
-- Every page must call `usePageSeo()` for SEO metadata
-- Vue components use `<script setup lang="ts">` with typed `defineProps<{}>()`
-- Navigation defined in `app/composables/useNavLinks.ts`
-- Social links are locale-aware in `app/composables/useSocialLinks.ts`
-- GitHub Pages compatibility: Nitro hook in `nuxt.config.ts` duplicates index.html files
+Collections are generated **per locale** using a `${name}_${locale}` naming convention. The base collections (index, projects, products, services, pages, about) are iterated over `['fr', 'en']` to produce `projects_fr`, `projects_en`, etc. Pages must query the correct locale-suffixed collection.
 
-## i18n
+Content files live in `/content/{locale}/` — e.g., `/content/fr/projects/malt.yml` and `/content/en/projects/malt.yml`.
 
-- Strategy: `prefix_except_default` — French at `/`, English at `/en/`
-- Always use `useLocalePath()` for internal links
-- Always use `useI18n().t()` for UI strings
+### i18n
+
+- Strategy: `prefix_except_default` — French (default) has no URL prefix, English uses `/en/`
+- UI strings: `i18n/locales/{fr,en}.json`
+- Content: separate YAML files per locale in `/content/{fr,en}/`
+- Social links in `useSocialLinks()` are locale-aware (LinkedIn/Malt URLs differ by locale)
+
+### GitHub Pages Trailing Slash Hack
+
+`nuxt.config.ts` includes a `nitro:init` hook that duplicates every `/path/index.html` as `/path.html` after prerendering. This ensures URLs work with or without trailing slashes on GitHub Pages. See the hook in `nuxt.config.ts` for details.
+
+### Styling
+
+- Tailwind CSS v4 with `@import` system (not v3 config file)
+- Theme colors configured in `app/app.config.ts` (primary: emerald, neutral: neutral)
+- Custom fonts (Public Sans, Instrument Serif) defined in `app/assets/css/main.css`
+- Dark/light mode via `useColorMode()`
+
+### No State Management
+
+No Pinia or Vuex — this is a statically generated content site. Reactive state uses Vue 3 composables only.
