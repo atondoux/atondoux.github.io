@@ -1,5 +1,5 @@
 title: "About me."
-description: "Learn more about my journey as a Software Engineer, the way I work, and my passion for crafting high quality digital solutions."
+description: "Learn more about my journey as a Senior Software Engineer."
 links:
   - label: "Book an appointment"
     to: "https://calendly.com/atondoux/30min/"
@@ -54,11 +54,11 @@ content: |
 
   ## :robot: My use of AI
 
-  In recent years, AI has taken center stage in the software industry, becoming almost impossible to ignore, and reshaping development practices.<br>
+  Over the past few years, Generative AI has profoundly transformed the software development industry.<br>
   <br>
-  As for me, **AI serves as a powerful assistant**, but only for topics where I am capable of critically evaluating the generated suggestions.<br>
+  **I use AI and agentic development on a daily basis**, and I have built a working environment composed of agents and skills that reflects my approach to software design: a thorough understanding of requirements, code covered by automated tests, and a commitment to quality at every step.<br>
   <br>
-  While this offers a significant productivity boost, I will never compromise on the quality of the solutions I deliver.
+  I remain fully accountable for the code that is delivered: nothing ships without my review and approval.
 
   ## :handshake: Interested? Let's talk!
 
