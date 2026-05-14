@@ -32,9 +32,9 @@ pnpm typecheck                # Vue TSC type checking
 
 Content is **YAML-based** (not Markdown), managed by `@nuxt/content` with Zod schemas in `content.config.ts`.
 
-Collections are generated **per locale** using a `${name}_${locale}` naming convention. The base collections (index, projects, products, services, pages, about) are iterated over `['fr', 'en']` to produce `projects_fr`, `projects_en`, etc. Pages must query the correct locale-suffixed collection.
+Collections are generated **per locale** using a `${name}_${locale}` naming convention. The base collections (index, portfolio, services, pages, about) are iterated over `['fr', 'en']` to produce `portfolio_fr`, `portfolio_en`, etc. Pages must query the correct locale-suffixed collection.
 
-Content files live in `/content/{locale}/` — e.g., `/content/fr/projects/malt.yml` and `/content/en/projects/malt.yml`.
+Content files live in `/content/{locale}/` — e.g., `/content/fr/portfolio/malt.yml` and `/content/en/portfolio/malt.yml`.
 
 ### i18n
 

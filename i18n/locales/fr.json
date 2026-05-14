@@ -1,8 +1,7 @@
 {
   "nav": {
     "home": "Accueil",
-    "projects": "Projets",
-    "products": "Produits",
+    "portfolio": "Portfolio",
     "services": "Services",
     "about": "A propos"
   },
@@ -13,12 +12,6 @@
     "profilePictureAlt": "Ma photo de profil",
     "available": "Disponible pour de nouveaux projets",
     "notAvailable": "Pas disponible pour le moment",
-    "viewProject": "Voir le projet",
-    "viewProduct": "Voir le produit"
-  },
-  "projects": {
-    "myRole": "Mon rôle",
-    "myActions": "Mes actions",
-    "links": "Liens"
+    "viewProject": "Voir le projet"
   }
 }

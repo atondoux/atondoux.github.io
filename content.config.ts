@@ -47,9 +47,9 @@ const baseCollections = {
       })
     })
   },
-  projects: {
+  portfolio: {
     type: 'data' as const,
-    source: 'projects/*.yml',
+    source: 'portfolio/*.yml',
     schema: z.object({
       title: z.string().nonempty(),
       description: z.string().nonempty(),
@@ -57,24 +57,6 @@ const baseCollections = {
       image: z.string().nonempty().editor({ input: 'media' }),
       tags: z.array(z.string()),
       slug: z.string(),
-      content: z.string(),
-      seo: z.object({
-        title: z.string().optional(),
-        description: z.string().optional()
-      }).optional()
-    })
-  },
-  products: {
-    type: 'data' as const,
-    source: 'products/*.yml',
-    schema: z.object({
-      title: z.string().nonempty(),
-      description: z.string().nonempty(),
-      date: z.date(),
-      image: z.string().nonempty().editor({ input: 'media' }),
-      tags: z.array(z.string()),
-      slug: z.string(),
-      summary: z.string(),
       content: z.string(),
       seo: z.object({
         title: z.string().optional(),
@@ -115,8 +97,7 @@ const baseCollections = {
   pages: {
     type: 'page' as const,
     source: [
-      { include: 'projects.yml' },
-      { include: 'products.yml' },
+      { include: 'portfolio.yml' },
       { include: 'services.yml' }
     ],
     schema: z.object({
@@ -153,7 +134,7 @@ for (const locale of LOCALES) {
     const localeSource = Array.isArray(config.source)
       ? config.source.map((s) => {
           const sourceStr = typeof s === 'string' ? s : s.include
-          // Extract directory from pattern (e.g., 'projects.yml' -> 'projects', 'blog/*.md' -> 'blog')
+          // Extract directory from pattern (e.g., 'portfolio.yml' -> 'portfolio', 'blog/*.md' -> 'blog')
           const pathMatch = sourceStr.match(/^([^/*]+)/)
           const prefix = pathMatch ? `/${pathMatch[1].replace(/\.(yml|yaml|md)$/, '')}` : '/'
           return {

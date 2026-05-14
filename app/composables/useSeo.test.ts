@@ -23,10 +23,10 @@ describe('normalizePathForCanonical', () => {
   })
 
   it('handles dynamic routes', () => {
-    expect(normalizePathForCanonical('/projects/malt/')).toBe('/projects/malt')
+    expect(normalizePathForCanonical('/portfolio/malt/')).toBe('/portfolio/malt')
   })
 
   it('handles deeply nested paths', () => {
-    expect(normalizePathForCanonical('/en/products/my-product/')).toBe('/en/products/my-product')
+    expect(normalizePathForCanonical('/en/portfolio/spring-boot-online-course/')).toBe('/en/portfolio/spring-boot-online-course')
   })
 })
