@@ -43,10 +43,6 @@ usePageSeo({
           <UButton
             v-for="(link, index) in page.links"
             :key="index"
-            :label="link.label"
-            :to="link.to"
-            :target="link.target"
-            :color="link.color"
             v-bind="link"
           />
         </div>

@@ -9,17 +9,6 @@ hero:
       to: https://calendly.com/atondoux/30min
       target: "_blank"
       color: "neutral"
-  images:
-    - src: /workspace/workspace_01.jpg
-      alt: Workspace 01
-    - src: /workspace/workspace_02.jpg
-      alt: Workspace 02
-    - src: /workspace/workspace_03.jpg
-      alt: Workspace 03
-    - src: /workspace/workspace_04.jpg
-      alt: Workspace 04
-    - src: /workspace/workspace_05.jpg
-      alt: Workspace 05
 about:
   title: "About Me"
   description: |

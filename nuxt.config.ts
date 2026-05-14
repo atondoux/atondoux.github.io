@@ -16,10 +16,6 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  gtag: {
-    id: process.env.NUXT_PUBLIC_GTAG_ID
-  },
-
   css: ['~/assets/css/main.css'],
 
   site: {
@@ -114,6 +110,10 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  gtag: {
+    id: process.env.NUXT_PUBLIC_GTAG_ID
   },
 
   i18n: {

@@ -105,7 +105,7 @@ const baseCollections = {
       badge: z.object({
         label: z.string().optional(),
         color: z.enum(['primary', 'neutral', 'success', 'warning', 'error', 'info']).optional(),
-        variant: z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link']).optional()
+        variant: z.enum(['solid', 'outline', 'subtle', 'soft']).optional()
       }).optional(),
       variant: z.enum(['soft', 'solid', 'outline', 'subtle']).optional(),
       highlight: z.boolean().optional(),

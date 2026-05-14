@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 const localePath = useLocalePath()
 
 // Extract slug from route params (e.g., ['malt'] -> 'malt')
@@ -13,16 +13,16 @@ const { data: page } = await useAsyncData(`${route.path}-${locale.value}`, () =>
 )
 if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 
-// Fetch all projects to manually create surround navigation
+const project = page.value
+
 const { data: allProjects } = await useAsyncData(`projects-all-${locale.value}`, () =>
   queryCollection(`projects_${locale.value}`).order('date', 'DESC').all()
 )
 
-// Create surround manually by finding prev/next in the list
 const surround = computed(() => {
-  if (!allProjects.value || !page.value) return null
+  if (!allProjects.value) return null
 
-  const currentIndex = allProjects.value.findIndex(p => p.slug === page.value.slug)
+  const currentIndex = allProjects.value.findIndex(p => p.slug === project.slug)
   if (currentIndex === -1) return null
 
   const prev = currentIndex < allProjects.value.length - 1 ? allProjects.value[currentIndex + 1] : null
@@ -34,20 +34,20 @@ const surround = computed(() => {
   ]
 })
 
-if (page.value.image) {
-  defineOgImage({ url: page.value.image })
+if (project.image) {
+  defineOgImage({ url: project.image })
 } else {
   defineOgImageComponent('Project', {
-    headline: page.value.title
+    headline: project.title
   }, {
     fonts: ['Geist:400', 'Geist:600']
   })
 }
 
 usePageSeo({
-  title: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
-  ogImage: page.value.image,
+  title: project.seo?.title || project.title,
+  description: project.seo?.description || project.description,
+  ogImage: project.image,
   ogType: 'article'
 })
 </script>

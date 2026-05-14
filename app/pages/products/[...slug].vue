@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 const localePath = useLocalePath()
 
 // Extract slug from route params (e.g., ['ortho-assistant'] -> 'ortho-assistant')
@@ -13,16 +13,16 @@ const { data: page } = await useAsyncData(`${route.path}-${locale.value}`, () =>
 )
 if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 
-// Fetch all products to manually create surround navigation
+const product = page.value
+
 const { data: allProducts } = await useAsyncData(`products-all-${locale.value}`, () =>
   queryCollection(`products_${locale.value}`).order('date', 'DESC').all()
 )
 
-// Create surround manually by finding prev/next in the list
 const surround = computed(() => {
-  if (!allProducts.value || !page.value) return null
+  if (!allProducts.value) return null
 
-  const currentIndex = allProducts.value.findIndex(p => p.slug === page.value.slug)
+  const currentIndex = allProducts.value.findIndex(p => p.slug === product.slug)
   if (currentIndex === -1) return null
 
   const prev = currentIndex < allProducts.value.length - 1 ? allProducts.value[currentIndex + 1] : null
@@ -34,20 +34,20 @@ const surround = computed(() => {
   ]
 })
 
-if (page.value.image) {
-  defineOgImage({ url: page.value.image })
+if (product.image) {
+  defineOgImage({ url: product.image })
 } else {
   defineOgImageComponent('Product', {
-    headline: page.value.title
+    headline: product.title
   }, {
     fonts: ['Geist:400', 'Geist:600']
   })
 }
 
 usePageSeo({
-  title: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
-  ogImage: page.value.image,
+  title: product.seo?.title || product.title,
+  description: product.seo?.description || product.description,
+  ogImage: product.image,
   ogType: 'article'
 })
 </script>

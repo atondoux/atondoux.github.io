@@ -164,7 +164,5 @@ defineProps<{
         </Motion>
       </div>
     </template>
-
-    <ImageGallery :images="page.hero.images" />
   </UPageHero>
 </template>
