@@ -14,5 +14,5 @@ badge:
   color: "primary"
   variant: "subtle"
 variant: "soft"
-highlight: true
+highlight: false
 order: 0

@@ -25,9 +25,9 @@ describe('useSocialLinks', () => {
       const socialLinks = useSocialLinks()
 
       expect(socialLinks.value).toHaveLength(3)
-      expect(socialLinks.value[0]['aria-label']).toBe('LinkedIn')
-      expect(socialLinks.value[1]['aria-label']).toBe('Malt')
-      expect(socialLinks.value[2]['aria-label']).toBe('GitHub')
+      expect(socialLinks.value[0]!['aria-label']).toBe('LinkedIn')
+      expect(socialLinks.value[1]!['aria-label']).toBe('Malt')
+      expect(socialLinks.value[2]!['aria-label']).toBe('GitHub')
     })
 
     it('should include LinkedIn link with French URL', () => {
@@ -70,9 +70,9 @@ describe('useSocialLinks', () => {
       const socialLinks = useSocialLinks()
 
       expect(socialLinks.value).toHaveLength(3)
-      expect(socialLinks.value[0]['aria-label']).toBe('LinkedIn')
-      expect(socialLinks.value[1]['aria-label']).toBe('Malt')
-      expect(socialLinks.value[2]['aria-label']).toBe('GitHub')
+      expect(socialLinks.value[0]!['aria-label']).toBe('LinkedIn')
+      expect(socialLinks.value[1]!['aria-label']).toBe('Malt')
+      expect(socialLinks.value[2]!['aria-label']).toBe('GitHub')
     })
 
     it('should include LinkedIn link with English locale parameter', () => {

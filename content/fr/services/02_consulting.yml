@@ -10,5 +10,5 @@ features:
   - title: "Revue de code"
     icon: "i-lucide-code-2"
 variant: "soft"
-highlight: true
+highlight: false
 order: 2

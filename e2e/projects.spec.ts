@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test'
 test.use({ locale: 'fr-FR' })
 
 test.describe('Projects Page', () => {
-  test('displays projects to visitor', async ({ page, baseURL }) => {
+  test('displays projects to visitor', async ({ page }) => {
     // Start from home page
     await page.goto('/')
 

@@ -7,7 +7,7 @@
     "about": "A propos"
   },
   "footer": {
-    "credits": "© {year} Aurélien Tondoux • Propulsé par Nuxt"
+    "credits": "© {year} Aurélien Tondoux • Tous droits réservés"
   },
   "global": {
     "profilePictureAlt": "Ma photo de profil",

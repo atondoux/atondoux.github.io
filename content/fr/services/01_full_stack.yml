@@ -12,5 +12,5 @@ features:
   - title: "Déploiement"
     icon: "i-lucide-rocket"
 variant: "soft"
-highlight: true
+highlight: false
 order: 1
