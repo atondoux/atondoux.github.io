@@ -1,0 +1,19 @@
+title: "Veolia Water"
+description: "Supporting water distribution in Paris area by developing rich internet applications."
+date: 2007-01-01
+slug: "veolia"
+image: "/portfolio/00_veolia_logo.svg"
+tags: ["Public Services", "Java", "JavaScript", "SQL", "Waterfall Methodology"]
+seo:
+  title: "Veolia Water - Aurélien Tondoux"
+  description: "Java business application development for water distribution management in the Paris area (500,000+ contracts)."
+content: |
+  ## :man_technologist: My role
+
+  Software Engineer
+
+  ## :dart: My actions
+
+  - Design and implement business applications to support water distribution management in Paris area (serving over 500,000 contracts) using an in-house rapid development framework
+  - Manage releases on a High-Availability integration platform
+  - Produce technical specifications, release documentation, and deployment procedures

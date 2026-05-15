@@ -1,0 +1,15 @@
+path: /portfolio
+title: "Portfolio."
+description: "Mes contributions, mes créations, mon parcours."
+links:
+  - label: "Prendre un rendez-vous"
+    to: "https://calendly.com/atondoux/30min/"
+    target: "_blank"
+    color: "neutral"
+  - label: "Mon profil Malt"
+    to: "https://www.malt.fr/profile/aurelientondoux"
+    target: "_blank"
+    color: "primary"
+seo:
+  title: "Portfolio - Aurélien Tondoux"
+  description: "Expériences chez Veolia, SNCF Connect, Natixis, Société Générale, Softway Medical, Orange Business et Malt."

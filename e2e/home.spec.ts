@@ -60,11 +60,8 @@ test.describe('Home Page', () => {
     await expect(page.getByTestId('nav-services')).toBeVisible()
     await expect(page.getByTestId('nav-services')).toBeEnabled()
 
-    await expect(page.getByTestId('nav-projects')).toBeVisible()
-    await expect(page.getByTestId('nav-projects')).toBeEnabled()
-
-    await expect(page.getByTestId('nav-products')).toBeVisible()
-    await expect(page.getByTestId('nav-products')).toBeEnabled()
+    await expect(page.getByTestId('nav-portfolio')).toBeVisible()
+    await expect(page.getByTestId('nav-portfolio')).toBeEnabled()
 
     await expect(page.getByTestId('nav-about')).toBeVisible()
     await expect(page.getByTestId('nav-about')).toBeEnabled()

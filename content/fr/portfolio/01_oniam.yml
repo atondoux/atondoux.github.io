@@ -1,0 +1,25 @@
+title: "Ministère de la Santé"
+description: "Simplifier et accélérer l'indemnisation des victimes d'accidents médicaux en dématérialisant l'ensemble des procédures de l'ONIAM."
+date: 2009-01-01
+slug: "oniam"
+image: "/portfolio/01_oniam_logo.svg"
+tags: ["Services publics", "Java", "Spring Framework", "Hibernate", "API REST", "jBPM", "JSF", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
+seo:
+  title: "ONIAM - Ministère de la Santé - Aurélien Tondoux"
+  description: "Conception et développement d'une application web Java/Spring pour l'indemnisation des accidents médicaux. Dématérialisation complète des processus métier."
+content: |
+  ## :man_technologist: Mon rôle
+
+  Ingénieur Études et Développement
+
+  ## :dart: Mes actions
+
+  - Concevoir et développer une toute nouvelle application web pour le compte de l'ONIAM (Organisme National d'Indemnisation des Accidents Médicaux) permettant le traitement des procédures d'indemnisation
+  - Mettre en œuvre des solutions 100% open source pour dématérialiser l'ensemble des processus métier (suivi des dossiers et gestion électronique des documents)
+  - Prendre en charge la formation technique des nouveaux arrivants
+  - Administrer la plateforme d'intégration continue (build et release)
+  - Rédiger la documentation technique et des guides de bonnes pratiques
+
+  ## :globe_with_meridians: Liens
+
+  En savoir plus sur l'<a href="https://www.oniam.fr/" target="_blank">ONIAM</a>

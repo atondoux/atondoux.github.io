@@ -1,0 +1,50 @@
+title: "Spring Boot Online Course"
+description: "Unlock the power of Spring Boot to build robust, enterprise-grade web applications and microservices."
+date: 2024-04-01
+slug: "spring-boot-online-course"
+image: "/portfolio/09_dyma_spring_boot_logo.svg"
+tags: ["E-Learning", "Java", "Spring Boot", "REST API", "Clean Code", "Test Driven Development"]
+seo:
+  title: "Spring Boot Training - Dyma - Aurélien Tondoux"
+  description: "Comprehensive Spring Boot training on Dyma: 19 chapters, 87 lessons, 174 quizzes. 5,000+ training hours, 4.6/5 rating. Architecture, Spring Data, Security, and testing."
+images:
+  - src: /portfolio/09_dyma_spring_boot/01_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 01
+  - src: /portfolio/09_dyma_spring_boot/02_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 02
+  - src: /portfolio/09_dyma_spring_boot/03_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 03
+  - src: /portfolio/09_dyma_spring_boot/04_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 04
+  - src: /portfolio/09_dyma_spring_boot/05_dyma_spring_boot.png
+    alt: Dyma Spring Boot screenshot 05
+showFullImages: true
+content: |
+  ## :desktop_computer: About the Product
+
+  This course is intended for both beginners and experienced developers, offering the opportunity to discover a proven stack for building enterprise-grade web applications and microservices.<br>
+  <br>
+  Inspired by discussions with Dyma's co-founders, I was convinced by their vision and educational approach. The platform focuses above all on content quality by providing only one course per subject. Each course is maintained and updated by its creator.<br>
+  <br>
+  After months of hard work, I am proud to have taken on the challenge! Publishing this course taught me that teaching also trains the teacher :) I will never forget the first time I pressed the :red_circle: *rec* button to record the first lessons.
+
+  ## :bar_chart: Key Metrics
+
+  Students have spent a total of over **5000 hours** on the course, with an average rating of **4.6/5**.<br>
+  <br>
+  The course includes **19 chapters**, **87 lessons**, **174 quizzes** and has trained **225 students**.
+
+  ## :sparkles: Program Overview
+
+  - **Learn the fundamentals of layered application architecture**: efficiently structure your Java projects with Spring Boot
+  - **Harness the full power of Spring Data** to easily manage your entities and databases
+  - **Implement robust error handling** and data validation to ensure your application's reliability
+  - **Package and deploy your application to the Cloud** using Docker and modern deployment tools
+  - **Build REST APIs** with Spring MVC and efficient routing
+  - **Secure your application with Spring Security** for fine-grained authentication and authorization management
+  - **Test thoroughly** with unit and integration tests
+  - **Adopt best practices** like Clean Code and SOLID principles
+
+  ## :globe_with_meridians: Links
+
+  The course is available on <a href="https://dyma.fr/formations/spring-boot" target="_blank">Dyma</a>
