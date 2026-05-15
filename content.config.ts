@@ -66,9 +66,9 @@ const baseCollections = {
       showFullImages: z.boolean().optional()
     })
   },
-  services: {
+  pricing: {
     type: 'data' as const,
-    source: 'services/*.yml',
+    source: 'pricing/*.yml',
     schema: z.object({
       title: z.string().nonempty(),
       description: z.string().nonempty(),
@@ -94,10 +94,21 @@ const baseCollections = {
       order: z.number()
     })
   },
+  services: {
+    type: 'data' as const,
+    source: 'services/*.yml',
+    schema: z.object({
+      title: z.string().nonempty(),
+      description: z.string().nonempty(),
+      icon: z.string().optional(),
+      order: z.number()
+    })
+  },
   pages: {
     type: 'page' as const,
     source: [
       { include: 'portfolio.yml' },
+      { include: 'pricing.yml' },
       { include: 'services.yml' }
     ],
     schema: z.object({

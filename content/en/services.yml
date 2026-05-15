@@ -1,6 +1,9 @@
+seo:
+  title: "Services Catalog - Aurelien Tondoux"
+  description: "Overview of services: Tech Leadership, Full-Stack Development, DevOps, Code Review, TDD Coaching, Architecture."
 path: /services
-title: "My services."
-description: "These rates are provided as a guideline and may be adjusted according to the project."
+title: "Services."
+description: "High-impact actions with measurable results."
 links:
   - label: "Book an appointment"
     to: "https://calendly.com/atondoux/30min/"
@@ -10,6 +13,3 @@ links:
     to: "https://www.malt.com/profile/aurelientondoux"
     target: "_blank"
     color: "primary"
-seo:
-  title: "Services - Aurélien Tondoux"
-  description: "Tech Lead, Full-Stack Development, and Software Craftsmanship consulting services."

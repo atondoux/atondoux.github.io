@@ -1,0 +1,4 @@
+title: "DevOps & Cloud"
+description: "Automatisation et fiabilisation de vos déploiements : mise en place de pipelines CI/CD, infrastructure as code..."
+icon: "i-lucide-cloud-cog"
+order: 6

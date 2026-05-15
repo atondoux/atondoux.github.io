@@ -46,7 +46,6 @@ const startViewTransition = (event: MouseEvent) => {
 <template>
   <ClientOnly>
     <UButton
-      data-testid="theme-switcher"
       :aria-label="`Switch to ${nextTheme} mode`"
       :icon="`i-lucide-${nextTheme === 'dark' ? 'sun' : 'moon'}`"
       color="neutral"
@@ -54,6 +53,7 @@ const startViewTransition = (event: MouseEvent) => {
       size="sm"
       class="cursor-pointer px-2 py-1"
       @click="startViewTransition"
+      data-testid="theme-switcher"
     />
     <template #fallback>
       <div class="size-4" />

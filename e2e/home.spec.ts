@@ -57,8 +57,8 @@ test.describe('Home Page', () => {
     await page.goto('/')
 
     // Verify navigation links exist and are accessible
-    await expect(page.getByTestId('nav-services')).toBeVisible()
-    await expect(page.getByTestId('nav-services')).toBeEnabled()
+    await expect(page.getByTestId('nav-pricing')).toBeVisible()
+    await expect(page.getByTestId('nav-pricing')).toBeEnabled()
 
     await expect(page.getByTestId('nav-portfolio')).toBeVisible()
     await expect(page.getByTestId('nav-portfolio')).toBeEnabled()

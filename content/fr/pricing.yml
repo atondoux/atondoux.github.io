@@ -1,0 +1,15 @@
+seo:
+  title: "Tarifs - Aurélien Tondoux"
+  description: "Tarifs pour Tech Lead, Développement Full-Stack et conseil en Software Craftsmanship."
+path: /pricing
+title: "Tarifs."
+description: "Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction de la mission."
+links:
+  - label: "Prendre un rendez-vous"
+    to: "https://calendly.com/atondoux/30min/"
+    target: "_blank"
+    color: "neutral"
+  - label: "Mon profil Malt"
+    to: "https://www.malt.fr/profile/aurelientondoux"
+    target: "_blank"
+    color: "primary"

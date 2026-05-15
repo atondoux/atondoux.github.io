@@ -1,0 +1,5 @@
+title: "DevOps & Cloud"
+description: "Automating and hardening your deployments: setting up CI/CD pipelines, infrastructure as code..."
+icon: "i-lucide-cloud-cog"
+order: 6
+

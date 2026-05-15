@@ -1,6 +1,9 @@
+seo:
+  title: "Catalogue de services - Aurélien Tondoux"
+  description: "Aperçu des prestations : Tech Leadership, Développement Full-Stack, DevOps, Code Review, Coaching TDD, Architecture."
 path: /services
-title: "Mon offre de services."
-description: "Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction de la mission."
+title: "Catalogue de services."
+description: "Des interventions qui ont de l'impact et des résultats mesurables."
 links:
   - label: "Prendre un rendez-vous"
     to: "https://calendly.com/atondoux/30min/"
@@ -10,6 +13,3 @@ links:
     to: "https://www.malt.fr/profile/aurelientondoux"
     target: "_blank"
     color: "primary"
-seo:
-  title: "Services - Aurélien Tondoux"
-  description: "Services de Tech Lead, Développement Full-Stack et conseil en Software Craftsmanship."
