@@ -1,3 +1,6 @@
+seo:
+  title: "A propos - Aurélien Tondoux"
+  description: "Ingénieur Logiciel Senior. 15+ ans d'expérience en Java, Kotlin, Spring Boot, Vue.js. Software Craftsmanship et TDD."
 title: "A propos."
 description: "En savoir plus sur mon parcours d'Ingénieur Logiciel Senior."
 links:
@@ -10,9 +13,6 @@ links:
     target: "_blank"
     color: "primary"
 
-seo:
-  title: "A propos - Aurélien Tondoux"
-  description: "Ingénieur Logiciel Senior. 15+ ans d'expérience en Java, Kotlin, Spring Boot, Vue.js. Software Craftsmanship et TDD."
 content: |
   ## :earth_africa: Mon parcours
 

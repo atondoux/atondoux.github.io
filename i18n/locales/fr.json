@@ -1,8 +1,9 @@
 {
   "nav": {
     "home": "Accueil",
-    "portfolio": "Portfolio",
     "services": "Services",
+    "portfolio": "Portfolio",
+    "pricing": "Tarifs",
     "about": "A propos"
   },
   "footer": {

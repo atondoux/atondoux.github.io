@@ -1,42 +1,58 @@
 import { test, expect } from '@playwright/test'
 
-test.use({ locale: 'fr-FR' })
+const TITLES_SELECTOR = '[data-testid^="service-title-"]'
 
 test.describe('Services Page', () => {
-  test('displays services offering to visitor', async ({ page }) => {
-    // Start from home page
+  test.use({ locale: 'fr-FR' })
+
+  test('displays the services catalog to visitor', async ({ page }) => {
     await page.goto('/')
 
-    // Navigate to services page via navigation menu
-    const servicesLink = page.getByTestId('nav-services')
-    await expect(servicesLink).toBeVisible()
-    await expect(servicesLink).toBeEnabled()
-    await servicesLink.click()
+    const catalogLink = page.getByTestId('nav-services')
+    await expect(catalogLink).toBeVisible()
+    await expect(catalogLink).toBeEnabled()
+    await catalogLink.click()
 
-    // Display services to visitor
-    await expect(page.getByRole('heading', { name: 'Mon offre de services.' })).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Catalogue de services.' })).toBeVisible()
 
-    // Service 1 - Tech Lead with price 600€
-    const techLeadCard = page.getByTestId('service-0')
-    await expect(techLeadCard).toBeVisible()
-    await expect(techLeadCard.getByText('Tech Lead')).toBeVisible()
-    await expect(techLeadCard.getByText('600€')).toBeVisible()
-
-    // Service 2 - Développeur Full Stack with price 600€
-    const fullStackCard = page.getByTestId('service-1')
-    await expect(fullStackCard).toBeVisible()
-    await expect(fullStackCard.getByText('Développeur Full Stack')).toBeVisible()
-    await expect(fullStackCard.getByText('600€')).toBeVisible()
-
-    // Service 3 - Applications & Conseils with price "Devis sur demande"
-    const consultingCard = page.getByTestId('service-2')
-    await expect(consultingCard).toBeVisible()
-    await expect(consultingCard.getByText('Applications & Conseils')).toBeVisible()
-    await expect(consultingCard.getByText('Devis sur demande')).toBeVisible()
+    await expect(page.locator(TITLES_SELECTOR)).toHaveText([
+      /^Leadership Technique$/,
+      /^Développement Full-Stack$/,
+      /^Bootstrap de Projets$/,
+      /^Reprise de Projets Legacy$/,
+      /^Audit & Revue de Code$/,
+      /^DevOps & Cloud$/,
+      /^Architecture$/
+    ])
 
     // CTA buttons: Book appointment and Malt profile
     const maltCTA = page.getByRole('link', { name: 'Mon profil Malt' })
     await expect(maltCTA).toBeVisible()
     await expect(maltCTA).toHaveAttribute('href', 'https://www.malt.fr/profile/aurelientondoux')
+  })
+})
+
+test.describe('Services Page (English)', () => {
+  test.use({ locale: 'en-US' })
+
+  test('displays the english catalog to visitor', async ({ page }) => {
+    await page.goto('/en/services')
+
+    await expect(page.getByRole('heading', { name: 'Services.' })).toBeVisible()
+
+    await expect(page.locator(TITLES_SELECTOR)).toHaveText([
+      /^Tech Leadership$/,
+      /^Full-Stack Development$/,
+      /^Project Bootstrapping$/,
+      /^Legacy Project Recovery$/,
+      /^Audit & Code Review$/,
+      /^DevOps & Cloud$/,
+      /^Architecture$/
+    ])
+
+    // CTA buttons: Book appointment and Malt profile
+    const maltCTA = page.getByRole('link', { name: 'My Malt profile' })
+    await expect(maltCTA).toBeVisible()
+    await expect(maltCTA).toHaveAttribute('href', 'https://www.malt.com/profile/aurelientondoux')
   })
 })

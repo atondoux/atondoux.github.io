@@ -51,7 +51,6 @@ const startViewTransition = (event: MouseEvent) => {
 <template>
   <ClientOnly>
     <UButton
-      data-testid="language-switcher"
       :aria-label="`Switch to ${nextLocale?.name}`"
       icon="i-lucide-languages"
       color="neutral"
@@ -59,6 +58,7 @@ const startViewTransition = (event: MouseEvent) => {
       size="sm"
       class="px-2 py-1 cursor-pointer"
       @click="startViewTransition"
+      data-testid="language-switcher"
     />
     <template #fallback>
       <div class="size-4" />

@@ -1,0 +1,15 @@
+path: /pricing
+title: "Pricing."
+description: "These rates are provided as a guideline and may be adjusted according to the project."
+links:
+  - label: "Book an appointment"
+    to: "https://calendly.com/atondoux/30min/"
+    target: "_blank"
+    color: "neutral"
+  - label: "My Malt profile"
+    to: "https://www.malt.com/profile/aurelientondoux"
+    target: "_blank"
+    color: "primary"
+seo:
+  title: "Pricing - Aurélien Tondoux"
+  description: "Pricing for Tech Lead, Full-Stack Development, and Software Craftsmanship consulting."

@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 
-const { data: page } = await useAsyncData(`services-page-${locale.value}`, () => {
-  return queryCollection(`pages_${locale.value}`).path('/services').first()
+// Fetch page metadata
+const { data: page } = await useAsyncData(`pricing-page-${locale.value}`, () => {
+  return queryCollection(`pages_${locale.value}`).path('/pricing').first()
 })
 
 if (!page.value) {
@@ -13,10 +14,12 @@ if (!page.value) {
   })
 }
 
-const { data: items } = await useAsyncData(`services-items-${locale.value}`, () => {
-  return queryCollection(`services_${locale.value}`).order('order', 'ASC').all()
+// Fetch pricing plans
+const { data: plans } = await useAsyncData(`pricing-plans-${locale.value}`, () => {
+  return queryCollection(`pricing_${locale.value}`).order('order', 'ASC').all()
 })
 
+// SEO metadata
 usePageSeo({
   title: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
@@ -55,26 +58,14 @@ usePageSeo({
         container: '!pt-0'
       }"
     >
-      <UPageGrid>
-        <div
-          v-for="(item, index) in items"
-          :key="item.order"
-          :data-testid="`service-item-${index}`"
-        >
-          <UPageCard
-            :description="item.description"
-            :icon="item.icon"
-            variant="subtle"
-            :ui="{ root: 'h-full' }"
-          >
-            <template #title>
-              <p :data-testid="`service-title-${index}`">
-                {{ item.title }}
-              </p>
-            </template>
-          </UPageCard>
-        </div>
-      </UPageGrid>
+      <UPricingPlans orientation="horizontal">
+        <UPricingPlan
+          v-for="(plan, index) in plans"
+          :key="index"
+          v-bind="plan"
+          :data-testid="`pricing-plan-${index}`"
+        />
+      </UPricingPlans>
     </UPageSection>
   </UPage>
 </template>
