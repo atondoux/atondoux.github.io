@@ -139,6 +139,7 @@ export default defineNuxtConfig({
         'lucide:hash',
         // Navigation icons
         'lucide:house',
+        'lucide:layout-grid',
         'lucide:hand-coins',
         'lucide:folder-kanban',
         'lucide:package',
