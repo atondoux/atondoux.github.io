@@ -1,12 +1,13 @@
+seo:
+  title: "SNCF Connect & Tech - Ingénieur Logiciel - Aurélien Tondoux"
+  description: "Ingénieur logiciel sur la plateforme européenne de réservation de billets SNCF : services web B2C en Java/Spring sur une architecture SOA."
+
 title: "SNCF Connect & Tech"
 description: "Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect."
 date: 2010-01-01
 slug: "sncf-connect-and-tech"
 image: "/portfolio/02_sncf_connect_logo.svg"
 tags: ["Mobilités Durables", "Java", "Spring Framework", "API REST", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
-seo:
-  title: "SNCF Connect & Tech - Aurélien Tondoux"
-  description: "Développement Java/Spring pour la plateforme européenne de réservation de billets SNCF. Services web B2C et architecture SOA."
 content: |
   ## :man_technologist: Mon rôle
 

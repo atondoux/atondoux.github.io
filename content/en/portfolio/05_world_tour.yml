@@ -1,12 +1,13 @@
+seo:
+  title: "World Tour - Aurélien Tondoux"
+  description: "A 730-day break travelling 60,000 km through 17 countries across Europe, Asia and Oceania, including professional experience in Australia."
+
 title: "World Tour"
 description: "Living an exceptional 730-day odyssey, filled with invaluable personal development and countless natural, cultural, and human experiences."
 date: 2013-01-01
 slug: "world-tour"
 image: "/portfolio/05_world_tour_logo.svg"
 tags: ["Travel", "Personal Growth", "English", "Adaptability", "Negotiation", "Resilience", "Open-mindedness"]
-seo:
-  title: "World Tour - Aurélien Tondoux"
-  description: "730 days traveling through 17 countries across 3 continents. 60,000 km across Europe, Asia, and Oceania. Professional experience in Australia."
 content: |
   ## :earth_africa: My Achievements
 

@@ -1,12 +1,13 @@
 seo:
-  title: "Aurélien Tondoux Ingénieur Logiciel Senior"
-  description: "Ingénieur logiciel senior freelance, 15+ ans d'expérience. Applications sur mesure, de la conception au déploiement."
+  title: "Aurélien Tondoux - Ingénieur Logiciel Senior Freelance"
+  description: "Ingénieur logiciel senior freelance, 15+ ans à concevoir des applications web Java, Kotlin, Spring Boot et Vue.js, du design au déploiement."
+
 title: "Bonjour, je suis Aurélien Tondoux Ingénieur Logiciel Senior"
 description: "Je développe des logiciels de qualité qui résolvent des problèmes concrets."
 hero:
   links:
     - label: "Prendre un rendez-vous"
-      to: https://calendly.com/atondoux/30min
+      to: https://calendly.com/atondoux/30min/
       target: "_blank"
       color: "neutral"
 about:

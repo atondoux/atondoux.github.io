@@ -36,6 +36,8 @@ Collections are generated **per locale** using a `${name}_${locale}` naming conv
 
 Content files live in `/content/{locale}/` — e.g., `/content/fr/portfolio/malt.yml` and `/content/en/portfolio/malt.yml`.
 
+Every page-level content YAML (index, about, portfolio items, and the listing pages portfolio/services/pricing) must declare a complete `seo: { title, description }` block. Both fields are required and non-empty, validated by `createSeoSchema()` in `content.config.ts`. Page components read these via `pageData.seo.title` / `pageData.seo.description` and pass them to `usePageSeo()`.
+
 ### i18n
 
 - Strategy: `prefix_except_default` — French (default) has no URL prefix, English uses `/en/`

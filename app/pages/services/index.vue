@@ -17,9 +17,10 @@ const { data: items } = await useAsyncData(`services-items-${locale.value}`, () 
   return queryCollection(`services_${locale.value}`).order('order', 'ASC').all()
 })
 
+const pageData = page.value
 usePageSeo({
-  title: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
+  title: pageData.seo.title,
+  description: pageData.seo.description,
   ogType: 'website'
 })
 </script>

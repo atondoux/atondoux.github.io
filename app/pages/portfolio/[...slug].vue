@@ -34,20 +34,9 @@ const surround = computed(() => {
   ]
 })
 
-if (project.image) {
-  defineOgImage({ url: project.image })
-} else {
-  defineOgImageComponent('Project', {
-    headline: project.title
-  }, {
-    fonts: ['Geist:400', 'Geist:600']
-  })
-}
-
 usePageSeo({
-  title: project.seo?.title || project.title,
-  description: project.seo?.description || project.description,
-  ogImage: project.image,
+  title: project.seo.title,
+  description: project.seo.description,
   ogType: 'article'
 })
 </script>

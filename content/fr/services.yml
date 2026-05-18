@@ -1,6 +1,7 @@
 seo:
-  title: "Catalogue de services - Aurélien Tondoux"
-  description: "Aperçu des prestations : Tech Leadership, Développement Full-Stack, DevOps, Code Review, Coaching TDD, Architecture."
+  title: "Catalogue de services freelance - Aurélien Tondoux"
+  description: "Prestations d'un ingénieur senior freelance : tech leadership, développement full-stack, DevOps, code review, coaching TDD et architecture logicielle."
+
 path: /services
 title: "Catalogue de services."
 description: "Des interventions qui ont de l'impact et des résultats mesurables."

@@ -57,8 +57,8 @@ const startViewTransition = (event: MouseEvent) => {
       variant="link"
       size="sm"
       class="px-2 py-1 cursor-pointer"
-      @click="startViewTransition"
       data-testid="language-switcher"
+      @click="startViewTransition"
     />
     <template #fallback>
       <div class="size-4" />

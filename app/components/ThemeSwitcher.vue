@@ -52,8 +52,8 @@ const startViewTransition = (event: MouseEvent) => {
       variant="link"
       size="sm"
       class="cursor-pointer px-2 py-1"
-      @click="startViewTransition"
       data-testid="theme-switcher"
+      @click="startViewTransition"
     />
     <template #fallback>
       <div class="size-4" />

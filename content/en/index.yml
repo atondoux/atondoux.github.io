@@ -1,12 +1,13 @@
 seo:
-  title: "Aurélien Tondoux Senior Software Engineer"
-  description: "Senior freelance software engineer, 15+ years of experience. Custom applications from design to deployment."
+  title: "Aurélien Tondoux - Senior Software Engineer Freelance"
+  description: "Freelance senior software engineer, 15+ years building Java, Kotlin, Spring Boot and Vue.js web applications, from design to production deployment."
+
 title: "Hey, I'm Aurélien Tondoux Senior Software Engineer"
 description: "I build quality software that solves real-world problems."
 hero:
   links:
     - label: "Book an appointment"
-      to: https://calendly.com/atondoux/30min
+      to: "https://calendly.com/atondoux/30min/"
       target: "_blank"
       color: "neutral"
 about:

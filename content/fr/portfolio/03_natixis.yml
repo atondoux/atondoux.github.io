@@ -1,12 +1,13 @@
+seo:
+  title: "Natixis - Ingénieur Logiciel - Aurélien Tondoux"
+  description: "Ingénieur logiciel : refonte du CRM Equity Markets en Java, Spring et Hibernate. Gestion du legacy, refactoring continu et ergonomie améliorée."
+
 title: "Natixis"
 description: "Améliorer l'ergonomie et l'efficacité du CRM utilisé par le département des marchés boursiers."
 date: 2011-01-01
 slug: "natixis"
 image: "/portfolio/03_natixis_logo.svg"
 tags: ["Banque", "Java", "Spring Framework", "Hibernate", "JSF", "jQuery", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
-seo:
-  title: "Natixis - Aurélien Tondoux"
-  description: "Refonte du CRM Equity Markets avec Java/Spring/Hibernate. Gestion du code legacy et refactoring continu."
 content: |
   ## :man_technologist: Mon rôle
 
