@@ -1,4 +1,5 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { createSeoSchema } from './content.seo'
 
 const LOCALES = ['fr', 'en'] as const
 
@@ -28,6 +29,7 @@ const baseCollections = {
     type: 'page' as const,
     source: 'index.yml',
     schema: z.object({
+      seo: createSeoSchema(),
       hero: z.object({
         links: z.array(createButtonSchema()),
         images: z.array(createImageSchema())
@@ -58,10 +60,7 @@ const baseCollections = {
       tags: z.array(z.string()),
       slug: z.string(),
       content: z.string(),
-      seo: z.object({
-        title: z.string().optional(),
-        description: z.string().optional()
-      }).optional(),
+      seo: createSeoSchema(),
       images: z.array(createImageSchema()).optional(),
       showFullImages: z.boolean().optional()
     })
@@ -116,10 +115,7 @@ const baseCollections = {
       title: z.string(),
       description: z.string(),
       links: z.array(createButtonSchema()).optional(),
-      seo: z.object({
-        title: z.string().optional(),
-        description: z.string().optional()
-      }).optional()
+      seo: createSeoSchema()
     })
   },
   about: {
@@ -130,10 +126,7 @@ const baseCollections = {
       description: z.string(),
       links: z.array(createButtonSchema()).optional(),
       content: z.string(),
-      seo: z.object({
-        title: z.string().optional(),
-        description: z.string().optional()
-      }).optional()
+      seo: createSeoSchema()
     })
   }
 }

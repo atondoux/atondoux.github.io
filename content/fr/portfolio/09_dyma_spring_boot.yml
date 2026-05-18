@@ -1,12 +1,13 @@
+seo:
+  title: "Formation Spring Boot - Dyma - Aurélien Tondoux"
+  description: "Formation Spring Boot complète sur Dyma : 19 chapitres, 87 leçons, 174 quiz, 5000+ heures suivies, notée 4.6/5. Architecture, Spring Data et Security."
+
 title: "Formation Spring Boot"
 description: "Découvrez Spring Boot, le framework open source incontournable pour créer des applications web et des microservices de niveau entreprise."
 date: 2024-04-01
 slug: "spring-boot-online-course"
 image: "/portfolio/09_dyma_spring_boot_logo.svg"
 tags: ["Formation en ligne", "Java", "Spring Boot", "API REST", "Clean Code", "Test Driven Development"]
-seo:
-  title: "Formation Spring Boot - Dyma - Aurélien Tondoux"
-  description: "Formation complète Spring Boot sur Dyma : 19 chapitres, 87 leçons, 174 quiz. 5000+ heures de formation, note 4.6/5. Architecture, Spring Data, Security et tests."
 images:
   - src: /portfolio/09_dyma_spring_boot/01_dyma_spring_boot.png
     alt: Dyma Spring Boot screenshot 01

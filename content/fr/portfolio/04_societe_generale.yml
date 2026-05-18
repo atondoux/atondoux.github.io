@@ -1,12 +1,13 @@
+seo:
+  title: "Société Générale - Ingénieur Logiciel - Aurélien Tondoux"
+  description: "Ingénieur logiciel : fiabilisation d'une application stratégique Java/Spring de calcul de marges pour les équipes de vente, réduisant les incidents."
+
 title: "Société Générale"
 description: "Fiabiliser l'application stratégique de calcul de marges pour les vendeurs de produits financiers."
 date: 2012-01-01
 slug: "societe-generale"
 image: "/portfolio/04_societe_generale_logo.svg"
 tags: ["Banque", "Java", "Spring Framework", "Hibernate", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
-seo:
-  title: "Société Générale - Aurélien Tondoux"
-  description: "Fiabilisation d'une application stratégique Java/Spring de calcul de marges. Réduction des incidents et amélioration de la qualité."
 content: |
   ## :man_technologist: Mon rôle
 

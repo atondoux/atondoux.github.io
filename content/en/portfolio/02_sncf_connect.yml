@@ -1,12 +1,13 @@
+seo:
+  title: "SNCF Connect & Tech - Software Engineer - Aurélien Tondoux"
+  description: "Software engineer on SNCF's European train-booking platform, building B2C web services in Java/Spring on a service-oriented (SOA) architecture."
+
 title: "SNCF Connect & Tech"
 description: "Making travel easier by adding new features to the SNCF Connect train ticket booking platform."
 date: 2010-01-01
 slug: "sncf-connect-and-tech"
 image: "/portfolio/02_sncf_connect_logo.svg"
 tags: ["Sustainable Mobility", "Java", "Spring Framework", "REST API", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
-seo:
-  title: "SNCF Connect & Tech - Aurélien Tondoux"
-  description: "Java/Spring development for SNCF European train booking platform. B2C web services and SOA architecture."
 content: |
   ## :man_technologist: My role
 

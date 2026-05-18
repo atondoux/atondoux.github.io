@@ -19,10 +19,10 @@ const { data: plans } = await useAsyncData(`pricing-plans-${locale.value}`, () =
   return queryCollection(`pricing_${locale.value}`).order('order', 'ASC').all()
 })
 
-// SEO metadata
+const pageData = page.value
 usePageSeo({
-  title: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
+  title: pageData.seo.title,
+  description: pageData.seo.description,
   ogType: 'website'
 })
 </script>

@@ -1,12 +1,13 @@
+seo:
+  title: "Veolia Water - Software Engineer - Aurélien Tondoux"
+  description: "Software engineer building Java business applications for water distribution across the Paris region, serving over 500,000 customer contracts."
+
 title: "Veolia Water"
 description: "Supporting water distribution in Paris area by developing rich internet applications."
 date: 2007-01-01
 slug: "veolia"
 image: "/portfolio/00_veolia_logo.svg"
 tags: ["Public Services", "Java", "JavaScript", "SQL", "Waterfall Methodology"]
-seo:
-  title: "Veolia Water - Aurélien Tondoux"
-  description: "Java business application development for water distribution management in the Paris area (500,000+ contracts)."
 content: |
   ## :man_technologist: My role
 

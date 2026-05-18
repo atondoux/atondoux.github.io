@@ -1,12 +1,13 @@
+seo:
+  title: "Tour du monde - Aurélien Tondoux"
+  description: "Une pause de 730 jours : 60 000 km à travers 17 pays d'Europe, d'Asie et d'Océanie, avec une expérience professionnelle en Australie."
+
 title: "Tour du monde"
 description: "Vivre une aventure exceptionnelle de 730 jours marquée par un enrichissement personnel inestimable avec de nombreuses découvertes naturelles, culturelles et humaines."
 date: 2013-01-01
 slug: "world-tour"
 image: "/portfolio/05_world_tour_logo.svg"
 tags: ["Voyage", "Développement Personnel", "Anglais", "Adaptation", "Négociation", "Résilience", "Ouverture d'esprit"]
-seo:
-  title: "Tour du monde - Aurélien Tondoux"
-  description: "730 jours de voyage à travers 17 pays sur 3 continents. 60 000 km d'Europe, d'Asie et d'Océanie. Expérience professionnelle en Australie."
 content: |
   ## :earth_africa: Mes accomplissements
 

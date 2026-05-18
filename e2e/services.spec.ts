@@ -1,21 +1,25 @@
 import { test, expect } from '@playwright/test'
+import { expectCTA } from './helpers/cta'
 
-const TITLES_SELECTOR = '[data-testid^="service-title-"]'
+const SERVICES_TITLES = '[data-testid^="service-title-"]'
 
-test.describe('Services Page', () => {
+test.describe('Services Page (French)', () => {
   test.use({ locale: 'fr-FR' })
 
   test('displays the services catalog to visitor', async ({ page }) => {
     await page.goto('/')
 
-    const catalogLink = page.getByTestId('nav-services')
-    await expect(catalogLink).toBeVisible()
-    await expect(catalogLink).toBeEnabled()
-    await catalogLink.click()
+    const servicesLink = page.getByTestId('nav-services')
+    await expect(servicesLink).toBeVisible()
+    await expect(servicesLink).toBeEnabled()
+    await servicesLink.click()
 
     await expect(page.getByRole('heading', { name: 'Catalogue de services.' })).toBeVisible()
 
-    await expect(page.locator(TITLES_SELECTOR)).toHaveText([
+    await expectCTA(page, { type: 'booking', locale: 'fr' })
+    await expectCTA(page, { type: 'malt', locale: 'fr' })
+
+    await expect(page.locator(SERVICES_TITLES)).toHaveText([
       /^Leadership Technique$/,
       /^Développement Full-Stack$/,
       /^Bootstrap de Projets$/,
@@ -24,11 +28,6 @@ test.describe('Services Page', () => {
       /^DevOps & Cloud$/,
       /^Architecture$/
     ])
-
-    // CTA buttons: Book appointment and Malt profile
-    const maltCTA = page.getByRole('link', { name: 'Mon profil Malt' })
-    await expect(maltCTA).toBeVisible()
-    await expect(maltCTA).toHaveAttribute('href', 'https://www.malt.fr/profile/aurelientondoux')
   })
 })
 
@@ -40,7 +39,10 @@ test.describe('Services Page (English)', () => {
 
     await expect(page.getByRole('heading', { name: 'Services.' })).toBeVisible()
 
-    await expect(page.locator(TITLES_SELECTOR)).toHaveText([
+    await expectCTA(page, { type: 'booking', locale: 'en' })
+    await expectCTA(page, { type: 'malt', locale: 'en' })
+
+    await expect(page.locator(SERVICES_TITLES)).toHaveText([
       /^Tech Leadership$/,
       /^Full-Stack Development$/,
       /^Project Bootstrapping$/,
@@ -49,10 +51,5 @@ test.describe('Services Page (English)', () => {
       /^DevOps & Cloud$/,
       /^Architecture$/
     ])
-
-    // CTA buttons: Book appointment and Malt profile
-    const maltCTA = page.getByRole('link', { name: 'My Malt profile' })
-    await expect(maltCTA).toBeVisible()
-    await expect(maltCTA).toHaveAttribute('href', 'https://www.malt.com/profile/aurelientondoux')
   })
 })

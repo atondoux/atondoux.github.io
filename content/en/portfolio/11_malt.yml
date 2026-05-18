@@ -1,12 +1,13 @@
+seo:
+  title: "Malt - Full Stack Software Engineer - Aurélien Tondoux"
+  description: "Full-stack developer on Malt's financing module in Kotlin, Spring Boot and Nuxt, optimising financial flows and automating FinOps processes."
+
 title: "Malt"
 description: "Help freelancers receive their payments as quickly as possible and have a better experience on the Malt platform."
 date: 2025-01-01
 slug: "malt"
 image: "/portfolio/11_malt_logo.svg"
 tags: ["Marketplace", "Software Craftsmanship", "Kotlin", "Spring Boot", "Vue.js", "Nuxt", "API REST", "RabbitMQ", "SQL", "NoSQL", "Test Driven Development", "Gitlab CI/CD", "Datadog"]
-seo:
-  title: "Malt - Aurélien Tondoux"
-  description: "Full Stack Developer with Kotlin/Spring Boot/Nuxt on Malt's financing module. Optimization of financial flows and FinOps automation."
 content: |
   ## :man_technologist: My role
 

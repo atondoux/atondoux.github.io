@@ -1,12 +1,13 @@
+seo:
+  title: "Ministry of Health - Software Engineer - Aurélien Tondoux"
+  description: "Software engineer on a Java/Spring web platform for medical accident compensation, fully digitalising ONIAM's case-handling and business workflows."
+
 title: "Ministry of Health"
 description: "Enabling faster, more efficient compensation for medical accident victims through the digitalization of all procedures for ONIAM."
 date: 2009-01-01
 slug: "oniam"
 image: "/portfolio/01_oniam_logo.svg"
 tags: ["Public Services", "Java", "Spring Framework", "Hibernate", "REST API", "jBPM", "JSF", "SQL", "Test Driven Development", "Continuous Integration", "Agile Methodologies"]
-seo:
-  title: "Ministry of Health - ONIAM - Aurélien Tondoux"
-  description: "Java/Spring web application for medical accident compensation. Complete digitalization of business processes."
 content: |
   ## :man_technologist: My role
 
