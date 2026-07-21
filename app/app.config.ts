@@ -1,8 +1,8 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: '/hero.jpg',
-      light: '/hero.jpg',
+      dark: '/hero_v2.jpeg',
+      light: '/hero_v2.jpeg',
       alt: 'Aurélien Tondoux profile picture'
     },
     meetingLink: 'https://calendly.com/atondoux/30min/',

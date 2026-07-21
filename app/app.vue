@@ -21,9 +21,9 @@ useHead({
 useSeoMeta({
   titleTemplate: '%s - Aurélien Tondoux',
   ogSiteName: 'Aurélien Tondoux',
-  ogImage: 'https://aurelientondoux.com/hero.jpg',
+  ogImage: 'https://aurelientondoux.com/hero_v2.jpeg',
   ogImageAlt: 'Aurélien Tondoux profile picture',
-  twitterImage: 'https://aurelientondoux.com/hero.jpg',
+  twitterImage: 'https://aurelientondoux.com/hero_v2.jpeg',
   twitterCard: 'summary_large_image',
   twitterSite: '@atondoux'
 })
