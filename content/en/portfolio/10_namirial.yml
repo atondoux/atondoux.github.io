@@ -1,12 +1,13 @@
+seo:
+  title: "Namirial - Backend Tech Lead - Aurélien Tondoux"
+  description: "Backend tech lead on a KYC platform, integrating Yousign electronic signature and identity-verification services in Kotlin and Spring Boot."
+
 title: "Namirial"
 description: "Making daily life easier by streamlining subscription workflows managed by a qualified trust services platform."
 date: 2024-10-01
 slug: "namirial"
 image: "/portfolio/10_namirial_logo.svg"
 tags: ["KYC", "Software Craftsmanship", "Kotlin", "Java", "Spring Boot", "REST API", "SQL", "Test Driven Development", "Gitlab CI/CD", "Kibana", "Agile Methodologies"]
-seo:
-  title: "Namirial - Aurélien Tondoux"
-  description: "Backend Tech Lead for KYC platform. Kotlin/Spring Boot integration of Yousign electronic signature and identity verification services."
 content: |
   ## :man_technologist: My role
 

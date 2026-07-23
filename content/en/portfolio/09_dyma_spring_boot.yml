@@ -1,12 +1,13 @@
+seo:
+  title: "Spring Boot Training - Dyma - Aurélien Tondoux"
+  description: "Comprehensive Spring Boot training on Dyma e-learning platform."
+
 title: "Spring Boot Online Course"
 description: "Unlock the power of Spring Boot to build robust, enterprise-grade web applications and microservices."
 date: 2024-04-01
 slug: "spring-boot-online-course"
 image: "/portfolio/09_dyma_spring_boot_logo.svg"
 tags: ["E-Learning", "Java", "Spring Boot", "REST API", "Clean Code", "Test Driven Development"]
-seo:
-  title: "Spring Boot Training - Dyma - Aurélien Tondoux"
-  description: "Comprehensive Spring Boot training on Dyma: 19 chapters, 87 lessons, 174 quizzes. 5,000+ training hours, 4.6/5 rating. Architecture, Spring Data, Security, and testing."
 images:
   - src: /portfolio/09_dyma_spring_boot/01_dyma_spring_boot.png
     alt: Dyma Spring Boot screenshot 01

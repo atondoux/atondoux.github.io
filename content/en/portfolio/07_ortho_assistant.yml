@@ -1,12 +1,13 @@
+seo:
+  title: "Ortho Assistant - Speech Therapy SaaS - Aurélien Tondoux"
+  description: "Java/Spring Boot and Vue.js SaaS for speech therapists, featuring intelligent equipment search, augmented inventory and location management."
+
 title: "Ortho Assistant"
 description: "Helping speech therapists to make every session more effective for their patients."
 date: 2020-03-01
 slug: "ortho-assistant"
 image: "/portfolio/07_ortho_assistant_logo.svg"
 tags: ["Healthcare", "SaaS", "Software Craftsmanship", "Java", "Spring Boot", "JHipster", "REST API", "TypeScript", "Vue.js", "SQL", "Test Driven Development", "Domain Driven Design", "GitLab CI/CD", "Docker", "DevOps"]
-seo:
-  title: "Ortho Assistant - SaaS for Speech Therapists - Aurélien Tondoux"
-  description: "SaaS for speech therapists developed with Java/Spring Boot and Vue.js. Intelligent material search, enhanced inventory, and location management."
 images:
   - src: /portfolio/07_ortho_assistant/01-recherche-intelligente-v1.png
     alt: Ortho Assistant 01

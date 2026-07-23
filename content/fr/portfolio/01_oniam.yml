@@ -1,12 +1,13 @@
+seo:
+  title: "ONIAM - Ingénieur Logiciel - Aurélien Tondoux"
+  description: "Ingénieur logiciel sur une plateforme web Java/Spring d'indemnisation des accidents médicaux, dématérialisant les processus métier de l'ONIAM."
+
 title: "Ministère de la Santé"
 description: "Simplifier et accélérer l'indemnisation des victimes d'accidents médicaux en dématérialisant l'ensemble des procédures de l'ONIAM."
 date: 2009-01-01
 slug: "oniam"
 image: "/portfolio/01_oniam_logo.svg"
 tags: ["Services publics", "Java", "Spring Framework", "Hibernate", "API REST", "jBPM", "JSF", "SQL", "Test Driven Development", "Intégration Continue", "Méthodes agiles"]
-seo:
-  title: "ONIAM - Ministère de la Santé - Aurélien Tondoux"
-  description: "Conception et développement d'une application web Java/Spring pour l'indemnisation des accidents médicaux. Dématérialisation complète des processus métier."
 content: |
   ## :man_technologist: Mon rôle
 

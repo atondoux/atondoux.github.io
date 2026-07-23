@@ -1,6 +1,7 @@
 seo:
-  title: "A propos - Aurélien Tondoux"
-  description: "Ingénieur Logiciel Senior. 15+ ans d'expérience en Java, Kotlin, Spring Boot, Vue.js. Software Craftsmanship et TDD."
+  title: "À propos - Ingénieur Logiciel Senior - Aurélien Tondoux"
+  description: "Découvrez Aurélien Tondoux, ingénieur logiciel senior et tech lead freelance, spécialiste du Software Craftsmanship, du TDD et de la clean architecture."
+
 title: "A propos."
 description: "En savoir plus sur mon parcours d'Ingénieur Logiciel Senior."
 links:
@@ -63,4 +64,4 @@ content: |
 
   ## :handshake: Intéressé ? Discutons collaboration !
 
-  Si vous avez un projet ou une idée de projet et que vous souhaitez la faire avancer, n'hésitez pas à me contacter via <a href="https://www.linkedin.com/in/atondoux/" target="_blank">LinkedIn</a> ou à prendre un rendez-vous via <a href="https://calendly.com/atondoux/30min" target="_blank">Calendly</a>.
+  Si vous avez un projet ou une idée de projet et que vous souhaitez la faire avancer, n'hésitez pas à me contacter via <a href="https://www.linkedin.com/in/atondoux/" target="_blank">LinkedIn</a> ou à prendre un rendez-vous via <a href="https://calendly.com/atondoux/30min/" target="_blank">Calendly</a>.

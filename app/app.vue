@@ -8,7 +8,7 @@ useHead({
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { key: 'theme-color', name: 'theme-color', content: color }
+    { name: 'theme-color', content: color }
   ],
   link: [
     { rel: 'icon', href: '/favicon.ico' }
@@ -19,18 +19,14 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Aurélien Tondoux',
   ogSiteName: 'Aurélien Tondoux',
   ogImage: 'https://aurelientondoux.com/hero_v2.jpeg',
   ogImageAlt: 'Aurélien Tondoux profile picture',
   twitterImage: 'https://aurelientondoux.com/hero_v2.jpeg',
-  twitterCard: 'summary_large_image',
-  twitterSite: '@atondoux'
+  twitterCard: 'summary_large_image'
 })
 
 const navLinks = useNavLinks()
-
-// Since we're only querying blog and removing it, simplify to empty arrays
 const navigation = ref([])
 const files = ref([])
 </script>

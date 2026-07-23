@@ -16,9 +16,10 @@ const { data: projects } = await useAsyncData(`portfolio-${locale.value}`, () =>
   return queryCollection(`portfolio_${locale.value}`).order('date', 'DESC').all()
 })
 
+const pageData = page.value
 usePageSeo({
-  title: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
+  title: pageData.seo.title,
+  description: pageData.seo.description,
   ogType: 'website'
 })
 </script>
@@ -62,7 +63,6 @@ usePageSeo({
         :in-view-options="{ once: true }"
       >
         <UPageCard
-          :title="project.title"
           :description="project.description"
           :to="localePath(`/portfolio/${project.slug}`)"
           orientation="horizontal"
@@ -76,6 +76,11 @@ usePageSeo({
             description: 'text-gray-600 dark:text-gray-400'
           }"
         >
+          <template #title>
+            <p :data-testid="`project-title-${index}`">
+              {{ project.title }}
+            </p>
+          </template>
           <template #footer>
             <div
               v-if="project.tags && project.tags.length"

@@ -6,7 +6,6 @@ export function normalizePathForCanonical(path: string): string {
 export function usePageSeo(options: {
   title: string
   description: string
-  ogImage?: string
   ogType?: 'website' | 'article'
 }) {
   const { locale } = useI18n()
@@ -33,13 +32,6 @@ export function usePageSeo(options: {
     twitterDescription: options.description,
     robots: 'index, follow'
   })
-
-  if (options.ogImage) {
-    useSeoMeta({
-      ogImage: options.ogImage,
-      twitterImage: options.ogImage
-    })
-  }
 
   useHead({
     link: [

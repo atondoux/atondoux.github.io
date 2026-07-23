@@ -1,3 +1,7 @@
+seo:
+  title: "Freelance pricing - Aurélien Tondoux"
+  description: "Indicative rates for a freelance senior software engineer: tech lead missions, full-stack development and Software Craftsmanship consulting engagements."
+
 path: /pricing
 title: "Pricing."
 description: "These rates are provided as a guideline and may be adjusted according to the project."
@@ -10,6 +14,3 @@ links:
     to: "https://www.malt.com/profile/aurelientondoux"
     target: "_blank"
     color: "primary"
-seo:
-  title: "Pricing - Aurélien Tondoux"
-  description: "Pricing for Tech Lead, Full-Stack Development, and Software Craftsmanship consulting."

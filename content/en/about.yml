@@ -1,3 +1,7 @@
+seo:
+  title: "About - Senior Software Engineer - Aurélien Tondoux"
+  description: "Meet Aurélien Tondoux, senior software engineer and freelance tech lead specialised in Software Craftsmanship, TDD and clean architecture."
+
 title: "About me."
 description: "Learn more about my journey as a Senior Software Engineer."
 links:
@@ -9,9 +13,6 @@ links:
     to: "https://www.malt.com/profile/aurelientondoux"
     target: "_blank"
     color: "primary"
-seo:
-  title: "About - Aurélien Tondoux"
-  description: "Senior Software engineer. 15+ years in Java, Kotlin, Spring Boot, Vue.js. Software Craftsmanship and TDD specialist."
 content: |
   ## :earth_africa: My journey
 
@@ -62,4 +63,4 @@ content: |
 
   ## :handshake: Interested? Let's talk!
 
-  If you have a project or an idea and would like to move it forward, feel free to contact me via <a href="https://www.linkedin.com/in/atondoux/" target="_blank">LinkedIn</a> or schedule a meeting through <a href="https://calendly.com/atondoux/30min" target="_blank">Calendly</a>.
+  If you have a project or an idea and would like to move it forward, feel free to contact me via <a href="https://www.linkedin.com/in/atondoux/" target="_blank">LinkedIn</a> or schedule a meeting through <a href="https://calendly.com/atondoux/30min/" target="_blank">Calendly</a>.
