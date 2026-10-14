@@ -66,5 +66,9 @@ const metadata = {
     subtitle={t('home.contact.subtitle')}
     items={getContactItems(lang)}
     callToAction={getContactCallToAction(lang)}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Steps2>
 </PageLayout>
