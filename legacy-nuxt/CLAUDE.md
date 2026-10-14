@@ -1,6 +1,9 @@
-# CLAUDE.md
+# CLAUDE.md (ARCHIVED: legacy Nuxt site)
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+> **Read-only archive.** This folder is the frozen Nuxt implementation, kept as a reference for the Astro
+> migration at the repo root. Do not add features, upgrade dependencies or refactor it. Until the Astro
+> switch-over, `.github/workflows/deploy.yaml` still builds and deploys it from this folder. Run every command
+> below from `legacy-nuxt/`. It has its own pnpm 10 toolchain, `.npmrc` and `pnpm-workspace.yaml`.
 
 ## Project Overview
 
