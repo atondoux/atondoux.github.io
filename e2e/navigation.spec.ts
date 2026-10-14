@@ -125,3 +125,14 @@ test('shows the french about section in view when loading /fr/#about directly', 
 
   await expectSectionBelowHeader(page, 'about');
 });
+
+test('shows a decorative user-code icon next to the site name in the header logo', async ({ page }) => {
+  await page.goto('/fr/');
+
+  const logo = page.locator('#header a').filter({ hasText: 'AT Code Lab' });
+  const icon = logo.locator('svg[data-icon="tabler:user-code"]');
+
+  await expect(icon).toBeVisible();
+  await expect(icon).toHaveAttribute('aria-hidden', 'true');
+  await expect(logo).not.toContainText('🚀');
+});
