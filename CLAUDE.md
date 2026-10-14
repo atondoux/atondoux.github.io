@@ -91,6 +91,13 @@ pnpm test:all            # Unit + E2E
 - Home sections are `Features2` widgets fed from flat `ui.ts` keys (`home.<section>.title` / `.subtitle`).
 - The services catalog lives in `src/i18n/services.ts`: `getServiceItems(lang)` maps a typed catalog of keys to Tabler
   icons (legacy Lucide names were mapped; Tabler is fully allowlisted) and to `home.services.<key>.*` copy.
+- The pricing section is a `Pricing` widget (`id="pricing"`, after services, no CTAs) fed by `getPricingPlans(lang)` in
+  `src/i18n/pricing.ts`: a typed catalog mapped to `home.pricing.<plan>.*` copy and Tabler icons. The daily rate is
+  formatted with `Intl.NumberFormat(lang, { style: 'currency', currency: 'EUR' })` (fr "600 €", en "€600", with a
+  narrow no-break space: tests compare against `Intl` output). A plan without a rate falls back to the quote label and
+  has no period. The page passes `currency=""` because the price string is already formatted. `Pricing.astro` was
+  fixed generically: a card renders without a `period`, the currency span is optional, the card is `relative` so the
+  ribbon anchors to it, and a price with no period uses a smaller `text-3xl font-bold`.
 
 ### Styling
 

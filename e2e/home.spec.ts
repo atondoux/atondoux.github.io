@@ -22,6 +22,12 @@ const localizedHeroes = [
       'DevOps & Cloud',
       'Architecture',
     ],
+    pricingTitle: 'Tarifs',
+    pricingSubtitle: 'Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction de la mission.',
+    planTitles: ['Tech Lead', 'Développeur Full Stack', 'Applications & Conseils'],
+    dailyRate: '600 €',
+    quote: 'Devis sur demande',
+    ribbon: 'Le + populaire',
   },
   {
     lang: 'en',
@@ -44,6 +50,12 @@ const localizedHeroes = [
       'DevOps & Cloud',
       'Architecture',
     ],
+    pricingTitle: 'Pricing',
+    pricingSubtitle: 'These rates are provided as a guideline and may be adjusted according to the project.',
+    planTitles: ['Tech Lead', 'Full-Stack Developer', 'Applications & Consulting'],
+    dailyRate: '€600',
+    quote: 'Quote on request',
+    ribbon: 'Most Popular',
   },
 ] as const;
 
@@ -59,6 +71,12 @@ for (const {
   servicesTitle,
   servicesSubtitle,
   serviceTitles,
+  pricingTitle,
+  pricingSubtitle,
+  planTitles,
+  dailyRate,
+  quote,
+  ribbon,
 } of localizedHeroes) {
   test(`shows a single ${lang} h1 titled ${title} on ${path}`, async ({ page }) => {
     await page.goto(path);
@@ -120,5 +138,35 @@ for (const {
       return (about.compareDocumentPosition(services) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
     });
     expect(followsAbout).toBe(true);
+  });
+
+  test(`shows the ${lang} pricing section after the services catalog on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const pricing = page.locator('#pricing');
+    const normalizeSpaces = (text: string) => text.replace(/[\u202F\u00A0]/g, ' ');
+
+    await expect(pricing).toBeVisible();
+    await expect(pricing.getByRole('heading', { level: 2, name: pricingTitle })).toBeVisible();
+    await expect(pricing.getByText(pricingSubtitle, { exact: true })).toBeVisible();
+    await expect(pricing.getByRole('heading', { level: 3 })).toHaveText(planTitles);
+    const cards = pricing
+      .getByRole('heading', { level: 3 })
+      .locator('xpath=ancestor::div[contains(@class, "rounded-lg")][1]');
+    await expect(cards).toHaveCount(3);
+    const rateTexts = (await pricing.locator('.aw-price-monthly').allTextContents()).map(normalizeSpaces);
+    expect(rateTexts[0]).toContain(dailyRate);
+    expect(rateTexts[1]).toContain(dailyRate);
+    expect(rateTexts[2]).toContain(quote);
+    await expect(cards.first().getByText(ribbon, { exact: true })).toBeVisible();
+    await expect(pricing.getByRole('link')).toHaveCount(0);
+    await expect(pricing.getByRole('button')).toHaveCount(0);
+    const followsServices = await page.evaluate(() => {
+      const services = document.querySelector('#services');
+      const pricing = document.querySelector('#pricing');
+      if (!services || !pricing) return false;
+      return (services.compareDocumentPosition(pricing) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+    });
+    expect(followsServices).toBe(true);
   });
 }
