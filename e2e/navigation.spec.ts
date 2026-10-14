@@ -1,11 +1,11 @@
 import { expect, test, type Page } from '@playwright/test';
 
 const localizedMenus = [
-  { lang: 'fr', path: '/fr/', labels: ['Accueil', 'À propos', 'Services'], sitemap: 'Plan du site' },
-  { lang: 'en', path: '/en/', labels: ['Home', 'About', 'Services'], sitemap: 'Sitemap' },
+  { lang: 'fr', path: '/fr/', labels: ['Accueil', 'À propos', 'Services', 'Tarifs'], sitemap: 'Plan du site' },
+  { lang: 'en', path: '/en/', labels: ['Home', 'About', 'Services', 'Pricing'], sitemap: 'Sitemap' },
 ] as const;
 
-const SECTION_IDS = ['about', 'services'] as const;
+const SECTION_IDS = ['about', 'services', 'pricing'] as const;
 const MOBILE_VIEWPORT = { width: 390, height: 844 };
 
 test.use({ reducedMotion: 'reduce' });
@@ -51,6 +51,15 @@ for (const { lang, path, labels, sitemap } of localizedMenus) {
     await expectSectionBelowHeader(page, 'services');
   });
 
+  test(`scrolls to the pricing section when clicking ${labels[3]} on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    await headerNav(page).getByRole('link', { name: labels[3] }).click();
+
+    await expect(page).toHaveURL(`${path}#pricing`);
+    await expectSectionBelowHeader(page, 'pricing');
+  });
+
   test(`shows the ${sitemap} column with the same links in the footer of ${path}`, async ({ page }) => {
     await page.goto(path);
 
@@ -63,6 +72,7 @@ for (const { lang, path, labels, sitemap } of localizedMenus) {
     await expect(footer.getByText(sitemap, { exact: true })).toBeVisible();
     await expect(footer.getByRole('link', { name: labels[1], exact: true })).toHaveAttribute('href', headerHrefs[1]!);
     await expect(footer.getByRole('link', { name: labels[2], exact: true })).toHaveAttribute('href', headerHrefs[2]!);
+    await expect(footer.getByRole('link', { name: labels[3], exact: true })).toHaveAttribute('href', headerHrefs[3]!);
   });
 
   test(`resolves every header hash link to an element of ${path}`, async ({ page }) => {

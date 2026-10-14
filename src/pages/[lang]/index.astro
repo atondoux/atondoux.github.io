@@ -4,8 +4,10 @@ import type { GetStaticPaths } from 'astro';
 import PageLayout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
 
 import { locales } from '~/i18n/ui';
+import { getPricingPlans } from '~/i18n/pricing';
 import { getServiceItems } from '~/i18n/services';
 import { isLang, useTranslations } from '~/i18n/utils';
 
@@ -48,5 +50,12 @@ const metadata = {
     subtitle={t('home.services.subtitle')}
     items={getServiceItems(lang)}
     columns={3}
+  />
+  <Pricing
+    id="pricing"
+    title={t('home.pricing.title')}
+    subtitle={t('home.pricing.subtitle')}
+    prices={getPricingPlans(lang)}
+    currency=""
   />
 </PageLayout>

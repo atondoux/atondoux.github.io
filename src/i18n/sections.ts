@@ -7,6 +7,7 @@ const homeSections = [
   { labelKey: 'nav.home' },
   { labelKey: 'nav.about', id: 'about' },
   { labelKey: 'nav.services', id: 'services' },
+  { labelKey: 'nav.pricing', id: 'pricing' },
 ] as const satisfies readonly { labelKey: UiKey; id?: string }[];
 
 type HomeSection = (typeof homeSections)[number];
