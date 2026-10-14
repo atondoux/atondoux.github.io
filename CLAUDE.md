@@ -97,7 +97,7 @@ pnpm test:all            # Unit + E2E
   narrow no-break space: tests compare against `Intl` output). A plan without a rate falls back to the quote label and
   has no period. The page passes `currency=""` because the price string is already formatted. `Pricing.astro` was
   fixed generically: a card renders without a `period`, the currency span is optional, the card is `relative` so the
-  ribbon anchors to it, and a price with no period uses a smaller `text-3xl font-bold`.
+  ribbon anchors to it, and a price with no period (the short quote label "Sur devis" / "On quote", kept short so it stays on one line in the narrowest ~230px card) uses `text-5xl font-extrabold`.
 - The contact section is a `Steps2` widget (`id="contact"`, last, after pricing) fed by `getContactItems(lang)` and
   `getContactCallToAction(lang)` in `src/i18n/contact.ts`: a typed catalog (email, LinkedIn) mapped to
   `home.contact.<key>.title` copy and Tabler icons. The email address is defined once and shared by the email item

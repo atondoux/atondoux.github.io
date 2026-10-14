@@ -34,23 +34,23 @@ describe('listing the pricing plans', () => {
     expect(plans.map((plan) => plan.title)).toEqual(expectedTitles[lang]);
   });
 
-  it('describes each french plan with its legacy description', () => {
+  it('describes each french plan with a verb-first punchline', () => {
     const plans = getPricingPlans('fr');
 
     expect(plans.map((plan) => plan.subtitle)).toEqual([
-      'Augmenter vos équipes techniques avec un développeur senior.',
-      'Amener vos équipes de développement à l’excellence technique.',
-      'Un projet ou une mission spécifique adaptés à vos besoins.',
+      'Livrer plus vite, de la conception jusqu’à la production.',
+      'Amener vos équipes à l’excellence technique, au quotidien.',
+      'Cadrer un projet ou une mission taillés pour vos besoins.',
     ]);
   });
 
-  it('describes each english plan with its legacy description', () => {
+  it('describes each english plan with a verb-first punchline', () => {
     const plans = getPricingPlans('en');
 
     expect(plans.map((plan) => plan.subtitle)).toEqual([
-      'Augment your technical teams with a senior developer.',
-      'Bring your development teams to technical excellence.',
-      'A specific project or assignment tailored to your needs.',
+      'Ship faster, from design all the way to production.',
+      'Lead your teams to technical excellence, day after day.',
+      'Scope a project or assignment shaped around your needs.',
     ]);
   });
 
@@ -73,8 +73,8 @@ describe('listing the pricing plans', () => {
   });
 
   it.each([
-    ['fr', 'Devis sur demande'],
-    ['en', 'Quote on request'],
+    ['fr', 'Sur devis'],
+    ['en', 'On quote'],
   ] as const)('shows the %s consulting plan as a quote without a period', (lang, quote) => {
     const consulting = getPricingPlans(lang)[2];
 
