@@ -4,20 +4,22 @@ const localizedHeroes = [
   {
     lang: 'fr',
     path: '/fr/',
-    tagline: 'Tech Lead Full Stack · 20 ans d’expérience',
+    tagline: 'Tech Lead · 20 ans d’expérience',
     title: 'Aurélien TONDOUX',
-    subtitle: 'Je développe des logiciels de qualité qui résolvent des problèmes concrets.',
+    subtitle: 'Ingénierie logicielle orientée produit x boostée à l’IA',
+    emphasis: ['x boostée à l’IA'],
   },
   {
     lang: 'en',
     path: '/en/',
-    tagline: 'Full Stack Tech Lead · 20 years of experience',
+    tagline: 'Tech Lead · 20 years of experience',
     title: 'Aurélien TONDOUX',
-    subtitle: 'I build quality software that solves real-world problems.',
+    subtitle: 'Product-minded software engineering x AI-boosted',
+    emphasis: ['x AI-boosted'],
   },
 ] as const;
 
-for (const { lang, path, tagline, title, subtitle } of localizedHeroes) {
+for (const { lang, path, tagline, title, subtitle, emphasis } of localizedHeroes) {
   test(`shows a single ${lang} h1 titled ${title} on ${path}`, async ({ page }) => {
     await page.goto(path);
 
@@ -41,5 +43,13 @@ for (const { lang, path, tagline, title, subtitle } of localizedHeroes) {
     const heroSubtitle = page.getByText(subtitle, { exact: true });
 
     await expect(heroSubtitle).toBeVisible();
+  });
+
+  test(`emphasises key words in the ${lang} subtitle on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const emphasisedWords = page.getByText(subtitle, { exact: true }).locator('strong');
+
+    await expect(emphasisedWords).toHaveText(emphasis);
   });
 }
