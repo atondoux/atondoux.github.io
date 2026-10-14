@@ -4,11 +4,6 @@ export type Lang = (typeof locales)[number];
 
 export const defaultLang = 'fr' satisfies Lang;
 
-export const languages = {
-  fr: 'Français',
-  en: 'English',
-} satisfies Record<Lang, string>;
-
 export const hreflangs = {
   fr: 'fr',
   en: 'en',
@@ -21,6 +16,8 @@ export const openGraphLocales = {
 
 const fr = {
   'nav.home': 'Accueil',
+  'theme.toggle': 'Basculer entre thème clair et sombre',
+  'languageSwitcher.label': 'English version',
   'home.title': 'Aurélien Tondoux',
   'home.description': 'Site personnel d’Aurélien Tondoux.',
   'home.hero.tagline': 'Tech Lead · 20 ans d’expérience',
@@ -36,6 +33,8 @@ const fr = {
 
 const en = {
   'nav.home': 'Home',
+  'theme.toggle': 'Toggle between dark and light mode',
+  'languageSwitcher.label': 'Version française',
   'home.title': 'Aurélien Tondoux',
   'home.description': 'Personal website of Aurélien Tondoux.',
   'home.hero.tagline': 'Tech Lead · 20 years of experience',

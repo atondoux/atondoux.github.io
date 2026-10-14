@@ -3,8 +3,11 @@ import Layout from '~/layouts/Layout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
 
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
 import { getHeaderData, getFooterData } from '~/navigation';
-import { getLangFromUrl } from '~/i18n/utils';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
+import { buildSwitcherHref, getLocaleCode, getOtherLocale } from '~/i18n/switcher';
 
 import type { MetaData } from '~/types';
 
@@ -17,12 +20,24 @@ const { metadata } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const headerData = getHeaderData(lang);
 const footerData = getFooterData(lang);
+const t = useTranslations(lang);
+const targetLang = getOtherLocale(lang);
+const languageSwitcher = {
+  href: buildSwitcherHref(Astro.url.pathname, targetLang, getRelativeLocaleUrl),
+  hreflang: targetLang,
+  code: getLocaleCode(targetLang),
+  label: t('languageSwitcher.label'),
+};
 ---
 
 <Layout metadata={metadata}>
   <slot name="head" slot="head" />
   {Astro.slots.has('announcement') && <slot name="announcement" />}
-  {Astro.slots.has('header') ? <slot name="header" /> : <Header {...headerData} isSticky showToggleTheme />}
+  {Astro.slots.has('header') ? (
+    <slot name="header" />
+  ) : (
+    <Header {...headerData} isSticky showToggleTheme toggleThemeLabel={t('theme.toggle')} {languageSwitcher} />
+  )}
   <main class="flex-1">
     <slot />
   </main>

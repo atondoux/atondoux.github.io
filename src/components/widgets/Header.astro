@@ -2,18 +2,27 @@
 import { Icon } from 'astro-icon/components';
 import Logo from '~/components/Logo.astro';
 import ToggleTheme from '~/components/common/ToggleTheme.astro';
+import LanguageSwitcher from '~/components/common/LanguageSwitcher.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
 import Button from '~/components/ui/Button.astro';
 
 import { getHomePermalink } from '~/utils/permalinks';
 import { trimSlash } from '~/utils/permalinks';
 import type { CallToAction } from '~/types';
+import type { Lang } from '~/i18n/ui';
 
 interface Link {
   text?: string;
   href?: string;
   ariaLabel?: string;
   icon?: string;
+}
+
+interface LanguageSwitcherProps {
+  href: string;
+  hreflang: Lang;
+  label: string;
+  code: string;
 }
 
 interface MenuLink extends Link {
@@ -28,6 +37,8 @@ export interface Props {
   isDark?: boolean;
   isFullWidth?: boolean;
   showToggleTheme?: boolean;
+  toggleThemeLabel?: string;
+  languageSwitcher?: LanguageSwitcherProps;
   position?: string;
 }
 
@@ -39,6 +50,8 @@ const {
   isDark = false,
   isFullWidth = false,
   showToggleTheme = false,
+  toggleThemeLabel,
+  languageSwitcher,
   position = 'center',
 } = Astro.props;
 
@@ -47,7 +60,21 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 const isActive = (href?: string) => typeof href === 'string' && `/${trimSlash(href)}` === currentPath;
 
 const persistKey = `header-${Array.from(
-  JSON.stringify({ links, actions, isSticky, isDark, isFullWidth, showToggleTheme, position })
+  JSON.stringify({
+    links,
+    actions,
+    isSticky,
+    isDark,
+    isFullWidth,
+    showToggleTheme,
+    toggleThemeLabel,
+    languageSwitcher: languageSwitcher && {
+      hreflang: languageSwitcher.hreflang,
+      label: languageSwitcher.label,
+      code: languageSwitcher.code,
+    },
+    position,
+  })
 )
   .reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0, 7)
   .toString(36)}`;
@@ -139,7 +166,12 @@ const persistKey = `header-${Array.from(
         ]}
       >
         <div class="items-center flex justify-between w-full lg:w-auto">
-          <div class="flex">{showToggleTheme && <ToggleTheme iconClass="w-6 h-6 lg:w-5 lg:h-5 lg:inline-block" />}</div>
+          <div class="flex">
+            {languageSwitcher && <LanguageSwitcher {...languageSwitcher} />}
+            {showToggleTheme && (
+              <ToggleTheme label={toggleThemeLabel} iconClass="w-6 h-6 lg:w-5 lg:h-5 lg:inline-block" />
+            )}
+          </div>
           {actions?.length ? (
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
               {actions.map((btnProps) => (
