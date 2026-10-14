@@ -10,7 +10,7 @@ const localizedHeroes = [
     emphasis: ['— boostée à l’IA'],
     aboutTitle: 'À propos',
     aboutSubtitle:
-      'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs et de leurs vrais besoins pour bien saisir le pourquoi, avant de mobiliser mes compétences techniques sur le comment. Pour moi, la technologie doit être au service du produit, l’expérience utilisateur prime sur la liste de fonctionnalités, et la qualité n’est pas négociable.',
+      'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs finaux pour comprendre leurs besoins, leurs usages, leurs contraintes, ce qui les freine au quotidien. Un logiciel n’a de valeur que s’il est utilisé, alors je soigne l’expérience utilisateur autant que le code. Pour moi, la technologie doit être au service du produit, et la qualité n’est pas négociable.',
     servicesTitle: 'Catalogue de services',
     servicesSubtitle: 'Des logiciels qui durent, des équipes qui progressent.',
     serviceTitles: [
@@ -44,7 +44,7 @@ const localizedHeroes = [
     emphasis: ['— AI-boosted'],
     aboutTitle: 'About',
     aboutSubtitle:
-      'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from users and their real needs to understand the why, before applying my technical skills to the how. To me, technology must serve the product, user experience matters more than feature lists, and quality is non-negotiable.',
+      'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from end users to understand their needs, how they work, their constraints, what slows them down every day. Software only has value if people use it, so I care about the user experience as much as the code. To me, technology must serve the product, and quality is non-negotiable.',
     servicesTitle: 'Services',
     servicesSubtitle: 'Software that lasts, teams that grow.',
     serviceTitles: [
