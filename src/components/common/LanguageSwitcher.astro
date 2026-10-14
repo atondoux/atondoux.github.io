@@ -1,0 +1,64 @@
+---
+import { hreflangs, type Lang } from '~/i18n/ui';
+
+export interface Props {
+  href: string;
+  hreflang: Lang;
+  label: string;
+  code: string;
+  class?: string;
+  codeClass?: string;
+}
+
+const {
+  href,
+  hreflang,
+  label,
+  code,
+  class:
+    className = 'text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center',
+  codeClass = 'min-w-6 h-6 lg:min-w-5 lg:h-5 inline-flex items-center justify-center text-sm font-semibold tracking-wide leading-none',
+} = Astro.props;
+
+const targetHreflang = hreflangs[hreflang];
+---
+
+<aw-language-switcher>
+  <a
+    {href}
+    {hreflang}
+    lang={hreflang}
+    class={className}
+    aria-label={label}
+    title={label}
+    data-aw-lang-switch
+    data-target-hreflang={targetHreflang}
+    data-fallback-href={href}
+  >
+    <span class={codeClass} aria-hidden="true">
+      {code}
+    </span>
+  </a>
+</aw-language-switcher>
+
+<style>
+  aw-language-switcher {
+    display: contents;
+  }
+</style>
+
+<script>
+  const refreshLanguageSwitchHref = () => {
+    const alternates = Array.from(document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]'));
+    document.querySelectorAll<HTMLAnchorElement>('[data-aw-lang-switch]').forEach((link) => {
+      const alternate = alternates.find(
+        (candidate) => candidate.getAttribute('hreflang') === link.dataset.targetHreflang
+      );
+      const target = alternate ? new URL(alternate.href).pathname : link.dataset.fallbackHref;
+      if (!target) return;
+      link.href = target;
+    });
+  };
+
+  document.addEventListener('astro:page-load', refreshLanguageSwitchHref);
+</script>

@@ -105,3 +105,88 @@ test('lists both locales with their alternates in the sitemap', async ({ request
   expect(sitemap).toContain(`<xhtml:link rel="alternate" hreflang="fr" href="${SITE_URL}/fr/"/>`);
   expect(sitemap).toContain(`<xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}/en/"/>`);
 });
+
+const switchers = [
+  {
+    lang: 'fr',
+    path: '/fr/',
+    label: 'English version',
+    code: 'EN',
+    targetLang: 'en',
+    targetPath: '/en/',
+    targetLabel: 'Version française',
+  },
+  {
+    lang: 'en',
+    path: '/en/',
+    label: 'Version française',
+    code: 'FR',
+    targetLang: 'fr',
+    targetPath: '/fr/',
+    targetLabel: 'English version',
+  },
+] as const;
+
+for (const { lang, path, label, code, targetLang, targetPath, targetLabel } of switchers) {
+  test(`shows a language switcher on ${path} pointing to ${targetLang}`, async ({ page }) => {
+    await page.goto(path);
+
+    const switcher = page.getByRole('link', { name: label });
+
+    await expect(switcher).toHaveAttribute('hreflang', targetLang);
+    await expect(switcher).toHaveAttribute('href', targetPath);
+  });
+
+  test(`shows the ${code} code on the language switcher of ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const switcher = page.getByRole('link', { name: label });
+
+    await expect(switcher).toHaveText(code);
+    await expect(switcher.getByText(code)).toHaveAttribute('aria-hidden', 'true');
+  });
+
+  test(`switches from ${path} to ${targetPath} and back`, async ({ page }) => {
+    await page.goto(path);
+
+    await page.getByRole('link', { name: label }).click();
+    await page.waitForURL(`**${targetPath}`);
+
+    await expect(page.locator('html')).toHaveAttribute('lang', targetLang);
+    await expect(page.getByRole('link', { name: targetLabel })).toHaveAttribute('href', path);
+
+    await page.getByRole('link', { name: targetLabel }).click();
+    await page.waitForURL(`**${path}`);
+
+    await expect(page.locator('html')).toHaveAttribute('lang', lang);
+  });
+
+  test(`has no text language link in the header nav or footer of ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const textLinks = page.locator('nav a, footer a').filter({ hasText: /^(English|Français)$/ });
+
+    await expect(textLinks).toHaveCount(0);
+  });
+}
+
+test('offers both locale homes on the 404 page instead of a language switcher', async ({ page }) => {
+  await page.goto('/does-not-exist/');
+
+  await expect(page.locator('[data-aw-lang-switch]')).toHaveCount(0);
+  await expect(page.locator('section a[href="/fr/"]')).toHaveCount(1);
+  await expect(page.locator('section a[href="/en/"]')).toHaveCount(1);
+});
+
+test('places the theme toggle at the far right, after the language switcher', async ({ page }) => {
+  await page.goto('/fr/');
+
+  const themeToggleIsLast = await page.evaluate(() => {
+    const themeToggle = document.querySelector('#header [data-aw-toggle-color-scheme]');
+    const switcher = document.querySelector('#header [data-aw-lang-switch]');
+    if (!themeToggle || !switcher) return false;
+    return Boolean(switcher.compareDocumentPosition(themeToggle) & Node.DOCUMENT_POSITION_FOLLOWING);
+  });
+
+  expect(themeToggleIsLast).toBe(true);
+});

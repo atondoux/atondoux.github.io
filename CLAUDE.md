@@ -57,7 +57,7 @@ pnpm test:all            # Unit + E2E
 ### i18n
 
 - **Single source of truth:** `src/i18n/ui.ts` exports `locales` (`['fr','en'] as const`), `Lang`, `defaultLang`,
-  `languages`, `hreflangs` and `openGraphLocales`. `astro.config.ts` imports them for the i18n and sitemap config.
+  `hreflangs` and `openGraphLocales`. `astro.config.ts` imports them for the i18n and sitemap config.
 - **Routing:** Astro built-in i18n, `prefixDefaultLocale: true`, `redirectToDefaultLocale: false`. Every page lives
   under `src/pages/[lang]/` with `getStaticPaths` over the locales. `src/pages/index.astro` is the only root
   redirect to `/fr/`. Astro throws `MissingIndexForInternationalization` without it, and enabling
@@ -73,6 +73,11 @@ pnpm test:all            # Unit + E2E
     and unit tests pass a fake, because the `astro:i18n` virtual module doesn't exist under Vitest. Keep
     helpers that need Astro virtual modules testable the same way.
     `getPathWithoutLocale` always returns `''` or a path with a trailing slash (`trailingSlash: true`).
+  - **Language switcher:** `LanguageSwitcher.astro` is a text link showing the uppercase code of the destination language (`getLocaleCode` in `src/i18n/switcher.ts`: "EN" on French pages, "FR" on English pages; the code span is `aria-hidden`, the link keeps the full `aria-label`) to the left of `ToggleTheme` (the theme toggle stays at the far right) in
+    `Header.astro`, fed by `PageLayout.astro` (`getOtherLocale`, `buildSwitcherHref` in `src/i18n/switcher.ts`,
+    URL builder injected). The header is `transition:persist`ed, so the `href` is refreshed on `astro:page-load`
+    from the page's `link[rel="alternate"][hreflang]` (matched on `data-target-hreflang`), falling back to `data-fallback-href`. The 404 page has no
+    header and links both locale homes itself.
   - `Layout.astro` takes an optional `lang` prop (404 passes `fr`), sets `<html lang>`, builds the alternates and
     defaults the canonical URL to the current locale's absolute URL. `Metadata.astro` renders the canonical and
     hreflang links and sets `og:locale` from `openGraphLocales[lang]` (`fr_FR`, `en_US`), not from config. Pages
