@@ -1,28 +1,22 @@
-import { defineConfig } from 'vitest/config'
-import vue from '@vitejs/plugin-vue'
+/// <reference types="vitest/config" />
+import { getViteConfig } from 'astro/config';
 
-export default defineConfig({
-  plugins: [vue()],
+const COVERAGE_THRESHOLD = 80;
+
+export default getViteConfig({
   test: {
-    // Only run unit tests, exclude E2E tests
-    include: ['**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-    exclude: [
-      '**/node_modules/**',
-      '**/dist/**',
-      '**/.output/**',
-      '**/e2e/**' // Exclude E2E tests (handled by Playwright)
-    ],
-    environment: 'happy-dom',
-    globals: true,
+    include: ['src/**/*.test.ts'],
     coverage: {
       provider: 'v8',
-      reporter: ['text', 'json', 'html'],
-      exclude: [
-        '**/node_modules/**',
-        '**/dist/**',
-        '**/*.config.{js,ts}',
-        '**/e2e/**' // Don't track E2E test coverage
-      ]
-    }
-  }
-})
+      include: ['src/i18n/**'],
+      exclude: ['src/i18n/**/*.test.ts'],
+      reporter: ['text', 'html'],
+      thresholds: {
+        lines: COVERAGE_THRESHOLD,
+        functions: COVERAGE_THRESHOLD,
+        branches: COVERAGE_THRESHOLD,
+        statements: COVERAGE_THRESHOLD,
+      },
+    },
+  },
+});

@@ -1,10 +1,16 @@
-ignoredBuiltDependencies:
-  - '@parcel/watcher'
-  - '@tailwindcss/oxide'
-  - esbuild
-  - unrs-resolver
-  - vue-demi
+overrides:
+  yaml: '>=2.8.3'
+  astro-compress>sharp: ^0.35.3
+  astro-compress>svgo: ^4.1.0
+  postcss>nanoid: ^3.3.18
+  deepmerge-ts: '>=8.0.2'
+  fast-uri: ^3.1.6
 
-onlyBuiltDependencies:
-  - better-sqlite3
-  - sharp
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+minimumReleaseAgeExclude:
+  - '@playwright/test@1.64.1'
+  - playwright-core@1.64.1
+  - playwright@1.64.1
