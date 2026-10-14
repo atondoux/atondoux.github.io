@@ -53,6 +53,11 @@ pnpm test:all            # Unit + E2E
   `getPermalink` depends on it. `PageLayout` renders an announcement only when a page fills the `announcement` slot.
 - `src/navigation.ts` exposes `getHeaderData(lang)` / `getFooterData(lang)`. Navigation is localized.
 - `~` is aliased to `src/`.
+- Favicons (`src/components/Favicons.astro`) are the brand "AT" icons copied from `legacy-nuxt/public/`: 32/16 PNG and
+  apple-touch in `src/assets/favicons/`, and `favicon.ico` in `public/` because browsers and crawlers probe
+  `/favicon.ico` directly. The template `favicon.svg` was removed: browsers prefer an SVG icon, so keeping it would show
+  the AstroWind logo. `e2e/favicons.spec.ts` pins each served icon by SHA-256. The legacy `site.webmanifest` and
+  `android-chrome-*` icons were not carried over.
 - `src/i18n/sections.ts` `getSectionLinks(lang, homeUrl)` is the home section catalog (home, `#about`, `#services`). It feeds the header links and the footer "sitemap" column in `src/navigation.ts`; `homeUrl` is injected (no `astro:i18n`) and the ids must match `src/pages/[lang]/index.astro` (guarded by `e2e/navigation.spec.ts`). Add new sections there.
 
 ### i18n
@@ -127,16 +132,22 @@ pnpm test:all            # Unit + E2E
 
 ## Deployment
 
-- **No deployment workflow yet.** The Nuxt deployment was removed, and nothing in the repo deploys to GitHub
-  Pages. Pages keeps serving the last Nuxt deployment until a new one replaces it. `legacy-nuxt/` is never
-  built or deployed again.
-- `.github/workflows/ci.yaml` checks the Astro site on pushes to `main`, on PRs and on manual dispatch (one run per
-  ref, older runs are cancelled): a `quality` job (check, coverage, e2e) and a `build` job using
-  `withastro/action@v6` (Node 24.21.0, pnpm 12.11.2), which uploads the Pages artifact the future deploy will use.
-- **Go-live** (when the Astro content is ready):
-  1. Add a `deploy` job to `ci.yaml`: `needs: build`, main only, `pages: write` + `id-token: write`,
-     environment `github-pages`, `actions/deploy-pages@v5`.
-  2. **Handle the URL change.** Nuxt served French without a prefix (`/about`), and Astro serves `/fr/about/`.
-     Add redirects for the old URLs (Astro `redirects`) and resubmit the sitemap, or the site loses its SEO
-     history.
-- The custom domain is configured in the GitHub Pages settings (there is no `CNAME` file).
+- `.github/workflows/ci.yaml` runs `quality` (check, coverage, e2e) → `build` (`withastro/action@v6`, Node 24.21.0,
+  pnpm 12.11.2, uploads the Pages artifact) → `deploy` (`actions/deploy-pages@v5`). Each job needs the previous one,
+  so a failing check or test never ships. It runs on pushes to `main`, on PRs and on manual dispatch.
+- **Deploy only from `main`** (`github.ref == 'refs/heads/main'`, never on `pull_request`). A `workflow_dispatch` on
+  `main` also deploys, as a manual redeploy. PRs and other branches build and test only.
+- Top-level permissions stay `contents: read`. Only `deploy` gets `pages: write` + `id-token: write`.
+- Deploys use the `pages` concurrency group with `cancel-in-progress: false`. The workflow-level concurrency only
+  cancels older runs off `main`, so a push to `main` never kills a deployment halfway (a newer queued run on `main`
+  can still replace an older pending one: the newest commit deploys).
+- Pages source is **GitHub Actions**, and the `github-pages` environment must allow deployments from `main`. The
+  custom domain is configured in the GitHub Pages settings (there is no `CNAME` file).
+- **Legacy Nuxt URLs are intentionally not redirected.** `/about/`, `/services/`, `/portfolio/*` and their
+  `/en/<path>/` twins
+  serve the noindex 404 page, which links both locale homes. Resubmit the sitemap in Search Console after the first
+  deploy.
+- `public/robots.txt` has no `Sitemap:` line: the template integration in `vendor/integration` adds
+  `Sitemap: https://aurelientondoux.com/sitemap-index.xml` to `dist/robots.txt` at build (guarded by
+  `e2e/i18n.spec.ts`).
+- `legacy-nuxt/` is never built or deployed again.

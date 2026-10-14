@@ -1,5 +1,5 @@
 site:
-  name: Aurélien Tondoux
+  name: AT Code Lab
   site: 'https://aurelientondoux.com'
   base: '/'
   trailingSlash: true
