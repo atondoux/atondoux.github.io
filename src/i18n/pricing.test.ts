@@ -10,19 +10,19 @@ const formatRate = (lang: 'fr' | 'en') =>
 const normalizeSpaces = (text: string) => text.replace(/[\u202F\u00A0]/g, '\u0020');
 
 const expectedTitles = {
-  fr: ['Tech Lead', 'Développeur Full Stack', 'Applications & Conseils'],
-  en: ['Tech Lead', 'Full-Stack Developer', 'Applications & Consulting'],
+  fr: ['Développeur Full Stack', 'Tech Lead', 'Applications & Conseils'],
+  en: ['Full-Stack Developer', 'Tech Lead', 'Applications & Consulting'],
 } as const;
 
 const expectedFeatures = {
   fr: [
-    ['Software Craftsmanship', 'Test-Driven Development', 'Bonnes pratiques'],
     ['Conception', 'Développement backend', 'Développement frontend', 'Déploiement'],
+    ['Software Craftsmanship', 'Test-Driven Development', 'Bonnes pratiques'],
     ["Lancement d'un projet", 'Audit qualité', 'Revue de code'],
   ],
   en: [
-    ['Software Craftsmanship', 'Test-Driven Development', 'Best practices'],
     ['Design', 'Backend development', 'Frontend development', 'Deployment'],
+    ['Software Craftsmanship', 'Test-Driven Development', 'Best practices'],
     ['Project launch', 'Quality audit', 'Code review'],
   ],
 } as const;
@@ -38,8 +38,8 @@ describe('listing the pricing plans', () => {
     const plans = getPricingPlans('fr');
 
     expect(plans.map((plan) => plan.subtitle)).toEqual([
-      'Amener vos équipes de développement à l’excellence technique.',
       'Augmenter vos équipes techniques avec un développeur senior.',
+      'Amener vos équipes de développement à l’excellence technique.',
       'Un projet ou une mission spécifique adaptés à vos besoins.',
     ]);
   });
@@ -48,28 +48,28 @@ describe('listing the pricing plans', () => {
     const plans = getPricingPlans('en');
 
     expect(plans.map((plan) => plan.subtitle)).toEqual([
-      'Bring your development teams to technical excellence.',
       'Augment your technical teams with a senior developer.',
+      'Bring your development teams to technical excellence.',
       'A specific project or assignment tailored to your needs.',
     ]);
   });
 
   it('formats the french daily rate as 600 € per day', () => {
-    const [techLead, fullStack] = getPricingPlans('fr');
+    const [fullStack, techLead] = getPricingPlans('fr');
 
     expect(techLead?.price).toBe(formatRate('fr'));
     expect(fullStack?.price).toBe(formatRate('fr'));
     expect(normalizeSpaces(String(techLead?.price))).toBe('600 €');
-    expect(techLead?.period).toBe('/ jour');
+    expect(techLead?.period).toBe('par jour');
   });
 
   it('formats the english daily rate as €600 per day', () => {
-    const [techLead, fullStack] = getPricingPlans('en');
+    const [fullStack, techLead] = getPricingPlans('en');
 
     expect(techLead?.price).toBe(formatRate('en'));
     expect(fullStack?.price).toBe(formatRate('en'));
     expect(normalizeSpaces(String(techLead?.price))).toBe('€600');
-    expect(techLead?.period).toBe('/ day');
+    expect(techLead?.period).toBe('per day');
   });
 
   it.each([
@@ -83,14 +83,14 @@ describe('listing the pricing plans', () => {
   });
 
   it.each([
-    ['fr', 'Le + populaire'],
-    ['en', 'Most Popular'],
+    ['fr', 'Populaire'],
+    ['en', 'Popular'],
   ] as const)('marks only the tech lead plan with the %s ribbon and highlight', (lang, ribbon) => {
     const plans = getPricingPlans(lang);
 
-    expect(plans.map((plan) => plan.hasRibbon === true)).toEqual([true, false, false]);
-    expect(plans.map((plan) => plan.highlight === true)).toEqual([true, false, false]);
-    expect(plans[0]?.ribbonTitle).toBe(ribbon);
+    expect(plans.map((plan) => plan.hasRibbon === true)).toEqual([false, true, false]);
+    expect(plans.map((plan) => plan.highlight === true)).toEqual([false, true, false]);
+    expect(plans[1]?.ribbonTitle).toBe(ribbon);
   });
 
   it.each(['fr', 'en'] as const)('lists the %s feature labels of each plan', (lang) => {

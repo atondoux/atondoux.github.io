@@ -24,10 +24,10 @@ const localizedHeroes = [
     ],
     pricingTitle: 'Tarifs',
     pricingSubtitle: 'Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction de la mission.',
-    planTitles: ['Tech Lead', 'Développeur Full Stack', 'Applications & Conseils'],
+    planTitles: ['Développeur Full Stack', 'Tech Lead', 'Applications & Conseils'],
     dailyRate: '600 €',
     quote: 'Devis sur demande',
-    ribbon: 'Le + populaire',
+    ribbon: 'Populaire',
   },
   {
     lang: 'en',
@@ -52,10 +52,10 @@ const localizedHeroes = [
     ],
     pricingTitle: 'Pricing',
     pricingSubtitle: 'These rates are provided as a guideline and may be adjusted according to the project.',
-    planTitles: ['Tech Lead', 'Full-Stack Developer', 'Applications & Consulting'],
+    planTitles: ['Full-Stack Developer', 'Tech Lead', 'Applications & Consulting'],
     dailyRate: '€600',
     quote: 'Quote on request',
-    ribbon: 'Most Popular',
+    ribbon: 'Popular',
   },
 ] as const;
 
@@ -158,7 +158,7 @@ for (const {
     expect(rateTexts[0]).toContain(dailyRate);
     expect(rateTexts[1]).toContain(dailyRate);
     expect(rateTexts[2]).toContain(quote);
-    await expect(cards.first().getByText(ribbon, { exact: true })).toBeVisible();
+    await expect(cards.nth(1).getByText(ribbon, { exact: true })).toBeVisible();
     await expect(pricing.getByRole('link')).toHaveCount(0);
     await expect(pricing.getByRole('button')).toHaveCount(0);
     const followsServices = await page.evaluate(() => {
