@@ -107,7 +107,7 @@ const hasPeriod = (period: Price['period'], billing: 'monthly' | 'yearly') => Bo
                               {currency && <span class="text-5xl">{currency}</span>}
                               <span
                                 class:list={
-                                  hasPeriod(period, billing) ? 'text-6xl font-extrabold' : 'text-3xl font-bold'
+                                  hasPeriod(period, billing) ? 'text-6xl font-extrabold' : 'text-5xl font-extrabold'
                                 }
                               >
                                 {isDual(price) ? price[billing] : price}

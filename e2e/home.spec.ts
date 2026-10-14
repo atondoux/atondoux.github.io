@@ -24,9 +24,9 @@ const localizedHeroes = [
     ],
     pricingTitle: 'Tarifs',
     pricingSubtitle: 'Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction de la mission.',
-    planTitles: ['Développeur Full Stack', 'Tech Lead', 'Applications & Conseils'],
+    planTitles: ['Développeur Full Stack', 'Tech Lead', 'Consultant'],
     dailyRate: '600 €',
-    quote: 'Devis sur demande',
+    quote: 'Sur devis',
     ribbon: 'Populaire',
     contactTitle: 'Contact',
     contactSubtitle:
@@ -58,9 +58,9 @@ const localizedHeroes = [
     ],
     pricingTitle: 'Pricing',
     pricingSubtitle: 'These rates are provided as a guideline and may be adjusted according to the project.',
-    planTitles: ['Full-Stack Developer', 'Tech Lead', 'Applications & Consulting'],
+    planTitles: ['Full-Stack Developer', 'Tech Lead', 'Consultant'],
     dailyRate: '€600',
-    quote: 'Quote on request',
+    quote: 'On quote',
     ribbon: 'Popular',
     contactTitle: 'Contact',
     contactSubtitle:
