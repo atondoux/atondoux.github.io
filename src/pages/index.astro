@@ -3,5 +3,5 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
 
 import { defaultLang } from '~/i18n/ui';
 
-return Astro.redirect(getRelativeLocaleUrl(defaultLang));
+return Astro.redirect(getRelativeLocaleUrl(defaultLang), 301);
 ---

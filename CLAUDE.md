@@ -68,7 +68,9 @@ pnpm test:all            # Unit + E2E
   under `src/pages/[lang]/` with `getStaticPaths` over the locales. `src/pages/index.astro` is the only root
   redirect to `/fr/`. Astro throws `MissingIndexForInternationalization` without it, and enabling
   `redirectToDefaultLocale` on top of it defines the redirect twice (build warning). The built `dist/index.html` is
-  `noindex` with a canonical on `https://aurelientondoux.com/fr/` and is filtered out of the sitemap.
+  `noindex` with a canonical on `https://aurelientondoux.com/fr/` and is filtered out of the sitemap. The redirect
+  passes status `301`: in a static build Astro emits a meta refresh whose delay is 2 s for a 302 (the default) and
+  0 s otherwise, so a 302 leaves the "Redirecting from / to /fr/" page visible (guarded by `e2e/i18n.spec.ts`).
 - **UI strings:** typed dictionaries in `src/i18n/ui.ts`. `fr` is the source of truth, and `en` is
   `satisfies Record<keyof typeof ui.fr, string>`, so a missing translation fails `astro check`. Read them with
   `useTranslations(lang)` and detect the locale with `getLangFromUrl(url)` (`src/i18n/utils.ts`). No i18n
