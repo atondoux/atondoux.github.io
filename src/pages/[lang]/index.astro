@@ -3,6 +3,7 @@ import type { GetStaticPaths } from 'astro';
 
 import PageLayout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 
 import { locales } from '~/i18n/ui';
 import { isLang, useTranslations } from '~/i18n/utils';
@@ -13,6 +14,8 @@ const { lang } = Astro.params;
 if (!isLang(lang)) throw new Error(`Unsupported locale: ${lang}`);
 
 const t = useTranslations(lang);
+
+const emphasisClass = '[&_strong]:font-semibold [&_strong]:text-accent dark:[&_strong]:text-white';
 
 const metadata = {
   title: t('home.title'),
@@ -26,6 +29,16 @@ const metadata = {
     tagline={t('home.hero.tagline')}
     title={t('home.hero.title')}
     subtitle={t('home.hero.subtitle')}
-    subtitleClass="[&_strong]:font-semibold [&_strong]:text-accent dark:[&_strong]:text-white"
+    subtitleClass={emphasisClass}
   />
+  <Features2
+    id="about"
+    title={t('home.about.title')}
+    subtitle={t('home.about.subtitle')}
+    classes={{ headline: { subtitle: `text-xl ${emphasisClass}` } }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
 </PageLayout>
