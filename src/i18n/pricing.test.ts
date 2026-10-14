@@ -10,8 +10,8 @@ const formatRate = (lang: 'fr' | 'en') =>
 const normalizeSpaces = (text: string) => text.replace(/[\u202F\u00A0]/g, '\u0020');
 
 const expectedTitles = {
-  fr: ['Développeur Full Stack', 'Tech Lead', 'Applications & Conseils'],
-  en: ['Full-Stack Developer', 'Tech Lead', 'Applications & Consulting'],
+  fr: ['Développeur Full Stack', 'Tech Lead', 'Consultant'],
+  en: ['Full-Stack Developer', 'Tech Lead', 'Consultant'],
 } as const;
 
 const expectedFeatures = {
