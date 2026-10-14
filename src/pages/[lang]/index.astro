@@ -1,0 +1,26 @@
+---
+import type { GetStaticPaths } from 'astro';
+
+import PageLayout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+
+import { locales } from '~/i18n/ui';
+import { isLang, useTranslations } from '~/i18n/utils';
+
+export const getStaticPaths = (() => locales.map((lang) => ({ params: { lang } }))) satisfies GetStaticPaths;
+
+const { lang } = Astro.params;
+if (!isLang(lang)) throw new Error(`Unsupported locale: ${lang}`);
+
+const t = useTranslations(lang);
+
+const metadata = {
+  title: t('home.title'),
+  ignoreTitleTemplate: true,
+  description: t('home.description'),
+};
+---
+
+<PageLayout metadata={metadata}>
+  <HeroText title={t('home.title')} subtitle={t('home.description')} />
+</PageLayout>

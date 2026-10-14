@@ -1,0 +1,38 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+import Layout from '~/layouts/Layout.astro';
+
+import { defaultLang, locales } from '~/i18n/ui';
+import { useTranslations } from '~/i18n/utils';
+
+const messages = locales.map((lang) => ({ lang, t: useTranslations(lang), href: getRelativeLocaleUrl(lang) }));
+const [primary] = messages;
+
+const metadata = {
+  title: primary.t('notFound.title'),
+  robots: { index: false, follow: false },
+};
+---
+
+<Layout metadata={metadata} lang={defaultLang}>
+  <section class="flex items-center h-full p-16">
+    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+      <div class="max-w-md text-center">
+        <h2 class="mb-8 font-bold text-9xl">
+          <span class="sr-only">{primary.t('notFound.title')}</span>
+          <span class="text-primary">404</span>
+        </h2>
+        {messages.map(({ lang, t, href }) => (
+          <div lang={lang} class="mb-8">
+            <p class="text-3xl font-semibold md:text-3xl">{t('notFound.title')}</p>
+            <p class="mt-4 mb-4 text-lg text-muted dark:text-slate-400">{t('notFound.description')}</p>
+            <a href={href} class="btn">
+              {t('notFound.backHome')}
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

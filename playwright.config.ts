@@ -1,0 +1,30 @@
+import { defineConfig, devices } from '@playwright/test';
+
+const PORT = 4321;
+const BASE_URL = `http://127.0.0.1:${PORT}`;
+const isCI = Boolean(process.env.CI);
+
+export default defineConfig({
+  testDir: './e2e',
+  fullyParallel: true,
+  forbidOnly: isCI,
+  retries: isCI ? 2 : 0,
+  workers: isCI ? 1 : undefined,
+  reporter: isCI ? [['github'], ['html', { open: 'never' }]] : [['list'], ['html', { open: 'never' }]],
+  use: {
+    baseURL: BASE_URL,
+    trace: 'on-first-retry',
+  },
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
+  ],
+  webServer: {
+    command: `pnpm build && pnpm preview --host 127.0.0.1 --port ${PORT} --ignore-lock`,
+    url: BASE_URL,
+    reuseExistingServer: !isCI,
+    timeout: 180 * 1000,
+  },
+});

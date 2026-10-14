@@ -1,15 +1,17 @@
-# Nuxt
+# Astro
+dist/
+.astro/
+
+# Nuxt leftovers from before the legacy-nuxt archive
 .nuxt/
 .output/
 .data/
 dist
-dist/
-/.output.txt
 
 # Playwright
 /test-results/
-/playwright-report/data/
 /playwright-report/
+/blob-report/
 
 # Dependencies
 node_modules/
@@ -28,3 +30,6 @@ node_modules/
 
 # Logs
 *.log
+
+# Vitest coverage
+/coverage/

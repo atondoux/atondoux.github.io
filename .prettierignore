@@ -1,0 +1,10 @@
+dist
+node_modules
+.github
+.changeset
+.astro
+legacy-nuxt
+pnpm-lock.yaml
+test-results
+playwright-report
+coverage
