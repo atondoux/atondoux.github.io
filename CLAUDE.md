@@ -99,7 +99,7 @@ pnpm test:all            # Unit + E2E
   fixed generically: a card renders without a `period`, the currency span is optional, the card is `relative` so the
   ribbon anchors to it, and a price with no period uses a smaller `text-3xl font-bold`.
 - The contact section is a `Steps2` widget (`id="contact"`, last, after pricing) fed by `getContactItems(lang)` and
-  `getContactCallToAction(lang)` in `src/i18n/contact.ts`: a typed catalog (email, phone, LinkedIn) mapped to
+  `getContactCallToAction(lang)` in `src/i18n/contact.ts`: a typed catalog (email, LinkedIn) mapped to
   `home.contact.<key>.title` copy and Tabler icons. The email address is defined once and shared by the email item
   and the mailto CTA. The LinkedIn URL is per locale (`?locale=en_US` for en) and opens in a new tab. `Steps2.astro`
   was extended generically and opt-in: an item with `href` renders its description inside an `<a>` (with `target`,

@@ -26,7 +26,7 @@ const fr = {
   'home.description': 'Site personnel d’Aurélien Tondoux.',
   'home.hero.tagline': 'Tech Lead · 20 ans d’expérience',
   'home.hero.title': 'Aurélien TONDOUX',
-  'home.hero.subtitle': 'Ingénierie logicielle orientée produit <strong>x boostée à l’IA</strong>',
+  'home.hero.subtitle': 'Ingénierie logicielle orientée produit <strong>— boostée à l’IA</strong>',
   'home.about.title': 'À propos',
   'home.about.subtitle':
     'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs et de leurs vrais besoins pour bien saisir le pourquoi, avant de mobiliser mes compétences techniques sur le comment. Pour moi, la technologie doit être au service du produit, l’expérience utilisateur prime sur la liste de fonctionnalités, et la qualité n’est pas négociable.',
@@ -79,7 +79,6 @@ const fr = {
   'home.contact.subtitle':
     'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
   'home.contact.email.title': 'Email',
-  'home.contact.phone.title': 'Téléphone',
   'home.contact.linkedin.title': 'LinkedIn',
   'home.contact.cta': 'Me contacter',
   'notFound.title': 'Page introuvable',
@@ -99,7 +98,7 @@ const en = {
   'home.description': 'Personal website of Aurélien Tondoux.',
   'home.hero.tagline': 'Tech Lead · 20 years of experience',
   'home.hero.title': 'Aurélien TONDOUX',
-  'home.hero.subtitle': 'Product-minded software engineering <strong>x AI-boosted</strong>',
+  'home.hero.subtitle': 'Product-minded software engineering <strong>— AI-boosted</strong>',
   'home.about.title': 'About',
   'home.about.subtitle':
     'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from users and their real needs to understand the why, before applying my technical skills to the how. To me, technology must serve the product, user experience matters more than feature lists, and quality is non-negotiable.',
@@ -152,7 +151,6 @@ const en = {
   'home.contact.subtitle':
     "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
   'home.contact.email.title': 'Email',
-  'home.contact.phone.title': 'Phone',
   'home.contact.linkedin.title': 'LinkedIn',
   'home.contact.cta': 'Contact me',
   'notFound.title': 'Page not found',

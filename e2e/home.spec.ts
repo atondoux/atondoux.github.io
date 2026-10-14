@@ -6,8 +6,8 @@ const localizedHeroes = [
     path: '/fr/',
     tagline: 'Tech Lead · 20 ans d’expérience',
     title: 'Aurélien TONDOUX',
-    subtitle: 'Ingénierie logicielle orientée produit x boostée à l’IA',
-    emphasis: ['x boostée à l’IA'],
+    subtitle: 'Ingénierie logicielle orientée produit — boostée à l’IA',
+    emphasis: ['— boostée à l’IA'],
     aboutTitle: 'À propos',
     aboutSubtitle:
       'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs et de leurs vrais besoins pour bien saisir le pourquoi, avant de mobiliser mes compétences techniques sur le comment. Pour moi, la technologie doit être au service du produit, l’expérience utilisateur prime sur la liste de fonctionnalités, et la qualité n’est pas négociable.',
@@ -31,7 +31,7 @@ const localizedHeroes = [
     contactTitle: 'Contact',
     contactSubtitle:
       'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
-    contactTitles: ['Email', 'Téléphone', 'LinkedIn'],
+    contactTitles: ['Email', 'LinkedIn'],
     contactCta: 'Me contacter',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/',
   },
@@ -40,8 +40,8 @@ const localizedHeroes = [
     path: '/en/',
     tagline: 'Tech Lead · 20 years of experience',
     title: 'Aurélien TONDOUX',
-    subtitle: 'Product-minded software engineering x AI-boosted',
-    emphasis: ['x AI-boosted'],
+    subtitle: 'Product-minded software engineering — AI-boosted',
+    emphasis: ['— AI-boosted'],
     aboutTitle: 'About',
     aboutSubtitle:
       'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from users and their real needs to understand the why, before applying my technical skills to the how. To me, technology must serve the product, user experience matters more than feature lists, and quality is non-negotiable.',
@@ -65,7 +65,7 @@ const localizedHeroes = [
     contactTitle: 'Contact',
     contactSubtitle:
       "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
-    contactTitles: ['Email', 'Phone', 'LinkedIn'],
+    contactTitles: ['Email', 'LinkedIn'],
     contactCta: 'Contact me',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/?locale=en_US',
   },
@@ -200,7 +200,6 @@ for (const {
       'href',
       'mailto:atondoux@gmail.com'
     );
-    await expect(contact.getByRole('link', { name: '+33 6 70 36 03 55' })).toHaveAttribute('href', 'tel:+33670360355');
     const linkedin = contact.getByRole('link', { name: 'linkedin.com/in/atondoux' });
     await expect(linkedin).toHaveAttribute('href', linkedinHref);
     await expect(linkedin).toHaveAttribute('target', '_blank');

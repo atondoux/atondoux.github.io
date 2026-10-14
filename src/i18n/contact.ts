@@ -20,12 +20,6 @@ interface ContactCatalogEntry {
 const contactCatalog = [
   { titleKey: 'home.contact.email.title', icon: MAIL_ICON, display: EMAIL_ADDRESS, href: MAILTO_HREF },
   {
-    titleKey: 'home.contact.phone.title',
-    icon: 'tabler:phone',
-    display: '+33 6 70 36 03 55',
-    href: 'tel:+33670360355',
-  },
-  {
     titleKey: 'home.contact.linkedin.title',
     icon: 'tabler:brand-linkedin',
     display: 'linkedin.com/in/atondoux',
