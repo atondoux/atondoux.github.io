@@ -22,5 +22,10 @@ const metadata = {
 ---
 
 <PageLayout metadata={metadata}>
-  <HeroText title={t('home.title')} subtitle={t('home.description')} />
+  <HeroText
+    tagline={t('home.hero.tagline')}
+    title={t('home.hero.title')}
+    subtitle={t('home.hero.subtitle')}
+    subtitleClass="[&_strong]:font-semibold [&_strong]:text-accent dark:[&_strong]:text-white"
+  />
 </PageLayout>
