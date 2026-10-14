@@ -77,7 +77,7 @@ const fr = {
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
-    'Un projet ou une idée à faire avancer ? Écrivez-moi, appelez-moi ou contactez-moi sur LinkedIn.',
+    'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
   'home.contact.email.title': 'Email',
   'home.contact.phone.title': 'Téléphone',
   'home.contact.linkedin.title': 'LinkedIn',
@@ -150,7 +150,7 @@ const en = {
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
-    "Have a project or an idea you'd like to move forward? Email me, call me or reach out on LinkedIn.",
+    "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
   'home.contact.email.title': 'Email',
   'home.contact.phone.title': 'Phone',
   'home.contact.linkedin.title': 'LinkedIn',

@@ -29,7 +29,8 @@ const localizedHeroes = [
     quote: 'Devis sur demande',
     ribbon: 'Populaire',
     contactTitle: 'Contact',
-    contactSubtitle: 'Un projet ou une idée à faire avancer ? Écrivez-moi, appelez-moi ou contactez-moi sur LinkedIn.',
+    contactSubtitle:
+      'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
     contactTitles: ['Email', 'Téléphone', 'LinkedIn'],
     contactCta: 'Me contacter',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/',
@@ -63,7 +64,7 @@ const localizedHeroes = [
     ribbon: 'Popular',
     contactTitle: 'Contact',
     contactSubtitle:
-      "Have a project or an idea you'd like to move forward? Email me, call me or reach out on LinkedIn.",
+      "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
     contactTitles: ['Email', 'Phone', 'LinkedIn'],
     contactCta: 'Contact me',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/?locale=en_US',
