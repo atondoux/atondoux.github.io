@@ -85,6 +85,12 @@ pnpm test:all            # Unit + E2E
   - hreflang is language-only (`fr`, `en`) in the head and in the sitemap: `@astrojs/sitemap` uses
     `i18n.locales = hreflangs`. Its `filter` excludes the root redirect page.
 
+### Home sections
+
+- Home sections are `Features2` widgets fed from flat `ui.ts` keys (`home.<section>.title` / `.subtitle`).
+- The services catalog lives in `src/i18n/services.ts`: `getServiceItems(lang)` maps a typed catalog of keys to Tabler
+  icons (legacy Lucide names were mapped; Tabler is fully allowlisted) and to `home.services.<key>.*` copy.
+
 ### Styling
 
 - Tailwind CSS v4 through `@tailwindcss/vite` in `vite.plugins`. **Never add `@astrojs/tailwind`**: it is

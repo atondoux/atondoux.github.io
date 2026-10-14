@@ -11,6 +11,17 @@ const localizedHeroes = [
     aboutTitle: 'À propos',
     aboutSubtitle:
       'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs et de leurs vrais besoins pour bien saisir le pourquoi, avant de mobiliser mes compétences techniques sur le comment. Pour moi, la technologie doit être au service du produit, l’expérience utilisateur prime sur la liste de fonctionnalités, et la qualité n’est pas négociable.',
+    servicesTitle: 'Catalogue de services',
+    servicesSubtitle: 'Des logiciels qui durent, des équipes qui progressent.',
+    serviceTitles: [
+      'Leadership Technique',
+      'Développement Full-Stack',
+      'Bootstrap de Projets',
+      'Reprise de Projets Legacy',
+      'Audit & Revue de Code',
+      'DevOps & Cloud',
+      'Architecture',
+    ],
   },
   {
     lang: 'en',
@@ -22,10 +33,33 @@ const localizedHeroes = [
     aboutTitle: 'About',
     aboutSubtitle:
       'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from users and their real needs to understand the why, before applying my technical skills to the how. To me, technology must serve the product, user experience matters more than feature lists, and quality is non-negotiable.',
+    servicesTitle: 'Services',
+    servicesSubtitle: 'Software that lasts, teams that grow.',
+    serviceTitles: [
+      'Tech Leadership',
+      'Full-Stack Development',
+      'Project Bootstrapping',
+      'Legacy Project Recovery',
+      'Audit & Code Review',
+      'DevOps & Cloud',
+      'Architecture',
+    ],
   },
 ] as const;
 
-for (const { lang, path, tagline, title, subtitle, emphasis, aboutTitle, aboutSubtitle } of localizedHeroes) {
+for (const {
+  lang,
+  path,
+  tagline,
+  title,
+  subtitle,
+  emphasis,
+  aboutTitle,
+  aboutSubtitle,
+  servicesTitle,
+  servicesSubtitle,
+  serviceTitles,
+} of localizedHeroes) {
   test(`shows a single ${lang} h1 titled ${title} on ${path}`, async ({ page }) => {
     await page.goto(path);
 
@@ -68,5 +102,23 @@ for (const { lang, path, tagline, title, subtitle, emphasis, aboutTitle, aboutSu
     await expect(about.getByRole('heading', { level: 2, name: aboutTitle })).toBeVisible();
     await expect(about.getByText(aboutSubtitle, { exact: true })).toBeVisible();
     await expect(about.locator('strong')).toHaveCount(0);
+  });
+
+  test(`shows the ${lang} services catalog after the about section on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const services = page.locator('#services');
+
+    await expect(services).toBeVisible();
+    await expect(services.getByRole('heading', { level: 2, name: servicesTitle })).toBeVisible();
+    await expect(services.getByText(servicesSubtitle, { exact: true })).toBeVisible();
+    await expect(services.getByRole('heading', { level: 3 })).toHaveText(serviceTitles);
+    const followsAbout = await page.evaluate(() => {
+      const about = document.querySelector('#about');
+      const services = document.querySelector('#services');
+      if (!about || !services) return false;
+      return (about.compareDocumentPosition(services) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+    });
+    expect(followsAbout).toBe(true);
   });
 }
