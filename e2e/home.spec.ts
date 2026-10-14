@@ -6,8 +6,8 @@ const localizedHeroes = [
     path: '/fr/',
     tagline: 'Tech Lead · 20 ans d’expérience',
     title: 'Aurélien TONDOUX',
-    subtitle: 'Ingénierie logicielle orientée produit x boostée à l’IA',
-    emphasis: ['x boostée à l’IA'],
+    subtitle: 'Ingénierie logicielle orientée produit — boostée à l’IA',
+    emphasis: ['— boostée à l’IA'],
     aboutTitle: 'À propos',
     aboutSubtitle:
       'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs et de leurs vrais besoins pour bien saisir le pourquoi, avant de mobiliser mes compétences techniques sur le comment. Pour moi, la technologie doit être au service du produit, l’expérience utilisateur prime sur la liste de fonctionnalités, et la qualité n’est pas négociable.',
@@ -28,14 +28,20 @@ const localizedHeroes = [
     dailyRate: '600 €',
     quote: 'Devis sur demande',
     ribbon: 'Populaire',
+    contactTitle: 'Contact',
+    contactSubtitle:
+      'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
+    contactTitles: ['Email', 'LinkedIn'],
+    contactCta: 'Me contacter',
+    linkedinHref: 'https://www.linkedin.com/in/atondoux/',
   },
   {
     lang: 'en',
     path: '/en/',
     tagline: 'Tech Lead · 20 years of experience',
     title: 'Aurélien TONDOUX',
-    subtitle: 'Product-minded software engineering x AI-boosted',
-    emphasis: ['x AI-boosted'],
+    subtitle: 'Product-minded software engineering — AI-boosted',
+    emphasis: ['— AI-boosted'],
     aboutTitle: 'About',
     aboutSubtitle:
       'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from users and their real needs to understand the why, before applying my technical skills to the how. To me, technology must serve the product, user experience matters more than feature lists, and quality is non-negotiable.',
@@ -56,6 +62,12 @@ const localizedHeroes = [
     dailyRate: '€600',
     quote: 'Quote on request',
     ribbon: 'Popular',
+    contactTitle: 'Contact',
+    contactSubtitle:
+      "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
+    contactTitles: ['Email', 'LinkedIn'],
+    contactCta: 'Contact me',
+    linkedinHref: 'https://www.linkedin.com/in/atondoux/?locale=en_US',
   },
 ] as const;
 
@@ -77,6 +89,11 @@ for (const {
   dailyRate,
   quote,
   ribbon,
+  contactTitle,
+  contactSubtitle,
+  contactTitles,
+  contactCta,
+  linkedinHref,
 } of localizedHeroes) {
   test(`shows a single ${lang} h1 titled ${title} on ${path}`, async ({ page }) => {
     await page.goto(path);
@@ -168,5 +185,32 @@ for (const {
       return (services.compareDocumentPosition(pricing) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
     });
     expect(followsServices).toBe(true);
+  });
+
+  test(`shows the ${lang} contact section after the pricing section on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const contact = page.locator('#contact');
+
+    await expect(contact).toBeVisible();
+    await expect(contact.getByRole('heading', { level: 2, name: contactTitle })).toBeVisible();
+    await expect(contact.getByText(contactSubtitle, { exact: true })).toBeVisible();
+    await expect(contact.getByRole('heading', { level: 3 })).toHaveText(contactTitles);
+    await expect(contact.getByRole('link', { name: 'atondoux@gmail.com' })).toHaveAttribute(
+      'href',
+      'mailto:atondoux@gmail.com'
+    );
+    const linkedin = contact.getByRole('link', { name: 'linkedin.com/in/atondoux' });
+    await expect(linkedin).toHaveAttribute('href', linkedinHref);
+    await expect(linkedin).toHaveAttribute('target', '_blank');
+    await expect(linkedin).toHaveAttribute('rel', /noopener/);
+    await expect(contact.getByRole('link', { name: contactCta })).toHaveAttribute('href', 'mailto:atondoux@gmail.com');
+    const followsPricing = await page.evaluate(() => {
+      const pricing = document.querySelector('#pricing');
+      const contact = document.querySelector('#contact');
+      if (!pricing || !contact) return false;
+      return (pricing.compareDocumentPosition(contact) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+    });
+    expect(followsPricing).toBe(true);
   });
 }
