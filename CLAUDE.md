@@ -116,6 +116,9 @@ pnpm test:all            # Unit + E2E
 
 - Tailwind CSS v4 through `@tailwindcss/vite` in `vite.plugins`. **Never add `@astrojs/tailwind`**: it is
   deprecated and capped at Astro 5 / Tailwind 3.
+- `ui.theme` is `'light'`: light is the default even when the system prefers dark, and the header toggle still
+  switches and persists the choice in `localStorage.theme` (`ApplyColorMode.astro`, guarded by `e2e/theme.spec.ts`).
+  `'light:only'` would hide the toggle.
 - astro-compress keeps `csso: false` and uses lightningcss, because csso drops Tailwind v4 media-range blocks.
 
 ### Lint and format
