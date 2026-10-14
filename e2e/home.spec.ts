@@ -28,6 +28,11 @@ const localizedHeroes = [
     dailyRate: '600 €',
     quote: 'Devis sur demande',
     ribbon: 'Populaire',
+    contactTitle: 'Contact',
+    contactSubtitle: 'Un projet ou une idée à faire avancer ? Écrivez-moi, appelez-moi ou contactez-moi sur LinkedIn.',
+    contactTitles: ['Email', 'Téléphone', 'LinkedIn'],
+    contactCta: 'Me contacter',
+    linkedinHref: 'https://www.linkedin.com/in/atondoux/',
   },
   {
     lang: 'en',
@@ -56,6 +61,12 @@ const localizedHeroes = [
     dailyRate: '€600',
     quote: 'Quote on request',
     ribbon: 'Popular',
+    contactTitle: 'Contact',
+    contactSubtitle:
+      "Have a project or an idea you'd like to move forward? Email me, call me or reach out on LinkedIn.",
+    contactTitles: ['Email', 'Phone', 'LinkedIn'],
+    contactCta: 'Contact me',
+    linkedinHref: 'https://www.linkedin.com/in/atondoux/?locale=en_US',
   },
 ] as const;
 
@@ -77,6 +88,11 @@ for (const {
   dailyRate,
   quote,
   ribbon,
+  contactTitle,
+  contactSubtitle,
+  contactTitles,
+  contactCta,
+  linkedinHref,
 } of localizedHeroes) {
   test(`shows a single ${lang} h1 titled ${title} on ${path}`, async ({ page }) => {
     await page.goto(path);
@@ -168,5 +184,33 @@ for (const {
       return (services.compareDocumentPosition(pricing) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
     });
     expect(followsServices).toBe(true);
+  });
+
+  test(`shows the ${lang} contact section after the pricing section on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const contact = page.locator('#contact');
+
+    await expect(contact).toBeVisible();
+    await expect(contact.getByRole('heading', { level: 2, name: contactTitle })).toBeVisible();
+    await expect(contact.getByText(contactSubtitle, { exact: true })).toBeVisible();
+    await expect(contact.getByRole('heading', { level: 3 })).toHaveText(contactTitles);
+    await expect(contact.getByRole('link', { name: 'atondoux@gmail.com' })).toHaveAttribute(
+      'href',
+      'mailto:atondoux@gmail.com'
+    );
+    await expect(contact.getByRole('link', { name: '+33 6 70 36 03 55' })).toHaveAttribute('href', 'tel:+33670360355');
+    const linkedin = contact.getByRole('link', { name: 'linkedin.com/in/atondoux' });
+    await expect(linkedin).toHaveAttribute('href', linkedinHref);
+    await expect(linkedin).toHaveAttribute('target', '_blank');
+    await expect(linkedin).toHaveAttribute('rel', /noopener/);
+    await expect(contact.getByRole('link', { name: contactCta })).toHaveAttribute('href', 'mailto:atondoux@gmail.com');
+    const followsPricing = await page.evaluate(() => {
+      const pricing = document.querySelector('#pricing');
+      const contact = document.querySelector('#contact');
+      if (!pricing || !contact) return false;
+      return (pricing.compareDocumentPosition(contact) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+    });
+    expect(followsPricing).toBe(true);
   });
 }

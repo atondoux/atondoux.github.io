@@ -5,8 +5,10 @@ import PageLayout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Pricing from '~/components/widgets/Pricing.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
 
 import { locales } from '~/i18n/ui';
+import { getContactCallToAction, getContactItems } from '~/i18n/contact';
 import { getPricingPlans } from '~/i18n/pricing';
 import { getServiceItems } from '~/i18n/services';
 import { isLang, useTranslations } from '~/i18n/utils';
@@ -57,5 +59,12 @@ const metadata = {
     subtitle={t('home.pricing.subtitle')}
     prices={getPricingPlans(lang)}
     currency=""
+  />
+  <Steps2
+    id="contact"
+    title={t('home.contact.title')}
+    subtitle={t('home.contact.subtitle')}
+    items={getContactItems(lang)}
+    callToAction={getContactCallToAction(lang)}
   />
 </PageLayout>

@@ -122,8 +122,10 @@ export interface Item {
   classes?: Record<string, string>;
   callToAction?: CallToAction;
   image?: Image;
-  /** Makes the whole item a link (used by Features2 cards). */
+  /** Makes the item a link (Features2 cards link the whole card, Steps2 links the description). */
   href?: string;
+  /** Link target (e.g. `_blank`); adds `rel="noopener noreferrer"` where supported (Steps2). */
+  target?: string;
 }
 
 export type PriceAmount = number | string | { monthly: number | string; yearly: number | string };
