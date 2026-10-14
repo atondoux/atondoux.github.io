@@ -53,6 +53,11 @@ pnpm test:all            # Unit + E2E
   `getPermalink` depends on it. `PageLayout` renders an announcement only when a page fills the `announcement` slot.
 - `src/navigation.ts` exposes `getHeaderData(lang)` / `getFooterData(lang)`. Navigation is localized.
 - `~` is aliased to `src/`.
+- Favicons (`src/components/Favicons.astro`) are the brand "AT" icons copied from `legacy-nuxt/public/`: 32/16 PNG and
+  apple-touch in `src/assets/favicons/`, and `favicon.ico` in `public/` because browsers and crawlers probe
+  `/favicon.ico` directly. The template `favicon.svg` was removed: browsers prefer an SVG icon, so keeping it would show
+  the AstroWind logo. `e2e/favicons.spec.ts` pins each served icon by SHA-256. The legacy `site.webmanifest` and
+  `android-chrome-*` icons were not carried over.
 - `src/i18n/sections.ts` `getSectionLinks(lang, homeUrl)` is the home section catalog (home, `#about`, `#services`). It feeds the header links and the footer "sitemap" column in `src/navigation.ts`; `homeUrl` is injected (no `astro:i18n`) and the ids must match `src/pages/[lang]/index.astro` (guarded by `e2e/navigation.spec.ts`). Add new sections there.
 
 ### i18n
