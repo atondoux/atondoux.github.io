@@ -84,6 +84,15 @@ test('excludes the site root from the sitemap', async ({ request }) => {
   expect(sitemap).not.toContain(`<loc>${SITE_URL}/</loc>`);
 });
 
+test('points robots.txt to the sitemap index', async ({ request }) => {
+  const response = await request.get('/robots.txt');
+
+  const robots = await response.text();
+
+  expect(response.status()).toBe(200);
+  expect(robots).toContain(`Sitemap: ${SITE_URL}/sitemap-index.xml`);
+});
+
 test('serves a noindex french 404 page without canonical or alternates', async ({ page }) => {
   const response = await page.goto('/does-not-exist/');
 
