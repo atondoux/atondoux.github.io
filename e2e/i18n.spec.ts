@@ -70,7 +70,7 @@ test('keeps the site root out of search results while pointing to the french hom
 
   const html = await response.text();
 
-  expect(html).toContain('url=/fr/');
+  expect(html).toContain('content="0;url=/fr/"');
   expect(html).toMatch(/<meta[^>]+name="robots"[^>]+content="noindex"|<meta[^>]+content="noindex"[^>]+name="robots"/);
   expect(html).toContain(`href="${SITE_URL}/fr/" rel="canonical"`);
 });

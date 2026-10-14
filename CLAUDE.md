@@ -68,7 +68,9 @@ pnpm test:all            # Unit + E2E
   under `src/pages/[lang]/` with `getStaticPaths` over the locales. `src/pages/index.astro` is the only root
   redirect to `/fr/`. Astro throws `MissingIndexForInternationalization` without it, and enabling
   `redirectToDefaultLocale` on top of it defines the redirect twice (build warning). The built `dist/index.html` is
-  `noindex` with a canonical on `https://aurelientondoux.com/fr/` and is filtered out of the sitemap.
+  `noindex` with a canonical on `https://aurelientondoux.com/fr/` and is filtered out of the sitemap. The redirect
+  passes status `301`: in a static build Astro emits a meta refresh whose delay is 2 s for a 302 (the default) and
+  0 s otherwise, so a 302 leaves the "Redirecting from / to /fr/" page visible (guarded by `e2e/i18n.spec.ts`).
 - **UI strings:** typed dictionaries in `src/i18n/ui.ts`. `fr` is the source of truth, and `en` is
   `satisfies Record<keyof typeof ui.fr, string>`, so a missing translation fails `astro check`. Read them with
   `useTranslations(lang)` and detect the locale with `getLangFromUrl(url)` (`src/i18n/utils.ts`). No i18n
@@ -114,6 +116,9 @@ pnpm test:all            # Unit + E2E
 
 - Tailwind CSS v4 through `@tailwindcss/vite` in `vite.plugins`. **Never add `@astrojs/tailwind`**: it is
   deprecated and capped at Astro 5 / Tailwind 3.
+- `ui.theme` is `'light'`: light is the default even when the system prefers dark, and the header toggle still
+  switches and persists the choice in `localStorage.theme` (`ApplyColorMode.astro`, guarded by `e2e/theme.spec.ts`).
+  `'light:only'` would hide the toggle.
 - astro-compress keeps `csso: false` and uses lightningcss, because csso drops Tailwind v4 media-range blocks.
 
 ### Lint and format
