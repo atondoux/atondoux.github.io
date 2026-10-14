@@ -16,6 +16,9 @@ export const openGraphLocales = {
 
 const fr = {
   'nav.home': 'Accueil',
+  'nav.about': 'À propos',
+  'nav.services': 'Services',
+  'footer.sitemap': 'Plan du site',
   'theme.toggle': 'Basculer entre thème clair et sombre',
   'languageSwitcher.label': 'English version',
   'home.title': 'Aurélien Tondoux',
@@ -56,6 +59,9 @@ const fr = {
 
 const en = {
   'nav.home': 'Home',
+  'nav.about': 'About',
+  'nav.services': 'Services',
+  'footer.sitemap': 'Sitemap',
   'theme.toggle': 'Toggle between dark and light mode',
   'languageSwitcher.label': 'Version française',
   'home.title': 'Aurélien Tondoux',
