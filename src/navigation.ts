@@ -1,6 +1,7 @@
 import { getRelativeLocaleUrl } from 'astro:i18n';
 
 import type { Lang } from './i18n/ui';
+import { getSectionLinks } from './i18n/sections';
 import { useTranslations } from './i18n/utils';
 
 export interface NavigationLink {
@@ -25,20 +26,20 @@ export interface FooterData {
   footNote: string;
 }
 
-const getNavigationLinks = (lang: Lang): NavigationLink[] => {
-  const t = useTranslations(lang);
-
-  return [{ text: t('nav.home'), href: getRelativeLocaleUrl(lang) }];
-};
+const getHomeSectionLinks = (lang: Lang): NavigationLink[] => getSectionLinks(lang, getRelativeLocaleUrl(lang));
 
 export const getHeaderData = (lang: Lang): HeaderData => ({
-  links: getNavigationLinks(lang),
+  links: getHomeSectionLinks(lang),
   actions: [],
 });
 
-export const getFooterData = (lang: Lang): FooterData => ({
-  links: [],
-  secondaryLinks: getNavigationLinks(lang),
-  socialLinks: [],
-  footNote: `© ${new Date().getFullYear()} Aurélien Tondoux`,
-});
+export const getFooterData = (lang: Lang): FooterData => {
+  const t = useTranslations(lang);
+
+  return {
+    links: [{ title: t('footer.sitemap'), links: getHomeSectionLinks(lang) }],
+    secondaryLinks: [],
+    socialLinks: [],
+    footNote: `© ${new Date().getFullYear()} Aurélien Tondoux`,
+  };
+};

@@ -53,6 +53,7 @@ pnpm test:all            # Unit + E2E
   `getPermalink` depends on it. `PageLayout` renders an announcement only when a page fills the `announcement` slot.
 - `src/navigation.ts` exposes `getHeaderData(lang)` / `getFooterData(lang)`. Navigation is localized.
 - `~` is aliased to `src/`.
+- `src/i18n/sections.ts` `getSectionLinks(lang, homeUrl)` is the home section catalog (home, `#about`, `#services`). It feeds the header links and the footer "sitemap" column in `src/navigation.ts`; `homeUrl` is injected (no `astro:i18n`) and the ids must match `src/pages/[lang]/index.astro` (guarded by `e2e/navigation.spec.ts`). Add new sections there.
 
 ### i18n
 
