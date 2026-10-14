@@ -6,6 +6,7 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 import { locales } from '~/i18n/ui';
+import { getServiceItems } from '~/i18n/services';
 import { isLang, useTranslations } from '~/i18n/utils';
 
 export const getStaticPaths = (() => locales.map((lang) => ({ params: { lang } }))) satisfies GetStaticPaths;
@@ -41,4 +42,11 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
+  <Features2
+    id="services"
+    title={t('home.services.title')}
+    subtitle={t('home.services.subtitle')}
+    items={getServiceItems(lang)}
+    columns={3}
+  />
 </PageLayout>
