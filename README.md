@@ -3,8 +3,8 @@
 Personal portfolio of Aurélien Tondoux, rebuilt with [Astro](https://astro.build) on the
 [AstroWind](https://github.com/arthelokyo/astrowind) template, Tailwind CSS v4 and TypeScript.
 
-The previous Nuxt site is archived in [`legacy-nuxt/`](legacy-nuxt/). It serves as a reference and still powers
-production until the Astro migration is complete.
+The previous Nuxt site is archived in [`legacy-nuxt/`](legacy-nuxt/). It is kept only as a reference and is no
+longer built or deployed.
 
 ## Requirements
 

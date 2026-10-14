@@ -102,16 +102,16 @@ pnpm test:all            # Unit + E2E
 
 ## Deployment
 
-- **Production still serves the legacy Nuxt build.** `.github/workflows/deploy.yaml` builds `legacy-nuxt/` and
-  deploys it from `main`.
+- **No deployment workflow yet.** The Nuxt deployment was removed, and nothing in the repo deploys to GitHub
+  Pages. Pages keeps serving the last Nuxt deployment until a new one replaces it. `legacy-nuxt/` is never
+  built or deployed again.
 - `.github/workflows/ci.yaml` checks the Astro site on pushes to `main`, on PRs and on manual dispatch (one run per
   ref, older runs are cancelled): a `quality` job (check, coverage, e2e) and a `build` job using
-  `withastro/action@v6` (Node 24.21.0, pnpm 12.11.2), which is the exact future deploy path.
-- **Switch-over** (when the Astro content is ready):
+  `withastro/action@v6` (Node 24.21.0, pnpm 12.11.2), which uploads the Pages artifact the future deploy will use.
+- **Go-live** (when the Astro content is ready):
   1. Add a `deploy` job to `ci.yaml`: `needs: build`, main only, `pages: write` + `id-token: write`,
      environment `github-pages`, `actions/deploy-pages@v5`.
-  2. Delete `deploy.yaml`.
-  3. **Handle the URL change.** Nuxt served French without a prefix (`/about`), and Astro serves `/fr/about/`.
+  2. **Handle the URL change.** Nuxt served French without a prefix (`/about`), and Astro serves `/fr/about/`.
      Add redirects for the old URLs (Astro `redirects`) and resubmit the sitemap, or the site loses its SEO
      history.
 - The custom domain is configured in the GitHub Pages settings (there is no `CNAME` file).
