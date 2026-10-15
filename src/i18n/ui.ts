@@ -30,8 +30,8 @@ const fr = {
   'home.about.title': 'À propos',
   'home.about.subtitle':
     'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs pour comprendre leurs besoins, leurs usages, ce qui les freine au quotidien. Un logiciel n’a de valeur que s’il est utilisé, alors je soigne l’expérience utilisateur autant que le code. Pour moi, la technologie doit être au service du produit, et la qualité n’est pas négociable.',
-  'home.services.title': 'Catalogue de services',
-  'home.services.subtitle': 'Des logiciels qui durent, des équipes qui progressent.',
+  'home.services.title': 'Services',
+  'home.services.subtitle': 'Des logiciels qui durent, des équipes qui progressent, des résultats mesurables.',
   'home.services.techLeadership.title': 'Leadership Technique',
   'home.services.techLeadership.description':
     'Des pratiques d’ingénierie qui deviennent des réflexes d’équipe : TDD, clean architecture, clean code, revue de code, CI/CD.',
@@ -103,7 +103,7 @@ const en = {
   'home.about.subtitle':
     'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from users to understand their needs, how they work, what slows them down every day. Software only has value if people use it, so I care about the user experience as much as the code. To me, technology must serve the product, and quality is non-negotiable.',
   'home.services.title': 'Services',
-  'home.services.subtitle': 'Software that lasts, teams that grow.',
+  'home.services.subtitle': 'Software that lasts, teams that grow, measurable results.',
   'home.services.techLeadership.title': 'Tech Leadership',
   'home.services.techLeadership.description':
     'Engineering practices that become team habits: TDD, clean architecture, clean code, code review, CI/CD.',

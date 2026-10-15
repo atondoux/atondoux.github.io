@@ -11,8 +11,8 @@ const localizedHeroes = [
     aboutTitle: 'À propos',
     aboutSubtitle:
       'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs pour comprendre leurs besoins, leurs usages, ce qui les freine au quotidien. Un logiciel n’a de valeur que s’il est utilisé, alors je soigne l’expérience utilisateur autant que le code. Pour moi, la technologie doit être au service du produit, et la qualité n’est pas négociable.',
-    servicesTitle: 'Catalogue de services',
-    servicesSubtitle: 'Des logiciels qui durent, des équipes qui progressent.',
+    servicesTitle: 'Services',
+    servicesSubtitle: 'Des logiciels qui durent, des équipes qui progressent, des résultats mesurables.',
     serviceTitles: [
       'Leadership Technique',
       'Développement Full-Stack',
@@ -46,7 +46,7 @@ const localizedHeroes = [
     aboutSubtitle:
       'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from users to understand their needs, how they work, what slows them down every day. Software only has value if people use it, so I care about the user experience as much as the code. To me, technology must serve the product, and quality is non-negotiable.',
     servicesTitle: 'Services',
-    servicesSubtitle: 'Software that lasts, teams that grow.',
+    servicesSubtitle: 'Software that lasts, teams that grow, measurable results.',
     serviceTitles: [
       'Tech Leadership',
       'Full-Stack Development',
