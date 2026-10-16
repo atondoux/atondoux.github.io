@@ -10,6 +10,19 @@ const localizedMenus = [
   { lang: 'en', path: '/en/', labels: ['Home', 'About', 'Services', 'Pricing', 'Contact'], sitemap: 'Sitemap' },
 ] as const;
 
+const socialLinks = {
+  fr: [
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/atondoux/' },
+    { name: 'Malt', href: 'https://www.malt.fr/profile/aurelientondoux' },
+    { name: 'GitHub', href: 'https://github.com/atondoux/' },
+  ],
+  en: [
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/atondoux/?locale=en_US' },
+    { name: 'Malt', href: 'https://www.malt.com/profile/aurelientondoux' },
+    { name: 'GitHub', href: 'https://github.com/atondoux/' },
+  ],
+} as const;
+
 const SECTION_IDS = ['about', 'services', 'pricing', 'contact'] as const;
 const MOBILE_VIEWPORT = { width: 390, height: 844 };
 
@@ -88,6 +101,20 @@ for (const { lang, path, labels, sitemap } of localizedMenus) {
     await expect(footer.getByRole('link', { name: labels[2], exact: true })).toHaveAttribute('href', headerHrefs[2]!);
     await expect(footer.getByRole('link', { name: labels[3], exact: true })).toHaveAttribute('href', headerHrefs[3]!);
     await expect(footer.getByRole('link', { name: labels[4], exact: true })).toHaveAttribute('href', headerHrefs[4]!);
+  });
+
+  test(`shows the social links opening in a new tab in the footer of ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const footer = page.locator('footer');
+
+    for (const { name, href } of socialLinks[lang]) {
+      const link = footer.getByRole('link', { name, exact: true });
+      await expect(link).toHaveAttribute('href', href);
+      await expect(link).toHaveAttribute('target', '_blank');
+      await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+      await expect(link.locator('svg')).toBeVisible();
+    }
   });
 
   test(`resolves every header hash link to an element of ${path}`, async ({ page }) => {

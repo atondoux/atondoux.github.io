@@ -1,6 +1,7 @@
 import type { CallToAction, Item } from '~/types';
 
 import type { Lang, UiKey } from './ui';
+import { LINKEDIN_HREFS } from './social';
 import { useTranslations } from './utils';
 
 const EMAIL_ADDRESS = 'atondoux@gmail.com';
@@ -23,10 +24,7 @@ const contactCatalog = [
     titleKey: 'home.contact.linkedin.title',
     icon: 'tabler:brand-linkedin',
     display: 'linkedin.com/in/atondoux',
-    href: {
-      fr: 'https://www.linkedin.com/in/atondoux/',
-      en: 'https://www.linkedin.com/in/atondoux/?locale=en_US',
-    },
+    href: LINKEDIN_HREFS,
     external: true,
   },
 ] as const satisfies readonly ContactCatalogEntry[];
