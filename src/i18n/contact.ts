@@ -50,5 +50,5 @@ export function getContactItems(lang: Lang): Item[] {
 export function getContactCallToAction(lang: Lang): CallToAction {
   const t = useTranslations(lang);
 
-  return { text: t('home.contact.cta'), href: MAILTO_HREF, icon: MAIL_ICON };
+  return { text: t('home.contact.cta'), href: MAILTO_HREF };
 }

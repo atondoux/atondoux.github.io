@@ -187,15 +187,15 @@ test('offers both locale homes on the 404 page instead of a language switcher', 
   await expect(page.locator('section a[href="/en/"]')).toHaveCount(1);
 });
 
-test('places the theme toggle at the far right, after the language switcher', async ({ page }) => {
+test('places the theme toggle after the language switcher', async ({ page }) => {
   await page.goto('/fr/');
 
-  const themeToggleIsLast = await page.evaluate(() => {
+  const themeToggleFollowsSwitcher = await page.evaluate(() => {
     const themeToggle = document.querySelector('#header [data-aw-toggle-color-scheme]');
     const switcher = document.querySelector('#header [data-aw-lang-switch]');
     if (!themeToggle || !switcher) return false;
     return Boolean(switcher.compareDocumentPosition(themeToggle) & Node.DOCUMENT_POSITION_FOLLOWING);
   });
 
-  expect(themeToggleIsLast).toBe(true);
+  expect(themeToggleFollowsSwitcher).toBe(true);
 });

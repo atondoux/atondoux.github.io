@@ -59,7 +59,7 @@ describe('listing the contact channels', () => {
   ] as const)('offers a %s mailto call to action to the email address', (lang, text) => {
     const callToAction = getContactCallToAction(lang);
 
-    expect(callToAction).toEqual({ text, href: getContactItems(lang)[0]?.href, icon: 'tabler:mail' });
+    expect(callToAction).toEqual({ text, href: getContactItems(lang)[0]?.href });
     expect(callToAction.href).toBe(`mailto:${EMAIL}`);
   });
 });

@@ -13,6 +13,12 @@ describe('listing the social profiles', () => {
     ]);
   });
 
+  it.each(['fr', 'en'] as const)('names the platform in the tooltip of every profile in %s', (lang) => {
+    const tooltips = getSocialLinks(lang).map((link) => link.tooltip);
+
+    expect(tooltips).toEqual(['LinkedIn', 'Malt', 'GitHub']);
+  });
+
   it('links the french profiles', () => {
     const hrefs = getSocialLinks('fr').map((link) => link.href);
 

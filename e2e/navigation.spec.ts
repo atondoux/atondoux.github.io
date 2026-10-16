@@ -6,8 +6,15 @@ const localizedMenus = [
     path: '/fr/',
     labels: ['Accueil', 'À propos', 'Services', 'Tarifs', 'Contact'],
     sitemap: 'Plan du site',
+    contactCta: 'Me contacter',
   },
-  { lang: 'en', path: '/en/', labels: ['Home', 'About', 'Services', 'Pricing', 'Contact'], sitemap: 'Sitemap' },
+  {
+    lang: 'en',
+    path: '/en/',
+    labels: ['Home', 'About', 'Services', 'Pricing', 'Contact'],
+    sitemap: 'Sitemap',
+    contactCta: 'Contact me',
+  },
 ] as const;
 
 const socialLinks = {
@@ -25,6 +32,8 @@ const socialLinks = {
 
 const SECTION_IDS = ['about', 'services', 'pricing', 'contact'] as const;
 const MOBILE_VIEWPORT = { width: 390, height: 844 };
+const TABLET_VIEWPORT = { width: 768, height: 1024 };
+const MAX_TAB_STOPS = 60;
 
 test.use({ reducedMotion: 'reduce' });
 
@@ -42,7 +51,7 @@ const expectSectionBelowHeader = async (page: Page, id: string) => {
     .toBeGreaterThanOrEqual(headerBottom - 1);
 };
 
-for (const { lang, path, labels, sitemap } of localizedMenus) {
+for (const { lang, path, labels, sitemap, contactCta } of localizedMenus) {
   test(`lists the ${lang} section labels in order in the header of ${path}`, async ({ page }) => {
     await page.goto(path);
 
@@ -117,6 +126,74 @@ for (const { lang, path, labels, sitemap } of localizedMenus) {
     }
   });
 
+  test(`reveals the platform tooltip of each social link on hover in the footer of ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const footer = page.locator('footer');
+
+    for (const { name } of socialLinks[lang]) {
+      const link = footer.getByRole('link', { name, exact: true });
+      const tooltip = link.locator('[aria-hidden="true"]', { hasText: name });
+      await expect(tooltip).toHaveCount(1);
+      await expect(tooltip).toHaveCSS('opacity', '0');
+
+      await link.hover();
+
+      await expect(tooltip).toHaveCSS('opacity', '1');
+      await page.mouse.move(0, 0);
+      await expect(tooltip).toHaveCSS('opacity', '0');
+    }
+  });
+
+  test(`reveals the platform tooltip of each social link when tabbing through the footer of ${path}`, async ({
+    page,
+  }) => {
+    await page.goto(path);
+
+    const footer = page.locator('footer');
+    const links = socialLinks[lang].map(({ name }) => ({
+      name,
+      link: footer.getByRole('link', { name, exact: true }),
+    }));
+    const [first] = links;
+    for (let stop = 0; stop < MAX_TAB_STOPS; stop++) {
+      if (await first!.link.evaluate((element) => element === document.activeElement)) break;
+      await page.keyboard.press('Tab');
+    }
+
+    for (const { name, link } of links) {
+      const tooltip = link.locator('[aria-hidden="true"]', { hasText: name });
+
+      await expect(link).toBeFocused();
+      await expect(tooltip).toHaveCSS('opacity', '1');
+      await page.keyboard.press('Tab');
+      await expect(tooltip).toHaveCSS('opacity', '0');
+    }
+  });
+
+  for (const viewport of [MOBILE_VIEWPORT, TABLET_VIEWPORT]) {
+    test(`keeps every social link tooltip inside a ${viewport.width}px viewport in the footer of ${path}`, async ({
+      page,
+    }) => {
+      await page.setViewportSize(viewport);
+      await page.goto(path);
+
+      const footer = page.locator('footer');
+
+      for (const { name } of socialLinks[lang]) {
+        const tooltip = footer
+          .getByRole('link', { name, exact: true })
+          .locator('[aria-hidden="true"]', { hasText: name });
+        await tooltip.scrollIntoViewIfNeeded();
+        const box = await tooltip.boundingBox();
+
+        expect(box).not.toBeNull();
+        expect(box!.x).toBeGreaterThanOrEqual(0);
+        expect(box!.x + box!.width).toBeLessThanOrEqual(viewport.width);
+      }
+    });
+  }
+
   test(`resolves every header hash link to an element of ${path}`, async ({ page }) => {
     await page.goto(path);
 
@@ -130,6 +207,31 @@ for (const { lang, path, labels, sitemap } of localizedMenus) {
     for (const hash of hashes) {
       await expect(page.locator(hash)).toHaveCount(1);
     }
+  });
+
+  test(`shows the ${contactCta} mail button right of the theme toggle in the header of ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const button = page.locator('#header').getByRole('link', { name: contactCta });
+    const themeToggle = page.locator('#header [data-aw-toggle-color-scheme]').first();
+
+    await expect(button).toBeVisible();
+    await expect(themeToggle).toBeVisible();
+    await expect(button).toHaveAttribute('href', 'mailto:atondoux@gmail.com');
+    const buttonBox = await button.boundingBox();
+    const toggleBox = await themeToggle.boundingBox();
+    expect(buttonBox!.x).toBeGreaterThanOrEqual(toggleBox!.x + toggleBox!.width);
+  });
+
+  test(`reveals the ${contactCta} button only once the mobile menu is open on ${path}`, async ({ page }) => {
+    await page.setViewportSize(MOBILE_VIEWPORT);
+    await page.goto(path);
+    const button = page.locator('#header').getByRole('link', { name: contactCta });
+
+    await expect(button).toBeHidden();
+    await page.locator('#header [data-aw-toggle-menu]').click();
+
+    await expect(button).toBeVisible();
   });
 
   test(`closes the mobile menu after clicking ${labels[1]} on ${path}`, async ({ page }) => {

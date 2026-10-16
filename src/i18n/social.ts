@@ -14,6 +14,7 @@ export interface SocialLink {
   icon: string;
   href: string;
   target: ExternalTarget;
+  tooltip: string;
 }
 
 interface SocialCatalogEntry {
@@ -45,5 +46,6 @@ export function getSocialLinks(lang: Lang): SocialLink[] {
     icon,
     href: resolveHref(href, lang),
     target: EXTERNAL_TARGET,
+    tooltip: ariaLabel,
   }));
 }
