@@ -58,9 +58,12 @@ pnpm test:all            # Unit + E2E
   `/favicon.ico` directly. The template `favicon.svg` was removed: browsers prefer an SVG icon, so keeping it would show
   the AstroWind logo. `e2e/favicons.spec.ts` pins each served icon by SHA-256. The legacy `site.webmanifest` and
   `android-chrome-*` icons were not carried over.
+- The header has one action, the contact CTA from `getContactCallToAction(lang)` with `variant: 'secondary'` set in
+  `getHeaderData` (`src/navigation.ts`). It renders at the far right after the theme toggle, and in the mobile menu
+  bottom bar. The contact section keeps its own primary CTA (`Steps2` forces primary).
 - `src/i18n/sections.ts` `getSectionLinks(lang, homeUrl)` is the home section catalog (home, `#about`, `#services`). It feeds the header links and the footer "sitemap" column in `src/navigation.ts`; `homeUrl` is injected (no `astro:i18n`) and the ids must match `src/pages/[lang]/index.astro` (guarded by `e2e/navigation.spec.ts`). Add new sections there.
 
-- `getSocialLinks(lang)` in `src/i18n/social.ts` feeds the footer social links (LinkedIn, Malt, GitHub, all `_blank`). The LinkedIn hrefs (`LINKEDIN_HREFS`) are shared with `contact.ts`. Malt uses `tabler:topology-star-ring-3` (Tabler has no Malt icon). `Footer.astro` adds `target` and `rel="noopener noreferrer"` only when a link opts in with `target`.
+- `getSocialLinks(lang)` in `src/i18n/social.ts` feeds the footer social links (LinkedIn, Malt, GitHub, all `_blank`). The LinkedIn hrefs (`LINKEDIN_HREFS`) are shared with `contact.ts`. Malt uses `tabler:topology-star-ring-3` (Tabler has no Malt icon). `Footer.astro` adds `target` and `rel="noopener noreferrer"` only when a link opts in with `target`. Links carry a `tooltip` (the platform name); `Footer.astro` renders a CSS-only tooltip (hover and focus-visible, `aria-hidden` since `aria-label` names the link) only when a link opts in with `tooltip`. The first tooltip is left-aligned below `md` (the row hugs the left edge on mobile, so a centered one overflows the viewport; guarded by `e2e/navigation.spec.ts`).
 
 ### i18n
 
@@ -83,7 +86,7 @@ pnpm test:all            # Unit + E2E
     and unit tests pass a fake, because the `astro:i18n` virtual module doesn't exist under Vitest. Keep
     helpers that need Astro virtual modules testable the same way.
     `getPathWithoutLocale` always returns `''` or a path with a trailing slash (`trailingSlash: true`).
-  - **Language switcher:** `LanguageSwitcher.astro` is a text link showing the uppercase code of the destination language (`getLocaleCode` in `src/i18n/switcher.ts`: "EN" on French pages, "FR" on English pages; the code span is `aria-hidden`, the link keeps the full `aria-label`) to the left of `ToggleTheme` (the theme toggle stays at the far right) in
+  - **Language switcher:** `LanguageSwitcher.astro` is a text link showing the uppercase code of the destination language (`getLocaleCode` in `src/i18n/switcher.ts`: "EN" on French pages, "FR" on English pages; the code span is `aria-hidden`, the link keeps the full `aria-label`) to the left of `ToggleTheme` in
     `Header.astro`, fed by `PageLayout.astro` (`getOtherLocale`, `buildSwitcherHref` in `src/i18n/switcher.ts`,
     URL builder injected). The header is `transition:persist`ed, so the `href` is refreshed on `astro:page-load`
     from the page's `link[rel="alternate"][hreflang]` (matched on `data-target-hreflang`), falling back to `data-fallback-href`. The 404 page has no

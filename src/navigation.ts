@@ -1,5 +1,8 @@
 import { getRelativeLocaleUrl } from 'astro:i18n';
 
+import type { CallToAction } from '~/types';
+
+import { getContactCallToAction } from './i18n/contact';
 import type { Lang } from './i18n/ui';
 import { getSectionLinks } from './i18n/sections';
 import { getSocialLinks, type SocialLink } from './i18n/social';
@@ -17,7 +20,7 @@ export interface NavigationLinkGroup {
 
 export interface HeaderData {
   links: NavigationLink[];
-  actions: never[];
+  actions: CallToAction[];
 }
 
 export interface FooterData {
@@ -31,7 +34,7 @@ const getHomeSectionLinks = (lang: Lang): NavigationLink[] => getSectionLinks(la
 
 export const getHeaderData = (lang: Lang): HeaderData => ({
   links: getHomeSectionLinks(lang),
-  actions: [],
+  actions: [{ ...getContactCallToAction(lang), variant: 'secondary' }],
 });
 
 export const getFooterData = (lang: Lang): FooterData => {
