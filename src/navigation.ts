@@ -2,6 +2,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
 
 import type { Lang } from './i18n/ui';
 import { getSectionLinks } from './i18n/sections';
+import { getSocialLinks, type SocialLink } from './i18n/social';
 import { useTranslations } from './i18n/utils';
 
 export interface NavigationLink {
@@ -22,7 +23,7 @@ export interface HeaderData {
 export interface FooterData {
   links: NavigationLinkGroup[];
   secondaryLinks: NavigationLink[];
-  socialLinks: never[];
+  socialLinks: SocialLink[];
   footNote: string;
 }
 
@@ -39,7 +40,7 @@ export const getFooterData = (lang: Lang): FooterData => {
   return {
     links: [{ title: t('footer.sitemap'), links: getHomeSectionLinks(lang) }],
     secondaryLinks: [],
-    socialLinks: [],
+    socialLinks: getSocialLinks(lang),
     footNote: `© ${new Date().getFullYear()} Aurélien Tondoux`,
   };
 };

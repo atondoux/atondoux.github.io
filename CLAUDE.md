@@ -60,6 +60,8 @@ pnpm test:all            # Unit + E2E
   `android-chrome-*` icons were not carried over.
 - `src/i18n/sections.ts` `getSectionLinks(lang, homeUrl)` is the home section catalog (home, `#about`, `#services`). It feeds the header links and the footer "sitemap" column in `src/navigation.ts`; `homeUrl` is injected (no `astro:i18n`) and the ids must match `src/pages/[lang]/index.astro` (guarded by `e2e/navigation.spec.ts`). Add new sections there.
 
+- `getSocialLinks(lang)` in `src/i18n/social.ts` feeds the footer social links (LinkedIn, Malt, GitHub, all `_blank`). The LinkedIn hrefs (`LINKEDIN_HREFS`) are shared with `contact.ts`. Malt uses `tabler:topology-star-ring-3` (Tabler has no Malt icon). `Footer.astro` adds `target` and `rel="noopener noreferrer"` only when a link opts in with `target`.
+
 ### i18n
 
 - **Single source of truth:** `src/i18n/ui.ts` exports `locales` (`['fr','en'] as const`), `Lang`, `defaultLang`,
