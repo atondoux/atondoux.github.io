@@ -26,13 +26,17 @@ const {
 // original look). The marquee duplicates the row so the loop is seamless and
 // stops for people who prefer reduced motion.
 const logoClass = [
-  'max-h-12 transition',
+  'max-h-16 transition',
   grayscale
     ? 'grayscale opacity-70 hover:grayscale-0 hover:opacity-100 dark:brightness-0 dark:invert dark:hover:brightness-100 dark:hover:invert-0'
     : '',
 ].join(' ');
 const boxClass = boxed ? 'py-1 px-3 rounded-md bg-white/90 dark:bg-gray-200' : 'py-1 px-3';
+const LOGO_WIDTH = 160;
+const LOGO_HEIGHT = 64;
+const logoFormat = (src: string) => (src.toLowerCase().endsWith('.svg') ? 'svg' : 'webp');
 const isMarquee = variant === 'marquee';
+const logoLoading = isMarquee ? 'eager' : undefined;
 const duration = `${Math.max(20, (icons.length + images.length) * 4)}s`;
 ---
 
@@ -74,9 +78,10 @@ const duration = `${Math.max(20, (icons.length + images.length) * 4)}s`;
                     src={image.src}
                     alt={image.alt || ''}
                     class={logoClass}
-                    width={120}
-                    height={48}
-                    format="webp"
+                    width={LOGO_WIDTH}
+                    height={LOGO_HEIGHT}
+                    format={logoFormat(image.src)}
+                    loading={logoLoading}
                   />
                 </a>
               ) : (
@@ -85,9 +90,10 @@ const duration = `${Math.max(20, (icons.length + images.length) * 4)}s`;
                     src={image.src}
                     alt={image.alt || ''}
                     class={logoClass}
-                    width={120}
-                    height={48}
-                    format="webp"
+                    width={LOGO_WIDTH}
+                    height={LOGO_HEIGHT}
+                    format={logoFormat(image.src)}
+                    loading={logoLoading}
                   />
                 </div>
               ))

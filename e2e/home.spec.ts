@@ -11,6 +11,21 @@ const localizedHeroes = [
     aboutTitle: 'À propos',
     aboutSubtitle:
       'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs pour comprendre leurs besoins, leurs usages, ce qui les freine au quotidien. Un logiciel n’a de valeur que s’il est utilisé, alors je soigne l’expérience utilisateur autant que le code. Pour moi, la technologie doit être au service du produit, et la qualité n’est pas négociable.',
+    collaborationsTitle: 'Ils me font confiance',
+    collaborationsSubtitle: 'Startups, PME et grands comptes avec qui j’ai collaboré.',
+    logoAlts: [
+      'Logo de Veolia Eau',
+      'Logo de ONIAM',
+      'Logo de SNCF Connect & Tech',
+      'Logo de Natixis',
+      'Logo de Société Générale',
+      'Logo de Softway Medical',
+      'Logo de Orange Business',
+      'Logo de Dyma',
+      'Logo de Namirial',
+      'Logo de Malt',
+      'Logo de Institut Sainte-Catherine',
+    ],
     servicesTitle: 'Services',
     servicesSubtitle: 'Des logiciels qui durent, des équipes qui progressent, des résultats mesurables.',
     serviceTitles: [
@@ -45,6 +60,21 @@ const localizedHeroes = [
     aboutTitle: 'About',
     aboutSubtitle:
       'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from users to understand their needs, how they work, what slows them down every day. Software only has value if people use it, so I care about the user experience as much as the code. To me, technology must serve the product, and quality is non-negotiable.',
+    collaborationsTitle: 'They trust me',
+    collaborationsSubtitle: 'Startups, SMEs and large companies I’ve worked with.',
+    logoAlts: [
+      'Veolia Eau logo',
+      'ONIAM logo',
+      'SNCF Connect & Tech logo',
+      'Natixis logo',
+      'Société Générale logo',
+      'Softway Medical logo',
+      'Orange Business logo',
+      'Dyma logo',
+      'Namirial logo',
+      'Malt logo',
+      'Institut Sainte-Catherine logo',
+    ],
     servicesTitle: 'Services',
     servicesSubtitle: 'Software that lasts, teams that grow, measurable results.',
     serviceTitles: [
@@ -80,6 +110,9 @@ for (const {
   emphasis,
   aboutTitle,
   aboutSubtitle,
+  collaborationsTitle,
+  collaborationsSubtitle,
+  logoAlts,
   servicesTitle,
   servicesSubtitle,
   serviceTitles,
@@ -139,7 +172,30 @@ for (const {
     await expect(about.locator('strong')).toHaveCount(0);
   });
 
-  test(`shows the ${lang} services catalog after the about section on ${path}`, async ({ page }) => {
+  test(`shows the ${lang} collaborations section after the about section on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const collaborations = page.locator('#collaborations');
+
+    await expect(collaborations).toBeVisible();
+    await expect(collaborations.getByRole('heading', { level: 2, name: collaborationsTitle })).toBeVisible();
+    await expect(collaborations.getByText(collaborationsSubtitle, { exact: true })).toBeVisible();
+    await collaborations.scrollIntoViewIfNeeded();
+    for (const alt of logoAlts) {
+      const logo = collaborations.getByRole('img', { name: alt });
+      await expect(logo).toBeVisible();
+      await expect.poll(() => logo.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
+    }
+    const followsAbout = await page.evaluate(() => {
+      const about = document.querySelector('#about');
+      const collaborations = document.querySelector('#collaborations');
+      if (!about || !collaborations) return false;
+      return (about.compareDocumentPosition(collaborations) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+    });
+    expect(followsAbout).toBe(true);
+  });
+
+  test(`shows the ${lang} services catalog after the collaborations section on ${path}`, async ({ page }) => {
     await page.goto(path);
 
     const services = page.locator('#services');
@@ -148,13 +204,13 @@ for (const {
     await expect(services.getByRole('heading', { level: 2, name: servicesTitle })).toBeVisible();
     await expect(services.getByText(servicesSubtitle, { exact: true })).toBeVisible();
     await expect(services.getByRole('heading', { level: 3 })).toHaveText(serviceTitles);
-    const followsAbout = await page.evaluate(() => {
-      const about = document.querySelector('#about');
+    const followsCollaborations = await page.evaluate(() => {
+      const collaborations = document.querySelector('#collaborations');
       const services = document.querySelector('#services');
-      if (!about || !services) return false;
-      return (about.compareDocumentPosition(services) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+      if (!collaborations || !services) return false;
+      return (collaborations.compareDocumentPosition(services) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
     });
-    expect(followsAbout).toBe(true);
+    expect(followsCollaborations).toBe(true);
   });
 
   test(`shows the ${lang} pricing section after the services catalog on ${path}`, async ({ page }) => {

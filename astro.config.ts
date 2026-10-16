@@ -108,6 +108,8 @@ export default defineConfig({
   image: {
     domains: ['cdn.pixabay.com'],
 
+    endpoint: { route: '/_image/', entrypoint: undefined },
+
     responsiveStyles: true,
   },
 

@@ -4,10 +4,12 @@ import type { GetStaticPaths } from 'astro';
 import PageLayout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Brands from '~/components/widgets/Brands.astro';
 import Pricing from '~/components/widgets/Pricing.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 
 import { locales } from '~/i18n/ui';
+import { getCollaborationLogos } from '~/i18n/collaborations';
 import { getContactCallToAction, getContactItems } from '~/i18n/contact';
 import { getPricingPlans } from '~/i18n/pricing';
 import { getServiceItems } from '~/i18n/services';
@@ -46,6 +48,13 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
+  <Brands
+    id="collaborations"
+    title={t('home.collaborations.title')}
+    subtitle={t('home.collaborations.subtitle')}
+    images={getCollaborationLogos(lang)}
+    variant="marquee"
+  />
   <Features2
     id="services"
     title={t('home.services.title')}

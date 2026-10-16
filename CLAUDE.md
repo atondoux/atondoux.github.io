@@ -96,6 +96,7 @@ pnpm test:all            # Unit + E2E
 ### Home sections
 
 - Home sections are `Features2` widgets fed from flat `ui.ts` keys (`home.<section>.title` / `.subtitle`).
+- The collaborations section is a `Brands` widget (`id="collaborations"`, between about and services, `variant="marquee"`: an infinite horizontal scroll with faded edges, paused on hover, static under `prefers-reduced-motion`; marquee logos load eagerly, otherwise lazy loading leaves the off-screen ones blank; no `bg` slot, not in the nav or `sections.ts`) fed by `getCollaborationLogos(lang)` in `src/i18n/collaborations.ts`: a typed catalog, in chronological order, of the companies from the legacy portfolio (the `*_logo.svg` files copied from `legacy-nuxt/public/portfolio/`, minus world tour and Ortho Assistant, plus `icap.svg` last, vectorized from a PNG; all on a 600×450 viewBox) mapped to `~/assets/images/collaborations/<file>.svg` (resolved by `findImage`) with alt text from `home.collaborations.logoAlt` (`{company}` placeholder; company names are not translated). Visible title is "Ils me font confiance" / "They trust me".
 - The services catalog lives in `src/i18n/services.ts`: `getServiceItems(lang)` maps a typed catalog of keys to Tabler
   icons (legacy Lucide names were mapped; Tabler is fully allowlisted) and to `home.services.<key>.*` copy.
 - The pricing section is a `Pricing` widget (`id="pricing"`, after services, no CTAs) fed by `getPricingPlans(lang)` in
@@ -120,6 +121,11 @@ pnpm test:all            # Unit + E2E
   switches and persists the choice in `localStorage.theme` (`ApplyColorMode.astro`, guarded by `e2e/theme.spec.ts`).
   `'light:only'` would hide the toggle.
 - astro-compress keeps `csso: false` and uses lightningcss, because csso drops Tailwind v4 media-range blocks.
+- `image.endpoint.route` is `'/_image/'` in `astro.config.ts`. With `trailingSlash: 'always'` (forced by the template
+  integration), the dev image endpoint only matches `/_image/`, but Astro builds `/_image?…` URLs from the default route,
+  so every optimized local image 404s in `pnpm dev`. Static builds are unaffected (images are pre-generated into
+  `_astro/`). Playwright reuses a running dev server locally (`reuseExistingServer: !isCI`), and `toBeVisible` passes on a
+  broken `<img>`, so `e2e/home.spec.ts` also asserts each logo's `naturalWidth > 0`.
 
 ### Lint and format
 

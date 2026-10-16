@@ -28,7 +28,7 @@ import { transformUrl, parseUrl } from 'unpic';
 import { findImage } from '~/utils/images';
 
 type Layout = 'constrained' | 'full-width' | 'fixed' | 'cover' | 'none';
-type Format = 'avif' | 'jpeg' | 'jpg' | 'png' | 'webp';
+type Format = 'avif' | 'jpeg' | 'jpg' | 'png' | 'svg' | 'webp';
 
 interface Props extends Omit<HTMLAttributes<'img'>, 'src' | 'width' | 'height'> {
   src?: string | ImageMetadata | null;
