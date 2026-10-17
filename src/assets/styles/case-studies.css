@@ -33,6 +33,11 @@
   --cs-sparkle: var(--cs-300);
 }
 
+.case-study-art[data-palette='icap'] {
+  --cs-brand: #5c74a7;
+  --cs-deep: #2a407c;
+}
+
 .case-study-art[data-palette='malt'] {
   --cs-brand: #fc5656;
   --cs-deep: --theme(--color-red-950);

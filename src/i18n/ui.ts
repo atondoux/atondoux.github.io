@@ -79,6 +79,14 @@ const fr = {
   'home.pricing.consulting.features.review': 'Revue de code',
   'home.caseStudies.title': 'Cas clients',
   'home.caseStudies.subtitle': 'Quelques missions récentes, du produit jusqu’au code.',
+  'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
+  'home.caseStudies.icap.description':
+    'Moderniser les outils numériques des équipes soignantes pour simplifier le suivi des patients au quotidien.',
+  'home.caseStudies.icap.tags.healthcare': 'Santé',
+  'home.caseStudies.icap.tags.craftsmanship': 'Software Craftsmanship',
+  'home.caseStudies.icap.tags.kotlin': 'Kotlin',
+  'home.caseStudies.icap.tags.springBoot': 'Spring Boot',
+  'home.caseStudies.icap.tags.vue': 'Vue.js',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
     'Aider les freelances à recevoir leurs paiements le plus rapidement possible et avoir une meilleure expérience sur la plateforme Malt.',
@@ -180,6 +188,14 @@ const en = {
   'home.pricing.consulting.features.review': 'Code review',
   'home.caseStudies.title': 'Case studies',
   'home.caseStudies.subtitle': 'A few recent assignments, from product all the way to code.',
+  'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
+  'home.caseStudies.icap.description':
+    'Modernizing the digital tools of care teams to make day-to-day patient follow-up simpler.',
+  'home.caseStudies.icap.tags.healthcare': 'Healthcare',
+  'home.caseStudies.icap.tags.craftsmanship': 'Software Craftsmanship',
+  'home.caseStudies.icap.tags.kotlin': 'Kotlin',
+  'home.caseStudies.icap.tags.springBoot': 'Spring Boot',
+  'home.caseStudies.icap.tags.vue': 'Vue.js',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
     'Help freelancers receive their payments as quickly as possible and have a better experience on the Malt platform.',

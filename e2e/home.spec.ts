@@ -56,7 +56,7 @@ const localizedHeroes = [
     quote: 'Sur devis',
     ribbon: 'Populaire',
     caseStudiesTitle: 'Cas clients',
-    caseStudyTitles: ['Malt', 'Namirial', 'Formation Spring Boot'],
+    caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Formation Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
       'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
@@ -107,7 +107,7 @@ const localizedHeroes = [
     quote: 'On quote',
     ribbon: 'Popular',
     caseStudiesTitle: 'Case studies',
-    caseStudyTitles: ['Malt', 'Namirial', 'Spring Boot Online Course'],
+    caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Spring Boot Online Course'],
     contactTitle: 'Contact',
     contactSubtitle:
       "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
@@ -271,6 +271,7 @@ for (const {
     await expect(caseStudies.getByRole('heading', { level: 3 })).toHaveText(caseStudyTitles);
     await expect(caseStudies.getByRole('img')).toHaveCount(0);
     expect(await caseStudies.locator('.case-study-art').evaluateAll(readIllustrationPalettes)).toEqual([
+      'icap',
       'malt',
       'namirial',
       'dyma',
@@ -320,11 +321,30 @@ for (const theme of ['light', 'dark'] as const) {
 
     const colors = await page.locator('#case-studies .case-study-art').evaluateAll(readIllustrationColors);
 
-    expect(colors).toHaveLength(3);
-    expect(new Set(colors.map(({ illustration }) => illustration)).size).toBe(3);
+    expect(colors).toHaveLength(4);
+    expect(new Set(colors.map(({ illustration }) => illustration)).size).toBe(4);
     for (const { illustration, card } of colors) {
       expect(illustration).not.toMatch(/^(|none|rgba\(0, 0, 0, 0\))$/);
       expect(illustration).not.toBe(card);
     }
+  });
+}
+
+for (const { viewport, cardsPerRow } of [
+  { viewport: { width: 1280, height: 800 }, cardsPerRow: 4 },
+  { viewport: { width: 900, height: 1100 }, cardsPerRow: 2 },
+]) {
+  test(`lays out ${cardsPerRow} case studies per row at ${viewport.width}px`, async ({ page }) => {
+    await page.setViewportSize(viewport);
+    await page.goto('/fr/');
+
+    const rowTops = await page
+      .locator('#case-studies .case-study-art')
+      .evaluateAll((arts) => arts.map((art) => Math.round(art.getBoundingClientRect().top)));
+
+    const cardsInEachRow = [...new Set(rowTops)].map((top) => rowTops.filter((rowTop) => rowTop === top).length);
+
+    expect(rowTops).toHaveLength(4);
+    expect(cardsInEachRow).toEqual(Array(4 / cardsPerRow).fill(cardsPerRow));
   });
 }

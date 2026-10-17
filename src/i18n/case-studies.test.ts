@@ -5,6 +5,12 @@ import { getCaseStudies } from './case-studies';
 const expectedCaseStudies = {
   fr: [
     {
+      title: 'Institut du Cancer Avignon - Provence',
+      description:
+        'Moderniser les outils numériques des équipes soignantes pour simplifier le suivi des patients au quotidien.',
+      tags: ['Santé', 'Software Craftsmanship', 'Kotlin', 'Spring Boot', 'Vue.js'],
+    },
+    {
       title: 'Malt',
       description:
         'Aider les freelances à recevoir leurs paiements le plus rapidement possible et avoir une meilleure expérience sur la plateforme Malt.',
@@ -24,6 +30,11 @@ const expectedCaseStudies = {
     },
   ],
   en: [
+    {
+      title: 'Institut du Cancer Avignon - Provence',
+      description: 'Modernizing the digital tools of care teams to make day-to-day patient follow-up simpler.',
+      tags: ['Healthcare', 'Software Craftsmanship', 'Kotlin', 'Spring Boot', 'Vue.js'],
+    },
     {
       title: 'Malt',
       description:
@@ -58,6 +69,7 @@ describe('listing the case studies', () => {
     const caseStudies = getCaseStudies(lang);
 
     expect(caseStudies.map(({ image }) => image.match(/data-palette="(\w+)"/)?.[1])).toEqual([
+      'icap',
       'malt',
       'namirial',
       'dyma',

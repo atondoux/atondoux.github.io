@@ -11,6 +11,16 @@ interface CaseStudyCatalogEntry {
 
 const caseStudyCatalog = [
   {
+    key: 'icap',
+    tagKeys: [
+      'home.caseStudies.icap.tags.healthcare',
+      'home.caseStudies.icap.tags.craftsmanship',
+      'home.caseStudies.icap.tags.kotlin',
+      'home.caseStudies.icap.tags.springBoot',
+      'home.caseStudies.icap.tags.vue',
+    ],
+  },
+  {
     key: 'malt',
     tagKeys: [
       'home.caseStudies.malt.tags.marketplace',
