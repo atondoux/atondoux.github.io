@@ -1,5 +1,17 @@
 import { expect, test } from '@playwright/test';
 
+const readIllustrationPalettes = (arts: Element[]) => arts.map((art) => art.getAttribute('data-palette'));
+
+const readIllustrationColors = (arts: Element[]) =>
+  arts.map((art) => {
+    const card = art.closest('.rounded-2xl');
+    const background = art.querySelector('svg > rect');
+    return {
+      illustration: background ? getComputedStyle(background).fill : '',
+      card: card ? getComputedStyle(card).backgroundColor : '',
+    };
+  });
+
 const localizedHeroes = [
   {
     lang: 'fr',
@@ -43,6 +55,9 @@ const localizedHeroes = [
     dailyRate: '600 €',
     quote: 'Sur devis',
     ribbon: 'Populaire',
+    caseStudiesTitle: 'Cas clients',
+    caseStudiesSubtitle: 'Quelques missions récentes.',
+    caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Formation Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
       'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
@@ -92,6 +107,9 @@ const localizedHeroes = [
     dailyRate: '€600',
     quote: 'On quote',
     ribbon: 'Popular',
+    caseStudiesTitle: 'Case studies',
+    caseStudiesSubtitle: 'Recent work.',
+    caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Spring Boot Online Course'],
     contactTitle: 'Contact',
     contactSubtitle:
       "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
@@ -122,6 +140,9 @@ for (const {
   dailyRate,
   quote,
   ribbon,
+  caseStudiesTitle,
+  caseStudiesSubtitle,
+  caseStudyTitles,
   contactTitle,
   contactSubtitle,
   contactTitles,
@@ -243,7 +264,33 @@ for (const {
     expect(followsServices).toBe(true);
   });
 
-  test(`shows the ${lang} contact section after the pricing section on ${path}`, async ({ page }) => {
+  test(`shows the ${lang} case studies after the pricing section on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const caseStudies = page.locator('#case-studies');
+
+    await expect(caseStudies).toBeVisible();
+    await expect(caseStudies.getByRole('heading', { level: 2, name: caseStudiesTitle })).toBeVisible();
+    await expect(caseStudies.getByText(caseStudiesSubtitle, { exact: true })).toBeVisible();
+    await expect(caseStudies.getByRole('heading', { level: 3 })).toHaveText(caseStudyTitles);
+    await expect(caseStudies.getByRole('img')).toHaveCount(0);
+    expect(await caseStudies.locator('.case-study-art').evaluateAll(readIllustrationPalettes)).toEqual([
+      'icap',
+      'malt',
+      'namirial',
+      'dyma',
+    ]);
+    await expect(caseStudies.getByRole('link')).toHaveCount(0);
+    const followsPricing = await page.evaluate(() => {
+      const pricing = document.querySelector('#pricing');
+      const caseStudies = document.querySelector('#case-studies');
+      if (!pricing || !caseStudies) return false;
+      return (pricing.compareDocumentPosition(caseStudies) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+    });
+    expect(followsPricing).toBe(true);
+  });
+
+  test(`shows the ${lang} contact section after the case studies on ${path}`, async ({ page }) => {
     await page.goto(path);
 
     const contact = page.locator('#contact');
@@ -261,12 +308,47 @@ for (const {
     await expect(linkedin).toHaveAttribute('target', '_blank');
     await expect(linkedin).toHaveAttribute('rel', /noopener/);
     await expect(contact.getByRole('link', { name: contactCta })).toHaveAttribute('href', 'mailto:atondoux@gmail.com');
-    const followsPricing = await page.evaluate(() => {
-      const pricing = document.querySelector('#pricing');
+    const followsCaseStudies = await page.evaluate(() => {
+      const caseStudies = document.querySelector('#case-studies');
       const contact = document.querySelector('#contact');
-      if (!pricing || !contact) return false;
-      return (pricing.compareDocumentPosition(contact) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+      if (!caseStudies || !contact) return false;
+      return (caseStudies.compareDocumentPosition(contact) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
     });
-    expect(followsPricing).toBe(true);
+    expect(followsCaseStudies).toBe(true);
+  });
+}
+
+for (const theme of ['light', 'dark'] as const) {
+  test(`paints each case study illustration apart from its card in ${theme} mode`, async ({ page }) => {
+    await page.addInitScript((chosenTheme) => localStorage.setItem('theme', chosenTheme), theme);
+    await page.goto('/fr/');
+
+    const colors = await page.locator('#case-studies .case-study-art').evaluateAll(readIllustrationColors);
+
+    expect(colors).toHaveLength(4);
+    expect(new Set(colors.map(({ illustration }) => illustration)).size).toBe(4);
+    for (const { illustration, card } of colors) {
+      expect(illustration).not.toMatch(/^(|none|rgba\(0, 0, 0, 0\))$/);
+      expect(illustration).not.toBe(card);
+    }
+  });
+}
+
+for (const { viewport, cardsPerRow } of [
+  { viewport: { width: 1280, height: 800 }, cardsPerRow: 4 },
+  { viewport: { width: 900, height: 1100 }, cardsPerRow: 2 },
+]) {
+  test(`lays out ${cardsPerRow} case studies per row at ${viewport.width}px`, async ({ page }) => {
+    await page.setViewportSize(viewport);
+    await page.goto('/fr/');
+
+    const rowTops = await page
+      .locator('#case-studies .case-study-art')
+      .evaluateAll((arts) => arts.map((art) => Math.round(art.getBoundingClientRect().top)));
+
+    const cardsInEachRow = [...new Set(rowTops)].map((top) => rowTops.filter((rowTop) => rowTop === top).length);
+
+    expect(rowTops).toHaveLength(4);
+    expect(cardsInEachRow).toEqual(Array(4 / cardsPerRow).fill(cardsPerRow));
   });
 }
