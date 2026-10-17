@@ -56,6 +56,7 @@ const localizedHeroes = [
     quote: 'Sur devis',
     ribbon: 'Populaire',
     caseStudiesTitle: 'Cas clients',
+    caseStudiesSubtitle: 'Missions récentes, du besoin utilisateur à la mise en production.',
     caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Formation Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -107,6 +108,7 @@ const localizedHeroes = [
     quote: 'On quote',
     ribbon: 'Popular',
     caseStudiesTitle: 'Case studies',
+    caseStudiesSubtitle: 'Recent work, from user needs to production.',
     caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Spring Boot Online Course'],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -139,6 +141,7 @@ for (const {
   quote,
   ribbon,
   caseStudiesTitle,
+  caseStudiesSubtitle,
   caseStudyTitles,
   contactTitle,
   contactSubtitle,
@@ -268,6 +271,7 @@ for (const {
 
     await expect(caseStudies).toBeVisible();
     await expect(caseStudies.getByRole('heading', { level: 2, name: caseStudiesTitle })).toBeVisible();
+    await expect(caseStudies.getByText(caseStudiesSubtitle, { exact: true })).toBeVisible();
     await expect(caseStudies.getByRole('heading', { level: 3 })).toHaveText(caseStudyTitles);
     await expect(caseStudies.getByRole('img')).toHaveCount(0);
     expect(await caseStudies.locator('.case-study-art').evaluateAll(readIllustrationPalettes)).toEqual([
