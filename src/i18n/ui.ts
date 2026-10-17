@@ -78,7 +78,7 @@ const fr = {
   'home.pricing.consulting.features.audit': 'Audit qualité',
   'home.pricing.consulting.features.review': 'Revue de code',
   'home.caseStudies.title': 'Cas clients',
-  'home.caseStudies.subtitle': 'Quelques missions récentes : des produits fondés sur du code de qualité.',
+  'home.caseStudies.subtitle': 'Quelques missions récentes.',
   'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
   'home.caseStudies.icap.description':
     'Moderniser les outils numériques des équipes soignantes pour simplifier le suivi des patients au quotidien.',
@@ -187,7 +187,7 @@ const en = {
   'home.pricing.consulting.features.audit': 'Quality audit',
   'home.pricing.consulting.features.review': 'Code review',
   'home.caseStudies.title': 'Case studies',
-  'home.caseStudies.subtitle': 'Recent work: products built on quality code.',
+  'home.caseStudies.subtitle': 'Recent work.',
   'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
   'home.caseStudies.icap.description':
     'Modernizing the digital tools of care teams to make day-to-day patient follow-up simpler.',

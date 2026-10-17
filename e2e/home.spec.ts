@@ -56,7 +56,7 @@ const localizedHeroes = [
     quote: 'Sur devis',
     ribbon: 'Populaire',
     caseStudiesTitle: 'Cas clients',
-    caseStudiesSubtitle: 'Quelques missions récentes : des produits fondés sur du code de qualité.',
+    caseStudiesSubtitle: 'Quelques missions récentes.',
     caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Formation Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -108,7 +108,7 @@ const localizedHeroes = [
     quote: 'On quote',
     ribbon: 'Popular',
     caseStudiesTitle: 'Case studies',
-    caseStudiesSubtitle: 'Recent work: products built on quality code.',
+    caseStudiesSubtitle: 'Recent work.',
     caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Spring Boot Online Course'],
     contactTitle: 'Contact',
     contactSubtitle:
