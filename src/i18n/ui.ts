@@ -81,7 +81,7 @@ const fr = {
   'home.caseStudies.subtitle': 'Quelques missions récentes.',
   'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
   'home.caseStudies.icap.description':
-    'Participer à la refonte complète du dossier patient informatisé, et accompagner une équipe tech d’une dizaine de personnes vers les meilleures pratiques de delivery.',
+    'Participer à la refonte complète du dossier patient informatisé, et accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie et de delivery.',
   'home.caseStudies.icap.tags.healthcare': 'Santé',
   'home.caseStudies.icap.tags.clinicalResearch': 'Recherche clinique',
   'home.caseStudies.icap.achievements.qualityInDelivery': 'Démarche qualité directement intégrée au cœur du delivery',
@@ -186,7 +186,7 @@ const en = {
   'home.caseStudies.subtitle': 'Recent work.',
   'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
   'home.caseStudies.icap.description':
-    'Helping fully rebuild the healthcare information system, and coaching a ten-person tech team towards delivery best practices.',
+    'Helping fully rebuild the healthcare information system, and supporting a ten-person tech team in setting up and adopting engineering and delivery best practices.',
   'home.caseStudies.icap.tags.healthcare': 'Healthcare',
   'home.caseStudies.icap.tags.clinicalResearch': 'Clinical Research',
   'home.caseStudies.icap.achievements.qualityInDelivery': 'Quality built right into delivery',
