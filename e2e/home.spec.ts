@@ -65,7 +65,7 @@ const localizedHeroes = [
     caseStudiesSubtitle: 'Quelques missions récentes.',
     caseStudyLinkText: 'Voir la formation',
     caseStudyAchievements: [
-      'Démarche qualité directement intégrée au cœur du delivery',
+      'Pipelines CI/CD pour livrer en toute confiance',
       'Une feuille de route claire pour la modernisation du SI',
       '90% des freelances payés en 10 jours',
       'Un processus de financement automatisé à 95%',
@@ -128,7 +128,7 @@ const localizedHeroes = [
     caseStudiesSubtitle: 'Recent work.',
     caseStudyLinkText: 'See the course',
     caseStudyAchievements: [
-      'Quality built right into delivery',
+      'CI/CD pipelines to ship with full confidence',
       'A clear roadmap for IT modernization',
       '90% of freelancers paid within 10 days',
       'A 95% automated financing process',

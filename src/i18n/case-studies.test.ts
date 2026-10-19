@@ -10,7 +10,7 @@ const expectedCaseStudies = {
         'Participer à la refonte complète du dossier patient informatisé, et accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie et de delivery.',
       tags: ['Santé', 'Recherche clinique'],
       achievements: [
-        'Démarche qualité directement intégrée au cœur du delivery',
+        'Pipelines CI/CD pour livrer en toute confiance',
         'Une feuille de route claire pour la modernisation du SI',
       ],
     },
@@ -42,7 +42,7 @@ const expectedCaseStudies = {
       description:
         'Helping fully rebuild the healthcare information system, and supporting a ten-person tech team in setting up and adopting engineering and delivery best practices.',
       tags: ['Healthcare', 'Clinical Research'],
-      achievements: ['Quality built right into delivery', 'A clear roadmap for IT modernization'],
+      achievements: ['CI/CD pipelines to ship with full confidence', 'A clear roadmap for IT modernization'],
     },
     {
       title: 'Malt',

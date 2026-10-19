@@ -84,7 +84,7 @@ const fr = {
     'Participer à la refonte complète du dossier patient informatisé, et accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie et de delivery.',
   'home.caseStudies.icap.tags.healthcare': 'Santé',
   'home.caseStudies.icap.tags.clinicalResearch': 'Recherche clinique',
-  'home.caseStudies.icap.achievements.qualityInDelivery': 'Démarche qualité directement intégrée au cœur du delivery',
+  'home.caseStudies.icap.achievements.cicdPipelines': 'Pipelines CI/CD pour livrer en toute confiance',
   'home.caseStudies.icap.achievements.modernizationRoadmap': 'Une feuille de route claire pour la modernisation du SI',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
@@ -189,7 +189,7 @@ const en = {
     'Helping fully rebuild the healthcare information system, and supporting a ten-person tech team in setting up and adopting engineering and delivery best practices.',
   'home.caseStudies.icap.tags.healthcare': 'Healthcare',
   'home.caseStudies.icap.tags.clinicalResearch': 'Clinical Research',
-  'home.caseStudies.icap.achievements.qualityInDelivery': 'Quality built right into delivery',
+  'home.caseStudies.icap.achievements.cicdPipelines': 'CI/CD pipelines to ship with full confidence',
   'home.caseStudies.icap.achievements.modernizationRoadmap': 'A clear roadmap for IT modernization',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
