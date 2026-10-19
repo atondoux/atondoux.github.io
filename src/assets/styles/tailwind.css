@@ -4,6 +4,7 @@
 
 /* shadcn/ui-compatible tokens derived from the --aw-* variables. */
 @import './shadcn.css';
+@import './case-studies.css';
 
 @variant dark (&:where(.dark, .dark *));
 
