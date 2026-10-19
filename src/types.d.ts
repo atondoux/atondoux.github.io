@@ -406,6 +406,8 @@ export interface Project {
   linkText?: string;
   /** A measurable outcome shown with a trend icon, e.g. "+38 % conversions". */
   result?: string;
+  /** Short achievements listed at the bottom of the card, each with a check icon. */
+  achievements?: Array<string>;
 }
 
 export interface Projects extends Omit<Headline, 'classes'>, Widget {

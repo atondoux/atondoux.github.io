@@ -1,5 +1,23 @@
 import { expect, test } from '@playwright/test';
 
+const CASE_STUDY_COUNT = 4;
+const WCAG_AA_TEXT_CONTRAST = 4.5;
+const CARD_FOOTER = 'h3 ~ div';
+const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
+const CASE_STUDY_ACHIEVEMENTS = `#case-studies ${ACHIEVEMENT_IN_CARD}`;
+
+const readIllustrationPalettes = (arts: Element[]) => arts.map((art) => art.getAttribute('data-palette'));
+
+const readIllustrationColors = (arts: Element[]) =>
+  arts.map((art) => {
+    const card = art.closest('.rounded-2xl');
+    const background = art.querySelector('svg > rect');
+    return {
+      illustration: background ? getComputedStyle(background).fill : '',
+      card: card ? getComputedStyle(card).backgroundColor : '',
+    };
+  });
+
 const localizedHeroes = [
   {
     lang: 'fr',
@@ -43,6 +61,20 @@ const localizedHeroes = [
     dailyRate: '600 €',
     quote: 'Sur devis',
     ribbon: 'Populaire',
+    caseStudiesTitle: 'Cas clients',
+    caseStudiesSubtitle: 'Quelques missions récentes.',
+    caseStudyLinkText: 'Voir la formation',
+    caseStudyAchievements: [
+      'Démarche qualité directement intégrée au cœur du delivery',
+      'Une feuille de route claire pour la modernisation du SI',
+      '90% des freelances payés en 10 jours',
+      'Un processus de financement automatisé à 95%',
+      'Contrats signés en ligne avec Yousign',
+      'Fraude détectée dès la souscription',
+      '19 chapitres, 85 leçons, 170 quiz',
+      '6500+ heures passées par les étudiants',
+    ],
+    caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Dyma Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
       'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
@@ -92,6 +124,20 @@ const localizedHeroes = [
     dailyRate: '€600',
     quote: 'On quote',
     ribbon: 'Popular',
+    caseStudiesTitle: 'Case studies',
+    caseStudiesSubtitle: 'Recent work.',
+    caseStudyLinkText: 'See the course',
+    caseStudyAchievements: [
+      'Quality built right into delivery',
+      'A clear roadmap for IT modernization',
+      '90% of freelancers paid within 10 days',
+      'A 95% automated financing process',
+      'Contracts signed online with Yousign',
+      'Fraud caught at sign-up',
+      '19 chapters, 85 lessons, 170 quizzes',
+      '6,500+ hours spent by students',
+    ],
+    caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Dyma Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
       "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
@@ -122,6 +168,11 @@ for (const {
   dailyRate,
   quote,
   ribbon,
+  caseStudiesTitle,
+  caseStudiesSubtitle,
+  caseStudyLinkText,
+  caseStudyAchievements,
+  caseStudyTitles,
   contactTitle,
   contactSubtitle,
   contactTitles,
@@ -243,7 +294,42 @@ for (const {
     expect(followsServices).toBe(true);
   });
 
-  test(`shows the ${lang} contact section after the pricing section on ${path}`, async ({ page }) => {
+  test(`shows the ${lang} case studies after the pricing section on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const caseStudies = page.locator('#case-studies');
+
+    await expect(caseStudies).toBeVisible();
+    await expect(caseStudies.getByRole('heading', { level: 2, name: caseStudiesTitle })).toBeVisible();
+    await expect(caseStudies.getByText(caseStudiesSubtitle, { exact: true })).toBeVisible();
+    await expect(caseStudies.getByRole('heading', { level: 3 })).toHaveText(caseStudyTitles);
+    await expect(caseStudies.locator(ACHIEVEMENT_IN_CARD)).toHaveText(caseStudyAchievements);
+    await expect(caseStudies.locator(`${ACHIEVEMENT_IN_CARD} svg[data-icon="tabler:circle-check-filled"]`)).toHaveCount(
+      caseStudyAchievements.length
+    );
+    await expect(caseStudies.getByRole('img')).toHaveCount(0);
+    expect(await caseStudies.locator('.case-study-art').evaluateAll(readIllustrationPalettes)).toEqual([
+      'icap',
+      'malt',
+      'namirial',
+      'dyma',
+    ]);
+    await expect(caseStudies.getByRole('link')).toHaveCount(1);
+    const courseLink = caseStudies.getByRole('link', { name: caseStudyLinkText });
+    await expect(courseLink).toHaveAttribute('href', 'https://dyma.fr/formations/spring-boot');
+    await expect(courseLink).toHaveAttribute('target', '_blank');
+    await expect(courseLink).toHaveAttribute('rel', 'noopener noreferrer');
+    await expect(courseLink.locator('svg[data-icon="tabler:external-link"][aria-hidden="true"]')).toHaveCount(1);
+    const followsPricing = await page.evaluate(() => {
+      const pricing = document.querySelector('#pricing');
+      const caseStudies = document.querySelector('#case-studies');
+      if (!pricing || !caseStudies) return false;
+      return (pricing.compareDocumentPosition(caseStudies) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+    });
+    expect(followsPricing).toBe(true);
+  });
+
+  test(`shows the ${lang} contact section after the case studies on ${path}`, async ({ page }) => {
     await page.goto(path);
 
     const contact = page.locator('#contact');
@@ -261,12 +347,99 @@ for (const {
     await expect(linkedin).toHaveAttribute('target', '_blank');
     await expect(linkedin).toHaveAttribute('rel', /noopener/);
     await expect(contact.getByRole('link', { name: contactCta })).toHaveAttribute('href', 'mailto:atondoux@gmail.com');
-    const followsPricing = await page.evaluate(() => {
-      const pricing = document.querySelector('#pricing');
+    const followsCaseStudies = await page.evaluate(() => {
+      const caseStudies = document.querySelector('#case-studies');
       const contact = document.querySelector('#contact');
-      if (!pricing || !contact) return false;
-      return (pricing.compareDocumentPosition(contact) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
+      if (!caseStudies || !contact) return false;
+      return (caseStudies.compareDocumentPosition(contact) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
     });
-    expect(followsPricing).toBe(true);
+    expect(followsCaseStudies).toBe(true);
+  });
+}
+
+for (const theme of ['light', 'dark'] as const) {
+  test(`paints each case study illustration apart from its card in ${theme} mode`, async ({ page }) => {
+    await page.addInitScript((chosenTheme) => localStorage.setItem('theme', chosenTheme), theme);
+    await page.goto('/fr/');
+
+    const colors = await page.locator('#case-studies .case-study-art').evaluateAll(readIllustrationColors);
+
+    expect(colors).toHaveLength(CASE_STUDY_COUNT);
+    expect(new Set(colors.map(({ illustration }) => illustration)).size).toBe(CASE_STUDY_COUNT);
+    for (const { illustration, card } of colors) {
+      expect(illustration).not.toMatch(/^(|none|rgba\(0, 0, 0, 0\))$/);
+      expect(illustration).not.toBe(card);
+    }
+  });
+}
+
+for (const { viewport, cardsPerRow } of [
+  { viewport: { width: 1280, height: 800 }, cardsPerRow: 4 },
+  { viewport: { width: 900, height: 1100 }, cardsPerRow: 2 },
+]) {
+  test(`lays out ${cardsPerRow} case studies per row with aligned achievements at ${viewport.width}px`, async ({
+    page,
+  }) => {
+    await page.setViewportSize(viewport);
+    await page.goto('/fr/');
+
+    const rowTops = await page
+      .locator('#case-studies .case-study-art')
+      .evaluateAll((arts) => arts.map((art) => Math.round(art.getBoundingClientRect().top)));
+
+    const cardsInEachRow = [...new Set(rowTops)].map((top) => rowTops.filter((rowTop) => rowTop === top).length);
+
+    const footerBottoms = await page
+      .locator(`#case-studies ${CARD_FOOTER}`)
+      .evaluateAll((footers) => footers.map((footer) => Math.round(footer.getBoundingClientRect().bottom)));
+    const footerBottomsInEachRow = [...new Set(rowTops)].map(
+      (top) => new Set(footerBottoms.filter((_, index) => rowTops[index] === top)).size
+    );
+
+    expect(rowTops).toHaveLength(CASE_STUDY_COUNT);
+    expect(cardsInEachRow).toEqual(Array(CASE_STUDY_COUNT / cardsPerRow).fill(cardsPerRow));
+    expect(footerBottomsInEachRow).toEqual(Array(CASE_STUDY_COUNT / cardsPerRow).fill(1));
+  });
+}
+
+for (const theme of ['light', 'dark'] as const) {
+  test(`keeps the case study achievements readable in ${theme} mode`, async ({ page }) => {
+    await page.addInitScript((chosenTheme) => localStorage.setItem('theme', chosenTheme), theme);
+    await page.goto('/fr/');
+
+    const ratios = await page.locator(CASE_STUDY_ACHIEVEMENTS).evaluateAll((achievements) => {
+      const context = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
+      if (!context) throw new Error('No 2D canvas context to resolve colours');
+      const toRgba = (color: string) => {
+        context.clearRect(0, 0, 1, 1);
+        context.fillStyle = color;
+        context.fillRect(0, 0, 1, 1);
+        return [...context.getImageData(0, 0, 1, 1).data];
+      };
+      const opaqueBackground = (element: Element) => {
+        for (let node: Element | null = element; node; node = node.parentElement) {
+          const rgba = toRgba(getComputedStyle(node).backgroundColor);
+          if (rgba[3] === 255) return rgba;
+        }
+        throw new Error('No opaque background behind the achievement');
+      };
+      const luminance = (rgba: number[]) => {
+        const [r, g, b] = rgba.slice(0, 3).map((value) => {
+          const channel = value / 255;
+          return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+        });
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      };
+      return achievements.map((achievement) => {
+        const text = luminance(toRgba(getComputedStyle(achievement).color));
+        const background = luminance(opaqueBackground(achievement));
+        return (Math.max(text, background) + 0.05) / (Math.min(text, background) + 0.05);
+      });
+    });
+
+    expect(ratios).toHaveLength(localizedHeroes[0].caseStudyAchievements.length);
+    for (const ratio of ratios) {
+      expect(ratio).toBeGreaterThanOrEqual(WCAG_AA_TEXT_CONTRAST);
+    }
   });
 }

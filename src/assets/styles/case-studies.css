@@ -1,0 +1,54 @@
+.case-study-art {
+  --cs-50: color-mix(in oklab, var(--cs-brand) 8%, white);
+  --cs-100: color-mix(in oklab, var(--cs-brand) 16%, white);
+  --cs-200: color-mix(in oklab, var(--cs-brand) 30%, white);
+  --cs-300: color-mix(in oklab, var(--cs-brand) 60%, white);
+  --cs-400: var(--cs-brand);
+  --cs-500: color-mix(in oklab, var(--cs-brand) 85%, var(--cs-deep));
+  --cs-700: color-mix(in oklab, var(--cs-brand) 60%, var(--cs-deep));
+  --cs-800: color-mix(in oklab, var(--cs-brand) 45%, var(--cs-deep));
+  --cs-900: color-mix(in oklab, var(--cs-brand) 30%, var(--cs-deep));
+  --cs-950: color-mix(in oklab, var(--cs-brand) 15%, var(--cs-deep));
+
+  --cs-bg: var(--cs-200);
+  --cs-dome: color-mix(in oklab, var(--cs-300) 55%, var(--cs-200));
+  --cs-device: var(--cs-300);
+  --cs-screen: var(--cs-100);
+  --cs-card: var(--cs-50);
+  --cs-chart: var(--cs-500);
+  --cs-chart-soft: var(--cs-300);
+  --cs-stroke: var(--cs-900);
+  --cs-sparkle: var(--cs-50);
+}
+
+.dark .case-study-art {
+  --cs-bg: var(--cs-950);
+  --cs-dome: color-mix(in oklab, var(--cs-900) 70%, var(--cs-950));
+  --cs-device: var(--cs-800);
+  --cs-screen: var(--cs-900);
+  --cs-card: var(--cs-950);
+  --cs-chart: var(--cs-400);
+  --cs-chart-soft: var(--cs-700);
+  --cs-stroke: var(--cs-300);
+  --cs-sparkle: var(--cs-300);
+}
+
+.case-study-art[data-palette='icap'] {
+  --cs-brand: #5c74a7;
+  --cs-deep: #2a407c;
+}
+
+.case-study-art[data-palette='malt'] {
+  --cs-brand: #fc5656;
+  --cs-deep: --theme(--color-red-950);
+}
+
+.case-study-art[data-palette='namirial'] {
+  --cs-brand: #00a69d;
+  --cs-deep: #00423f;
+}
+
+.case-study-art[data-palette='dyma'] {
+  --cs-brand: #3c82f6;
+  --cs-deep: #0f172a;
+}
