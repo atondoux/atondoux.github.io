@@ -1,7 +1,7 @@
 import type { CallToAction, Item } from '~/types';
 
 import type { Lang, UiKey } from './ui';
-import { LINKEDIN_HREFS } from './social';
+import { LINKEDIN_HREFS, MALT_HREFS } from './social';
 import { useTranslations } from './utils';
 
 const EMAIL_ADDRESS = 'atondoux@gmail.com';
@@ -13,7 +13,7 @@ const MAILTO_HREF = `mailto:${EMAIL_ADDRESS}`;
 interface ContactCatalogEntry {
   titleKey: UiKey;
   icon: string;
-  display: string;
+  display: string | Record<Lang, string>;
   href: string | Record<Lang, string>;
   external?: boolean;
 }
@@ -27,20 +27,28 @@ const contactCatalog = [
     href: LINKEDIN_HREFS,
     external: true,
   },
+  {
+    titleKey: 'home.contact.malt.title',
+    icon: 'tabler:topology-star-ring-3',
+    display: { fr: 'malt.fr/profile/aurelientondoux', en: 'malt.com/profile/aurelientondoux' },
+    href: MALT_HREFS,
+    external: true,
+  },
 ] as const satisfies readonly ContactCatalogEntry[];
 
 type ContactEntry = (typeof contactCatalog)[number];
 
-const resolveHref = (href: ContactEntry['href'], lang: Lang): string => (typeof href === 'string' ? href : href[lang]);
+const resolveLocalized = (value: string | Record<Lang, string>, lang: Lang): string =>
+  typeof value === 'string' ? value : value[lang];
 
 export function getContactItems(lang: Lang): Item[] {
   const t = useTranslations(lang);
 
   const toItem = (entry: ContactEntry): Item => ({
     title: t(entry.titleKey),
-    description: entry.display,
+    description: resolveLocalized(entry.display, lang),
     icon: entry.icon,
-    href: resolveHref(entry.href, lang),
+    href: resolveLocalized(entry.href, lang),
     ...('external' in entry ? { target: EXTERNAL_TARGET } : {}),
   });
 
