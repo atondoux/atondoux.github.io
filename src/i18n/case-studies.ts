@@ -14,15 +14,15 @@ interface CaseStudyCatalogEntry {
 const caseStudyCatalog = [
   {
     key: 'icap',
-    tagKeys: ['home.caseStudies.icap.tags.healthcare', 'home.caseStudies.icap.tags.clinicalResearch'],
+    tagKeys: ['home.caseStudies.icap.tags.healthcare'],
     achievementKeys: [
-      'home.caseStudies.icap.achievements.qualityInDelivery',
-      'home.caseStudies.icap.achievements.modernizationRoadmap',
+      'home.caseStudies.icap.achievements.modernizationStrategy',
+      'home.caseStudies.icap.achievements.cicdPipelines',
     ],
   },
   {
     key: 'malt',
-    tagKeys: ['home.caseStudies.malt.tags.marketplace', 'home.caseStudies.malt.tags.hrTech'],
+    tagKeys: ['home.caseStudies.malt.tags.marketplace'],
     achievementKeys: [
       'home.caseStudies.malt.achievements.paidIn10Days',
       'home.caseStudies.malt.achievements.automatedFinancing',
@@ -30,7 +30,7 @@ const caseStudyCatalog = [
   },
   {
     key: 'namirial',
-    tagKeys: ['home.caseStudies.namirial.tags.trustServices', 'home.caseStudies.namirial.tags.digitalIdentity'],
+    tagKeys: ['home.caseStudies.namirial.tags.trustServices'],
     achievementKeys: [
       'home.caseStudies.namirial.achievements.onlineSigning',
       'home.caseStudies.namirial.achievements.fraudAtSignUp',
