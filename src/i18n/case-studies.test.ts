@@ -7,25 +7,25 @@ const expectedCaseStudies = {
     {
       title: 'Institut du Cancer Avignon - Provence',
       description:
-        'Participer à la refonte complète du dossier patient informatisé, et accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie et de delivery.',
-      tags: ['Santé', 'Recherche clinique'],
+        'Participer à la refonte complète du dossier patient informatisé et mettre en place les meilleures pratiques d’ingénierie au sein d’une équipe tech d’une dizaine de personnes.',
+      tags: ['Santé'],
       achievements: [
-        'Pipelines CI/CD pour livrer en toute confiance',
-        'Une feuille de route claire pour la modernisation du SI',
+        'Stratégie de modernisation du SI clairement définie',
+        'Livraisons fiabilisées avec des pipelines CI/CD',
       ],
     },
     {
       title: 'Malt',
       description:
         'Renforcer la capacité de financement de Malt et optimiser sa gestion du cash flow, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
-      tags: ['Marketplace Freelance', 'HR Tech'],
-      achievements: ['90% des freelances payés en 10 jours', 'Un processus de financement automatisé à 95%'],
+      tags: ['Marketplace Freelance'],
+      achievements: ['90% des freelances payés en 10 jours', 'Processus de financement automatisé à 95%'],
     },
     {
       title: 'Namirial',
       description:
         'Fiabiliser et sécuriser les parcours de souscription en ligne, de la vérification d’identité à la signature électronique.',
-      tags: ['Services de confiance', 'Identité numérique'],
+      tags: ['Services de confiance numérique'],
       achievements: ['Contrats signés en ligne avec Yousign', 'Fraude détectée dès la souscription'],
     },
     {
@@ -40,21 +40,21 @@ const expectedCaseStudies = {
     {
       title: 'Institut du Cancer Avignon - Provence',
       description:
-        'Helping fully rebuild the healthcare information system, and supporting a ten-person tech team in setting up and adopting engineering and delivery best practices.',
-      tags: ['Healthcare', 'Clinical Research'],
-      achievements: ['CI/CD pipelines to ship with full confidence', 'A clear roadmap for IT modernization'],
+        'Helping fully rebuild the healthcare information system and setting up engineering best practices within a ten-person tech team.',
+      tags: ['Healthcare'],
+      achievements: ['Clearly defined IT modernization strategy', 'Reliable releases through CI/CD pipelines'],
     },
     {
       title: 'Malt',
       description:
         "Strengthening Malt's financing capacity and cash flow management, while drastically cutting the FinOps team's manual work.",
-      tags: ['Freelance Marketplace', 'HR Tech'],
-      achievements: ['90% of freelancers paid within 10 days', 'A 95% automated financing process'],
+      tags: ['Freelance Marketplace'],
+      achievements: ['90% of freelancers paid within 10 days', '95% automated financing process'],
     },
     {
       title: 'Namirial',
       description: 'Making online sign-up journeys reliable and secure, from identity verification to e-signature.',
-      tags: ['Trust Services', 'Digital Identity'],
+      tags: ['Trust Services'],
       achievements: ['Contracts signed online with Yousign', 'Fraud caught at sign-up'],
     },
     {
