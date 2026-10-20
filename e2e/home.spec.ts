@@ -78,9 +78,11 @@ const localizedHeroes = [
     contactTitle: 'Contact',
     contactSubtitle:
       'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
-    contactTitles: ['Email', 'LinkedIn'],
+    contactTitles: ['Email', 'LinkedIn', 'Malt'],
     contactCta: 'Me contacter',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/',
+    maltHref: 'https://www.malt.fr/profile/aurelientondoux',
+    maltDisplay: 'malt.fr/profile/aurelientondoux',
   },
   {
     lang: 'en',
@@ -141,9 +143,11 @@ const localizedHeroes = [
     contactTitle: 'Contact',
     contactSubtitle:
       "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
-    contactTitles: ['Email', 'LinkedIn'],
+    contactTitles: ['Email', 'LinkedIn', 'Malt'],
     contactCta: 'Contact me',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/?locale=en_US',
+    maltHref: 'https://www.malt.com/profile/aurelientondoux',
+    maltDisplay: 'malt.com/profile/aurelientondoux',
   },
 ] as const;
 
@@ -178,6 +182,8 @@ for (const {
   contactTitles,
   contactCta,
   linkedinHref,
+  maltHref,
+  maltDisplay,
 } of localizedHeroes) {
   test(`shows a single ${lang} h1 titled ${title} on ${path}`, async ({ page }) => {
     await page.goto(path);
@@ -346,6 +352,10 @@ for (const {
     await expect(linkedin).toHaveAttribute('href', linkedinHref);
     await expect(linkedin).toHaveAttribute('target', '_blank');
     await expect(linkedin).toHaveAttribute('rel', /noopener/);
+    const malt = contact.getByRole('link', { name: maltDisplay });
+    await expect(malt).toHaveAttribute('href', maltHref);
+    await expect(malt).toHaveAttribute('target', '_blank');
+    await expect(malt).toHaveAttribute('rel', /noopener/);
     await expect(contact.getByRole('link', { name: contactCta })).toHaveAttribute('href', 'mailto:atondoux@gmail.com');
     const followsCaseStudies = await page.evaluate(() => {
       const caseStudies = document.querySelector('#case-studies');

@@ -9,6 +9,11 @@ export const LINKEDIN_HREFS = {
   en: 'https://www.linkedin.com/in/atondoux/?locale=en_US',
 } as const satisfies Record<Lang, string>;
 
+export const MALT_HREFS = {
+  fr: 'https://www.malt.fr/profile/aurelientondoux',
+  en: 'https://www.malt.com/profile/aurelientondoux',
+} as const satisfies Record<Lang, string>;
+
 export interface SocialLink {
   ariaLabel: string;
   icon: string;
@@ -25,14 +30,7 @@ interface SocialCatalogEntry {
 
 const socialCatalog = [
   { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: LINKEDIN_HREFS },
-  {
-    ariaLabel: 'Malt',
-    icon: 'tabler:topology-star-ring-3',
-    href: {
-      fr: 'https://www.malt.fr/profile/aurelientondoux',
-      en: 'https://www.malt.com/profile/aurelientondoux',
-    },
-  },
+  { ariaLabel: 'Malt', icon: 'tabler:topology-star-ring-3', href: MALT_HREFS },
   { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: 'https://github.com/atondoux/' },
 ] as const satisfies readonly SocialCatalogEntry[];
 
