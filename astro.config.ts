@@ -68,13 +68,13 @@ export default defineConfig({
       include: {
         tabler: ['*'],
         'flat-color-icons': [
-          'conference-call',
+          'collaboration',
           'multiple-devices',
-          'deployment',
-          'reuse',
+          'start',
+          'refresh',
           'inspection',
-          'data-configuration',
-          'tree-structure',
+          'deployment',
+          'flow-chart',
         ],
       },
     }),

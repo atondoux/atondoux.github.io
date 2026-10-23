@@ -4,13 +4,13 @@ import type { Lang, UiKey } from './ui';
 import { useTranslations } from './utils';
 
 const serviceCatalog = [
-  { key: 'techLeadership', icon: 'flat-color-icons:conference-call' },
+  { key: 'techLeadership', icon: 'flat-color-icons:collaboration' },
   { key: 'fullStack', icon: 'flat-color-icons:multiple-devices' },
-  { key: 'projectBootstrap', icon: 'flat-color-icons:deployment' },
-  { key: 'legacyRecovery', icon: 'flat-color-icons:reuse' },
+  { key: 'projectBootstrap', icon: 'flat-color-icons:start' },
+  { key: 'legacyRecovery', icon: 'flat-color-icons:refresh' },
   { key: 'codeReview', icon: 'flat-color-icons:inspection' },
-  { key: 'devopsCloud', icon: 'flat-color-icons:data-configuration' },
-  { key: 'architecture', icon: 'flat-color-icons:tree-structure' },
+  { key: 'devopsCloud', icon: 'flat-color-icons:deployment' },
+  { key: 'architecture', icon: 'flat-color-icons:flow-chart' },
 ] as const;
 
 type ServiceKey = (typeof serviceCatalog)[number]['key'];
