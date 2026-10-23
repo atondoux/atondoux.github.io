@@ -13,6 +13,7 @@ const {
   items = [],
   columns = 3,
   defaultIcon,
+  centerLastRow = false,
 
   id,
   isDark = false,
@@ -22,6 +23,19 @@ const {
 
 const columnsClass = getColumnsClass(columns);
 
+const itemGaps = 'gap-4 md:gap-6 gap-x-12';
+
+const centeredCardWidthByColumns: Record<number, string> = {
+  2: 'w-full sm:w-[calc((100%-3rem)/2)]',
+  3: 'w-full sm:w-[calc((100%-3rem)/2)] lg:w-[calc((100%-6rem)/3)]',
+  4: 'w-full sm:w-[calc((100%-3rem)/2)] lg:w-[calc((100%-9rem)/4)]',
+};
+
+const itemsLayoutClass = centerLastRow
+  ? `flex flex-wrap justify-center ${itemGaps}`
+  : `grid ${itemGaps} ${columnsClass}`;
+const cardWidthClass = centerLastRow ? (centeredCardWidthByColumns[columns] ?? 'w-full') : '';
+
 const cardClass =
   'relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 intersect-once intersect-quarter intersect-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade';
 ---
@@ -30,7 +44,7 @@ const cardClass =
   <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
 
   {items.length > 0 && (
-    <div class:list={['grid gap-4 md:gap-6 gap-x-12', columnsClass]}>
+    <div class={itemsLayoutClass}>
       {items.map(({ title: itemTitle, description, icon, callToAction, href }) => {
         // Items with `href` render as a link: the whole card is clickable.
         const Card = href ? 'a' : 'div';
@@ -39,6 +53,7 @@ const cardClass =
             href={href}
             class:list={[
               cardClass,
+              cardWidthClass,
               href &&
                 'transition hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:border-primary/40',
             ]}
