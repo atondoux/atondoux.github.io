@@ -7,7 +7,7 @@ const serviceCatalog = [
   { key: 'techLeadership', icon: 'flat-color-icons:conference-call' },
   { key: 'fullStack', icon: 'flat-color-icons:multiple-devices' },
   { key: 'projectBootstrap', icon: 'flat-color-icons:start' },
-  { key: 'legacyRecovery', icon: 'flat-color-icons:refresh' },
+  { key: 'legacyRecovery', icon: 'flat-color-icons:medium-priority' },
   { key: 'codeReview', icon: 'flat-color-icons:inspection' },
   { key: 'devopsCloud', icon: 'flat-color-icons:deployment' },
   { key: 'architecture', icon: 'flat-color-icons:flow-chart' },

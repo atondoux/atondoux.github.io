@@ -71,7 +71,7 @@ export default defineConfig({
           'conference-call',
           'multiple-devices',
           'start',
-          'refresh',
+          'medium-priority',
           'inspection',
           'deployment',
           'flow-chart',
