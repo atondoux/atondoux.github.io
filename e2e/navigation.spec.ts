@@ -255,13 +255,30 @@ test('shows the french about section in view when loading /fr/#about directly', 
   await expectSectionBelowHeader(page, 'about');
 });
 
-test('shows a decorative user-code icon next to the site name in the header logo', async ({ page }) => {
+test('shows a round decorative profile photo before the site name in the header logo', async ({ page }) => {
   await page.goto('/fr/');
 
-  const logo = page.locator('#header a').filter({ hasText: 'AT Code Lab' });
-  const icon = logo.locator('svg[data-icon="tabler:user-code"]');
+  const logo = page.locator('#header').getByRole('link', { name: 'AT Code Lab', exact: true });
+  const photo = logo.locator('img');
 
-  await expect(icon).toBeVisible();
-  await expect(icon).toHaveAttribute('aria-hidden', 'true');
-  await expect(logo).not.toContainText('🚀');
+  await expect(photo).toBeVisible();
+  await expect(photo).toHaveAttribute('alt', '');
+  await expect.poll(() => photo.evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0);
+  const radius = await photo.evaluate((img) => parseFloat(getComputedStyle(img).borderTopLeftRadius));
+  const photoBox = await photo.boundingBox();
+  const followingText = await photo.evaluate((img) => img.nextSibling?.textContent?.trim());
+  expect(radius).toBeGreaterThanOrEqual(photoBox!.width / 2);
+  expect(followingText).toBe('AT Code Lab');
+});
+
+test('serves the header profile photo as an optimized image rather than the original jpeg', async ({ page }) => {
+  const MAX_PHOTO_BYTES = 100_000;
+  await page.goto('/fr/');
+  const photo = page.locator('#header').getByRole('link', { name: 'AT Code Lab', exact: true }).locator('img');
+
+  const src = await photo.evaluate((img: HTMLImageElement) => img.currentSrc);
+  const response = await page.request.get(src);
+
+  expect(new URL(src).pathname).toContain('/_astro/');
+  expect((await response.body()).length).toBeLessThan(MAX_PHOTO_BYTES);
 });
