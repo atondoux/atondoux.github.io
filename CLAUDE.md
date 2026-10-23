@@ -53,8 +53,8 @@ pnpm test:all            # Unit + E2E
   `getPermalink` depends on it. `PageLayout` renders an announcement only when a page fills the `announcement` slot.
 - `src/navigation.ts` exposes `getHeaderData(lang)` / `getFooterData(lang)`. Navigation is localized.
 - `~` is aliased to `src/`.
-- `brand/` (repo root) keeps brand assets for reference only, such as the LinkedIn banner (`linkedin-banner.webp`). The
-  site never imports them, and they sit outside `public/` so they are not deployed.
+- `brand/` (repo root) keeps brand assets for reference only, such as the LinkedIn banner (`AT_code_lab_banner.png`,
+  the original export). The site never imports them, and they sit outside `public/` so they are not deployed.
 - Favicons (`src/components/Favicons.astro`) are the brand "AT" icons copied from `legacy-nuxt/public/`: 32/16 PNG and
   apple-touch in `src/assets/favicons/`, and `favicon.ico` in `public/` because browsers and crawlers probe
   `/favicon.ico` directly. The template `favicon.svg` was removed: browsers prefer an SVG icon, so keeping it would show
