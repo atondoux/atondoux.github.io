@@ -64,7 +64,11 @@ const metadata = {
     items={getServiceItems(lang)}
     columns={3}
     centerLastRow
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
   <Pricing
     id="pricing"
     title={t('home.pricing.title')}
