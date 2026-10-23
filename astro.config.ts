@@ -68,7 +68,7 @@ export default defineConfig({
       include: {
         tabler: ['*'],
         'flat-color-icons': [
-          'collaboration',
+          'conference-call',
           'multiple-devices',
           'start',
           'refresh',

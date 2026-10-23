@@ -4,7 +4,7 @@ import type { Lang, UiKey } from './ui';
 import { useTranslations } from './utils';
 
 const serviceCatalog = [
-  { key: 'techLeadership', icon: 'flat-color-icons:collaboration' },
+  { key: 'techLeadership', icon: 'flat-color-icons:conference-call' },
   { key: 'fullStack', icon: 'flat-color-icons:multiple-devices' },
   { key: 'projectBootstrap', icon: 'flat-color-icons:start' },
   { key: 'legacyRecovery', icon: 'flat-color-icons:refresh' },
