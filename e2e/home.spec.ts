@@ -453,3 +453,42 @@ for (const theme of ['light', 'dark'] as const) {
     }
   });
 }
+
+const SERVICE_COUNT = 7;
+const CENTER_TOLERANCE_PX = 1;
+const SERVICE_CARD = '#services h3 >> xpath=..';
+
+for (const path of ['/fr/', '/en/']) {
+  test(`shows a multicolor flat icon on each service card on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const cards = page.locator(SERVICE_CARD);
+
+    await expect(cards).toHaveCount(SERVICE_COUNT);
+    for (const card of await cards.all()) {
+      await expect(card.locator('svg[data-icon^="flat-color-icons:"]')).toHaveCount(1);
+    }
+  });
+
+  for (const viewport of [
+    { width: 1280, height: 800 },
+    { width: 900, height: 1100 },
+  ]) {
+    test(`centers the last service card on a full-size row on ${path} at ${viewport.width}px`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      await page.goto(path);
+
+      const cards = page.locator(SERVICE_CARD);
+      const first = await cards.first().boundingBox();
+      const last = await cards.last().boundingBox();
+      const container = await cards.first().locator('xpath=..').boundingBox();
+
+      expect(first && last && container).toBeTruthy();
+      if (!first || !last || !container) return;
+      expect(Math.abs(last.x + last.width / 2 - (container.x + container.width / 2))).toBeLessThanOrEqual(
+        CENTER_TOLERANCE_PX
+      );
+      expect(Math.abs(last.width - first.width)).toBeLessThanOrEqual(CENTER_TOLERANCE_PX);
+    });
+  }
+}

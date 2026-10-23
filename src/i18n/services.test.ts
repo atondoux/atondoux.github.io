@@ -36,12 +36,12 @@ describe('listing the services catalog', () => {
     expect(items.map((item) => item.title)).toEqual(expectedTitles.en);
   });
 
-  it.each(['fr', 'en'] as const)('gives every %s service a description and a tabler icon', (lang) => {
+  it.each(['fr', 'en'] as const)('gives every %s service a description and a flat color icon', (lang) => {
     const items = getServiceItems(lang);
 
     for (const item of items) {
       expect(item.description.trim()).toBeTruthy();
-      expect(item.icon).toMatch(/^tabler:[a-z0-9-]+$/);
+      expect(item.icon).toMatch(/^flat-color-icons:[a-z0-9-]+$/);
     }
   });
 

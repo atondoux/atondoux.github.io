@@ -103,8 +103,12 @@ pnpm test:all            # Unit + E2E
 
 - Home sections are `Features2` widgets fed from flat `ui.ts` keys (`home.<section>.title` / `.subtitle`).
 - The collaborations section is a `Brands` widget (`id="collaborations"`, between about and services, `variant="marquee"`: an infinite horizontal scroll with faded edges, paused on hover, static under `prefers-reduced-motion`; marquee logos load eagerly, otherwise lazy loading leaves the off-screen ones blank; no `bg` slot, not in the nav or `sections.ts`) fed by `getCollaborationLogos(lang)` in `src/i18n/collaborations.ts`: a typed catalog, in chronological order, of the companies from the legacy portfolio (the `*_logo.svg` files copied from `legacy-nuxt/public/portfolio/`, minus world tour and Ortho Assistant, plus `icap.svg` last, vectorized from a PNG; all on a 600×450 viewBox) mapped to `~/assets/images/collaborations/<file>.svg` (resolved by `findImage`) with alt text from `home.collaborations.logoAlt` (`{company}` placeholder; company names are not translated). Visible title is "Ils me font confiance" / "They trust me".
-- The services catalog lives in `src/i18n/services.ts`: `getServiceItems(lang)` maps a typed catalog of keys to Tabler
-  icons (legacy Lucide names were mapped; Tabler is fully allowlisted) and to `home.services.<key>.*` copy.
+- The services catalog lives in `src/i18n/services.ts`: `getServiceItems(lang)` maps a typed catalog of keys to
+  multicolor `flat-color-icons:*` icons (each name is allowlisted in the astro-icon `include` of `astro.config.ts`: a
+  missing name breaks the build) and to `home.services.<key>.*` copy. `Features2` has an opt-in `centerLastRow`
+  (`#services` sets it): the items render as `flex flex-wrap justify-center` with explicit card widths mirroring the
+  grid columns, so a partial last row is centered. Flex over grid because a grid cannot center a lone card in an
+  even column count (guarded by `e2e/home.spec.ts` at 1280 and 900px).
 - The pricing section is a `Pricing` widget (`id="pricing"`, after services, no CTAs) fed by `getPricingPlans(lang)` in
   `src/i18n/pricing.ts`: a typed catalog mapped to `home.pricing.<plan>.*` copy and Tabler icons. The daily rate is
   formatted with `Intl.NumberFormat(lang, { style: 'currency', currency: 'EUR' })` (fr "600 €", en "€600", with a
