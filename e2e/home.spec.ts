@@ -77,7 +77,7 @@ const localizedHeroes = [
     caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Dyma Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
-      'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
+      'Parlons de votre projet. Un premier échange rapide pour cerner votre besoin et voir comment je peux vous aider.',
     contactTitles: ['Email', 'LinkedIn', 'Malt'],
     contactCta: 'Me contacter',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/',
@@ -142,7 +142,7 @@ const localizedHeroes = [
     caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Dyma Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
-      "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
+      "Let's talk about your project. A quick first conversation to pin down what you need and see how I can help.",
     contactTitles: ['Email', 'LinkedIn', 'Malt'],
     contactCta: 'Contact me',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/?locale=en_US',

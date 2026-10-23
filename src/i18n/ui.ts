@@ -43,7 +43,7 @@ const fr = {
     'Des applications web sur mesure, pensées pour vos utilisateurs : back-end, front-end, déploiement, monitoring.',
   'home.services.projectBootstrap.title': 'Bootstrap de Projets',
   'home.services.projectBootstrap.description':
-    'Bien démarrer pour aller vite longtemps : des fondations solides et un transfert de compétences à vos équipes.',
+    'Des fondations solides et un transfert de compétences à vos équipes pour vous permettre de livrer rapidement et efficacement.',
   'home.services.legacyRecovery.title': 'Reprise de Projets Legacy',
   'home.services.legacyRecovery.description':
     'Reprendre la main sur un projet devenu coûteux, sans tout réécrire : stabilisation, modernisation, réduction progressive de la dette technique.',
@@ -107,7 +107,7 @@ const fr = {
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
-    'Parlons de votre projet. Un premier échange rapide suffit pour cerner votre besoin et voir comment je peux vous aider.',
+    'Parlons de votre projet. Un premier échange rapide pour cerner votre besoin et voir comment je peux vous aider.',
   'home.contact.email.title': 'Email',
   'home.contact.linkedin.title': 'LinkedIn',
   'home.contact.malt.title': 'Malt',
@@ -146,7 +146,7 @@ const en = {
     'Tailor-made web applications built around your users: back-end, front-end, deployment, monitoring.',
   'home.services.projectBootstrap.title': 'Project Bootstrapping',
   'home.services.projectBootstrap.description':
-    'Start right to move fast for the long run: solid foundations and knowledge transfer to your teams.',
+    'Solid foundations and knowledge transfer to your teams, so you can deliver quickly and efficiently.',
   'home.services.legacyRecovery.title': 'Legacy Project Recovery',
   'home.services.legacyRecovery.description':
     'Regain control of a project that has grown costly, without a full rewrite: stabilization, modernization, progressive reduction of technical debt.',
@@ -210,7 +210,7 @@ const en = {
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
-    "Let's talk about your project. A quick first conversation is all it takes to pin down what you need and see how I can help.",
+    "Let's talk about your project. A quick first conversation to pin down what you need and see how I can help.",
   'home.contact.email.title': 'Email',
   'home.contact.linkedin.title': 'LinkedIn',
   'home.contact.malt.title': 'Malt',
