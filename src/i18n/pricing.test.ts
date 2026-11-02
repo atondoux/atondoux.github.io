@@ -10,20 +10,37 @@ const formatRate = (lang: 'fr' | 'en') =>
 const normalizeSpaces = (text: string) => text.replace(/[\u202F\u00A0]/g, '\u0020');
 
 const expectedTitles = {
-  fr: ['Développeur Full Stack', 'Tech Lead', 'Consultant'],
-  en: ['Full-Stack Developer', 'Tech Lead', 'Consultant'],
+  fr: ['Création d’applications', 'Tech Lead Full Stack', 'Consulting'],
+  en: ['Application Development', 'Full-Stack Tech Lead', 'Consulting'],
 } as const;
 
 const expectedFeatures = {
   fr: [
-    ['Conception', 'Développement backend', 'Développement frontend', 'Déploiement'],
-    ['Software Craftsmanship', 'Test-Driven Development', 'Bonnes pratiques'],
-    ["Lancement d'un projet", 'Audit qualité', 'Revue de code'],
+    [
+      'Cadrage et planning',
+      'Conception et architecture',
+      'Développement Full Stack',
+      'Déploiement et monitoring',
+      'Maintenance',
+    ],
+    ['Leadership technique', 'Software Craftsmanship', 'Test-Driven Development'],
+    [
+      'Conseil en choix d’architecture',
+      'Conseil en choix techniques',
+      'Audit architecture et qualité',
+      'Revue de code',
+    ],
   ],
   en: [
-    ['Design', 'Backend development', 'Frontend development', 'Deployment'],
-    ['Software Craftsmanship', 'Test-Driven Development', 'Best practices'],
-    ['Project launch', 'Quality audit', 'Code review'],
+    [
+      'Scoping and planning',
+      'Design and architecture',
+      'Full-Stack Development',
+      'Deployment and monitoring',
+      'Maintenance',
+    ],
+    ['Technical leadership', 'Software Craftsmanship', 'Test-Driven Development'],
+    ['Architecture advice', 'Technology advice', 'Architecture and quality audit', 'Code review'],
   ],
 } as const;
 
@@ -38,9 +55,9 @@ describe('listing the pricing plans', () => {
     const plans = getPricingPlans('fr');
 
     expect(plans.map((plan) => plan.subtitle)).toEqual([
-      'Livrer plus vite, de la conception jusqu’à la production.',
-      'Amener vos équipes à l’excellence technique, au quotidien.',
-      'Cadrer un projet ou une mission taillés pour vos besoins.',
+      'Transformer votre idée en application ou SaaS prêt pour la production.',
+      'Livrer sereinement et amener vos équipes à l’excellence technique.',
+      'Bénéficier d’un regard expert sur votre code et votre architecture.',
     ]);
   });
 
@@ -48,26 +65,24 @@ describe('listing the pricing plans', () => {
     const plans = getPricingPlans('en');
 
     expect(plans.map((plan) => plan.subtitle)).toEqual([
-      'Ship faster, from design all the way to production.',
-      'Lead your teams to technical excellence, day after day.',
-      'Scope a project or assignment shaped around your needs.',
+      'Turn your idea into a production-ready application or SaaS.',
+      'Ship with confidence and lead your teams to technical excellence.',
+      'Get an expert eye on your code and architecture.',
     ]);
   });
 
   it('formats the french daily rate as 600 € per day', () => {
-    const [fullStack, techLead] = getPricingPlans('fr');
+    const techLead = getPricingPlans('fr')[1];
 
     expect(techLead?.price).toBe(formatRate('fr'));
-    expect(fullStack?.price).toBe(formatRate('fr'));
     expect(normalizeSpaces(String(techLead?.price))).toBe('600 €');
     expect(techLead?.period).toBe('par jour');
   });
 
   it('formats the english daily rate as €600 per day', () => {
-    const [fullStack, techLead] = getPricingPlans('en');
+    const techLead = getPricingPlans('en')[1];
 
     expect(techLead?.price).toBe(formatRate('en'));
-    expect(fullStack?.price).toBe(formatRate('en'));
     expect(normalizeSpaces(String(techLead?.price))).toBe('€600');
     expect(techLead?.period).toBe('per day');
   });
@@ -75,11 +90,12 @@ describe('listing the pricing plans', () => {
   it.each([
     ['fr', 'Sur devis'],
     ['en', 'On quote'],
-  ] as const)('shows the %s consulting plan as a quote without a period', (lang, quote) => {
-    const consulting = getPricingPlans(lang)[2];
+  ] as const)('shows the %s application and consulting plans as a quote without a period', (lang, quote) => {
+    const plans = getPricingPlans(lang);
+    const quotePlans = [plans[0], plans[2]];
 
-    expect(consulting?.price).toBe(quote);
-    expect(consulting?.period).toBeUndefined();
+    expect(quotePlans.map((plan) => plan?.price)).toEqual([quote, quote]);
+    expect(quotePlans.map((plan) => plan?.period)).toEqual([undefined, undefined]);
   });
 
   it.each([
@@ -102,7 +118,7 @@ describe('listing the pricing plans', () => {
   it('gives every feature a tabler icon', () => {
     const icons = getPricingPlans('fr').flatMap((plan) => plan.items?.map((item) => item.icon) ?? []);
 
-    expect(icons).toHaveLength(10);
+    expect(icons).toHaveLength(12);
     for (const icon of icons) {
       expect(icon).toMatch(/^tabler:[a-z0-9-]+$/);
     }

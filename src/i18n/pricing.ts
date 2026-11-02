@@ -15,14 +15,14 @@ interface PricingCatalogEntry {
 
 const pricingCatalog = [
   {
-    titleKey: 'home.pricing.fullStack.title',
-    descriptionKey: 'home.pricing.fullStack.description',
-    dailyRate: DAILY_RATE_EUR,
+    titleKey: 'home.pricing.applications.title',
+    descriptionKey: 'home.pricing.applications.description',
     features: [
-      { labelKey: 'home.pricing.fullStack.features.design', icon: 'tabler:users' },
-      { labelKey: 'home.pricing.fullStack.features.backend', icon: 'tabler:server' },
-      { labelKey: 'home.pricing.fullStack.features.frontend', icon: 'tabler:layout-dashboard' },
-      { labelKey: 'home.pricing.fullStack.features.deployment', icon: 'tabler:rocket' },
+      { labelKey: 'home.pricing.applications.features.planning', icon: 'tabler:clipboard-list' },
+      { labelKey: 'home.pricing.applications.features.design', icon: 'tabler:sitemap' },
+      { labelKey: 'home.pricing.applications.features.development', icon: 'tabler:code' },
+      { labelKey: 'home.pricing.applications.features.deployment', icon: 'tabler:cloud-upload' },
+      { labelKey: 'home.pricing.applications.features.maintenance', icon: 'tabler:tool' },
     ],
   },
   {
@@ -31,16 +31,17 @@ const pricingCatalog = [
     ribbonKey: 'home.pricing.techLead.ribbon',
     dailyRate: DAILY_RATE_EUR,
     features: [
+      { labelKey: 'home.pricing.techLead.features.leadership', icon: 'tabler:users' },
       { labelKey: 'home.pricing.techLead.features.craftsmanship', icon: 'tabler:diamond' },
       { labelKey: 'home.pricing.techLead.features.tdd', icon: 'tabler:flask' },
-      { labelKey: 'home.pricing.techLead.features.bestPractices', icon: 'tabler:award' },
     ],
   },
   {
     titleKey: 'home.pricing.consulting.title',
     descriptionKey: 'home.pricing.consulting.description',
     features: [
-      { labelKey: 'home.pricing.consulting.features.launch', icon: 'tabler:rocket' },
+      { labelKey: 'home.pricing.consulting.features.architectureAdvice', icon: 'tabler:hierarchy-2' },
+      { labelKey: 'home.pricing.consulting.features.advice', icon: 'tabler:compass' },
       { labelKey: 'home.pricing.consulting.features.audit', icon: 'tabler:zoom-check' },
       { labelKey: 'home.pricing.consulting.features.review', icon: 'tabler:code' },
     ],
