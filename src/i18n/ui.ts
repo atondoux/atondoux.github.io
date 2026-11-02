@@ -27,7 +27,7 @@ const fr = {
   'home.description': 'Software & Product Engineering.',
   'home.hero.tagline': 'Tech Lead · 20 ans d’expérience',
   'home.hero.title': 'Aurélien TONDOUX',
-  'home.hero.subtitle': 'Ingénierie logicielle orientée produit <strong>— boostée à l’IA</strong>',
+  'home.hero.subtitle': 'Ingénierie logicielle orientée produit <strong>— augmentée par l’IA</strong>',
   'home.about.title': 'À propos',
   'home.about.subtitle':
     'De la conception au code, je crée des logiciels qui répondent à des besoins concrets. J’utilise l’IA pour le faire plus vite, et mieux. Chaque projet commence par les utilisateurs : leurs besoins, leurs usages, les obstacles qu’ils rencontrent au quotidien. Un logiciel ne crée de valeur que s’il est adopté, j’accorde donc autant d’attention à l’expérience utilisateur qu’au code. La technologie doit être au service du produit, et la qualité reste une exigence constante.',
@@ -133,7 +133,7 @@ const en = {
   'home.description': 'Software & Product Engineering.',
   'home.hero.tagline': 'Tech Lead · 20 years of experience',
   'home.hero.title': 'Aurélien TONDOUX',
-  'home.hero.subtitle': 'Product-minded software engineering <strong>— AI-boosted</strong>',
+  'home.hero.subtitle': 'Product-minded software engineering <strong>— AI-augmented</strong>',
   'home.about.title': 'About',
   'home.about.subtitle':
     'From design to code, I create software that addresses concrete needs. I use AI to do it faster, and better. Every project starts with users: their needs, how they work, and the obstacles they face every day. Software only creates value once people adopt it, so I give the user experience the same attention as the code. Technology must serve the product, and quality remains a constant requirement.',
