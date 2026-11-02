@@ -55,6 +55,9 @@ pnpm test:all            # Unit + E2E
 - `~` is aliased to `src/`.
 - `brand/` (repo root) keeps brand assets for reference only, such as the LinkedIn banner (`AT_code_lab_banner.png`,
   the original export). The site never imports them, and they sit outside `public/` so they are not deployed.
+- The browser tab title uses the "AT Code Lab" brand: the home page shows `home.title` alone (`ignoreTitleTemplate`),
+  and other pages go through `metadata.title.template` in `config.yaml` (`'%s — AT Code Lab'`). Descriptions,
+  `openGraph.site_name` and the footer copyright keep "Aurélien Tondoux". Guarded by `e2e/i18n.spec.ts`.
 - Favicons (`src/components/Favicons.astro`) are the brand "AT" icons copied from `legacy-nuxt/public/`: 32/16 PNG and
   apple-touch in `src/assets/favicons/`, and `favicon.ico` in `public/` because browsers and crawlers probe
   `/favicon.ico` directly. The template `favicon.svg` was removed: browsers prefer an SVG icon, so keeping it would show
