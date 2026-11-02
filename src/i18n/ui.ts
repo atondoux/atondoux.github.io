@@ -79,7 +79,7 @@ const fr = {
   'home.pricing.consulting.features.audit': 'Audit qualité',
   'home.pricing.consulting.features.review': 'Revue de code',
   'home.caseStudies.title': 'Cas clients',
-  'home.caseStudies.subtitle': 'Quelques missions récentes.',
+  'home.caseStudies.subtitle': 'Quelques missions et réalisations récentes.',
   'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
   'home.caseStudies.icap.description':
     'Participer à la refonte complète du dossier patient informatisé et mettre en place les meilleures pratiques d’ingénierie au sein d’une équipe tech d’une dizaine de personnes.',
@@ -183,7 +183,7 @@ const en = {
   'home.pricing.consulting.features.audit': 'Quality audit',
   'home.pricing.consulting.features.review': 'Code review',
   'home.caseStudies.title': 'Case studies',
-  'home.caseStudies.subtitle': 'Recent work.',
+  'home.caseStudies.subtitle': 'Some recent work.',
   'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
   'home.caseStudies.icap.description':
     'Helping fully rebuild the healthcare information system and setting up engineering best practices within a ten-person tech team.',
