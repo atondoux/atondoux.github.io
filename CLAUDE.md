@@ -112,7 +112,7 @@ pnpm test:all            # Unit + E2E
   grid columns, so a partial last row is centered. Flex over grid because a grid cannot center a lone card in an
   even column count (guarded by `e2e/home.spec.ts` at 1280 and 900px).
 - The pricing section is a `Pricing` widget (`id="pricing"`, after services, no CTAs) fed by `getPricingPlans(lang)` in
-  `src/i18n/pricing.ts`: a typed catalog of three plans, in order Création d’applications / Application Development (`applications`, on quote), Tech Lead Full Stack (`techLead`, at the daily rate, carries the "Populaire" / "Popular" ribbon) and Consultant (`consulting`, on quote), mapped to `home.pricing.<plan>.*` copy and Tabler icons. The daily rate is
+  `src/i18n/pricing.ts`: a typed catalog of three plans, in order Création d’applications / Application Development (`applications`, on quote), Tech Lead Full Stack (`techLead`, at the daily rate, carries the "Populaire" / "Popular" ribbon) and Consulting (`consulting`, on quote), mapped to `home.pricing.<plan>.*` copy and Tabler icons. The daily rate is
   formatted with `Intl.NumberFormat(lang, { style: 'currency', currency: 'EUR' })` (fr "600 €", en "€600", with a
   narrow no-break space: tests compare against `Intl` output). A plan without a rate falls back to the quote label and
   has no period. The page passes `currency=""` because the price string is already formatted. `Pricing.astro` was
