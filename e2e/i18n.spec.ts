@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 const SITE_URL = 'https://aurelientondoux.com';
+const SHARE_DESCRIPTION = 'Software & Product Engineering.';
 
 const localizedHomes = [
   { lang: 'fr', path: '/fr/', ogLocale: 'fr_FR' },
@@ -30,6 +31,16 @@ for (const { lang, path, ogLocale } of localizedHomes) {
     const locale = page.locator('meta[property="og:locale"]');
 
     await expect(locale).toHaveAttribute('content', ogLocale);
+  });
+
+  test(`shares the positioning line as the description of ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const description = page.locator('meta[name="description"]');
+    const ogDescription = page.locator('meta[property="og:description"]');
+
+    await expect(description).toHaveAttribute('content', SHARE_DESCRIPTION);
+    await expect(ogDescription).toHaveAttribute('content', SHARE_DESCRIPTION);
   });
 
   test(`shows no template demo content on ${path}`, async ({ page }) => {

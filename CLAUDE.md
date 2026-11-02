@@ -115,6 +115,9 @@ pnpm test:all            # Unit + E2E
     outside the locale folders (404) get no canonical and no alternates, and stay `noindex`.
   - hreflang is language-only (`fr`, `en`) in the head and in the sitemap: `@astrojs/sitemap` uses
     `i18n.locales = hreflangs`. Its `filter` excludes the root redirect page.
+  - The home pages' meta and og description (the link preview line) is `home.description`: the same English line
+    "Software & Product Engineering." in both locales, mirrored as the `config.yaml` fallback and pinned by
+    `e2e/i18n.spec.ts`.
 
 ### Home sections
 
