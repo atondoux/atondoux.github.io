@@ -60,8 +60,12 @@ pnpm test:all            # Unit + E2E
   `openGraph.site_name` and the footer copyright keep "Aurélien Tondoux". Guarded by `e2e/i18n.spec.ts`.
 - The link-preview image (`og:image`) is `src/assets/images/og-default.png`, set in `config.yaml` `metadata.openGraph.images`
   and used by every page (none overrides it). It is the LinkedIn banner (`brand/AT_code_lab_banner.png`) cropped with
-  Sharp around its text (the banner keeps the left side free for the LinkedIn photo, so the crop is the widest one
-  centered on the text block, 3554×1854 from x 1950, y 617, no added pixels) and resized to 1200×626, because `adaptOpenGraphImages` (`src/utils/images.ts`) always re-encodes it to a 1200×626 JPG
+  Sharp around its text (the banner keeps the left side free for the LinkedIn photo, so the crop is centered on the
+  text block) and resized to 1200×626. The crop is 4181×2181 from x 1637, y 454: the first crop (3554×1854 from x 1950,
+  y 617, ~10% margin per side) scaled by 1/0.85 around the same center, so the text keeps ~16% margin per side
+  (197px of 1200) that preview cards' rounded corners and edge trims don't eat. It
+  overflows the banner's right edge, so the banner is first extended right by 314px with `extendWith: 'mirror'`
+  (that strip is plain background, so the gradient and grain continue without a seam). The size is 1200×626 because `adaptOpenGraphImages` (`src/utils/images.ts`) always re-encodes it to a 1200×626 JPG
   and would crop any other ratio a second time. The template's `default.png` (an AstroWind screenshot) was removed.
   There is no `twitter:image` tag: X falls back to `og:image`, and `twitter:card` is `summary_large_image`.
   Guarded by `e2e/share-image.spec.ts`. Social sites cache previews, so refresh them with LinkedIn Post Inspector.
