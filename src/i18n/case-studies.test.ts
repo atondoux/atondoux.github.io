@@ -33,7 +33,7 @@ const expectedCaseStudies = {
       description:
         'Créer et maintenir la formation Spring Boot sur la plateforme Dyma : leçons écrites, vidéos et exemples de code. Voir la formation',
       tags: ['Formation en ligne'],
-      achievements: ['19 chapitres, 85 leçons, 170 quiz', '6500+ heures passées par les étudiants'],
+      achievements: ['19 chapitres, 85 leçons, 170 quiz', '6500+ heures passées par les apprenants'],
     },
   ],
   en: [
