@@ -24,7 +24,12 @@ const expectedFeatures = {
       'Maintenance',
     ],
     ['Leadership technique', 'Software Craftsmanship', 'Test-Driven Development'],
-    ['Conseil en choix techniques', 'Audit architecture et qualité', 'Revue de code'],
+    [
+      'Conseil en choix d’architecture',
+      'Conseil en choix techniques',
+      'Audit architecture et qualité',
+      'Revue de code',
+    ],
   ],
   en: [
     [
@@ -35,7 +40,7 @@ const expectedFeatures = {
       'Maintenance',
     ],
     ['Technical leadership', 'Software Craftsmanship', 'Test-Driven Development'],
-    ['Technology advice', 'Architecture and quality audit', 'Code review'],
+    ['Architecture advice', 'Technology advice', 'Architecture and quality audit', 'Code review'],
   ],
 } as const;
 
@@ -113,7 +118,7 @@ describe('listing the pricing plans', () => {
   it('gives every feature a tabler icon', () => {
     const icons = getPricingPlans('fr').flatMap((plan) => plan.items?.map((item) => item.icon) ?? []);
 
-    expect(icons).toHaveLength(11);
+    expect(icons).toHaveLength(12);
     for (const icon of icons) {
       expect(icon).toMatch(/^tabler:[a-z0-9-]+$/);
     }
