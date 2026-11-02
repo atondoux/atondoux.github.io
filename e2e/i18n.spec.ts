@@ -42,6 +42,12 @@ for (const { lang, path, ogLocale } of localizedHomes) {
     expect(html).not.toContain('unsplash');
   });
 
+  test(`names the browser tab of ${path} after the AT Code Lab brand`, async ({ page }) => {
+    await page.goto(path);
+
+    await expect(page).toHaveTitle('AT Code Lab');
+  });
+
   test(`points the canonical url of ${path} to itself`, async ({ page }) => {
     await page.goto(path);
 
@@ -101,6 +107,12 @@ test('serves a noindex french 404 page without canonical or alternates', async (
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
   await expect(page.locator('link[rel="canonical"]')).toHaveCount(0);
   await expect(page.locator('link[rel="alternate"][hreflang]')).toHaveCount(0);
+});
+
+test('suffixes the 404 page tab title with the AT Code Lab brand', async ({ page }) => {
+  await page.goto('/does-not-exist/');
+
+  await expect(page).toHaveTitle('Page introuvable — AT Code Lab');
 });
 
 test('lists both locales with their alternates in the sitemap', async ({ request }) => {

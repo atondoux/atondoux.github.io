@@ -7,8 +7,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Aurélien Tondoux
-    template: '%s — Aurélien Tondoux'
+    default: AT Code Lab
+    template: '%s — AT Code Lab'
   description: 'Site personnel d’Aurélien Tondoux.'
   robots:
     index: true
