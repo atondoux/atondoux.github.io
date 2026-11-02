@@ -28,7 +28,7 @@ const localizedHeroes = [
     emphasis: ['— augmentée par l’IA'],
     aboutTitle: 'À propos',
     aboutSubtitle:
-      'De la conception au code, je crée des logiciels qui répondent à des besoins concrets. J’utilise l’IA pour le faire plus vite, et mieux. Chaque projet commence par les utilisateurs : leurs besoins, leurs usages, les obstacles qu’ils rencontrent au quotidien. Un logiciel ne crée de valeur que s’il est adopté, j’accorde donc autant d’attention à l’expérience utilisateur qu’au code. La technologie doit être au service du produit, et la qualité reste une exigence constante.',
+      'Je crée des logiciels qui répondent à des besoins concrets. J’utilise l’IA pour le faire plus vite, et mieux. Chaque projet commence par les utilisateurs : leurs besoins, leurs usages, les obstacles qu’ils rencontrent au quotidien. Un logiciel ne crée de la valeur que s’il est adopté et utilisé chaque jour : c’est pourquoi j’accorde autant d’attention à l’expérience utilisateur qu’au code. La technologie doit servir le produit, et la qualité n’est jamais une option.',
     collaborationsTitle: 'Ils me font confiance',
     collaborationsSubtitle: 'Startups, PME et grands comptes avec qui j’ai collaboré.',
     logoAlts: [
@@ -93,7 +93,7 @@ const localizedHeroes = [
     emphasis: ['— AI-augmented'],
     aboutTitle: 'About',
     aboutSubtitle:
-      'From design to code, I create software that addresses concrete needs. I use AI to do it faster, and better. Every project starts with users: their needs, how they work, and the obstacles they face every day. Software only creates value once people adopt it, so I give the user experience the same attention as the code. Technology must serve the product, and quality remains a constant requirement.',
+      'I build software that meets real needs. I use AI to do it faster, and better. Every project starts with users: their needs, how they work, the obstacles they face every day. Software only creates value if people adopt it and use it daily, which is why I give the user experience as much care as the code. Technology must serve the product, and quality is never optional.',
     collaborationsTitle: 'They trust me',
     collaborationsSubtitle: 'Startups, SMEs and large companies I’ve worked with.',
     logoAlts: [
