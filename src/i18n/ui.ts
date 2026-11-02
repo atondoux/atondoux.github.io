@@ -57,7 +57,7 @@ const fr = {
   'home.services.architecture.description':
     'Une architecture qui évolue avec votre métier, pas contre lui : évolutive, robuste, alignée sur vos enjeux.',
   'home.pricing.title': 'Tarifs',
-  'home.pricing.subtitle': 'Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction de la mission.',
+  'home.pricing.subtitle': 'Chaque mission est unique : choisissez la formule qui vous correspond.',
   'home.pricing.perDay': 'par jour',
   'home.pricing.quote': 'Sur devis',
   'home.pricing.applications.title': 'Création d’applications',
@@ -162,7 +162,7 @@ const en = {
   'home.services.architecture.description':
     'An architecture that evolves with your business, not against it: scalable, robust, aligned with your priorities.',
   'home.pricing.title': 'Pricing',
-  'home.pricing.subtitle': 'These rates are provided as a guideline and may be adjusted according to the project.',
+  'home.pricing.subtitle': 'Every assignment is different: pick the offer that fits you.',
   'home.pricing.perDay': 'per day',
   'home.pricing.quote': 'On quote',
   'home.pricing.applications.title': 'Application Development',
