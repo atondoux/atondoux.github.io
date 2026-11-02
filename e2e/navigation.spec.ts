@@ -4,14 +4,14 @@ const localizedMenus = [
   {
     lang: 'fr',
     path: '/fr/',
-    labels: ['Accueil', 'À propos', 'Services', 'Tarifs', 'Contact'],
+    labels: ['Accueil', 'À propos', 'Services', 'Tarifs', 'Cas clients', 'Contact'],
     sitemap: 'Plan du site',
     contactCta: 'Me contacter',
   },
   {
     lang: 'en',
     path: '/en/',
-    labels: ['Home', 'About', 'Services', 'Pricing', 'Contact'],
+    labels: ['Home', 'About', 'Services', 'Pricing', 'Case studies', 'Contact'],
     sitemap: 'Sitemap',
     contactCta: 'Contact me',
   },
@@ -30,9 +30,11 @@ const socialLinks = {
   ],
 } as const;
 
-const SECTION_IDS = ['about', 'services', 'pricing', 'contact'] as const;
+const SECTION_IDS = ['about', 'services', 'pricing', 'case-studies', 'contact'] as const;
 const MOBILE_VIEWPORT = { width: 390, height: 844 };
 const TABLET_VIEWPORT = { width: 768, height: 1024 };
+const SMALL_DESKTOP_VIEWPORT = { width: 1024, height: 768 };
+const WIDE_DESKTOP_VIEWPORT = { width: 1280, height: 800 };
 const MAX_TAB_STOPS = 60;
 
 test.use({ reducedMotion: 'reduce' });
@@ -87,10 +89,19 @@ for (const { lang, path, labels, sitemap, contactCta } of localizedMenus) {
     await expectSectionBelowHeader(page, 'pricing');
   });
 
-  test(`scrolls to the contact section when clicking ${labels[4]} on ${path}`, async ({ page }) => {
+  test(`scrolls to the case studies section when clicking ${labels[4]} on ${path}`, async ({ page }) => {
     await page.goto(path);
 
     await headerNav(page).getByRole('link', { name: labels[4] }).click();
+
+    await expect(page).toHaveURL(`${path}#case-studies`);
+    await expectSectionBelowHeader(page, 'case-studies');
+  });
+
+  test(`scrolls to the contact section when clicking ${labels[5]} on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    await headerNav(page).getByRole('link', { name: labels[5] }).click();
 
     await expect(page).toHaveURL(`${path}#contact`);
     await expectSectionBelowHeader(page, 'contact');
@@ -110,6 +121,7 @@ for (const { lang, path, labels, sitemap, contactCta } of localizedMenus) {
     await expect(footer.getByRole('link', { name: labels[2], exact: true })).toHaveAttribute('href', headerHrefs[2]!);
     await expect(footer.getByRole('link', { name: labels[3], exact: true })).toHaveAttribute('href', headerHrefs[3]!);
     await expect(footer.getByRole('link', { name: labels[4], exact: true })).toHaveAttribute('href', headerHrefs[4]!);
+    await expect(footer.getByRole('link', { name: labels[5], exact: true })).toHaveAttribute('href', headerHrefs[5]!);
   });
 
   test(`shows the social links opening in a new tab in the footer of ${path}`, async ({ page }) => {
@@ -246,6 +258,44 @@ for (const { lang, path, labels, sitemap, contactCta } of localizedMenus) {
     await expect(toggle).toHaveAttribute('aria-expanded', 'false');
     await expect(headerNav(page)).toBeHidden();
     await expectSectionBelowHeader(page, 'about');
+  });
+
+  test(`folds the section links into the menu button in a ${SMALL_DESKTOP_VIEWPORT.width}px viewport on ${path}`, async ({
+    page,
+  }) => {
+    await page.setViewportSize(SMALL_DESKTOP_VIEWPORT);
+    await page.goto(path);
+    const toggle = page.locator('#header [data-aw-toggle-menu]');
+
+    await expect(headerNav(page)).toBeHidden();
+    await toggle.click();
+
+    await expect(headerNav(page).getByRole('link')).toHaveText([...labels]);
+    await headerNav(page).getByRole('link', { name: labels[4] }).click();
+
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    await expectSectionBelowHeader(page, 'case-studies');
+  });
+
+  test(`keeps the section links clear of the logo and the language switcher in a ${WIDE_DESKTOP_VIEWPORT.width}px viewport on ${path}`, async ({
+    page,
+  }) => {
+    await page.setViewportSize(WIDE_DESKTOP_VIEWPORT);
+    await page.goto(path);
+    const logo = page.locator('#header').getByRole('link', { name: 'AT Code Lab', exact: true });
+    const firstLink = headerNav(page).getByRole('link').first();
+    const lastLink = headerNav(page).getByRole('link').last();
+    const switcher = page.locator('#header [data-target-hreflang]');
+    await expect(firstLink).toBeVisible();
+    await expect(switcher).toBeVisible();
+
+    const logoBox = await logo.boundingBox();
+    const firstLinkBox = await firstLink.boundingBox();
+    const lastLinkBox = await lastLink.boundingBox();
+    const switcherBox = await switcher.boundingBox();
+
+    expect(logoBox!.x + logoBox!.width).toBeLessThanOrEqual(firstLinkBox!.x);
+    expect(lastLinkBox!.x + lastLinkBox!.width).toBeLessThanOrEqual(switcherBox!.x);
   });
 }
 

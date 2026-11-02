@@ -8,6 +8,7 @@ const homeSections = [
   { labelKey: 'nav.about', id: 'about' },
   { labelKey: 'nav.services', id: 'services' },
   { labelKey: 'nav.pricing', id: 'pricing' },
+  { labelKey: 'nav.caseStudies', id: 'case-studies' },
   { labelKey: 'nav.contact', id: 'contact' },
 ] as const satisfies readonly { labelKey: UiKey; id?: string }[];
 
