@@ -62,7 +62,7 @@ const localizedHeroes = [
     quote: 'Sur devis',
     ribbon: 'Populaire',
     caseStudiesTitle: 'Cas clients',
-    caseStudiesSubtitle: 'Quelques missions récentes.',
+    caseStudiesSubtitle: 'Quelques missions et réalisations récentes.',
     caseStudyLinkText: 'Voir la formation',
     caseStudyAchievements: [
       'Stratégie de modernisation du SI clairement définie',
@@ -77,7 +77,7 @@ const localizedHeroes = [
     caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Dyma Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
-      'Parlons de votre projet. Un premier échange rapide pour cerner votre besoin et voir comment je peux vous aider.',
+      'Parlons de votre projet. Un premier échange gratuit et sans engagement de 30 minutes pour cerner votre besoin et voir comment je peux vous aider.',
     contactTitles: ['Email', 'LinkedIn', 'Malt'],
     contactCta: 'Me contacter',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/',
@@ -127,7 +127,7 @@ const localizedHeroes = [
     quote: 'On quote',
     ribbon: 'Popular',
     caseStudiesTitle: 'Case studies',
-    caseStudiesSubtitle: 'Recent work.',
+    caseStudiesSubtitle: 'Some recent work.',
     caseStudyLinkText: 'See the course',
     caseStudyAchievements: [
       'Clearly defined IT modernization strategy',
@@ -142,7 +142,7 @@ const localizedHeroes = [
     caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Dyma Spring Boot'],
     contactTitle: 'Contact',
     contactSubtitle:
-      "Let's talk about your project. A quick first conversation to pin down what you need and see how I can help.",
+      "Let's talk about your project. A free, no-commitment 30-minute first call to pin down what you need and see how I can help.",
     contactTitles: ['Email', 'LinkedIn', 'Malt'],
     contactCta: 'Contact me',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/?locale=en_US',

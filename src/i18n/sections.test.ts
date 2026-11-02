@@ -6,18 +6,32 @@ describe('listing the home section links', () => {
   it('lists the french labels in page order', () => {
     const links = getSectionLinks('fr', '/fr/');
 
-    expect(links.map((link) => link.text)).toEqual(['Accueil', 'À propos', 'Services', 'Tarifs', 'Contact']);
+    expect(links.map((link) => link.text)).toEqual([
+      'Accueil',
+      'À propos',
+      'Services',
+      'Tarifs',
+      'Cas clients',
+      'Contact',
+    ]);
   });
 
   it('lists the english labels in page order', () => {
     const links = getSectionLinks('en', '/en/');
 
-    expect(links.map((link) => link.text)).toEqual(['Home', 'About', 'Services', 'Pricing', 'Contact']);
+    expect(links.map((link) => link.text)).toEqual(['Home', 'About', 'Services', 'Pricing', 'Case studies', 'Contact']);
   });
 
   it('builds every href from the injected home url', () => {
     const links = getSectionLinks('fr', '/x/');
 
-    expect(links.map((link) => link.href)).toEqual(['/x/', '/x/#about', '/x/#services', '/x/#pricing', '/x/#contact']);
+    expect(links.map((link) => link.href)).toEqual([
+      '/x/',
+      '/x/#about',
+      '/x/#services',
+      '/x/#pricing',
+      '/x/#case-studies',
+      '/x/#contact',
+    ]);
   });
 });
