@@ -15,13 +15,13 @@ interface PricingCatalogEntry {
 
 const pricingCatalog = [
   {
-    titleKey: 'home.pricing.founding.title',
-    descriptionKey: 'home.pricing.founding.description',
+    titleKey: 'home.pricing.applications.title',
+    descriptionKey: 'home.pricing.applications.description',
     features: [
-      { labelKey: 'home.pricing.founding.features.mvp', icon: 'tabler:bulb' },
-      { labelKey: 'home.pricing.founding.features.architecture', icon: 'tabler:sitemap' },
-      { labelKey: 'home.pricing.founding.features.build', icon: 'tabler:code' },
-      { labelKey: 'home.pricing.founding.features.cloud', icon: 'tabler:cloud-upload' },
+      { labelKey: 'home.pricing.applications.features.mvp', icon: 'tabler:bulb' },
+      { labelKey: 'home.pricing.applications.features.architecture', icon: 'tabler:sitemap' },
+      { labelKey: 'home.pricing.applications.features.build', icon: 'tabler:code' },
+      { labelKey: 'home.pricing.applications.features.cloud', icon: 'tabler:cloud-upload' },
     ],
   },
   {

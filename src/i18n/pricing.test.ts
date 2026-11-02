@@ -10,8 +10,8 @@ const formatRate = (lang: 'fr' | 'en') =>
 const normalizeSpaces = (text: string) => text.replace(/[\u202F\u00A0]/g, '\u0020');
 
 const expectedTitles = {
-  fr: ['Founding Engineering', 'Tech Lead Full Stack', 'Consultant'],
-  en: ['Founding Engineering', 'Full-Stack Tech Lead', 'Consultant'],
+  fr: ['Création d’applications', 'Tech Lead Full Stack', 'Consultant'],
+  en: ['Application Development', 'Full-Stack Tech Lead', 'Consultant'],
 } as const;
 
 const expectedFeatures = {
@@ -73,7 +73,7 @@ describe('listing the pricing plans', () => {
   it.each([
     ['fr', 'Sur devis'],
     ['en', 'On quote'],
-  ] as const)('shows the %s founding and consulting plans as a quote without a period', (lang, quote) => {
+  ] as const)('shows the %s application and consulting plans as a quote without a period', (lang, quote) => {
     const plans = getPricingPlans(lang);
     const quotePlans = [plans[0], plans[2]];
 
