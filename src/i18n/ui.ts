@@ -42,7 +42,7 @@ const fr = {
   'home.services.fullStack.title': 'Développement Full-Stack',
   'home.services.fullStack.description':
     'Des applications web sur mesure, pensées pour vos utilisateurs : back-end, front-end, déploiement, monitoring.',
-  'home.services.projectBootstrap.title': 'Bootstrap de Projets',
+  'home.services.projectBootstrap.title': 'Lancement de Projets',
   'home.services.projectBootstrap.description':
     'Des fondations solides et un transfert de compétences à vos équipes pour vous permettre de livrer rapidement et efficacement.',
   'home.services.legacyRecovery.title': 'Reprise de Projets Legacy',

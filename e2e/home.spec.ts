@@ -49,7 +49,7 @@ const localizedHeroes = [
     serviceTitles: [
       'Leadership Technique',
       'Développement Full-Stack',
-      'Bootstrap de Projets',
+      'Lancement de Projets',
       'Reprise de Projets Legacy',
       'Audit & Revue de Code',
       'DevOps & Cloud',
