@@ -24,7 +24,7 @@ const expectedFeatures = {
       'Maintenance',
     ],
     ['Leadership technique', 'Software Craftsmanship', 'Test-Driven Development'],
-    ["Lancement d'un projet", 'Audit architecture et qualité', 'Revue de code'],
+    ['Conseil en choix techniques', 'Audit architecture et qualité', 'Revue de code'],
   ],
   en: [
     [
@@ -35,7 +35,7 @@ const expectedFeatures = {
       'Maintenance',
     ],
     ['Technical leadership', 'Software Craftsmanship', 'Test-Driven Development'],
-    ['Project launch', 'Architecture and quality audit', 'Code review'],
+    ['Technology advice', 'Architecture and quality audit', 'Code review'],
   ],
 } as const;
 
@@ -52,7 +52,7 @@ describe('listing the pricing plans', () => {
     expect(plans.map((plan) => plan.subtitle)).toEqual([
       'Transformer votre idée en application ou SaaS prêt pour la production.',
       'Livrer plus vite tout en amenant vos équipes à l’excellence technique.',
-      'Cadrer un projet ou une mission taillés pour vos besoins.',
+      'Porter un regard expert sur votre code et votre architecture.',
     ]);
   });
 
@@ -62,7 +62,7 @@ describe('listing the pricing plans', () => {
     expect(plans.map((plan) => plan.subtitle)).toEqual([
       'Turn your idea into a production-ready application or SaaS.',
       'Ship faster while leading your teams to technical excellence.',
-      'Scope a project or assignment shaped around your needs.',
+      'Bring an expert eye to your code and architecture.',
     ]);
   });
 

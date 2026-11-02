@@ -40,7 +40,7 @@ const pricingCatalog = [
     titleKey: 'home.pricing.consulting.title',
     descriptionKey: 'home.pricing.consulting.description',
     features: [
-      { labelKey: 'home.pricing.consulting.features.launch', icon: 'tabler:rocket' },
+      { labelKey: 'home.pricing.consulting.features.advice', icon: 'tabler:compass' },
       { labelKey: 'home.pricing.consulting.features.audit', icon: 'tabler:zoom-check' },
       { labelKey: 'home.pricing.consulting.features.review', icon: 'tabler:code' },
     ],
