@@ -15,14 +15,13 @@ interface PricingCatalogEntry {
 
 const pricingCatalog = [
   {
-    titleKey: 'home.pricing.fullStack.title',
-    descriptionKey: 'home.pricing.fullStack.description',
-    dailyRate: DAILY_RATE_EUR,
+    titleKey: 'home.pricing.founding.title',
+    descriptionKey: 'home.pricing.founding.description',
     features: [
-      { labelKey: 'home.pricing.fullStack.features.design', icon: 'tabler:users' },
-      { labelKey: 'home.pricing.fullStack.features.backend', icon: 'tabler:server' },
-      { labelKey: 'home.pricing.fullStack.features.frontend', icon: 'tabler:layout-dashboard' },
-      { labelKey: 'home.pricing.fullStack.features.deployment', icon: 'tabler:rocket' },
+      { labelKey: 'home.pricing.founding.features.mvp', icon: 'tabler:bulb' },
+      { labelKey: 'home.pricing.founding.features.architecture', icon: 'tabler:sitemap' },
+      { labelKey: 'home.pricing.founding.features.build', icon: 'tabler:code' },
+      { labelKey: 'home.pricing.founding.features.cloud', icon: 'tabler:cloud-upload' },
     ],
   },
   {
@@ -31,9 +30,10 @@ const pricingCatalog = [
     ribbonKey: 'home.pricing.techLead.ribbon',
     dailyRate: DAILY_RATE_EUR,
     features: [
+      { labelKey: 'home.pricing.techLead.features.leadership', icon: 'tabler:users' },
       { labelKey: 'home.pricing.techLead.features.craftsmanship', icon: 'tabler:diamond' },
-      { labelKey: 'home.pricing.techLead.features.tdd', icon: 'tabler:flask' },
-      { labelKey: 'home.pricing.techLead.features.bestPractices', icon: 'tabler:award' },
+      { labelKey: 'home.pricing.techLead.features.fullStack', icon: 'tabler:layout-dashboard' },
+      { labelKey: 'home.pricing.techLead.features.deployment', icon: 'tabler:rocket' },
     ],
   },
   {

@@ -57,7 +57,7 @@ const localizedHeroes = [
     ],
     pricingTitle: 'Tarifs',
     pricingSubtitle: 'Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction de la mission.',
-    planTitles: ['Développeur Full Stack', 'Tech Lead', 'Consultant'],
+    planTitles: ['Founding Engineering', 'Tech Lead Full Stack', 'Consultant'],
     dailyRate: '600 €',
     quote: 'Sur devis',
     ribbon: 'Populaire',
@@ -122,7 +122,7 @@ const localizedHeroes = [
     ],
     pricingTitle: 'Pricing',
     pricingSubtitle: 'These rates are provided as a guideline and may be adjusted according to the project.',
-    planTitles: ['Full-Stack Developer', 'Tech Lead', 'Consultant'],
+    planTitles: ['Founding Engineering', 'Full-Stack Tech Lead', 'Consultant'],
     dailyRate: '€600',
     quote: 'On quote',
     ribbon: 'Popular',
@@ -285,7 +285,7 @@ for (const {
       .locator('xpath=ancestor::div[contains(@class, "rounded-lg")][1]');
     await expect(cards).toHaveCount(3);
     const rateTexts = (await pricing.locator('.aw-price-monthly').allTextContents()).map(normalizeSpaces);
-    expect(rateTexts[0]).toContain(dailyRate);
+    expect(rateTexts[0]).toContain(quote);
     expect(rateTexts[1]).toContain(dailyRate);
     expect(rateTexts[2]).toContain(quote);
     await expect(cards.nth(1).getByText(ribbon, { exact: true })).toBeVisible();

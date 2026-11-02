@@ -10,19 +10,19 @@ const formatRate = (lang: 'fr' | 'en') =>
 const normalizeSpaces = (text: string) => text.replace(/[\u202F\u00A0]/g, '\u0020');
 
 const expectedTitles = {
-  fr: ['Développeur Full Stack', 'Tech Lead', 'Consultant'],
-  en: ['Full-Stack Developer', 'Tech Lead', 'Consultant'],
+  fr: ['Founding Engineering', 'Tech Lead Full Stack', 'Consultant'],
+  en: ['Founding Engineering', 'Full-Stack Tech Lead', 'Consultant'],
 } as const;
 
 const expectedFeatures = {
   fr: [
-    ['Conception', 'Développement backend', 'Développement frontend', 'Déploiement'],
-    ['Software Craftsmanship', 'Test-Driven Development', 'Bonnes pratiques'],
+    ['MVP et cadrage produit', 'Architecture', 'Développement full stack', 'CI/CD, cloud et passation'],
+    ['Leadership technique', 'Software Craftsmanship et TDD', 'Développement backend et frontend', 'Déploiement'],
     ["Lancement d'un projet", 'Audit qualité', 'Revue de code'],
   ],
   en: [
-    ['Design', 'Backend development', 'Frontend development', 'Deployment'],
-    ['Software Craftsmanship', 'Test-Driven Development', 'Best practices'],
+    ['MVP and product scoping', 'Architecture', 'Full-stack development', 'CI/CD, cloud and handover'],
+    ['Technical leadership', 'Software Craftsmanship and TDD', 'Backend and frontend development', 'Deployment'],
     ['Project launch', 'Quality audit', 'Code review'],
   ],
 } as const;
@@ -38,8 +38,8 @@ describe('listing the pricing plans', () => {
     const plans = getPricingPlans('fr');
 
     expect(plans.map((plan) => plan.subtitle)).toEqual([
-      'Livrer plus vite, de la conception jusqu’à la production.',
-      'Amener vos équipes à l’excellence technique, au quotidien.',
+      'Transformer votre idée en application ou SaaS prêt pour la production.',
+      'Livrer plus vite tout en amenant vos équipes à l’excellence technique.',
       'Cadrer un projet ou une mission taillés pour vos besoins.',
     ]);
   });
@@ -48,26 +48,24 @@ describe('listing the pricing plans', () => {
     const plans = getPricingPlans('en');
 
     expect(plans.map((plan) => plan.subtitle)).toEqual([
-      'Ship faster, from design all the way to production.',
-      'Lead your teams to technical excellence, day after day.',
+      'Turn your idea into a production-ready application or SaaS.',
+      'Ship faster while leading your teams to technical excellence.',
       'Scope a project or assignment shaped around your needs.',
     ]);
   });
 
   it('formats the french daily rate as 600 € per day', () => {
-    const [fullStack, techLead] = getPricingPlans('fr');
+    const techLead = getPricingPlans('fr')[1];
 
     expect(techLead?.price).toBe(formatRate('fr'));
-    expect(fullStack?.price).toBe(formatRate('fr'));
     expect(normalizeSpaces(String(techLead?.price))).toBe('600 €');
     expect(techLead?.period).toBe('par jour');
   });
 
   it('formats the english daily rate as €600 per day', () => {
-    const [fullStack, techLead] = getPricingPlans('en');
+    const techLead = getPricingPlans('en')[1];
 
     expect(techLead?.price).toBe(formatRate('en'));
-    expect(fullStack?.price).toBe(formatRate('en'));
     expect(normalizeSpaces(String(techLead?.price))).toBe('€600');
     expect(techLead?.period).toBe('per day');
   });
@@ -75,11 +73,12 @@ describe('listing the pricing plans', () => {
   it.each([
     ['fr', 'Sur devis'],
     ['en', 'On quote'],
-  ] as const)('shows the %s consulting plan as a quote without a period', (lang, quote) => {
-    const consulting = getPricingPlans(lang)[2];
+  ] as const)('shows the %s founding and consulting plans as a quote without a period', (lang, quote) => {
+    const plans = getPricingPlans(lang);
+    const quotePlans = [plans[0], plans[2]];
 
-    expect(consulting?.price).toBe(quote);
-    expect(consulting?.period).toBeUndefined();
+    expect(quotePlans.map((plan) => plan?.price)).toEqual([quote, quote]);
+    expect(quotePlans.map((plan) => plan?.period)).toEqual([undefined, undefined]);
   });
 
   it.each([
@@ -102,7 +101,7 @@ describe('listing the pricing plans', () => {
   it('gives every feature a tabler icon', () => {
     const icons = getPricingPlans('fr').flatMap((plan) => plan.items?.map((item) => item.icon) ?? []);
 
-    expect(icons).toHaveLength(10);
+    expect(icons).toHaveLength(11);
     for (const icon of icons) {
       expect(icon).toMatch(/^tabler:[a-z0-9-]+$/);
     }
