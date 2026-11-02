@@ -58,6 +58,12 @@ pnpm test:all            # Unit + E2E
 - The browser tab title uses the "AT Code Lab" brand: the home page shows `home.title` alone (`ignoreTitleTemplate`),
   and other pages go through `metadata.title.template` in `config.yaml` (`'%s — AT Code Lab'`). Descriptions,
   `openGraph.site_name` and the footer copyright keep "Aurélien Tondoux". Guarded by `e2e/i18n.spec.ts`.
+- The link-preview image (`og:image`) is `src/assets/images/og-default.png`, set in `config.yaml` `metadata.openGraph.images`
+  and used by every page (none overrides it). It is the LinkedIn banner (`brand/AT_code_lab_banner.png`) cover-cropped
+  with Sharp to 1200×626, because `adaptOpenGraphImages` (`src/utils/images.ts`) always re-encodes it to a 1200×626 JPG
+  and would crop any other ratio a second time. The template's `default.png` (an AstroWind screenshot) was removed.
+  There is no `twitter:image` tag: X falls back to `og:image`, and `twitter:card` is `summary_large_image`.
+  Guarded by `e2e/share-image.spec.ts`. Social sites cache previews, so refresh them with LinkedIn Post Inspector.
 - Favicons (`src/components/Favicons.astro`) are the brand "AT" icons copied from `legacy-nuxt/public/`: 32/16 PNG and
   apple-touch in `src/assets/favicons/`, and `favicon.ico` in `public/` because browsers and crawlers probe
   `/favicon.ico` directly. The template `favicon.svg` was removed: browsers prefer an SVG icon, so keeping it would show

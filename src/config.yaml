@@ -16,9 +16,9 @@ metadata:
   openGraph:
     site_name: Aurélien Tondoux
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/og-default.png'
         width: 1200
-        height: 628
+        height: 626
     type: website
   twitter:
     cardType: summary_large_image
