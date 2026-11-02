@@ -16,14 +16,14 @@ const expectedTitles = {
 
 const expectedFeatures = {
   fr: [
-    ['MVP et cadrage produit', 'Architecture', 'Développement full stack', 'CI/CD, cloud et passation'],
-    ['Leadership technique', 'Software Craftsmanship et TDD', 'Développement backend et frontend', 'Déploiement'],
-    ["Lancement d'un projet", 'Audit qualité', 'Revue de code'],
+    ['Cadrage et planning', 'Conception et architecture', 'Déploiement et monitoring'],
+    ['Leadership technique', 'Software Craftsmanship', 'Test-Driven Development'],
+    ["Lancement d'un projet", 'Audit architecture et qualité', 'Revue de code'],
   ],
   en: [
-    ['MVP and product scoping', 'Architecture', 'Full-stack development', 'CI/CD, cloud and handover'],
-    ['Technical leadership', 'Software Craftsmanship and TDD', 'Backend and frontend development', 'Deployment'],
-    ['Project launch', 'Quality audit', 'Code review'],
+    ['Scoping and planning', 'Design and architecture', 'Deployment and monitoring'],
+    ['Technical leadership', 'Software Craftsmanship', 'Test-Driven Development'],
+    ['Project launch', 'Architecture and quality audit', 'Code review'],
   ],
 } as const;
 
@@ -101,7 +101,7 @@ describe('listing the pricing plans', () => {
   it('gives every feature a tabler icon', () => {
     const icons = getPricingPlans('fr').flatMap((plan) => plan.items?.map((item) => item.icon) ?? []);
 
-    expect(icons).toHaveLength(11);
+    expect(icons).toHaveLength(9);
     for (const icon of icons) {
       expect(icon).toMatch(/^tabler:[a-z0-9-]+$/);
     }

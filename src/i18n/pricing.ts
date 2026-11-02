@@ -18,10 +18,9 @@ const pricingCatalog = [
     titleKey: 'home.pricing.applications.title',
     descriptionKey: 'home.pricing.applications.description',
     features: [
-      { labelKey: 'home.pricing.applications.features.mvp', icon: 'tabler:bulb' },
-      { labelKey: 'home.pricing.applications.features.architecture', icon: 'tabler:sitemap' },
-      { labelKey: 'home.pricing.applications.features.build', icon: 'tabler:code' },
-      { labelKey: 'home.pricing.applications.features.cloud', icon: 'tabler:cloud-upload' },
+      { labelKey: 'home.pricing.applications.features.planning', icon: 'tabler:clipboard-list' },
+      { labelKey: 'home.pricing.applications.features.design', icon: 'tabler:sitemap' },
+      { labelKey: 'home.pricing.applications.features.deployment', icon: 'tabler:cloud-upload' },
     ],
   },
   {
@@ -32,8 +31,7 @@ const pricingCatalog = [
     features: [
       { labelKey: 'home.pricing.techLead.features.leadership', icon: 'tabler:users' },
       { labelKey: 'home.pricing.techLead.features.craftsmanship', icon: 'tabler:diamond' },
-      { labelKey: 'home.pricing.techLead.features.fullStack', icon: 'tabler:layout-dashboard' },
-      { labelKey: 'home.pricing.techLead.features.deployment', icon: 'tabler:rocket' },
+      { labelKey: 'home.pricing.techLead.features.tdd', icon: 'tabler:flask' },
     ],
   },
   {
