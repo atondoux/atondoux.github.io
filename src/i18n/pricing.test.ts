@@ -52,7 +52,7 @@ describe('listing the pricing plans', () => {
     expect(plans.map((plan) => plan.subtitle)).toEqual([
       'Transformer votre idée en application ou SaaS prêt pour la production.',
       'Livrer plus vite tout en amenant vos équipes à l’excellence technique.',
-      'Porter un regard expert sur votre code et votre architecture.',
+      'Bénéficier d’un regard expert sur votre code et votre architecture.',
     ]);
   });
 
@@ -62,7 +62,7 @@ describe('listing the pricing plans', () => {
     expect(plans.map((plan) => plan.subtitle)).toEqual([
       'Turn your idea into a production-ready application or SaaS.',
       'Ship faster while leading your teams to technical excellence.',
-      'Bring an expert eye to your code and architecture.',
+      'Get an expert eye on your code and architecture.',
     ]);
   });
 
