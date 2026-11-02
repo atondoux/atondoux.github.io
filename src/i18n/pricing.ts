@@ -20,7 +20,9 @@ const pricingCatalog = [
     features: [
       { labelKey: 'home.pricing.applications.features.planning', icon: 'tabler:clipboard-list' },
       { labelKey: 'home.pricing.applications.features.design', icon: 'tabler:sitemap' },
+      { labelKey: 'home.pricing.applications.features.development', icon: 'tabler:code' },
       { labelKey: 'home.pricing.applications.features.deployment', icon: 'tabler:cloud-upload' },
+      { labelKey: 'home.pricing.applications.features.maintenance', icon: 'tabler:tool' },
     ],
   },
   {
