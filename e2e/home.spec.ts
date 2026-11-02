@@ -62,7 +62,7 @@ const localizedHeroes = [
     quote: 'Sur devis',
     ribbon: 'Populaire',
     caseStudiesTitle: 'Cas clients',
-    caseStudiesSubtitle: 'Quelques missions récentes.',
+    caseStudiesSubtitle: 'Quelques missions et réalisations récentes.',
     caseStudyLinkText: 'Voir la formation',
     caseStudyAchievements: [
       'Stratégie de modernisation du SI clairement définie',
@@ -127,7 +127,7 @@ const localizedHeroes = [
     quote: 'On quote',
     ribbon: 'Popular',
     caseStudiesTitle: 'Case studies',
-    caseStudiesSubtitle: 'Recent work.',
+    caseStudiesSubtitle: 'Some recent work.',
     caseStudyLinkText: 'See the course',
     caseStudyAchievements: [
       'Clearly defined IT modernization strategy',
