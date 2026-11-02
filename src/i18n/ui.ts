@@ -110,7 +110,7 @@ const fr = {
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
-    'Parlons de votre projet. Un premier échange gratuit et sans engagement de 30 minutes pour cerner votre besoin et voir comment je peux vous aider.',
+    'Parlons de votre projet. Un premier échange gratuit et sans engagement de 30 minutes pour cerner votre besoin et vous proposer une solution adaptée.',
   'home.contact.email.title': 'Email',
   'home.contact.linkedin.title': 'LinkedIn',
   'home.contact.malt.title': 'Malt',
@@ -216,7 +216,7 @@ const en = {
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
-    "Let's talk about your project. A free, no-commitment 30-minute first call to pin down what you need and see how I can help.",
+    "Let's talk about your project. A free, no-commitment 30-minute call to understand your needs and recommend the right solution.",
   'home.contact.email.title': 'Email',
   'home.contact.linkedin.title': 'LinkedIn',
   'home.contact.malt.title': 'Malt',
