@@ -162,7 +162,7 @@ const en = {
   'home.services.architecture.description':
     'An architecture that evolves with your business, not against it: scalable, robust, aligned with your priorities.',
   'home.pricing.title': 'Pricing',
-  'home.pricing.subtitle': 'Every project is unique: pick the offer that fits you.',
+  'home.pricing.subtitle': 'Every project is unique: pick the offer suited to your needs.',
   'home.pricing.perDay': 'per day',
   'home.pricing.quote': 'On quote',
   'home.pricing.applications.title': 'Application Development',

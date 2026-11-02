@@ -121,7 +121,7 @@ const localizedHeroes = [
       'Architecture',
     ],
     pricingTitle: 'Pricing',
-    pricingSubtitle: 'Every project is unique: pick the offer that fits you.',
+    pricingSubtitle: 'Every project is unique: pick the offer suited to your needs.',
     planTitles: ['Application Development', 'Full-Stack Tech Lead', 'Consulting'],
     dailyRate: '€600',
     quote: 'On quote',
