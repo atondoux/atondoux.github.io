@@ -106,7 +106,7 @@ const fr = {
   'home.caseStudies.dyma.linkText': 'Voir la formation',
   'home.caseStudies.dyma.tags.eLearning': 'Formation en ligne',
   'home.caseStudies.dyma.achievements.content': '19 chapitres, 85 leçons, 170 quiz',
-  'home.caseStudies.dyma.achievements.hours': '6500+ heures passées par les étudiants',
+  'home.caseStudies.dyma.achievements.hours': '6500+ heures passées par les apprenants',
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':

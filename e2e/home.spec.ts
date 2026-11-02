@@ -72,7 +72,7 @@ const localizedHeroes = [
       'Contrats signés en ligne avec Yousign',
       'Fraude détectée dès la souscription',
       '19 chapitres, 85 leçons, 170 quiz',
-      '6500+ heures passées par les étudiants',
+      '6500+ heures passées par les apprenants',
     ],
     caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Dyma Spring Boot'],
     contactTitle: 'Contact',
