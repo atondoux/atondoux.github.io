@@ -29,7 +29,7 @@ const fr = {
   'home.hero.subtitle': 'Ingénierie logicielle orientée produit <strong>— boostée à l’IA</strong>',
   'home.about.title': 'À propos',
   'home.about.subtitle':
-    'Je développe des logiciels de qualité qui résolvent des problèmes concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je pars toujours des utilisateurs pour comprendre leurs besoins, leurs usages, ce qui les freine au quotidien. Un logiciel n’a de valeur que s’il est utilisé, alors je soigne l’expérience utilisateur autant que le code. Pour moi, la technologie doit être au service du produit, et la qualité n’est pas négociable.',
+    'De la conception au code, je crée des logiciels qui répondent à des besoins concrets. J’utilise l’IA pour le faire plus vite, et mieux. Chaque projet commence par les utilisateurs : leurs besoins, leurs usages, les obstacles qu’ils rencontrent au quotidien. Un logiciel ne crée de valeur que s’il est adopté, j’accorde donc autant d’attention à l’expérience utilisateur qu’au code. La technologie doit être au service du produit, et la qualité reste une exigence constante.',
   'home.collaborations.title': 'Ils me font confiance',
   'home.collaborations.subtitle': 'Startups, PME et grands comptes avec qui j’ai collaboré.',
   'home.collaborations.logoAlt': 'Logo de {company}',
@@ -132,7 +132,7 @@ const en = {
   'home.hero.subtitle': 'Product-minded software engineering <strong>— AI-boosted</strong>',
   'home.about.title': 'About',
   'home.about.subtitle':
-    'I build quality software that solves real problems. I use AI to do it faster, and better. I always start from users to understand their needs, how they work, what slows them down every day. Software only has value if people use it, so I care about the user experience as much as the code. To me, technology must serve the product, and quality is non-negotiable.',
+    'From design to code, I create software that addresses concrete needs. I use AI to do it faster, and better. Every project starts with users: their needs, how they work, and the obstacles they face every day. Software only creates value once people adopt it, so I give the user experience the same attention as the code. Technology must serve the product, and quality remains a constant requirement.',
   'home.collaborations.title': 'They trust me',
   'home.collaborations.subtitle': 'Startups, SMEs and large companies I’ve worked with.',
   'home.collaborations.logoAlt': '{company} logo',
