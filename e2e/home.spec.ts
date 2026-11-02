@@ -24,8 +24,8 @@ const localizedHeroes = [
     path: '/fr/',
     tagline: 'Tech Lead · 20 ans d’expérience',
     title: 'Aurélien TONDOUX',
-    subtitle: 'Ingénierie logicielle orientée produit — boostée à l’IA',
-    emphasis: ['— boostée à l’IA'],
+    subtitle: 'Ingénierie logicielle orientée produit — augmentée par l’IA',
+    emphasis: ['— augmentée par l’IA'],
     aboutTitle: 'À propos',
     aboutSubtitle:
       'De la conception au code, je crée des logiciels qui répondent à des besoins concrets. J’utilise l’IA pour le faire plus vite, et mieux. Chaque projet commence par les utilisateurs : leurs besoins, leurs usages, les obstacles qu’ils rencontrent au quotidien. Un logiciel ne crée de valeur que s’il est adopté, j’accorde donc autant d’attention à l’expérience utilisateur qu’au code. La technologie doit être au service du produit, et la qualité reste une exigence constante.',
@@ -89,8 +89,8 @@ const localizedHeroes = [
     path: '/en/',
     tagline: 'Tech Lead · 20 years of experience',
     title: 'Aurélien TONDOUX',
-    subtitle: 'Product-minded software engineering — AI-boosted',
-    emphasis: ['— AI-boosted'],
+    subtitle: 'Product-minded software engineering — AI-augmented',
+    emphasis: ['— AI-augmented'],
     aboutTitle: 'About',
     aboutSubtitle:
       'From design to code, I create software that addresses concrete needs. I use AI to do it faster, and better. Every project starts with users: their needs, how they work, and the obstacles they face every day. Software only creates value once people adopt it, so I give the user experience the same attention as the code. Technology must serve the product, and quality remains a constant requirement.',
