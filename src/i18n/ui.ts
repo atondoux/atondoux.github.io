@@ -30,7 +30,7 @@ const fr = {
   'home.hero.subtitle': 'Ingénierie logicielle orientée produit <strong>— augmentée par l’IA</strong>',
   'home.about.title': 'À propos',
   'home.about.subtitle':
-    'Je construis des logiciels qui répondent à des besoins concrets. J’utilise l’IA pour le faire plus vite, et mieux. Chaque projet commence par les utilisateurs : leurs besoins, leurs usages, les obstacles qu’ils rencontrent au quotidien. Un logiciel ne crée de valeur que s’il est adopté et réellement utilisé, c’est pourquoi je soigne l’expérience utilisateur autant que le code. La technologie doit être au service du produit, et la qualité reste pour moi une exigence constante.',
+    'Je construis des logiciels qui répondent à des besoins concrets. J’utilise l’IA pour le faire plus vite, et mieux. Je privilégie une démarche centrée sur les utilisateurs pour comprendre leurs besoins, leurs usages et ce qui les freine au quotidien. Un logiciel n’a de valeur que s’il est réellement utilisé, alors je soigne l’expérience utilisateur autant que le code. La technologie doit être au service du produit, et la qualité reste pour moi une exigence constante.',
   'home.collaborations.title': 'Ils me font confiance',
   'home.collaborations.subtitle': 'Startups, PME et grands comptes avec qui j’ai collaboré.',
   'home.collaborations.logoAlt': 'Logo de {company}',
@@ -136,7 +136,7 @@ const en = {
   'home.hero.subtitle': 'Product-minded software engineering <strong>— AI-augmented</strong>',
   'home.about.title': 'About',
   'home.about.subtitle':
-    'I build software that solves real problems. I use AI to do it faster, and better. Every project starts with users: their needs, how they work, the obstacles they face every day. Software only creates value if it is adopted and actually used, which is why I care about the user experience as much as the code. Technology must serve the product, and quality remains a constant requirement for me.',
+    'I build software that solves real problems. I use AI to do it faster, and better. I take a user-first approach to understand their needs, how they work and what slows them down every day. Software only has value if people actually use it, so I pay attention to the user experience as much as to the code. Technology must serve the product, and quality remains a constant requirement for me.',
   'home.collaborations.title': 'They trust me',
   'home.collaborations.subtitle': 'Startups, SMEs and large companies I’ve worked with.',
   'home.collaborations.logoAlt': '{company} logo',
