@@ -117,10 +117,11 @@ const fr = {
   'home.caseStudies.softway.description':
     'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier.',
   'home.caseStudies.softway.tags.healthcare': 'Santé',
+  'home.caseStudies.softway.linkText': 'Voir le témoignage client',
   'home.caseStudies.softway.achievements.patientModules':
-    'Mise à disposition de modules spécialisés pour le suivi des patients',
+    'Conception de nouveaux modules spécialisés dans le suivi des patients',
   'home.caseStudies.softway.achievements.continuousDelivery':
-    'Mise en place d’une pipeline de livraison et déploiement continus sur une architecture micro-services',
+    'Livraison et déploiement continus sur une architecture micro-services',
   'home.caseStudies.previous': 'Cas client précédent',
   'home.caseStudies.next': 'Cas client suivant',
   'nav.contact': 'Contact',
@@ -239,9 +240,10 @@ const en = {
   'home.caseStudies.softway.description':
     'Improving patient follow-up and care management in hospitals by giving healthcare professionals applications designed around their work.',
   'home.caseStudies.softway.tags.healthcare': 'Healthcare',
-  'home.caseStudies.softway.achievements.patientModules': 'Specialized patient follow-up modules delivered',
+  'home.caseStudies.softway.linkText': 'See the client testimonial',
+  'home.caseStudies.softway.achievements.patientModules': 'New modules designed for patient follow-up',
   'home.caseStudies.softway.achievements.continuousDelivery':
-    'Continuous delivery and deployment pipeline on a microservices architecture',
+    'Continuous delivery and deployment on a microservices architecture',
   'home.caseStudies.previous': 'Previous case study',
   'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',

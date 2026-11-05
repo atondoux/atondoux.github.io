@@ -45,11 +45,11 @@ const expectedCaseStudies = {
     {
       title: 'Softway Medical',
       description:
-        'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier.',
+        'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier. Voir le témoignage client',
       tags: ['Santé'],
       achievements: [
-        'Mise à disposition de modules spécialisés pour le suivi des patients',
-        'Mise en place d’une pipeline de livraison et déploiement continus sur une architecture micro-services',
+        'Conception de nouveaux modules spécialisés dans le suivi des patients',
+        'Livraison et déploiement continus sur une architecture micro-services',
       ],
     },
   ],
@@ -90,11 +90,11 @@ const expectedCaseStudies = {
     {
       title: 'Softway Medical',
       description:
-        'Improving patient follow-up and care management in hospitals by giving healthcare professionals applications designed around their work.',
+        'Improving patient follow-up and care management in hospitals by giving healthcare professionals applications designed around their work. See the client testimonial',
       tags: ['Healthcare'],
       achievements: [
-        'Specialized patient follow-up modules delivered',
-        'Continuous delivery and deployment pipeline on a microservices architecture',
+        'New modules designed for patient follow-up',
+        'Continuous delivery and deployment on a microservices architecture',
       ],
     },
   ],
@@ -135,6 +135,14 @@ describe('listing the case studies', () => {
 
     expect(dyma?.description).toMatch(
       /<a href="https:\/\/dyma\.fr\/formations\/spring-boot" target="_blank" rel="noopener noreferrer"[^>]*>Voir la formation<svg/
+    );
+  });
+
+  it('links the Softway Medical client testimonial video from its description, opening in a new tab', () => {
+    const softway = getCaseStudies('fr').find(({ title }) => title === 'Softway Medical');
+
+    expect(softway?.description).toMatch(
+      /<a href="https:\/\/youtu\.be\/NwEPv_cVKC0" target="_blank" rel="noopener noreferrer"[^>]*>Voir le témoignage client<svg/
     );
   });
 

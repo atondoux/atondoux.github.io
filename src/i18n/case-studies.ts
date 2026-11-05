@@ -57,6 +57,7 @@ const caseStudyCatalog = [
       'home.caseStudies.softway.achievements.patientModules',
       'home.caseStudies.softway.achievements.continuousDelivery',
     ],
+    link: { href: 'https://youtu.be/NwEPv_cVKC0', textKey: 'home.caseStudies.softway.linkText' },
   },
 ] as const satisfies readonly CaseStudyCatalogEntry[];
 
