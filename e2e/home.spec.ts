@@ -1,10 +1,19 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Locator } from '@playwright/test';
 
-const CASE_STUDY_COUNT = 4;
+const CASE_STUDY_COUNT = 5;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
 const CASE_STUDY_ACHIEVEMENTS = `#case-studies ${ACHIEVEMENT_IN_CARD}`;
+
+const isInsideScroller = (art: Locator) =>
+  art.evaluate((element) => {
+    const scroller = element.closest('[data-aw-slider-list]');
+    const cardBox = element.closest('li')?.getBoundingClientRect();
+    if (!scroller || !cardBox) return false;
+    const scrollerBox = scroller.getBoundingClientRect();
+    return cardBox.left >= scrollerBox.left - 1 && cardBox.right <= scrollerBox.right + 1;
+  });
 
 const readIllustrationPalettes = (arts: Element[]) => arts.map((art) => art.getAttribute('data-palette'));
 
@@ -64,6 +73,8 @@ const localizedHeroes = [
     caseStudiesTitle: 'Cas clients',
     caseStudiesSubtitle: 'Quelques missions et réalisations récentes.',
     caseStudyLinkText: 'Voir la formation',
+    caseStudyPreviousLabel: 'Cas client précédent',
+    caseStudyNextLabel: 'Cas client suivant',
     caseStudyAchievements: [
       'Stratégie de modernisation du SI clairement définie',
       'Livraisons fiabilisées avec des pipelines CI/CD',
@@ -73,8 +84,16 @@ const localizedHeroes = [
       'Fraude détectée dès la souscription',
       '19 chapitres, 85 leçons, 170 quiz',
       '6500+ heures passées par les apprenants',
+      'API de suivi des entretiens réécrite',
+      'Équipe accompagnée vers le Software Craftsmanship',
     ],
-    caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Dyma Spring Boot'],
+    caseStudyTitles: [
+      'Institut du Cancer Avignon - Provence',
+      'Malt',
+      'Namirial',
+      'Dyma Spring Boot',
+      'Orange Business',
+    ],
     contactTitle: 'Contact',
     contactSubtitle:
       'Parlons de votre projet. Un premier échange gratuit et sans engagement de 30 minutes pour cerner votre besoin et vous proposer une solution adaptée.',
@@ -129,6 +148,8 @@ const localizedHeroes = [
     caseStudiesTitle: 'Case studies',
     caseStudiesSubtitle: 'Some recent work.',
     caseStudyLinkText: 'See the course',
+    caseStudyPreviousLabel: 'Previous case study',
+    caseStudyNextLabel: 'Next case study',
     caseStudyAchievements: [
       'Clearly defined IT modernization strategy',
       'Reliable releases through CI/CD pipelines',
@@ -138,8 +159,16 @@ const localizedHeroes = [
       'Fraud caught at sign-up',
       '19 chapters, 85 lessons, 170 quizzes',
       '6,500+ hours spent by students',
+      'Maintenance tracking API rewritten',
+      'Team mentored towards Software Craftsmanship',
     ],
-    caseStudyTitles: ['Institut du Cancer Avignon - Provence', 'Malt', 'Namirial', 'Dyma Spring Boot'],
+    caseStudyTitles: [
+      'Institut du Cancer Avignon - Provence',
+      'Malt',
+      'Namirial',
+      'Dyma Spring Boot',
+      'Orange Business',
+    ],
     contactTitle: 'Contact',
     contactSubtitle:
       "Let's talk about your project. A free, no-commitment 30-minute call to understand your needs and recommend the right solution.",
@@ -175,6 +204,8 @@ for (const {
   caseStudiesTitle,
   caseStudiesSubtitle,
   caseStudyLinkText,
+  caseStudyPreviousLabel,
+  caseStudyNextLabel,
   caseStudyAchievements,
   caseStudyTitles,
   contactTitle,
@@ -319,6 +350,7 @@ for (const {
       'malt',
       'namirial',
       'dyma',
+      'orange',
     ]);
     await expect(caseStudies.getByRole('link')).toHaveCount(1);
     const courseLink = caseStudies.getByRole('link', { name: caseStudyLinkText });
@@ -333,6 +365,65 @@ for (const {
       return (pricing.compareDocumentPosition(caseStudies) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
     });
     expect(followsPricing).toBe(true);
+  });
+
+  test(`labels the ${lang} case study slider buttons on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const caseStudies = page.locator('#case-studies');
+
+    await expect(caseStudies.getByRole('button', { name: caseStudyPreviousLabel, exact: true })).toHaveCount(1);
+    await expect(caseStudies.getByRole('button', { name: caseStudyNextLabel, exact: true })).toHaveCount(1);
+  });
+
+  test(`scrolls the ${lang} case studies one end to the other with the slider buttons on ${path}`, async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await page.goto(path);
+
+    const caseStudies = page.locator('#case-studies');
+    const previous = caseStudies.getByRole('button', { name: caseStudyPreviousLabel, exact: true });
+    const next = caseStudies.getByRole('button', { name: caseStudyNextLabel, exact: true });
+    const lastCard = caseStudies.locator('.case-study-art').last();
+
+    await expect(previous).toHaveAttribute('aria-disabled', 'true');
+    await expect(next).not.toHaveAttribute('aria-disabled', 'true');
+    await expect.poll(() => isInsideScroller(lastCard)).toBe(false);
+
+    await next.click();
+
+    await expect.poll(() => isInsideScroller(lastCard)).toBe(true);
+    await expect(next).toHaveAttribute('aria-disabled', 'true');
+    await expect(previous).not.toHaveAttribute('aria-disabled', 'true');
+  });
+
+  test(`keeps keyboard focus on the ${lang} next button at the end of the slider on ${path}`, async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await page.goto(path);
+
+    const caseStudies = page.locator('#case-studies');
+    const next = caseStudies.getByRole('button', { name: caseStudyNextLabel, exact: true });
+    const lastCard = caseStudies.locator('.case-study-art').last();
+
+    await next.focus();
+    await page.keyboard.press('Enter');
+    await expect.poll(() => isInsideScroller(lastCard)).toBe(true);
+    await page.keyboard.press('Enter');
+
+    await expect(next).toHaveAttribute('aria-disabled', 'true');
+    await expect(next).toBeFocused();
+    expect(await isInsideScroller(lastCard)).toBe(true);
+  });
+
+  test(`exposes the ${lang} case studies as a named region holding a list of ${CASE_STUDY_COUNT} cards on ${path}`, async ({
+    page,
+  }) => {
+    await page.goto(path);
+
+    const region = page.locator('#case-studies').getByRole('region', { name: caseStudiesTitle, exact: true });
+    const cards = region.getByRole('list').first().locator('> li');
+
+    await expect(region).toHaveCount(1);
+    await expect(cards).toHaveCount(CASE_STUDY_COUNT);
   });
 
   test(`shows the ${lang} contact section after the case studies on ${path}`, async ({ page }) => {
@@ -383,32 +474,29 @@ for (const theme of ['light', 'dark'] as const) {
   });
 }
 
-for (const { viewport, cardsPerRow } of [
-  { viewport: { width: 1280, height: 800 }, cardsPerRow: 4 },
-  { viewport: { width: 900, height: 1100 }, cardsPerRow: 2 },
+for (const { viewport, visibleCards } of [
+  { viewport: { width: 1280, height: 800 }, visibleCards: 4 },
+  { viewport: { width: 900, height: 1100 }, visibleCards: 2 },
+  { viewport: { width: 375, height: 800 }, visibleCards: 1 },
 ]) {
-  test(`lays out ${cardsPerRow} case studies per row with aligned achievements at ${viewport.width}px`, async ({
+  test(`shows ${visibleCards} case studies at once with aligned achievements at ${viewport.width}px`, async ({
     page,
   }) => {
     await page.setViewportSize(viewport);
     await page.goto('/fr/');
 
-    const rowTops = await page
-      .locator('#case-studies .case-study-art')
-      .evaluateAll((arts) => arts.map((art) => Math.round(art.getBoundingClientRect().top)));
-
-    const cardsInEachRow = [...new Set(rowTops)].map((top) => rowTops.filter((rowTop) => rowTop === top).length);
-
+    const cards = page.locator('#case-studies .case-study-art');
+    const tops = await cards.evaluateAll((arts) => arts.map((art) => Math.round(art.getBoundingClientRect().top)));
     const footerBottoms = await page
       .locator(`#case-studies ${CARD_FOOTER}`)
       .evaluateAll((footers) => footers.map((footer) => Math.round(footer.getBoundingClientRect().bottom)));
-    const footerBottomsInEachRow = [...new Set(rowTops)].map(
-      (top) => new Set(footerBottoms.filter((_, index) => rowTops[index] === top)).size
+    const fullyVisible = await Promise.all(
+      Array.from({ length: CASE_STUDY_COUNT }, (_, index) => isInsideScroller(cards.nth(index)))
     );
 
-    expect(rowTops).toHaveLength(CASE_STUDY_COUNT);
-    expect(cardsInEachRow).toEqual(Array(CASE_STUDY_COUNT / cardsPerRow).fill(cardsPerRow));
-    expect(footerBottomsInEachRow).toEqual(Array(CASE_STUDY_COUNT / cardsPerRow).fill(1));
+    expect(fullyVisible.filter(Boolean)).toHaveLength(visibleCards);
+    expect(new Set(tops).size).toBe(1);
+    expect(new Set(footerBottoms).size).toBe(1);
   });
 }
 

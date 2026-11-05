@@ -107,6 +107,14 @@ const fr = {
   'home.caseStudies.dyma.tags.eLearning': 'Formation en ligne',
   'home.caseStudies.dyma.achievements.content': '19 chapitres, 85 leçons, 170 quiz',
   'home.caseStudies.dyma.achievements.hours': '6500+ heures passées par les apprenants',
+  'home.caseStudies.orange.title': 'Orange Business',
+  'home.caseStudies.orange.description':
+    'Tech Lead Backend sur Océan, la plateforme de gestion de flotte d’Orange Business : refonte du suivi des entretiens pour aider les entreprises à réduire les coûts de leurs véhicules.',
+  'home.caseStudies.orange.tags.fleetManagement': 'Gestion de flotte',
+  'home.caseStudies.orange.achievements.maintenanceApi': 'API de suivi des entretiens réécrite',
+  'home.caseStudies.orange.achievements.craftsmanship': 'Équipe accompagnée vers le Software Craftsmanship',
+  'home.caseStudies.previous': 'Cas client précédent',
+  'home.caseStudies.next': 'Cas client suivant',
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
@@ -213,6 +221,14 @@ const en = {
   'home.caseStudies.dyma.tags.eLearning': 'E-Learning',
   'home.caseStudies.dyma.achievements.content': '19 chapters, 85 lessons, 170 quizzes',
   'home.caseStudies.dyma.achievements.hours': '6,500+ hours spent by students',
+  'home.caseStudies.orange.title': 'Orange Business',
+  'home.caseStudies.orange.description':
+    'Backend Tech Lead on Océan, the Orange Business fleet management platform: rebuilding maintenance tracking to help companies cut their vehicle costs.',
+  'home.caseStudies.orange.tags.fleetManagement': 'Fleet Management',
+  'home.caseStudies.orange.achievements.maintenanceApi': 'Maintenance tracking API rewritten',
+  'home.caseStudies.orange.achievements.craftsmanship': 'Team mentored towards Software Craftsmanship',
+  'home.caseStudies.previous': 'Previous case study',
+  'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':

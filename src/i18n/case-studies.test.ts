@@ -35,6 +35,13 @@ const expectedCaseStudies = {
       tags: ['Formation en ligne'],
       achievements: ['19 chapitres, 85 leçons, 170 quiz', '6500+ heures passées par les apprenants'],
     },
+    {
+      title: 'Orange Business',
+      description:
+        'Tech Lead Backend sur Océan, la plateforme de gestion de flotte d’Orange Business : refonte du suivi des entretiens pour aider les entreprises à réduire les coûts de leurs véhicules.',
+      tags: ['Gestion de flotte'],
+      achievements: ['API de suivi des entretiens réécrite', 'Équipe accompagnée vers le Software Craftsmanship'],
+    },
   ],
   en: [
     {
@@ -64,6 +71,13 @@ const expectedCaseStudies = {
       tags: ['E-Learning'],
       achievements: ['19 chapters, 85 lessons, 170 quizzes', '6,500+ hours spent by students'],
     },
+    {
+      title: 'Orange Business',
+      description:
+        'Backend Tech Lead on Océan, the Orange Business fleet management platform: rebuilding maintenance tracking to help companies cut their vehicle costs.',
+      tags: ['Fleet Management'],
+      achievements: ['Maintenance tracking API rewritten', 'Team mentored towards Software Craftsmanship'],
+    },
   ],
 } as const;
 
@@ -92,6 +106,7 @@ describe('listing the case studies', () => {
       'malt',
       'namirial',
       'dyma',
+      'orange',
     ]);
   });
 
