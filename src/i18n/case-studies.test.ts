@@ -7,12 +7,9 @@ const expectedCaseStudies = {
     {
       title: 'Institut du Cancer Avignon - Provence',
       description:
-        'Participer à la refonte complète du dossier patient informatisé et mettre en place les meilleures pratiques d’ingénierie au sein d’une équipe tech d’une dizaine de personnes.',
+        'Accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie.',
       tags: ['Santé'],
-      achievements: [
-        'Stratégie de modernisation du SI clairement définie',
-        'Livraisons fiabilisées avec des pipelines CI/CD',
-      ],
+      achievements: ['Mise en place d’une démarche qualité', 'Livraisons fiabilisées avec des pipelines CI/CD'],
     },
     {
       title: 'Malt',
@@ -39,10 +36,9 @@ const expectedCaseStudies = {
   en: [
     {
       title: 'Institut du Cancer Avignon - Provence',
-      description:
-        'Helping fully rebuild the healthcare information system and setting up engineering best practices within a ten-person tech team.',
+      description: 'Coaching a ten-person tech team through setting up and adopting engineering best practices.',
       tags: ['Healthcare'],
-      achievements: ['Clearly defined IT modernization strategy', 'Reliable releases through CI/CD pipelines'],
+      achievements: ['Quality process established', 'Reliable releases through CI/CD pipelines'],
     },
     {
       title: 'Malt',

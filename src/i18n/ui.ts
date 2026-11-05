@@ -84,9 +84,9 @@ const fr = {
   'home.caseStudies.subtitle': 'Quelques missions et réalisations récentes.',
   'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
   'home.caseStudies.icap.description':
-    'Participer à la refonte complète du dossier patient informatisé et mettre en place les meilleures pratiques d’ingénierie au sein d’une équipe tech d’une dizaine de personnes.',
+    'Accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie.',
   'home.caseStudies.icap.tags.healthcare': 'Santé',
-  'home.caseStudies.icap.achievements.modernizationStrategy': 'Stratégie de modernisation du SI clairement définie',
+  'home.caseStudies.icap.achievements.qualityApproach': 'Mise en place d’une démarche qualité',
   'home.caseStudies.icap.achievements.cicdPipelines': 'Livraisons fiabilisées avec des pipelines CI/CD',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
@@ -190,9 +190,9 @@ const en = {
   'home.caseStudies.subtitle': 'Some recent work.',
   'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
   'home.caseStudies.icap.description':
-    'Helping fully rebuild the healthcare information system and setting up engineering best practices within a ten-person tech team.',
+    'Coaching a ten-person tech team through setting up and adopting engineering best practices.',
   'home.caseStudies.icap.tags.healthcare': 'Healthcare',
-  'home.caseStudies.icap.achievements.modernizationStrategy': 'Clearly defined IT modernization strategy',
+  'home.caseStudies.icap.achievements.qualityApproach': 'Quality process established',
   'home.caseStudies.icap.achievements.cicdPipelines': 'Reliable releases through CI/CD pipelines',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
