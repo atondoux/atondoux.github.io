@@ -52,3 +52,8 @@
   --cs-brand: #3c82f6;
   --cs-deep: #0f172a;
 }
+
+.case-study-art[data-palette='orange'] {
+  --cs-brand: #ff7900;
+  --cs-deep: --theme(--color-orange-950);
+}

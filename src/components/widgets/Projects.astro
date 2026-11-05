@@ -16,6 +16,9 @@ const {
   tagline = await Astro.slots.render('tagline'),
   items = [],
   columns = 3,
+  variant = 'grid',
+  previousLabel = 'Previous',
+  nextLabel = 'Next',
   callToAction,
 
   id,
@@ -24,94 +27,217 @@ const {
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
 
+const isSlider = variant === 'slider';
 const columnsClass = getColumnsClass(columns, '');
+const gridClasses = ['grid gap-6 md:gap-8 list-none', columnsClass];
+const sliderScrollerClasses =
+  '@container projects-slider-list -my-2 snap-x snap-mandatory overflow-x-auto scroll-smooth py-2 [scrollbar-width:none] motion-reduce:scroll-auto';
+const sliderListClasses = 'flex w-max gap-6 list-none md:gap-8';
+const itemClasses = isSlider
+  ? 'shrink-0 basis-[100cqw] snap-start sm:basis-[calc((100cqw-1.5rem)/2)] md:basis-[calc((100cqw-2rem)/2)] lg:basis-[calc((100cqw-6rem)/4)]'
+  : 'intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade';
+const arrowClasses =
+  'absolute z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-heading shadow-md ring-1 ring-gray-200 transition hover:bg-gray-50 aria-disabled:pointer-events-none aria-disabled:opacity-0 dark:bg-slate-800 dark:ring-slate-700 dark:hover:bg-slate-700 bottom-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2';
+const Wrapper = isSlider ? 'aw-projects-slider' : Fragment;
+const List = isSlider ? 'div' : Fragment;
+const scrollerProps = isSlider
+  ? {
+      class: sliderScrollerClasses,
+      tabindex: 0,
+      'data-aw-slider-list': '',
+      ...(title ? { role: 'region', 'aria-label': title } : {}),
+    }
+  : {};
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
 
-  <ul class:list={['grid gap-6 md:gap-8 list-none', columnsClass]}>
-    {items.map(({ title: itemTitle, description, image, tags, href, result, achievements = [], linkText }) => {
-      const Card = href ? 'a' : 'div';
-      const hasFooter = Boolean(result || achievements.length > 0 || href);
-      return (
-        <li class="intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
-          <Card
-            href={href}
-            class:list={[
-              'group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-slate-700 dark:bg-slate-900 shadow-sm',
-              href ? 'transition hover:-translate-y-0.5 hover:shadow-lg hover:border-primary/40' : '',
-            ]}
-          >
-            {image &&
-              (typeof image === 'string' ? (
-                <Fragment set:html={image} />
-              ) : (
-                <div class="overflow-hidden">
-                  <Image
-                    class="aspect-[16/10] w-full object-cover transition group-hover:scale-[1.03]"
-                    widths={[400, 640]}
-                    sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 400px"
-                    width={400}
-                    height={250}
-                    layout="cover"
-                    format="webp"
-                    alt={itemTitle ?? ''}
-                    {...image}
-                  />
-                </div>
-              ))}
-            <div class="flex flex-1 flex-col p-6">
-              {tags && tags.length > 0 && (
-                <ul class="mb-3 flex flex-wrap gap-1.5 list-none">
-                  {tags.map((tag) => (
-                    <li class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-muted dark:bg-slate-800">
-                      {tag}
-                    </li>
+  <Wrapper {...(isSlider ? { class: 'relative block pb-14 md:pb-0' } : {})}>
+    <List {...scrollerProps}>
+      <ul class:list={isSlider ? sliderListClasses : gridClasses}>
+        {items.map(({ title: itemTitle, description, image, tags, href, result, achievements = [], linkText }) => {
+          const Card = href ? 'a' : 'div';
+          const hasFooter = Boolean(result || achievements.length > 0 || href);
+          return (
+            <li class={itemClasses}>
+              <Card
+                href={href}
+                class:list={[
+                  'group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-slate-700 dark:bg-slate-900 shadow-sm',
+                  href ? 'transition hover:-translate-y-0.5 hover:shadow-lg hover:border-primary/40' : '',
+                ]}
+              >
+                {image &&
+                  (typeof image === 'string' ? (
+                    <Fragment set:html={image} />
+                  ) : (
+                    <div class="overflow-hidden">
+                      <Image
+                        class="aspect-[16/10] w-full object-cover transition group-hover:scale-[1.03]"
+                        widths={[400, 640]}
+                        sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 400px"
+                        width={400}
+                        height={250}
+                        layout="cover"
+                        format="webp"
+                        alt={itemTitle ?? ''}
+                        {...image}
+                      />
+                    </div>
                   ))}
-                </ul>
-              )}
-              {itemTitle && <h3 class="text-xl font-bold text-heading">{itemTitle}</h3>}
-              {description && <p class="mt-2 text-muted text-pretty" set:html={description} />}
-              {hasFooter && (
-                <div class="mt-auto flex flex-col gap-3 pt-4">
-                  {result && (
-                    <p class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary dark:text-blue-400">
-                      <Icon name="tabler:trending-up" class="h-4 w-4" aria-hidden="true" />
-                      {result}
-                    </p>
-                  )}
-                  {achievements.length > 0 && (
-                    <ul class="flex flex-col gap-1.5 list-none text-sm font-semibold text-primary dark:text-blue-400">
-                      {achievements.map((achievement) => (
-                        <li class="flex items-start gap-1.5">
-                          <Icon name="tabler:circle-check-filled" class="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-                          {achievement}
+                <div class="flex flex-1 flex-col p-6">
+                  {tags && tags.length > 0 && (
+                    <ul class="mb-3 flex flex-wrap gap-1.5 list-none">
+                      {tags.map((tag) => (
+                        <li class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-muted dark:bg-slate-800">
+                          {tag}
                         </li>
                       ))}
                     </ul>
                   )}
-                  {href && (
-                    <span class="inline-flex items-center gap-1 text-sm font-medium text-primary dark:text-blue-400">
-                      {linkText ?? 'View project'}
-                      <Icon
-                        name="tabler:arrow-right"
-                        class="h-4 w-4 transition group-hover:translate-x-0.5 rtl:rotate-180"
-                        aria-hidden="true"
-                      />
-                    </span>
+                  {itemTitle && <h3 class="text-xl font-bold text-heading">{itemTitle}</h3>}
+                  {description && <p class="mt-2 text-muted text-pretty" set:html={description} />}
+                  {hasFooter && (
+                    <div class="mt-auto flex flex-col gap-3 pt-4">
+                      {result && (
+                        <p class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary dark:text-blue-400">
+                          <Icon name="tabler:trending-up" class="h-4 w-4" aria-hidden="true" />
+                          {result}
+                        </p>
+                      )}
+                      {achievements.length > 0 && (
+                        <ul class="flex flex-col gap-1.5 list-none text-sm font-semibold text-primary dark:text-blue-400">
+                          {achievements.map((achievement) => (
+                            <li class="flex items-start gap-1.5">
+                              <Icon
+                                name="tabler:circle-check-filled"
+                                class="mt-0.5 h-4 w-4 shrink-0"
+                                aria-hidden="true"
+                              />
+                              {achievement}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {href && (
+                        <span class="inline-flex items-center gap-1 text-sm font-medium text-primary dark:text-blue-400">
+                          {linkText ?? 'View project'}
+                          <Icon
+                            name="tabler:arrow-right"
+                            class="h-4 w-4 transition group-hover:translate-x-0.5 rtl:rotate-180"
+                            aria-hidden="true"
+                          />
+                        </span>
+                      )}
+                    </div>
                   )}
                 </div>
-              )}
-            </div>
-          </Card>
-        </li>
-      );
-    })}
-  </ul>
+              </Card>
+            </li>
+          );
+        })}
+      </ul>
+    </List>
+    {isSlider && (
+      <>
+        <button
+          type="button"
+          class:list={[arrowClasses, 'left-1/2 -translate-x-12 md:left-0 md:-translate-x-1/2']}
+          data-aw-slider-prev
+          aria-disabled="true"
+          aria-label={previousLabel}
+        >
+          <Icon name="tabler:chevron-left" class="h-5 w-5 rtl:rotate-180" aria-hidden="true" />
+        </button>
+        <button
+          type="button"
+          class:list={[arrowClasses, 'left-1/2 translate-x-2 md:left-auto md:right-0 md:translate-x-1/2']}
+          data-aw-slider-next
+          aria-disabled="true"
+          aria-label={nextLabel}
+        >
+          <Icon name="tabler:chevron-right" class="h-5 w-5 rtl:rotate-180" aria-hidden="true" />
+        </button>
+      </>
+    )}
+  </Wrapper>
   {callToAction && (
     <div class="mt-8 flex justify-center md:mt-12">
       <Button {...callToAction} />
     </div>
   )}
 </WidgetWrapper>
+
+<style>
+  .projects-slider-list::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+<script>
+  const END_TOLERANCE_PX = 1;
+  const DISABLED_ATTRIBUTE = 'aria-disabled';
+
+  type SliderControls = {
+    list: HTMLElement;
+    previous: HTMLElement;
+    next: HTMLElement;
+    resizeObserver: ResizeObserver;
+  };
+
+  class AwProjectsSlider extends HTMLElement {
+    private controls?: SliderControls;
+    private readonly update = () => this.updateButtons();
+    private readonly goPrevious = () => this.scrollByCard(-1);
+    private readonly goNext = () => this.scrollByCard(1);
+
+    connectedCallback() {
+      const list = this.querySelector<HTMLElement>('[data-aw-slider-list]');
+      const previous = this.querySelector<HTMLElement>('[data-aw-slider-prev]');
+      const next = this.querySelector<HTMLElement>('[data-aw-slider-next]');
+      if (!list || !previous || !next) return;
+      const resizeObserver = new ResizeObserver(this.update);
+      this.controls = { list, previous, next, resizeObserver };
+      previous.addEventListener('click', this.goPrevious);
+      next.addEventListener('click', this.goNext);
+      list.addEventListener('scroll', this.update);
+      resizeObserver.observe(list);
+      this.updateButtons();
+    }
+
+    disconnectedCallback() {
+      if (!this.controls) return;
+      const { list, previous, next, resizeObserver } = this.controls;
+      previous.removeEventListener('click', this.goPrevious);
+      next.removeEventListener('click', this.goNext);
+      list.removeEventListener('scroll', this.update);
+      resizeObserver.disconnect();
+      this.controls = undefined;
+    }
+
+    private cardStep(list: HTMLElement): number {
+      const firstCard = list.querySelector<HTMLElement>(':scope > ul > li');
+      const gap = parseFloat(getComputedStyle(list.firstElementChild ?? list).columnGap) || 0;
+      return (firstCard?.offsetWidth ?? 0) + gap;
+    }
+
+    private scrollByCard(direction: 1 | -1) {
+      if (!this.controls) return;
+      const button = direction === 1 ? this.controls.next : this.controls.previous;
+      if (button.getAttribute(DISABLED_ATTRIBUTE) === 'true') return;
+      const { list } = this.controls;
+      list.scrollBy({ left: direction * this.cardStep(list) });
+    }
+
+    private updateButtons() {
+      if (!this.controls) return;
+      const { list, previous, next } = this.controls;
+      const { scrollLeft, clientWidth, scrollWidth } = list;
+      previous.setAttribute(DISABLED_ATTRIBUTE, String(scrollLeft <= END_TOLERANCE_PX));
+      next.setAttribute(DISABLED_ATTRIBUTE, String(scrollLeft + clientWidth >= scrollWidth - END_TOLERANCE_PX));
+    }
+  }
+
+  if (!customElements.get('aw-projects-slider')) customElements.define('aw-projects-slider', AwProjectsSlider);
+</script>

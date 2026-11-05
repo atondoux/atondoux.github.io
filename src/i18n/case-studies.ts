@@ -42,6 +42,14 @@ const caseStudyCatalog = [
     achievementKeys: ['home.caseStudies.dyma.achievements.content', 'home.caseStudies.dyma.achievements.hours'],
     link: { href: 'https://dyma.fr/formations/spring-boot', textKey: 'home.caseStudies.dyma.linkText' },
   },
+  {
+    key: 'orange',
+    tagKeys: ['home.caseStudies.orange.tags.fleetManagement'],
+    achievementKeys: [
+      'home.caseStudies.orange.achievements.usageRate',
+      'home.caseStudies.orange.achievements.maintenancePlanning',
+    ],
+  },
 ] as const satisfies readonly CaseStudyCatalogEntry[];
 
 type CaseStudyEntry = (typeof caseStudyCatalog)[number];

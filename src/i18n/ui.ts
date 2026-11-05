@@ -107,6 +107,14 @@ const fr = {
   'home.caseStudies.dyma.tags.eLearning': 'Formation en ligne',
   'home.caseStudies.dyma.achievements.content': '19 chapitres, 85 leçons, 170 quiz',
   'home.caseStudies.dyma.achievements.hours': '6500+ heures passées par les apprenants',
+  'home.caseStudies.orange.title': 'Orange Business',
+  'home.caseStudies.orange.description':
+    'Réécrire le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprises.',
+  'home.caseStudies.orange.tags.fleetManagement': 'Gestion de flotte',
+  'home.caseStudies.orange.achievements.usageRate': 'Suivi précis du taux d’utilisation des véhicules',
+  'home.caseStudies.orange.achievements.maintenancePlanning': 'Amélioration de la planification des entretiens',
+  'home.caseStudies.previous': 'Cas client précédent',
+  'home.caseStudies.next': 'Cas client suivant',
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
@@ -213,6 +221,14 @@ const en = {
   'home.caseStudies.dyma.tags.eLearning': 'E-Learning',
   'home.caseStudies.dyma.achievements.content': '19 chapters, 85 lessons, 170 quizzes',
   'home.caseStudies.dyma.achievements.hours': '6,500+ hours spent by students',
+  'home.caseStudies.orange.title': 'Orange Business',
+  'home.caseStudies.orange.description':
+    'Rewrite the maintenance tracking module of a telematics and fleet management solution for company vehicles.',
+  'home.caseStudies.orange.tags.fleetManagement': 'Fleet Management',
+  'home.caseStudies.orange.achievements.usageRate': 'Accurate tracking of vehicle usage rates',
+  'home.caseStudies.orange.achievements.maintenancePlanning': 'Improved maintenance planning',
+  'home.caseStudies.previous': 'Previous case study',
+  'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':

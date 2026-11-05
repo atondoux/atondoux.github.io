@@ -32,6 +32,16 @@ const expectedCaseStudies = {
       tags: ['Formation en ligne'],
       achievements: ['19 chapitres, 85 leçons, 170 quiz', '6500+ heures passées par les apprenants'],
     },
+    {
+      title: 'Orange Business',
+      description:
+        'Réécrire le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprises.',
+      tags: ['Gestion de flotte'],
+      achievements: [
+        'Suivi précis du taux d’utilisation des véhicules',
+        'Amélioration de la planification des entretiens',
+      ],
+    },
   ],
   en: [
     {
@@ -59,6 +69,13 @@ const expectedCaseStudies = {
         'Creating and maintaining the Spring Boot course on the Dyma platform: written lessons, videos and code examples. See the course',
       tags: ['E-Learning'],
       achievements: ['19 chapters, 85 lessons, 170 quizzes', '6,500+ hours spent by students'],
+    },
+    {
+      title: 'Orange Business',
+      description:
+        'Rewrite the maintenance tracking module of a telematics and fleet management solution for company vehicles.',
+      tags: ['Fleet Management'],
+      achievements: ['Accurate tracking of vehicle usage rates', 'Improved maintenance planning'],
     },
   ],
 } as const;
@@ -88,6 +105,7 @@ describe('listing the case studies', () => {
       'malt',
       'namirial',
       'dyma',
+      'orange',
     ]);
   });
 

@@ -81,7 +81,9 @@ const metadata = {
     title={t('home.caseStudies.title')}
     subtitle={t('home.caseStudies.subtitle')}
     items={getCaseStudies(lang)}
-    columns={4}
+    variant="slider"
+    previousLabel={t('home.caseStudies.previous')}
+    nextLabel={t('home.caseStudies.next')}
   />
   <Steps2
     id="contact"

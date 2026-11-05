@@ -414,6 +414,9 @@ export interface Project {
 export interface Projects extends Omit<Headline, 'classes'>, Widget {
   items?: Array<Project>;
   columns?: number;
+  variant?: 'grid' | 'slider';
+  previousLabel?: string;
+  nextLabel?: string;
   callToAction?: CallToAction;
 }
 
