@@ -84,7 +84,7 @@ const localizedHeroes = [
     caseStudiesTitle: 'Cas clients',
     caseStudiesSubtitle: 'Quelques missions et réalisations récentes.',
     caseStudyLinkText: 'Voir la formation',
-    caseStudyTestimonialText: 'Voir le témoignage client',
+    caseStudyDemoLinkText: 'Voir une démo',
     caseStudyPreviousLabel: 'Cas client précédent',
     caseStudyNextLabel: 'Cas client suivant',
     caseStudyAchievements: [
@@ -163,7 +163,7 @@ const localizedHeroes = [
     caseStudiesTitle: 'Case studies',
     caseStudiesSubtitle: 'Some recent work.',
     caseStudyLinkText: 'See the course',
-    caseStudyTestimonialText: 'See the client testimonial',
+    caseStudyDemoLinkText: 'See a demo',
     caseStudyPreviousLabel: 'Previous case study',
     caseStudyNextLabel: 'Next case study',
     caseStudyAchievements: [
@@ -223,7 +223,7 @@ for (const {
   caseStudiesTitle,
   caseStudiesSubtitle,
   caseStudyLinkText,
-  caseStudyTestimonialText,
+  caseStudyDemoLinkText,
   caseStudyPreviousLabel,
   caseStudyNextLabel,
   caseStudyAchievements,
@@ -379,10 +379,10 @@ for (const {
     await expect(courseLink).toHaveAttribute('target', '_blank');
     await expect(courseLink).toHaveAttribute('rel', 'noopener noreferrer');
     await expect(courseLink.locator('svg[data-icon="tabler:external-link"][aria-hidden="true"]')).toHaveCount(1);
-    const testimonialLink = caseStudies.getByRole('link', { name: caseStudyTestimonialText });
-    await expect(testimonialLink).toHaveAttribute('href', 'https://youtu.be/NwEPv_cVKC0');
-    await expect(testimonialLink).toHaveAttribute('target', '_blank');
-    await expect(testimonialLink).toHaveAttribute('rel', 'noopener noreferrer');
+    const demoLink = caseStudies.getByRole('link', { name: caseStudyDemoLinkText });
+    await expect(demoLink).toHaveAttribute('href', 'https://youtu.be/NwEPv_cVKC0');
+    await expect(demoLink).toHaveAttribute('target', '_blank');
+    await expect(demoLink).toHaveAttribute('rel', 'noopener noreferrer');
     const followsPricing = await page.evaluate(() => {
       const pricing = document.querySelector('#pricing');
       const caseStudies = document.querySelector('#case-studies');
