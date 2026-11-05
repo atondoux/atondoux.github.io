@@ -76,7 +76,7 @@ const localizedHeroes = [
     caseStudyPreviousLabel: 'Cas client précédent',
     caseStudyNextLabel: 'Cas client suivant',
     caseStudyAchievements: [
-      'Stratégie de modernisation du SI clairement définie',
+      'Mise en place d’une démarche qualité',
       'Livraisons fiabilisées avec des pipelines CI/CD',
       '90% des freelances payés en 10 jours',
       'Processus de financement automatisé à 95%',
@@ -151,7 +151,7 @@ const localizedHeroes = [
     caseStudyPreviousLabel: 'Previous case study',
     caseStudyNextLabel: 'Next case study',
     caseStudyAchievements: [
-      'Clearly defined IT modernization strategy',
+      'Quality process established',
       'Reliable releases through CI/CD pipelines',
       '90% of freelancers paid within 10 days',
       '95% automated financing process',
