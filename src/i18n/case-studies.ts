@@ -46,8 +46,8 @@ const caseStudyCatalog = [
     key: 'orange',
     tagKeys: ['home.caseStudies.orange.tags.fleetManagement'],
     achievementKeys: [
-      'home.caseStudies.orange.achievements.maintenanceApi',
-      'home.caseStudies.orange.achievements.craftsmanship',
+      'home.caseStudies.orange.achievements.usageRate',
+      'home.caseStudies.orange.achievements.maintenancePlanning',
     ],
   },
 ] as const satisfies readonly CaseStudyCatalogEntry[];

@@ -35,9 +35,12 @@ const expectedCaseStudies = {
     {
       title: 'Orange Business',
       description:
-        'Tech Lead Backend sur Océan, la plateforme de gestion de flotte d’Orange Business : refonte du suivi des entretiens pour aider les entreprises à réduire les coûts de leurs véhicules.',
+        'Réécrire le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprises.',
       tags: ['Gestion de flotte'],
-      achievements: ['API de suivi des entretiens réécrite', 'Équipe accompagnée vers le Software Craftsmanship'],
+      achievements: [
+        'Suivi précis du taux d’utilisation des véhicules',
+        'Amélioration de la planification des entretiens',
+      ],
     },
   ],
   en: [
@@ -70,9 +73,9 @@ const expectedCaseStudies = {
     {
       title: 'Orange Business',
       description:
-        'Backend Tech Lead on Océan, the Orange Business fleet management platform: rebuilding maintenance tracking to help companies cut their vehicle costs.',
+        'Rewrite the maintenance tracking module of a telematics and fleet management solution for company vehicles.',
       tags: ['Fleet Management'],
-      achievements: ['Maintenance tracking API rewritten', 'Team mentored towards Software Craftsmanship'],
+      achievements: ['Accurate tracking of vehicle usage rates', 'Improved maintenance planning'],
     },
   ],
 } as const;

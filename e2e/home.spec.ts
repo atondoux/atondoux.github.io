@@ -84,8 +84,8 @@ const localizedHeroes = [
       'Fraude détectée dès la souscription',
       '19 chapitres, 85 leçons, 170 quiz',
       '6500+ heures passées par les apprenants',
-      'API de suivi des entretiens réécrite',
-      'Équipe accompagnée vers le Software Craftsmanship',
+      'Suivi précis du taux d’utilisation des véhicules',
+      'Amélioration de la planification des entretiens',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -159,8 +159,8 @@ const localizedHeroes = [
       'Fraud caught at sign-up',
       '19 chapters, 85 lessons, 170 quizzes',
       '6,500+ hours spent by students',
-      'Maintenance tracking API rewritten',
-      'Team mentored towards Software Craftsmanship',
+      'Accurate tracking of vehicle usage rates',
+      'Improved maintenance planning',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
