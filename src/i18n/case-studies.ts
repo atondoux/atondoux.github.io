@@ -16,7 +16,7 @@ const caseStudyCatalog = [
     key: 'icap',
     tagKeys: ['home.caseStudies.icap.tags.healthcare'],
     achievementKeys: [
-      'home.caseStudies.icap.achievements.modernizationStrategy',
+      'home.caseStudies.icap.achievements.qualityApproach',
       'home.caseStudies.icap.achievements.cicdPipelines',
     ],
   },
