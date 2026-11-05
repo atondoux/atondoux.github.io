@@ -1,10 +1,21 @@
 import { expect, test, type Locator } from '@playwright/test';
 
-const CASE_STUDY_COUNT = 5;
+const CASE_STUDY_COUNT = 6;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
 const CASE_STUDY_ACHIEVEMENTS = `#case-studies ${ACHIEVEMENT_IN_CARD}`;
+const SLIDER_STEP_TIMEOUT_MS = 500;
+const SLIDER_END_TIMEOUT_MS = 5000;
+
+const advanceSliderToEnd = (next: Locator, step: () => Promise<void>) =>
+  expect(async () => {
+    const isAtEnd = (await next.getAttribute('aria-disabled')) === 'true';
+    if (!isAtEnd) {
+      await step();
+    }
+    await expect(next).toHaveAttribute('aria-disabled', 'true', { timeout: SLIDER_STEP_TIMEOUT_MS });
+  }).toPass({ timeout: SLIDER_END_TIMEOUT_MS });
 
 const isInsideScroller = (art: Locator) =>
   art.evaluate((element) => {
@@ -86,6 +97,8 @@ const localizedHeroes = [
       '6500+ heures passées par les apprenants',
       'Suivi précis du taux d’utilisation des véhicules',
       'Amélioration de la planification des entretiens',
+      'Mise à disposition de modules spécialisés pour le suivi des patients',
+      'Mise en place d’une pipeline de livraison et déploiement continus sur une architecture micro-services',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -93,6 +106,7 @@ const localizedHeroes = [
       'Namirial',
       'Dyma Spring Boot',
       'Orange Business',
+      'Softway Medical',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -161,6 +175,8 @@ const localizedHeroes = [
       '6,500+ hours spent by students',
       'Accurate tracking of vehicle usage rates',
       'Improved maintenance planning',
+      'Specialized patient follow-up modules delivered',
+      'Continuous delivery and deployment pipeline on a microservices architecture',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -168,6 +184,7 @@ const localizedHeroes = [
       'Namirial',
       'Dyma Spring Boot',
       'Orange Business',
+      'Softway Medical',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -351,6 +368,7 @@ for (const {
       'namirial',
       'dyma',
       'orange',
+      'softway',
     ]);
     await expect(caseStudies.getByRole('link')).toHaveCount(1);
     const courseLink = caseStudies.getByRole('link', { name: caseStudyLinkText });
@@ -389,7 +407,7 @@ for (const {
     await expect(next).not.toHaveAttribute('aria-disabled', 'true');
     await expect.poll(() => isInsideScroller(lastCard)).toBe(false);
 
-    await next.click();
+    await advanceSliderToEnd(next, () => next.click());
 
     await expect.poll(() => isInsideScroller(lastCard)).toBe(true);
     await expect(next).toHaveAttribute('aria-disabled', 'true');
@@ -405,7 +423,7 @@ for (const {
     const lastCard = caseStudies.locator('.case-study-art').last();
 
     await next.focus();
-    await page.keyboard.press('Enter');
+    await advanceSliderToEnd(next, () => page.keyboard.press('Enter'));
     await expect.poll(() => isInsideScroller(lastCard)).toBe(true);
     await page.keyboard.press('Enter');
 

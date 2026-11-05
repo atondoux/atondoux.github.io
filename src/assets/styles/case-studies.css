@@ -57,3 +57,8 @@
   --cs-brand: #ff7900;
   --cs-deep: --theme(--color-orange-950);
 }
+
+.case-study-art[data-palette='softway'] {
+  --cs-brand: #ea5b56;
+  --cs-deep: #5d5d5c;
+}

@@ -50,6 +50,14 @@ const caseStudyCatalog = [
       'home.caseStudies.orange.achievements.maintenancePlanning',
     ],
   },
+  {
+    key: 'softway',
+    tagKeys: ['home.caseStudies.softway.tags.healthcare'],
+    achievementKeys: [
+      'home.caseStudies.softway.achievements.patientModules',
+      'home.caseStudies.softway.achievements.continuousDelivery',
+    ],
+  },
 ] as const satisfies readonly CaseStudyCatalogEntry[];
 
 type CaseStudyEntry = (typeof caseStudyCatalog)[number];

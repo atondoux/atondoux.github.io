@@ -42,6 +42,16 @@ const expectedCaseStudies = {
         'Amélioration de la planification des entretiens',
       ],
     },
+    {
+      title: 'Softway Medical',
+      description:
+        'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier.',
+      tags: ['Santé'],
+      achievements: [
+        'Mise à disposition de modules spécialisés pour le suivi des patients',
+        'Mise en place d’une pipeline de livraison et déploiement continus sur une architecture micro-services',
+      ],
+    },
   ],
   en: [
     {
@@ -77,6 +87,16 @@ const expectedCaseStudies = {
       tags: ['Fleet Management'],
       achievements: ['Accurate tracking of vehicle usage rates', 'Improved maintenance planning'],
     },
+    {
+      title: 'Softway Medical',
+      description:
+        'Improving patient follow-up and care management in hospitals by giving healthcare professionals applications designed around their work.',
+      tags: ['Healthcare'],
+      achievements: [
+        'Specialized patient follow-up modules delivered',
+        'Continuous delivery and deployment pipeline on a microservices architecture',
+      ],
+    },
   ],
 } as const;
 
@@ -106,6 +126,7 @@ describe('listing the case studies', () => {
       'namirial',
       'dyma',
       'orange',
+      'softway',
     ]);
   });
 
