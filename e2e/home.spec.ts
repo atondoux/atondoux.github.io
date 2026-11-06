@@ -198,7 +198,7 @@ const localizedHeroes = [
       'Newcomers trained on the application',
       'Planning, design and implementation of new backend and frontend components',
       'Legacy code cleaned up through continuous refactoring',
-      'New B2C web services on a service-oriented architecture',
+      'Design and implementation of new B2C web services in a service-oriented architecture environment',
       'Automated test suites built with the QA team',
     ],
     caseStudyTitles: [

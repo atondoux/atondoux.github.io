@@ -295,7 +295,8 @@ const en = {
   'home.caseStudies.sncfConnect.description':
     'Making travel easier by adding new features to the SNCF Connect train ticket booking platform.',
   'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Sustainable Mobility',
-  'home.caseStudies.sncfConnect.achievements.b2cWebServices': 'New B2C web services on a service-oriented architecture',
+  'home.caseStudies.sncfConnect.achievements.b2cWebServices':
+    'Design and implementation of new B2C web services in a service-oriented architecture environment',
   'home.caseStudies.sncfConnect.achievements.automatedTests': 'Automated test suites built with the QA team',
   'home.caseStudies.previous': 'Previous case study',
   'home.caseStudies.next': 'Next case study',
