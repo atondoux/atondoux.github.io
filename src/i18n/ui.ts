@@ -113,6 +113,15 @@ const fr = {
   'home.caseStudies.orange.tags.fleetManagement': 'Gestion de flotte',
   'home.caseStudies.orange.achievements.usageRate': 'Suivi précis du taux d’utilisation des véhicules',
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Amélioration de la planification des entretiens',
+  'home.caseStudies.softway.title': 'Softway Medical',
+  'home.caseStudies.softway.description':
+    'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier.',
+  'home.caseStudies.softway.tags.healthcare': 'Santé',
+  'home.caseStudies.softway.linkText': 'Voir la démo',
+  'home.caseStudies.softway.achievements.patientModules':
+    'Conception de nouveaux modules spécialisés dans le suivi des patients',
+  'home.caseStudies.softway.achievements.continuousDelivery':
+    'Livraison et déploiement continus sur une architecture micro-services',
   'home.caseStudies.previous': 'Cas client précédent',
   'home.caseStudies.next': 'Cas client suivant',
   'nav.contact': 'Contact',
@@ -227,6 +236,14 @@ const en = {
   'home.caseStudies.orange.tags.fleetManagement': 'Fleet Management',
   'home.caseStudies.orange.achievements.usageRate': 'Accurate tracking of vehicle usage rates',
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Improved maintenance planning',
+  'home.caseStudies.softway.title': 'Softway Medical',
+  'home.caseStudies.softway.description':
+    'Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work.',
+  'home.caseStudies.softway.tags.healthcare': 'Healthcare',
+  'home.caseStudies.softway.linkText': 'Watch a demo',
+  'home.caseStudies.softway.achievements.patientModules': 'New modules designed for patient follow-up',
+  'home.caseStudies.softway.achievements.continuousDelivery':
+    'Continuous delivery and deployment on a microservices architecture',
   'home.caseStudies.previous': 'Previous case study',
   'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',

@@ -1,10 +1,21 @@
 import { expect, test, type Locator } from '@playwright/test';
 
-const CASE_STUDY_COUNT = 5;
+const CASE_STUDY_COUNT = 6;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
 const CASE_STUDY_ACHIEVEMENTS = `#case-studies ${ACHIEVEMENT_IN_CARD}`;
+const SLIDER_STEP_TIMEOUT_MS = 500;
+const SLIDER_END_TIMEOUT_MS = 5000;
+
+const advanceSliderToEnd = (next: Locator, step: () => Promise<void>) =>
+  expect(async () => {
+    const isAtEnd = (await next.getAttribute('aria-disabled')) === 'true';
+    if (!isAtEnd) {
+      await step();
+    }
+    await expect(next).toHaveAttribute('aria-disabled', 'true', { timeout: SLIDER_STEP_TIMEOUT_MS });
+  }).toPass({ timeout: SLIDER_END_TIMEOUT_MS });
 
 const isInsideScroller = (art: Locator) =>
   art.evaluate((element) => {
@@ -73,6 +84,7 @@ const localizedHeroes = [
     caseStudiesTitle: 'Cas clients',
     caseStudiesSubtitle: 'Quelques missions et réalisations récentes.',
     caseStudyLinkText: 'Voir la formation',
+    caseStudyDemoLinkText: 'Voir la démo',
     caseStudyPreviousLabel: 'Cas client précédent',
     caseStudyNextLabel: 'Cas client suivant',
     caseStudyAchievements: [
@@ -86,6 +98,8 @@ const localizedHeroes = [
       '6500+ heures passées par les apprenants',
       'Suivi précis du taux d’utilisation des véhicules',
       'Amélioration de la planification des entretiens',
+      'Conception de nouveaux modules spécialisés dans le suivi des patients',
+      'Livraison et déploiement continus sur une architecture micro-services',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -93,6 +107,7 @@ const localizedHeroes = [
       'Namirial',
       'Dyma Spring Boot',
       'Orange Business',
+      'Softway Medical',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -148,6 +163,7 @@ const localizedHeroes = [
     caseStudiesTitle: 'Case studies',
     caseStudiesSubtitle: 'Some recent work.',
     caseStudyLinkText: 'See the course',
+    caseStudyDemoLinkText: 'Watch a demo',
     caseStudyPreviousLabel: 'Previous case study',
     caseStudyNextLabel: 'Next case study',
     caseStudyAchievements: [
@@ -161,6 +177,8 @@ const localizedHeroes = [
       '6,500+ hours spent by students',
       'Accurate tracking of vehicle usage rates',
       'Improved maintenance planning',
+      'New modules designed for patient follow-up',
+      'Continuous delivery and deployment on a microservices architecture',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -168,6 +186,7 @@ const localizedHeroes = [
       'Namirial',
       'Dyma Spring Boot',
       'Orange Business',
+      'Softway Medical',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -204,6 +223,7 @@ for (const {
   caseStudiesTitle,
   caseStudiesSubtitle,
   caseStudyLinkText,
+  caseStudyDemoLinkText,
   caseStudyPreviousLabel,
   caseStudyNextLabel,
   caseStudyAchievements,
@@ -351,13 +371,18 @@ for (const {
       'namirial',
       'dyma',
       'orange',
+      'softway',
     ]);
-    await expect(caseStudies.getByRole('link')).toHaveCount(1);
+    await expect(caseStudies.getByRole('link')).toHaveCount(2);
     const courseLink = caseStudies.getByRole('link', { name: caseStudyLinkText });
     await expect(courseLink).toHaveAttribute('href', 'https://dyma.fr/formations/spring-boot');
     await expect(courseLink).toHaveAttribute('target', '_blank');
     await expect(courseLink).toHaveAttribute('rel', 'noopener noreferrer');
     await expect(courseLink.locator('svg[data-icon="tabler:external-link"][aria-hidden="true"]')).toHaveCount(1);
+    const demoLink = caseStudies.getByRole('link', { name: caseStudyDemoLinkText });
+    await expect(demoLink).toHaveAttribute('href', 'https://youtu.be/NwEPv_cVKC0');
+    await expect(demoLink).toHaveAttribute('target', '_blank');
+    await expect(demoLink).toHaveAttribute('rel', 'noopener noreferrer');
     const followsPricing = await page.evaluate(() => {
       const pricing = document.querySelector('#pricing');
       const caseStudies = document.querySelector('#case-studies');
@@ -389,7 +414,7 @@ for (const {
     await expect(next).not.toHaveAttribute('aria-disabled', 'true');
     await expect.poll(() => isInsideScroller(lastCard)).toBe(false);
 
-    await next.click();
+    await advanceSliderToEnd(next, () => next.click());
 
     await expect.poll(() => isInsideScroller(lastCard)).toBe(true);
     await expect(next).toHaveAttribute('aria-disabled', 'true');
@@ -405,7 +430,7 @@ for (const {
     const lastCard = caseStudies.locator('.case-study-art').last();
 
     await next.focus();
-    await page.keyboard.press('Enter');
+    await advanceSliderToEnd(next, () => page.keyboard.press('Enter'));
     await expect.poll(() => isInsideScroller(lastCard)).toBe(true);
     await page.keyboard.press('Enter');
 

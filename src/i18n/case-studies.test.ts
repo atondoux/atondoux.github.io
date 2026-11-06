@@ -42,6 +42,16 @@ const expectedCaseStudies = {
         'Amélioration de la planification des entretiens',
       ],
     },
+    {
+      title: 'Softway Medical',
+      description:
+        'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier. Voir la démo',
+      tags: ['Santé'],
+      achievements: [
+        'Conception de nouveaux modules spécialisés dans le suivi des patients',
+        'Livraison et déploiement continus sur une architecture micro-services',
+      ],
+    },
   ],
   en: [
     {
@@ -77,6 +87,16 @@ const expectedCaseStudies = {
       tags: ['Fleet Management'],
       achievements: ['Accurate tracking of vehicle usage rates', 'Improved maintenance planning'],
     },
+    {
+      title: 'Softway Medical',
+      description:
+        'Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work. Watch a demo',
+      tags: ['Healthcare'],
+      achievements: [
+        'New modules designed for patient follow-up',
+        'Continuous delivery and deployment on a microservices architecture',
+      ],
+    },
   ],
 } as const;
 
@@ -106,6 +126,7 @@ describe('listing the case studies', () => {
       'namirial',
       'dyma',
       'orange',
+      'softway',
     ]);
   });
 
@@ -114,6 +135,14 @@ describe('listing the case studies', () => {
 
     expect(dyma?.description).toMatch(
       /<a href="https:\/\/dyma\.fr\/formations\/spring-boot" target="_blank" rel="noopener noreferrer"[^>]*>Voir la formation<svg/
+    );
+  });
+
+  it('links the Softway Medical demo video from its description, opening in a new tab', () => {
+    const softway = getCaseStudies('fr').find(({ title }) => title === 'Softway Medical');
+
+    expect(softway?.description).toMatch(
+      /<a href="https:\/\/youtu\.be\/NwEPv_cVKC0" target="_blank" rel="noopener noreferrer"[^>]*>Voir la démo<svg/
     );
   });
 
