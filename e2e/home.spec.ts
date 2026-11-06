@@ -418,6 +418,7 @@ for (const {
     const lastCard = caseStudies.locator('.case-study-art').last();
 
     await expect(previous).toHaveAttribute('aria-disabled', 'true');
+    await expect(previous).toHaveCSS('opacity', '0');
     await expect(next).not.toHaveAttribute('aria-disabled', 'true');
     await expect.poll(() => isInsideScroller(lastCard)).toBe(false);
 
@@ -425,7 +426,28 @@ for (const {
 
     await expect.poll(() => isInsideScroller(lastCard)).toBe(true);
     await expect(next).toHaveAttribute('aria-disabled', 'true');
+    await expect(next).toHaveCSS('opacity', '0');
     await expect(previous).not.toHaveAttribute('aria-disabled', 'true');
+  });
+
+  test(`dims instead of hides the disabled ${lang} case study arrows on a phone on ${path}`, async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 800 });
+    await page.goto(path);
+
+    const caseStudies = page.locator('#case-studies');
+    const previous = caseStudies.getByRole('button', { name: caseStudyPreviousLabel, exact: true });
+    const next = caseStudies.getByRole('button', { name: caseStudyNextLabel, exact: true });
+
+    await expect(previous).toHaveAttribute('aria-disabled', 'true');
+    await expect(previous).toBeVisible();
+    await expect(previous).toHaveCSS('opacity', '0.4');
+    await expect(previous).toHaveCSS('cursor', 'not-allowed');
+    await expect(next).toHaveCSS('opacity', '1');
+
+    await advanceSliderToEnd(next, () => next.click());
+
+    await expect(next).toHaveCSS('opacity', '0.4');
+    await expect(previous).toHaveCSS('opacity', '1');
   });
 
   test(`keeps keyboard focus on the ${lang} next button at the end of the slider on ${path}`, async ({ page }) => {
