@@ -37,7 +37,7 @@ const itemClasses = isSlider
   ? 'shrink-0 basis-[100cqw] snap-start sm:basis-[calc((100cqw-1.5rem)/2)] md:basis-[calc((100cqw-2rem)/2)] lg:basis-[calc((100cqw-6rem)/4)]'
   : 'intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade';
 const arrowClasses =
-  'absolute z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-heading shadow-md ring-1 ring-gray-200 transition hover:bg-gray-50 aria-disabled:pointer-events-none aria-disabled:opacity-0 dark:bg-slate-800 dark:ring-slate-700 dark:hover:bg-slate-700 bottom-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2';
+  'absolute z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-heading shadow-md ring-1 ring-gray-200 transition hover:bg-gray-50 aria-disabled:cursor-not-allowed aria-disabled:opacity-40 aria-disabled:hover:bg-white md:aria-disabled:pointer-events-none md:aria-disabled:opacity-0 dark:bg-slate-800 dark:ring-slate-700 dark:hover:bg-slate-700 dark:aria-disabled:hover:bg-slate-800 bottom-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2';
 const Wrapper = isSlider ? 'aw-projects-slider' : Fragment;
 const List = isSlider ? 'div' : Fragment;
 const scrollerProps = isSlider
