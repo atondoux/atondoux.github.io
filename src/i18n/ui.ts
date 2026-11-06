@@ -143,6 +143,12 @@ const fr = {
   'home.caseStudies.natixis.achievements.newComponents':
     'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
   'home.caseStudies.natixis.achievements.continuousRefactoring': 'Code legacy assaini par un refactoring continu',
+  'home.caseStudies.sncfConnect.title': 'SNCF Connect & Tech',
+  'home.caseStudies.sncfConnect.description':
+    'Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect.',
+  'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Mobilités durables',
+  'home.caseStudies.sncfConnect.achievements.b2cWebServices': 'Nouveaux services web B2C en architecture SOA',
+  'home.caseStudies.sncfConnect.achievements.automatedTests': 'Suites de tests automatisés avec l’équipe QA',
   'home.caseStudies.previous': 'Cas client précédent',
   'home.caseStudies.next': 'Cas client suivant',
   'nav.contact': 'Contact',
@@ -285,6 +291,12 @@ const en = {
     'Planning, design and implementation of new backend and frontend components',
   'home.caseStudies.natixis.achievements.continuousRefactoring':
     'Legacy code cleaned up through continuous refactoring',
+  'home.caseStudies.sncfConnect.title': 'SNCF Connect & Tech',
+  'home.caseStudies.sncfConnect.description':
+    'Making travel easier by adding new features to the SNCF Connect train ticket booking platform.',
+  'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Sustainable Mobility',
+  'home.caseStudies.sncfConnect.achievements.b2cWebServices': 'New B2C web services on a service-oriented architecture',
+  'home.caseStudies.sncfConnect.achievements.automatedTests': 'Automated test suites built with the QA team',
   'home.caseStudies.previous': 'Previous case study',
   'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',
