@@ -238,7 +238,7 @@ const en = {
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Improved maintenance planning',
   'home.caseStudies.softway.title': 'Softway Medical',
   'home.caseStudies.softway.description':
-    'Improving patient follow-up and care management in hospitals by giving healthcare professionals applications designed around their work.',
+    'Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work.',
   'home.caseStudies.softway.tags.healthcare': 'Healthcare',
   'home.caseStudies.softway.linkText': 'Watch a demo',
   'home.caseStudies.softway.achievements.patientModules': 'New modules designed for patient follow-up',

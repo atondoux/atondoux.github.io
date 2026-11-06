@@ -90,7 +90,7 @@ const expectedCaseStudies = {
     {
       title: 'Softway Medical',
       description:
-        'Improving patient follow-up and care management in hospitals by giving healthcare professionals applications designed around their work. Watch a demo',
+        'Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work. Watch a demo',
       tags: ['Healthcare'],
       achievements: [
         'New modules designed for patient follow-up',
