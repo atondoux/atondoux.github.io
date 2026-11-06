@@ -68,6 +68,15 @@ const expectedCaseStudies = {
       tags: ['Banque'],
       achievements: ['Moins d’incidents en production', 'Nouveaux arrivants formés à l’application'],
     },
+    {
+      title: 'Natixis',
+      description: 'Améliorer l’ergonomie et l’efficacité du CRM utilisé par le département des marchés boursiers.',
+      tags: ['Banque'],
+      achievements: [
+        'CRM Equity Markets refondu pour vendeurs et analystes',
+        'Code legacy assaini par un refactoring continu',
+      ],
+    },
   ],
   en: [
     {
@@ -129,6 +138,15 @@ const expectedCaseStudies = {
       tags: ['Banking'],
       achievements: ['Fewer production incidents', 'Newcomers trained on the application'],
     },
+    {
+      title: 'Natixis',
+      description: 'Improving the user experience of the CRM used by the stock market division.',
+      tags: ['Banking'],
+      achievements: [
+        'Equity Markets CRM rebuilt for sales and analysts',
+        'Legacy code cleaned up through continuous refactoring',
+      ],
+    },
   ],
 } as const;
 
@@ -161,6 +179,7 @@ describe('listing the case studies', () => {
       'orthoAssistant',
       'softway',
       'societeGenerale',
+      'natixis',
     ]);
   });
 

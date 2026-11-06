@@ -75,6 +75,14 @@ const caseStudyCatalog = [
       'home.caseStudies.societeGenerale.achievements.teamOnboarding',
     ],
   },
+  {
+    key: 'natixis',
+    tagKeys: ['home.caseStudies.natixis.tags.banking'],
+    achievementKeys: [
+      'home.caseStudies.natixis.achievements.crmRevamp',
+      'home.caseStudies.natixis.achievements.continuousRefactoring',
+    ],
+  },
 ] as const satisfies readonly CaseStudyCatalogEntry[];
 
 type CaseStudyEntry = (typeof caseStudyCatalog)[number];
