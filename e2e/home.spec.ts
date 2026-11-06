@@ -1,6 +1,6 @@
 import { expect, test, type Locator } from '@playwright/test';
 
-const CASE_STUDY_COUNT = 10;
+const CASE_STUDY_COUNT = 11;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
@@ -107,6 +107,8 @@ const localizedHeroes = [
       'Nouveaux arrivants formés à l’application',
       'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
       'Code legacy assaini par un refactoring continu',
+      'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
+      'Suites de tests automatisés avec l’équipe QA',
       'Procédures d’indemnisation 100% dématérialisées',
       'Solution 100% open source',
     ],
@@ -120,6 +122,7 @@ const localizedHeroes = [
       'Softway Medical',
       'Société Générale',
       'Natixis',
+      'SNCF Connect & Tech',
       'Ministère de la Santé',
     ],
     contactTitle: 'Contact',
@@ -198,6 +201,8 @@ const localizedHeroes = [
       'Newcomers trained on the application',
       'Planning, design and implementation of new backend and frontend components',
       'Legacy code cleaned up through continuous refactoring',
+      'Design and implementation of new B2C web services in a service-oriented architecture environment',
+      'Automated test suites built with the QA team',
       'Fully digital compensation procedures',
       '100% open source solution',
     ],
@@ -211,6 +216,7 @@ const localizedHeroes = [
       'Softway Medical',
       'Société Générale',
       'Natixis',
+      'SNCF Connect & Tech',
       'Ministry of Health',
     ],
     contactTitle: 'Contact',
@@ -400,6 +406,7 @@ for (const {
       'softway',
       'societeGenerale',
       'natixis',
+      'sncfConnect',
       'oniam',
     ]);
     await expect(caseStudies.getByRole('link')).toHaveCount(2);

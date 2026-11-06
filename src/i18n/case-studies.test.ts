@@ -78,6 +78,16 @@ const expectedCaseStudies = {
       ],
     },
     {
+      title: 'SNCF Connect & Tech',
+      description:
+        'Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect.',
+      tags: ['Mobilités durables'],
+      achievements: [
+        'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
+        'Suites de tests automatisés avec l’équipe QA',
+      ],
+    },
+    {
       title: 'Ministère de la Santé',
       description:
         'Simplifier et accélérer l’indemnisation des victimes d’accidents médicaux en dématérialisant l’ensemble des procédures de l’ONIAM.',
@@ -155,6 +165,15 @@ const expectedCaseStudies = {
       ],
     },
     {
+      title: 'SNCF Connect & Tech',
+      description: 'Making travel easier by adding new features to the SNCF Connect train ticket booking platform.',
+      tags: ['Sustainable Mobility'],
+      achievements: [
+        'Design and implementation of new B2C web services in a service-oriented architecture environment',
+        'Automated test suites built with the QA team',
+      ],
+    },
+    {
       title: 'Ministry of Health',
       description:
         'Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.',
@@ -194,6 +213,7 @@ describe('listing the case studies', () => {
       'softway',
       'societeGenerale',
       'natixis',
+      'sncfConnect',
       'oniam',
     ]);
   });

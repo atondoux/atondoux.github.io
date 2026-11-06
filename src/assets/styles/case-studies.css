@@ -78,6 +78,11 @@
   --cs-deep: #382c3f;
 }
 
+.case-study-art[data-palette='sncfConnect'] {
+  --cs-brand: #0088ce;
+  --cs-deep: #0c131f;
+}
+
 .case-study-art[data-palette='oniam'] {
   --cs-brand: #6a6af4;
   --cs-deep: #000091;

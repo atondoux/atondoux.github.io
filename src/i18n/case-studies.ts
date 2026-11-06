@@ -84,6 +84,14 @@ const caseStudyCatalog = [
     ],
   },
   {
+    key: 'sncfConnect',
+    tagKeys: ['home.caseStudies.sncfConnect.tags.sustainableMobility'],
+    achievementKeys: [
+      'home.caseStudies.sncfConnect.achievements.b2cWebServices',
+      'home.caseStudies.sncfConnect.achievements.automatedTests',
+    ],
+  },
+  {
     key: 'oniam',
     tagKeys: ['home.caseStudies.oniam.tags.publicServices'],
     achievementKeys: [
