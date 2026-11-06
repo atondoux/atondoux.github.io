@@ -1,12 +1,12 @@
 import { expect, test, type Locator } from '@playwright/test';
 
-const CASE_STUDY_COUNT = 8;
+const CASE_STUDY_COUNT = 9;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
 const CASE_STUDY_ACHIEVEMENTS = `#case-studies ${ACHIEVEMENT_IN_CARD}`;
 const SLIDER_STEP_TIMEOUT_MS = 500;
-const SLIDER_END_TIMEOUT_PER_CARD_MS = 1000;
+const SLIDER_END_TIMEOUT_PER_CARD_MS = 2000;
 const SLIDER_END_TIMEOUT_MS = CASE_STUDY_COUNT * SLIDER_END_TIMEOUT_PER_CARD_MS;
 
 const advanceSliderToEnd = (next: Locator, step: () => Promise<void>) =>
@@ -105,6 +105,8 @@ const localizedHeroes = [
       'Livraison et déploiement continus sur une architecture micro-services',
       'Moins d’incidents en production',
       'Nouveaux arrivants formés à l’application',
+      'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
+      'Code legacy assaini par un refactoring continu',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -115,6 +117,7 @@ const localizedHeroes = [
       'Ortho Assistant',
       'Softway Medical',
       'Société Générale',
+      'Natixis',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -190,6 +193,8 @@ const localizedHeroes = [
       'Continuous delivery and deployment on a microservices architecture',
       'Fewer production incidents',
       'Newcomers trained on the application',
+      'Planning, design and implementation of new backend and frontend components',
+      'Legacy code cleaned up through continuous refactoring',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -200,6 +205,7 @@ const localizedHeroes = [
       'Ortho Assistant',
       'Softway Medical',
       'Société Générale',
+      'Natixis',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -387,6 +393,7 @@ for (const {
       'orthoAssistant',
       'softway',
       'societeGenerale',
+      'natixis',
     ]);
     await expect(caseStudies.getByRole('link')).toHaveCount(2);
     const courseLink = caseStudies.getByRole('link', { name: caseStudyLinkText });

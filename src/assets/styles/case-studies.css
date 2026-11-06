@@ -72,3 +72,8 @@
   --cs-brand: --theme(--color-neutral-600);
   --cs-deep: --theme(--color-neutral-950);
 }
+
+.case-study-art[data-palette='natixis'] {
+  --cs-brand: #78578f;
+  --cs-deep: #382c3f;
+}
