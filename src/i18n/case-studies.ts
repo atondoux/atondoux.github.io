@@ -67,6 +67,14 @@ const caseStudyCatalog = [
     ],
     link: { href: 'https://youtu.be/NwEPv_cVKC0', textKey: 'home.caseStudies.softway.linkText' },
   },
+  {
+    key: 'societeGenerale',
+    tagKeys: ['home.caseStudies.societeGenerale.tags.banking'],
+    achievementKeys: [
+      'home.caseStudies.societeGenerale.achievements.fewerIncidents',
+      'home.caseStudies.societeGenerale.achievements.teamOnboarding',
+    ],
+  },
 ] as const satisfies readonly CaseStudyCatalogEntry[];
 
 type CaseStudyEntry = (typeof caseStudyCatalog)[number];
