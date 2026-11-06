@@ -77,6 +77,16 @@ const expectedCaseStudies = {
         'Code legacy assaini par un refactoring continu',
       ],
     },
+    {
+      title: 'SNCF Connect & Tech',
+      description:
+        'Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect.',
+      tags: ['Mobilités durables'],
+      achievements: [
+        'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
+        'Suites de tests automatisés avec l’équipe QA',
+      ],
+    },
   ],
   en: [
     {
@@ -147,6 +157,15 @@ const expectedCaseStudies = {
         'Legacy code cleaned up through continuous refactoring',
       ],
     },
+    {
+      title: 'SNCF Connect & Tech',
+      description: 'Making travel easier by adding new features to the SNCF Connect train ticket booking platform.',
+      tags: ['Sustainable Mobility'],
+      achievements: [
+        'Design and implementation of new B2C web services in a service-oriented architecture environment',
+        'Automated test suites built with the QA team',
+      ],
+    },
   ],
 } as const;
 
@@ -180,6 +199,7 @@ describe('listing the case studies', () => {
       'softway',
       'societeGenerale',
       'natixis',
+      'sncfConnect',
     ]);
   });
 

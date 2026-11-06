@@ -83,6 +83,14 @@ const caseStudyCatalog = [
       'home.caseStudies.natixis.achievements.continuousRefactoring',
     ],
   },
+  {
+    key: 'sncfConnect',
+    tagKeys: ['home.caseStudies.sncfConnect.tags.sustainableMobility'],
+    achievementKeys: [
+      'home.caseStudies.sncfConnect.achievements.b2cWebServices',
+      'home.caseStudies.sncfConnect.achievements.automatedTests',
+    ],
+  },
 ] as const satisfies readonly CaseStudyCatalogEntry[];
 
 type CaseStudyEntry = (typeof caseStudyCatalog)[number];

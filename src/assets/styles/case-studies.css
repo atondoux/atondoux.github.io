@@ -77,3 +77,8 @@
   --cs-brand: #78578f;
   --cs-deep: #382c3f;
 }
+
+.case-study-art[data-palette='sncfConnect'] {
+  --cs-brand: #0088ce;
+  --cs-deep: #0c131f;
+}
