@@ -143,6 +143,12 @@ const fr = {
   'home.caseStudies.natixis.achievements.newComponents':
     'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
   'home.caseStudies.natixis.achievements.continuousRefactoring': 'Code legacy assaini par un refactoring continu',
+  'home.caseStudies.oniam.title': 'Ministère de la Santé',
+  'home.caseStudies.oniam.description':
+    'Simplifier et accélérer l’indemnisation des victimes d’accidents médicaux en dématérialisant l’ensemble des procédures de l’ONIAM.',
+  'home.caseStudies.oniam.tags.publicServices': 'Services publics',
+  'home.caseStudies.oniam.achievements.digitalProcedures': 'Procédures d’indemnisation 100% dématérialisées',
+  'home.caseStudies.oniam.achievements.openSource': 'Solution 100% open source',
   'home.caseStudies.previous': 'Cas client précédent',
   'home.caseStudies.next': 'Cas client suivant',
   'nav.contact': 'Contact',
@@ -285,6 +291,12 @@ const en = {
     'Planning, design and implementation of new backend and frontend components',
   'home.caseStudies.natixis.achievements.continuousRefactoring':
     'Legacy code cleaned up through continuous refactoring',
+  'home.caseStudies.oniam.title': 'Ministry of Health',
+  'home.caseStudies.oniam.description':
+    'Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.',
+  'home.caseStudies.oniam.tags.publicServices': 'Public Services',
+  'home.caseStudies.oniam.achievements.digitalProcedures': 'Fully digital compensation procedures',
+  'home.caseStudies.oniam.achievements.openSource': '100% open source solution',
   'home.caseStudies.previous': 'Previous case study',
   'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',

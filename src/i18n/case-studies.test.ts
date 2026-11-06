@@ -77,6 +77,13 @@ const expectedCaseStudies = {
         'Code legacy assaini par un refactoring continu',
       ],
     },
+    {
+      title: 'Ministère de la Santé',
+      description:
+        'Simplifier et accélérer l’indemnisation des victimes d’accidents médicaux en dématérialisant l’ensemble des procédures de l’ONIAM.',
+      tags: ['Services publics'],
+      achievements: ['Procédures d’indemnisation 100% dématérialisées', 'Solution 100% open source'],
+    },
   ],
   en: [
     {
@@ -147,6 +154,13 @@ const expectedCaseStudies = {
         'Legacy code cleaned up through continuous refactoring',
       ],
     },
+    {
+      title: 'Ministry of Health',
+      description:
+        'Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.',
+      tags: ['Public Services'],
+      achievements: ['Fully digital compensation procedures', '100% open source solution'],
+    },
   ],
 } as const;
 
@@ -180,6 +194,7 @@ describe('listing the case studies', () => {
       'softway',
       'societeGenerale',
       'natixis',
+      'oniam',
     ]);
   });
 
