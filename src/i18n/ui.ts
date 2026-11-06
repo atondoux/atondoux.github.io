@@ -143,6 +143,19 @@ const fr = {
   'home.caseStudies.natixis.achievements.newComponents':
     'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
   'home.caseStudies.natixis.achievements.continuousRefactoring': 'Code legacy assaini par un refactoring continu',
+  'home.caseStudies.sncfConnect.title': 'SNCF Connect & Tech',
+  'home.caseStudies.sncfConnect.description':
+    'Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect.',
+  'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Mobilités durables',
+  'home.caseStudies.sncfConnect.achievements.b2cWebServices':
+    'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
+  'home.caseStudies.sncfConnect.achievements.automatedTests': 'Suites de tests automatisés avec l’équipe QA',
+  'home.caseStudies.oniam.title': 'Ministère de la Santé',
+  'home.caseStudies.oniam.description':
+    'Simplifier et accélérer l’indemnisation des victimes d’accidents médicaux en dématérialisant l’ensemble des procédures de l’ONIAM.',
+  'home.caseStudies.oniam.tags.publicServices': 'Services publics',
+  'home.caseStudies.oniam.achievements.digitalProcedures': 'Procédures d’indemnisation 100% dématérialisées',
+  'home.caseStudies.oniam.achievements.openSource': 'Application développée avec des librairies 100% open source',
   'home.caseStudies.veolia.title': 'Veolia Eau',
   'home.caseStudies.veolia.description':
     'Développer des applications métier pour la gestion de la distribution de l’eau en Île-de-France.',
@@ -291,6 +304,19 @@ const en = {
     'Planning, design and implementation of new backend and frontend components',
   'home.caseStudies.natixis.achievements.continuousRefactoring':
     'Legacy code cleaned up through continuous refactoring',
+  'home.caseStudies.sncfConnect.title': 'SNCF Connect & Tech',
+  'home.caseStudies.sncfConnect.description':
+    'Making travel easier by adding new features to the SNCF Connect train ticket booking platform.',
+  'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Sustainable Mobility',
+  'home.caseStudies.sncfConnect.achievements.b2cWebServices':
+    'Design and implementation of new B2C web services in a service-oriented architecture environment',
+  'home.caseStudies.sncfConnect.achievements.automatedTests': 'Automated test suites built with the QA team',
+  'home.caseStudies.oniam.title': 'Ministry of Health',
+  'home.caseStudies.oniam.description':
+    'Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.',
+  'home.caseStudies.oniam.tags.publicServices': 'Public Services',
+  'home.caseStudies.oniam.achievements.digitalProcedures': 'Fully digital compensation procedures',
+  'home.caseStudies.oniam.achievements.openSource': 'Application built with 100% open source libraries',
   'home.caseStudies.veolia.title': 'Veolia Eau',
   'home.caseStudies.veolia.description':
     'Building business applications to manage water distribution across the Paris region.',

@@ -84,6 +84,22 @@ const caseStudyCatalog = [
     ],
   },
   {
+    key: 'sncfConnect',
+    tagKeys: ['home.caseStudies.sncfConnect.tags.sustainableMobility'],
+    achievementKeys: [
+      'home.caseStudies.sncfConnect.achievements.b2cWebServices',
+      'home.caseStudies.sncfConnect.achievements.automatedTests',
+    ],
+  },
+  {
+    key: 'oniam',
+    tagKeys: ['home.caseStudies.oniam.tags.publicServices'],
+    achievementKeys: [
+      'home.caseStudies.oniam.achievements.digitalProcedures',
+      'home.caseStudies.oniam.achievements.openSource',
+    ],
+  },
+  {
     key: 'veolia',
     tagKeys: ['home.caseStudies.veolia.tags.publicServices'],
     achievementKeys: [
