@@ -1,6 +1,6 @@
 import { expect, test, type Locator } from '@playwright/test';
 
-const CASE_STUDY_COUNT = 6;
+const CASE_STUDY_COUNT = 7;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
@@ -98,6 +98,8 @@ const localizedHeroes = [
       '6500+ heures passées par les apprenants',
       'Suivi précis du taux d’utilisation des véhicules',
       'Amélioration de la planification des entretiens',
+      'SaaS déployé auprès de dizaines d’orthophonistes bêta-testeurs',
+      'Recherche intelligente du matériel par pathologie et compétence',
       'Conception de nouveaux modules spécialisés dans le suivi des patients',
       'Livraison et déploiement continus sur une architecture micro-services',
     ],
@@ -107,6 +109,7 @@ const localizedHeroes = [
       'Namirial',
       'Dyma Spring Boot',
       'Orange Business',
+      'Ortho Assistant',
       'Softway Medical',
     ],
     contactTitle: 'Contact',
@@ -177,6 +180,8 @@ const localizedHeroes = [
       '6,500+ hours spent by students',
       'Accurate tracking of vehicle usage rates',
       'Improved maintenance planning',
+      'SaaS deployed to dozens of beta-tester speech therapists',
+      'Smart material search by pathology and skill',
       'New modules designed for patient follow-up',
       'Continuous delivery and deployment on a microservices architecture',
     ],
@@ -186,6 +191,7 @@ const localizedHeroes = [
       'Namirial',
       'Dyma Spring Boot',
       'Orange Business',
+      'Ortho Assistant',
       'Softway Medical',
     ],
     contactTitle: 'Contact',
@@ -371,6 +377,7 @@ for (const {
       'namirial',
       'dyma',
       'orange',
+      'orthoAssistant',
       'softway',
     ]);
     await expect(caseStudies.getByRole('link')).toHaveCount(2);
