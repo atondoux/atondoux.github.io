@@ -69,6 +69,6 @@
 }
 
 .case-study-art[data-palette='societeGenerale'] {
-  --cs-brand: #e60028;
+  --cs-brand: --theme(--color-neutral-600);
   --cs-deep: --theme(--color-neutral-950);
 }
