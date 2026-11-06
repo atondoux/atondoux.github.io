@@ -115,7 +115,7 @@ const fr = {
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Amélioration de la planification des entretiens',
   'home.caseStudies.orthoAssistant.title': 'Ortho Assistant',
   'home.caseStudies.orthoAssistant.description':
-    'Concevoir et développer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.',
+    'Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.',
   'home.caseStudies.orthoAssistant.tags.healthcare': 'Santé',
   'home.caseStudies.orthoAssistant.achievements.betaTesters':
     'SaaS déployé auprès de dizaines d’orthophonistes bêta-testeurs',
@@ -246,7 +246,7 @@ const en = {
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Improved maintenance planning',
   'home.caseStudies.orthoAssistant.title': 'Ortho Assistant',
   'home.caseStudies.orthoAssistant.description':
-    'Designing and building a SaaS that helps speech therapists find the most suitable material for each patient, leaving more time for the sessions.',
+    'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, leaving more time for the sessions.',
   'home.caseStudies.orthoAssistant.tags.healthcare': 'Healthcare',
   'home.caseStudies.orthoAssistant.achievements.betaTesters':
     'SaaS deployed to dozens of beta-tester speech therapists',
