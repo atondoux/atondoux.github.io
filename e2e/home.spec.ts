@@ -1,6 +1,6 @@
 import { expect, test, type Locator } from '@playwright/test';
 
-const CASE_STUDY_COUNT = 9;
+const CASE_STUDY_COUNT = 10;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
@@ -107,6 +107,8 @@ const localizedHeroes = [
       'Nouveaux arrivants formés à l’application',
       'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
       'Code legacy assaini par un refactoring continu',
+      'Plus de 500\u202f000 contrats clients gérés',
+      'Livraisons sur une plateforme haute disponibilité',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -118,6 +120,7 @@ const localizedHeroes = [
       'Softway Medical',
       'Société Générale',
       'Natixis',
+      'Veolia Eau',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -195,6 +198,8 @@ const localizedHeroes = [
       'Newcomers trained on the application',
       'Planning, design and implementation of new backend and frontend components',
       'Legacy code cleaned up through continuous refactoring',
+      '500,000+ customer contracts managed',
+      'Releases on a high-availability platform',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -206,6 +211,7 @@ const localizedHeroes = [
       'Softway Medical',
       'Société Générale',
       'Natixis',
+      'Veolia Eau',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -394,6 +400,7 @@ for (const {
       'softway',
       'societeGenerale',
       'natixis',
+      'veolia',
     ]);
     await expect(caseStudies.getByRole('link')).toHaveCount(2);
     const courseLink = caseStudies.getByRole('link', { name: caseStudyLinkText });

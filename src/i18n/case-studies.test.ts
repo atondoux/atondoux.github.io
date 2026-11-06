@@ -77,6 +77,15 @@ const expectedCaseStudies = {
         'Code legacy assaini par un refactoring continu',
       ],
     },
+    {
+      title: 'Veolia Eau',
+      description: 'Développer des applications métier pour la gestion de la distribution de l’eau en Île-de-France.',
+      tags: ['Services publics'],
+      achievements: [
+        'Plus de 500\u202f000 contrats clients gérés',
+        'Livraisons sur une plateforme haute disponibilité',
+      ],
+    },
   ],
   en: [
     {
@@ -147,6 +156,12 @@ const expectedCaseStudies = {
         'Legacy code cleaned up through continuous refactoring',
       ],
     },
+    {
+      title: 'Veolia Eau',
+      description: 'Building business applications to manage water distribution across the Paris region.',
+      tags: ['Public Services'],
+      achievements: ['500,000+ customer contracts managed', 'Releases on a high-availability platform'],
+    },
   ],
 } as const;
 
@@ -180,6 +195,7 @@ describe('listing the case studies', () => {
       'softway',
       'societeGenerale',
       'natixis',
+      'veolia',
     ]);
   });
 

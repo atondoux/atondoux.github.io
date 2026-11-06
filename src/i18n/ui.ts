@@ -143,6 +143,12 @@ const fr = {
   'home.caseStudies.natixis.achievements.newComponents':
     'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
   'home.caseStudies.natixis.achievements.continuousRefactoring': 'Code legacy assaini par un refactoring continu',
+  'home.caseStudies.veolia.title': 'Veolia Eau',
+  'home.caseStudies.veolia.description':
+    'Développer des applications métier pour la gestion de la distribution de l’eau en Île-de-France.',
+  'home.caseStudies.veolia.tags.publicServices': 'Services publics',
+  'home.caseStudies.veolia.achievements.contracts': 'Plus de 500 000 contrats clients gérés',
+  'home.caseStudies.veolia.achievements.highAvailability': 'Livraisons sur une plateforme haute disponibilité',
   'home.caseStudies.previous': 'Cas client précédent',
   'home.caseStudies.next': 'Cas client suivant',
   'nav.contact': 'Contact',
@@ -285,6 +291,12 @@ const en = {
     'Planning, design and implementation of new backend and frontend components',
   'home.caseStudies.natixis.achievements.continuousRefactoring':
     'Legacy code cleaned up through continuous refactoring',
+  'home.caseStudies.veolia.title': 'Veolia Eau',
+  'home.caseStudies.veolia.description':
+    'Building business applications to manage water distribution across the Paris region.',
+  'home.caseStudies.veolia.tags.publicServices': 'Public Services',
+  'home.caseStudies.veolia.achievements.contracts': '500,000+ customer contracts managed',
+  'home.caseStudies.veolia.achievements.highAvailability': 'Releases on a high-availability platform',
   'home.caseStudies.previous': 'Previous case study',
   'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',
