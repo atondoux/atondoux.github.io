@@ -87,6 +87,16 @@ const expectedCaseStudies = {
         'Suites de tests automatisés avec l’équipe QA',
       ],
     },
+    {
+      title: 'Ministère de la Santé',
+      description:
+        'Simplifier et accélérer l’indemnisation des victimes d’accidents médicaux en dématérialisant l’ensemble des procédures de l’ONIAM.',
+      tags: ['Services publics'],
+      achievements: [
+        'Procédures d’indemnisation 100% dématérialisées',
+        'Application développée avec des librairies 100% open source',
+      ],
+    },
   ],
   en: [
     {
@@ -166,6 +176,13 @@ const expectedCaseStudies = {
         'Automated test suites built with the QA team',
       ],
     },
+    {
+      title: 'Ministry of Health',
+      description:
+        'Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.',
+      tags: ['Public Services'],
+      achievements: ['Fully digital compensation procedures', 'Application built with 100% open source libraries'],
+    },
   ],
 } as const;
 
@@ -200,6 +217,7 @@ describe('listing the case studies', () => {
       'societeGenerale',
       'natixis',
       'sncfConnect',
+      'oniam',
     ]);
   });
 

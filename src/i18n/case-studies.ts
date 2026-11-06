@@ -91,6 +91,14 @@ const caseStudyCatalog = [
       'home.caseStudies.sncfConnect.achievements.automatedTests',
     ],
   },
+  {
+    key: 'oniam',
+    tagKeys: ['home.caseStudies.oniam.tags.publicServices'],
+    achievementKeys: [
+      'home.caseStudies.oniam.achievements.digitalProcedures',
+      'home.caseStudies.oniam.achievements.openSource',
+    ],
+  },
 ] as const satisfies readonly CaseStudyCatalogEntry[];
 
 type CaseStudyEntry = (typeof caseStudyCatalog)[number];

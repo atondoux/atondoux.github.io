@@ -1,6 +1,6 @@
 import { expect, test, type Locator } from '@playwright/test';
 
-const CASE_STUDY_COUNT = 10;
+const CASE_STUDY_COUNT = 11;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
@@ -109,6 +109,8 @@ const localizedHeroes = [
       'Code legacy assaini par un refactoring continu',
       'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
       'Suites de tests automatisés avec l’équipe QA',
+      'Procédures d’indemnisation 100% dématérialisées',
+      'Application développée avec des librairies 100% open source',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -121,6 +123,7 @@ const localizedHeroes = [
       'Société Générale',
       'Natixis',
       'SNCF Connect & Tech',
+      'Ministère de la Santé',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -200,6 +203,8 @@ const localizedHeroes = [
       'Legacy code cleaned up through continuous refactoring',
       'Design and implementation of new B2C web services in a service-oriented architecture environment',
       'Automated test suites built with the QA team',
+      'Fully digital compensation procedures',
+      'Application built with 100% open source libraries',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -212,6 +217,7 @@ const localizedHeroes = [
       'Société Générale',
       'Natixis',
       'SNCF Connect & Tech',
+      'Ministry of Health',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -401,6 +407,7 @@ for (const {
       'societeGenerale',
       'natixis',
       'sncfConnect',
+      'oniam',
     ]);
     await expect(caseStudies.getByRole('link')).toHaveCount(2);
     const courseLink = caseStudies.getByRole('link', { name: caseStudyLinkText });

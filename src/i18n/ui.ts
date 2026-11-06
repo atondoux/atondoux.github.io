@@ -150,6 +150,12 @@ const fr = {
   'home.caseStudies.sncfConnect.achievements.b2cWebServices':
     'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
   'home.caseStudies.sncfConnect.achievements.automatedTests': 'Suites de tests automatisés avec l’équipe QA',
+  'home.caseStudies.oniam.title': 'Ministère de la Santé',
+  'home.caseStudies.oniam.description':
+    'Simplifier et accélérer l’indemnisation des victimes d’accidents médicaux en dématérialisant l’ensemble des procédures de l’ONIAM.',
+  'home.caseStudies.oniam.tags.publicServices': 'Services publics',
+  'home.caseStudies.oniam.achievements.digitalProcedures': 'Procédures d’indemnisation 100% dématérialisées',
+  'home.caseStudies.oniam.achievements.openSource': 'Application développée avec des librairies 100% open source',
   'home.caseStudies.previous': 'Cas client précédent',
   'home.caseStudies.next': 'Cas client suivant',
   'nav.contact': 'Contact',
@@ -299,6 +305,12 @@ const en = {
   'home.caseStudies.sncfConnect.achievements.b2cWebServices':
     'Design and implementation of new B2C web services in a service-oriented architecture environment',
   'home.caseStudies.sncfConnect.achievements.automatedTests': 'Automated test suites built with the QA team',
+  'home.caseStudies.oniam.title': 'Ministry of Health',
+  'home.caseStudies.oniam.description':
+    'Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.',
+  'home.caseStudies.oniam.tags.publicServices': 'Public Services',
+  'home.caseStudies.oniam.achievements.digitalProcedures': 'Fully digital compensation procedures',
+  'home.caseStudies.oniam.achievements.openSource': 'Application built with 100% open source libraries',
   'home.caseStudies.previous': 'Previous case study',
   'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',
