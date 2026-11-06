@@ -113,6 +113,14 @@ const fr = {
   'home.caseStudies.orange.tags.fleetManagement': 'Gestion de flotte',
   'home.caseStudies.orange.achievements.usageRate': 'Suivi précis du taux d’utilisation des véhicules',
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Amélioration de la planification des entretiens',
+  'home.caseStudies.orthoAssistant.title': 'Ortho Assistant',
+  'home.caseStudies.orthoAssistant.description':
+    'Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.',
+  'home.caseStudies.orthoAssistant.tags.healthcare': 'Santé',
+  'home.caseStudies.orthoAssistant.achievements.betaTesters':
+    'SaaS déployé auprès de dizaines d’orthophonistes bêta-testeurs',
+  'home.caseStudies.orthoAssistant.achievements.smartSearch':
+    'Recherche intelligente du matériel par pathologie et compétence',
   'home.caseStudies.softway.title': 'Softway Medical',
   'home.caseStudies.softway.description':
     'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier.',
@@ -236,6 +244,13 @@ const en = {
   'home.caseStudies.orange.tags.fleetManagement': 'Fleet Management',
   'home.caseStudies.orange.achievements.usageRate': 'Accurate tracking of vehicle usage rates',
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Improved maintenance planning',
+  'home.caseStudies.orthoAssistant.title': 'Ortho Assistant',
+  'home.caseStudies.orthoAssistant.description':
+    'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, leaving more time for the sessions.',
+  'home.caseStudies.orthoAssistant.tags.healthcare': 'Healthcare',
+  'home.caseStudies.orthoAssistant.achievements.betaTesters':
+    'SaaS deployed to dozens of beta-tester speech therapists',
+  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Smart material search by pathology and skill',
   'home.caseStudies.softway.title': 'Softway Medical',
   'home.caseStudies.softway.description':
     'Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work.',

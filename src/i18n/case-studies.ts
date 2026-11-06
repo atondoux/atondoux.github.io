@@ -51,6 +51,14 @@ const caseStudyCatalog = [
     ],
   },
   {
+    key: 'orthoAssistant',
+    tagKeys: ['home.caseStudies.orthoAssistant.tags.healthcare'],
+    achievementKeys: [
+      'home.caseStudies.orthoAssistant.achievements.betaTesters',
+      'home.caseStudies.orthoAssistant.achievements.smartSearch',
+    ],
+  },
+  {
     key: 'softway',
     tagKeys: ['home.caseStudies.softway.tags.healthcare'],
     achievementKeys: [

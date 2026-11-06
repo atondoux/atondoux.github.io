@@ -43,6 +43,16 @@ const expectedCaseStudies = {
       ],
     },
     {
+      title: 'Ortho Assistant',
+      description:
+        'Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.',
+      tags: ['Santé'],
+      achievements: [
+        'SaaS déployé auprès de dizaines d’orthophonistes bêta-testeurs',
+        'Recherche intelligente du matériel par pathologie et compétence',
+      ],
+    },
+    {
       title: 'Softway Medical',
       description:
         'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier. Voir la démo',
@@ -88,6 +98,16 @@ const expectedCaseStudies = {
       achievements: ['Accurate tracking of vehicle usage rates', 'Improved maintenance planning'],
     },
     {
+      title: 'Ortho Assistant',
+      description:
+        'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, leaving more time for the sessions.',
+      tags: ['Healthcare'],
+      achievements: [
+        'SaaS deployed to dozens of beta-tester speech therapists',
+        'Smart material search by pathology and skill',
+      ],
+    },
+    {
       title: 'Softway Medical',
       description:
         'Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work. Watch a demo',
@@ -126,6 +146,7 @@ describe('listing the case studies', () => {
       'namirial',
       'dyma',
       'orange',
+      'orthoAssistant',
       'softway',
     ]);
   });
