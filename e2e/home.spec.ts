@@ -110,7 +110,7 @@ const localizedHeroes = [
       'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
       'Suites de tests automatisés avec l’équipe QA',
       'Procédures d’indemnisation 100% dématérialisées',
-      'Solution 100% open source',
+      'Application développée avec des librairies 100% open source',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -204,7 +204,7 @@ const localizedHeroes = [
       'Design and implementation of new B2C web services in a service-oriented architecture environment',
       'Automated test suites built with the QA team',
       'Fully digital compensation procedures',
-      '100% open source solution',
+      'Application built with 100% open source libraries',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
