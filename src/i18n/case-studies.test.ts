@@ -45,7 +45,7 @@ const expectedCaseStudies = {
     {
       title: 'Softway Medical',
       description:
-        'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier. Voir une démo',
+        'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier. Voir la démo',
       tags: ['Santé'],
       achievements: [
         'Conception de nouveaux modules spécialisés dans le suivi des patients',
@@ -90,7 +90,7 @@ const expectedCaseStudies = {
     {
       title: 'Softway Medical',
       description:
-        'Improving patient follow-up and care management in hospitals by giving healthcare professionals applications designed around their work. See a demo',
+        'Improving patient follow-up and care management in hospitals by giving healthcare professionals applications designed around their work. Watch a demo',
       tags: ['Healthcare'],
       achievements: [
         'New modules designed for patient follow-up',
@@ -142,7 +142,7 @@ describe('listing the case studies', () => {
     const softway = getCaseStudies('fr').find(({ title }) => title === 'Softway Medical');
 
     expect(softway?.description).toMatch(
-      /<a href="https:\/\/youtu\.be\/NwEPv_cVKC0" target="_blank" rel="noopener noreferrer"[^>]*>Voir une démo<svg/
+      /<a href="https:\/\/youtu\.be\/NwEPv_cVKC0" target="_blank" rel="noopener noreferrer"[^>]*>Voir la démo<svg/
     );
   });
 

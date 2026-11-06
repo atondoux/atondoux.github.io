@@ -84,7 +84,7 @@ const localizedHeroes = [
     caseStudiesTitle: 'Cas clients',
     caseStudiesSubtitle: 'Quelques missions et réalisations récentes.',
     caseStudyLinkText: 'Voir la formation',
-    caseStudyDemoLinkText: 'Voir une démo',
+    caseStudyDemoLinkText: 'Voir la démo',
     caseStudyPreviousLabel: 'Cas client précédent',
     caseStudyNextLabel: 'Cas client suivant',
     caseStudyAchievements: [
@@ -163,7 +163,7 @@ const localizedHeroes = [
     caseStudiesTitle: 'Case studies',
     caseStudiesSubtitle: 'Some recent work.',
     caseStudyLinkText: 'See the course',
-    caseStudyDemoLinkText: 'See a demo',
+    caseStudyDemoLinkText: 'Watch a demo',
     caseStudyPreviousLabel: 'Previous case study',
     caseStudyNextLabel: 'Next case study',
     caseStudyAchievements: [
