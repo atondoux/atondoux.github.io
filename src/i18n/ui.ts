@@ -130,6 +130,12 @@ const fr = {
     'Conception de nouveaux modules spécialisés dans le suivi des patients',
   'home.caseStudies.softway.achievements.continuousDelivery':
     'Livraison et déploiement continus sur une architecture micro-services',
+  'home.caseStudies.societeGenerale.title': 'Société Générale',
+  'home.caseStudies.societeGenerale.description':
+    'Fiabiliser l’application stratégique de calcul de marges des vendeurs de produits financiers.',
+  'home.caseStudies.societeGenerale.tags.banking': 'Banque',
+  'home.caseStudies.societeGenerale.achievements.fewerIncidents': 'Moins d’incidents en production',
+  'home.caseStudies.societeGenerale.achievements.teamOnboarding': 'Nouveaux arrivants formés à l’application',
   'home.caseStudies.previous': 'Cas client précédent',
   'home.caseStudies.next': 'Cas client suivant',
   'nav.contact': 'Contact',
@@ -259,6 +265,12 @@ const en = {
   'home.caseStudies.softway.achievements.patientModules': 'New modules designed for patient follow-up',
   'home.caseStudies.softway.achievements.continuousDelivery':
     'Continuous delivery and deployment on a microservices architecture',
+  'home.caseStudies.societeGenerale.title': 'Société Générale',
+  'home.caseStudies.societeGenerale.description':
+    'Making the strategic margin calculation application for financial product sales teams reliable.',
+  'home.caseStudies.societeGenerale.tags.banking': 'Banking',
+  'home.caseStudies.societeGenerale.achievements.fewerIncidents': 'Fewer production incidents',
+  'home.caseStudies.societeGenerale.achievements.teamOnboarding': 'Newcomers trained on the application',
   'home.caseStudies.previous': 'Previous case study',
   'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',

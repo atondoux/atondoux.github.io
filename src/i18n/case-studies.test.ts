@@ -62,6 +62,12 @@ const expectedCaseStudies = {
         'Livraison et déploiement continus sur une architecture micro-services',
       ],
     },
+    {
+      title: 'Société Générale',
+      description: 'Fiabiliser l’application stratégique de calcul de marges des vendeurs de produits financiers.',
+      tags: ['Banque'],
+      achievements: ['Moins d’incidents en production', 'Nouveaux arrivants formés à l’application'],
+    },
   ],
   en: [
     {
@@ -117,6 +123,12 @@ const expectedCaseStudies = {
         'Continuous delivery and deployment on a microservices architecture',
       ],
     },
+    {
+      title: 'Société Générale',
+      description: 'Making the strategic margin calculation application for financial product sales teams reliable.',
+      tags: ['Banking'],
+      achievements: ['Fewer production incidents', 'Newcomers trained on the application'],
+    },
   ],
 } as const;
 
@@ -148,6 +160,7 @@ describe('listing the case studies', () => {
       'orange',
       'orthoAssistant',
       'softway',
+      'societeGenerale',
     ]);
   });
 
