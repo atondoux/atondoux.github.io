@@ -6,7 +6,8 @@ const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
 const CASE_STUDY_ACHIEVEMENTS = `#case-studies ${ACHIEVEMENT_IN_CARD}`;
 const SLIDER_STEP_TIMEOUT_MS = 500;
-const SLIDER_END_TIMEOUT_MS = 5000;
+const SLIDER_END_TIMEOUT_PER_CARD_MS = 1000;
+const SLIDER_END_TIMEOUT_MS = CASE_STUDY_COUNT * SLIDER_END_TIMEOUT_PER_CARD_MS;
 
 const advanceSliderToEnd = (next: Locator, step: () => Promise<void>) =>
   expect(async () => {
