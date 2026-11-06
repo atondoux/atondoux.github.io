@@ -79,7 +79,7 @@ const caseStudyCatalog = [
     key: 'natixis',
     tagKeys: ['home.caseStudies.natixis.tags.banking'],
     achievementKeys: [
-      'home.caseStudies.natixis.achievements.crmRevamp',
+      'home.caseStudies.natixis.achievements.newComponents',
       'home.caseStudies.natixis.achievements.continuousRefactoring',
     ],
   },

@@ -105,7 +105,7 @@ const localizedHeroes = [
       'Livraison et déploiement continus sur une architecture micro-services',
       'Moins d’incidents en production',
       'Nouveaux arrivants formés à l’application',
-      'CRM Equity Markets refondu pour vendeurs et analystes',
+      'Nouveaux composants conçus et livrés côté backend et frontend',
       'Code legacy assaini par un refactoring continu',
     ],
     caseStudyTitles: [
@@ -193,7 +193,7 @@ const localizedHeroes = [
       'Continuous delivery and deployment on a microservices architecture',
       'Fewer production incidents',
       'Newcomers trained on the application',
-      'Equity Markets CRM rebuilt for sales and analysts',
+      'New backend and frontend components designed and delivered',
       'Legacy code cleaned up through continuous refactoring',
     ],
     caseStudyTitles: [

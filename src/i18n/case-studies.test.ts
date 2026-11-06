@@ -73,7 +73,7 @@ const expectedCaseStudies = {
       description: 'Améliorer l’ergonomie et l’efficacité du CRM utilisé par le département des marchés boursiers.',
       tags: ['Banque'],
       achievements: [
-        'CRM Equity Markets refondu pour vendeurs et analystes',
+        'Nouveaux composants conçus et livrés côté backend et frontend',
         'Code legacy assaini par un refactoring continu',
       ],
     },
@@ -143,7 +143,7 @@ const expectedCaseStudies = {
       description: 'Improving the user experience of the CRM used by the stock market division.',
       tags: ['Banking'],
       achievements: [
-        'Equity Markets CRM rebuilt for sales and analysts',
+        'New backend and frontend components designed and delivered',
         'Legacy code cleaned up through continuous refactoring',
       ],
     },
