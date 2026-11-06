@@ -105,7 +105,7 @@ const localizedHeroes = [
       'Livraison et déploiement continus sur une architecture micro-services',
       'Moins d’incidents en production',
       'Nouveaux arrivants formés à l’application',
-      'Nouveaux composants conçus et livrés côté backend et frontend',
+      'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
       'Code legacy assaini par un refactoring continu',
     ],
     caseStudyTitles: [
@@ -193,7 +193,7 @@ const localizedHeroes = [
       'Continuous delivery and deployment on a microservices architecture',
       'Fewer production incidents',
       'Newcomers trained on the application',
-      'New backend and frontend components designed and delivered',
+      'Planning, design and implementation of new backend and frontend components',
       'Legacy code cleaned up through continuous refactoring',
     ],
     caseStudyTitles: [

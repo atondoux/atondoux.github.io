@@ -141,7 +141,7 @@ const fr = {
     'Améliorer l’ergonomie et l’efficacité du CRM utilisé par le département des marchés boursiers.',
   'home.caseStudies.natixis.tags.banking': 'Banque',
   'home.caseStudies.natixis.achievements.newComponents':
-    'Nouveaux composants conçus et livrés côté backend et frontend',
+    'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
   'home.caseStudies.natixis.achievements.continuousRefactoring': 'Code legacy assaini par un refactoring continu',
   'home.caseStudies.previous': 'Cas client précédent',
   'home.caseStudies.next': 'Cas client suivant',
@@ -281,7 +281,8 @@ const en = {
   'home.caseStudies.natixis.title': 'Natixis',
   'home.caseStudies.natixis.description': 'Improving the user experience of the CRM used by the stock market division.',
   'home.caseStudies.natixis.tags.banking': 'Banking',
-  'home.caseStudies.natixis.achievements.newComponents': 'New backend and frontend components designed and delivered',
+  'home.caseStudies.natixis.achievements.newComponents':
+    'Planning, design and implementation of new backend and frontend components',
   'home.caseStudies.natixis.achievements.continuousRefactoring':
     'Legacy code cleaned up through continuous refactoring',
   'home.caseStudies.previous': 'Previous case study',
