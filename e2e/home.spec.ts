@@ -107,7 +107,7 @@ const localizedHeroes = [
       'Nouveaux arrivants formés à l’application',
       'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
       'Code legacy assaini par un refactoring continu',
-      'Nouveaux services web B2C en architecture SOA',
+      'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
       'Suites de tests automatisés avec l’équipe QA',
     ],
     caseStudyTitles: [

@@ -147,7 +147,8 @@ const fr = {
   'home.caseStudies.sncfConnect.description':
     'Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect.',
   'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Mobilités durables',
-  'home.caseStudies.sncfConnect.achievements.b2cWebServices': 'Nouveaux services web B2C en architecture SOA',
+  'home.caseStudies.sncfConnect.achievements.b2cWebServices':
+    'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
   'home.caseStudies.sncfConnect.achievements.automatedTests': 'Suites de tests automatisés avec l’équipe QA',
   'home.caseStudies.previous': 'Cas client précédent',
   'home.caseStudies.next': 'Cas client suivant',

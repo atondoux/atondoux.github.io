@@ -82,7 +82,10 @@ const expectedCaseStudies = {
       description:
         'Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect.',
       tags: ['Mobilités durables'],
-      achievements: ['Nouveaux services web B2C en architecture SOA', 'Suites de tests automatisés avec l’équipe QA'],
+      achievements: [
+        'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
+        'Suites de tests automatisés avec l’équipe QA',
+      ],
     },
   ],
   en: [
