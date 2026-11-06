@@ -1,6 +1,6 @@
 import { expect, test, type Locator } from '@playwright/test';
 
-const CASE_STUDY_COUNT = 11;
+const CASE_STUDY_COUNT = 12;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
@@ -111,6 +111,8 @@ const localizedHeroes = [
       'Suites de tests automatisés avec l’équipe QA',
       'Procédures d’indemnisation 100% dématérialisées',
       'Application développée avec des librairies 100% open source',
+      'Plus de 500\u202f000 contrats clients gérés',
+      'Livraisons sur une plateforme haute disponibilité',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -124,6 +126,7 @@ const localizedHeroes = [
       'Natixis',
       'SNCF Connect & Tech',
       'Ministère de la Santé',
+      'Veolia Eau',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -205,6 +208,8 @@ const localizedHeroes = [
       'Automated test suites built with the QA team',
       'Fully digital compensation procedures',
       'Application built with 100% open source libraries',
+      '500,000+ customer contracts managed',
+      'Releases on a high-availability platform',
     ],
     caseStudyTitles: [
       'Institut du Cancer Avignon - Provence',
@@ -218,6 +223,7 @@ const localizedHeroes = [
       'Natixis',
       'SNCF Connect & Tech',
       'Ministry of Health',
+      'Veolia Eau',
     ],
     contactTitle: 'Contact',
     contactSubtitle:
@@ -408,6 +414,7 @@ for (const {
       'natixis',
       'sncfConnect',
       'oniam',
+      'veolia',
     ]);
     await expect(caseStudies.getByRole('link')).toHaveCount(2);
     const courseLink = caseStudies.getByRole('link', { name: caseStudyLinkText });

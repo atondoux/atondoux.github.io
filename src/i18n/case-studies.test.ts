@@ -97,6 +97,15 @@ const expectedCaseStudies = {
         'Application développée avec des librairies 100% open source',
       ],
     },
+    {
+      title: 'Veolia Eau',
+      description: 'Développer des applications métier pour la gestion de la distribution de l’eau en Île-de-France.',
+      tags: ['Services publics'],
+      achievements: [
+        'Plus de 500\u202f000 contrats clients gérés',
+        'Livraisons sur une plateforme haute disponibilité',
+      ],
+    },
   ],
   en: [
     {
@@ -183,6 +192,12 @@ const expectedCaseStudies = {
       tags: ['Public Services'],
       achievements: ['Fully digital compensation procedures', 'Application built with 100% open source libraries'],
     },
+    {
+      title: 'Veolia Eau',
+      description: 'Building business applications to manage water distribution across the Paris region.',
+      tags: ['Public Services'],
+      achievements: ['500,000+ customer contracts managed', 'Releases on a high-availability platform'],
+    },
   ],
 } as const;
 
@@ -218,6 +233,7 @@ describe('listing the case studies', () => {
       'natixis',
       'sncfConnect',
       'oniam',
+      'veolia',
     ]);
   });
 

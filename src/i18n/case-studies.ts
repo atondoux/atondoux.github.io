@@ -99,6 +99,14 @@ const caseStudyCatalog = [
       'home.caseStudies.oniam.achievements.openSource',
     ],
   },
+  {
+    key: 'veolia',
+    tagKeys: ['home.caseStudies.veolia.tags.publicServices'],
+    achievementKeys: [
+      'home.caseStudies.veolia.achievements.contracts',
+      'home.caseStudies.veolia.achievements.highAvailability',
+    ],
+  },
 ] as const satisfies readonly CaseStudyCatalogEntry[];
 
 type CaseStudyEntry = (typeof caseStudyCatalog)[number];
