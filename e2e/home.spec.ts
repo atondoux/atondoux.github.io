@@ -83,7 +83,7 @@ const localizedHeroes = [
     quote: 'Sur devis',
     ribbon: 'Populaire',
     caseStudiesTitle: 'Cas clients',
-    caseStudiesSubtitle: 'Un aperçu de mes missions et réalisations.',
+    caseStudiesSubtitle: 'Un aperçu de mon travail.',
     caseStudyLinkText: 'Voir la formation',
     caseStudyDemoLinkText: 'Voir la démo',
     caseStudyPreviousLabel: 'Cas client précédent',

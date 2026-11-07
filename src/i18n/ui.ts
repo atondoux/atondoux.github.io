@@ -81,7 +81,7 @@ const fr = {
   'home.pricing.consulting.features.audit': 'Audit architecture et qualité',
   'home.pricing.consulting.features.review': 'Revue de code',
   'home.caseStudies.title': 'Cas clients',
-  'home.caseStudies.subtitle': 'Un aperçu de mes missions et réalisations.',
+  'home.caseStudies.subtitle': 'Un aperçu de mon travail.',
   'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
   'home.caseStudies.icap.description':
     'Accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie.',
