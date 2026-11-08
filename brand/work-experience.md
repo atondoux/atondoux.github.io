@@ -302,7 +302,7 @@ Software Engineer: designed and developed a web application from scratch to proc
 
 Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Veolia Eau · Software Engineer · 11/2007 - 11/2009
+## Veolia Eau · Software Engineer · 2007 - 2009
 
 ### Français
 
