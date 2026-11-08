@@ -72,7 +72,7 @@ const caseStudyCatalog = [
     tagKeys: ['home.caseStudies.societeGenerale.tags.banking'],
     achievementKeys: [
       'home.caseStudies.societeGenerale.achievements.fewerIncidents',
-      'home.caseStudies.societeGenerale.achievements.teamOnboarding',
+      'home.caseStudies.societeGenerale.achievements.reliableDelivery',
     ],
   },
   {
