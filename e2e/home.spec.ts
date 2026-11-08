@@ -101,7 +101,7 @@ const localizedHeroes = [
       'Amélioration de la planification des entretiens',
       'SaaS déployé auprès de dizaines d’orthophonistes bêta-testeurs',
       'Recherche intelligente du matériel par pathologie et compétence',
-      'Conception de nouveaux modules spécialisés dans le suivi des patients',
+      'Nouveaux modules spécialisés dans le suivi des patients',
       'Livraison et déploiement continus sur une architecture micro-services',
       'Moins d’incidents en production',
       'Nouveaux arrivants formés à l’application',
