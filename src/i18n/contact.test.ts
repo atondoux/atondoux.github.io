@@ -3,15 +3,16 @@ import { describe, expect, it } from 'vitest';
 import { getContactCallToAction, getContactItems } from './contact';
 
 const EMAIL = 'atondoux@gmail.com';
+const PHONE_DISPLAY = '+33 6 70 36 03 55';
 
 const expectedTitles = {
-  fr: ['Email', 'LinkedIn', 'Malt'],
-  en: ['Email', 'LinkedIn', 'Malt'],
+  fr: ['Email', 'Téléphone', 'LinkedIn', 'Malt'],
+  en: ['Email', 'Phone', 'LinkedIn', 'Malt'],
 } as const;
 
 const expectedDisplays = {
-  fr: [EMAIL, 'linkedin.com/in/atondoux', 'malt.fr/profile/aurelientondoux'],
-  en: [EMAIL, 'linkedin.com/in/atondoux', 'malt.com/profile/aurelientondoux'],
+  fr: [EMAIL, PHONE_DISPLAY, 'linkedin.com/in/atondoux', 'malt.fr/profile/aurelientondoux'],
+  en: [EMAIL, PHONE_DISPLAY, 'linkedin.com/in/atondoux', 'malt.com/profile/aurelientondoux'],
 } as const;
 
 describe('listing the contact channels', () => {
@@ -33,26 +34,32 @@ describe('listing the contact channels', () => {
     expect(email?.href).toBe(`mailto:${EMAIL}`);
   });
 
+  it.each(['fr', 'en'] as const)('links the phone to a tel address in %s', (lang) => {
+    const phone = getContactItems(lang)[1];
+
+    expect(phone?.href).toBe('tel:+33670360355');
+  });
+
   it('links the french LinkedIn profile without a locale', () => {
-    const linkedin = getContactItems('fr')[1];
+    const linkedin = getContactItems('fr')[2];
 
     expect(linkedin?.href).toBe('https://www.linkedin.com/in/atondoux/');
   });
 
   it('links the english LinkedIn profile with the en_US locale', () => {
-    const linkedin = getContactItems('en')[1];
+    const linkedin = getContactItems('en')[2];
 
     expect(linkedin?.href).toBe('https://www.linkedin.com/in/atondoux/?locale=en_US');
   });
 
   it('links the french Malt profile to malt.fr', () => {
-    const malt = getContactItems('fr')[2];
+    const malt = getContactItems('fr')[3];
 
     expect(malt?.href).toBe('https://www.malt.fr/profile/aurelientondoux');
   });
 
   it('links the english Malt profile to malt.com', () => {
-    const malt = getContactItems('en')[2];
+    const malt = getContactItems('en')[3];
 
     expect(malt?.href).toBe('https://www.malt.com/profile/aurelientondoux');
   });
@@ -60,13 +67,18 @@ describe('listing the contact channels', () => {
   it.each(['fr', 'en'] as const)('opens the external profiles in a new tab in %s', (lang) => {
     const items = getContactItems(lang);
 
-    expect(items.map((item) => item.target)).toEqual([undefined, '_blank', '_blank']);
+    expect(items.map((item) => item.target)).toEqual([undefined, undefined, '_blank', '_blank']);
   });
 
   it('uses the same icons in the same order in both languages', () => {
     const iconsOf = (lang: 'fr' | 'en') => getContactItems(lang).map((item) => item.icon);
 
-    expect(iconsOf('fr')).toEqual(['tabler:mail', 'tabler:brand-linkedin', 'tabler:topology-star-ring-3']);
+    expect(iconsOf('fr')).toEqual([
+      'tabler:mail',
+      'tabler:phone',
+      'tabler:brand-linkedin',
+      'tabler:topology-star-ring-3',
+    ]);
     expect(iconsOf('en')).toEqual(iconsOf('fr'));
   });
 

@@ -165,6 +165,7 @@ const fr = {
   'home.contact.subtitle':
     'Parlons de votre projet. Un premier échange gratuit et sans engagement de 30 minutes pour cerner votre besoin et vous proposer une solution adaptée.',
   'home.contact.email.title': 'Email',
+  'home.contact.phone.title': 'Téléphone',
   'home.contact.linkedin.title': 'LinkedIn',
   'home.contact.malt.title': 'Malt',
   'home.contact.cta': 'Me contacter',
@@ -324,6 +325,7 @@ const en = {
   'home.contact.subtitle':
     "Let's talk about your project. A free, no-commitment 30-minute call to understand your needs and recommend the right solution.",
   'home.contact.email.title': 'Email',
+  'home.contact.phone.title': 'Phone',
   'home.contact.linkedin.title': 'LinkedIn',
   'home.contact.malt.title': 'Malt',
   'home.contact.cta': 'Contact me',

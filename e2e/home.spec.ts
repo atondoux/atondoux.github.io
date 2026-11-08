@@ -131,7 +131,7 @@ const localizedHeroes = [
     contactTitle: 'Contact',
     contactSubtitle:
       'Parlons de votre projet. Un premier échange gratuit et sans engagement de 30 minutes pour cerner votre besoin et vous proposer une solution adaptée.',
-    contactTitles: ['Email', 'LinkedIn', 'Malt'],
+    contactTitles: ['Email', 'Téléphone', 'LinkedIn', 'Malt'],
     contactCta: 'Me contacter',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/',
     maltHref: 'https://www.malt.fr/profile/aurelientondoux',
@@ -228,7 +228,7 @@ const localizedHeroes = [
     contactTitle: 'Contact',
     contactSubtitle:
       "Let's talk about your project. A free, no-commitment 30-minute call to understand your needs and recommend the right solution.",
-    contactTitles: ['Email', 'LinkedIn', 'Malt'],
+    contactTitles: ['Email', 'Phone', 'LinkedIn', 'Malt'],
     contactCta: 'Contact me',
     linkedinHref: 'https://www.linkedin.com/in/atondoux/?locale=en_US',
     maltHref: 'https://www.malt.com/profile/aurelientondoux',
@@ -529,6 +529,9 @@ for (const {
       'href',
       'mailto:atondoux@gmail.com'
     );
+    const phone = contact.getByRole('link', { name: '+33 6 70 36 03 55' });
+    await expect(phone).toHaveAttribute('href', 'tel:+33670360355');
+    await expect(phone).not.toHaveAttribute('target');
     const linkedin = contact.getByRole('link', { name: 'linkedin.com/in/atondoux' });
     await expect(linkedin).toHaveAttribute('href', linkedinHref);
     await expect(linkedin).toHaveAttribute('target', '_blank');

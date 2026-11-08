@@ -6,9 +6,12 @@ import { useTranslations } from './utils';
 
 const EMAIL_ADDRESS = 'atondoux@gmail.com';
 const MAIL_ICON = 'tabler:mail';
+const PHONE_NUMBER = '+33 6 70 36 03 55';
+const PHONE_ICON = 'tabler:phone';
 const EXTERNAL_TARGET = '_blank';
 
 const MAILTO_HREF = `mailto:${EMAIL_ADDRESS}`;
+const TEL_HREF = 'tel:+33670360355';
 
 interface ContactCatalogEntry {
   titleKey: UiKey;
@@ -20,6 +23,7 @@ interface ContactCatalogEntry {
 
 const contactCatalog = [
   { titleKey: 'home.contact.email.title', icon: MAIL_ICON, display: EMAIL_ADDRESS, href: MAILTO_HREF },
+  { titleKey: 'home.contact.phone.title', icon: PHONE_ICON, display: PHONE_NUMBER, href: TEL_HREF },
   {
     titleKey: 'home.contact.linkedin.title',
     icon: 'tabler:brand-linkedin',
