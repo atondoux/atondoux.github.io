@@ -50,13 +50,13 @@ Full Stack Software Engineer: extended the financing module to various partners,
 
 Stack: Kotlin · Spring Boot · Vue.js · Nuxt · REST API · RabbitMQ · SQL · NoSQL · Test Driven Development · GitLab CI/CD · Datadog
 
-## Namirial · Tech Lead · 2024
+## Namirial · Tech Lead · 2024 - 2025
 
 ### Français
 
 Plateforme de services de confiance qualifiés : parcours de souscription en ligne avec vérification d’identité, signature électronique et soumission de documents.
 
-Tech Lead Backend : évolution de la plateforme de parcours d’acquisition clients, intégration de l’API de signature électronique de Yousign, orchestration des services de vérification de documents et de détection de fraude.
+Evolution de la plateforme de parcours d’acquisition clients, intégration de l’API de signature électronique de Yousign, orchestration des services de vérification de documents et de détection de fraude.
 
 → Contrats signés en ligne avec Yousign
 → Fraude détectée dès la souscription
@@ -67,7 +67,7 @@ Stack : Kotlin · Java · Spring Boot · API REST · SQL · Test Driven Developm
 
 Qualified trust services platform: online sign-up journeys with identity verification, e-signature and document submission.
 
-Backend Tech Lead: evolved the customer acquisition journey platform, integrated the Yousign e-signature API, orchestrated document verification and fraud detection services.
+Evolution of the customer acquisition journey platform, integration of the Yousign e-signature API, orchestration of document verification and fraud detection services.
 
 → Contracts signed online with Yousign
 → Fraud caught at sign-up
