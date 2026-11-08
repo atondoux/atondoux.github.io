@@ -26,29 +26,29 @@ Coaching the tech team through setting up and adopting engineering best practice
 
 Stack: Automated tests · CI/CD
 
-## Malt · Software Engineer · 2025
+## Malt · Full-Stack Senior Software Engineer · 2025 - 2026
 
 ### Français
 
-Marketplace de freelances dont le financement des paiements mobilisait l’équipe FinOps sur de nombreuses opérations manuelles.
+Plateforme de référence de gestion des freelances.
 
-Développeur Full Stack : extension du module de financement à différents partenaires, amélioration du moteur de décision qui sélectionne le meilleur partenaire, automatisation des procédures FinOps.
+Extension des fonctionnalités du module de financement : intégration de nouveaux partenaires, amélioration du moteur de décision et automatisation des procédures manuelles de l'équipe FinOps.
 
 → 90% des freelances payés en 10 jours
 → Processus de financement automatisé à 95%
 
-Stack : Kotlin · Spring Boot · Vue.js · Nuxt · API REST · RabbitMQ · SQL · NoSQL · Test Driven Development · GitLab CI/CD · Datadog
+Stack : Kotlin · Spring Boot · Vue.js · Nuxt · API REST · Event Sourcing · RabbitMQ · SQL · NoSQL · Test Driven Development · GitLab CI/CD · Datadog
 
 ### English
 
-Freelance marketplace whose payment financing kept the FinOps team busy with a lot of manual work.
+Leading platform for managing freelancers.
 
-Full Stack Software Engineer: extended the financing module to various partners, improved the decision engine that selects the best partner, automated FinOps procedures.
+Extension of the financing module’s features: integration of new partners, improvement of the decision engine and automation of the FinOps team’s manual procedures.
 
 → 90% of freelancers paid within 10 days
 → 95% automated financing process
 
-Stack: Kotlin · Spring Boot · Vue.js · Nuxt · REST API · RabbitMQ · SQL · NoSQL · Test Driven Development · GitLab CI/CD · Datadog
+Stack: Kotlin · Spring Boot · Vue.js · Nuxt · REST API · Event Sourcing · RabbitMQ · SQL · NoSQL · Test Driven Development · GitLab CI/CD · Datadog
 
 ## Namirial · Tech Lead · 2024 - 2025
 
