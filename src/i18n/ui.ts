@@ -118,7 +118,7 @@ const fr = {
     'Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.',
   'home.caseStudies.orthoAssistant.tags.healthcare': 'Santé',
   'home.caseStudies.orthoAssistant.achievements.betaTesters': 'Plusieurs dizaines d’orthophonistes bêta-testeurs',
-  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Recherche intelligente du matériel',
+  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Fonctionnalités de recherche intelligente du matériel',
   'home.caseStudies.softway.title': 'Softway Medical',
   'home.caseStudies.softway.description':
     'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier.',

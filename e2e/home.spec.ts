@@ -100,7 +100,7 @@ const localizedHeroes = [
       'Suivi précis du taux d’utilisation des véhicules',
       'Amélioration de la planification des entretiens',
       'Plusieurs dizaines d’orthophonistes bêta-testeurs',
-      'Recherche intelligente du matériel',
+      'Fonctionnalités de recherche intelligente du matériel',
       'Conception de nouveaux modules spécialisés dans le suivi des patients',
       'Livraison et déploiement continus sur une architecture micro-services',
       'Moins d’incidents en production',

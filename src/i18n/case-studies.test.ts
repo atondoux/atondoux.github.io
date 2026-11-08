@@ -47,7 +47,10 @@ const expectedCaseStudies = {
       description:
         'Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.',
       tags: ['Santé'],
-      achievements: ['Plusieurs dizaines d’orthophonistes bêta-testeurs', 'Recherche intelligente du matériel'],
+      achievements: [
+        'Plusieurs dizaines d’orthophonistes bêta-testeurs',
+        'Fonctionnalités de recherche intelligente du matériel',
+      ],
     },
     {
       title: 'Softway Medical',
