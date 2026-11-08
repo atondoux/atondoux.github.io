@@ -66,8 +66,7 @@ export default defineConfig({
     timeout: 120 * 1000,
     /* Pass test environment variables to dev server */
     env: {
-      NUXT_PUBLIC_SITE_URL: process.env.NUXT_PUBLIC_SITE_URL || '',
-      NUXT_PUBLIC_GTAG_ID: process.env.NUXT_PUBLIC_GTAG_ID || ''
+      NUXT_PUBLIC_SITE_URL: process.env.NUXT_PUBLIC_SITE_URL || ''
     }
   }
 })

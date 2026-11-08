@@ -8,8 +8,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
-    '@nuxtjs/i18n',
-    'nuxt-gtag'
+    '@nuxtjs/i18n'
   ],
 
   devtools: {
@@ -110,10 +109,6 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
-  },
-
-  gtag: {
-    id: process.env.NUXT_PUBLIC_GTAG_ID
   },
 
   i18n: {
