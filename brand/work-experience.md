@@ -254,13 +254,13 @@ Software Engineer: revamped the CRM on the backend and frontend, helped scope an
 
 Stack: Java · Spring Framework · Hibernate · JSF · jQuery · SQL · Test Driven Development · Continuous Integration · Agile
 
-## SNCF Connect & Tech · Software Engineer · 2010
+## SNCF Connect & Tech · Software Engineer · 2010 - 2011
 
 ### Français
 
 Service européen de réservation de billets de train de la SNCF.
 
-Ingénieur Études et Développement : nouvelles fonctionnalités et correction d’anomalies, analyse détaillée du moteur de réservation (Yield management), conception et implémentation de services web, tests automatisés en étroite collaboration avec l’équipe QA.
+Nouvelles fonctionnalités et correction d’anomalies, analyse détaillée du moteur de réservation (Yield management), conception et implémentation de services web, tests automatisés en étroite collaboration avec l’équipe QA.
 
 → Nouveaux services web B2C dans un environnement orienté services (SOA)
 → Suites de tests automatisés écrits avec l’équipe QA
@@ -271,7 +271,7 @@ Stack : Java · Spring Framework · API REST · SQL · Test Driven Development �
 
 European train ticket booking service of SNCF.
 
-Software Engineer: new features and bug fixes, detailed analysis of the reservation engine (Yield management), design and implementation of web services, automated testing in close collaboration with the QA team.
+New features and bug fixes, detailed analysis of the reservation engine (Yield management), design and implementation of web services, automated testing in close collaboration with the QA team.
 
 → New B2C web services in a service-oriented environment (SOA)
 → Automated test suites built with the QA team
