@@ -35,7 +35,7 @@ Extension des fonctionnalités du module de financement : intégration de nouvea
 → 90% des freelances payés en 10 jours
 → Processus de financement automatisé à 95%
 
-Stack : Kotlin · Spring Boot · Vue.js · Nuxt · API REST · Event Sourcing · RabbitMQ · SQL · NoSQL · Test Driven Development · GitLab CI/CD · Datadog
+Stack : Kotlin · Spring Boot · Vue.js · Nuxt · API REST · Event Sourcing · RabbitMQ · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
 
 ### English
 
@@ -46,7 +46,7 @@ Extension of the financing module’s features: integration of new partners, imp
 → 90% of freelancers paid within 10 days
 → 95% automated financing process
 
-Stack: Kotlin · Spring Boot · Vue.js · Nuxt · REST API · Event Sourcing · RabbitMQ · SQL · NoSQL · Test Driven Development · GitLab CI/CD · Datadog
+Stack: Kotlin · Spring Boot · Vue.js · Nuxt · REST API · Event Sourcing · RabbitMQ · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
 
 ## Namirial · Tech Lead · 2024 - 2025
 
@@ -59,7 +59,7 @@ Evolution de la plateforme de parcours d’acquisition clients, intégration de 
 → Contrats signés en ligne avec Yousign
 → Fraude détectée dès la souscription
 
-Stack : Kotlin · Java · Spring Boot · API REST · SQL · Test Driven Development · GitLab CI/CD · Kibana · Méthodes agiles
+Stack : Kotlin · Java · Spring Boot · API REST · PostgreSQL · Test Driven Development · GitLab CI/CD · Kibana · Méthodes agiles
 
 ### English
 
@@ -70,7 +70,7 @@ Evolution of the customer acquisition journey platform, integration of the Yousi
 → Contracts signed online with Yousign
 → Fraud caught at sign-up
 
-Stack: Kotlin · Java · Spring Boot · REST API · SQL · Test Driven Development · GitLab CI/CD · Kibana · Agile
+Stack: Kotlin · Java · Spring Boot · REST API · PostgreSQL · Test Driven Development · GitLab CI/CD · Kibana · Agile
 
 ## Dyma Spring Boot · Course Creator · 2023 - today
 
@@ -137,7 +137,7 @@ Conception, développement et déploiement d’un SaaS avec inventaire augmenté
 → Plusieurs dizaines d’orthophonistes bêta-testeurs
 → Fonctionnalités de recherche intelligente du matériel pour aider à la préparation des séances
 
-Stack : Java · Spring Boot · JHipster · API REST · TypeScript · Vue.js · SQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker
+Stack : Java · Spring Boot · JHipster · API REST · TypeScript · Vue.js · PostgreSQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker
 
 https://gitlab.com/atondoux/orthoassistant/
 
@@ -152,7 +152,7 @@ Design, development and deployment of a SaaS with an advanced inventory, a custo
 → Several dozen beta-tester speech therapists
 → Smart search features for material to help prepare sessions
 
-Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · SQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker
+Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · PostgreSQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker
 
 https://gitlab.com/atondoux/orthoassistant/
 
@@ -167,7 +167,7 @@ Participation aux décisions dans toutes les étapes des projets : des premiers 
 → Nouveaux modules spécialisés dans le suivi des patients
 → Livraison et déploiement continus sur une architecture micro-services
 
-Stack : Java · Spring Boot · JHipster · Quarkus · API REST · TypeScript · Vue.js · SQL · NoSQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker · Microservices · OpenShift · Graylog · DevOps · Méthodes agiles
+Stack : Java · Spring Boot · JHipster · Quarkus · API REST · TypeScript · Vue.js · Oracle · MongoDB · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker · Microservices · OpenShift · Graylog · DevOps · Méthodes agiles
 
 Témoignage client sur le module de suivi des plaies : https://youtu.be/NwEPv_cVKC0
 
@@ -180,7 +180,7 @@ Involvement in decisions at every stage of the projects: from the first design w
 → New modules designed for patient follow-up
 → Continuous delivery and deployment on a microservices architecture
 
-Stack: Java · Spring Boot · JHipster · Quarkus · REST API · TypeScript · Vue.js · SQL · NoSQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker · Microservices · OpenShift · Graylog · DevOps · Agile
+Stack: Java · Spring Boot · JHipster · Quarkus · REST API · TypeScript · Vue.js · Oracle · MongoDB · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker · Microservices · OpenShift · Graylog · DevOps · Agile
 
 Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVKC0
 
