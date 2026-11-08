@@ -308,7 +308,7 @@ Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL �
 
 Gestion de la distribution de l’eau en Île-de-France.
 
-Développement d’applications métier pensées pour le relevé à distance, à l’aide d’un framework web de développement rapide optimisé pour des appels réseau très légers, gestion des livraisons, rédaction des spécifications techniques, des manuels de génération de livrables et des procédures de déploiement.
+Développement d’applications métier pensées pour les relevés à distance à l’aide d’un framework web de développement rapide conçu pour optimiser la bande passante, gestion des livraisons, rédaction des spécifications techniques, des manuels de génération de livrables et des procédures de déploiement.
 
 → Plus de 500 000 contrats clients gérés
 → Livraisons sur une plateforme haute disponibilité
@@ -319,7 +319,7 @@ Stack : Java · JavaScript · SQL · Cycle en V
 
 Water distribution management across the Paris region.
 
-Development of business applications designed for remote meter reading, using a rapid web development framework optimized for very lightweight network calls, release management, writing of technical specifications, release documentation and deployment procedures.
+Development of business applications designed for remote meter readings using a rapid web development framework built to optimize bandwidth usage, release management, writing of technical specifications, release documentation and deployment procedures.
 
 → 500,000+ customer contracts managed
 → Releases on a high-availability platform
