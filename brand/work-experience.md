@@ -1,6 +1,6 @@
 # Expériences
 
-## Institut du Cancer Avignon - Provence · Accompagnement d’équipe tech / Engineering team coaching · 2026
+## Institut du Cancer Avignon - Provence · Tech Lead · 2026
 
 ### Français
 
@@ -26,7 +26,7 @@ Coaching the tech team through setting up and adopting engineering best practice
 
 Stack: Automated tests · CI/CD
 
-## Malt · Développeur Full Stack / Full Stack Software Engineer · 2025
+## Malt · Software Engineer · 2025
 
 ### Français
 
@@ -50,7 +50,7 @@ Full Stack Software Engineer: extended the financing module to various partners,
 
 Stack: Kotlin · Spring Boot · Vue.js · Nuxt · REST API · RabbitMQ · SQL · NoSQL · Test Driven Development · GitLab CI/CD · Datadog
 
-## Namirial · Tech Lead Backend / Backend Tech Lead · 2024
+## Namirial · Tech Lead · 2024
 
 ### Français
 
@@ -74,7 +74,7 @@ Backend Tech Lead: evolved the customer acquisition journey platform, integrated
 
 Stack: Kotlin · Java · Spring Boot · REST API · SQL · Test Driven Development · GitLab CI/CD · Kibana · Agile
 
-## Dyma Spring Boot · Créateur et mainteneur / Creator and maintainer · 2024
+## Dyma Spring Boot · Course Creator · 2024
 
 ### Français
 
@@ -102,7 +102,7 @@ Stack: Java · Spring Boot · REST API · Clean Code · Test Driven Development
 
 https://dyma.fr/formations/spring-boot
 
-## Orange Business · Tech Lead Backend / Backend Tech Lead · 2023
+## Orange Business · Tech Lead · 2023
 
 ### Français
 
@@ -126,7 +126,7 @@ Backend Tech Lead: rewrote the maintenance tracking API and the vehicle usage ra
 
 Stack: Java · Spring Framework · REST API · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Ortho Assistant · Projet personnel / Personal project · 2020
+## Ortho Assistant · Software Engineer · 2020
 
 ### Français
 
@@ -154,7 +154,7 @@ Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · SQ
 
 https://gitlab.com/atondoux/orthoassistant/
 
-## Softway Medical · Tech Lead Full Stack / Full Stack Tech Lead · 2015 - 2023
+## Softway Medical · Tech Lead · 2015 - 2023
 
 ### Français
 
@@ -182,7 +182,7 @@ Stack: Java · Spring Boot · JHipster · Quarkus · REST API · TypeScript · V
 
 Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVKC0
 
-## Tour du monde / World Tour · Explorateur / Explorer · 2013 - 2015
+## Tour du monde / World Tour · 2013 - 2015
 
 ### Français
 
@@ -206,7 +206,7 @@ Explorer, with a valuable professional experience as a developer for Hitachi in 
 
 Skills: English · Adaptability · Negotiation · Resilience · Open-mindedness
 
-## Société Générale · Ingénieur Études et Développement / Software Engineer · 2012
+## Société Générale · Software Engineer · 2012
 
 ### Français
 
@@ -230,7 +230,7 @@ Software Engineer: new features and bug fixes, quality improvements from code re
 
 Stack: Java · Spring Framework · Hibernate · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Natixis · Ingénieur Études et Développement / Software Engineer · 2011
+## Natixis · Software Engineer · 2011
 
 ### Français
 
@@ -254,7 +254,7 @@ Software Engineer: revamped the CRM on the backend and frontend, helped scope an
 
 Stack: Java · Spring Framework · Hibernate · JSF · jQuery · SQL · Test Driven Development · Continuous Integration · Agile
 
-## SNCF Connect & Tech · Ingénieur Études et Développement / Software Engineer · 2010
+## SNCF Connect & Tech · Software Engineer · 2010
 
 ### Français
 
@@ -278,7 +278,7 @@ Software Engineer: new features and bug fixes, detailed analysis of the reservat
 
 Stack: Java · Spring Framework · REST API · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · Ingénieur Études et Développement / Software Engineer · 2009
+## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · Software Engineer · 2009
 
 ### Français
 
@@ -302,7 +302,7 @@ Software Engineer: designed and developed a web application from scratch to proc
 
 Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Veolia Eau · Ingénieur Études et Développement / Software Engineer · 2007
+## Veolia Eau · Software Engineer · 2007
 
 ### Français
 
