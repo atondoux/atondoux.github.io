@@ -48,8 +48,8 @@ const expectedCaseStudies = {
         'Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.',
       tags: ['Santé'],
       achievements: [
-        'SaaS déployé auprès de dizaines d’orthophonistes bêta-testeurs',
-        'Recherche intelligente du matériel par pathologie et compétence',
+        'Plusieurs dizaines d’orthophonistes bêta-testeurs',
+        'Fonctionnalités de recherche intelligente du matériel',
       ],
     },
     {
@@ -146,10 +146,7 @@ const expectedCaseStudies = {
       description:
         'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, leaving more time for the sessions.',
       tags: ['Healthcare'],
-      achievements: [
-        'SaaS deployed to dozens of beta-tester speech therapists',
-        'Smart material search by pathology and skill',
-      ],
+      achievements: ['Several dozen beta-tester speech therapists', 'Smart search features for material'],
     },
     {
       title: 'Softway Medical',

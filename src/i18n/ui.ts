@@ -117,10 +117,8 @@ const fr = {
   'home.caseStudies.orthoAssistant.description':
     'Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.',
   'home.caseStudies.orthoAssistant.tags.healthcare': 'Santé',
-  'home.caseStudies.orthoAssistant.achievements.betaTesters':
-    'SaaS déployé auprès de dizaines d’orthophonistes bêta-testeurs',
-  'home.caseStudies.orthoAssistant.achievements.smartSearch':
-    'Recherche intelligente du matériel par pathologie et compétence',
+  'home.caseStudies.orthoAssistant.achievements.betaTesters': 'Plusieurs dizaines d’orthophonistes bêta-testeurs',
+  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Fonctionnalités de recherche intelligente du matériel',
   'home.caseStudies.softway.title': 'Softway Medical',
   'home.caseStudies.softway.description':
     'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier.',
@@ -278,9 +276,8 @@ const en = {
   'home.caseStudies.orthoAssistant.description':
     'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, leaving more time for the sessions.',
   'home.caseStudies.orthoAssistant.tags.healthcare': 'Healthcare',
-  'home.caseStudies.orthoAssistant.achievements.betaTesters':
-    'SaaS deployed to dozens of beta-tester speech therapists',
-  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Smart material search by pathology and skill',
+  'home.caseStudies.orthoAssistant.achievements.betaTesters': 'Several dozen beta-tester speech therapists',
+  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Smart search features for material',
   'home.caseStudies.softway.title': 'Softway Medical',
   'home.caseStudies.softway.description':
     'Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work.',
