@@ -144,8 +144,8 @@ const fr = {
     'Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect.',
   'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Mobilités durables',
   'home.caseStudies.sncfConnect.achievements.b2cWebServices':
-    'Conception et implémentation de nouveaux services web B2C dans un environnement orienté services (SOA)',
-  'home.caseStudies.sncfConnect.achievements.automatedTests': 'Suites de tests automatisés avec l’équipe QA',
+    'Nouveaux services web B2C dans un environnement orienté services (SOA)',
+  'home.caseStudies.sncfConnect.achievements.automatedTests': 'Suites de tests automatisés écrits avec l’équipe QA',
   'home.caseStudies.oniam.title': 'Ministère de la Santé',
   'home.caseStudies.oniam.description':
     'Simplifier et accélérer l’indemnisation des victimes d’accidents médicaux en dématérialisant l’ensemble des procédures de l’ONIAM.',
@@ -303,7 +303,7 @@ const en = {
     'Making travel easier by adding new features to the SNCF Connect train ticket booking platform.',
   'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Sustainable Mobility',
   'home.caseStudies.sncfConnect.achievements.b2cWebServices':
-    'Design and implementation of new B2C web services in a service-oriented architecture environment',
+    'New B2C web services in a service-oriented environment (SOA)',
   'home.caseStudies.sncfConnect.achievements.automatedTests': 'Automated test suites built with the QA team',
   'home.caseStudies.oniam.title': 'Ministry of Health',
   'home.caseStudies.oniam.description':
