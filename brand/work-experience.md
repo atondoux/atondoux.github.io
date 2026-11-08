@@ -206,13 +206,13 @@ Explorer, with a valuable professional experience as a developer for Hitachi in 
 
 Skills: English · Adaptability · Negotiation · Resilience · Open-mindedness
 
-## Société Générale · Software Engineer · 2012
+## Société Générale · Software Engineer · 2012 - 2013
 
 ### Français
 
 Application stratégique de traitement et de reporting des marges des vendeurs de produits financiers de l’ensemble de la banque.
 
-Ingénieur Études et Développement : nouvelles fonctionnalités et correction d’anomalies, actions d’amélioration de la qualité, de la fiabilité du code au processus de livraison, formation des nouveaux arrivants, collaboration avec l’équipe support basée en Inde.
+Nouvelles fonctionnalités et correction d’anomalies, actions d’amélioration de la qualité, de la fiabilité du code au processus de livraison, formation des nouveaux arrivants, collaboration avec l’équipe support basée en Inde.
 
 → Réduction drastique des incidents en production
 → Fiabilisation du processus de livraison
@@ -223,7 +223,7 @@ Stack : Java · Spring Framework · Hibernate · SQL · Test Driven Development 
 
 Strategic application processing and reporting the margins of financial product sales teams across the bank.
 
-Software Engineer: new features and bug fixes, quality improvements from code reliability to the delivery process, training of new team members, close work with the user support team based in India.
+New features and bug fixes, quality improvements from code reliability to the delivery process, training of new team members, close work with the user support team based in India.
 
 → Drastic reduction in production incidents
 → More reliable delivery process
