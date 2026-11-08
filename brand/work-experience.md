@@ -278,13 +278,13 @@ Software Engineer: new features and bug fixes, detailed analysis of the reservat
 
 Stack: Java · Spring Framework · REST API · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · Software Engineer · 2009
+## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · Software Engineer · 2009 - 2010
 
 ### Français
 
 ONIAM, organisme national chargé de l’indemnisation des victimes d’accidents médicaux.
 
-Ingénieur Études et Développement : conception et développement d’une toute nouvelle application web de traitement des procédures d’indemnisation, formation technique des nouveaux arrivants, administration de la plateforme d’intégration continue.
+Conception et développement d’une toute nouvelle application web de traitement des procédures d’indemnisation à base de solutions open source pour dématérialiser l’ensemble des processus métier (suivi des dossiers et gestion électronique des documents), formation technique des nouveaux arrivants, administration de la plateforme d’intégration continue.
 
 → Procédures d’indemnisation 100% dématérialisées
 → Application développée avec des librairies 100% open source
@@ -295,7 +295,7 @@ Stack : Java · Spring Framework · Hibernate · API REST · jBPM · JSF · SQL 
 
 ONIAM, the national office for the compensation of medical accident victims.
 
-Software Engineer: designed and developed a web application from scratch to process compensation procedures, provided technical training for new team members, administered the continuous integration platform.
+Design and development of a brand-new web application to process compensation procedures, based on open source solutions to digitalize every business process (case tracking and electronic document management), technical training of new team members, administration of the continuous integration platform.
 
 → Fully digital compensation procedures
 → Application built with 100% open source libraries
