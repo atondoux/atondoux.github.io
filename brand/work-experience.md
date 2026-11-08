@@ -158,9 +158,9 @@ https://gitlab.com/atondoux/orthoassistant/
 
 ### Français
 
-Leader européen de l'informatique en santé avec pour ambition d'améliorer le suivi des patients, la gestion des soins et le travail des professionnels de santé dans les hôpitaux.
+Leader européen de l’informatique en santé avec pour ambition d’améliorer le suivi des patients, la gestion des soins et le travail des professionnels de santé dans les hôpitaux.
 
-Participation aux décisions dans toutes les étapes des projets : des premiers ateliers de conception avec les utilisateurs finaux en passant par les choix d'architecture jusqu'au déploiement en production. Promotion des bonnes pratiques au sein des équipes tech, participation active au processus de recrutement de nouveaux développeurs.
+Participation aux décisions dans toutes les étapes des projets : des premiers ateliers de conception avec les utilisateurs finaux en passant par les choix d’architecture jusqu’au déploiement en production. Promotion des bonnes pratiques au sein des équipes tech, participation active au processus de recrutement de nouveaux développeurs.
 
 → Nouveaux modules spécialisés dans le suivi des patients
 → Livraison et déploiement continus sur une architecture micro-services
@@ -190,7 +190,7 @@ Une aventure exceptionnelle de 730 jours marquée par un enrichissement personne
 
 → 60 000 km parcourus
 → 17 pays visités : Allemagne 🇩🇪, République tchèque 🇨🇿, Pologne 🇵🇱, Ukraine 🇺🇦, Russie 🇷🇺, Mongolie 🇲🇳, Chine 🇨🇳, Vietnam 🇻🇳, Cambodge 🇰🇭, Laos 🇱🇦, Thaïlande 🇹🇭, Myanmar 🇲🇲, Philippines 🇵🇭, Australie 🇦🇺, Fidji 🇫🇯, Samoa 🇼🇸, Nouvelle-Zélande 🇳🇿
-→ une expérience professionnelle en tant qu'Ingénieur Logiciel en Australie
+→ une expérience professionnelle en tant qu’Ingénieur Logiciel en Australie
 
 Stack : Anglais · Adaptation · Négociation · Résilience · Ouverture d’esprit
 
