@@ -29,7 +29,6 @@
     "better-sqlite3": "^12.4.6",
     "motion-v": "^1.7.3",
     "nuxt": "^4.2.2",
-    "nuxt-gtag": "^4.1.0",
     "nuxt-og-image": "5.1.13",
     "nuxt-site-config": "3.2.17",
     "zod": "^3.25.76"
