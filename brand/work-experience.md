@@ -302,13 +302,13 @@ Software Engineer: designed and developed a web application from scratch to proc
 
 Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Veolia Eau · Software Engineer · 2007
+## Veolia Eau · Software Engineer · 11/2007 - 11/2009
 
 ### Français
 
 Gestion de la distribution de l’eau en Île-de-France.
 
-Ingénieur Études et Développement : développement d’applications métier avec un framework spécifique de développement rapide, gestion des livraisons, rédaction des spécifications techniques et des procédures de déploiement.
+Développement d’applications métier à l'aide d'un framework web de développement rapide, gestion des livraisons, rédaction des spécifications techniques et des procédures de déploiement.
 
 → Plus de 500 000 contrats clients gérés
 → Livraisons sur une plateforme haute disponibilité
@@ -319,7 +319,7 @@ Stack : Java · JavaScript · SQL · Cycle en V
 
 Water distribution management across the Paris region.
 
-Software Engineer: developed business applications with an in-house rapid development framework, managed releases, wrote technical specifications and deployment procedures.
+Development of business applications using a rapid web development framework, release management, writing of technical specifications and deployment procedures.
 
 → 500,000+ customer contracts managed
 → Releases on a high-availability platform
