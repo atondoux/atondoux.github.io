@@ -181,7 +181,7 @@ const expectedCaseStudies = {
       description: 'Making travel easier by adding new features to the SNCF Connect train ticket booking platform.',
       tags: ['Sustainable Mobility'],
       achievements: [
-        'New B2C web services in a service-oriented (SOA) environment',
+        'New B2C web services in a service-oriented environment (SOA)',
         'Automated test suites built with the QA team',
       ],
     },

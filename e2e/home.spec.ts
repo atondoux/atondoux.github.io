@@ -204,7 +204,7 @@ const localizedHeroes = [
       'Newcomers trained on the application',
       'Planning, design and implementation of new backend and frontend components',
       'Legacy code cleaned up through continuous refactoring',
-      'New B2C web services in a service-oriented (SOA) environment',
+      'New B2C web services in a service-oriented environment (SOA)',
       'Automated test suites built with the QA team',
       'Fully digital compensation procedures',
       'Application built with 100% open source libraries',

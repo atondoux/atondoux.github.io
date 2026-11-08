@@ -309,7 +309,7 @@ const en = {
     'Making travel easier by adding new features to the SNCF Connect train ticket booking platform.',
   'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Sustainable Mobility',
   'home.caseStudies.sncfConnect.achievements.b2cWebServices':
-    'New B2C web services in a service-oriented (SOA) environment',
+    'New B2C web services in a service-oriented environment (SOA)',
   'home.caseStudies.sncfConnect.achievements.automatedTests': 'Automated test suites built with the QA team',
   'home.caseStudies.oniam.title': 'Ministry of Health',
   'home.caseStudies.oniam.description':
