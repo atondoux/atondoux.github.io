@@ -126,8 +126,7 @@ const fr = {
     'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier.',
   'home.caseStudies.softway.tags.healthcare': 'Santé',
   'home.caseStudies.softway.linkText': 'Voir la démo',
-  'home.caseStudies.softway.achievements.patientModules':
-    'Conception de nouveaux modules spécialisés dans le suivi des patients',
+  'home.caseStudies.softway.achievements.patientModules': 'Nouveaux modules spécialisés dans le suivi des patients',
   'home.caseStudies.softway.achievements.continuousDelivery':
     'Livraison et déploiement continus sur une architecture micro-services',
   'home.caseStudies.societeGenerale.title': 'Société Générale',
