@@ -230,13 +230,13 @@ Software Engineer: new features and bug fixes, quality improvements from code re
 
 Stack: Java · Spring Framework · Hibernate · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Natixis · Software Engineer · 2011
+## Natixis · Software Engineer · 2011 - 2012
 
 ### Français
 
-CRM utilisé par les vendeurs et les analystes du département Equity Markets, avec du code legacy à gérer.
+CRM utilisé par les vendeurs et les analystes du département Equity Markets.
 
-Ingénieur Études et Développement : refonte du CRM côté backend et frontend, aide au cadrage et au chiffrage des évolutions, participation active à la mise en place d’un processus continu de refactoring.
+Refonte du CRM côté backend et frontend, aide au cadrage et au chiffrage des évolutions, participation active à la mise en place d’un processus continu de refactoring.
 
 → Nouveaux composants côté backend et côté frontend
 → Code legacy assaini par un refactoring continu
@@ -245,9 +245,9 @@ Stack : Java · Spring Framework · Hibernate · JSF · jQuery · SQL · Test Dr
 
 ### English
 
-CRM used by salespeople and analysts in the Equity Markets department, with legacy code to manage.
+CRM used by salespeople and analysts in the Equity Markets department.
 
-Software Engineer: revamped the CRM on the backend and frontend, helped scope and estimate developments, actively helped set up a continuous refactoring process.
+Revamped the CRM on the backend and frontend, helped scope and estimate developments, actively helped set up a continuous refactoring process.
 
 → New backend and frontend components
 → Legacy code cleaned up through continuous refactoring
