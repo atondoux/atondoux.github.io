@@ -1,11 +1,10 @@
 # Expériences
 
-## Institut du Cancer Avignon - Provence
+## Institut du Cancer Avignon - Provence · [dates à compléter]
 
 ### Français
 
 Accompagnement d’équipe tech
-[dates à compléter]
 
 Accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie.
 
@@ -18,7 +17,6 @@ Tests automatisés · CI/CD
 ### English
 
 Engineering team coaching
-[dates to complete]
 
 Coaching a ten-person tech team through setting up and adopting engineering best practices.
 
@@ -28,12 +26,11 @@ Coaching a ten-person tech team through setting up and adopting engineering best
 
 Automated tests · CI/CD
 
-## Malt
+## Malt · 2025
 
 ### Français
 
 Développeur Full Stack
-2025
 
 Renforcer la capacité de financement de Malt et optimiser sa gestion du cash flow, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.
 
@@ -48,7 +45,6 @@ Kotlin · Spring Boot · Vue.js · Nuxt · API REST · RabbitMQ · SQL · NoSQL 
 ### English
 
 Full Stack Software Engineer
-2025
 
 Strengthening Malt’s financing capacity and cash flow management, while drastically cutting the FinOps team’s manual work.
 
@@ -60,12 +56,11 @@ Strengthening Malt’s financing capacity and cash flow management, while drasti
 
 Kotlin · Spring Boot · Vue.js · Nuxt · REST API · RabbitMQ · SQL · NoSQL · Test Driven Development · GitLab CI/CD · Datadog
 
-## Namirial
+## Namirial · 2024
 
 ### Français
 
 Tech Lead Backend
-2024
 
 Fiabiliser et sécuriser les parcours de souscription en ligne, de la vérification d’identité à la signature électronique, sur une plateforme de services de confiance qualifiés.
 
@@ -80,7 +75,6 @@ Kotlin · Java · Spring Boot · API REST · SQL · Test Driven Development · G
 ### English
 
 Backend Tech Lead
-2024
 
 Making online sign-up journeys reliable and secure, from identity verification to e-signature, on a qualified trust services platform.
 
@@ -92,12 +86,11 @@ Making online sign-up journeys reliable and secure, from identity verification t
 
 Kotlin · Java · Spring Boot · REST API · SQL · Test Driven Development · GitLab CI/CD · Kibana · Agile
 
-## Dyma Spring Boot
+## Dyma Spring Boot · 2024
 
 ### Français
 
 Créateur et mainteneur de la formation
-2024
 
 Créer et maintenir la formation Spring Boot sur la plateforme Dyma : leçons écrites, vidéos et exemples de code. Elle s’adresse aux débutants comme aux développeurs expérimentés.
 
@@ -114,7 +107,6 @@ https://dyma.fr/formations/spring-boot
 ### English
 
 Course creator and maintainer
-2024
 
 Creating and maintaining the Spring Boot course on the Dyma platform: written lessons, videos and code examples. It is intended for both beginners and experienced developers.
 
@@ -128,12 +120,11 @@ Java · Spring Boot · REST API · Clean Code · Test Driven Development
 
 https://dyma.fr/formations/spring-boot
 
-## Orange Business
+## Orange Business · 2023
 
 ### Français
 
 Tech Lead Backend
-2023
 
 Réécrire le module de suivi des entretiens d’Océan, une solution de télématique et de gestion de flotte de véhicules d’entreprises, pour aider à réduire les coûts.
 
@@ -148,7 +139,6 @@ Java · Spring Framework · API REST · SQL · Software Craftsmanship · Test Dr
 ### English
 
 Backend Tech Lead
-2023
 
 Rewriting the maintenance tracking module of Océan, a telematics and fleet management solution for company vehicles, to help reduce costs.
 
@@ -160,12 +150,11 @@ Rewriting the maintenance tracking module of Océan, a telematics and fleet mana
 
 Java · Spring Framework · REST API · SQL · Software Craftsmanship · Test Driven Development · Continuous Integration · Agile
 
-## Ortho Assistant
+## Ortho Assistant · 2020
 
 ### Français
 
 Projet personnel, service aujourd’hui hors ligne
-2020
 
 Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.
 
@@ -182,7 +171,6 @@ https://gitlab.com/atondoux/orthoassistant/
 ### English
 
 Personal project, service now offline
-2020
 
 Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, leaving more time for the sessions.
 
@@ -196,12 +184,11 @@ Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · SQL · Te
 
 https://gitlab.com/atondoux/orthoassistant/
 
-## Softway Medical
+## Softway Medical · 2015 - 2023
 
 ### Français
 
 Tech Lead Full Stack
-2015 - 2023
 
 Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier.
 
@@ -218,7 +205,6 @@ Témoignage client sur le module de suivi des plaies : https://youtu.be/NwEPv_cV
 ### English
 
 Full Stack Tech Lead
-2015 - 2023
 
 Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work.
 
@@ -232,12 +218,11 @@ Java · Spring Boot · JHipster · Quarkus · REST API · TypeScript · Vue.js �
 
 Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVKC0
 
-## Tour du monde / World Tour
+## Tour du monde / World Tour · 2013 - 2015
 
 ### Français
 
 Pause de carrière
-2013 - 2015
 
 Vivre une aventure de 730 jours marquée par de nombreuses découvertes naturelles, culturelles et humaines.
 
@@ -250,7 +235,6 @@ Anglais · Adaptation · Négociation · Résilience · Ouverture d’esprit
 ### English
 
 Career break
-2013 - 2015
 
 Living a 730-day journey filled with countless natural, cultural and human discoveries.
 
@@ -260,12 +244,11 @@ Living a 730-day journey filled with countless natural, cultural and human disco
 
 English · Adaptability · Negotiation · Resilience · Open-mindedness
 
-## Société Générale
+## Société Générale · 2012
 
 ### Français
 
 Ingénieur Études et Développement
-2012
 
 Fiabiliser l’application stratégique de calcul de marges des vendeurs de produits financiers.
 
@@ -280,7 +263,6 @@ Java · Spring Framework · Hibernate · SQL · Test Driven Development · Inté
 ### English
 
 Software Engineer
-2012
 
 Making the strategic margin calculation application for financial product sales teams reliable.
 
@@ -292,12 +274,11 @@ Making the strategic margin calculation application for financial product sales 
 
 Java · Spring Framework · Hibernate · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Natixis
+## Natixis · 2011
 
 ### Français
 
 Ingénieur Études et Développement
-2011
 
 Améliorer l’ergonomie et l’efficacité du CRM utilisé par le département des marchés boursiers.
 
@@ -312,7 +293,6 @@ Java · Spring Framework · Hibernate · JSF · jQuery · SQL · Test Driven Dev
 ### English
 
 Software Engineer
-2011
 
 Improving the user experience of the CRM used by the stock market division.
 
@@ -324,12 +304,11 @@ Improving the user experience of the CRM used by the stock market division.
 
 Java · Spring Framework · Hibernate · JSF · jQuery · SQL · Test Driven Development · Continuous Integration · Agile
 
-## SNCF Connect & Tech
+## SNCF Connect & Tech · 2010
 
 ### Français
 
 Ingénieur Études et Développement
-2010
 
 Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect.
 
@@ -343,7 +322,6 @@ Java · Spring Framework · API REST · SQL · Test Driven Development · Intég
 ### English
 
 Software Engineer
-2010
 
 Making travel easier by adding new features to the SNCF Connect train ticket booking platform.
 
@@ -354,12 +332,11 @@ Making travel easier by adding new features to the SNCF Connect train ticket boo
 
 Java · Spring Framework · REST API · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM)
+## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · 2009
 
 ### Français
 
 Ingénieur Études et Développement
-2009
 
 Simplifier et accélérer l’indemnisation des victimes d’accidents médicaux en dématérialisant l’ensemble des procédures de l’ONIAM.
 
@@ -374,7 +351,6 @@ Java · Spring Framework · Hibernate · API REST · jBPM · JSF · SQL · Test 
 ### English
 
 Software Engineer
-2009
 
 Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.
 
@@ -386,12 +362,11 @@ Enabling faster, more efficient compensation for medical accident victims throug
 
 Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Veolia Eau
+## Veolia Eau · 2007
 
 ### Français
 
 Ingénieur Études et Développement
-2007
 
 Développer des applications métier pour la gestion de la distribution de l’eau en Île-de-France.
 
@@ -405,7 +380,6 @@ Java · JavaScript · SQL · Cycle en V
 ### English
 
 Software Engineer
-2007
 
 Building business applications to manage water distribution across the Paris region.
 
