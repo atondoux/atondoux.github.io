@@ -102,13 +102,13 @@ Stack: Java · Spring Boot · REST API · Clean Code · Test Driven Development
 
 https://dyma.fr/formations/spring-boot
 
-## Orange Business · Tech Lead · 2023
+## Orange Business · Tech Lead · 2023 - 2024
 
 ### Français
 
-Océan, solution de télématique et de gestion de flotte de véhicules d’entreprises, dont la gestion des entretiens était à refondre.
+Océan, solution de télématique et de gestion de flotte de véhicules d’entreprises.
 
-Tech Lead Backend : réécriture de l’API de suivi des entretiens et de la fonctionnalité de suivi du taux d’utilisation des véhicules, accompagnement et mentorat de l’équipe vers des pratiques de Software Craftsmanship.
+Réécriture de l’API de suivi des entretiens et de la fonctionnalité de suivi du taux d’utilisation des véhicules, accompagnement et mentorat de l’équipe tech vers des pratiques de Software Craftsmanship.
 
 → Suivi précis du taux d’utilisation des véhicules
 → Amélioration de la planification des entretiens
@@ -117,9 +117,9 @@ Stack : Java · Spring Framework · API REST · SQL · Test Driven Development �
 
 ### English
 
-Océan, a telematics and fleet management solution for company vehicles, whose maintenance management needed revamping.
+Océan, a telematics and fleet management solution for company vehicles.
 
-Backend Tech Lead: rewrote the maintenance tracking API and the vehicle usage rate tracking feature, guided and mentored the team towards Software Craftsmanship practices.
+Rewrite of the maintenance tracking API and of the vehicle usage rate tracking feature, guidance and mentoring of the tech team towards Software Craftsmanship practices.
 
 → Accurate tracking of vehicle usage rates
 → Improved maintenance planning
