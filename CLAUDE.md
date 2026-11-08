@@ -13,12 +13,15 @@ copy and SEO during the migration. Never modify it (no features, upgrades or ref
 
 ## Toolchain
 
-- **Node `24.21.0`** (`.nvmrc`). `engines` is `^22.22.3 || ^24.16.0 || >=26.3.0`. The floor comes from
-  eslint-plugin-astro / astro-eslint-parser, not Astro. Node 25 and 26.0–26.2 break lint.
+- **Node `24.21.0`** (`.nvmrc`). `engines` is `^22.23.4 || ^24.16.0 || >=26.3.0`. The 22.x floor comes
+  from Astro; the 24.x and 26.x floors come from eslint-plugin-astro / astro-eslint-parser. Node 25 and 26.0–26.2 break lint.
 - **pnpm `12.11.2`** through corepack (`packageManager`). Commit `pnpm-lock.yaml`. Never add a `package-lock.json`:
   withastro/action picks the package manager from the lockfile.
 - **pnpm settings live in `pnpm-workspace.yaml`**, not in `package.json` or `.npmrc`: `overrides` (parent
   selectors such as `astro-compress>sharp`) and `allowBuilds` (pnpm ≥11 replaced `onlyBuiltDependencies`).
+  `packageExtensions` declares `@emnapi/runtime` for `@astrojs/astro2tsx`, at the exact `@emnapi/core` version it pins:
+  upstream leaves that peer undeclared, so pnpm otherwise picks rolldown's `2.0.0-beta.2`, and `astro check` fails with
+  a misleading "@astrojs/check is not installed" prompt. Remove the entry once `astro2tsx` declares it, and keep the two versions equal until then.
   New dependencies with install scripts must be added to `allowBuilds`.
 
 ## Commands
