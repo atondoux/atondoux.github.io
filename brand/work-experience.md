@@ -154,13 +154,13 @@ Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · SQ
 
 https://gitlab.com/atondoux/orthoassistant/
 
-## Softway Medical · Tech Lead · 2015 - 2023
+## Softway Medical · Tech Lead Full Stack · 2015 - 2023
 
 ### Français
 
-Logiciels hospitaliers : applications de suivi des patients et de gestion des soins pour les professionnels de santé.
+Leader européen de l'informatique en santé avec pour ambition d'améliorer le suivi des patients, la gestion des soins et le travail des professionnels de santé dans les hôpitaux.
 
-Tech Lead Full Stack : conception et développement d’applications web et de microservices, participation aux décisions des ateliers avec les utilisateurs finaux jusqu’au déploiement en production, promotion des bonnes pratiques, participation au recrutement.
+Participation aux décisions dans toutes les étapes des projets : des premiers ateliers de conception avec les utilisateurs finaux en passant par les choix d'architecture jusqu'au déploiement en production. Promotion des bonnes pratiques au sein des équipes tech, participation active au processus de recrutement de nouveaux développeurs.
 
 → Nouveaux modules spécialisés dans le suivi des patients
 → Livraison et déploiement continus sur une architecture micro-services
@@ -171,9 +171,9 @@ Témoignage client sur le module de suivi des plaies : https://youtu.be/NwEPv_cV
 
 ### English
 
-Hospital software: patient follow-up and care management applications for healthcare professionals.
+European leader in healthcare IT, with the ambition of improving patient follow-up, care management and the work of healthcare professionals in hospitals.
 
-Full Stack Tech Lead: designed and built web applications and microservices, took part in decisions from end-user design workshops to production deployment, promoted best practices, took part in recruitment.
+Involvement in decisions at every stage of the projects: from the first design workshops with end users, through architecture choices, to production deployment. Promotion of best practices within the tech teams, active participation in recruiting new developers.
 
 → New modules designed for patient follow-up
 → Continuous delivery and deployment on a microservices architecture
@@ -182,29 +182,27 @@ Stack: Java · Spring Boot · JHipster · Quarkus · REST API · TypeScript · V
 
 Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVKC0
 
-## Tour du monde / World Tour · 2013 - 2015
+## Tour du monde / World Tour · Aventurier & Photographe en Tour du Monde / Explorer & Photographer on a World Tour · 2013 - 2015
 
 ### Français
 
-Pause de carrière de 730 jours à travers l’Europe, l’Asie et l’Océanie.
-
-Explorateur, avec une expérience professionnelle enrichissante en tant que développeur pour Hitachi en Australie.
+Une aventure exceptionnelle de 730 jours marquée par un enrichissement personnel inestimable avec de nombreuses découvertes naturelles, culturelles et humaines.
 
 → 60 000 km parcourus
-→ 17 pays : Allemagne, République tchèque, Pologne, Ukraine, Russie, Mongolie, Chine, Vietnam, Cambodge, Laos, Thaïlande, Myanmar, Philippines, Australie, Fidji, Samoa, Nouvelle-Zélande
+→ 17 pays visités : Allemagne 🇩🇪, République tchèque 🇨🇿, Pologne 🇵🇱, Ukraine 🇺🇦, Russie 🇷🇺, Mongolie 🇲🇳, Chine 🇨🇳, Vietnam 🇻🇳, Cambodge 🇰🇭, Laos 🇱🇦, Thaïlande 🇹🇭, Myanmar 🇲🇲, Philippines 🇵🇭, Australie 🇦🇺, Fidji 🇫🇯, Samoa 🇼🇸, Nouvelle-Zélande 🇳🇿
+→ une expérience professionnelle en tant qu'Ingénieur Logiciel en Australie
 
-Compétences : Anglais · Adaptation · Négociation · Résilience · Ouverture d’esprit
+Stack : Anglais · Adaptation · Négociation · Résilience · Ouverture d’esprit
 
 ### English
 
-A 730-day career break across Europe, Asia and Oceania.
-
-Explorer, with a valuable professional experience as a developer for Hitachi in Australia.
+An exceptional 730-day adventure marked by invaluable personal growth and countless natural, cultural and human discoveries.
 
 → 60,000 km travelled
-→ 17 countries: Germany, Czech Republic, Poland, Ukraine, Russia, Mongolia, China, Vietnam, Cambodia, Laos, Thailand, Myanmar, Philippines, Australia, Fiji, Samoa, New Zealand
+→ 17 countries visited: Germany 🇩🇪, Czech Republic 🇨🇿, Poland 🇵🇱, Ukraine 🇺🇦, Russia 🇷🇺, Mongolia 🇲🇳, China 🇨🇳, Vietnam 🇻🇳, Cambodia 🇰🇭, Laos 🇱🇦, Thailand 🇹🇭, Myanmar 🇲🇲, Philippines 🇵🇭, Australia 🇦🇺, Fiji 🇫🇯, Samoa 🇼🇸, New Zealand 🇳🇿
+→ A professional experience as a Software Engineer in Australia
 
-Skills: English · Adaptability · Negotiation · Resilience · Open-mindedness
+Stack: English · Adaptability · Negotiation · Resilience · Open-mindedness
 
 ## Société Générale · Software Engineer · 2012 - 2013
 
