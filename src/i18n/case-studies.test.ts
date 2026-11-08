@@ -58,7 +58,7 @@ const expectedCaseStudies = {
         'Améliorer le suivi des patients et la gestion des soins dans les hôpitaux en dotant les professionnels de santé d’applications pensées pour leur métier. Voir la démo',
       tags: ['Santé'],
       achievements: [
-        'Conception de nouveaux modules spécialisés dans le suivi des patients',
+        'Nouveaux modules spécialisés dans le suivi des patients',
         'Livraison et déploiement continus sur une architecture micro-services',
       ],
     },
@@ -73,7 +73,7 @@ const expectedCaseStudies = {
       description: 'Améliorer l’ergonomie et l’efficacité du CRM utilisé par le département des marchés boursiers.',
       tags: ['Banque'],
       achievements: [
-        'Planification, conception et implémentation de nouveaux composants côté backend et côté frontend',
+        'Nouveaux composants côté backend et côté frontend',
         'Code legacy assaini par un refactoring continu',
       ],
     },
@@ -168,10 +168,7 @@ const expectedCaseStudies = {
       title: 'Natixis',
       description: 'Improving the user experience of the CRM used by the stock market division.',
       tags: ['Banking'],
-      achievements: [
-        'Planning, design and implementation of new backend and frontend components',
-        'Legacy code cleaned up through continuous refactoring',
-      ],
+      achievements: ['New backend and frontend components', 'Legacy code cleaned up through continuous refactoring'],
     },
     {
       title: 'SNCF Connect & Tech',
