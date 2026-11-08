@@ -24,7 +24,7 @@ Coaching the tech team through setting up and adopting engineering best practice
 
 Stack: Java · Spring Boot · Test Driven Development · Jenkins
 
-## Malt · Full-Stack Senior Software Engineer · 2025 - 2026
+## Malt · Full-Stack Senior Software Engineer · 2025 - today
 
 ### Français
 
@@ -72,7 +72,7 @@ Evolution of the customer acquisition journey platform, integration of the Yousi
 
 Stack: Kotlin · Java · Spring Boot · REST API · SQL · Test Driven Development · GitLab CI/CD · Kibana · Agile
 
-## Dyma Spring Boot · Course Creator · since 2023
+## Dyma Spring Boot · Course Creator · 2023 - today
 
 ### Français
 
