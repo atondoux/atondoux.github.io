@@ -90,7 +90,7 @@ const localizedHeroes = [
     caseStudyNextLabel: 'Cas client suivant',
     caseStudyAchievements: [
       'Mise en place d’une démarche qualité',
-      'Livraisons fiabilisées avec des pipelines CI/CD',
+      'Livraisons fiabilisées avec des pipelines d’intégration continue',
       '90% des freelances payés en 10 jours',
       'Processus de financement automatisé à 95%',
       'Contrats signés en ligne avec Yousign',
@@ -187,7 +187,7 @@ const localizedHeroes = [
     caseStudyNextLabel: 'Next case study',
     caseStudyAchievements: [
       'Quality process established',
-      'Reliable releases through CI/CD pipelines',
+      'Reliable releases through continuous integration pipelines',
       '90% of freelancers paid within 10 days',
       '95% automated financing process',
       'Contracts signed online with Yousign',
