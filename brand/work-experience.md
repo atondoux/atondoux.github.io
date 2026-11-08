@@ -1,6 +1,6 @@
 # Expériences
 
-## Institut du Cancer Avignon - Provence · Tech Lead · 2026
+## Institut du Cancer Avignon - Provence · Tech Lead · 2026 - today
 
 ### Français
 
@@ -9,22 +9,20 @@ Institut de cancérologie et de recherche clinique.
 Accompagnement de l’équipe tech dans la mise en place et l’adoption des meilleures pratiques d’ingénierie.
 
 → Mise en place d’une démarche qualité
-→ Mise en place de tests automatisés
-→ Livraisons fiabilisées avec des pipelines CI/CD
+→ Livraisons fiabilisées avec des pipelines d’intégration continue
 
-Stack : Java · Spring Boot · Tests automatisés · CI/CD
+Stack : Java · Spring Boot · Test Driven Development · Jenkins
 
 ### English
 
-Cancer institute with a tech team of around ten people.
+Cancer and clinical research institute.
 
 Coaching the tech team through setting up and adopting engineering best practices.
 
 → Quality process established
-→ Automated tests set up
-→ Reliable releases through CI/CD pipelines
+→ Reliable releases through continuous integration pipelines
 
-Stack: Automated tests · CI/CD
+Stack: Java · Spring Boot · Test Driven Development · Jenkins
 
 ## Malt · Full-Stack Senior Software Engineer · 2025 - 2026
 
@@ -32,7 +30,7 @@ Stack: Automated tests · CI/CD
 
 Plateforme de référence de gestion des freelances.
 
-Extension des fonctionnalités du module de financement : intégration de nouveaux partenaires, amélioration du moteur de décision et automatisation des procédures manuelles de l'équipe FinOps.
+Extension des fonctionnalités du module de financement : intégration de nouveaux partenaires, amélioration du moteur de décision et automatisation des procédures manuelles de l’équipe FinOps.
 
 → 90% des freelances payés en 10 jours
 → Processus de financement automatisé à 95%
