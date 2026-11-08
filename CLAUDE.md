@@ -56,7 +56,10 @@ pnpm test:all            # Unit + E2E
 - `brand/` (repo root) keeps brand assets for reference only, such as the LinkedIn banner (`AT_code_lab_banner.png`,
   the original export), and `public-intro.md`, the French and English profile description pasted into LinkedIn, Malt
   and similar profiles (plain text under each heading, so it pastes as-is; the English wording follows the site's
-  copy in `src/i18n/ui.ts`). The site never imports them, and they sit outside `public/` so they are not deployed.
+  copy in `src/i18n/ui.ts`), and `work-experience.md`, the French and English text of every experience for those
+  profiles, newest first, in the same paste-ready plain text (`•` bullets, `·` separators) and slightly more detailed
+  than the case study cards: it is built from the cards and `legacy-nuxt/content/{fr,en}/portfolio/`, and the card
+  figures win over the legacy ones. The site never imports them, and they sit outside `public/` so they are not deployed.
 - The browser tab title uses the "AT Code Lab" brand: the home page shows `home.title` alone (`ignoreTitleTemplate`),
   and other pages go through `metadata.title.template` in `config.yaml` (`'%s — AT Code Lab'`). Descriptions,
   `openGraph.site_name` and the footer copyright keep "Aurélien Tondoux". Guarded by `e2e/i18n.spec.ts`.
