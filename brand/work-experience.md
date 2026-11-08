@@ -126,16 +126,18 @@ Backend Tech Lead: rewrote the maintenance tracking API and the vehicle usage ra
 
 Stack: Java · Spring Framework · REST API · SQL · Test Driven Development · Continuous Integration · Agile
 
-## Ortho Assistant · Software Engineer · 2020
+## Ortho Assistant · Software Engineer · 2020 - 2021
 
 ### Français
 
-Les orthophonistes passent beaucoup de temps à chercher le matériel le plus adapté à chaque patient.
+Les orthophonistes passent beaucoup de temps à chercher leur matériel, quand les séances s’enchaînent tout au long de la journée, ils ont besoin de se concentrer sur leurs patients et non sur des problèmes de logistique.
 
-Projet personnel, service aujourd’hui hors ligne : conception, développement et déploiement d’un SaaS avec inventaire augmenté, référentiel personnalisable de pathologies et de compétences et gestion des emplacements du matériel.
+L’objectif d’Ortho Assistant : réduire la charge mentale des orthophonistes pour leur permettre de consacrer plus de temps à leurs patients et ainsi améliorer la qualité de la prise en charge.
+
+Conception, développement et déploiement d’un SaaS avec inventaire augmenté, référentiel personnalisable de pathologies et de compétences et gestion des emplacements du matériel.
 
 → Plusieurs dizaines d’orthophonistes bêta-testeurs
-→ Fonctionnalités de recherche intelligente du matériel
+→ Fonctionnalités de recherche intelligente du matériel pour aider à la préparation des séances
 
 Stack : Java · Spring Boot · JHipster · API REST · TypeScript · Vue.js · SQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker
 
@@ -143,12 +145,14 @@ https://gitlab.com/atondoux/orthoassistant/
 
 ### English
 
-Speech therapists spend significant time searching for the most suitable material for each patient.
+Speech therapists spend significant time looking for their material. With sessions following one another throughout the day, they need to focus on their patients, not on logistics.
 
-Personal project, service now offline: designed, built and deployed a SaaS with an advanced inventory, a customizable reference list of pathologies and skills, and material location management.
+Ortho Assistant’s goal: reduce speech therapists’ mental load so they can devote more time to their patients and improve the quality of care.
+
+Design, development and deployment of a SaaS with an advanced inventory, a customizable reference list of pathologies and skills, and material location management.
 
 → Several dozen beta-tester speech therapists
-→ Smart search features for material
+→ Smart search features for material to help prepare sessions
 
 Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · SQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker
 
