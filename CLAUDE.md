@@ -57,7 +57,8 @@ pnpm test:all            # Unit + E2E
   the original export), and `public-intro.md`, the French and English profile description pasted into LinkedIn, Malt
   and similar profiles (plain text under each heading, so it pastes as-is; the English wording follows the site's
   copy in `src/i18n/ui.ts`), and `work-experience.md`, the French and English text of every experience for those
-  profiles, newest first, in the same paste-ready plain text (`•` bullets, `·` separators) and slightly more detailed
+  profiles, newest first with both languages side by side under each experience so they are edited together, in the
+  same paste-ready plain text (`•` bullets, `·` separators) and slightly more detailed
   than the case study cards: it is built from the cards and `legacy-nuxt/content/{fr,en}/portfolio/`, and the card
   figures win over the legacy ones. The site never imports them, and they sit outside `public/` so they are not deployed.
 - The browser tab title uses the "AT Code Lab" brand: the home page shows `home.title` alone (`ignoreTitleTemplate`),
