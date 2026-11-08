@@ -9,7 +9,10 @@ const expectedCaseStudies = {
       description:
         'Accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie.',
       tags: ['Santé'],
-      achievements: ['Mise en place d’une démarche qualité', 'Livraisons fiabilisées avec des pipelines CI/CD'],
+      achievements: [
+        'Mise en place d’une démarche qualité',
+        'Livraisons fiabilisées avec des pipelines d’intégration continue',
+      ],
     },
     {
       title: 'Malt',
@@ -112,7 +115,7 @@ const expectedCaseStudies = {
       title: 'Institut du Cancer Avignon - Provence',
       description: 'Coaching a ten-person tech team through setting up and adopting engineering best practices.',
       tags: ['Healthcare'],
-      achievements: ['Quality process established', 'Reliable releases through CI/CD pipelines'],
+      achievements: ['Quality process established', 'Reliable releases through continuous integration pipelines'],
     },
     {
       title: 'Malt',
