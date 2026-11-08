@@ -74,13 +74,13 @@ Evolution of the customer acquisition journey platform, integration of the Yousi
 
 Stack: Kotlin · Java · Spring Boot · REST API · SQL · Test Driven Development · GitLab CI/CD · Kibana · Agile
 
-## Dyma Spring Boot · Course Creator · 2024
+## Dyma Spring Boot · Course Creator · since 2023
 
 ### Français
 
-Plateforme de formation en ligne proposant un seul cours par sujet, maintenu et mis à jour par son créateur.
+Plateforme de formation en ligne proposant un seul et unique parcours par sujet, avec un formateur dédié.
 
-Créateur et mainteneur de la formation Spring Boot, pour débutants comme développeurs expérimentés : leçons écrites, vidéos et exemples de code, de l’architecture en couches à Spring Security, aux tests et au déploiement Cloud avec Docker.
+Création et maintenance de la formation Spring Boot, adressée aux développeurs débutants ou expérimentés : leçons écrites, vidéos et exemples de code.
 
 → 19 chapitres, 85 leçons, 170 quiz
 → 6500+ heures passées par les apprenants
@@ -91,9 +91,9 @@ https://dyma.fr/formations/spring-boot
 
 ### English
 
-Online learning platform offering a single course per subject, maintained and updated by its creator.
+Online learning platform offering one single learning path per subject, with a dedicated instructor.
 
-Creator and maintainer of the Spring Boot course, for beginners and experienced developers alike: written lessons, videos and code examples, from layered architecture to Spring Security, testing and Cloud deployment with Docker.
+Creation and maintenance of the Spring Boot course, aimed at beginner and experienced developers: written lessons, videos and code examples.
 
 → 19 chapters, 85 lessons, 170 quizzes
 → 6,500+ hours spent by students
