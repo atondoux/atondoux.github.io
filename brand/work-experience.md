@@ -11,7 +11,7 @@ Accompagnement de l’équipe tech dans la mise en place et l’adoption des mei
 → Mise en place d’une démarche qualité
 → Livraisons fiabilisées avec des pipelines d’intégration continue
 
-Stack : Java · Spring Boot · Test Driven Development · Jenkins
+Stack : Java · Spring Boot · PostgreSQL · Test Driven Development · Jenkins
 
 ### English
 
@@ -22,7 +22,7 @@ Coaching the tech team through setting up and adopting engineering best practice
 → Quality process established
 → Reliable releases through continuous integration pipelines
 
-Stack: Java · Spring Boot · Test Driven Development · Jenkins
+Stack: Java · Spring Boot · PostgreSQL · Test Driven Development · Jenkins
 
 ## Malt · Full-Stack Senior Software Engineer · 2025 - today
 
