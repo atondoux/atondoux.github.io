@@ -45,7 +45,7 @@ const expectedCaseStudies = {
     {
       title: 'Ortho Assistant',
       description:
-        'Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour consacrer plus de temps aux séances.',
+        'Concevoir, développer et déployer un SaaS qui aide les orthophonistes à retrouver le matériel le plus adapté à chaque patient, pour optimiser la préparation des séances.',
       tags: ['Santé'],
       achievements: [
         'Plusieurs dizaines d’orthophonistes bêta-testeurs',
@@ -144,7 +144,7 @@ const expectedCaseStudies = {
     {
       title: 'Ortho Assistant',
       description:
-        'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, leaving more time for the sessions.',
+        'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, to optimize session preparation.',
       tags: ['Healthcare'],
       achievements: ['Several dozen beta-tester speech therapists', 'Smart search features for material'],
     },
