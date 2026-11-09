@@ -150,11 +150,9 @@ Stack: Java · Spring Framework · REST API · PostgreSQL · Test Driven Develop
 
 Créateur & Développeur Full Stack
 
-Les orthophonistes passent beaucoup de temps à chercher leur matériel, quand les séances s’enchaînent tout au long de la journée, ils ont besoin de se concentrer sur leurs patients et non sur des problèmes de logistique.
+Entre deux séances, les orthophonistes passent beaucoup de temps à chercher leur matériel. Ortho Assistant le trouve pour eux, optimise la gestion des séances, réduit leur charge mentale et leur rend du temps de soins disponible pour leurs patients.
 
-L’objectif d’Ortho Assistant : réduire la charge mentale des orthophonistes pour leur permettre de consacrer plus de temps à leurs patients et ainsi améliorer la qualité de la prise en charge.
-
-Conception, développement et déploiement d’un SaaS avec inventaire augmenté, référentiel personnalisable de pathologies et de compétences et gestion des emplacements du matériel.
+Conception, développement et déploiement d’un SaaS qui indique le matériel le plus efficace pour chaque patient et où il est rangé : inventaire augmenté, référentiel personnalisable de pathologies et de compétences à travailler, gestion des emplacements du matériel.
 
 → Plusieurs dizaines d’orthophonistes bêta-testeurs
 → Fonctionnalités de recherche intelligente du matériel pour aider à la préparation des séances
@@ -167,11 +165,9 @@ https://gitlab.com/atondoux/orthoassistant/
 
 Creator & Full Stack Developer
 
-Speech therapists spend significant time looking for their material. With sessions following one another throughout the day, they need to focus on their patients, not on logistics.
+Between sessions, speech therapists spend a lot of time hunting for their material. Ortho Assistant finds it for them, optimizes session management, reduces their mental load and gives them back time to care for their patients.
 
-Ortho Assistant’s goal: reduce speech therapists’ mental load so they can devote more time to their patients and improve the quality of care.
-
-Design, development and deployment of a SaaS with an advanced inventory, a customizable reference list of pathologies and skills, and material location management.
+Design, development and deployment of a SaaS that shows the most effective material for each patient and where it is stored: advanced inventory, customizable reference list of pathologies and skills to work on, material location management.
 
 → Several dozen beta-tester speech therapists
 → Smart search features for material to help prepare sessions
