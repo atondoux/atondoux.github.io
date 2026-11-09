@@ -35,7 +35,7 @@ Extension des fonctionnalités du module de financement : intégration de nouvea
 → 90% des freelances payés en 10 jours
 → Processus de financement automatisé à 95%
 
-Stack : Kotlin · Spring Boot · Vue.js · Nuxt · API REST · Event Sourcing · RabbitMQ · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
+Stack : Kotlin · Spring Boot · API REST · Event Sourcing · RabbitMQ · Vue.js · Nuxt · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
 
 ### English
 
@@ -46,7 +46,7 @@ Extension of the financing module’s features: integration of new partners, imp
 → 90% of freelancers paid within 10 days
 → 95% automated financing process
 
-Stack: Kotlin · Spring Boot · Vue.js · Nuxt · REST API · Event Sourcing · RabbitMQ · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
+Stack: Kotlin · Spring Boot · REST API · Event Sourcing · RabbitMQ · Vue.js · Nuxt · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
 
 ## Namirial · Tech Lead · 2024 - 2025
 
