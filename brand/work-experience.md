@@ -217,7 +217,7 @@ Nouvelles fonctionnalités et correction d’anomalies, actions d’amélioratio
 → Réduction drastique des incidents en production
 → Fiabilisation du processus de livraison
 
-Stack : Java · Spring Framework · Hibernate · SQL · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · Hibernate · SAP ASE · Test Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -228,7 +228,7 @@ New features and bug fixes, quality improvements from code reliability to the de
 → Drastic reduction in production incidents
 → More reliable delivery process
 
-Stack: Java · Spring Framework · Hibernate · SQL · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · Hibernate · SAP ASE · Test Driven Development · Continuous Integration · Agile
 
 ## Natixis · Software Engineer · 2011 - 2012
 
