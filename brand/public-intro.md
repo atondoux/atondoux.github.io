@@ -2,7 +2,7 @@
 
 ## Title
 
-Tech Lead · Senior Full Stack Software Engineer | Product Engineering · Software Architecture · Clean Code
+Tech Lead · Senior Full Stack Software Engineer | Product Engineering · Software Architecture
 
 ## Français
 
