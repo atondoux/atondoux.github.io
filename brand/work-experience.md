@@ -241,7 +241,7 @@ Refonte du CRM côté backend et frontend, aide au cadrage et au chiffrage des �
 → Nouveaux composants côté backend et côté frontend
 → Code legacy assaini par un refactoring continu
 
-Stack : Java · Spring Framework · Hibernate · JSF · jQuery · SQL · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -252,7 +252,7 @@ Revamped the CRM on the backend and frontend, helped scope and estimate developm
 → New backend and frontend components
 → Legacy code cleaned up through continuous refactoring
 
-Stack: Java · Spring Framework · Hibernate · JSF · jQuery · SQL · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test Driven Development · Continuous Integration · Agile
 
 ## SNCF Connect & Tech · Software Engineer · 2010 - 2011
 
