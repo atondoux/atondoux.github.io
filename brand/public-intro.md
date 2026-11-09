@@ -23,6 +23,8 @@ Ce que je peux faire pour vous :
 
 J’ai collaboré avec des grands comptes, des PME et des startups en France et à l’international, soit en intégrant leurs équipes soit en leur livrant des projets de bout en bout.
 
+Un projet ? Parlons-en.
+
 ## English
 
 Senior Software Engineer with 20 years building SaaS and B2B web applications using Java/Kotlin, Spring Boot and Vue.js.
@@ -41,3 +43,5 @@ How I can help:
 → Architecture
 
 I’ve worked with large companies, SMEs and startups in France and abroad, either by joining their teams or by delivering projects end to end.
+
+Got a project? Let’s talk.
