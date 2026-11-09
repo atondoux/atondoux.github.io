@@ -191,7 +191,7 @@ Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVK
 Une aventure exceptionnelle de 730 jours marquée par un enrichissement personnel inestimable avec de nombreuses découvertes naturelles, culturelles et humaines.
 
 → 60 000 km parcourus
-→ 17 pays visités : Allemagne 🇩🇪, République tchèque 🇨🇿, Pologne 🇵🇱, Ukraine 🇺🇦, Russie 🇷🇺, Mongolie 🇲🇳, Chine 🇨🇳, Vietnam 🇻🇳, Cambodge 🇰🇭, Laos 🇱🇦, Thaïlande 🇹🇭, Myanmar 🇲🇲, Philippines 🇵🇭, Australie 🇦🇺, Fidji 🇫🇯, Samoa 🇼🇸, Nouvelle-Zélande 🇳🇿
+→ 17 pays visités : Allemagne, République tchèque, Pologne, Ukraine, Russie, Mongolie, Chine, Vietnam, Cambodge, Laos, Thaïlande, Myanmar, Philippines, Australie, Fidji, Samoa, Nouvelle-Zélande
 → une expérience professionnelle en tant qu’Ingénieur Logiciel en Australie
 
 Stack : Anglais · Adaptation · Négociation · Résilience · Ouverture d’esprit
@@ -201,7 +201,7 @@ Stack : Anglais · Adaptation · Négociation · Résilience · Ouverture d’es
 An exceptional 730-day adventure marked by invaluable personal growth and countless natural, cultural and human discoveries.
 
 → 60,000 km travelled
-→ 17 countries visited: Germany 🇩🇪, Czech Republic 🇨🇿, Poland 🇵🇱, Ukraine 🇺🇦, Russia 🇷🇺, Mongolia 🇲🇳, China 🇨🇳, Vietnam 🇻🇳, Cambodia 🇰🇭, Laos 🇱🇦, Thailand 🇹🇭, Myanmar 🇲🇲, Philippines 🇵🇭, Australia 🇦🇺, Fiji 🇫🇯, Samoa 🇼🇸, New Zealand 🇳🇿
+→ 17 countries visited: Germany, Czech Republic, Poland, Ukraine, Russia, Mongolia, China, Vietnam, Cambodia, Laos, Thailand, Myanmar, Philippines, Australia, Fiji, Samoa, New Zealand
 → A professional experience as a Software Engineer in Australia
 
 Stack: English · Adaptability · Negotiation · Resilience · Open-mindedness
