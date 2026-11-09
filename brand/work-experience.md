@@ -313,7 +313,7 @@ Développement d’applications métier pensées pour les relevés à distance �
 → Plus de 500 000 contrats clients gérés
 → Livraisons sur une plateforme haute disponibilité
 
-Stack : Java · JavaScript · SQL · Cycle en V
+Stack : Java · JavaScript · Oracle · Cycle en V
 
 ### English
 
@@ -324,4 +324,4 @@ Development of business applications designed for remote meter readings using a 
 → 500,000+ customer contracts managed
 → Releases on a high-availability platform
 
-Stack: Java · JavaScript · SQL · Waterfall
+Stack: Java · JavaScript · Oracle · Waterfall
