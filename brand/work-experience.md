@@ -4,6 +4,8 @@
 
 ### Français
 
+Tech Lead
+
 Institut de cancérologie et de recherche clinique.
 
 Accompagnement de l’équipe tech dans la mise en place et l’adoption des meilleures pratiques d’ingénierie.
@@ -14,6 +16,8 @@ Accompagnement de l’équipe tech dans la mise en place et l’adoption des mei
 Stack : Java · Spring Boot · PostgreSQL · Test Driven Development · Jenkins
 
 ### English
+
+Tech Lead
 
 Cancer and clinical research institute.
 
@@ -28,6 +32,8 @@ Stack: Java · Spring Boot · PostgreSQL · Test Driven Development · Jenkins
 
 ### Français
 
+Développeur Full Stack Senior
+
 Plateforme de référence de gestion des freelances.
 
 Extension des fonctionnalités du module de financement : intégration de nouveaux partenaires, amélioration du moteur de décision et automatisation des procédures manuelles de l’équipe FinOps.
@@ -38,6 +44,8 @@ Extension des fonctionnalités du module de financement : intégration de nouvea
 Stack : Kotlin · Spring Boot · API REST · Event Sourcing · RabbitMQ · Vue.js · Nuxt · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
 
 ### English
+
+Full-Stack Senior Software Engineer
 
 Leading platform for managing freelancers.
 
@@ -52,6 +60,8 @@ Stack: Kotlin · Spring Boot · REST API · Event Sourcing · RabbitMQ · Vue.js
 
 ### Français
 
+Tech Lead
+
 Plateforme de services de confiance qualifiés : parcours de souscription en ligne avec vérification d’identité, signature électronique et soumission de documents.
 
 Evolution de la plateforme de parcours d’acquisition clients, intégration de l’API de signature électronique de Yousign, orchestration des services de vérification de documents et de détection de fraude.
@@ -63,6 +73,8 @@ Stack : Kotlin · Java · Spring Boot · API REST · PostgreSQL · Test Driven D
 
 ### English
 
+Tech Lead
+
 Qualified trust services platform: online sign-up journeys with identity verification, e-signature and document submission.
 
 Evolution of the customer acquisition journey platform, integration of the Yousign e-signature API, orchestration of document verification and fraud detection services.
@@ -72,9 +84,11 @@ Evolution of the customer acquisition journey platform, integration of the Yousi
 
 Stack: Kotlin · Java · Spring Boot · REST API · PostgreSQL · Test Driven Development · GitLab CI/CD · Kibana · Agile
 
-## Dyma Spring Boot · Course Creator · 2023 - today
+## Dyma · Spring Boot Instructor · 2023 - today
 
 ### Français
+
+Formateur Spring Boot
 
 Plateforme de formation en ligne proposant un seul et unique parcours par sujet, avec un formateur dédié.
 
@@ -88,6 +102,8 @@ Stack : Java · Spring Boot · API REST · PostgreSQL · Clean Code · Test Driv
 https://dyma.fr/formations/spring-boot
 
 ### English
+
+Spring Boot Instructor
 
 Online learning platform offering one single learning path per subject, with a dedicated instructor.
 
@@ -104,6 +120,8 @@ https://dyma.fr/formations/spring-boot
 
 ### Français
 
+Tech Lead
+
 Océan, solution de télématique et de gestion de flotte de véhicules d’entreprises.
 
 Réécriture de l’API de suivi des entretiens et de la fonctionnalité de suivi du taux d’utilisation des véhicules, accompagnement et mentorat de l’équipe tech vers des pratiques de Software Craftsmanship.
@@ -115,6 +133,8 @@ Stack : Java · Spring Framework · API REST · PostgreSQL · Test Driven Develo
 
 ### English
 
+Tech Lead
+
 Océan, a telematics and fleet management solution for company vehicles.
 
 Rewrite of the maintenance tracking API and of the vehicle usage rate tracking feature, guidance and mentoring of the tech team towards Software Craftsmanship practices.
@@ -124,9 +144,11 @@ Rewrite of the maintenance tracking API and of the vehicle usage rate tracking f
 
 Stack: Java · Spring Framework · REST API · PostgreSQL · Test Driven Development · Continuous Integration · Agile
 
-## Ortho Assistant · Software Engineer · 2020 - 2021
+## Ortho Assistant · Creator & Full Stack Developer · 2020 - 2021
 
 ### Français
+
+Créateur & Développeur Full Stack
 
 Les orthophonistes passent beaucoup de temps à chercher leur matériel, quand les séances s’enchaînent tout au long de la journée, ils ont besoin de se concentrer sur leurs patients et non sur des problèmes de logistique.
 
@@ -143,6 +165,8 @@ https://gitlab.com/atondoux/orthoassistant/
 
 ### English
 
+Creator & Full Stack Developer
+
 Speech therapists spend significant time looking for their material. With sessions following one another throughout the day, they need to focus on their patients, not on logistics.
 
 Ortho Assistant’s goal: reduce speech therapists’ mental load so they can devote more time to their patients and improve the quality of care.
@@ -156,9 +180,11 @@ Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · Po
 
 https://gitlab.com/atondoux/orthoassistant/
 
-## Softway Medical · Tech Lead Full Stack · 2015 - 2023
+## Softway Medical · Tech Lead · 2015 - 2023
 
 ### Français
+
+Tech Lead
 
 Leader européen de l’informatique en santé avec pour ambition d’améliorer le suivi des patients, la gestion des soins et le travail des professionnels de santé dans les hôpitaux.
 
@@ -172,6 +198,8 @@ Stack : Java · Spring Boot · JHipster · Quarkus · API REST · TypeScript · 
 Témoignage client sur le module de suivi des plaies : https://youtu.be/NwEPv_cVKC0
 
 ### English
+
+Tech Lead
 
 European leader in healthcare IT, with the ambition of improving patient follow-up, care management and the work of healthcare professionals in hospitals.
 
@@ -188,6 +216,8 @@ Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVK
 
 ### Français
 
+Aventurier & Photographe en Tour du Monde
+
 Une aventure exceptionnelle de 730 jours marquée par un enrichissement personnel inestimable avec de nombreuses découvertes naturelles, culturelles et humaines.
 
 → 60 000 km parcourus
@@ -197,6 +227,8 @@ Une aventure exceptionnelle de 730 jours marquée par un enrichissement personne
 Stack : Anglais · Adaptation · Négociation · Résilience · Ouverture d’esprit
 
 ### English
+
+Explorer & Photographer on a World Tour
 
 An exceptional 730-day adventure marked by invaluable personal growth and countless natural, cultural and human discoveries.
 
@@ -210,6 +242,8 @@ Stack: English · Adaptability · Negotiation · Resilience · Open-mindedness
 
 ### Français
 
+Ingénieur Logiciel
+
 Application stratégique de traitement et de reporting des marges des vendeurs de produits financiers de l’ensemble de la banque.
 
 Nouvelles fonctionnalités et correction d’anomalies, actions d’amélioration de la qualité, de la fiabilité du code au processus de livraison, formation des nouveaux arrivants, collaboration avec l’équipe support basée en Inde.
@@ -220,6 +254,8 @@ Nouvelles fonctionnalités et correction d’anomalies, actions d’amélioratio
 Stack : Java · Spring Framework · Hibernate · SAP ASE · Test Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
+
+Software Engineer
 
 Strategic application processing and reporting the margins of financial product sales teams across the bank.
 
@@ -234,6 +270,8 @@ Stack: Java · Spring Framework · Hibernate · SAP ASE · Test Driven Developme
 
 ### Français
 
+Ingénieur Logiciel
+
 CRM utilisé par les vendeurs et les analystes du département Equity Markets.
 
 Refonte du CRM côté backend et frontend, aide au cadrage et au chiffrage des évolutions, participation active à la mise en place d’un processus continu de refactoring.
@@ -244,6 +282,8 @@ Refonte du CRM côté backend et frontend, aide au cadrage et au chiffrage des �
 Stack : Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
+
+Software Engineer
 
 CRM used by salespeople and analysts in the Equity Markets department.
 
@@ -258,6 +298,8 @@ Stack: Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test
 
 ### Français
 
+Ingénieur Logiciel
+
 Service européen de réservation de billets de train de la SNCF.
 
 Nouvelles fonctionnalités et correction d’anomalies, analyse détaillée du moteur de réservation (Yield management), conception et implémentation de services web, tests automatisés en étroite collaboration avec l’équipe QA.
@@ -268,6 +310,8 @@ Nouvelles fonctionnalités et correction d’anomalies, analyse détaillée du m
 Stack : Java · Spring Framework · API REST · Oracle · MySQL · Test Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
+
+Software Engineer
 
 European train ticket booking service of SNCF.
 
@@ -282,6 +326,8 @@ Stack: Java · Spring Framework · REST API · Oracle · MySQL · Test Driven De
 
 ### Français
 
+Ingénieur Logiciel
+
 ONIAM, organisme national chargé de l’indemnisation des victimes d’accidents médicaux.
 
 Conception et développement d’une toute nouvelle application web de traitement des procédures d’indemnisation à base de solutions open source pour dématérialiser l’ensemble des processus métier (suivi des dossiers et gestion électronique des documents), formation technique des nouveaux arrivants, administration de la plateforme d’intégration continue.
@@ -292,6 +338,8 @@ Conception et développement d’une toute nouvelle application web de traitemen
 Stack : Java · Spring Framework · Hibernate · API REST · jBPM · JSF · SQL Server · Test Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
+
+Software Engineer
 
 ONIAM, the national office for the compensation of medical accident victims.
 
@@ -306,6 +354,8 @@ Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL S
 
 ### Français
 
+Ingénieur Logiciel
+
 Gestion de la distribution de l’eau en Île-de-France.
 
 Développement d’applications métier pensées pour les relevés à distance à l’aide d’un framework web de développement rapide conçu pour optimiser la bande passante, gestion des livraisons, rédaction des spécifications techniques, des manuels de génération de livrables et des procédures de déploiement.
@@ -316,6 +366,8 @@ Développement d’applications métier pensées pour les relevés à distance �
 Stack : Java · JavaScript · Oracle · Cycle en V
 
 ### English
+
+Software Engineer
 
 Water distribution management across the Paris region.
 
