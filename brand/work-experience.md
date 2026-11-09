@@ -150,11 +150,9 @@ Stack: Java · Spring Framework · REST API · PostgreSQL · Test Driven Develop
 
 Créateur & Développeur Full Stack
 
-Les orthophonistes passent beaucoup de temps à chercher leur matériel, quand les séances s’enchaînent tout au long de la journée, ils ont besoin de se concentrer sur leurs patients et non sur des problèmes de logistique.
+Entre deux patients, les orthophonistes cherchent leur matériel pour la prochaine séance. Ortho Assistant le trouve pour eux et leur libère du temps supplémentaire qu’ils peuvent consacrer à leurs patients.
 
-L’objectif d’Ortho Assistant : réduire la charge mentale des orthophonistes pour leur permettre de consacrer plus de temps à leurs patients et ainsi améliorer la qualité de la prise en charge.
-
-Conception, développement et déploiement d’un SaaS avec inventaire augmenté, référentiel personnalisable de pathologies et de compétences et gestion des emplacements du matériel.
+Conception, développement et déploiement d’un SaaS qui indique le matériel le plus efficace pour chaque patient, et où il est rangé : recherche intelligente, inventaire augmenté, référentiel personnalisable de pathologies et de compétences à travailler.
 
 → Plusieurs dizaines d’orthophonistes bêta-testeurs
 → Fonctionnalités de recherche intelligente du matériel pour aider à la préparation des séances
@@ -167,11 +165,9 @@ https://gitlab.com/atondoux/orthoassistant/
 
 Creator & Full Stack Developer
 
-Speech therapists spend significant time looking for their material. With sessions following one another throughout the day, they need to focus on their patients, not on logistics.
+Between patients, speech therapists hunt for the material for their next session. Ortho Assistant finds it for them and frees up extra time they can devote to their patients.
 
-Ortho Assistant’s goal: reduce speech therapists’ mental load so they can devote more time to their patients and improve the quality of care.
-
-Design, development and deployment of a SaaS with an advanced inventory, a customizable reference list of pathologies and skills, and material location management.
+Design, development and deployment of a SaaS that shows the most effective material for each patient and where it is stored: smart search, advanced inventory, customizable reference list of pathologies and skills to work on.
 
 → Several dozen beta-tester speech therapists
 → Smart search features for material to help prepare sessions
