@@ -111,7 +111,7 @@ Réécriture de l’API de suivi des entretiens et de la fonctionnalité de suiv
 → Suivi précis du taux d’utilisation des véhicules
 → Amélioration de la planification des entretiens
 
-Stack : Java · Spring Framework · API REST · SQL · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · API REST · PostgreSQL · Test Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -122,7 +122,7 @@ Rewrite of the maintenance tracking API and of the vehicle usage rate tracking f
 → Accurate tracking of vehicle usage rates
 → Improved maintenance planning
 
-Stack: Java · Spring Framework · REST API · SQL · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · REST API · PostgreSQL · Test Driven Development · Continuous Integration · Agile
 
 ## Ortho Assistant · Software Engineer · 2020 - 2021
 
