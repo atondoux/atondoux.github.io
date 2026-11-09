@@ -109,7 +109,7 @@ const fr = {
   'home.caseStudies.dyma.achievements.hours': '6500+ heures passées par les apprenants',
   'home.caseStudies.orange.title': 'Orange Business',
   'home.caseStudies.orange.description':
-    'Réécrire le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprises.',
+    'Refondre le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprises.',
   'home.caseStudies.orange.tags.fleetManagement': 'Gestion de flotte',
   'home.caseStudies.orange.achievements.usageRate': 'Suivi précis du taux d’utilisation des véhicules',
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Amélioration de la planification des entretiens',

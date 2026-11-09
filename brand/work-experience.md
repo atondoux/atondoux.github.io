@@ -124,7 +124,7 @@ Tech Lead
 
 Océan, solution de télématique et de gestion de flotte de véhicules d’entreprises.
 
-Réécriture de l’API de suivi des entretiens et de la fonctionnalité de suivi du taux d’utilisation des véhicules, accompagnement et mentorat de l’équipe tech vers des pratiques de Software Craftsmanship.
+Refonte de l’API de suivi des entretiens et de la fonctionnalité de suivi du taux d’utilisation des véhicules, accompagnement et mentorat de l’équipe tech vers des pratiques de Software Craftsmanship.
 
 → Suivi précis du taux d’utilisation des véhicules
 → Amélioration de la planification des entretiens
@@ -137,7 +137,7 @@ Tech Lead
 
 Océan, a telematics and fleet management solution for company vehicles.
 
-Rewrite of the maintenance tracking API and of the vehicle usage rate tracking feature, guidance and mentoring of the tech team towards Software Craftsmanship practices.
+Rewrite of the maintenance tracking API and the vehicle usage rate tracking feature, guidance and mentoring of the tech team towards Software Craftsmanship practices.
 
 → Accurate tracking of vehicle usage rates
 → Improved maintenance planning

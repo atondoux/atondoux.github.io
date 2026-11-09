@@ -35,7 +35,7 @@ const expectedCaseStudies = {
     {
       title: 'Orange Business',
       description:
-        'Réécrire le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprises.',
+        'Refondre le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprises.',
       tags: ['Gestion de flotte'],
       achievements: [
         'Suivi précis du taux d’utilisation des véhicules',
