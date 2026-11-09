@@ -8,8 +8,8 @@ Institut de cancérologie et de recherche clinique.
 
 Accompagnement de l’équipe tech dans la mise en place et l’adoption des meilleures pratiques d’ingénierie.
 
-→ Mise en place d’une démarche qualité
-→ Livraisons fiabilisées avec des pipelines d’intégration continue
+→ Démarche qualité installée
+→ Livraisons fiabilisées par l’intégration continue
 
 Stack : Java · Spring Boot · PostgreSQL · Test Driven Development · Jenkins
 
@@ -19,8 +19,8 @@ Cancer and clinical research institute.
 
 Coaching the tech team through setting up and adopting engineering best practices.
 
-→ Quality process established
-→ Reliable releases through continuous integration pipelines
+→ Quality process in place
+→ Reliable releases through continuous integration
 
 Stack: Java · Spring Boot · PostgreSQL · Test Driven Development · Jenkins
 

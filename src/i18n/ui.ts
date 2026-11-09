@@ -86,9 +86,8 @@ const fr = {
   'home.caseStudies.icap.description':
     'Accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie.',
   'home.caseStudies.icap.tags.healthcare': 'Santé',
-  'home.caseStudies.icap.achievements.qualityApproach': 'Mise en place d’une démarche qualité',
-  'home.caseStudies.icap.achievements.cicdPipelines':
-    'Livraisons fiabilisées avec des pipelines d’intégration continue',
+  'home.caseStudies.icap.achievements.qualityApproach': 'Démarche qualité installée',
+  'home.caseStudies.icap.achievements.cicdPipelines': 'Livraisons fiabilisées par l’intégration continue',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
     'Renforcer la capacité de financement de Malt et optimiser sa gestion du cash flow, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
@@ -247,8 +246,8 @@ const en = {
   'home.caseStudies.icap.description':
     'Coaching a ten-person tech team through setting up and adopting engineering best practices.',
   'home.caseStudies.icap.tags.healthcare': 'Healthcare',
-  'home.caseStudies.icap.achievements.qualityApproach': 'Quality process established',
-  'home.caseStudies.icap.achievements.cicdPipelines': 'Reliable releases through continuous integration pipelines',
+  'home.caseStudies.icap.achievements.qualityApproach': 'Quality process in place',
+  'home.caseStudies.icap.achievements.cicdPipelines': 'Reliable releases through continuous integration',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
     "Strengthening Malt's financing capacity and cash flow management, while drastically cutting the FinOps team's manual work.",
