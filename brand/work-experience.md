@@ -265,7 +265,7 @@ Nouvelles fonctionnalités et correction d’anomalies, analyse détaillée du m
 → Nouveaux services web B2C dans un environnement orienté services (SOA)
 → Suites de tests automatisés écrits avec l’équipe QA
 
-Stack : Java · Spring Framework · API REST · SQL · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · API REST · Oracle · MySQL · Test Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -276,7 +276,7 @@ New features and bug fixes, detailed analysis of the reservation engine (Yield m
 → New B2C web services in a service-oriented environment (SOA)
 → Automated test suites built with the QA team
 
-Stack: Java · Spring Framework · REST API · SQL · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · REST API · Oracle · MySQL · Test Driven Development · Continuous Integration · Agile
 
 ## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · Software Engineer · 2009 - 2010
 
