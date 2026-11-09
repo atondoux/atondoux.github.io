@@ -90,7 +90,7 @@ Stack: Kotlin · Java · Spring Boot · REST API · PostgreSQL · Test Driven De
 
 Formateur Spring Boot
 
-Plateforme de formation en ligne proposant un seul et unique parcours par sujet, avec un formateur dédié.
+Plateforme française de formation en ligne spécialisée dans le développement logiciel et l’intelligence artificielle, proposant un seul et unique parcours par sujet, avec un formateur dédié.
 
 Création et maintenance de la formation Spring Boot, adressée aux développeurs débutants ou expérimentés : leçons écrites, vidéos et exemples de code.
 
@@ -105,7 +105,7 @@ https://dyma.fr/formations/spring-boot
 
 Spring Boot Instructor
 
-Online learning platform offering one single learning path per subject, with a dedicated instructor.
+French online learning platform specializing in software development and artificial intelligence, offering one single learning path per subject, with a dedicated instructor.
 
 Creation and maintenance of the Spring Boot course, aimed at beginner and experienced developers: written lessons, videos and code examples.
 
