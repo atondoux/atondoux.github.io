@@ -218,7 +218,7 @@ Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVK
 
 Aventurier & Photographe en Tour du Monde
 
-Une aventure exceptionnelle de 730 jours marquée par un enrichissement personnel inestimable avec de nombreuses découvertes naturelles, culturelles et humaines.
+Une aventure exceptionnelle de 730 jours marquée par un enrichissement personnel inestimable et de nombreuses découvertes naturelles, culturelles et humaines.
 
 → 60 000 km parcourus
 → 17 pays visités : Allemagne, République tchèque, Pologne, Ukraine, Russie, Mongolie, Chine, Vietnam, Cambodge, Laos, Thaïlande, Myanmar, Philippines, Australie, Fidji, Samoa, Nouvelle-Zélande
