@@ -289,7 +289,7 @@ Conception et développement d’une toute nouvelle application web de traitemen
 → Procédures d’indemnisation 100% dématérialisées
 → Application développée avec des librairies 100% open source
 
-Stack : Java · Spring Framework · Hibernate · API REST · jBPM · JSF · SQL · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · Hibernate · API REST · jBPM · JSF · SQL Server · Test Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -300,7 +300,7 @@ Design and development of a brand-new web application to process compensation pr
 → Fully digital compensation procedures
 → Application built with 100% open source libraries
 
-Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL Server · Test Driven Development · Continuous Integration · Agile
 
 ## Veolia Eau · Software Engineer · 2007 - 2009
 
