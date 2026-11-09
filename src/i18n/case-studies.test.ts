@@ -66,7 +66,7 @@ const expectedCaseStudies = {
       title: 'Société Générale',
       description: 'Fiabiliser l’application stratégique de calcul de marges des vendeurs de produits financiers.',
       tags: ['Banque'],
-      achievements: ['Réduction drastique des incidents en production', 'Fiabilisation du processus de livraison'],
+      achievements: ['Réduction drastique des incidents en production', 'Documentation collaborative enrichie'],
     },
     {
       title: 'Natixis',
@@ -162,7 +162,7 @@ const expectedCaseStudies = {
       title: 'Société Générale',
       description: 'Making the strategic margin calculation application for financial product sales teams reliable.',
       tags: ['Banking'],
-      achievements: ['Drastic reduction in production incidents', 'More reliable delivery process'],
+      achievements: ['Drastic reduction in production incidents', 'Richer collaborative documentation'],
     },
     {
       title: 'Natixis',

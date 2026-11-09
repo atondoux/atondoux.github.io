@@ -132,7 +132,7 @@ const fr = {
     'Fiabiliser l’application stratégique de calcul de marges des vendeurs de produits financiers.',
   'home.caseStudies.societeGenerale.tags.banking': 'Banque',
   'home.caseStudies.societeGenerale.achievements.fewerIncidents': 'Réduction drastique des incidents en production',
-  'home.caseStudies.societeGenerale.achievements.reliableDelivery': 'Fiabilisation du processus de livraison',
+  'home.caseStudies.societeGenerale.achievements.collaborativeDocumentation': 'Documentation collaborative enrichie',
   'home.caseStudies.natixis.title': 'Natixis',
   'home.caseStudies.natixis.description':
     'Améliorer l’ergonomie et l’efficacité du CRM utilisé par le département des marchés boursiers.',
@@ -292,7 +292,7 @@ const en = {
     'Making the strategic margin calculation application for financial product sales teams reliable.',
   'home.caseStudies.societeGenerale.tags.banking': 'Banking',
   'home.caseStudies.societeGenerale.achievements.fewerIncidents': 'Drastic reduction in production incidents',
-  'home.caseStudies.societeGenerale.achievements.reliableDelivery': 'More reliable delivery process',
+  'home.caseStudies.societeGenerale.achievements.collaborativeDocumentation': 'Richer collaborative documentation',
   'home.caseStudies.natixis.title': 'Natixis',
   'home.caseStudies.natixis.description': 'Improving the user experience of the CRM used by the stock market division.',
   'home.caseStudies.natixis.tags.banking': 'Banking',

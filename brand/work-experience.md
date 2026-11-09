@@ -246,10 +246,10 @@ Ingénieur Logiciel
 
 Application stratégique de traitement et de reporting des marges des vendeurs de produits financiers de l’ensemble de la banque.
 
-Nouvelles fonctionnalités et correction d’anomalies, actions d’amélioration de la qualité, de la fiabilité du code au processus de livraison, formation des nouveaux arrivants, collaboration avec l’équipe support basée en Inde.
+Nouvelles fonctionnalités et correction d’anomalies, responsable de l’ensemble des actions visant à améliorer la qualité globale de l’application allant de la fiabilité du code au processus de livraison, formation des nouveaux arrivants, collaboration avec l’équipe support basée en Inde.
 
 → Réduction drastique des incidents en production
-→ Fiabilisation du processus de livraison
+→ Documentation collaborative enrichie
 
 Stack : Java · Spring Framework · Hibernate · SAP ASE · Test Driven Development · Intégration Continue · Méthodes agiles
 
@@ -259,10 +259,10 @@ Software Engineer
 
 Strategic application processing and reporting the margins of financial product sales teams across the bank.
 
-New features and bug fixes, quality improvements from code reliability to the delivery process, training of new team members, close work with the user support team based in India.
+New features and bug fixes, responsible for all initiatives to improve the application’s overall quality, from code reliability to the delivery process, training of new team members, close work with the user support team based in India.
 
 → Drastic reduction in production incidents
-→ More reliable delivery process
+→ Richer collaborative documentation
 
 Stack: Java · Spring Framework · Hibernate · SAP ASE · Test Driven Development · Continuous Integration · Agile
 
