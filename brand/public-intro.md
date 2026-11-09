@@ -14,7 +14,7 @@ J’ai collaboré avec des grands comptes, des PME et des startups en France et 
 
 ## English
 
-Senior Software Engineer with 20 years building SaaS and B2B web applications using Java/Kotlin, Spring Boot and Vue.js. User-experience and product engineering oriented, I have led teams of 4-10 people, with a focus on quality and continuous delivery. Test-Driven Development expert designing and building solutions for healthcare and digital services.
+Senior Software Engineer with 20 years building SaaS and B2B web applications using Java/Kotlin, Spring Boot and Vue.js. User-experience and product engineering oriented, I have led teams of 4-10 people, with a focus on quality and continuous delivery. Test-Driven Development expert, I design and build solutions for healthcare and digital services.
 
 What I do for you: Tech Leadership • Full-Stack Development • Project Bootstrapping • Legacy Project Recovery • Audit & Code Review • DevOps & Cloud • Architecture
 
