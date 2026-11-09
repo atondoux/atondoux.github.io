@@ -12,8 +12,6 @@ Ce que je fais pour vous : Leadership technique • Développement full-stack �
 
 J’ai collaboré avec des grands comptes, des PME et des startups en France et à l’international, soit en intégrant leurs équipes soit en leur livrant des projets de bout en bout.
 
-Pour en savoir plus : https://aurelientondoux.com
-
 ## English
 
 Senior Software Engineer with 20 years building SaaS and B2B web applications using Java, Kotlin, Spring Boot and Vue.js. Product engineering and user-experience oriented, having led teams of 4-10 people with a focus on quality and continuous delivery. Test-Driven Development expert designing and building solutions for healthcare and digital services.
@@ -21,5 +19,3 @@ Senior Software Engineer with 20 years building SaaS and B2B web applications us
 What I do for you: Tech Leadership • Full-Stack Development • Project Bootstrapping • Legacy Project Recovery • Audit & Code Review • DevOps & Cloud • Architecture
 
 I’ve worked with large companies, SMEs and startups in France and abroad, either by joining their teams or by delivering projects end to end.
-
-Learn more: https://aurelientondoux.com/en
