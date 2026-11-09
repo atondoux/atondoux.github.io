@@ -83,7 +83,7 @@ Création et maintenance de la formation Spring Boot, adressée aux développeur
 → 19 chapitres, 85 leçons, 170 quiz
 → 6500+ heures passées par les apprenants
 
-Stack : Java · Spring Boot · API REST · Clean Code · Test Driven Development
+Stack : Java · Spring Boot · API REST · PostgreSQL · Clean Code · Test Driven Development
 
 https://dyma.fr/formations/spring-boot
 
@@ -96,7 +96,7 @@ Creation and maintenance of the Spring Boot course, aimed at beginner and experi
 → 19 chapters, 85 lessons, 170 quizzes
 → 6,500+ hours spent by students
 
-Stack: Java · Spring Boot · REST API · Clean Code · Test Driven Development
+Stack: Java · Spring Boot · REST API · PostgreSQL · Clean Code · Test Driven Development
 
 https://dyma.fr/formations/spring-boot
 
