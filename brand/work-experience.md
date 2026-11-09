@@ -152,7 +152,7 @@ Créateur & Développeur Full Stack
 
 Entre deux séances, les orthophonistes passent beaucoup de temps à chercher leur matériel. Ortho Assistant le trouve pour eux, optimise la gestion des séances, réduit leur charge mentale et leur rend du temps de soins disponible pour leurs patients.
 
-Conception, développement et déploiement d’un SaaS qui indique le matériel le plus efficace pour chaque patient, et où il est rangé : recherche intelligente, inventaire augmenté, référentiel personnalisable de pathologies et de compétences à travailler.
+Conception, développement et déploiement d’un SaaS qui indique le matériel le plus efficace pour chaque patient et où il est rangé : inventaire augmenté, référentiel personnalisable de pathologies et de compétences à travailler, gestion des emplacements du matériel.
 
 → Plusieurs dizaines d’orthophonistes bêta-testeurs
 → Fonctionnalités de recherche intelligente du matériel pour aider à la préparation des séances
@@ -167,7 +167,7 @@ Creator & Full Stack Developer
 
 Between sessions, speech therapists spend a lot of time hunting for their material. Ortho Assistant finds it for them, optimizes session management, reduces their mental load and gives them back time to care for their patients.
 
-Design, development and deployment of a SaaS that shows the most effective material for each patient and where it is stored: smart search, advanced inventory, customizable reference list of pathologies and skills to work on.
+Design, development and deployment of a SaaS that shows the most effective material for each patient and where it is stored: advanced inventory, customizable reference list of pathologies and skills to work on, material location management.
 
 → Several dozen beta-tester speech therapists
 → Smart search features for material to help prepare sessions
