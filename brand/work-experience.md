@@ -1,6 +1,6 @@
 # Expériences
 
-## Institut du Cancer Avignon - Provence · Tech Lead · 2026 - today
+## Institut du Cancer Avignon - Provence · 2026 - today
 
 ### Français
 
@@ -28,7 +28,7 @@ Coaching the tech team through setting up and adopting engineering best practice
 
 Stack: Java · Spring Boot · PostgreSQL · Test Driven Development · Jenkins
 
-## Malt · Full-Stack Senior Software Engineer · 2025 - today
+## Malt · 2025 - today
 
 ### Français
 
@@ -56,7 +56,7 @@ Extension of the financing module’s features: integration of new partners, imp
 
 Stack: Kotlin · Spring Boot · REST API · Event Sourcing · RabbitMQ · Vue.js · Nuxt · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
 
-## Namirial · Tech Lead · 2024 - 2025
+## Namirial · 2024 - 2025
 
 ### Français
 
@@ -84,7 +84,7 @@ Evolution of the customer acquisition journey platform, integration of the Yousi
 
 Stack: Kotlin · Java · Spring Boot · REST API · PostgreSQL · Test Driven Development · GitLab CI/CD · Kibana · Agile
 
-## Dyma · Spring Boot Instructor · 2023 - today
+## Dyma · 2023 - today
 
 ### Français
 
@@ -116,7 +116,7 @@ Stack: Java · Spring Boot · REST API · PostgreSQL · Clean Code · Test Drive
 
 https://dyma.fr/formations/spring-boot
 
-## Orange Business · Tech Lead · 2023 - 2024
+## Orange Business · 2023 - 2024
 
 ### Français
 
@@ -144,7 +144,7 @@ Rewrite of the maintenance tracking API and the vehicle usage rate tracking feat
 
 Stack: Java · Spring Framework · REST API · PostgreSQL · Test Driven Development · Continuous Integration · Agile
 
-## Ortho Assistant · Creator & Full Stack Developer · 2020 - 2021
+## Ortho Assistant · 2020 - 2021
 
 ### Français
 
@@ -180,7 +180,7 @@ Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · Po
 
 https://gitlab.com/atondoux/orthoassistant/
 
-## Softway Medical · Tech Lead · 2015 - 2023
+## Softway Medical · 2015 - 2023
 
 ### Français
 
@@ -212,7 +212,7 @@ Stack: Java · Spring Boot · JHipster · Quarkus · REST API · TypeScript · V
 
 Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVKC0
 
-## Tour du monde / World Tour · Aventurier & Photographe en Tour du Monde / Explorer & Photographer on a World Tour · 2013 - 2015
+## Tour du monde / World Tour · 2013 - 2015
 
 ### Français
 
@@ -238,7 +238,7 @@ An exceptional 730-day adventure marked by invaluable personal growth and countl
 
 Stack: English · Adaptability · Negotiation · Resilience · Open-mindedness
 
-## Société Générale · Software Engineer · 2012 - 2013
+## Société Générale · 2012 - 2013
 
 ### Français
 
@@ -266,7 +266,7 @@ New features and bug fixes, responsible for all initiatives to improve the appli
 
 Stack: Java · Spring Framework · Hibernate · SAP ASE · Test Driven Development · Continuous Integration · Agile
 
-## Natixis · Software Engineer · 2011 - 2012
+## Natixis · 2011 - 2012
 
 ### Français
 
@@ -294,7 +294,7 @@ Revamped the CRM on the backend and frontend, helped scope and estimate developm
 
 Stack: Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test Driven Development · Continuous Integration · Agile
 
-## SNCF Connect & Tech · Software Engineer · 2010 - 2011
+## SNCF Connect & Tech · 2010 - 2011
 
 ### Français
 
@@ -322,7 +322,7 @@ New features and bug fixes, detailed analysis of the reservation engine (Yield m
 
 Stack: Java · Spring Framework · REST API · Oracle · MySQL · Test Driven Development · Continuous Integration · Agile
 
-## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · Software Engineer · 2009 - 2010
+## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · 2009 - 2010
 
 ### Français
 
@@ -350,7 +350,7 @@ Design and development of a brand-new web application to process compensation pr
 
 Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL Server · Test Driven Development · Continuous Integration · Agile
 
-## Veolia Eau · Software Engineer · 2007 - 2009
+## Veolia Eau · 2007 - 2009
 
 ### Français
 
