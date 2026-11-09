@@ -150,7 +150,7 @@ Stack: Java · Spring Framework · REST API · PostgreSQL · Test Driven Develop
 
 Créateur & Développeur Full Stack
 
-Entre deux séances, les orthophonistes cherchent leur matériel. Ortho Assistant le trouve pour eux et leur libère du temps supplémentaire qu’ils peuvent consacrer à leurs patients.
+Entre deux séances, les orthophonistes passent beaucoup de temps à chercher leur matériel. Ortho Assistant le trouve pour eux, optimise la gestion des séances, réduit leur charge mentale et leur rend du temps de soins disponible pour leurs patients.
 
 Conception, développement et déploiement d’un SaaS qui indique le matériel le plus efficace pour chaque patient, et où il est rangé : recherche intelligente, inventaire augmenté, référentiel personnalisable de pathologies et de compétences à travailler.
 
@@ -165,7 +165,7 @@ https://gitlab.com/atondoux/orthoassistant/
 
 Creator & Full Stack Developer
 
-Between sessions, speech therapists hunt for their material. Ortho Assistant finds it for them and frees up extra time they can devote to their patients.
+Between sessions, speech therapists spend a lot of time hunting for their material. Ortho Assistant finds it for them, optimizes session management, reduces their mental load and gives them back time to care for their patients.
 
 Design, development and deployment of a SaaS that shows the most effective material for each patient and where it is stored: smart search, advanced inventory, customizable reference list of pathologies and skills to work on.
 
