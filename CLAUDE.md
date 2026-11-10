@@ -64,7 +64,8 @@ pnpm test:all            # Unit + E2E
   same paste-ready plain text (each entry is the job title, repeated in each language block even when both languages match, one line of context, the mission, `→` results, then `Stack :`) and slightly more detailed
   than the case study cards: it is built from the cards and `legacy-nuxt/content/{fr,en}/portfolio/`, and the card
   figures win over the legacy ones. In both files, methodology names keep their English hyphenated form in both
-  languages (Test-Driven Development, as in `ui.ts`, Domain-Driven Design, Event-Driven Architecture). The site never
+  languages (Test-Driven Development, as in `ui.ts`, Domain-Driven Design, Event-Driven Architecture). "Full Stack" has no hyphen in French and "Full-Stack" keeps it in
+  English, here and in `ui.ts`. The site never
   imports them, and they sit outside `public/` so they are not deployed.
 - The browser tab title uses the "AT Code Lab" brand: the home page shows `home.title` alone (`ignoreTitleTemplate`),
   and other pages go through `metadata.title.template` in `config.yaml` (`'%s — AT Code Lab'`). Descriptions,

@@ -69,7 +69,7 @@ const localizedHeroes = [
     servicesSubtitle: 'Des logiciels qui durent, des équipes qui progressent, des résultats mesurables.',
     serviceTitles: [
       'Leadership Technique',
-      'Développement Full-Stack',
+      'Développement Full Stack',
       'Lancement de Projets',
       'Reprise de Projets Legacy',
       'Audit & Revue de Code',

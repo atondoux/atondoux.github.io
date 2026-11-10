@@ -39,7 +39,7 @@ const fr = {
   'home.services.techLeadership.title': 'Leadership Technique',
   'home.services.techLeadership.description':
     'Des pratiques d’ingénierie qui deviennent des réflexes d’équipe : TDD, clean architecture, clean code, revue de code, CI/CD.',
-  'home.services.fullStack.title': 'Développement Full-Stack',
+  'home.services.fullStack.title': 'Développement Full Stack',
   'home.services.fullStack.description':
     'Des applications web sur mesure, pensées pour vos utilisateurs : back-end, front-end, déploiement, monitoring.',
   'home.services.projectBootstrap.title': 'Lancement de Projets',
