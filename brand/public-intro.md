@@ -10,7 +10,7 @@ Ingénieur Logiciel Senior avec 20 ans d’expérience dans la création d’app
 
 Orienté expérience utilisateur et product engineering, j’ai accompagné et mentoré des équipes de 4 à 10 personnes, en mettant l’accent sur la qualité et la livraison continue.
 
-Expert en Test Driven Development, je conçois et développe des solutions dans l’univers de la santé et des services numériques.
+Expert en Test-Driven Development, je conçois et développe des solutions dans l’univers de la santé et des services numériques.
 
 Ce que je peux faire pour vous :
 → Leadership technique

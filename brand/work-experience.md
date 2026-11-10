@@ -13,7 +13,7 @@ Accompagnement de l’équipe tech dans la mise en place et l’adoption des mei
 → Démarche qualité installée
 → Livraisons fiabilisées par l’intégration continue
 
-Stack : Java · Spring Boot · PostgreSQL · Test Driven Development · Jenkins
+Stack : Java · Spring Boot · PostgreSQL · Test-Driven Development · Jenkins
 
 ### English
 
@@ -26,7 +26,7 @@ Coaching the tech team through setting up and adopting engineering best practice
 → Quality process in place
 → Reliable releases through continuous integration
 
-Stack: Java · Spring Boot · PostgreSQL · Test Driven Development · Jenkins
+Stack: Java · Spring Boot · PostgreSQL · Test-Driven Development · Jenkins
 
 ## Malt · 2025 - today
 
@@ -41,7 +41,7 @@ Extension des fonctionnalités du module de financement : intégration de nouvea
 → 90% des freelances payés en 10 jours
 → Processus de financement automatisé à 95%
 
-Stack : Kotlin · Spring Boot · API REST · Event-Driven Architecture · Event Sourcing · RabbitMQ · Vue.js · Nuxt · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
+Stack : Kotlin · Spring Boot · API REST · Event-Driven Architecture · Event Sourcing · RabbitMQ · Vue.js · Nuxt · PostgreSQL · MongoDB · Test-Driven Development · GitLab CI/CD · Datadog
 
 ### English
 
@@ -54,7 +54,7 @@ Extension of the financing module’s features: integration of new partners, imp
 → 90% of freelancers paid within 10 days
 → 95% automated financing process
 
-Stack: Kotlin · Spring Boot · REST API · Event-Driven Architecture · Event Sourcing · RabbitMQ · Vue.js · Nuxt · PostgreSQL · MongoDB · Test Driven Development · GitLab CI/CD · Datadog
+Stack: Kotlin · Spring Boot · REST API · Event-Driven Architecture · Event Sourcing · RabbitMQ · Vue.js · Nuxt · PostgreSQL · MongoDB · Test-Driven Development · GitLab CI/CD · Datadog
 
 ## Namirial · 2024 - 2025
 
@@ -69,7 +69,7 @@ Evolution de la plateforme de parcours d’acquisition clients, intégration de 
 → Contrats signés en ligne avec Yousign
 → Fraude détectée dès la souscription
 
-Stack : Kotlin · Java · Spring Boot · API REST · PostgreSQL · Test Driven Development · GitLab CI/CD · Kibana · Méthodes agiles
+Stack : Kotlin · Java · Spring Boot · API REST · PostgreSQL · Test-Driven Development · GitLab CI/CD · Kibana · Méthodes agiles
 
 ### English
 
@@ -82,7 +82,7 @@ Evolution of the customer acquisition journey platform, integration of the Yousi
 → Contracts signed online with Yousign
 → Fraud caught at sign-up
 
-Stack: Kotlin · Java · Spring Boot · REST API · PostgreSQL · Test Driven Development · GitLab CI/CD · Kibana · Agile
+Stack: Kotlin · Java · Spring Boot · REST API · PostgreSQL · Test-Driven Development · GitLab CI/CD · Kibana · Agile
 
 ## Dyma · 2023 - today
 
@@ -97,7 +97,7 @@ Création et maintenance de la formation Spring Boot, adressée aux développeur
 → 19 chapitres, 85 leçons, 170 quiz
 → 6500+ heures passées par les apprenants
 
-Stack : Java · Spring Boot · API REST · PostgreSQL · Clean Code · Test Driven Development
+Stack : Java · Spring Boot · API REST · PostgreSQL · Clean Code · Test-Driven Development
 
 https://dyma.fr/formations/spring-boot
 
@@ -112,7 +112,7 @@ Creation and maintenance of the Spring Boot course, aimed at beginner and experi
 → 19 chapters, 85 lessons, 170 quizzes
 → 6,500+ hours spent by students
 
-Stack: Java · Spring Boot · REST API · PostgreSQL · Clean Code · Test Driven Development
+Stack: Java · Spring Boot · REST API · PostgreSQL · Clean Code · Test-Driven Development
 
 https://dyma.fr/formations/spring-boot
 
@@ -129,7 +129,7 @@ Refonte de l’API de suivi des entretiens et de la fonctionnalité de suivi du 
 → Suivi précis du taux d’utilisation des véhicules
 → Amélioration de la planification des entretiens
 
-Stack : Java · Spring Framework · API REST · PostgreSQL · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · API REST · PostgreSQL · Test-Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -142,7 +142,7 @@ Rewrite of the maintenance tracking API and the vehicle usage rate tracking feat
 → Accurate tracking of vehicle usage rates
 → Improved maintenance planning
 
-Stack: Java · Spring Framework · REST API · PostgreSQL · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · REST API · PostgreSQL · Test-Driven Development · Continuous Integration · Agile
 
 ## Ortho Assistant · 2020 - 2021
 
@@ -157,7 +157,7 @@ Conception, développement et déploiement d’un SaaS qui indique le matériel 
 → Plusieurs dizaines d’orthophonistes bêta-testeurs
 → Fonctionnalités de recherche intelligente du matériel pour aider à la préparation des séances
 
-Stack : Java · Spring Boot · JHipster · API REST · TypeScript · Vue.js · PostgreSQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker
+Stack : Java · Spring Boot · JHipster · API REST · TypeScript · Vue.js · PostgreSQL · Test-Driven Development · Domain-Driven Design · GitLab CI/CD · Docker
 
 https://gitlab.com/atondoux/orthoassistant/
 
@@ -172,7 +172,7 @@ Design, development and deployment of a SaaS that shows the most effective mater
 → Several dozen beta-tester speech therapists
 → Smart search features for material to help prepare sessions
 
-Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · PostgreSQL · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker
+Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · PostgreSQL · Test-Driven Development · Domain-Driven Design · GitLab CI/CD · Docker
 
 https://gitlab.com/atondoux/orthoassistant/
 
@@ -189,7 +189,7 @@ Participation aux décisions dans toutes les étapes des projets : des premiers 
 → Nouveaux modules spécialisés dans le suivi des patients
 → Livraison et déploiement continus sur une architecture micro-services
 
-Stack : Java · Spring Boot · JHipster · Quarkus · API REST · TypeScript · Vue.js · Oracle · MongoDB · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker · Microservices · OpenShift · Graylog · DevOps · Méthodes agiles
+Stack : Java · Spring Boot · JHipster · Quarkus · API REST · TypeScript · Vue.js · Oracle · MongoDB · Test-Driven Development · Domain-Driven Design · GitLab CI/CD · Docker · Microservices · OpenShift · Graylog · DevOps · Méthodes agiles
 
 Témoignage client sur le module de suivi des plaies : https://youtu.be/NwEPv_cVKC0
 
@@ -204,7 +204,7 @@ Involvement in decisions at every stage of the projects: from the first design w
 → New modules designed for patient follow-up
 → Continuous delivery and deployment on a microservices architecture
 
-Stack: Java · Spring Boot · JHipster · Quarkus · REST API · TypeScript · Vue.js · Oracle · MongoDB · Test Driven Development · Domain Driven Design · GitLab CI/CD · Docker · Microservices · OpenShift · Graylog · DevOps · Agile
+Stack: Java · Spring Boot · JHipster · Quarkus · REST API · TypeScript · Vue.js · Oracle · MongoDB · Test-Driven Development · Domain-Driven Design · GitLab CI/CD · Docker · Microservices · OpenShift · Graylog · DevOps · Agile
 
 Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVKC0
 
@@ -247,7 +247,7 @@ Nouvelles fonctionnalités et correction d’anomalies, responsable de l’ensem
 → Réduction drastique des incidents en production
 → Documentation collaborative enrichie
 
-Stack : Java · Spring Framework · Hibernate · SAP ASE · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · Hibernate · SAP ASE · Test-Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -260,7 +260,7 @@ New features and bug fixes, responsible for all initiatives to improve the appli
 → Drastic reduction in production incidents
 → Richer collaborative documentation
 
-Stack: Java · Spring Framework · Hibernate · SAP ASE · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · Hibernate · SAP ASE · Test-Driven Development · Continuous Integration · Agile
 
 ## Natixis · 2011 - 2012
 
@@ -275,7 +275,7 @@ Refonte du CRM côté backend et frontend, aide au cadrage et au chiffrage des �
 → Nouveaux composants côté backend et côté frontend
 → Code legacy assaini par un refactoring continu
 
-Stack : Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test-Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -288,7 +288,7 @@ Revamped the CRM on the backend and frontend, helped scope and estimate developm
 → New backend and frontend components
 → Legacy code cleaned up through continuous refactoring
 
-Stack: Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test-Driven Development · Continuous Integration · Agile
 
 ## SNCF Connect & Tech · 2010 - 2011
 
@@ -303,7 +303,7 @@ Nouvelles fonctionnalités et correction d’anomalies, analyse détaillée du m
 → Nouveaux services web B2C dans un environnement orienté services (SOA)
 → Suites de tests automatisés écrits avec l’équipe QA
 
-Stack : Java · Spring Framework · API REST · Oracle · MySQL · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · API REST · Oracle · MySQL · Test-Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -316,7 +316,7 @@ New features and bug fixes, detailed analysis of the reservation engine (Yield m
 → New B2C web services in a service-oriented environment (SOA)
 → Automated test suites built with the QA team
 
-Stack: Java · Spring Framework · REST API · Oracle · MySQL · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · REST API · Oracle · MySQL · Test-Driven Development · Continuous Integration · Agile
 
 ## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · 2009 - 2010
 
@@ -331,7 +331,7 @@ Conception et développement d’une toute nouvelle application web de traitemen
 → Procédures d’indemnisation 100% dématérialisées
 → Application développée avec des librairies 100% open source
 
-Stack : Java · Spring Framework · Hibernate · API REST · jBPM · JSF · SQL Server · Test Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · Hibernate · API REST · jBPM · JSF · SQL Server · Test-Driven Development · Intégration Continue · Méthodes agiles
 
 ### English
 
@@ -344,7 +344,7 @@ Design and development of a brand-new web application to process compensation pr
 → Fully digital compensation procedures
 → Application built with 100% open source libraries
 
-Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL Server · Test Driven Development · Continuous Integration · Agile
+Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL Server · Test-Driven Development · Continuous Integration · Agile
 
 ## Veolia Eau · 2007 - 2009
 

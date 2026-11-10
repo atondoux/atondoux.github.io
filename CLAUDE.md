@@ -63,7 +63,9 @@ pnpm test:all            # Unit + E2E
   profiles, newest first with the dates in each heading and both languages side by side under each experience so they are edited together, in the
   same paste-ready plain text (each entry is the job title, repeated in each language block even when both languages match, one line of context, the mission, `→` results, then `Stack :`) and slightly more detailed
   than the case study cards: it is built from the cards and `legacy-nuxt/content/{fr,en}/portfolio/`, and the card
-  figures win over the legacy ones. The site never imports them, and they sit outside `public/` so they are not deployed.
+  figures win over the legacy ones. In both files, methodology names keep their English hyphenated form in both
+  languages (Test-Driven Development, as in `ui.ts`, Domain-Driven Design, Event-Driven Architecture). The site never
+  imports them, and they sit outside `public/` so they are not deployed.
 - The browser tab title uses the "AT Code Lab" brand: the home page shows `home.title` alone (`ignoreTitleTemplate`),
   and other pages go through `metadata.title.template` in `config.yaml` (`'%s — AT Code Lab'`). Descriptions,
   `openGraph.site_name` and the footer copyright keep "Aurélien Tondoux". Guarded by `e2e/i18n.spec.ts`.
