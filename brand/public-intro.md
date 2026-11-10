@@ -14,7 +14,7 @@ Expert en Test-Driven Development, je conçois et développe des solutions dans 
 
 Ce que je peux faire pour vous :
 → Leadership technique
-→ Développement full-stack
+→ Développement full stack
 → Lancement de projets
 → Reprise de projets legacy
 → Audit & revue de code
