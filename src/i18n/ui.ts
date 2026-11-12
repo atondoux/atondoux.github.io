@@ -38,19 +38,19 @@ const fr = {
   'home.collaborations.logoAlt': 'Logo de {company}',
   'home.services.title': 'Services',
   'home.services.subtitle': 'Des logiciels qui durent, des équipes qui progressent, des résultats mesurables.',
-  'home.services.techLeadership.title': 'Leadership technique',
+  'home.services.techLeadership.title': 'Leadership Technique',
   'home.services.techLeadership.description':
     'Des pratiques d’ingénierie qui deviennent des réflexes d’équipe : TDD, clean architecture, clean code, revue de code, CI/CD.',
   'home.services.fullStack.title': 'Développement Full Stack',
   'home.services.fullStack.description':
     'Des applications web sur mesure, pensées pour vos utilisateurs : backend, frontend, déploiement, monitoring.',
-  'home.services.projectBootstrap.title': 'Lancement de projets',
+  'home.services.projectBootstrap.title': 'Lancement de Projets',
   'home.services.projectBootstrap.description':
     'Des fondations solides et un transfert de compétences à vos équipes pour vous permettre de livrer rapidement et efficacement.',
-  'home.services.legacyRecovery.title': 'Reprise de projets legacy',
+  'home.services.legacyRecovery.title': 'Reprise de Projets Legacy',
   'home.services.legacyRecovery.description':
     'Reprendre la main sur un projet devenu coûteux, sans tout réécrire : stabilisation, modernisation, réduction progressive de la dette technique.',
-  'home.services.codeReview.title': 'Audit & revue de code',
+  'home.services.codeReview.title': 'Audit & Revue de Code',
   'home.services.codeReview.description':
     'Savoir où en est votre code avant de décider : dette technique, risques, axes d’amélioration concrets.',
   'home.services.devopsCloud.title': 'DevOps & Cloud',

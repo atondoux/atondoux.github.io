@@ -4,11 +4,11 @@ import { getServiceItems } from './services';
 
 const expectedTitles = {
   fr: [
-    'Leadership technique',
+    'Leadership Technique',
     'Développement Full Stack',
-    'Lancement de projets',
-    'Reprise de projets legacy',
-    'Audit & revue de code',
+    'Lancement de Projets',
+    'Reprise de Projets Legacy',
+    'Audit & Revue de Code',
     'DevOps & Cloud',
     'Architecture',
   ],
