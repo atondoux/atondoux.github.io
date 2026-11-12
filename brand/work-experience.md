@@ -45,7 +45,7 @@ Stack : Kotlin · Spring Boot · API REST · Event-Driven Architecture · Event 
 
 ### English
 
-Full-Stack Senior Software Engineer
+Senior Full-Stack Software Engineer
 
 Leading platform for managing freelancers.
 
@@ -64,7 +64,7 @@ Tech Lead
 
 Plateforme de services de confiance qualifiés : parcours de souscription en ligne avec vérification d’identité, signature électronique et soumission de documents.
 
-Evolution de la plateforme de parcours d’acquisition clients, intégration de l’API de signature électronique de Yousign, orchestration des services de vérification de documents et de détection de fraude.
+Évolution de la plateforme de parcours d’acquisition clients, intégration de l’API de signature électronique de Yousign, orchestration des services de vérification de documents et de détection de fraude.
 
 → Contrats signés en ligne avec Yousign
 → Fraude détectée dès la souscription
@@ -110,7 +110,7 @@ French online learning platform for AI and software development, offering one si
 Creation and maintenance of the Spring Boot course, aimed at beginner and experienced developers: written lessons, videos and code examples.
 
 → 19 chapters, 85 lessons, 170 quizzes
-→ 6,500+ hours spent by students
+→ 6 500+ hours spent by students
 
 Stack: Java · Spring Boot · REST API · PostgreSQL · Clean Code · Test-Driven Development
 
@@ -122,14 +122,14 @@ https://dyma.fr/formations/spring-boot
 
 Tech Lead
 
-Océan, solution de télématique et de gestion de flotte de véhicules d’entreprises.
+Océan, solution de télématique et de gestion de flotte de véhicules d’entreprise.
 
 Refonte de l’API de suivi des entretiens et de la fonctionnalité de suivi du taux d’utilisation des véhicules, accompagnement et mentorat de l’équipe tech vers des pratiques de Software Craftsmanship.
 
 → Suivi précis du taux d’utilisation des véhicules
 → Amélioration de la planification des entretiens
 
-Stack : Java · Spring Framework · API REST · PostgreSQL · Test-Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · API REST · PostgreSQL · Test-Driven Development · Intégration continue · Méthodes agiles
 
 ### English
 
@@ -163,7 +163,7 @@ https://gitlab.com/atondoux/orthoassistant/
 
 ### English
 
-Creator & Full Stack Developer
+Creator & Full-Stack Developer
 
 Between sessions, speech therapists spend a lot of time hunting for their material. Ortho Assistant finds it for them, optimizes session management, reduces their mental load and gives them back time to care for their patients.
 
@@ -187,7 +187,7 @@ Leader européen de l’informatique en santé avec pour ambition d’améliorer
 Participation aux décisions dans toutes les étapes des projets : des premiers ateliers de conception avec les utilisateurs finaux en passant par les choix d’architecture jusqu’au déploiement en production. Promotion des bonnes pratiques au sein des équipes tech, participation active au processus de recrutement de nouveaux développeurs.
 
 → Nouveaux modules spécialisés dans le suivi des patients
-→ Livraison et déploiement continus sur une architecture micro-services
+→ Livraison et déploiement continus sur une architecture microservices
 
 Stack : Java · Spring Boot · JHipster · Quarkus · API REST · TypeScript · Vue.js · Oracle · MongoDB · Test-Driven Development · Domain-Driven Design · GitLab CI/CD · Docker · Microservices · OpenShift · Graylog · DevOps · Méthodes agiles
 
@@ -218,7 +218,7 @@ Une aventure exceptionnelle de 730 jours marquée par un enrichissement personne
 
 → 60 000 km parcourus
 → 17 pays visités : Allemagne, République tchèque, Pologne, Ukraine, Russie, Mongolie, Chine, Vietnam, Cambodge, Laos, Thaïlande, Myanmar, Philippines, Australie, Fidji, Samoa, Nouvelle-Zélande
-→ une expérience professionnelle en tant qu’Ingénieur Logiciel en Australie
+→ Une expérience professionnelle en tant qu’Ingénieur Logiciel en Australie
 
 Stack : Anglais · Adaptation · Négociation · Résilience · Ouverture d’esprit
 
@@ -228,9 +228,9 @@ Explorer & Photographer on a World Tour
 
 An exceptional 730-day adventure marked by invaluable personal growth and countless natural, cultural and human discoveries.
 
-→ 60,000 km travelled
+→ 60 000 km traveled
 → 17 countries visited: Germany, Czech Republic, Poland, Ukraine, Russia, Mongolia, China, Vietnam, Cambodia, Laos, Thailand, Myanmar, Philippines, Australia, Fiji, Samoa, New Zealand
-→ A professional experience as a Software Engineer in Australia
+→ Work experience as a Software Engineer in Australia
 
 Stack: English · Adaptability · Negotiation · Resilience · Open-mindedness
 
@@ -247,13 +247,13 @@ Nouvelles fonctionnalités et correction d’anomalies, responsable de l’ensem
 → Réduction drastique des incidents en production
 → Documentation collaborative enrichie
 
-Stack : Java · Spring Framework · Hibernate · SAP ASE · Test-Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · Hibernate · SAP ASE · Test-Driven Development · Intégration continue · Méthodes agiles
 
 ### English
 
 Software Engineer
 
-Strategic application processing and reporting the margins of financial product sales teams across the bank.
+Strategic application for processing and reporting on the margins of financial product sales teams across the bank.
 
 New features and bug fixes, responsible for all initiatives to improve the application’s overall quality, from code reliability to the delivery process, training of new team members, close work with the user support team based in India.
 
@@ -275,7 +275,7 @@ Refonte du CRM côté backend et frontend, aide au cadrage et au chiffrage des �
 → Nouveaux composants côté backend et côté frontend
 → Code legacy assaini par un refactoring continu
 
-Stack : Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test-Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test-Driven Development · Intégration continue · Méthodes agiles
 
 ### English
 
@@ -283,7 +283,7 @@ Software Engineer
 
 CRM used by salespeople and analysts in the Equity Markets department.
 
-Revamped the CRM on the backend and frontend, helped scope and estimate developments, actively helped set up a continuous refactoring process.
+Revamped the CRM on the backend and frontend, helped scope and estimate enhancements, actively helped set up a continuous refactoring process.
 
 → New backend and frontend components
 → Legacy code cleaned up through continuous refactoring
@@ -301,9 +301,9 @@ Service européen de réservation de billets de train de la SNCF.
 Nouvelles fonctionnalités et correction d’anomalies, analyse détaillée du moteur de réservation (Yield management), conception et implémentation de services web, tests automatisés en étroite collaboration avec l’équipe QA.
 
 → Nouveaux services web B2C dans un environnement orienté services (SOA)
-→ Suites de tests automatisés écrits avec l’équipe QA
+→ Suites de tests automatisés écrites avec l’équipe QA
 
-Stack : Java · Spring Framework · API REST · Oracle · MySQL · Test-Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · API REST · Oracle · MySQL · Test-Driven Development · Intégration continue · Méthodes agiles
 
 ### English
 
@@ -329,9 +329,9 @@ ONIAM, organisme national chargé de l’indemnisation des victimes d’accident
 Conception et développement d’une toute nouvelle application web de traitement des procédures d’indemnisation à base de solutions open source pour dématérialiser l’ensemble des processus métier (suivi des dossiers et gestion électronique des documents), formation technique des nouveaux arrivants, administration de la plateforme d’intégration continue.
 
 → Procédures d’indemnisation 100% dématérialisées
-→ Application développée avec des librairies 100% open source
+→ Application développée avec des bibliothèques 100% open source
 
-Stack : Java · Spring Framework · Hibernate · API REST · jBPM · JSF · SQL Server · Test-Driven Development · Intégration Continue · Méthodes agiles
+Stack : Java · Spring Framework · Hibernate · API REST · jBPM · JSF · SQL Server · Test-Driven Development · Intégration continue · Méthodes agiles
 
 ### English
 
@@ -369,7 +369,7 @@ Water distribution management across the Paris region.
 
 Development of business applications designed for remote meter readings using a rapid web development framework built to optimize bandwidth usage, release management, writing of technical specifications, release documentation and deployment procedures.
 
-→ 500,000+ customer contracts managed
+→ 500 000+ customer contracts managed
 → Releases on a high-availability platform
 
 Stack: Java · JavaScript · Oracle · Waterfall

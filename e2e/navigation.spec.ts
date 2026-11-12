@@ -7,6 +7,8 @@ const localizedMenus = [
     labels: ['Accueil', 'À propos', 'Services', 'Tarifs', 'Cas clients', 'Contact'],
     sitemap: 'Plan du site',
     contactCta: 'Me contacter',
+    navigationName: 'Navigation principale',
+    menuButtonName: 'Ouvrir ou fermer le menu',
   },
   {
     lang: 'en',
@@ -14,6 +16,8 @@ const localizedMenus = [
     labels: ['Home', 'About', 'Services', 'Pricing', 'Case studies', 'Contact'],
     sitemap: 'Sitemap',
     contactCta: 'Contact me',
+    navigationName: 'Main navigation',
+    menuButtonName: 'Toggle menu',
   },
 ] as const;
 
@@ -53,7 +57,18 @@ const expectSectionBelowHeader = async (page: Page, id: string) => {
     .toBeGreaterThanOrEqual(headerBottom - 1);
 };
 
-for (const { lang, path, labels, sitemap, contactCta } of localizedMenus) {
+for (const { lang, path, labels, sitemap, contactCta, navigationName, menuButtonName } of localizedMenus) {
+  test(`names the navigation landmark and the menu button in ${lang} on ${path}`, async ({ page }) => {
+    await page.setViewportSize(WIDE_DESKTOP_VIEWPORT);
+    await page.goto(path);
+
+    await expect(page.getByRole('navigation', { name: navigationName, exact: true })).toHaveCount(1);
+
+    await page.setViewportSize(MOBILE_VIEWPORT);
+
+    await expect(page.locator('#header').getByRole('button', { name: menuButtonName, exact: true })).toBeVisible();
+  });
+
   test(`lists the ${lang} section labels in order in the header of ${path}`, async ({ page }) => {
     await page.goto(path);
 

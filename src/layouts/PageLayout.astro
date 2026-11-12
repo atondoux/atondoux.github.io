@@ -36,7 +36,15 @@ const languageSwitcher = {
   {Astro.slots.has('header') ? (
     <slot name="header" />
   ) : (
-    <Header {...headerData} isSticky showToggleTheme toggleThemeLabel={t('theme.toggle')} {languageSwitcher} />
+    <Header
+      {...headerData}
+      isSticky
+      showToggleTheme
+      toggleThemeLabel={t('theme.toggle')}
+      mainNavigationLabel={t('header.mainNavigation')}
+      toggleMenuLabel={t('header.toggleMenu')}
+      {languageSwitcher}
+    />
   )}
   <main class="flex-1">
     <slot />

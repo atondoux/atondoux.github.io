@@ -27,7 +27,7 @@ const expectedFeatures = {
     [
       'Conseil en choix d’architecture',
       'Conseil en choix techniques',
-      'Audit architecture et qualité',
+      'Audit d’architecture et de qualité',
       'Revue de code',
     ],
   ],

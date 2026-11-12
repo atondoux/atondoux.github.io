@@ -5,9 +5,9 @@ import { getCaseStudies } from './case-studies';
 const expectedCaseStudies = {
   fr: [
     {
-      title: 'Institut du Cancer Avignon - Provence',
+      title: 'Institut du Cancer Avignon-Provence',
       description:
-        'Accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie.',
+        'Accompagner une équipe tech d’une dizaine de personnes dans la mise en place et l’adoption des meilleures pratiques d’ingénierie.',
       tags: ['Santé'],
       achievements: ['Démarche qualité installée', 'Livraisons fiabilisées par l’intégration continue'],
     },
@@ -28,14 +28,14 @@ const expectedCaseStudies = {
     {
       title: 'Dyma Spring Boot',
       description:
-        'Créer et maintenir la formation Spring Boot sur la plateforme Dyma : leçons écrites, vidéos et exemples de code. Voir la formation',
+        'Créer et maintenir la formation Spring Boot sur la plateforme Dyma\u202F: leçons écrites, vidéos et exemples de code. Voir la formation',
       tags: ['Formation en ligne'],
       achievements: ['19 chapitres, 85 leçons, 170 quiz', '6500+ heures passées par les apprenants'],
     },
     {
       title: 'Orange Business',
       description:
-        'Refondre le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprises.',
+        'Refondre le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprise.',
       tags: ['Gestion de flotte'],
       achievements: [
         'Suivi précis du taux d’utilisation des véhicules',
@@ -59,7 +59,7 @@ const expectedCaseStudies = {
       tags: ['Santé'],
       achievements: [
         'Nouveaux modules spécialisés dans le suivi des patients',
-        'Livraison et déploiement continus sur une architecture micro-services',
+        'Livraison et déploiement continus sur une architecture microservices',
       ],
     },
     {
@@ -84,7 +84,7 @@ const expectedCaseStudies = {
       tags: ['Mobilités durables'],
       achievements: [
         'Nouveaux services web B2C dans un environnement orienté services (SOA)',
-        'Suites de tests automatisés écrits avec l’équipe QA',
+        'Suites de tests automatisés écrites avec l’équipe QA',
       ],
     },
     {
@@ -94,7 +94,7 @@ const expectedCaseStudies = {
       tags: ['Services publics'],
       achievements: [
         'Procédures d’indemnisation 100% dématérialisées',
-        'Application développée avec des librairies 100% open source',
+        'Application développée avec des bibliothèques 100% open source',
       ],
     },
     {
@@ -109,7 +109,7 @@ const expectedCaseStudies = {
   ],
   en: [
     {
-      title: 'Institut du Cancer Avignon - Provence',
+      title: 'Institut du Cancer Avignon-Provence',
       description: 'Coaching a ten-person tech team through setting up and adopting engineering best practices.',
       tags: ['Healthcare'],
       achievements: ['Quality process in place', 'Reliable releases through continuous integration'],
@@ -117,7 +117,7 @@ const expectedCaseStudies = {
     {
       title: 'Malt',
       description:
-        "Strengthening Malt's financing capacity and cash flow management, while drastically cutting the FinOps team's manual work.",
+        'Strengthening Malt’s financing capacity and cash flow management, while drastically cutting the FinOps team’s manual work.',
       tags: ['Freelance Marketplace'],
       achievements: ['90% of freelancers paid within 10 days', '95% automated financing process'],
     },
@@ -132,12 +132,12 @@ const expectedCaseStudies = {
       description:
         'Creating and maintaining the Spring Boot course on the Dyma platform: written lessons, videos and code examples. See the course',
       tags: ['E-Learning'],
-      achievements: ['19 chapters, 85 lessons, 170 quizzes', '6,500+ hours spent by students'],
+      achievements: ['19 chapters, 85 lessons, 170 quizzes', '6\u202F500+ hours spent by students'],
     },
     {
       title: 'Orange Business',
       description:
-        'Rewrite the maintenance tracking module of a telematics and fleet management solution for company vehicles.',
+        'Rewriting the maintenance tracking module of a telematics and fleet management solution for company vehicles.',
       tags: ['Fleet Management'],
       achievements: ['Accurate tracking of vehicle usage rates', 'Improved maintenance planning'],
     },
@@ -151,7 +151,7 @@ const expectedCaseStudies = {
     {
       title: 'Softway Medical',
       description:
-        'Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work. Watch a demo',
+        'Improving patient follow-up and care management in hospitals by providing healthcare professionals with applications tailored to their daily work. Watch a demo',
       tags: ['Healthcare'],
       achievements: [
         'New modules designed for patient follow-up',
@@ -166,7 +166,7 @@ const expectedCaseStudies = {
     },
     {
       title: 'Natixis',
-      description: 'Improving the user experience of the CRM used by the stock market division.',
+      description: 'Improving the usability and efficiency of the CRM used by the stock market division.',
       tags: ['Banking'],
       achievements: ['New backend and frontend components', 'Legacy code cleaned up through continuous refactoring'],
     },
@@ -190,7 +190,7 @@ const expectedCaseStudies = {
       title: 'Veolia Eau',
       description: 'Building business applications to manage water distribution across the Paris region.',
       tags: ['Public Services'],
-      achievements: ['500,000+ customer contracts managed', 'Releases on a high-availability platform'],
+      achievements: ['500\u202F000+ customer contracts managed', 'Releases on a high-availability platform'],
     },
   ],
 } as const;
