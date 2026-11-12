@@ -146,7 +146,7 @@ const localizedHeroes = [
     emphasis: ['— AI-augmented'],
     aboutTitle: 'About',
     aboutSubtitle:
-      'I build software that solves real problems. I use AI to do it faster, and better. I take a user-first approach to understand users’ needs, how they work and what slows them down every day. Software only has value if people actually use it, so I pay attention to the user experience as much as to the code. Technology must serve the product, and quality remains a constant requirement for me.',
+      'I build software that solves real problems. I use AI to do it faster, and better. I take a user-centric approach to understand end users’ needs, how they work and what slows them down every day. Software only has value if people actually use it, so I pay attention to the user experience as much as to the code. Technology must serve the product, and quality remains a constant requirement for me.',
     collaborationsTitle: 'They trust me',
     collaborationsSubtitle: 'Startups, SMEs and large companies I’ve worked with.',
     logoAlts: [
