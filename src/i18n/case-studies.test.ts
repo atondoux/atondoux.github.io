@@ -14,8 +14,8 @@ const expectedCaseStudies = {
     {
       title: 'Malt',
       description:
-        'Renforcer la capacité de financement de Malt et optimiser sa gestion du cash flow, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
-      tags: ['Marketplace Freelance'],
+        'Renforcer la capacité de financement de Malt et optimiser sa gestion de trésorerie, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
+      tags: ['Marketplace freelance'],
       achievements: ['90% des freelances payés en 10 jours', 'Processus de financement automatisé à 95%'],
     },
     {
@@ -146,12 +146,12 @@ const expectedCaseStudies = {
       description:
         'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, to optimize session preparation.',
       tags: ['Healthcare'],
-      achievements: ['Several dozen beta-tester speech therapists', 'Smart search features for material'],
+      achievements: ['Several dozen speech therapists as beta testers', 'Smart search for therapy materials'],
     },
     {
       title: 'Softway Medical',
       description:
-        'Improving patient follow-up and care management in hospitals by providing healthcare professionals with applications tailored to their daily work. Watch a demo',
+        'Improving patient follow-up and care management in hospitals by providing healthcare professionals with applications tailored to their daily work. Watch the demo',
       tags: ['Healthcare'],
       achievements: [
         'New modules designed for patient follow-up',
@@ -184,7 +184,7 @@ const expectedCaseStudies = {
       description:
         'Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.',
       tags: ['Public Services'],
-      achievements: ['Fully digital compensation procedures', 'Application built with 100% open source libraries'],
+      achievements: ['Fully digital compensation procedures', 'Application built with 100% open-source libraries'],
     },
     {
       title: 'Veolia Eau',

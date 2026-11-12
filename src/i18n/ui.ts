@@ -38,19 +38,19 @@ const fr = {
   'home.collaborations.logoAlt': 'Logo de {company}',
   'home.services.title': 'Services',
   'home.services.subtitle': 'Des logiciels qui durent, des équipes qui progressent, des résultats mesurables.',
-  'home.services.techLeadership.title': 'Leadership Technique',
+  'home.services.techLeadership.title': 'Leadership technique',
   'home.services.techLeadership.description':
     'Des pratiques d’ingénierie qui deviennent des réflexes d’équipe : TDD, clean architecture, clean code, revue de code, CI/CD.',
   'home.services.fullStack.title': 'Développement Full Stack',
   'home.services.fullStack.description':
     'Des applications web sur mesure, pensées pour vos utilisateurs : backend, frontend, déploiement, monitoring.',
-  'home.services.projectBootstrap.title': 'Lancement de Projets',
+  'home.services.projectBootstrap.title': 'Lancement de projets',
   'home.services.projectBootstrap.description':
     'Des fondations solides et un transfert de compétences à vos équipes pour vous permettre de livrer rapidement et efficacement.',
-  'home.services.legacyRecovery.title': 'Reprise de Projets Legacy',
+  'home.services.legacyRecovery.title': 'Reprise de projets legacy',
   'home.services.legacyRecovery.description':
     'Reprendre la main sur un projet devenu coûteux, sans tout réécrire : stabilisation, modernisation, réduction progressive de la dette technique.',
-  'home.services.codeReview.title': 'Audit & Revue de Code',
+  'home.services.codeReview.title': 'Audit & revue de code',
   'home.services.codeReview.description':
     'Savoir où en est votre code avant de décider : dette technique, risques, axes d’amélioration concrets.',
   'home.services.devopsCloud.title': 'DevOps & Cloud',
@@ -58,7 +58,7 @@ const fr = {
     'Des déploiements fiables, automatisés et sans stress : pipelines CI/CD, infrastructure as code.',
   'home.services.architecture.title': 'Architecture',
   'home.services.architecture.description':
-    'Une architecture qui évolue avec votre métier, pas contre lui : évolutive, robuste, alignée sur vos enjeux.',
+    'Une architecture qui accompagne votre métier au lieu de le freiner : évolutive, robuste, alignée sur vos enjeux.',
   'home.pricing.title': 'Tarifs',
   'home.pricing.subtitle': 'Chaque projet est unique : choisissez la formule qui vous correspond.',
   'home.pricing.perDay': 'par jour',
@@ -92,8 +92,8 @@ const fr = {
   'home.caseStudies.icap.achievements.cicdPipelines': 'Livraisons fiabilisées par l’intégration continue',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
-    'Renforcer la capacité de financement de Malt et optimiser sa gestion du cash flow, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
-  'home.caseStudies.malt.tags.marketplace': 'Marketplace Freelance',
+    'Renforcer la capacité de financement de Malt et optimiser sa gestion de trésorerie, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
+  'home.caseStudies.malt.tags.marketplace': 'Marketplace freelance',
   'home.caseStudies.malt.achievements.paidIn10Days': '90% des freelances payés en 10 jours',
   'home.caseStudies.malt.achievements.automatedFinancing': 'Processus de financement automatisé à 95%',
   'home.caseStudies.namirial.title': 'Namirial',
@@ -165,7 +165,7 @@ const fr = {
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
-    'Parlons de votre projet. Un premier échange gratuit et sans engagement de 30 minutes pour cerner votre besoin et vous proposer une solution adaptée.',
+    'Parlons de votre projet. Un premier échange de 30 minutes, gratuit et sans engagement, pour cerner votre besoin et vous proposer une solution adaptée.',
   'home.contact.email.title': 'Email',
   'home.contact.phone.title': 'Téléphone',
   'home.contact.linkedin.title': 'LinkedIn',
@@ -183,7 +183,7 @@ const en = {
   'nav.pricing': 'Pricing',
   'nav.caseStudies': 'Case studies',
   'footer.sitemap': 'Sitemap',
-  'theme.toggle': 'Toggle between dark and light mode',
+  'theme.toggle': 'Toggle between light and dark mode',
   'header.mainNavigation': 'Main navigation',
   'header.toggleMenu': 'Toggle menu',
   'languageSwitcher.label': 'Version française',
@@ -200,7 +200,7 @@ const en = {
   'home.collaborations.logoAlt': '{company} logo',
   'home.services.title': 'Services',
   'home.services.subtitle': 'Software that lasts, teams that grow, measurable results.',
-  'home.services.techLeadership.title': 'Tech Leadership',
+  'home.services.techLeadership.title': 'Technical Leadership',
   'home.services.techLeadership.description':
     'Engineering practices that become team habits: TDD, clean architecture, clean code, code review, CI/CD.',
   'home.services.fullStack.title': 'Full-Stack Development',
@@ -224,7 +224,7 @@ const en = {
   'home.pricing.title': 'Pricing',
   'home.pricing.subtitle': 'Every project is unique: pick the offer suited to your needs.',
   'home.pricing.perDay': 'per day',
-  'home.pricing.quote': 'On quote',
+  'home.pricing.quote': 'Custom',
   'home.pricing.applications.title': 'Application Development',
   'home.pricing.applications.description': 'Turn your idea into a production-ready application or SaaS.',
   'home.pricing.applications.features.planning': 'Scoping and planning',
@@ -281,13 +281,13 @@ const en = {
   'home.caseStudies.orthoAssistant.description':
     'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, to optimize session preparation.',
   'home.caseStudies.orthoAssistant.tags.healthcare': 'Healthcare',
-  'home.caseStudies.orthoAssistant.achievements.betaTesters': 'Several dozen beta-tester speech therapists',
-  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Smart search features for material',
+  'home.caseStudies.orthoAssistant.achievements.betaTesters': 'Several dozen speech therapists as beta testers',
+  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Smart search for therapy materials',
   'home.caseStudies.softway.title': 'Softway Medical',
   'home.caseStudies.softway.description':
     'Improving patient follow-up and care management in hospitals by providing healthcare professionals with applications tailored to their daily work.',
   'home.caseStudies.softway.tags.healthcare': 'Healthcare',
-  'home.caseStudies.softway.linkText': 'Watch a demo',
+  'home.caseStudies.softway.linkText': 'Watch the demo',
   'home.caseStudies.softway.achievements.patientModules': 'New modules designed for patient follow-up',
   'home.caseStudies.softway.achievements.continuousDelivery':
     'Continuous delivery and deployment on a microservices architecture',
@@ -316,7 +316,7 @@ const en = {
     'Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.',
   'home.caseStudies.oniam.tags.publicServices': 'Public Services',
   'home.caseStudies.oniam.achievements.digitalProcedures': 'Fully digital compensation procedures',
-  'home.caseStudies.oniam.achievements.openSource': 'Application built with 100% open source libraries',
+  'home.caseStudies.oniam.achievements.openSource': 'Application built with 100% open-source libraries',
   'home.caseStudies.veolia.title': 'Veolia Eau',
   'home.caseStudies.veolia.description':
     'Building business applications to manage water distribution across the Paris region.',
@@ -336,7 +336,7 @@ const en = {
   'home.contact.cta': 'Contact me',
   'notFound.title': 'Page not found',
   'notFound.description': 'Sorry, this page does not exist.',
-  'notFound.backHome': 'Back to home',
+  'notFound.backHome': 'Back to homepage',
 } as const satisfies Record<keyof typeof fr, string>;
 
 export const ui = { fr, en } as const;
