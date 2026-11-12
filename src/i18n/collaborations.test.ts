@@ -13,7 +13,7 @@ const companies = [
   'Dyma',
   'Namirial',
   'Malt',
-  'Institut Sainte-Catherine',
+  'Institut du Cancer Avignon-Provence',
 ];
 
 const expectedAlts = {

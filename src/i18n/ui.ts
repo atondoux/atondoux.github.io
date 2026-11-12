@@ -22,6 +22,8 @@ const fr = {
   'nav.caseStudies': 'Cas clients',
   'footer.sitemap': 'Plan du site',
   'theme.toggle': 'Basculer entre thème clair et sombre',
+  'header.mainNavigation': 'Navigation principale',
+  'header.toggleMenu': 'Ouvrir ou fermer le menu',
   'languageSwitcher.label': 'English version',
   'home.title': 'AT Code Lab',
   'home.description': 'Software & Product Engineering.',
@@ -38,27 +40,27 @@ const fr = {
   'home.services.subtitle': 'Des logiciels qui durent, des équipes qui progressent, des résultats mesurables.',
   'home.services.techLeadership.title': 'Leadership Technique',
   'home.services.techLeadership.description':
-    'Des pratiques d’ingénierie qui deviennent des réflexes d’équipe : TDD, clean architecture, clean code, revue de code, CI/CD.',
+    'Des pratiques d’ingénierie qui deviennent des réflexes d’équipe : TDD, clean architecture, clean code, revue de code, CI/CD.',
   'home.services.fullStack.title': 'Développement Full Stack',
   'home.services.fullStack.description':
-    'Des applications web sur mesure, pensées pour vos utilisateurs : back-end, front-end, déploiement, monitoring.',
+    'Des applications web sur mesure, pensées pour vos utilisateurs : backend, frontend, déploiement, monitoring.',
   'home.services.projectBootstrap.title': 'Lancement de Projets',
   'home.services.projectBootstrap.description':
     'Des fondations solides et un transfert de compétences à vos équipes pour vous permettre de livrer rapidement et efficacement.',
   'home.services.legacyRecovery.title': 'Reprise de Projets Legacy',
   'home.services.legacyRecovery.description':
-    'Reprendre la main sur un projet devenu coûteux, sans tout réécrire : stabilisation, modernisation, réduction progressive de la dette technique.',
+    'Reprendre la main sur un projet devenu coûteux, sans tout réécrire : stabilisation, modernisation, réduction progressive de la dette technique.',
   'home.services.codeReview.title': 'Audit & Revue de Code',
   'home.services.codeReview.description':
-    'Savoir où en est votre code avant de décider : dette technique, risques, axes d’amélioration concrets.',
+    'Savoir où en est votre code avant de décider : dette technique, risques, axes d’amélioration concrets.',
   'home.services.devopsCloud.title': 'DevOps & Cloud',
   'home.services.devopsCloud.description':
-    'Des déploiements fiables, automatisés et sans stress : pipelines CI/CD, infrastructure as code.',
+    'Des déploiements fiables, automatisés et sans stress : pipelines CI/CD, infrastructure as code.',
   'home.services.architecture.title': 'Architecture',
   'home.services.architecture.description':
-    'Une architecture qui évolue avec votre métier, pas contre lui : évolutive, robuste, alignée sur vos enjeux.',
+    'Une architecture qui évolue avec votre métier, pas contre lui : évolutive, robuste, alignée sur vos enjeux.',
   'home.pricing.title': 'Tarifs',
-  'home.pricing.subtitle': 'Chaque projet est unique : choisissez la formule qui vous correspond.',
+  'home.pricing.subtitle': 'Chaque projet est unique : choisissez la formule qui vous correspond.',
   'home.pricing.perDay': 'par jour',
   'home.pricing.quote': 'Sur devis',
   'home.pricing.applications.title': 'Création d’applications',
@@ -78,13 +80,13 @@ const fr = {
   'home.pricing.consulting.description': 'Bénéficier d’un regard expert sur votre code et votre architecture.',
   'home.pricing.consulting.features.architectureAdvice': 'Conseil en choix d’architecture',
   'home.pricing.consulting.features.advice': 'Conseil en choix techniques',
-  'home.pricing.consulting.features.audit': 'Audit architecture et qualité',
+  'home.pricing.consulting.features.audit': 'Audit d’architecture et de qualité',
   'home.pricing.consulting.features.review': 'Revue de code',
   'home.caseStudies.title': 'Cas clients',
   'home.caseStudies.subtitle': 'Un aperçu de mon travail.',
-  'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
+  'home.caseStudies.icap.title': 'Institut du Cancer Avignon-Provence',
   'home.caseStudies.icap.description':
-    'Accompagner une équipe tech d’une dizaine de personnes à la mise en place et l’adoption des meilleures pratiques d’ingénierie.',
+    'Accompagner une équipe tech d’une dizaine de personnes dans la mise en place et l’adoption des meilleures pratiques d’ingénierie.',
   'home.caseStudies.icap.tags.healthcare': 'Santé',
   'home.caseStudies.icap.achievements.qualityApproach': 'Démarche qualité installée',
   'home.caseStudies.icap.achievements.cicdPipelines': 'Livraisons fiabilisées par l’intégration continue',
@@ -102,14 +104,14 @@ const fr = {
   'home.caseStudies.namirial.achievements.fraudAtSignUp': 'Fraude détectée dès la souscription',
   'home.caseStudies.dyma.title': 'Dyma Spring Boot',
   'home.caseStudies.dyma.description':
-    'Créer et maintenir la formation Spring Boot sur la plateforme Dyma : leçons écrites, vidéos et exemples de code.',
+    'Créer et maintenir la formation Spring Boot sur la plateforme Dyma : leçons écrites, vidéos et exemples de code.',
   'home.caseStudies.dyma.linkText': 'Voir la formation',
   'home.caseStudies.dyma.tags.eLearning': 'Formation en ligne',
   'home.caseStudies.dyma.achievements.content': '19 chapitres, 85 leçons, 170 quiz',
   'home.caseStudies.dyma.achievements.hours': '6500+ heures passées par les apprenants',
   'home.caseStudies.orange.title': 'Orange Business',
   'home.caseStudies.orange.description':
-    'Refondre le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprises.',
+    'Refondre le module de suivi des entretiens d’une solution de télématique et de gestion de flotte de véhicules d’entreprise.',
   'home.caseStudies.orange.tags.fleetManagement': 'Gestion de flotte',
   'home.caseStudies.orange.achievements.usageRate': 'Suivi précis du taux d’utilisation des véhicules',
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Amélioration de la planification des entretiens',
@@ -126,7 +128,7 @@ const fr = {
   'home.caseStudies.softway.linkText': 'Voir la démo',
   'home.caseStudies.softway.achievements.patientModules': 'Nouveaux modules spécialisés dans le suivi des patients',
   'home.caseStudies.softway.achievements.continuousDelivery':
-    'Livraison et déploiement continus sur une architecture micro-services',
+    'Livraison et déploiement continus sur une architecture microservices',
   'home.caseStudies.societeGenerale.title': 'Société Générale',
   'home.caseStudies.societeGenerale.description':
     'Fiabiliser l’application stratégique de calcul de marges des vendeurs de produits financiers.',
@@ -145,13 +147,13 @@ const fr = {
   'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Mobilités durables',
   'home.caseStudies.sncfConnect.achievements.b2cWebServices':
     'Nouveaux services web B2C dans un environnement orienté services (SOA)',
-  'home.caseStudies.sncfConnect.achievements.automatedTests': 'Suites de tests automatisés écrits avec l’équipe QA',
+  'home.caseStudies.sncfConnect.achievements.automatedTests': 'Suites de tests automatisés écrites avec l’équipe QA',
   'home.caseStudies.oniam.title': 'Ministère de la Santé',
   'home.caseStudies.oniam.description':
     'Simplifier et accélérer l’indemnisation des victimes d’accidents médicaux en dématérialisant l’ensemble des procédures de l’ONIAM.',
   'home.caseStudies.oniam.tags.publicServices': 'Services publics',
   'home.caseStudies.oniam.achievements.digitalProcedures': 'Procédures d’indemnisation 100% dématérialisées',
-  'home.caseStudies.oniam.achievements.openSource': 'Application développée avec des librairies 100% open source',
+  'home.caseStudies.oniam.achievements.openSource': 'Application développée avec des bibliothèques 100% open source',
   'home.caseStudies.veolia.title': 'Veolia Eau',
   'home.caseStudies.veolia.description':
     'Développer des applications métier pour la gestion de la distribution de l’eau en Île-de-France.',
@@ -182,6 +184,8 @@ const en = {
   'nav.caseStudies': 'Case studies',
   'footer.sitemap': 'Sitemap',
   'theme.toggle': 'Toggle between dark and light mode',
+  'header.mainNavigation': 'Main navigation',
+  'header.toggleMenu': 'Toggle menu',
   'languageSwitcher.label': 'Version française',
   'home.title': 'AT Code Lab',
   'home.description': 'Software & Product Engineering.',
@@ -190,7 +194,7 @@ const en = {
   'home.hero.subtitle': 'Product-minded software engineering <strong>— AI-augmented</strong>',
   'home.about.title': 'About',
   'home.about.subtitle':
-    'I build software that solves real problems. I use AI to do it faster, and better. I take a user-first approach to understand their needs, how they work and what slows them down every day. Software only has value if people actually use it, so I pay attention to the user experience as much as to the code. Technology must serve the product, and quality remains a constant requirement for me.',
+    'I build software that solves real problems. I use AI to do it faster, and better. I take a user-centric approach to understand end users’ needs, how they work and what slows them down every day. Software only has value if people actually use it, so I pay attention to the user experience as much as to the code. Technology must serve the product, and quality remains a constant requirement for me.',
   'home.collaborations.title': 'They trust me',
   'home.collaborations.subtitle': 'Startups, SMEs and large companies I’ve worked with.',
   'home.collaborations.logoAlt': '{company} logo',
@@ -201,7 +205,7 @@ const en = {
     'Engineering practices that become team habits: TDD, clean architecture, clean code, code review, CI/CD.',
   'home.services.fullStack.title': 'Full-Stack Development',
   'home.services.fullStack.description':
-    'Tailor-made web applications built around your users: back-end, front-end, deployment, monitoring.',
+    'Tailor-made web applications built around your users: backend, frontend, deployment, monitoring.',
   'home.services.projectBootstrap.title': 'Project Bootstrapping',
   'home.services.projectBootstrap.description':
     'Solid foundations and knowledge transfer to your teams, so you can deliver quickly and efficiently.',
@@ -242,7 +246,7 @@ const en = {
   'home.pricing.consulting.features.review': 'Code review',
   'home.caseStudies.title': 'Case studies',
   'home.caseStudies.subtitle': 'An overview of my work.',
-  'home.caseStudies.icap.title': 'Institut du Cancer Avignon - Provence',
+  'home.caseStudies.icap.title': 'Institut du Cancer Avignon-Provence',
   'home.caseStudies.icap.description':
     'Coaching a ten-person tech team through setting up and adopting engineering best practices.',
   'home.caseStudies.icap.tags.healthcare': 'Healthcare',
@@ -250,7 +254,7 @@ const en = {
   'home.caseStudies.icap.achievements.cicdPipelines': 'Reliable releases through continuous integration',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
-    "Strengthening Malt's financing capacity and cash flow management, while drastically cutting the FinOps team's manual work.",
+    'Strengthening Malt’s financing capacity and cash flow management, while drastically cutting the FinOps team’s manual work.',
   'home.caseStudies.malt.tags.marketplace': 'Freelance Marketplace',
   'home.caseStudies.malt.achievements.paidIn10Days': '90% of freelancers paid within 10 days',
   'home.caseStudies.malt.achievements.automatedFinancing': '95% automated financing process',
@@ -266,10 +270,10 @@ const en = {
   'home.caseStudies.dyma.linkText': 'See the course',
   'home.caseStudies.dyma.tags.eLearning': 'E-Learning',
   'home.caseStudies.dyma.achievements.content': '19 chapters, 85 lessons, 170 quizzes',
-  'home.caseStudies.dyma.achievements.hours': '6,500+ hours spent by students',
+  'home.caseStudies.dyma.achievements.hours': '6 500+ hours spent by students',
   'home.caseStudies.orange.title': 'Orange Business',
   'home.caseStudies.orange.description':
-    'Rewrite the maintenance tracking module of a telematics and fleet management solution for company vehicles.',
+    'Rewriting the maintenance tracking module of a telematics and fleet management solution for company vehicles.',
   'home.caseStudies.orange.tags.fleetManagement': 'Fleet Management',
   'home.caseStudies.orange.achievements.usageRate': 'Accurate tracking of vehicle usage rates',
   'home.caseStudies.orange.achievements.maintenancePlanning': 'Improved maintenance planning',
@@ -281,7 +285,7 @@ const en = {
   'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Smart search features for material',
   'home.caseStudies.softway.title': 'Softway Medical',
   'home.caseStudies.softway.description':
-    'Improving patient follow-up and care management in hospitals by providing healthcare professionals applications tailored to their daily work.',
+    'Improving patient follow-up and care management in hospitals by providing healthcare professionals with applications tailored to their daily work.',
   'home.caseStudies.softway.tags.healthcare': 'Healthcare',
   'home.caseStudies.softway.linkText': 'Watch a demo',
   'home.caseStudies.softway.achievements.patientModules': 'New modules designed for patient follow-up',
@@ -294,7 +298,8 @@ const en = {
   'home.caseStudies.societeGenerale.achievements.fewerIncidents': 'Drastic reduction in production incidents',
   'home.caseStudies.societeGenerale.achievements.collaborativeDocumentation': 'Richer collaborative documentation',
   'home.caseStudies.natixis.title': 'Natixis',
-  'home.caseStudies.natixis.description': 'Improving the user experience of the CRM used by the stock market division.',
+  'home.caseStudies.natixis.description':
+    'Improving the usability and efficiency of the CRM used by the stock market division.',
   'home.caseStudies.natixis.tags.banking': 'Banking',
   'home.caseStudies.natixis.achievements.newComponents': 'New backend and frontend components',
   'home.caseStudies.natixis.achievements.continuousRefactoring':
@@ -316,14 +321,14 @@ const en = {
   'home.caseStudies.veolia.description':
     'Building business applications to manage water distribution across the Paris region.',
   'home.caseStudies.veolia.tags.publicServices': 'Public Services',
-  'home.caseStudies.veolia.achievements.contracts': '500,000+ customer contracts managed',
+  'home.caseStudies.veolia.achievements.contracts': '500 000+ customer contracts managed',
   'home.caseStudies.veolia.achievements.highAvailability': 'Releases on a high-availability platform',
   'home.caseStudies.previous': 'Previous case study',
   'home.caseStudies.next': 'Next case study',
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
-    "Let's talk about your project. A free, no-commitment 30-minute call to understand your needs and recommend the right solution.",
+    'Let’s talk about your project. A free, no-commitment 30-minute call to understand your needs and recommend the right solution.',
   'home.contact.email.title': 'Email',
   'home.contact.phone.title': 'Phone',
   'home.contact.linkedin.title': 'LinkedIn',

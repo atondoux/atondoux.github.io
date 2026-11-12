@@ -14,7 +14,7 @@ const collaborationCatalog = [
   { company: 'Dyma', file: 'dyma-spring-boot.svg' },
   { company: 'Namirial', file: 'namirial.svg' },
   { company: 'Malt', file: 'malt.svg' },
-  { company: 'Institut Sainte-Catherine', file: 'icap.svg' },
+  { company: 'Institut du Cancer Avignon-Provence', file: 'icap.svg' },
 ] as const;
 
 const logosFolder = '~/assets/images/collaborations';

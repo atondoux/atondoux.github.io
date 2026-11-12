@@ -2,7 +2,7 @@
 
 ## Title
 
-Tech Lead · Senior Full Stack Software Engineer | Product Engineering · Software Architecture
+Tech Lead · Senior Full-Stack Software Engineer | Product Engineering · Software Architecture
 
 ## Français
 
@@ -14,14 +14,14 @@ Expert en Test-Driven Development, je conçois et développe des solutions dans 
 
 Ce que je peux faire pour vous :
 → Leadership technique
-→ Développement full stack
+→ Développement Full Stack
 → Lancement de projets
 → Reprise de projets legacy
 → Audit & revue de code
 → DevOps & Cloud
 → Architecture
 
-J’ai collaboré avec des grands comptes, des PME et des startups en France et à l’international, soit en intégrant leurs équipes soit en leur livrant des projets de bout en bout.
+J’ai collaboré avec des grands comptes, des PME et des startups en France et à l’international, soit en intégrant leurs équipes, soit en leur livrant des projets de bout en bout.
 
 Un projet ? Parlons-en.
 
@@ -29,7 +29,7 @@ Un projet ? Parlons-en.
 
 Senior Software Engineer with 20 years building SaaS and B2B web applications using Java/Kotlin, Spring Boot and Vue.js.
 
-User-experience and product engineering oriented, I have led teams of 4-10 people, with a focus on quality and continuous delivery.
+Focused on user experience and product engineering, I have led and mentored teams of 4 to 10 people, putting quality and continuous delivery first.
 
 Test-Driven Development expert, I design and build solutions for healthcare and digital services.
 

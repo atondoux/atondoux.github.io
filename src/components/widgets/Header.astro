@@ -38,6 +38,8 @@ export interface Props {
   isFullWidth?: boolean;
   showToggleTheme?: boolean;
   toggleThemeLabel?: string;
+  mainNavigationLabel: string;
+  toggleMenuLabel?: string;
   languageSwitcher?: LanguageSwitcherProps;
   position?: string;
 }
@@ -51,6 +53,8 @@ const {
   isFullWidth = false,
   showToggleTheme = false,
   toggleThemeLabel,
+  mainNavigationLabel,
+  toggleMenuLabel,
   languageSwitcher,
   position = 'center',
 } = Astro.props;
@@ -68,6 +72,8 @@ const persistKey = `header-${Array.from(
     isFullWidth,
     showToggleTheme,
     toggleThemeLabel,
+    mainNavigationLabel,
+    toggleMenuLabel,
     languageSwitcher: languageSwitcher && {
       hreflang: languageSwitcher.hreflang,
       label: languageSwitcher.label,
@@ -109,12 +115,12 @@ const persistKey = `header-${Array.from(
           <Logo />
         </a>
         <div class="flex items-center xl:hidden">
-          <ToggleMenu />
+          <ToggleMenu label={toggleMenuLabel} />
         </div>
       </div>
       <nav
         class="items-center w-full xl:w-auto hidden xl:flex xl:mx-5 text-default overflow-y-auto overflow-x-hidden xl:overflow-visible xl:justify-self-center"
-        aria-label="Main navigation"
+        aria-label={mainNavigationLabel}
       >
         <ul class="flex flex-col xl:flex-row xl:self-center w-full xl:w-auto text-xl xl:text-[0.9375rem] tracking-[0.01rem] font-medium xl:justify-center">
           {links.map(({ text, href, links }) => (
