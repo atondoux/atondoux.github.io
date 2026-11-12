@@ -89,7 +89,7 @@ describe('listing the pricing plans', () => {
 
   it.each([
     ['fr', 'Sur devis'],
-    ['en', 'Custom'],
+    ['en', 'On request'],
   ] as const)('shows the %s application and consulting plans as a quote without a period', (lang, quote) => {
     const plans = getPricingPlans(lang);
     const quotePlans = [plans[0], plans[2]];
