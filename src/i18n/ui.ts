@@ -58,7 +58,7 @@ const fr = {
     'Des déploiements fiables, automatisés et sans stress : pipelines CI/CD, infrastructure as code.',
   'home.services.architecture.title': 'Architecture',
   'home.services.architecture.description':
-    'Une architecture qui accompagne votre métier au lieu de le freiner : évolutive, robuste, alignée sur vos enjeux.',
+    'Une architecture qui évolue avec votre métier, pas contre lui : évolutive, robuste, alignée sur vos enjeux.',
   'home.pricing.title': 'Tarifs',
   'home.pricing.subtitle': 'Chaque projet est unique : choisissez la formule qui vous correspond.',
   'home.pricing.perDay': 'par jour',
