@@ -13,7 +13,7 @@ const expectedTitles = {
     'Architecture',
   ],
   en: [
-    'Tech Leadership',
+    'Technical Leadership',
     'Full-Stack Development',
     'Project Bootstrapping',
     'Legacy Project Recovery',

@@ -21,7 +21,7 @@ Ce que je peux faire pour vous :
 → DevOps & Cloud
 → Architecture
 
-J’ai collaboré avec des grands comptes, des PME et des startups en France et à l’international, soit en intégrant leurs équipes, soit en leur livrant des projets de bout en bout.
+J’ai collaboré avec de grands comptes, des PME et des startups en France et à l’international, soit en intégrant leurs équipes, soit en leur livrant des projets de bout en bout.
 
 Un projet ? Parlons-en.
 
@@ -34,7 +34,7 @@ Focused on user experience and product engineering, I have led and mentored team
 Test-Driven Development expert, I design and build solutions for healthcare and digital services.
 
 How I can help:
-→ Tech Leadership
+→ Technical Leadership
 → Full-Stack Development
 → Project Bootstrapping
 → Legacy Project Recovery

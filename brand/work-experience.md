@@ -1,6 +1,6 @@
 # Expériences
 
-## Institut du Cancer Avignon - Provence · 2026 - today
+## Institut du Cancer Avignon-Provence · 2026 – today
 
 ### Français
 
@@ -28,7 +28,7 @@ Coaching the tech team through setting up and adopting engineering best practice
 
 Stack: Java · Spring Boot · PostgreSQL · Test-Driven Development · Jenkins
 
-## Malt · 2025 - today
+## Malt · 2025 – today
 
 ### Français
 
@@ -56,7 +56,7 @@ Extension of the financing module’s features: integration of new partners, imp
 
 Stack: Kotlin · Spring Boot · REST API · Event-Driven Architecture · Event Sourcing · RabbitMQ · Vue.js · Nuxt · PostgreSQL · MongoDB · Test-Driven Development · GitLab CI/CD · Datadog
 
-## Namirial · 2024 - 2025
+## Namirial · 2024 – 2025
 
 ### Français
 
@@ -84,7 +84,7 @@ Evolution of the customer acquisition journey platform, integration of the Yousi
 
 Stack: Kotlin · Java · Spring Boot · REST API · PostgreSQL · Test-Driven Development · GitLab CI/CD · Kibana · Agile
 
-## Dyma · 2023 - today
+## Dyma · 2023 – today
 
 ### Français
 
@@ -92,7 +92,7 @@ Formateur Spring Boot
 
 Plateforme française de formation en ligne à l’IA et au développement logiciel, proposant un seul et unique parcours par sujet, avec un formateur dédié.
 
-Création et maintenance de la formation Spring Boot, adressée aux développeurs débutants ou expérimentés : leçons écrites, vidéos et exemples de code.
+Création et maintenance de la formation Spring Boot, destinée aux développeurs débutants ou expérimentés : leçons écrites, vidéos et exemples de code.
 
 → 19 chapitres, 85 leçons, 170 quiz
 → 6500+ heures passées par les apprenants
@@ -116,7 +116,7 @@ Stack: Java · Spring Boot · REST API · PostgreSQL · Clean Code · Test-Drive
 
 https://dyma.fr/formations/spring-boot
 
-## Orange Business · 2023 - 2024
+## Orange Business · 2023 – 2024
 
 ### Français
 
@@ -144,7 +144,7 @@ Rewrite of the maintenance tracking API and the vehicle usage rate tracking feat
 
 Stack: Java · Spring Framework · REST API · PostgreSQL · Test-Driven Development · Continuous Integration · Agile
 
-## Ortho Assistant · 2020 - 2021
+## Ortho Assistant · 2020 – 2021
 
 ### Français
 
@@ -167,16 +167,16 @@ Creator & Full-Stack Developer
 
 Between sessions, speech therapists spend a lot of time hunting for their material. Ortho Assistant finds it for them, optimizes session management, reduces their mental load and gives them back time to care for their patients.
 
-Design, development and deployment of a SaaS that shows the most effective material for each patient and where it is stored: advanced inventory, customizable reference list of pathologies and skills to work on, material location management.
+Design, development and deployment of a SaaS that shows the most effective material for each patient and where it is stored: augmented inventory, customizable reference list of pathologies and skills to work on, material location management.
 
-→ Several dozen beta-tester speech therapists
-→ Smart search features for material to help prepare sessions
+→ Several dozen speech therapists as beta testers
+→ Smart search for therapy materials to help prepare sessions
 
 Stack: Java · Spring Boot · JHipster · REST API · TypeScript · Vue.js · PostgreSQL · Test-Driven Development · Domain-Driven Design · GitLab CI/CD · Docker
 
 https://gitlab.com/atondoux/orthoassistant/
 
-## Softway Medical · 2015 - 2023
+## Softway Medical · 2015 – 2023
 
 ### Français
 
@@ -208,11 +208,11 @@ Stack: Java · Spring Boot · JHipster · Quarkus · REST API · TypeScript · V
 
 Client testimonial on the wound care tracking module: https://youtu.be/NwEPv_cVKC0
 
-## Tour du monde / World Tour · 2013 - 2015
+## Tour du monde / World Tour · 2013 – 2015
 
 ### Français
 
-Aventurier & Photographe en Tour du Monde
+Aventurier & Photographe en tour du monde
 
 Une aventure exceptionnelle de 730 jours marquée par un enrichissement personnel inestimable et de nombreuses découvertes naturelles, culturelles et humaines.
 
@@ -234,7 +234,7 @@ An exceptional 730-day adventure marked by invaluable personal growth and countl
 
 Stack: English · Adaptability · Negotiation · Resilience · Open-mindedness
 
-## Société Générale · 2012 - 2013
+## Société Générale · 2012 – 2013
 
 ### Français
 
@@ -242,7 +242,7 @@ Ingénieur Logiciel
 
 Application stratégique de traitement et de reporting des marges des vendeurs de produits financiers de l’ensemble de la banque.
 
-Nouvelles fonctionnalités et correction d’anomalies, responsable de l’ensemble des actions visant à améliorer la qualité globale de l’application allant de la fiabilité du code au processus de livraison, formation des nouveaux arrivants, collaboration avec l’équipe support basée en Inde.
+Nouvelles fonctionnalités et correction d’anomalies, responsable de l’ensemble des actions visant à améliorer la qualité globale de l’application, de la fiabilité du code au processus de livraison, formation des nouveaux arrivants, étroite collaboration avec l’équipe de support utilisateurs basée en Inde.
 
 → Réduction drastique des incidents en production
 → Documentation collaborative enrichie
@@ -262,7 +262,7 @@ New features and bug fixes, responsible for all initiatives to improve the appli
 
 Stack: Java · Spring Framework · Hibernate · SAP ASE · Test-Driven Development · Continuous Integration · Agile
 
-## Natixis · 2011 - 2012
+## Natixis · 2011 – 2012
 
 ### Français
 
@@ -283,14 +283,14 @@ Software Engineer
 
 CRM used by salespeople and analysts in the Equity Markets department.
 
-Revamped the CRM on the backend and frontend, helped scope and estimate enhancements, actively helped set up a continuous refactoring process.
+Revamp of the CRM on the backend and frontend, scoping and estimation of enhancements, active involvement in setting up a continuous refactoring process.
 
 → New backend and frontend components
 → Legacy code cleaned up through continuous refactoring
 
 Stack: Java · Spring Framework · Hibernate · JSF · jQuery · SAP ASE · Test-Driven Development · Continuous Integration · Agile
 
-## SNCF Connect & Tech · 2010 - 2011
+## SNCF Connect & Tech · 2010 – 2011
 
 ### Français
 
@@ -298,7 +298,7 @@ Ingénieur Logiciel
 
 Service européen de réservation de billets de train de la SNCF.
 
-Nouvelles fonctionnalités et correction d’anomalies, analyse détaillée du moteur de réservation (Yield management), conception et implémentation de services web, tests automatisés en étroite collaboration avec l’équipe QA.
+Nouvelles fonctionnalités et correction d’anomalies, analyse détaillée du moteur de réservation (yield management), conception et implémentation de services web, tests automatisés en étroite collaboration avec l’équipe QA.
 
 → Nouveaux services web B2C dans un environnement orienté services (SOA)
 → Suites de tests automatisés écrites avec l’équipe QA
@@ -311,14 +311,14 @@ Software Engineer
 
 European train ticket booking service of SNCF.
 
-New features and bug fixes, detailed analysis of the reservation engine (Yield management), design and implementation of web services, automated testing in close collaboration with the QA team.
+New features and bug fixes, detailed analysis of the reservation engine (yield management), design and implementation of web services, automated testing in close collaboration with the QA team.
 
 → New B2C web services in a service-oriented environment (SOA)
 → Automated test suites built with the QA team
 
 Stack: Java · Spring Framework · REST API · Oracle · MySQL · Test-Driven Development · Continuous Integration · Agile
 
-## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · 2009 - 2010
+## Ministère de la Santé (ONIAM) / Ministry of Health (ONIAM) · 2009 – 2010
 
 ### Français
 
@@ -339,14 +339,14 @@ Software Engineer
 
 ONIAM, the national office for the compensation of medical accident victims.
 
-Design and development of a brand-new web application to process compensation procedures, based on open source solutions to digitalize every business process (case tracking and electronic document management), technical training of new team members, administration of the continuous integration platform.
+Design and development of a brand-new web application to process compensation procedures, based on open-source solutions to digitalize every business process (case tracking and electronic document management), technical training of new team members, administration of the continuous integration platform.
 
 → Fully digital compensation procedures
-→ Application built with 100% open source libraries
+→ Application built with 100% open-source libraries
 
 Stack: Java · Spring Framework · Hibernate · REST API · jBPM · JSF · SQL Server · Test-Driven Development · Continuous Integration · Agile
 
-## Veolia Eau · 2007 - 2009
+## Veolia Eau · 2007 – 2009
 
 ### Français
 

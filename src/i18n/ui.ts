@@ -92,8 +92,8 @@ const fr = {
   'home.caseStudies.icap.achievements.cicdPipelines': 'Livraisons fiabilisées par l’intégration continue',
   'home.caseStudies.malt.title': 'Malt',
   'home.caseStudies.malt.description':
-    'Renforcer la capacité de financement de Malt et optimiser sa gestion du cash flow, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
-  'home.caseStudies.malt.tags.marketplace': 'Marketplace Freelance',
+    'Renforcer la capacité de financement de Malt et optimiser sa gestion de trésorerie, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
+  'home.caseStudies.malt.tags.marketplace': 'Marketplace freelance',
   'home.caseStudies.malt.achievements.paidIn10Days': '90% des freelances payés en 10 jours',
   'home.caseStudies.malt.achievements.automatedFinancing': 'Processus de financement automatisé à 95%',
   'home.caseStudies.namirial.title': 'Namirial',
@@ -144,7 +144,7 @@ const fr = {
   'home.caseStudies.sncfConnect.title': 'SNCF Connect & Tech',
   'home.caseStudies.sncfConnect.description':
     'Faciliter les voyages en enrichissant de nouvelles fonctionnalités la plateforme de réservation de billets de train SNCF Connect.',
-  'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Mobilités durables',
+  'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Transports',
   'home.caseStudies.sncfConnect.achievements.b2cWebServices':
     'Nouveaux services web B2C dans un environnement orienté services (SOA)',
   'home.caseStudies.sncfConnect.achievements.automatedTests': 'Suites de tests automatisés écrites avec l’équipe QA',
@@ -165,7 +165,7 @@ const fr = {
   'nav.contact': 'Contact',
   'home.contact.title': 'Contact',
   'home.contact.subtitle':
-    'Parlons de votre projet. Un premier échange gratuit et sans engagement de 30 minutes pour cerner votre besoin et vous proposer une solution adaptée.',
+    'Parlons de votre projet. Un premier échange de 30 minutes, gratuit et sans engagement, pour cerner votre besoin et vous proposer une solution adaptée.',
   'home.contact.email.title': 'Email',
   'home.contact.phone.title': 'Téléphone',
   'home.contact.linkedin.title': 'LinkedIn',
@@ -183,7 +183,7 @@ const en = {
   'nav.pricing': 'Pricing',
   'nav.caseStudies': 'Case studies',
   'footer.sitemap': 'Sitemap',
-  'theme.toggle': 'Toggle between dark and light mode',
+  'theme.toggle': 'Toggle between light and dark mode',
   'header.mainNavigation': 'Main navigation',
   'header.toggleMenu': 'Toggle menu',
   'languageSwitcher.label': 'Version française',
@@ -200,7 +200,7 @@ const en = {
   'home.collaborations.logoAlt': '{company} logo',
   'home.services.title': 'Services',
   'home.services.subtitle': 'Software that lasts, teams that grow, measurable results.',
-  'home.services.techLeadership.title': 'Tech Leadership',
+  'home.services.techLeadership.title': 'Technical Leadership',
   'home.services.techLeadership.description':
     'Engineering practices that become team habits: TDD, clean architecture, clean code, code review, CI/CD.',
   'home.services.fullStack.title': 'Full-Stack Development',
@@ -224,7 +224,7 @@ const en = {
   'home.pricing.title': 'Pricing',
   'home.pricing.subtitle': 'Every project is unique: pick the offer suited to your needs.',
   'home.pricing.perDay': 'per day',
-  'home.pricing.quote': 'On quote',
+  'home.pricing.quote': 'Custom',
   'home.pricing.applications.title': 'Application Development',
   'home.pricing.applications.description': 'Turn your idea into a production-ready application or SaaS.',
   'home.pricing.applications.features.planning': 'Scoping and planning',
@@ -281,13 +281,13 @@ const en = {
   'home.caseStudies.orthoAssistant.description':
     'Designing, building and deploying a SaaS that helps speech therapists find the most suitable material for each patient, to optimize session preparation.',
   'home.caseStudies.orthoAssistant.tags.healthcare': 'Healthcare',
-  'home.caseStudies.orthoAssistant.achievements.betaTesters': 'Several dozen beta-tester speech therapists',
-  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Smart search features for material',
+  'home.caseStudies.orthoAssistant.achievements.betaTesters': 'Several dozen speech therapists as beta testers',
+  'home.caseStudies.orthoAssistant.achievements.smartSearch': 'Smart search for therapy materials',
   'home.caseStudies.softway.title': 'Softway Medical',
   'home.caseStudies.softway.description':
     'Improving patient follow-up and care management in hospitals by providing healthcare professionals with applications tailored to their daily work.',
   'home.caseStudies.softway.tags.healthcare': 'Healthcare',
-  'home.caseStudies.softway.linkText': 'Watch a demo',
+  'home.caseStudies.softway.linkText': 'Watch the demo',
   'home.caseStudies.softway.achievements.patientModules': 'New modules designed for patient follow-up',
   'home.caseStudies.softway.achievements.continuousDelivery':
     'Continuous delivery and deployment on a microservices architecture',
@@ -307,7 +307,7 @@ const en = {
   'home.caseStudies.sncfConnect.title': 'SNCF Connect & Tech',
   'home.caseStudies.sncfConnect.description':
     'Making travel easier by adding new features to the SNCF Connect train ticket booking platform.',
-  'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Sustainable Mobility',
+  'home.caseStudies.sncfConnect.tags.sustainableMobility': 'Transportation',
   'home.caseStudies.sncfConnect.achievements.b2cWebServices':
     'New B2C web services in a service-oriented environment (SOA)',
   'home.caseStudies.sncfConnect.achievements.automatedTests': 'Automated test suites built with the QA team',
@@ -316,7 +316,7 @@ const en = {
     'Enabling faster, more efficient compensation for medical accident victims through the digitalization of all ONIAM procedures.',
   'home.caseStudies.oniam.tags.publicServices': 'Public Services',
   'home.caseStudies.oniam.achievements.digitalProcedures': 'Fully digital compensation procedures',
-  'home.caseStudies.oniam.achievements.openSource': 'Application built with 100% open source libraries',
+  'home.caseStudies.oniam.achievements.openSource': 'Application built with 100% open-source libraries',
   'home.caseStudies.veolia.title': 'Veolia Eau',
   'home.caseStudies.veolia.description':
     'Building business applications to manage water distribution across the Paris region.',
@@ -336,7 +336,7 @@ const en = {
   'home.contact.cta': 'Contact me',
   'notFound.title': 'Page not found',
   'notFound.description': 'Sorry, this page does not exist.',
-  'notFound.backHome': 'Back to home',
+  'notFound.backHome': 'Back to homepage',
 } as const satisfies Record<keyof typeof fr, string>;
 
 export const ui = { fr, en } as const;
