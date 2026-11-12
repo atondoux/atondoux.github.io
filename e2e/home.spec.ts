@@ -177,7 +177,7 @@ const localizedHeroes = [
     pricingSubtitle: 'Every project is unique: pick the offer suited to your needs.',
     planTitles: ['Application Development', 'Full-Stack Tech Lead', 'Consulting'],
     dailyRate: '€600',
-    quote: 'Custom',
+    quote: 'On request',
     ribbon: 'Popular',
     caseStudiesTitle: 'Case studies',
     caseStudiesSubtitle: 'An overview of my work.',
@@ -670,6 +670,38 @@ for (const path of ['/fr/', '/en/']) {
         CENTER_TOLERANCE_PX
       );
       expect(Math.abs(last.width - first.width)).toBeLessThanOrEqual(CENTER_TOLERANCE_PX);
+    });
+  }
+}
+
+const QUOTE_LABEL_MAX_WIDTH_RATIO = 0.9;
+const QUOTE_PLAN_INDEXES = [0, 2];
+
+for (const path of ['/fr/', '/en/']) {
+  for (const viewport of [
+    { width: 1024, height: 800 },
+    { width: 375, height: 812 },
+  ]) {
+    test(`keeps the quote label on one line with room to spare on ${path} at ${viewport.width}px`, async ({ page }) => {
+      await page.setViewportSize(viewport);
+      await page.goto(path);
+
+      const labels = page.locator('#pricing .aw-price-monthly span.font-extrabold');
+
+      for (const index of QUOTE_PLAN_INDEXES) {
+        const fit = await labels.nth(index).evaluate((label) => {
+          const range = document.createRange();
+          range.selectNodeContents(label);
+          return {
+            lines: range.getClientRects().length,
+            textWidth: range.getBoundingClientRect().width,
+            availableWidth: label.parentElement?.getBoundingClientRect().width ?? 0,
+          };
+        });
+
+        expect(fit.lines).toBe(1);
+        expect(fit.textWidth).toBeLessThanOrEqual(fit.availableWidth * QUOTE_LABEL_MAX_WIDTH_RATIO);
+      }
     });
   }
 }

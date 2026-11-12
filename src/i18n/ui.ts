@@ -224,7 +224,7 @@ const en = {
   'home.pricing.title': 'Pricing',
   'home.pricing.subtitle': 'Every project is unique: pick the offer suited to your needs.',
   'home.pricing.perDay': 'per day',
-  'home.pricing.quote': 'Custom',
+  'home.pricing.quote': 'On request',
   'home.pricing.applications.title': 'Application Development',
   'home.pricing.applications.description': 'Turn your idea into a production-ready application or SaaS.',
   'home.pricing.applications.features.planning': 'Scoping and planning',
