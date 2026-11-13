@@ -94,7 +94,7 @@ const fr = {
   'home.caseStudies.malt.description':
     'Renforcer la capacité de financement de Malt et optimiser sa gestion de trésorerie, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
   'home.caseStudies.malt.tags.marketplace': 'Marketplace freelance',
-  'home.caseStudies.malt.achievements.paidIn10Days': '90% des freelances payés en 10 jours',
+  'home.caseStudies.malt.achievements.paidUnder10Days': '90% des freelances payés en moins de 10 jours',
   'home.caseStudies.malt.achievements.automatedFinancing': 'Processus de financement automatisé à 95%',
   'home.caseStudies.namirial.title': 'Namirial',
   'home.caseStudies.namirial.description':
@@ -256,7 +256,7 @@ const en = {
   'home.caseStudies.malt.description':
     'Strengthening Malt’s financing capacity and cash flow management, while drastically cutting the FinOps team’s manual work.',
   'home.caseStudies.malt.tags.marketplace': 'Freelance Marketplace',
-  'home.caseStudies.malt.achievements.paidIn10Days': '90% of freelancers paid within 10 days',
+  'home.caseStudies.malt.achievements.paidUnder10Days': '90% of freelancers paid in under 10 days',
   'home.caseStudies.malt.achievements.automatedFinancing': '95% automated financing process',
   'home.caseStudies.namirial.title': 'Namirial',
   'home.caseStudies.namirial.description':

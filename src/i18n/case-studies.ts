@@ -24,7 +24,7 @@ const caseStudyCatalog = [
     key: 'malt',
     tagKeys: ['home.caseStudies.malt.tags.marketplace'],
     achievementKeys: [
-      'home.caseStudies.malt.achievements.paidIn10Days',
+      'home.caseStudies.malt.achievements.paidUnder10Days',
       'home.caseStudies.malt.achievements.automatedFinancing',
     ],
   },

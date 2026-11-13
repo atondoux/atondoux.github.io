@@ -91,7 +91,7 @@ const localizedHeroes = [
     caseStudyAchievements: [
       'Démarche qualité installée',
       'Livraisons fiabilisées par l’intégration continue',
-      '90% des freelances payés en 10 jours',
+      '90% des freelances payés en moins de 10 jours',
       'Processus de financement automatisé à 95%',
       'Contrats signés en ligne avec Yousign',
       'Fraude détectée dès la souscription',
@@ -188,7 +188,7 @@ const localizedHeroes = [
     caseStudyAchievements: [
       'Quality process in place',
       'Reliable releases through continuous integration',
-      '90% of freelancers paid within 10 days',
+      '90% of freelancers paid in under 10 days',
       '95% automated financing process',
       'Contracts signed online with Yousign',
       'Fraud caught at sign-up',
