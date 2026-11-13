@@ -56,8 +56,9 @@ pnpm test:all            # Unit + E2E
   `getPermalink` depends on it. `PageLayout` renders an announcement only when a page fills the `announcement` slot.
 - `src/navigation.ts` exposes `getHeaderData(lang)` / `getFooterData(lang)`. Navigation is localized.
 - `~` is aliased to `src/`.
-- `brand/` (repo root) keeps brand assets for reference only, such as the LinkedIn banner (`AT_code_lab_banner.png`,
-  the original export), and `public-intro.md`, the French and English profile description pasted into LinkedIn, Malt
+- `brand/` (repo root) keeps brand assets for reference only, such as the LinkedIn banner
+  (`AT_code_lab_banner_V2.png`, the master; `AT_code_lab_banner_V1.png` is the text-only base it was built on),
+  and `public-intro.md`, the French and English profile description pasted into LinkedIn, Malt
   and similar profiles (plain text under each heading, so it pastes as-is; the English wording follows the site's
   copy in `src/i18n/ui.ts`), and `work-experience.md`, the French and English text of every experience for those
   profiles, newest first with the dates in each heading and both languages side by side under each experience so they are edited together, in the
@@ -71,14 +72,16 @@ pnpm test:all            # Unit + E2E
   and other pages go through `metadata.title.template` in `config.yaml` (`'%s — AT Code Lab'`). Descriptions,
   `openGraph.site_name` and the footer copyright keep "Aurélien Tondoux". Guarded by `e2e/i18n.spec.ts`.
 - The link-preview image (`og:image`) is `src/assets/images/og-default.png`, set in `config.yaml` `metadata.openGraph.images`
-  and used by every page (none overrides it). It is the LinkedIn banner (`brand/AT_code_lab_banner.png`) cropped with
-  Sharp around its text (the banner keeps the left side free for the LinkedIn photo, so the crop is centered on the
-  text block) and resized to 1200×626. The crop is 4181×2181 from x 1637, y 454: the first crop (3554×1854 from x 1950,
-  y 617, ~10% margin per side) scaled by 1/0.85 around the same center, so the text keeps ~16% margin per side
-  (197px of 1200) that preview cards' rounded corners and edge trims don't eat. It
-  overflows the banner's right edge, so the banner is first extended right by 314px with `extendWith: 'mirror'`
-  (that strip is plain background, so the gradient and grain continue without a seam). The size is 1200×626 because `adaptOpenGraphImages` (`src/utils/images.ts`) always re-encodes it to a 1200×626 JPG
-  and would crop any other ratio a second time. The template's `default.png` (an AstroWind screenshot) was removed.
+  and used by every page (none overrides it). It is the LinkedIn banner (`brand/AT_code_lab_banner_V2.png`, 7168×3072)
+  cropped with Sharp to `extract({ left: 1279, top: 0, width: 5889, height: 3072 })` and resized to 1200×626. The crop
+  is full height and as wide as the 1200:626 ratio allows (`3072 × 1200/626`), flush to the banner's right edge
+  (`7168 − 5889 = 1279`), so it keeps both the line illustration and the text: the text ends at x 6794, leaving a
+  374px right margin (76px of 1200) that preview cards' rounded corners and edge trims don't eat. An earlier version
+  cropped the text block alone; the wider crop was chosen so the share card shows the artwork rather than text on an
+  empty field. The size is 1200×626 because `adaptOpenGraphImages` (`src/utils/images.ts`) always re-encodes it to a
+  1200×626 JPG and would crop any other ratio a second time. Re-export the banner and this crop as true-colour PNG:
+  Sharp's `png({ effort })` quantises to a 256-colour palette, which bands the background gradient, so pass
+  `palette: false` and check the PNG colour type is `02` and not `03`. The template's `default.png` (an AstroWind screenshot) was removed.
   There is no `twitter:image` tag: X falls back to `og:image`, and `twitter:card` is `summary_large_image`.
   Guarded by `e2e/share-image.spec.ts`. Social sites cache previews, so refresh them with LinkedIn Post Inspector.
 - Favicons (`src/components/Favicons.astro`) are the brand "AT" icons copied from `legacy-nuxt/public/`: 32/16 PNG and
