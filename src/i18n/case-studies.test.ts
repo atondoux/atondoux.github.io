@@ -16,7 +16,7 @@ const expectedCaseStudies = {
       description:
         'Renforcer la capacité de financement de Malt et optimiser sa gestion de trésorerie, tout en réduisant drastiquement les opérations manuelles de l’équipe FinOps.',
       tags: ['Marketplace freelance'],
-      achievements: ['90% des freelances payés en 10 jours', 'Processus de financement automatisé à 95%'],
+      achievements: ['90% des freelances payés en moins de 10 jours', 'Processus de financement automatisé à 95%'],
     },
     {
       title: 'Namirial',
@@ -119,7 +119,7 @@ const expectedCaseStudies = {
       description:
         'Strengthening Malt’s financing capacity and cash flow management, while drastically cutting the FinOps team’s manual work.',
       tags: ['Freelance Marketplace'],
-      achievements: ['90% of freelancers paid within 10 days', '95% automated financing process'],
+      achievements: ['90% of freelancers paid in under 10 days', '95% automated financing process'],
     },
     {
       title: 'Namirial',
