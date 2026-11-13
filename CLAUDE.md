@@ -72,14 +72,14 @@ pnpm test:all            # Unit + E2E
   and other pages go through `metadata.title.template` in `config.yaml` (`'%s — AT Code Lab'`). Descriptions,
   `openGraph.site_name` and the footer copyright keep "Aurélien Tondoux". Guarded by `e2e/i18n.spec.ts`.
 - The link-preview image (`og:image`) is `src/assets/images/og-default.png`, set in `config.yaml` `metadata.openGraph.images`
-  and used by every page (none overrides it). It is the LinkedIn banner (`brand/AT_code_lab_banner_V2.png`, 7168×3072)
-  cropped with Sharp to `extract({ left: 1279, top: 0, width: 5889, height: 3072 })` and resized to 1200×626. The crop
-  is full height and as wide as the 1200:626 ratio allows (`3072 × 1200/626`), flush to the banner's right edge
-  (`7168 − 5889 = 1279`), so it keeps both the line illustration and the text: the text ends at x 6794, leaving a
-  374px right margin (76px of 1200) that preview cards' rounded corners and edge trims don't eat. An earlier version
-  cropped the text block alone; the wider crop was chosen so the share card shows the artwork rather than text on an
-  empty field. The size is 1200×626 because `adaptOpenGraphImages` (`src/utils/images.ts`) always re-encodes it to a
-  1200×626 JPG and would crop any other ratio a second time. Re-export the banner and this crop as true-colour PNG:
+  and used by every page (none overrides it). It shows the brand text alone, centered, with no illustration: the
+  text-only banner (`brand/AT_code_lab_banner_V1.png`, 5504×3072) first extended right by 314px with
+  `extendWith: 'mirror'` (that strip is plain background, so the gradient and grain continue without a seam), then
+  cropped with Sharp to 4181×2181 from x 1637, y 454 around the text block and resized to 1200×626, so the text keeps
+  ~16% margin per side (197px of 1200) that preview cards' rounded corners and edge trims don't eat. A wider crop of
+  the V2 banner showing the line illustration was tried (#233) and reverted in favour of the centered text. The size
+  is 1200×626 because `adaptOpenGraphImages` (`src/utils/images.ts`) always re-encodes it to a 1200×626 JPG and would
+  crop any other ratio a second time. Re-export the banner and this crop as true-colour PNG:
   Sharp's `png({ effort })` quantises to a 256-colour palette, which bands the background gradient, so pass
   `palette: false` and check the PNG colour type is `02` and not `03`. The template's `default.png` (an AstroWind screenshot) was removed.
   There is no `twitter:image` tag: X falls back to `og:image`, and `twitter:card` is `summary_large_image`.
