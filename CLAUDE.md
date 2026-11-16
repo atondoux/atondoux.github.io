@@ -66,7 +66,10 @@ pnpm test:all            # Unit + E2E
   than the case study cards: it is built from the cards and `legacy-nuxt/content/{fr,en}/portfolio/`, and the card
   figures win over the legacy ones. In both files, methodology names keep their English hyphenated form in both
   languages (Test-Driven Development, as in `ui.ts`, Domain-Driven Design, Event-Driven Architecture). "Full Stack" has no hyphen in French and "Full-Stack" keeps it in
-  English, here and in `ui.ts`. The site never
+  English, here and in `ui.ts`. `ils-me-font-confiance.png` is the "Ils me font confiance" visual: the 11
+  collaboration logos in one ink, under the banner's style. The background, headline and footer were generated with
+  Nano Banana Pro; the logos and the photo were composited afterwards with Sharp from the SVGs and `avatar.jpeg`,
+  because the model redraws logos and faces instead of copying them. The site never
   imports them, and they sit outside `public/` so they are not deployed.
 - The browser tab title uses the "AT Code Lab" brand: the home page shows `home.title` alone (`ignoreTitleTemplate`),
   and other pages go through `metadata.title.template` in `config.yaml` (`'%s — AT Code Lab'`). Descriptions,
