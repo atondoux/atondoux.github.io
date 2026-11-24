@@ -122,21 +122,23 @@ for (const { lang, path, labels, sitemap, contactCta, navigationName, menuButton
     await expectSectionBelowHeader(page, 'contact');
   });
 
-  test(`shows the ${sitemap} column with the same links in the footer of ${path}`, async ({ page }) => {
+  test(`shows exactly the ${sitemap} section links in order in the footer of ${path}`, async ({ page }) => {
     await page.goto(path);
 
     const footer = page.locator('footer');
     const headerHrefs = await headerNav(page)
       .getByRole('link')
       .evaluateAll((anchors) => anchors.map((anchor) => anchor.getAttribute('href')));
+    const column = footer.getByText(sitemap, { exact: true }).locator('xpath=following-sibling::ul[1]');
+    const columnLinks = column.getByRole('link');
 
     await expect(footer.getByText(sitemap, { exact: true })).toHaveCount(1);
     await expect(footer.getByText(sitemap, { exact: true })).toBeVisible();
-    await expect(footer.getByRole('link', { name: labels[1], exact: true })).toHaveAttribute('href', headerHrefs[1]!);
-    await expect(footer.getByRole('link', { name: labels[2], exact: true })).toHaveAttribute('href', headerHrefs[2]!);
-    await expect(footer.getByRole('link', { name: labels[3], exact: true })).toHaveAttribute('href', headerHrefs[3]!);
-    await expect(footer.getByRole('link', { name: labels[4], exact: true })).toHaveAttribute('href', headerHrefs[4]!);
-    await expect(footer.getByRole('link', { name: labels[5], exact: true })).toHaveAttribute('href', headerHrefs[5]!);
+    await expect(columnLinks).toHaveText([...labels]);
+    const columnHrefs = await columnLinks.evaluateAll((anchors) =>
+      anchors.map((anchor) => anchor.getAttribute('href'))
+    );
+    expect(columnHrefs).toEqual(headerHrefs);
   });
 
   test(`shows the social links opening in a new tab in the footer of ${path}`, async ({ page }) => {
