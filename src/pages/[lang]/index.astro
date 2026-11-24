@@ -6,6 +6,7 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Brands from '~/components/widgets/Brands.astro';
 import Pricing from '~/components/widgets/Pricing.astro';
+import Note from '~/components/widgets/Note.astro';
 import Projects from '~/components/widgets/Projects.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 
@@ -76,6 +77,7 @@ const metadata = {
     prices={getPricingPlans(lang)}
     currency=""
   />
+  <Note variant="info" title={t('home.availability.title')} description={t('home.availability.description')} />
   <Projects
     id="case-studies"
     title={t('home.caseStudies.title')}

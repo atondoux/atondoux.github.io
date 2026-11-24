@@ -1,7 +1,8 @@
-import { expect, test, type Locator } from '@playwright/test';
+import { expect, test, type Locator, type Page } from '@playwright/test';
 
 const CASE_STUDY_COUNT = 12;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
+const AVAILABILITY_STRIP = '#pricing ~ section:not([id])';
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
 const CASE_STUDY_ACHIEVEMENTS = `#case-studies ${ACHIEVEMENT_IN_CARD}`;
@@ -38,6 +39,42 @@ const readIllustrationColors = (arts: Element[]) =>
       card: card ? getComputedStyle(card).backgroundColor : '',
     };
   });
+
+const readLuminances = (elements: Element[]) => {
+  const context = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
+  if (!context) throw new Error('No 2D canvas context to resolve colours');
+  const toRgba = (color: string) => {
+    context.clearRect(0, 0, 1, 1);
+    context.fillStyle = color;
+    context.fillRect(0, 0, 1, 1);
+    return [...context.getImageData(0, 0, 1, 1).data];
+  };
+  const opaqueBackground = (element: Element) => {
+    for (let node: Element | null = element; node; node = node.parentElement) {
+      const rgba = toRgba(getComputedStyle(node).backgroundColor);
+      if (rgba[3] === 255) return rgba;
+    }
+    throw new Error('No opaque background behind the element');
+  };
+  const luminance = (rgba: number[]) => {
+    const [r, g, b] = rgba.slice(0, 3).map((value) => {
+      const channel = value / 255;
+      return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+    });
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  return elements.map((element) => ({
+    text: luminance(toRgba(getComputedStyle(element).color)),
+    background: luminance(opaqueBackground(element)),
+  }));
+};
+
+const CONTRAST_FLARE = 0.05;
+
+const toContrastRatio = ({ text, background }: { text: number; background: number }) =>
+  (Math.max(text, background) + CONTRAST_FLARE) / (Math.min(text, background) + CONTRAST_FLARE);
+
+const readContrastRatios = async (locator: Locator) => (await locator.evaluateAll(readLuminances)).map(toContrastRatio);
 
 const localizedHeroes = [
   {
@@ -82,6 +119,8 @@ const localizedHeroes = [
     dailyRate: '600 €',
     quote: 'Sur devis',
     ribbon: 'Populaire',
+    availabilityTitle: 'Disponible',
+    availabilityDescription: 'pour de nouvelles missions dès maintenant.',
     caseStudiesTitle: 'Cas clients',
     caseStudiesSubtitle: 'Un aperçu de mon travail.',
     caseStudyLinkText: 'Voir la formation',
@@ -179,6 +218,8 @@ const localizedHeroes = [
     dailyRate: '€600',
     quote: 'On request',
     ribbon: 'Popular',
+    availabilityTitle: 'Available',
+    availabilityDescription: 'for new projects right now.',
     caseStudiesTitle: 'Case studies',
     caseStudiesSubtitle: 'An overview of my work.',
     caseStudyLinkText: 'See the course',
@@ -257,6 +298,8 @@ for (const {
   dailyRate,
   quote,
   ribbon,
+  availabilityTitle,
+  availabilityDescription,
   caseStudiesTitle,
   caseStudiesSubtitle,
   caseStudyLinkText,
@@ -386,6 +429,90 @@ for (const {
       return (services.compareDocumentPosition(pricing) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0;
     });
     expect(followsServices).toBe(true);
+  });
+
+  test(`shows the ${lang} availability strip between the pricing section and the case studies on ${path}`, async ({
+    page,
+  }) => {
+    await page.goto(path);
+
+    const strip = page.locator(AVAILABILITY_STRIP).first();
+
+    await expect(strip).toBeVisible();
+    const neighbours = await page.evaluate(() => {
+      const sections = [...document.querySelectorAll('section')];
+      const pricingIndex = sections.findIndex((section) => section.id === 'pricing');
+      return {
+        before: sections[pricingIndex]?.id,
+        after: sections[pricingIndex + 2]?.id,
+        stripHasNoId: sections[pricingIndex + 1]?.id === '',
+      };
+    });
+    expect(neighbours).toEqual({ before: 'pricing', after: 'case-studies', stripHasNoId: true });
+  });
+
+  test(`announces ${lang} availability with the full sentence on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const strip = page.locator(AVAILABILITY_STRIP).first();
+
+    await expect(strip).toHaveText(`${availabilityTitle} ${availabilityDescription}`);
+  });
+
+  test(`sets the ${lang} availability title in bold and the rest of the sentence in regular weight on ${path} [guard]`, async ({
+    page,
+  }) => {
+    await page.goto(path);
+
+    const strip = page.locator(AVAILABILITY_STRIP).first();
+    const weights = await strip.evaluate((section, titleText) => {
+      const titleElement = [...section.querySelectorAll('span')].find((span) => span.textContent === titleText);
+      const textContainer = titleElement?.parentElement;
+      return {
+        title: titleElement ? Number(getComputedStyle(titleElement).fontWeight) : 0,
+        text: textContainer ? Number(getComputedStyle(textContainer).fontWeight) : 1000,
+      };
+    }, availabilityTitle);
+
+    expect(weights.title).toBeGreaterThanOrEqual(600);
+    expect(weights.text).toBeLessThan(600);
+  });
+
+  test(`hides the ${lang} availability strip icon from assistive technology on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const strip = page.locator(AVAILABILITY_STRIP).first();
+
+    await expect(strip.locator('svg[data-icon="tabler:info-square"][aria-hidden="true"]')).toHaveCount(1);
+    await expect(strip.getByRole('img')).toHaveCount(0);
+    expect((await strip.evaluate((section) => (section as HTMLElement).innerText)).trim()).toBe(
+      `${availabilityTitle} ${availabilityDescription}`
+    );
+  });
+
+  test(`offers no link and no button in the ${lang} availability strip on ${path}`, async ({ page }) => {
+    await page.goto(path);
+
+    const strip = page.locator(AVAILABILITY_STRIP).first();
+
+    await expect(strip.getByRole('link')).toHaveCount(0);
+    await expect(strip.getByRole('button')).toHaveCount(0);
+  });
+
+  test(`keeps the whole ${lang} availability strip inside a 375px viewport on ${path} [guard]`, async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    await page.goto(path);
+
+    const strip = page.locator(AVAILABILITY_STRIP).first();
+
+    await expect(strip).toBeVisible();
+    const box = await strip.boundingBox();
+    expect(box?.x).toBeGreaterThanOrEqual(0);
+    expect((box?.x ?? 0) + (box?.width ?? 0)).toBeLessThanOrEqual(375);
+    const textFits = await strip.locator('div').evaluate((text) => text.scrollWidth <= text.clientWidth);
+    expect(textFits).toBe(true);
+    const pageWidth = await page.evaluate(() => document.documentElement.scrollWidth);
+    expect(pageWidth).toBeLessThanOrEqual(375);
   });
 
   test(`shows the ${lang} case studies after the pricing section on ${path}`, async ({ page }) => {
@@ -598,35 +725,7 @@ for (const theme of ['light', 'dark'] as const) {
     await page.addInitScript((chosenTheme) => localStorage.setItem('theme', chosenTheme), theme);
     await page.goto('/fr/');
 
-    const ratios = await page.locator(CASE_STUDY_ACHIEVEMENTS).evaluateAll((achievements) => {
-      const context = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
-      if (!context) throw new Error('No 2D canvas context to resolve colours');
-      const toRgba = (color: string) => {
-        context.clearRect(0, 0, 1, 1);
-        context.fillStyle = color;
-        context.fillRect(0, 0, 1, 1);
-        return [...context.getImageData(0, 0, 1, 1).data];
-      };
-      const opaqueBackground = (element: Element) => {
-        for (let node: Element | null = element; node; node = node.parentElement) {
-          const rgba = toRgba(getComputedStyle(node).backgroundColor);
-          if (rgba[3] === 255) return rgba;
-        }
-        throw new Error('No opaque background behind the achievement');
-      };
-      const luminance = (rgba: number[]) => {
-        const [r, g, b] = rgba.slice(0, 3).map((value) => {
-          const channel = value / 255;
-          return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
-        });
-        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-      };
-      return achievements.map((achievement) => {
-        const text = luminance(toRgba(getComputedStyle(achievement).color));
-        const background = luminance(opaqueBackground(achievement));
-        return (Math.max(text, background) + 0.05) / (Math.min(text, background) + 0.05);
-      });
-    });
+    const ratios = await readContrastRatios(page.locator(CASE_STUDY_ACHIEVEMENTS));
 
     expect(ratios).toHaveLength(localizedHeroes[0].caseStudyAchievements.length);
     for (const ratio of ratios) {
@@ -634,6 +733,48 @@ for (const theme of ['light', 'dark'] as const) {
     }
   });
 }
+
+const readStripBackground = (page: Page) =>
+  page
+    .locator(AVAILABILITY_STRIP)
+    .first()
+    .evaluate((strip) => getComputedStyle(strip).backgroundColor);
+
+const readLuminance = async (page: Page) =>
+  (await page.locator(AVAILABILITY_STRIP).first().evaluateAll(readLuminances))[0].background;
+
+for (const theme of ['light', 'dark'] as const) {
+  test(`keeps the availability strip readable on its own background in ${theme} mode`, async ({ page }) => {
+    await page.addInitScript((chosenTheme) => localStorage.setItem('theme', chosenTheme), theme);
+    await page.goto('/fr/');
+
+    const strip = page.locator(AVAILABILITY_STRIP).first();
+    const titleRatios = await readContrastRatios(strip.locator('span.font-bold'));
+    const textRatios = await readContrastRatios(strip.locator('div'));
+    const pageBackground = await page.locator('body').evaluate((body) => getComputedStyle(body).backgroundColor);
+
+    expect(await readStripBackground(page)).not.toBe(pageBackground);
+    expect(titleRatios).toHaveLength(1);
+    expect(textRatios).toHaveLength(1);
+    for (const ratio of [...titleRatios, ...textRatios]) {
+      expect(ratio).toBeGreaterThanOrEqual(WCAG_AA_TEXT_CONTRAST);
+    }
+  });
+}
+
+test('switches the availability strip to a darker background in dark mode', async ({ page }) => {
+  await page.goto('/fr/');
+  await page.evaluate(() => localStorage.setItem('theme', 'light'));
+  await page.reload();
+  const lightBackground = await readStripBackground(page);
+  const lightLuminance = await readLuminance(page);
+
+  await page.evaluate(() => localStorage.setItem('theme', 'dark'));
+  await page.reload();
+
+  expect(await readStripBackground(page)).not.toBe(lightBackground);
+  expect(await readLuminance(page)).toBeLessThan(lightLuminance);
+});
 
 const SERVICE_COUNT = 7;
 const CENTER_TOLERANCE_PX = 1;
