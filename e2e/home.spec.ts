@@ -2,6 +2,7 @@ import { expect, test, type Locator, type Page } from '@playwright/test';
 
 const CASE_STUDY_COUNT = 12;
 const WCAG_AA_TEXT_CONTRAST = 4.5;
+const AVAILABILITY_STRIP = '#pricing ~ section:not([id])';
 const CARD_FOOTER = 'h3 ~ div';
 const ACHIEVEMENT_IN_CARD = `${CARD_FOOTER} li`;
 const CASE_STUDY_ACHIEVEMENTS = `#case-studies ${ACHIEVEMENT_IN_CARD}`;
@@ -39,7 +40,7 @@ const readIllustrationColors = (arts: Element[]) =>
     };
   });
 
-const readContrastRatios = (elements: Element[]) => {
+const readLuminances = (elements: Element[]) => {
   const context = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
   if (!context) throw new Error('No 2D canvas context to resolve colours');
   const toRgba = (color: string) => {
@@ -62,12 +63,18 @@ const readContrastRatios = (elements: Element[]) => {
     });
     return 0.2126 * r + 0.7152 * g + 0.0722 * b;
   };
-  return elements.map((element) => {
-    const text = luminance(toRgba(getComputedStyle(element).color));
-    const background = luminance(opaqueBackground(element));
-    return (Math.max(text, background) + 0.05) / (Math.min(text, background) + 0.05);
-  });
+  return elements.map((element) => ({
+    text: luminance(toRgba(getComputedStyle(element).color)),
+    background: luminance(opaqueBackground(element)),
+  }));
 };
+
+const CONTRAST_FLARE = 0.05;
+
+const toContrastRatio = ({ text, background }: { text: number; background: number }) =>
+  (Math.max(text, background) + CONTRAST_FLARE) / (Math.min(text, background) + CONTRAST_FLARE);
+
+const readContrastRatios = async (locator: Locator) => (await locator.evaluateAll(readLuminances)).map(toContrastRatio);
 
 const localizedHeroes = [
   {
@@ -429,7 +436,7 @@ for (const {
   }) => {
     await page.goto(path);
 
-    const strip = page.locator('#pricing ~ section:not([id])').first();
+    const strip = page.locator(AVAILABILITY_STRIP).first();
 
     await expect(strip).toBeVisible();
     const neighbours = await page.evaluate(() => {
@@ -447,7 +454,7 @@ for (const {
   test(`announces ${lang} availability with the full sentence on ${path}`, async ({ page }) => {
     await page.goto(path);
 
-    const strip = page.locator('#pricing ~ section:not([id])').first();
+    const strip = page.locator(AVAILABILITY_STRIP).first();
 
     await expect(strip).toHaveText(`${availabilityTitle} ${availabilityDescription}`);
   });
@@ -457,7 +464,7 @@ for (const {
   }) => {
     await page.goto(path);
 
-    const strip = page.locator('#pricing ~ section:not([id])').first();
+    const strip = page.locator(AVAILABILITY_STRIP).first();
     const weights = await strip.evaluate((section, titleText) => {
       const titleElement = [...section.querySelectorAll('span')].find((span) => span.textContent === titleText);
       const textContainer = titleElement?.parentElement;
@@ -474,7 +481,7 @@ for (const {
   test(`hides the ${lang} availability strip icon from assistive technology on ${path}`, async ({ page }) => {
     await page.goto(path);
 
-    const strip = page.locator('#pricing ~ section:not([id])').first();
+    const strip = page.locator(AVAILABILITY_STRIP).first();
 
     await expect(strip.locator('svg[data-icon="tabler:info-square"][aria-hidden="true"]')).toHaveCount(1);
     await expect(strip.getByRole('img')).toHaveCount(0);
@@ -486,7 +493,7 @@ for (const {
   test(`offers no link and no button in the ${lang} availability strip on ${path}`, async ({ page }) => {
     await page.goto(path);
 
-    const strip = page.locator('#pricing ~ section:not([id])').first();
+    const strip = page.locator(AVAILABILITY_STRIP).first();
 
     await expect(strip.getByRole('link')).toHaveCount(0);
     await expect(strip.getByRole('button')).toHaveCount(0);
@@ -496,7 +503,7 @@ for (const {
     await page.setViewportSize({ width: 375, height: 812 });
     await page.goto(path);
 
-    const strip = page.locator('#pricing ~ section:not([id])').first();
+    const strip = page.locator(AVAILABILITY_STRIP).first();
 
     await expect(strip).toBeVisible();
     const box = await strip.boundingBox();
@@ -718,7 +725,7 @@ for (const theme of ['light', 'dark'] as const) {
     await page.addInitScript((chosenTheme) => localStorage.setItem('theme', chosenTheme), theme);
     await page.goto('/fr/');
 
-    const ratios = await page.locator(CASE_STUDY_ACHIEVEMENTS).evaluateAll(readContrastRatios);
+    const ratios = await readContrastRatios(page.locator(CASE_STUDY_ACHIEVEMENTS));
 
     expect(ratios).toHaveLength(localizedHeroes[0].caseStudyAchievements.length);
     for (const ratio of ratios) {
@@ -727,29 +734,14 @@ for (const theme of ['light', 'dark'] as const) {
   });
 }
 
-const AVAILABILITY_STRIP = '#pricing ~ section:not([id])';
-
 const readStripBackground = (page: Page) =>
   page
     .locator(AVAILABILITY_STRIP)
     .first()
     .evaluate((strip) => getComputedStyle(strip).backgroundColor);
 
-const readLuminance = (page: Page) =>
-  page
-    .locator(AVAILABILITY_STRIP)
-    .first()
-    .evaluate((strip) => {
-      const context = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
-      if (!context) throw new Error('No 2D canvas context to resolve colours');
-      context.fillStyle = getComputedStyle(strip).backgroundColor;
-      context.fillRect(0, 0, 1, 1);
-      const [r, g, b] = [...context.getImageData(0, 0, 1, 1).data].slice(0, 3).map((value) => {
-        const channel = value / 255;
-        return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
-      });
-      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-    });
+const readLuminance = async (page: Page) =>
+  (await page.locator(AVAILABILITY_STRIP).first().evaluateAll(readLuminances))[0].background;
 
 for (const theme of ['light', 'dark'] as const) {
   test(`keeps the availability strip readable on its own background in ${theme} mode`, async ({ page }) => {
@@ -757,8 +749,8 @@ for (const theme of ['light', 'dark'] as const) {
     await page.goto('/fr/');
 
     const strip = page.locator(AVAILABILITY_STRIP).first();
-    const titleRatios = await strip.locator('span.font-bold').evaluateAll(readContrastRatios);
-    const textRatios = await strip.locator('div').evaluateAll(readContrastRatios);
+    const titleRatios = await readContrastRatios(strip.locator('span.font-bold'));
+    const textRatios = await readContrastRatios(strip.locator('div'));
     const pageBackground = await page.locator('body').evaluate((body) => getComputedStyle(body).backgroundColor);
 
     expect(await readStripBackground(page)).not.toBe(pageBackground);
